@@ -1,0 +1,2520 @@
+{
+  "nombre": "Lectura Crítica",
+  "descripcion": "Evalúa la comprensión, interpretación y análisis de textos escritos.",
+  "contextos": [
+    {
+      "tipo": "texto",
+      "contexto": "La lectura no consiste únicamente en reconocer palabras, sino en comprender las ideas, relaciones e intenciones que un texto comunica. Un lector crítico es capaz de identificar no solo lo que se dice explícitamente, sino también aquello que se sugiere o se omite.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Según el texto, ¿qué caracteriza principalmente a un lector crítico?",
+          "tipo": "inferencia",
+          "dificultad": "media",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Reconoce palabras y memoriza definiciones.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Comprende ideas explícitas e implícitas del texto.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Lee rápidamente sin detenerse en detalles.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Se limita a identificar la estructura del texto.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál es la intención principal del autor al escribir el texto?",
+          "tipo": "analisis",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Describir un método para aprender a leer más rápido.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Explicar qué implica una lectura crítica.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Narrar una experiencia personal como lector.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Criticar los sistemas educativos actuales.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se puede inferir que la lectura crítica permite al lector:",
+          "tipo": "inferencia",
+          "dificultad": "alta",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Aceptar sin cuestionar la información presentada.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Identificar posibles intenciones ocultas del autor.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Leer únicamente textos académicos.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Evitar interpretaciones personales.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "En muchas ciudades, el crecimiento urbano ha transformado profundamente la forma en que las personas se relacionan con su entorno. Aunque este crecimiento ha facilitado el acceso a servicios, también ha generado problemas como la congestión, la contaminación y la pérdida de espacios verdes.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la idea principal del texto?",
+          "tipo": "idea_principal",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "El crecimiento urbano solo trae beneficios a las ciudades.",
+              "es_correcta": false
+            },
+            {
+              "texto": "El crecimiento urbano ha generado tanto beneficios como problemas.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Las ciudades han dejado de ofrecer servicios básicos.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La contaminación es el único problema urbano.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Según el texto, uno de los efectos negativos del crecimiento urbano es:",
+          "tipo": "localizacion",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "La mejora en el transporte público.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La pérdida de espacios verdes.",
+              "es_correcta": true
+            },
+            {
+              "texto": "El aumento de oportunidades educativas.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La diversificación cultural.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se puede concluir que el autor mantiene una postura:",
+          "tipo": "inferencia",
+          "dificultad": "media",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Totalmente negativa frente al crecimiento urbano.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Equilibrada frente a los efectos del crecimiento urbano.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Optimista sin reconocer problemas.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Indiferente frente al tema.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "La participación ciudadana es un elemento fundamental de las democracias modernas. A través de ella, los ciudadanos no solo eligen a sus representantes, sino que también pueden incidir en las decisiones públicas mediante mecanismos como el debate, la protesta pacífica y la veeduría social.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la idea principal del texto?",
+          "tipo": "idea_principal",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "La democracia se limita al voto.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La participación ciudadana fortalece la democracia.",
+              "es_correcta": true
+            },
+            {
+              "texto": "La protesta pacífica debilita el orden social.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La veeduría social es innecesaria.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Según el texto, ¿qué acción NO es mencionada como forma de participación ciudadana?",
+          "tipo": "localizacion",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Elegir representantes.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Participar en debates.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Realizar protestas pacíficas.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Formar partidos políticos.",
+              "es_correcta": true
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se puede inferir que una democracia sólida requiere:",
+          "tipo": "inferencia",
+          "dificultad": "media",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Ciudadanos pasivos.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Participación activa de la ciudadanía.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Autoridad centralizada.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ausencia de debate público.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "El desarrollo tecnológico ha permitido avances significativos en la medicina, desde diagnósticos más precisos hasta tratamientos menos invasivos. Sin embargo, también plantea dilemas éticos relacionados con el acceso equitativo a estos avances y el uso responsable de la información médica.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la postura del autor frente al desarrollo tecnológico en la medicina?",
+          "tipo": "inferencia",
+          "dificultad": "media",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Totalmente negativa.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Reconoce beneficios, pero advierte dilemas éticos.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Indiferente frente al tema.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Exclusivamente optimista.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Según el texto, uno de los dilemas éticos mencionados es:",
+          "tipo": "localizacion",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "La falta de médicos especializados.",
+              "es_correcta": false
+            },
+            {
+              "texto": "El acceso equitativo a los avances médicos.",
+              "es_correcta": true
+            },
+            {
+              "texto": "La reducción de hospitales.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La eliminación de tratamientos tradicionales.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué se puede concluir a partir del texto?",
+          "tipo": "analisis",
+          "dificultad": "alta",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "El avance tecnológico elimina la necesidad de regulación.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Los avances médicos deben acompañarse de reflexión ética.",
+              "es_correcta": true
+            },
+            {
+              "texto": "La tecnología médica solo beneficia a unos pocos.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La ética limita el progreso científico.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "El hábito de la lectura en la infancia está estrechamente relacionado con el desarrollo del pensamiento crítico y la creatividad. Los niños que leen con frecuencia suelen adquirir un vocabulario más amplio y una mayor capacidad para comprender distintos puntos de vista.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la relación que establece el texto entre lectura y desarrollo infantil?",
+          "tipo": "interpretacion",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "La lectura solo mejora el rendimiento académico.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La lectura favorece el pensamiento crítico y la creatividad.",
+              "es_correcta": true
+            },
+            {
+              "texto": "La lectura limita la imaginación.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La lectura reemplaza la interacción social.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se puede inferir que los niños lectores:",
+          "tipo": "inferencia",
+          "dificultad": "media",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Tienen dificultades para comprender otras opiniones.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Desarrollan mayor comprensión de distintos puntos de vista.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Dependen menos del lenguaje oral.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Presentan menor creatividad.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "El cambio climático es uno de los principales desafíos actuales. Aunque existe consenso científico sobre su origen y consecuencias, la respuesta social y política frente a este fenómeno ha sido desigual, influenciada por intereses económicos, culturales y geográficos.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la idea principal del texto?",
+          "tipo": "idea_principal",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "El cambio climático es un fenómeno natural sin impacto humano.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La respuesta al cambio climático varía según factores sociales y políticos.",
+              "es_correcta": true
+            },
+            {
+              "texto": "No existe consenso científico sobre el cambio climático.",
+              "es_correcta": false
+            },
+            {
+              "texto": "El cambio climático solo afecta a ciertos países.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Según el texto, uno de los factores que influyen en la respuesta frente al cambio climático es:",
+          "tipo": "localizacion",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "La velocidad de los avances tecnológicos.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Los intereses económicos.",
+              "es_correcta": true
+            },
+            {
+              "texto": "La edad de la población.",
+              "es_correcta": false
+            },
+            {
+              "texto": "El nivel educativo individual.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se puede inferir que enfrentar el cambio climático requiere:",
+          "tipo": "inferencia",
+          "dificultad": "alta",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Ignorar los factores culturales.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Articular ciencia, política y sociedad.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Delegar la solución únicamente a los científicos.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Evitar acuerdos internacionales.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "La memoria colectiva se construye a partir de relatos compartidos sobre el pasado. Estos relatos no solo preservan hechos históricos, sino que también influyen en la manera en que una sociedad se percibe a sí misma y proyecta su futuro.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué función cumple la memoria colectiva según el texto?",
+          "tipo": "interpretacion",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Registrar únicamente fechas y eventos.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Influir en la identidad y proyección social.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Reemplazar el estudio de la historia.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Evitar interpretaciones del pasado.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se puede inferir que los relatos sobre el pasado:",
+          "tipo": "inferencia",
+          "dificultad": "media",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Son completamente objetivos.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Influyen en cómo una sociedad se entiende a sí misma.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Carecen de impacto en el presente.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Solo interesan a los historiadores.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál sería una consecuencia de modificar los relatos que conforman la memoria colectiva?",
+          "tipo": "analisis",
+          "dificultad": "alta",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "La pérdida total del pasado histórico.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un cambio en la forma en que la sociedad se proyecta al futuro.",
+              "es_correcta": true
+            },
+            {
+              "texto": "La eliminación de los hechos históricos.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La desaparición de la identidad cultural.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "El trabajo colaborativo se ha convertido en una estrategia común en entornos educativos y laborales. Al combinar habilidades y perspectivas diversas, los grupos pueden abordar problemas complejos de manera más efectiva que los individuos de forma aislada.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el principal beneficio del trabajo colaborativo según el texto?",
+          "tipo": "idea_principal",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Reduce la responsabilidad individual.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Permite abordar problemas complejos con mayor efectividad.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Elimina los conflictos entre personas.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Evita la necesidad de liderazgo.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se puede inferir que el trabajo individual:",
+          "tipo": "inferencia",
+          "dificultad": "media",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Es siempre menos eficiente que el grupal.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Puede ser limitado frente a problemas complejos.",
+              "es_correcta": true
+            },
+            {
+              "texto": "No aporta al aprendizaje.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Es incompatible con el trabajo colaborativo.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "La migración ha sido un fenómeno constante a lo largo de la historia humana. Las personas migran por diversas razones, como la búsqueda de mejores oportunidades económicas, la huida de conflictos o desastres naturales, y el deseo de reunificación familiar.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la idea principal del texto?",
+          "tipo": "idea_principal",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "La migración es un fenómeno reciente.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La migración responde a múltiples causas históricas y sociales.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Las personas migran solo por razones económicas.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La migración siempre es voluntaria.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Según el texto, una causa de migración es:",
+          "tipo": "localizacion",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "La estabilidad política permanente.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La huida de conflictos o desastres naturales.",
+              "es_correcta": true
+            },
+            {
+              "texto": "La disminución de la población mundial.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La eliminación de fronteras.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se puede inferir que la migración:",
+          "tipo": "inferencia",
+          "dificultad": "media",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Es un proceso uniforme en todas las regiones.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Responde a condiciones sociales, económicas y familiares.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Carece de impacto en las sociedades.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Solo ocurre en países en desarrollo.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "La publicidad influye en las decisiones de consumo al asociar productos con emociones, estilos de vida o aspiraciones. Esta estrategia busca persuadir al consumidor más allá de las características objetivas del producto.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué estrategia publicitaria describe el texto?",
+          "tipo": "interpretacion",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Presentar datos técnicos detallados.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Asociar productos con emociones o aspiraciones.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Reducir el consumo de ciertos productos.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Evitar el uso de imágenes.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se puede inferir que la publicidad:",
+          "tipo": "inferencia",
+          "dificultad": "media",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Se basa únicamente en información objetiva.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Busca influir en las emociones del consumidor.",
+              "es_correcta": true
+            },
+            {
+              "texto": "No afecta las decisiones de compra.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Es irrelevante en la sociedad actual.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál sería una actitud crítica frente a la publicidad, según el texto?",
+          "tipo": "analisis",
+          "dificultad": "alta",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Aceptar los mensajes publicitarios sin cuestionarlos.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Analizar más allá de las emociones que el anuncio provoca.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Evitar todo tipo de consumo.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Confiar solo en marcas reconocidas.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "El lenguaje no solo sirve para comunicar información, sino también para construir realidades sociales. A través de él se refuerzan creencias, valores y relaciones de poder presentes en una sociedad.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la función del lenguaje según el texto?",
+          "tipo": "idea_principal",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Transmitir información de manera neutral.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Construir y reforzar realidades sociales.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Evitar conflictos sociales.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Eliminar diferencias culturales.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se puede inferir que el lenguaje:",
+          "tipo": "inferencia",
+          "dificultad": "media",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Es completamente objetivo.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Refleja y reproduce relaciones de poder.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Carece de impacto social.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Solo cumple una función informativa.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "Durante años se pensó que el éxito académico dependía exclusivamente del esfuerzo individual. Sin embargo, investigaciones recientes muestran que factores como el entorno familiar, la calidad educativa y el acceso a recursos influyen significativamente en el rendimiento de los estudiantes.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la postura del texto frente al éxito académico?",
+          "tipo": "idea_principal",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Depende únicamente del esfuerzo personal.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Está influido por múltiples factores sociales y educativos.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Es irrelevante el entorno del estudiante.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Se determina solo por la inteligencia.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Según el texto, uno de los factores que influye en el rendimiento académico es:",
+          "tipo": "localizacion",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "La suerte del estudiante.",
+              "es_correcta": false
+            },
+            {
+              "texto": "El entorno familiar.",
+              "es_correcta": true
+            },
+            {
+              "texto": "La edad del docente.",
+              "es_correcta": false
+            },
+            {
+              "texto": "El tipo de examen aplicado.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se puede inferir que mejorar el acceso a recursos educativos:",
+          "tipo": "inferencia",
+          "dificultad": "media",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "No tendría impacto en el rendimiento.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Podría contribuir a un mejor desempeño académico.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Reduciría la necesidad de esfuerzo personal.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Afectaría negativamente la educación.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "Las redes sociales han transformado la manera en que las personas se informan y se comunican. Aunque facilitan el acceso rápido a noticias, también pueden propagar información falsa si no se verifican adecuadamente las fuentes.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es uno de los riesgos asociados al uso de redes sociales según el texto?",
+          "tipo": "localizacion",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "La disminución de la comunicación.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La propagación de información falsa.",
+              "es_correcta": true
+            },
+            {
+              "texto": "La falta de acceso a noticias.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La censura total de contenidos.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se puede inferir que el uso responsable de redes sociales implica:",
+          "tipo": "inferencia",
+          "dificultad": "media",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Compartir toda la información disponible.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Verificar las fuentes antes de difundir contenidos.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Evitar informarse por completo.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Confiar únicamente en titulares.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál sería una actitud crítica frente a la información en redes sociales?",
+          "tipo": "evaluacion",
+          "dificultad": "alta",
+          "competencia": "evaluar",
+          "opciones": [
+            {
+              "texto": "Aceptar la información sin cuestionarla.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Contrastar la información con fuentes confiables.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Difundirla rápidamente.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ignorar todo tipo de noticias.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "El cuidado del medio ambiente requiere acciones tanto individuales como colectivas. Reducir el consumo, reciclar y promover políticas públicas sostenibles son estrategias clave para enfrentar los problemas ambientales actuales.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la idea central del texto?",
+          "tipo": "idea_principal",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "El medio ambiente es responsabilidad exclusiva del Estado.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La protección ambiental requiere acciones individuales y colectivas.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Reciclar es la única solución ambiental.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Los problemas ambientales son inevitables.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Según el texto, una estrategia para enfrentar los problemas ambientales es:",
+          "tipo": "localizacion",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Aumentar el consumo.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Promover políticas públicas sostenibles.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Evitar la participación ciudadana.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ignorar el impacto ambiental.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "La lectura no solo permite adquirir información, sino que también desarrolla la capacidad crítica del lector. A través de ella, las personas pueden cuestionar ideas, analizar argumentos y formarse opiniones propias.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el propósito principal del texto?",
+          "tipo": "idea_principal",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Describir los tipos de lectura existentes.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Resaltar la importancia de la lectura en el pensamiento crítico.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Explicar cómo memorizar textos.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Criticar la falta de hábitos lectores.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Según el texto, una consecuencia de la lectura es:",
+          "tipo": "localizacion",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "La repetición mecánica de ideas.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La formación de opiniones propias.",
+              "es_correcta": true
+            },
+            {
+              "texto": "La eliminación del pensamiento crítico.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La reducción del análisis.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se puede inferir que una persona que lee con frecuencia:",
+          "tipo": "inferencia",
+          "dificultad": "media",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Acepta todas las ideas sin cuestionarlas.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Tiene mayor capacidad para analizar argumentos.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Depende menos de la información escrita.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Evita formarse opiniones.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "En muchas ciudades, el uso del transporte público ha disminuido debido al aumento del transporte privado. Esta situación ha generado mayores niveles de contaminación y congestión vial.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es una consecuencia del aumento del transporte privado según el texto?",
+          "tipo": "localizacion",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "La reducción de la contaminación.",
+              "es_correcta": false
+            },
+            {
+              "texto": "El aumento de la congestión vial.",
+              "es_correcta": true
+            },
+            {
+              "texto": "La mejora del transporte público.",
+              "es_correcta": false
+            },
+            {
+              "texto": "La disminución del tráfico.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se puede inferir que fomentar el uso del transporte público:",
+          "tipo": "inferencia",
+          "dificultad": "media",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Aumentaría el uso de vehículos privados.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Podría reducir la contaminación y el tráfico.",
+              "es_correcta": true
+            },
+            {
+              "texto": "No tendría impacto ambiental.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Empeoraría la movilidad urbana.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál sería la posición más coherente con el texto?",
+          "tipo": "evaluacion",
+          "dificultad": "alta",
+          "competencia": "evaluar",
+          "opciones": [
+            {
+              "texto": "Promover políticas que fortalezcan el transporte público.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Eliminar completamente el transporte público.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Incentivar el uso de vehículos privados.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ignorar los efectos ambientales.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "contexto": "La ciencia avanza mediante la formulación de hipótesis que luego son sometidas a verificación experimental. Este proceso permite aceptar, modificar o rechazar explicaciones sobre fenómenos naturales.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la función principal de la verificación experimental en la ciencia?",
+          "tipo": "idea_principal",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Confirmar todas las hipótesis sin cambios.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Evaluar la validez de las hipótesis.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Eliminar la necesidad de teorías.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Evitar la formulación de hipótesis.",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Según el texto, una hipótesis puede ser:",
+          "tipo": "localizacion",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Aceptada, modificada o rechazada.",
+              "es_correcta": true
+            },
+            {
+              "texto": "Siempre confirmada.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Inmodificable.",
+              "es_correcta": false
+            },
+            {
+              "texto": "Independiente de la experimentación.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto_literario",
+      "contexto": "Había un hombre que se propuso la tarea de dibujar el mundo. A lo largo de los añospobla un espacio con imágenes de provincias, de reinos, de montañas, de bahías, de naves, de islas, de peces, de habitaciones, de instrumentos, de astros, de caballos y de personas. Poco antes de morir, descubre que ese paciente laberinto de líneas traza la imagen de su cara.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "La palabra 'paciente' en el contexto del fragmento califica al laberinto como:",
+          "tipo": "semantico",
+          "dificultad": "media",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Un lugar donde se espera a los enfermos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Una obra que requirió mucho tiempo y dedicación",
+              "es_correcta": true
+            },
+            {
+              "texto": "Una estructura que no tiene salida",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un dibujo hecho con mucha resignación",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La gran revelación del personaje al final de su vida consiste en que:",
+          "tipo": "literario",
+          "dificultad": "alta",
+          "competencia": "comprender",
+          "opciones": [
+            {
+              "texto": "El mundo es mucho más grande de lo que pensaba",
+              "es_correcta": false
+            },
+            {
+              "texto": "Su obra es en realidad un autorretrato involuntario",
+              "es_correcta": true
+            },
+            {
+              "texto": "Ha perdido el tiempo dibujando cosas inútiles",
+              "es_correcta": false
+            },
+            {
+              "texto": "El laberinto es la única forma de representar la realidad",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué figura literaria predomina en la enumeración de objetos que el hombre dibuja?",
+          "tipo": "literario",
+          "dificultad": "media",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Metáfora",
+              "es_correcta": false
+            },
+            {
+              "texto": "Polisíndeton (por el uso repetido de 'de')",
+              "es_correcta": true
+            },
+            {
+              "texto": "Hipérbole",
+              "es_correcta": false
+            },
+            {
+              "texto": "Personificación",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se puede inferir que el autor considera que el conocimiento del mundo:",
+          "tipo": "filosofico",
+          "dificultad": "alta",
+          "competencia": "reflexionar",
+          "opciones": [
+            {
+              "texto": "Es imposible de alcanzar plenamente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Está íntimamente ligado al autoconocimiento",
+              "es_correcta": true
+            },
+            {
+              "texto": "Se logra solo a través del arte del dibujo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Es una tarea que debe realizarse solo",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto_informativo",
+      "contexto": "La inteligencia artificial generativa no piensa; predice la siguiente palabra basándose en probabilidades estadísticas extraídas de billones de textos. Confundir esta fluidez verbal con sabiduría es el gran error de nuestra era digital.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "La tesis principal del autor es que:",
+          "tipo": "argumentativo",
+          "dificultad": "media",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "La IA superará pronto la sabiduría humana",
+              "es_correcta": false
+            },
+            {
+              "texto": "Existe un malentendido sobre la naturaleza de la IA",
+              "es_correcta": true
+            },
+            {
+              "texto": "Las estadísticas son la base de todo pensamiento",
+              "es_correcta": false
+            },
+            {
+              "texto": "La fluidez verbal es síntoma de inteligencia verdadera",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Según el texto, ¿en qué se basa la operación de la IA generativa?",
+          "tipo": "informativo",
+          "dificultad": "baja",
+          "competencia": "comprender",
+          "opciones": [
+            {
+              "texto": "En la conciencia propia",
+              "es_correcta": false
+            },
+            {
+              "texto": "En el razonamiento lógico deductivo",
+              "es_correcta": false
+            },
+            {
+              "texto": "En cálculos probabilísticos sobre datos masivos",
+              "es_correcta": true
+            },
+            {
+              "texto": "En la sabiduría acumulada de los programadores",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "El tono del autor al hablar del 'gran error de nuestra era digital' se puede calificar como:",
+          "tipo": "analisis",
+          "dificultad": "media",
+          "competencia": "reflexionar",
+          "opciones": [
+            {
+              "texto": "Optimista y entusiasta",
+              "es_correcta": false
+            },
+            {
+              "texto": "Crítico y de advertencia",
+              "es_correcta": true
+            },
+            {
+              "texto": "Indiferente y neutral",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sarcástico y burlón",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Una consecuencia lógica de lo planteado en el texto sería:",
+          "tipo": "argumentativo",
+          "dificultad": "alta",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Debemos confiar plenamente en lo que dice la IA",
+              "es_correcta": false
+            },
+            {
+              "texto": "Es necesario verificar la información generada por IA",
+              "es_correcta": true
+            },
+            {
+              "texto": "La IA dejará de usarse en el futuro cercano",
+              "es_correcta": false
+            },
+            {
+              "texto": "La sabiduría humana ya no es necesaria",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto_filosofico",
+      "contexto": "No te dejes arrastrar por los accidentes exteriores; procúrate tiempo libre para aprender algo bueno y cesa de girar como un trompo. Pero también debes guardarte de otro extravío: el de aquellos que, cansados de la vida por sus actividades, no tienen blanco hacia donde dirigir todo su impulso y, en suma, su pensamiento.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "La expresión 'girar como un trompo' se utiliza para criticar:",
+          "tipo": "semantico",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "El juego excesivo en los adultos",
+              "es_correcta": false
+            },
+            {
+              "texto": "La actividad constante sin un propósito claro",
+              "es_correcta": true
+            },
+            {
+              "texto": "La falta de ejercicio físico",
+              "es_correcta": false
+            },
+            {
+              "texto": "La sabiduría de los antiguos filósofos",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "El autor advierte sobre dos peligros: dejarse llevar por lo externo y:",
+          "tipo": "informativo",
+          "dificultad": "media",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Aprender cosas que no son útiles",
+              "es_correcta": false
+            },
+            {
+              "texto": "Vivir una vida sin objetivos o metas",
+              "es_correcta": true
+            },
+            {
+              "texto": "Tener demasiado tiempo libre",
+              "es_correcta": false
+            },
+            {
+              "texto": "Descansar demasiado durante el día",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se deduce que para el autor una vida plena requiere:",
+          "tipo": "filosofico",
+          "dificultad": "alta",
+          "competencia": "reflexionar",
+          "opciones": [
+            {
+              "texto": "Riqueza y reconocimiento social",
+              "es_correcta": false
+            },
+            {
+              "texto": "Equilibrio entre aprendizaje y propósito",
+              "es_correcta": true
+            },
+            {
+              "texto": "Aislamiento total de la sociedad",
+              "es_correcta": false
+            },
+            {
+              "texto": "Trabajo ininterrumpido hasta el cansancio",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La palabra 'blanco' en el texto es sinónimo de:",
+          "tipo": "semantico",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Color claro",
+              "es_correcta": false
+            },
+            {
+              "texto": "Objetivo o meta",
+              "es_correcta": true
+            },
+            {
+              "texto": "Vacío mental",
+              "es_correcta": false
+            },
+            {
+              "texto": "Pureza espiritual",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto_discontinuo",
+      "contexto": "[Imagina una infografía sobre el ciclo del agua que muestra que el 97% es salada, 2% está en glaciares y solo el 1% es apta para consumo humano].",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la intención principal de presentar estos datos en una infografía?",
+          "tipo": "analisis",
+          "dificultad": "baja",
+          "competencia": "reflexionar",
+          "opciones": [
+            {
+              "texto": "Fomentar el turismo en los glaciares",
+              "es_correcta": false
+            },
+            {
+              "texto": "Concientizar sobre la escasez del agua dulce",
+              "es_correcta": true
+            },
+            {
+              "texto": "Explicar por qué el mar es salado",
+              "es_correcta": false
+            },
+            {
+              "texto": "Promover la desalinización masiva",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Si el calentamiento global derrite los glaciares hacia el mar, según los datos:",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Aumentará el agua potable disponible",
+              "es_correcta": false
+            },
+            {
+              "texto": "El agua dulce de los glaciares se volverá salada",
+              "es_correcta": true
+            },
+            {
+              "texto": "El porcentaje de agua salada disminuirá drásticamente",
+              "es_correcta": false
+            },
+            {
+              "texto": "El ciclo del agua se detendrá por completo",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La mayor parte del agua dulce del planeta se encuentra en:",
+          "tipo": "informativo",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Los océanos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Los glaciares",
+              "es_correcta": true
+            },
+            {
+              "texto": "Los ríos y lagos",
+              "es_correcta": false
+            },
+            {
+              "texto": "La atmósfera",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Un título adecuado para esta infografía sería:",
+          "tipo": "analisis",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "El inmenso mar azul",
+              "es_correcta": false
+            },
+            {
+              "texto": "La fragilidad del agua potable",
+              "es_correcta": true
+            },
+            {
+              "texto": "Cómo purificar agua en casa",
+              "es_correcta": false
+            },
+            {
+              "texto": "Los seres vivos y el agua",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto_discontinuo",
+      "contexto": "[Imagina una caricatura donde un niño le pregunta a su padre: '¿Por qué los adultos construyen muros si luego quieren puentes para cruzar?', el padre responde leyendo el periódico: 'Es para que no se nos olvide cómo construir puentes'].",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "La pregunta del niño resalta una:",
+          "tipo": "analisis",
+          "dificultad": "media",
+          "competencia": "reflexionar",
+          "opciones": [
+            {
+              "texto": "Curiosidad técnica por la arquitectura",
+              "es_correcta": false
+            },
+            {
+              "texto": "Contradicción en el comportamiento humano",
+              "es_correcta": true
+            },
+            {
+              "texto": "Falta de educación sobre geografía",
+              "es_correcta": false
+            },
+            {
+              "texto": "Preocupación por el costo de las obras públicas",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La respuesta del padre puede interpretarse como:",
+          "tipo": "analisis",
+          "dificultad": "alta",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Una explicación lógica y satisfactoria",
+              "es_correcta": false
+            },
+            {
+              "texto": "Una evasiva irónica ante la dura realidad",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un consejo práctico para el futuro del niño",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un dato histórico real sobre la ingeniería",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "En la caricatura, los 'muros' y 'puentes' funcionan como:",
+          "tipo": "literario",
+          "dificultad": "media",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Metáforas de conflicto y comunicación",
+              "es_correcta": true
+            },
+            {
+              "texto": "Ejemplos de infraestructura urbana",
+              "es_correcta": false
+            },
+            {
+              "texto": "Adornos del dibujo sin significado profundo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Objetos de estudio de la física",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué sentimiento evoca principalmente la escena?",
+          "tipo": "analisis",
+          "dificultad": "media",
+          "competencia": "reflexionar",
+          "opciones": [
+            {
+              "texto": "Alegría y celebración",
+              "es_correcta": false
+            },
+            {
+              "texto": "Reflexión melancólica sobre la sociedad",
+              "es_correcta": true
+            },
+            {
+              "texto": "Miedo ante una catástrofe inminente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Entusiasmo por el progreso tecnológico",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto_informativo",
+      "contexto": "La Regeneración en Colombia (finales del siglo XIX) buscó centralizar el poder y unificar el país bajo una sola religión y lengua, dándole fin al federalismo extremo imperante. Sin embargo, esto exacerbó tensiones que llevaron a la Guerra de los Mil Días.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "El objetivo principal de la Regeneración era:",
+          "tipo": "historico",
+          "dificultad": "baja",
+          "competencia": "comprender",
+          "opciones": [
+            {
+              "texto": "Promover la diversidad cultural",
+              "es_correcta": false
+            },
+            {
+              "texto": "Fortalecer el poder del gobierno central",
+              "es_correcta": true
+            },
+            {
+              "texto": "Permitir que cada región fuera independiente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Eliminar la religión de la vida pública",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Una consecuencia NO deseada de este movimiento fue:",
+          "tipo": "analisis",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "La unificación del idioma",
+              "es_correcta": false
+            },
+            {
+              "texto": "El estallido de un conflicto civil sangriento",
+              "es_correcta": true
+            },
+            {
+              "texto": "El fin del federalismo",
+              "es_correcta": false
+            },
+            {
+              "texto": "La centralización de la justicia",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "El texto presenta una relación de:",
+          "tipo": "argumentativo",
+          "dificultad": "media",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Causa y efecto",
+              "es_correcta": true
+            },
+            {
+              "texto": "Problema sin solución",
+              "es_correcta": false
+            },
+            {
+              "texto": "Comparación por analogía",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cronología de éxitos",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La palabra 'exacerbó' en el texto significa:",
+          "tipo": "semantico",
+          "dificultad": "media",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Solucionó",
+              "es_correcta": false
+            },
+            {
+              "texto": "Intensificó o agravó",
+              "es_correcta": true
+            },
+            {
+              "texto": "Disminuyó",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ignoró",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto_literario",
+      "contexto": "Puedo escribir los versos más tristes esta noche. / Escribir, por ejemplo: 'La noche está estrellada, / y tiritan, azules, los astros, a lo lejos'. / El viento de la noche gira en el cielo y canta.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "El uso del verbo 'tiritan' para referirse a los astros es una:",
+          "tipo": "literario",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Hipérbole",
+              "es_correcta": false
+            },
+            {
+              "texto": "Personificación",
+              "es_correcta": true
+            },
+            {
+              "texto": "Comparación",
+              "es_correcta": false
+            },
+            {
+              "texto": "Onomatopeya",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "El sentimiento predominante en estos versos es la:",
+          "tipo": "analisis",
+          "dificultad": "baja",
+          "competencia": "comprender",
+          "opciones": [
+            {
+              "texto": "Melancolía",
+              "es_correcta": true
+            },
+            {
+              "texto": "Euforia",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ira",
+              "es_correcta": false
+            },
+            {
+              "texto": "Indiferencia",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué efecto produce la mención de que los astros están 'a lo lejos'?",
+          "tipo": "analisis",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Sensación de cercanía y calidez",
+              "es_correcta": false
+            },
+            {
+              "texto": "Refuerza la soledad y distancia emocional del yo lírico",
+              "es_correcta": true
+            },
+            {
+              "texto": "Indica un interés por la astronomía",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sugiere que el autor tiene problemas de vista",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La estructura 'Puedo escribir... Escribir, por ejemplo...' sugiere que el poeta:",
+          "tipo": "analisis",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "No sabe qué escribir realmente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Está en un proceso de creación y reflexión sobre su dolor",
+              "es_correcta": true
+            },
+            {
+              "texto": "Está obligado a escribir por un contrato",
+              "es_correcta": false
+            },
+            {
+              "texto": "Prefiere hablar que escribir",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto_informativo",
+      "contexto": "La física cuántica nos dice que, a nivel subatómico, las partículas pueden estar en dos lugares al mismo tiempo (superposición). Esto desafía nuestra intuición cotidiana, formada en un mundo de objetos grandes donde las cosas son o no son.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "El concepto de 'superposición' se refiere a:",
+          "tipo": "informativo",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Estar encima de otro objeto",
+              "es_correcta": false
+            },
+            {
+              "texto": "La capacidad de ocupar múltiples estados simultáneamente",
+              "es_correcta": true
+            },
+            {
+              "texto": "La desaparición total de la materia",
+              "es_correcta": false
+            },
+            {
+              "texto": "El movimiento muy rápido de los planetas",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Nuestra intuición nos suele engañar en el mundo cuántico porque:",
+          "tipo": "analisis",
+          "dificultad": "media",
+          "competencia": "reflexionar",
+          "opciones": [
+            {
+              "texto": "No somos lo suficientemente inteligentes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Estamos acostumbrados a las reglas del mundo macroscópico",
+              "es_correcta": true
+            },
+            {
+              "texto": "La física cuántica es una invención sin pruebas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Nuestros ojos no pueden ver partículas",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Un sinónimo de 'intuición' en este contexto sería:",
+          "tipo": "semantico",
+          "dificultad": "media",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Sentido común o percepción habitual",
+              "es_correcta": true
+            },
+            {
+              "texto": "Adivinación mágica",
+              "es_correcta": false
+            },
+            {
+              "texto": "Teoría científica compleja",
+              "es_correcta": false
+            },
+            {
+              "texto": "Instinto de supervivencia",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La intención del fragmento es principalmente:",
+          "tipo": "informativo",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Criticar a los científicos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Divulgar un concepto científico complejo de forma sencilla",
+              "es_correcta": true
+            },
+            {
+              "texto": "Hacer un experimento en casa",
+              "es_correcta": false
+            },
+            {
+              "texto": "Demostrar que el mundo macroscópico no existe",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto_filosofico",
+      "contexto": "En la 'modernidad líquida', los vínculos humanos son frágiles y transitorios. Las redes sociales han reemplazado la 'comunidad' por la 'red', donde es tan fácil conectarse como desconectarse, evitando el compromiso real.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "La metáfora de lo 'líquido' sugiere que la sociedad actual es:",
+          "tipo": "filosofico",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Fluida, cambiante e inestable",
+              "es_correcta": true
+            },
+            {
+              "texto": "Refrescante y necesaria",
+              "es_correcta": false
+            },
+            {
+              "texto": "Dura y difícil de romper",
+              "es_correcta": false
+            },
+            {
+              "texto": "Transparente y honesta",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La principal diferencia entre una 'comunidad' y una 'red' según el texto es:",
+          "tipo": "argumentativo",
+          "dificultad": "alta",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "La red tiene más personas",
+              "es_correcta": false
+            },
+            {
+              "texto": "El nivel de compromiso y la facilidad de abandono",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que la comunidad es digital y la red es física",
+              "es_correcta": false
+            },
+            {
+              "texto": "No hay diferencia sustancial",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del texto se infiere que el autor tiene una visión:",
+          "tipo": "analisis",
+          "dificultad": "media",
+          "competencia": "reflexionar",
+          "opciones": [
+            {
+              "texto": "Muy positiva sobre los avances tecnológicos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Crítica sobre la calidad de las relaciones modernas",
+              "es_correcta": true
+            },
+            {
+              "texto": "Entusiasta por la libertad de desconexión",
+              "es_correcta": false
+            },
+            {
+              "texto": "Científica sobre la viscosidad de los líquidos",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Una consecuencia de los 'vínculos frágiles' es:",
+          "tipo": "argumentativo",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Relaciones que duran toda la vida",
+              "es_correcta": false
+            },
+            {
+              "texto": "Falta de profundidad en el compromiso mutuo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Mayor seguridad emocional para todos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Eliminación completa de los conflictos",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto_literario",
+      "contexto": "Don Quijote no es un loco, es un hombre que decide vivir en una obra de arte. Su 'locura' es una herramienta política para denunciar la chatura de un mundo que ha perdido sus ideales de caballería y justicia.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "El autor del fragmento propone una relectura del Quijote como:",
+          "tipo": "analisis",
+          "dificultad": "media",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Un enfermo mental digno de lástima",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un rebelde consciente con un propósito idealista",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un anciano que no sabe lo que hace",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un actor de teatro profesional",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La 'chatura del mundo' se refiere a:",
+          "tipo": "semantico",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "La forma plana de la Tierra",
+              "es_correcta": false
+            },
+            {
+              "texto": "La falta de profundidad y de grandes ideales",
+              "es_correcta": true
+            },
+            {
+              "texto": "Los paisajes de la Mancha",
+              "es_correcta": false
+            },
+            {
+              "texto": "La sencillez de la vida campestre",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Según el texto, la locura de Don Quijote tiene una función:",
+          "tipo": "analisis",
+          "dificultad": "media",
+          "competencia": "comprender",
+          "opciones": [
+            {
+              "texto": "Médica",
+              "es_correcta": false
+            },
+            {
+              "texto": "Denunciatoria y transformadora",
+              "es_correcta": true
+            },
+            {
+              "texto": "Cómica exclusivamente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Decorativa",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "El texto sugiere que la caballería:",
+          "tipo": "analisis",
+          "dificultad": "alta",
+          "competencia": "reflexionar",
+          "opciones": [
+            {
+              "texto": "Es una pérdida de tiempo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Es un conjunto de valores que el mundo actual extraña",
+              "es_correcta": true
+            },
+            {
+              "texto": "Solo existió en los libros de ficción",
+              "es_correcta": false
+            },
+            {
+              "texto": "Debe ser prohibida por ser peligrosa",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto_informativo",
+      "contexto": "Los microplásticos están ya en la nieve del Ártico, en la sangre humana y en las profundidades del foso de las Marianas. No es solo un problema de basura visible; es una contaminación invisible que ha entrado en la cadena trófica.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "El término 'contaminación invisible' se refiere a que los microplásticos:",
+          "tipo": "informativo",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Son transparentes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Son tan pequeños que no se notan pero están presentes",
+              "es_correcta": true
+            },
+            {
+              "texto": "No causan ningún daño real",
+              "es_correcta": false
+            },
+            {
+              "texto": "Se evaporan con el sol",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué implica que hayan entrado en la cadena trófica?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Que los animales los usan para construir nidos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que son consumidos por organismos y llegan hasta nosotros",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que ayudan a la digestión de los peces",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que se disuelven en el estómago sin dejar rastro",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La mención de lugares tan distantes (Ártico y foso de las Marianas) sirve para resaltar:",
+          "tipo": "analisis",
+          "dificultad": "media",
+          "competencia": "reflexionar",
+          "opciones": [
+            {
+              "texto": "La belleza de la naturaleza",
+              "es_correcta": false
+            },
+            {
+              "texto": "La ubicuidad y gravedad global del problema",
+              "es_correcta": true
+            },
+            {
+              "texto": "Lo difícil que es viajar a esos sitios",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que el plástico flota muy bien",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Una medida efectiva contra este problema, basada en el texto, sería:",
+          "tipo": "argumentativo",
+          "dificultad": "alta",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Limpiar solo las playas turísticas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Reducir drásticamente la producción de plásticos desde la fuente",
+              "es_correcta": true
+            },
+            {
+              "texto": "Poner filtros en los ojos para no verlos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Exportar la basura a otros planetas",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto_filosofico",
+      "contexto": "El hombre está condenado a ser libre. Condenado, porque no se ha creado a sí mismo y, sin embargo, es libre, porque una vez arrojado al mundo es responsable de todo lo que hace.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Por qué el autor usa la palabra 'condenado' para referirse a la libertad?",
+          "tipo": "filosofico",
+          "dificultad": "alta",
+          "competencia": "reflexionar",
+          "opciones": [
+            {
+              "texto": "Porque la libertad es un castigo divino",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque implica una responsabilidad ineludible y a veces pesada",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque nadie quiere ser realmente libre",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque la libertad solo existe en las cárceles",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Ser 'responsable de todo lo que hace' implica que:",
+          "tipo": "analisis",
+          "dificultad": "media",
+          "competencia": "comprender",
+          "opciones": [
+            {
+              "texto": "No podemos culpar al destino o a la herencia por nuestros actos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Nuestras acciones no tienen importancia",
+              "es_correcta": false
+            },
+            {
+              "texto": "Debemos pedir permiso para cada decisión",
+              "es_correcta": false
+            },
+            {
+              "texto": "Alguien más pagará por nuestros errores",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La frase 'no se ha creado a sí mismo' sugiere que:",
+          "tipo": "filosofico",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "El hombre es un robot",
+              "es_correcta": false
+            },
+            {
+              "texto": "Nacemos en un mundo que no elegimos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Podemos cambiar nuestro ADN al nacer",
+              "es_correcta": false
+            },
+            {
+              "texto": "El hombre es eterno",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "texto_informativo",
+      "contexto": "La privacidad digital es el derecho de los individuos a controlar qué información personal se recopila, almacena y comparte. En la era de los datos, el usuario a menudo es el producto, no el cliente.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "La frase 'el usuario es el producto' sugiere que:",
+          "tipo": "analisis",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Las empresas nos regalan todo por bondad",
+              "es_correcta": false
+            },
+            {
+              "texto": "Nuestros datos son la mercancía que las empresas venden",
+              "es_correcta": true
+            },
+            {
+              "texto": "Somos dueños de las empresas digitales",
+              "es_correcta": false
+            },
+            {
+              "texto": "Debemos pagar más por las aplicaciones",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué acción fortalece la privacidad digital?",
+          "tipo": "informativo",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Compartir todas las contraseñas en foros",
+              "es_correcta": false
+            },
+            {
+              "texto": "Configurar opciones de privacidad y usar cifrado",
+              "es_correcta": true
+            },
+            {
+              "texto": "Aceptar todos los términos y condiciones sin leer",
+              "es_correcta": false
+            },
+            {
+              "texto": "No usar internet nunca más",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "El control sobre la información personal es un:",
+          "tipo": "informativo",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Lujo para pocos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Derecho fundamental en la era digital",
+              "es_correcta": true
+            },
+            {
+              "texto": "Delito informático",
+              "es_correcta": false
+            },
+            {
+              "texto": "Secreto de estado",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

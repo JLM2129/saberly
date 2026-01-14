@@ -1,0 +1,17 @@
+{
+    "name": "Saberly - Prep ICFES",
+    "short_name": "Saberly",
+    "description": "Plataforma de preparación para el examen ICFES Saber 11 con modo offline.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0f172a",
+    "theme_color": "#6366f1",
+    "icons": [
+        {
+            "src": "pwa-icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

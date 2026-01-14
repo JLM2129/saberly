@@ -1,0 +1,100 @@
+[
+  {
+    "area": "Lectura Crítica",
+    "subarea": "Textos Continuos",
+    "enunciado": "RESPONDA LAS PREGUNTAS 1 A 3 DE ACUERDO CON EL SIGUIENTE TEXTO:\n\n'En nuestra sociedad, se tiende a pensar que el avance tecnológico es siempre sinónimo de progreso humano. Sin embargo, diversos filósofos contemporáneos argumentan que la tecnología, si bien facilita la vida material, puede atrofiar ciertas capacidades espirituales o cognitivas si se utiliza sin criterio. No se trata de volver a las cavernas, sino de cuestionar si cada nueva aplicación o dispositivo nos hace realmente más libres o más dependientes.'\n\n1. Según el texto, el autor sugiere que:",
+    "tipo": "lectura",
+    "dificultad": "dificil",
+    "explicacion": "El autor propone una postura crítica ('cuestionar') frente a la tecnología, no un rechazo total ('volver a las cavernas') ni una aceptación ciega.",
+    "opciones": [
+      {"texto": "La tecnología es intrínsecamente mala y debemos rechazarla.", "es_correcta": false},
+      {"texto": "El progreso material siempre conlleva un retroceso espiritual.", "es_correcta": false},
+      {"texto": "Se debe analizar críticamente si la tecnología favorece la libertad humana.", "es_correcta": true},
+      {"texto": "Los filósofos contemporáneos están en contra del avance científico.", "es_correcta": false}
+    ]
+  },
+  {
+    "area": "Lectura Crítica",
+    "subarea": "Textos Continuos",
+    "enunciado": "2. En el texto, la expresión 'volver a las cavernas' se utiliza para:",
+    "tipo": "lectura",
+    "dificultad": "media",
+    "explicacion": "La expresión es una metáfora de un retroceso total a un estado primitivo, usada aquí para aclarar que esa NO es la propuesta del autor.",
+    "opciones": [
+      {"texto": "Describir el estilo de vida de los filósofos antiguos.", "es_correcta": false},
+      {"texto": "Ilustrar una postura radical de rechazo total a la tecnología.", "es_correcta": true},
+      {"texto": "Promover un retorno a la naturaleza y la vida salvaje.", "es_correcta": false},
+      {"texto": "Criticar la oscuridad intelectual de la época moderna.", "es_correcta": false}
+    ]
+  },
+  {
+    "area": "Matemáticas",
+    "subarea": "Estadística",
+    "enunciado": "En una bolsa hay 3 bolas rojas, 4 bolas verdes y 5 bolas azules. Si se saca una bola al azar, ¿cuál es la probabilidad de que NO sea verde?",
+    "tipo": "seleccion_multiple",
+    "dificultad": "facil",
+    "explicacion": "Total de bolas = 3 + 4 + 5 = 12. Bolas que NO son verdes = Rojas (3) + Azules (5) = 8. Probabilidad = 8/12, que simplificado es 2/3.",
+    "opciones": [
+      {"texto": "1/3", "es_correcta": false},
+      {"texto": "4/12", "es_correcta": false},
+      {"texto": "2/3", "es_correcta": true},
+      {"texto": "5/12", "es_correcta": false}
+    ]
+  },
+  {
+    "area": "Matemáticas",
+    "subarea": "Geometría",
+    "enunciado": "Un tanque cilíndrico tiene un radio de 2 metros y una altura de 5 metros. Si se quiere llenar el 50% de su capacidad con agua, ¿cuántos metros cúbicos de agua se necesitan? (Use pi ≈ 3.14)",
+    "tipo": "seleccion_multiple",
+    "dificultad": "media",
+    "explicacion": "Volumen total = pi * r^2 * h = 3.14 * (2^2) * 5 = 3.14 * 4 * 5 = 62.8 m3. El 50% es la mitad: 31.4 m3.",
+    "opciones": [
+      {"texto": "62.8 m3", "es_correcta": false},
+      {"texto": "31.4 m3", "es_correcta": true},
+      {"texto": "15.7 m3", "es_correcta": false},
+      {"texto": "100 m3", "es_correcta": false}
+    ]
+  },
+  {
+    "area": "Ciencias Naturales",
+    "subarea": "Biología",
+    "enunciado": "La membrana celular cumple una función selectiva permitiendo el paso de ciertas sustancias e impidiendo el paso de otras. Este proceso es fundamental para:",
+    "tipo": "seleccion_multiple",
+    "dificultad": "facil",
+    "explicacion": "La homeostasis es el equilibrio interno de la célula, mantenido gracias a la regulación del transporte de sustancias.",
+    "opciones": [
+      {"texto": "La reproducción celular descontrolada.", "es_correcta": false},
+      {"texto": "El mantenimiento de la homeostasis celular.", "es_correcta": true},
+      {"texto": "La síntesis exclusiva de proteínas.", "es_correcta": false},
+      {"texto": "La rigidez estructural de la planta.", "es_correcta": false}
+    ]
+  },
+  {
+    "area": "Sociales y Ciudadanas",
+    "subarea": "Pensamiento Social",
+    "enunciado": "Durante el siglo XIX en Colombia, el federalismo fue una doctrina política defendida principalmente por:",
+    "tipo": "seleccion_multiple",
+    "dificultad": "media",
+    "explicacion": "Tradicionalmente, en el s. XIX colombiano, el Partido Liberal propugnaba por el federalismo y la descentralización, mientras los Conservadores preferían el centralismo.",
+    "opciones": [
+      {"texto": "El Partido Conservador.", "es_correcta": false},
+      {"texto": "El Partido Liberal.", "es_correcta": true},
+      {"texto": "La Iglesia Católica.", "es_correcta": false},
+      {"texto": "Los movimientos indígenas.", "es_correcta": false}
+    ]
+  },
+  {
+    "area": "Inglés",
+    "subarea": "Parte 3 (Conversación)",
+    "enunciado": "Complete la conversación:\nPerson A: 'I have a terrible headache.'\nPerson B: '______'",
+    "tipo": "seleccion_multiple",
+    "dificultad": "facil",
+    "explicacion": "Ante un dolor de cabeza, la sugerencia lógica es descansar o tomar medicina.",
+    "opciones": [
+      {"texto": "You should go to the party.", "es_correcta": false},
+      {"texto": "You should take some rest.", "es_correcta": true},
+      {"texto": "I like headaches too.", "es_correcta": false},
+      {"texto": "Congratulations!", "es_correcta": false}
+    ]
+  }
+]

@@ -1,0 +1,2802 @@
+{
+  "nombre": "Matematicas",
+  "descripcion": "Evalúa la logica y conocimientos matematicos.",
+  "contextos": [
+    {
+      "tipo": "contexto_matematico",
+      "contexto": "Un colegio organiza una excursión y contrata un bus cuyo costo fijo es de $200.000 más $5.000 por cada estudiante que asista.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál expresión representa el costo total C en función del número de estudiantes x?",
+          "tipo": "modelacion",
+          "dificultad": "media",
+          "competencia": "formular",
+          "opciones": [
+            {
+              "texto": "C = 200000 + 5000x",
+              "es_correcta": true
+            },
+            {
+              "texto": "C = 5000 + 200000x",
+              "es_correcta": false
+            },
+            {
+              "texto": "C = 200000x + 5000",
+              "es_correcta": false
+            },
+            {
+              "texto": "C = 205000x",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Si asisten 30 estudiantes, ¿cuál es el costo total del bus?",
+          "tipo": "resolucion",
+          "dificultad": "baja",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "$350.000",
+              "es_correcta": true
+            },
+            {
+              "texto": "$500.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$200.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$150.000",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "problema",
+      "contexto": "Un rectángulo tiene un perímetro de 40 cm. El largo mide el doble del ancho.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la medida del ancho del rectángulo?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "5 cm",
+              "es_correcta": true
+            },
+            {
+              "texto": "10 cm",
+              "es_correcta": false
+            },
+            {
+              "texto": "8 cm",
+              "es_correcta": false
+            },
+            {
+              "texto": "4 cm",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál es el área del rectángulo?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "100 cm²",
+              "es_correcta": false
+            },
+            {
+              "texto": "80 cm²",
+              "es_correcta": false
+            },
+            {
+              "texto": "200 cm²",
+              "es_correcta": false
+            },
+            {
+              "texto": "50 cm²",
+              "es_correcta": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "contexto": "Relación entre horas trabajadas y dinero ganado.\nHoras: 1, 2, 3, 4\nDinero ($): 8000, 16000, 24000, 32000",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el valor que se gana por cada hora de trabajo?",
+          "tipo": "interpretacion_datos",
+          "dificultad": "baja",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "$8.000",
+              "es_correcta": true
+            },
+            {
+              "texto": "$4.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$16.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$32.000",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué tipo de relación existe entre las horas trabajadas y el dinero ganado?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "argumentar",
+          "opciones": [
+            {
+              "texto": "Proporcional directa",
+              "es_correcta": true
+            },
+            {
+              "texto": "Proporcional inversa",
+              "es_correcta": false
+            },
+            {
+              "texto": "No hay relación",
+              "es_correcta": false
+            },
+            {
+              "texto": "Exponencial",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "probabilidad",
+      "contexto": "En una bolsa hay 3 bolas rojas, 5 azules y 2 verdes.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la probabilidad de sacar una bola azul?",
+          "tipo": "probabilidad",
+          "dificultad": "media",
+          "competencia": "razonar",
+          "opciones": [
+            {
+              "texto": "5/10",
+              "es_correcta": true
+            },
+            {
+              "texto": "3/10",
+              "es_correcta": false
+            },
+            {
+              "texto": "2/10",
+              "es_correcta": false
+            },
+            {
+              "texto": "1/10",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "algebra",
+      "contexto": "Resuelve la ecuación: 3x − 7 = 11",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el valor de x?",
+          "tipo": "algebra",
+          "dificultad": "baja",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "6",
+              "es_correcta": true
+            },
+            {
+              "texto": "4",
+              "es_correcta": false
+            },
+            {
+              "texto": "8",
+              "es_correcta": false
+            },
+            {
+              "texto": "5",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "funciones",
+      "contexto": "La función f(x) = 2x + 3 representa el costo, en miles de pesos, de un servicio según el número de horas x.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el costo del servicio si se usan 4 horas?",
+          "tipo": "resolucion",
+          "dificultad": "baja",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "11",
+              "es_correcta": true
+            },
+            {
+              "texto": "8",
+              "es_correcta": false
+            },
+            {
+              "texto": "10",
+              "es_correcta": false
+            },
+            {
+              "texto": "7",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué representa el número 3 en la función?",
+          "tipo": "interpretacion",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "El costo fijo del servicio",
+              "es_correcta": true
+            },
+            {
+              "texto": "El costo por hora",
+              "es_correcta": false
+            },
+            {
+              "texto": "La cantidad de horas",
+              "es_correcta": false
+            },
+            {
+              "texto": "El total a pagar",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "geometria",
+      "contexto": "Un triángulo rectángulo tiene catetos de 6 cm y 8 cm.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la longitud de la hipotenusa?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "10 cm",
+              "es_correcta": true
+            },
+            {
+              "texto": "14 cm",
+              "es_correcta": false
+            },
+            {
+              "texto": "12 cm",
+              "es_correcta": false
+            },
+            {
+              "texto": "8 cm",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué teorema permite calcular la hipotenusa?",
+          "tipo": "conceptual",
+          "dificultad": "baja",
+          "competencia": "argumentar",
+          "opciones": [
+            {
+              "texto": "Teorema de Pitágoras",
+              "es_correcta": true
+            },
+            {
+              "texto": "Teorema de Tales",
+              "es_correcta": false
+            },
+            {
+              "texto": "Teorema de Euclides",
+              "es_correcta": false
+            },
+            {
+              "texto": "Teorema del seno",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "estadistica",
+      "contexto": "Las edades de un grupo de estudiantes son: 14, 15, 15, 16, 16, 16, 17.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la moda de las edades?",
+          "tipo": "estadistica",
+          "dificultad": "baja",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "16",
+              "es_correcta": true
+            },
+            {
+              "texto": "15",
+              "es_correcta": false
+            },
+            {
+              "texto": "14",
+              "es_correcta": false
+            },
+            {
+              "texto": "17",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál es el promedio de las edades?",
+          "tipo": "estadistica",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "15,6",
+              "es_correcta": true
+            },
+            {
+              "texto": "16",
+              "es_correcta": false
+            },
+            {
+              "texto": "15",
+              "es_correcta": false
+            },
+            {
+              "texto": "14,8",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "proporcionalidad",
+      "contexto": "Para preparar una bebida se usan 2 cucharadas de polvo por cada 500 ml de agua.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuántas cucharadas se necesitan para 1.500 ml de agua?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "6",
+              "es_correcta": true
+            },
+            {
+              "texto": "4",
+              "es_correcta": false
+            },
+            {
+              "texto": "3",
+              "es_correcta": false
+            },
+            {
+              "texto": "5",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "probabilidad",
+      "contexto": "Se lanza un dado estándar de seis caras.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la probabilidad de obtener un número par?",
+          "tipo": "probabilidad",
+          "dificultad": "baja",
+          "competencia": "razonar",
+          "opciones": [
+            {
+              "texto": "1/2",
+              "es_correcta": true
+            },
+            {
+              "texto": "1/3",
+              "es_correcta": false
+            },
+            {
+              "texto": "2/3",
+              "es_correcta": false
+            },
+            {
+              "texto": "1/6",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "porcentajes",
+      "contexto": "Un artículo cuesta $80.000 y tiene un descuento del 25%.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el valor del descuento?",
+          "tipo": "resolucion",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "$20.000",
+              "es_correcta": true
+            },
+            {
+              "texto": "$15.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$25.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$10.000",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál es el precio final del artículo?",
+          "tipo": "resolucion",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "$60.000",
+              "es_correcta": true
+            },
+            {
+              "texto": "$55.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$65.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$50.000",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "ecuacion_cuadratica",
+      "contexto": "Resuelve la ecuación: x² − 5x + 6 = 0",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuáles son las soluciones de la ecuación?",
+          "tipo": "algebra",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "x = 2 y x = 3",
+              "es_correcta": true
+            },
+            {
+              "texto": "x = −2 y x = −3",
+              "es_correcta": false
+            },
+            {
+              "texto": "x = 1 y x = 6",
+              "es_correcta": false
+            },
+            {
+              "texto": "x = −1 y x = −6",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "grafica",
+      "contexto": "Una gráfica muestra una recta creciente que corta el eje y en 2 y pasa por el punto (3, 8).",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la pendiente de la recta?",
+          "tipo": "interpretacion_grafica",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "2",
+              "es_correcta": true
+            },
+            {
+              "texto": "3",
+              "es_correcta": false
+            },
+            {
+              "texto": "6",
+              "es_correcta": false
+            },
+            {
+              "texto": "8",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál es la ecuación de la recta?",
+          "tipo": "modelacion",
+          "dificultad": "alta",
+          "competencia": "formular",
+          "opciones": [
+            {
+              "texto": "y = 2x + 2",
+              "es_correcta": true
+            },
+            {
+              "texto": "y = 3x + 2",
+              "es_correcta": false
+            },
+            {
+              "texto": "y = x + 5",
+              "es_correcta": false
+            },
+            {
+              "texto": "y = 8x − 3",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "razonamiento",
+      "contexto": "Si el triple de un número disminuido en 4 es igual a 11.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el número?",
+          "tipo": "algebra",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "5",
+              "es_correcta": true
+            },
+            {
+              "texto": "3",
+              "es_correcta": false
+            },
+            {
+              "texto": "7",
+              "es_correcta": false
+            },
+            {
+              "texto": "4",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "geometria",
+      "contexto": "Un círculo tiene un radio de 7 cm. (π ≈ 3,14)",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el área del círculo?",
+          "tipo": "geometria",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "153,86 cm²",
+              "es_correcta": true
+            },
+            {
+              "texto": "43,96 cm²",
+              "es_correcta": false
+            },
+            {
+              "texto": "98 cm²",
+              "es_correcta": false
+            },
+            {
+              "texto": "307,72 cm²",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "trigonometria",
+      "contexto": "En un triángulo rectángulo, un ángulo agudo mide 30° y la hipotenusa mide 10 cm.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la longitud del cateto opuesto al ángulo de 30°?",
+          "tipo": "trigonometria",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "5 cm",
+              "es_correcta": true
+            },
+            {
+              "texto": "8,66 cm",
+              "es_correcta": false
+            },
+            {
+              "texto": "10 cm",
+              "es_correcta": false
+            },
+            {
+              "texto": "4 cm",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué razón trigonométrica se utiliza para relacionar el cateto opuesto y la hipotenusa?",
+          "tipo": "conceptual",
+          "dificultad": "baja",
+          "competencia": "argumentar",
+          "opciones": [
+            {
+              "texto": "Seno",
+              "es_correcta": true
+            },
+            {
+              "texto": "Coseno",
+              "es_correcta": false
+            },
+            {
+              "texto": "Tangente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Secante",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "sistema_ecuaciones",
+      "contexto": "Resuelve el sistema de ecuaciones:\n2x + y = 7\nx + y = 5",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el valor de x?",
+          "tipo": "algebra",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "2",
+              "es_correcta": true
+            },
+            {
+              "texto": "3",
+              "es_correcta": false
+            },
+            {
+              "texto": "1",
+              "es_correcta": false
+            },
+            {
+              "texto": "4",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál es el valor de y?",
+          "tipo": "algebra",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "3",
+              "es_correcta": true
+            },
+            {
+              "texto": "5",
+              "es_correcta": false
+            },
+            {
+              "texto": "2",
+              "es_correcta": false
+            },
+            {
+              "texto": "4",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "contexto": "Una tabla muestra la cantidad de cuadernos comprados y su costo total.\nCuadernos: 2 | 4 | 6\nCosto ($): 6.000 | 12.000 | 18.000",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el costo de un cuaderno?",
+          "tipo": "interpretacion_datos",
+          "dificultad": "baja",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "$3.000",
+              "es_correcta": true
+            },
+            {
+              "texto": "$2.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$6.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$9.000",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué tipo de relación existe entre cuadernos y costo?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "argumentar",
+          "opciones": [
+            {
+              "texto": "Proporcional directa",
+              "es_correcta": true
+            },
+            {
+              "texto": "Proporcional inversa",
+              "es_correcta": false
+            },
+            {
+              "texto": "No proporcional",
+              "es_correcta": false
+            },
+            {
+              "texto": "Exponencial",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "razones",
+      "contexto": "La razón entre el número de niños y niñas en un curso es 3:2. En total hay 25 estudiantes.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuántos niños hay en el curso?",
+          "tipo": "razonamiento",
+          "dificultad": "alta",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "15",
+              "es_correcta": true
+            },
+            {
+              "texto": "10",
+              "es_correcta": false
+            },
+            {
+              "texto": "12",
+              "es_correcta": false
+            },
+            {
+              "texto": "18",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "medidas",
+      "contexto": "Un terreno rectangular mide 20 m de largo y 15 m de ancho.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el perímetro del terreno?",
+          "tipo": "geometria",
+          "dificultad": "baja",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "70 m",
+              "es_correcta": true
+            },
+            {
+              "texto": "300 m",
+              "es_correcta": false
+            },
+            {
+              "texto": "35 m",
+              "es_correcta": false
+            },
+            {
+              "texto": "60 m",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "funcion_cuadratica",
+      "contexto": "La función h(x) = -x² + 6x representa la altura (en metros) de un objeto lanzado verticalmente, en función del tiempo x (en segundos).",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿En qué tiempo el objeto alcanza su altura máxima?",
+          "tipo": "interpretacion",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "3 segundos",
+              "es_correcta": true
+            },
+            {
+              "texto": "6 segundos",
+              "es_correcta": false
+            },
+            {
+              "texto": "0 segundos",
+              "es_correcta": false
+            },
+            {
+              "texto": "−3 segundos",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál es la altura máxima alcanzada?",
+          "tipo": "resolucion",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "9 metros",
+              "es_correcta": true
+            },
+            {
+              "texto": "6 metros",
+              "es_correcta": false
+            },
+            {
+              "texto": "12 metros",
+              "es_correcta": false
+            },
+            {
+              "texto": "18 metros",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "variacion_inversa",
+      "contexto": "Cuatro trabajadores realizan una obra en 12 días, trabajando al mismo ritmo.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuántos días tardarán 6 trabajadores en realizar la misma obra?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "8 días",
+              "es_correcta": true
+            },
+            {
+              "texto": "6 días",
+              "es_correcta": false
+            },
+            {
+              "texto": "18 días",
+              "es_correcta": false
+            },
+            {
+              "texto": "12 días",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "grafica",
+      "contexto": "Una gráfica muestra una curva parabólica que corta el eje x en los puntos x = 1 y x = 5.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es una posible expresión algebraica de la función?",
+          "tipo": "modelacion",
+          "dificultad": "alta",
+          "competencia": "formular",
+          "opciones": [
+            {
+              "texto": "y = (x − 1)(x − 5)",
+              "es_correcta": true
+            },
+            {
+              "texto": "y = x² − 6",
+              "es_correcta": false
+            },
+            {
+              "texto": "y = x² + 6",
+              "es_correcta": false
+            },
+            {
+              "texto": "y = (x + 1)(x + 5)",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "razonamiento_logico",
+      "contexto": "Si hoy es lunes, dentro de 100 días será:",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué día de la semana será dentro de 100 días?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "razonar",
+          "opciones": [
+            {
+              "texto": "Miércoles",
+              "es_correcta": true
+            },
+            {
+              "texto": "Lunes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Martes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Jueves",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "contexto_financiero",
+      "contexto": "Una persona invierte $1.000.000 a una tasa de interés simple del 10% anual.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuánto dinero tendrá al final de 2 años?",
+          "tipo": "financiero",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "$1.200.000",
+              "es_correcta": true
+            },
+            {
+              "texto": "$1.100.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$1.020.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$1.300.000",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "probabilidad_compuesta",
+      "contexto": "En una caja hay 4 fichas rojas, 3 azules y 3 verdes. Se extrae una ficha al azar y luego otra, sin devolver la primera.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la probabilidad de que ambas fichas sean rojas?",
+          "tipo": "probabilidad",
+          "dificultad": "alta",
+          "competencia": "razonar",
+          "opciones": [
+            {
+              "texto": "2/15",
+              "es_correcta": true
+            },
+            {
+              "texto": "4/25",
+              "es_correcta": false
+            },
+            {
+              "texto": "1/5",
+              "es_correcta": false
+            },
+            {
+              "texto": "1/15",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "analisis_grafico",
+      "contexto": "Una gráfica muestra el crecimiento de una planta durante 6 semanas. En las primeras 3 semanas el crecimiento es lento y luego se acelera.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿En qué periodo el crecimiento de la planta es mayor?",
+          "tipo": "interpretacion_grafica",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Entre la semana 4 y 6",
+              "es_correcta": true
+            },
+            {
+              "texto": "Entre la semana 1 y 3",
+              "es_correcta": false
+            },
+            {
+              "texto": "Es constante en todo el periodo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Disminuye al final",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Del comportamiento de la gráfica se puede inferir que:",
+          "tipo": "inferencia",
+          "dificultad": "media",
+          "competencia": "inferir",
+          "opciones": [
+            {
+              "texto": "Las condiciones cambiaron favoreciendo el crecimiento",
+              "es_correcta": true
+            },
+            {
+              "texto": "La planta dejó de crecer",
+              "es_correcta": false
+            },
+            {
+              "texto": "El crecimiento fue negativo",
+              "es_correcta": false
+            },
+            {
+              "texto": "No hubo cambios ambientales",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "razonamiento_logico",
+      "contexto": "Si el doble de un número más 5 es igual a 21.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el número?",
+          "tipo": "algebra",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "8",
+              "es_correcta": true
+            },
+            {
+              "texto": "6",
+              "es_correcta": false
+            },
+            {
+              "texto": "10",
+              "es_correcta": false
+            },
+            {
+              "texto": "7",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "proporcion",
+      "contexto": "Para preparar una mezcla se utilizan 3 litros de agua por cada 2 litros de concentrado.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuántos litros de concentrado se necesitan para 12 litros de agua?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "8 litros",
+              "es_correcta": true
+            },
+            {
+              "texto": "6 litros",
+              "es_correcta": false
+            },
+            {
+              "texto": "9 litros",
+              "es_correcta": false
+            },
+            {
+              "texto": "4 litros",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "estadistica",
+      "contexto": "Los puntajes de un grupo de estudiantes en una prueba son: 50, 60, 70, 70, 80, 90.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la mediana de los puntajes?",
+          "tipo": "estadistica",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "70",
+              "es_correcta": true
+            },
+            {
+              "texto": "65",
+              "es_correcta": false
+            },
+            {
+              "texto": "75",
+              "es_correcta": false
+            },
+            {
+              "texto": "60",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "funciones",
+      "contexto": "La función f(x) = 2x + 3 representa el costo de un servicio según la cantidad de horas trabajadas.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el costo del servicio si se trabajan 5 horas?",
+          "tipo": "funcion_lineal",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "13",
+              "es_correcta": true
+            },
+            {
+              "texto": "10",
+              "es_correcta": false
+            },
+            {
+              "texto": "15",
+              "es_correcta": false
+            },
+            {
+              "texto": "8",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué representa el número 3 en la función?",
+          "tipo": "interpretacion",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "El costo fijo del servicio",
+              "es_correcta": true
+            },
+            {
+              "texto": "El número de horas",
+              "es_correcta": false
+            },
+            {
+              "texto": "El costo por hora",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un error de cálculo",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "geometria",
+      "contexto": "Un triángulo tiene dos lados que miden 5 cm y 7 cm.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál puede ser la medida del tercer lado?",
+          "tipo": "razonamiento_geometrico",
+          "dificultad": "media",
+          "competencia": "razonar",
+          "opciones": [
+            {
+              "texto": "6 cm",
+              "es_correcta": true
+            },
+            {
+              "texto": "2 cm",
+              "es_correcta": false
+            },
+            {
+              "texto": "13 cm",
+              "es_correcta": false
+            },
+            {
+              "texto": "1 cm",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "geometria_analitica",
+      "contexto": "Se tiene el punto A(2,3) en el plano cartesiano.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿En qué cuadrante se encuentra el punto A?",
+          "tipo": "plano_cartesiano",
+          "dificultad": "baja",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Primer cuadrante",
+              "es_correcta": true
+            },
+            {
+              "texto": "Segundo cuadrante",
+              "es_correcta": false
+            },
+            {
+              "texto": "Tercer cuadrante",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cuarto cuadrante",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "modelacion",
+      "contexto": "Un automóvil consume 1 litro de gasolina por cada 12 km recorridos.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuántos litros necesita para recorrer 180 km?",
+          "tipo": "proporcionalidad",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "15 litros",
+              "es_correcta": true
+            },
+            {
+              "texto": "12 litros",
+              "es_correcta": false
+            },
+            {
+              "texto": "18 litros",
+              "es_correcta": false
+            },
+            {
+              "texto": "10 litros",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "probabilidad",
+      "contexto": "En una rifa hay 10 boletos, de los cuales 4 son ganadores.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la probabilidad de ganar al comprar un boleto?",
+          "tipo": "probabilidad_simple",
+          "dificultad": "baja",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "2/5",
+              "es_correcta": true
+            },
+            {
+              "texto": "4/10",
+              "es_correcta": false
+            },
+            {
+              "texto": "1/4",
+              "es_correcta": false
+            },
+            {
+              "texto": "3/5",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "geometria_espacial",
+      "contexto": "Un tanque cilíndrico tiene un radio de 2 metros y una altura de 5 metros.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el volumen del tanque en metros cúbicos? (Use π ≈ 3,14)",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "62,8 m³",
+              "es_correcta": true
+            },
+            {
+              "texto": "31,4 m³",
+              "es_correcta": false
+            },
+            {
+              "texto": "20,0 m³",
+              "es_correcta": false
+            },
+            {
+              "texto": "125,6 m³",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Si el radio del tanque se duplica y la altura se mantiene, el volumen:",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Se duplica",
+              "es_correcta": false
+            },
+            {
+              "texto": "Se triplica",
+              "es_correcta": false
+            },
+            {
+              "texto": "Se cuadriplica",
+              "es_correcta": true
+            },
+            {
+              "texto": "Se mantiene igual",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "porcentajes_finanzas",
+      "contexto": "Una tienda ofrece un televisor de $1.200.000 con un descuento del 15% por pago en efectivo.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿De cuánto es el ahorro en pesos si se paga en efectivo?",
+          "tipo": "resolucion",
+          "dificultad": "baja",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "$180.000",
+              "es_correcta": true
+            },
+            {
+              "texto": "$150.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$120.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$200.000",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Si después del descuento se debe pagar un IVA del 10% sobre el valor rebajado, el precio final es:",
+          "tipo": "resolucion",
+          "dificultad": "alta",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "$1.122.000",
+              "es_correcta": true
+            },
+            {
+              "texto": "$1.200.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$1.020.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$1.100.000",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "sistemas_lineales",
+      "contexto": "En una granja hay gallinas y conejos. En total hay 20 cabezas y 50 patas.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuántas gallinas hay en la granja?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "15",
+              "es_correcta": true
+            },
+            {
+              "texto": "5",
+              "es_correcta": false
+            },
+            {
+              "texto": "10",
+              "es_correcta": false
+            },
+            {
+              "texto": "12",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuántos conejos hay en la granja?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "5",
+              "es_correcta": true
+            },
+            {
+              "texto": "15",
+              "es_correcta": false
+            },
+            {
+              "texto": "10",
+              "es_correcta": false
+            },
+            {
+              "texto": "8",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "probabilidad",
+      "contexto": "De una baraja española de 40 cartas se extrae una carta al azar.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la probabilidad de que la carta sea un as (hay 4 ases)?",
+          "tipo": "probabilidad",
+          "dificultad": "baja",
+          "competencia": "razonar",
+          "opciones": [
+            {
+              "texto": "1/10",
+              "es_correcta": true
+            },
+            {
+              "texto": "1/40",
+              "es_correcta": false
+            },
+            {
+              "texto": "4/10",
+              "es_correcta": false
+            },
+            {
+              "texto": "1/4",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál es la probabilidad de que sea una carta de oros (hay 10 cartas de cada palo)?",
+          "tipo": "probabilidad",
+          "dificultad": "baja",
+          "competencia": "razonar",
+          "opciones": [
+            {
+              "texto": "0,25",
+              "es_correcta": true
+            },
+            {
+              "texto": "0,10",
+              "es_correcta": false
+            },
+            {
+              "texto": "0,50",
+              "es_correcta": false
+            },
+            {
+              "texto": "0,75",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "estadistica_avanzada",
+      "contexto": "Un conjunto de datos tiene una media de 50 y una desviación estándar de 0.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué se puede concluir sobre los datos del conjunto?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "argumentar",
+          "opciones": [
+            {
+              "texto": "Todos los datos son iguales a 50",
+              "es_correcta": true
+            },
+            {
+              "texto": "La mitad de los datos es mayor a 50",
+              "es_correcta": false
+            },
+            {
+              "texto": "No hay datos en el conjunto",
+              "es_correcta": false
+            },
+            {
+              "texto": "Los datos varían mucho entre sí",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La desviación estándar es una medida de:",
+          "tipo": "conceptual",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Dispersión",
+              "es_correcta": true
+            },
+            {
+              "texto": "Tendencia central",
+              "es_correcta": false
+            },
+            {
+              "texto": "Frecuencia",
+              "es_correcta": false
+            },
+            {
+              "texto": "Probabilidad",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "funciones_exponenciales",
+      "contexto": "Una población de bacterias se duplica cada hora. Inicialmente hay 100 bacterias (t=0).",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál función representa la población P en función del tiempo t en horas?",
+          "tipo": "modelacion",
+          "dificultad": "media",
+          "competencia": "formular",
+          "opciones": [
+            {
+              "texto": "P(t) = 100 * 2^t",
+              "es_correcta": true
+            },
+            {
+              "texto": "P(t) = 100 + 2t",
+              "es_correcta": false
+            },
+            {
+              "texto": "P(t) = 200t",
+              "es_correcta": false
+            },
+            {
+              "texto": "P(t) = 100 * t^2",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuántas bacterias habrá después de 3 horas?",
+          "tipo": "resolucion",
+          "dificultad": "baja",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "800",
+              "es_correcta": true
+            },
+            {
+              "texto": "600",
+              "es_correcta": false
+            },
+            {
+              "texto": "400",
+              "es_correcta": false
+            },
+            {
+              "texto": "1000",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "trigonometria_aplicada",
+      "contexto": "Un árbol proyecta una sombra de 12 metros cuando el ángulo de elevación del sol es de 30°.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la altura aproximada del árbol? (tan 30° ≈ 0,577)",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "6,92 metros",
+              "es_correcta": true
+            },
+            {
+              "texto": "10,39 metros",
+              "es_correcta": false
+            },
+            {
+              "texto": "6,00 metros",
+              "es_correcta": false
+            },
+            {
+              "texto": "24,00 metros",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Si el ángulo de elevación aumenta a 45°, la sombra será:",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Más corta que 12 metros",
+              "es_correcta": true
+            },
+            {
+              "texto": "Más larga que 12 metros",
+              "es_correcta": false
+            },
+            {
+              "texto": "Igual a 12 metros",
+              "es_correcta": false
+            },
+            {
+              "texto": "El doble de larga",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "funciones_inversas",
+      "contexto": "Sea la función f(x) = 3x - 5.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el valor de f(4)?",
+          "tipo": "resolucion",
+          "dificultad": "baja",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "7",
+              "es_correcta": true
+            },
+            {
+              "texto": "12",
+              "es_correcta": false
+            },
+            {
+              "texto": "17",
+              "es_correcta": false
+            },
+            {
+              "texto": "1",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál es la expresión de la función inversa f⁻¹(x)?",
+          "tipo": "algebra",
+          "dificultad": "alta",
+          "competencia": "formular",
+          "opciones": [
+            {
+              "texto": "(x + 5) / 3",
+              "es_correcta": true
+            },
+            {
+              "texto": "x/3 + 5",
+              "es_correcta": false
+            },
+            {
+              "texto": "3x + 5",
+              "es_correcta": false
+            },
+            {
+              "texto": "(x - 5) / 3",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "logica_secuencias",
+      "contexto": "Observe la siguiente secuencia de números: 2, 6, 12, 20, 30, ...",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el siguiente número en la secuencia?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "razonar",
+          "opciones": [
+            {
+              "texto": "42",
+              "es_correcta": true
+            },
+            {
+              "texto": "40",
+              "es_correcta": false
+            },
+            {
+              "texto": "36",
+              "es_correcta": false
+            },
+            {
+              "texto": "45",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La regla que define la secuencia para el término n (donde n=1 es el primero) es:",
+          "tipo": "modelacion",
+          "dificultad": "alta",
+          "competencia": "formular",
+          "opciones": [
+            {
+              "texto": "n² + n",
+              "es_correcta": true
+            },
+            {
+              "texto": "n² + 1",
+              "es_correcta": false
+            },
+            {
+              "texto": "2n + 4",
+              "es_correcta": false
+            },
+            {
+              "texto": "3n - 1",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "razones_proporciones",
+      "contexto": "Una receta para 4 personas requiere 600 gramos de carne.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuánta carne se necesita para preparar la misma receta para 10 personas?",
+          "tipo": "resolucion",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "1.500 gramos",
+              "es_correcta": true
+            },
+            {
+              "texto": "1.200 gramos",
+              "es_correcta": false
+            },
+            {
+              "texto": "1.800 gramos",
+              "es_correcta": false
+            },
+            {
+              "texto": "1.000 gramos",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Si solo se tienen 450 gramos de carne, ¿para cuántas personas alcanza la receta?",
+          "tipo": "resolucion",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "3 personas",
+              "es_correcta": true
+            },
+            {
+              "texto": "2 personas",
+              "es_correcta": false
+            },
+            {
+              "texto": "4 personas",
+              "es_correcta": false
+            },
+            {
+              "texto": "5 personas",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "circunferencia",
+      "contexto": "Un círculo tiene una circunferencia (perímetro) de 20π centímetros.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el radio del círculo?",
+          "tipo": "razonamiento",
+          "dificultad": "baja",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "10 cm",
+              "es_correcta": true
+            },
+            {
+              "texto": "20 cm",
+              "es_correcta": false
+            },
+            {
+              "texto": "5 cm",
+              "es_correcta": false
+            },
+            {
+              "texto": "10π cm",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál es el área del círculo?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "100π cm²",
+              "es_correcta": true
+            },
+            {
+              "texto": "20π cm²",
+              "es_correcta": false
+            },
+            {
+              "texto": "400π cm²",
+              "es_correcta": false
+            },
+            {
+              "texto": "50π cm²",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "funciones_cuadraticas",
+      "contexto": "La ganancia G de una empresa depende del precio x de los artículos: G(x) = -x² + 40x - 300.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿A qué precio x se obtiene la ganancia máxima? (Vértice de la parábola)",
+          "tipo": "interpretacion",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "20",
+              "es_correcta": true
+            },
+            {
+              "texto": "40",
+              "es_correcta": false
+            },
+            {
+              "texto": "10",
+              "es_correcta": false
+            },
+            {
+              "texto": "300",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál es la ganancia máxima posible?",
+          "tipo": "resolucion",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "100",
+              "es_correcta": true
+            },
+            {
+              "texto": "400",
+              "es_correcta": false
+            },
+            {
+              "texto": "300",
+              "es_correcta": false
+            },
+            {
+              "texto": "700",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "analisis_datos",
+      "contexto": "Una empresa registra sus ventas mensuales: Ene: 10, Feb: 15, Mar: 12, Abr: 18, May: 15.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la mediana de las ventas?",
+          "tipo": "estadistica",
+          "dificultad": "baja",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "15",
+              "es_correcta": true
+            },
+            {
+              "texto": "12",
+              "es_correcta": false
+            },
+            {
+              "texto": "14",
+              "es_correcta": false
+            },
+            {
+              "texto": "18",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿En qué mes se presentó el mayor incremento de ventas respecto al mes anterior?",
+          "tipo": "analisis",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Abril",
+              "es_correcta": true
+            },
+            {
+              "texto": "Febrero",
+              "es_correcta": false
+            },
+            {
+              "texto": "Mayo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Marzo",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "vectores",
+      "contexto": "Dos fuerzas actúan sobre un objeto: F1 de 3N hacia el Norte y F2 de 4N hacia el Este.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la magnitud de la fuerza resultante?",
+          "tipo": "fisica_matematica",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "5N",
+              "es_correcta": true
+            },
+            {
+              "texto": "7N",
+              "es_correcta": false
+            },
+            {
+              "texto": "1N",
+              "es_correcta": false
+            },
+            {
+              "texto": "12N",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué rama de la matemática permite resolver este problema fácilmente?",
+          "tipo": "conceptual",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Geometría (Vectores)",
+              "es_correcta": true
+            },
+            {
+              "texto": "Estadística",
+              "es_correcta": false
+            },
+            {
+              "texto": "Lógica proposicional",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cálculo integral",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "interes_simple",
+      "contexto": "Se invierten $500.000 a una tasa de interés simple del 10% anual durante 2 años.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuánto dinero en intereses se genera en total?",
+          "tipo": "finanzas",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "$100.000",
+              "es_correcta": true
+            },
+            {
+              "texto": "$50.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$110.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$600.000",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál es el monto total (capital + intereses) al finalizar los 2 años?",
+          "tipo": "finanzas",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "$600.000",
+              "es_correcta": true
+            },
+            {
+              "texto": "$550.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$700.000",
+              "es_correcta": false
+            },
+            {
+              "texto": "$500.000",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "teoria_conjuntos",
+      "contexto": "En un grupo de 30 personas, 20 hablan inglés y 15 hablan español. 10 hablan ambos idiomas.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuántas personas hablan ÚNICAMENTE inglés?",
+          "tipo": "logica",
+          "dificultad": "media",
+          "competencia": "razonar",
+          "opciones": [
+            {
+              "texto": "10",
+              "es_correcta": true
+            },
+            {
+              "texto": "20",
+              "es_correcta": false
+            },
+            {
+              "texto": "5",
+              "es_correcta": false
+            },
+            {
+              "texto": "15",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuántas de estas personas no hablan ninguno de los dos idiomas?",
+          "tipo": "logica",
+          "dificultad": "media",
+          "competencia": "razonar",
+          "opciones": [
+            {
+              "texto": "5",
+              "es_correcta": true
+            },
+            {
+              "texto": "0",
+              "es_correcta": false
+            },
+            {
+              "texto": "10",
+              "es_correcta": false
+            },
+            {
+              "texto": "2",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "numeros_primos",
+      "contexto": "Los números primos son esenciales en criptografía moderna.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál de los siguientes números es primo?",
+          "tipo": "conceptos_numericos",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "37",
+              "es_correcta": true
+            },
+            {
+              "texto": "39",
+              "es_correcta": false
+            },
+            {
+              "texto": "51",
+              "es_correcta": false
+            },
+            {
+              "texto": "91",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La descomposición en factores primos de 60 es:",
+          "tipo": "resolucion",
+          "dificultad": "baja",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "2² * 3 * 5",
+              "es_correcta": true
+            },
+            {
+              "texto": "2 * 3 * 10",
+              "es_correcta": false
+            },
+            {
+              "texto": "2 * 3 * 5",
+              "es_correcta": false
+            },
+            {
+              "texto": "4 * 15",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "valor_absoluto",
+      "contexto": "El valor absoluto mide la distancia de un número al origen zero.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el resultado de | -15 | + | 8 |?",
+          "tipo": "resolucion",
+          "dificultad": "baja",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "23",
+              "es_correcta": true
+            },
+            {
+              "texto": "7",
+              "es_correcta": false
+            },
+            {
+              "texto": "-7",
+              "es_correcta": false
+            },
+            {
+              "texto": "-23",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La solución a la ecuación | x - 3 | = 5 es:",
+          "tipo": "algebra",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "x = 8 y x = -2",
+              "es_correcta": true
+            },
+            {
+              "texto": "x = 8",
+              "es_correcta": false
+            },
+            {
+              "texto": "x = 2",
+              "es_correcta": false
+            },
+            {
+              "texto": "x = -8 y x = 2",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "desigualdades",
+      "contexto": "Un estudiante tiene 50.000 pesos para comprar cuadernos de 4.000 y bolígrafos de 2.000.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué inecuación representa que el gasto total de x cuadernos y y bolígrafos no debe superar su presupuesto?",
+          "tipo": "modelacion",
+          "dificultad": "media",
+          "competencia": "formular",
+          "opciones": [
+            {
+              "texto": "4000x + 2000y <= 50000",
+              "es_correcta": true
+            },
+            {
+              "texto": "4000x + 2000y >= 50000",
+              "es_correcta": false
+            },
+            {
+              "texto": "2000x + 4000y < 50000",
+              "es_correcta": false
+            },
+            {
+              "texto": "x + y <= 50000",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Si compra 10 cuadernos, ¿cuántos bolígrafos como máximo puede comprar?",
+          "tipo": "resolucion",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "5",
+              "es_correcta": true
+            },
+            {
+              "texto": "10",
+              "es_correcta": false
+            },
+            {
+              "texto": "2",
+              "es_correcta": false
+            },
+            {
+              "texto": "25",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "poligonos",
+      "contexto": "Un hexágono regular es una figura con seis lados iguales y seis ángulos iguales.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la suma de los ángulos internos de un hexágono?",
+          "tipo": "geometria",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "720°",
+              "es_correcta": true
+            },
+            {
+              "texto": "540°",
+              "es_correcta": false
+            },
+            {
+              "texto": "360°",
+              "es_correcta": false
+            },
+            {
+              "texto": "900°",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuánto mide cada ángulo interno de un hexágono regular?",
+          "tipo": "geometria",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "120°",
+              "es_correcta": true
+            },
+            {
+              "texto": "108°",
+              "es_correcta": false
+            },
+            {
+              "texto": "60°",
+              "es_correcta": false
+            },
+            {
+              "texto": "90°",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "semejanza_triangulos",
+      "contexto": "Un poste de 3 metros proyecta una sombra de 2 metros. Al mismo tiempo, un edificio proyecta una sombra de 20 metros.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la altura del edificio?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "30 metros",
+              "es_correcta": true
+            },
+            {
+              "texto": "40 metros",
+              "es_correcta": false
+            },
+            {
+              "texto": "15 metros",
+              "es_correcta": false
+            },
+            {
+              "texto": "60 metros",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué criterio de semejanza se aplica aquí?",
+          "tipo": "conceptual",
+          "dificultad": "media",
+          "competencia": "argumentar",
+          "opciones": [
+            {
+              "texto": "Ángulo-Ángulo (AA)",
+              "es_correcta": true
+            },
+            {
+              "texto": "Lado-Lado-Lado",
+              "es_correcta": false
+            },
+            {
+              "texto": "Lado-Ángulo-Lado",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ninguno",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "logaritmos",
+      "contexto": "La intensidad sonora en decibeles (dB) se mide mediante una escala logarítmica.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el valor de log₁₀(1.000)?",
+          "tipo": "algebra",
+          "dificultad": "baja",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "3",
+              "es_correcta": true
+            },
+            {
+              "texto": "2",
+              "es_correcta": false
+            },
+            {
+              "texto": "10",
+              "es_correcta": false
+            },
+            {
+              "texto": "100",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Si la intensidad de un sonido se multiplica por 10, ¿cuántos decibeles aumenta?",
+          "tipo": "razonamiento",
+          "dificultad": "alta",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "10 dB",
+              "es_correcta": true
+            },
+            {
+              "texto": "1 dB",
+              "es_correcta": false
+            },
+            {
+              "texto": "100 dB",
+              "es_correcta": false
+            },
+            {
+              "texto": "No aumenta",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "conteo_combinatoria",
+      "contexto": "Un estudiante tiene 4 camisas y 3 pantalones diferentes.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿De cuántas formas diferentes puede vestirse combinando una camisa y un pantalón?",
+          "tipo": "conteo",
+          "dificultad": "baja",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "12",
+              "es_correcta": true
+            },
+            {
+              "texto": "7",
+              "es_correcta": false
+            },
+            {
+              "texto": "1",
+              "es_correcta": false
+            },
+            {
+              "texto": "24",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Si quiere elegir a 2 representantes de un grupo de 5 personas, ¿cuántas combinaciones posibles hay?",
+          "tipo": "combinatoria",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "10",
+              "es_correcta": true
+            },
+            {
+              "texto": "20",
+              "es_correcta": false
+            },
+            {
+              "texto": "5",
+              "es_correcta": false
+            },
+            {
+              "texto": "25",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "limites_continuidad",
+      "contexto": "Una función f(x) se acerca al valor 2 cuando x tiende a 3.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cómo se escribe formalmente esta afirmación?",
+          "tipo": "conceptual",
+          "dificultad": "media",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "lim (x->3) f(x) = 2",
+              "es_correcta": true
+            },
+            {
+              "texto": "lim (x->2) f(x) = 3",
+              "es_correcta": false
+            },
+            {
+              "texto": "f(3) = 2 siempre",
+              "es_correcta": false
+            },
+            {
+              "texto": "f(2) = 3 siempre",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Si f(3) está definido y es igual a 2, y el límite también es 2, se dice que f es:",
+          "tipo": "conceptual",
+          "dificultad": "media",
+          "competencia": "argumentar",
+          "opciones": [
+            {
+              "texto": "Continua en x=3",
+              "es_correcta": true
+            },
+            {
+              "texto": "Discontinua",
+              "es_correcta": false
+            },
+            {
+              "texto": "Derivable únicamente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Infinita",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "calculo_basico",
+      "contexto": "La posición de un móvil está dada por s(t) = 5t².",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la velocidad instantánea en t=2? (v(t) = s'(t))",
+          "tipo": "razonamiento",
+          "dificultad": "alta",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "20",
+              "es_correcta": true
+            },
+            {
+              "texto": "10",
+              "es_correcta": false
+            },
+            {
+              "texto": "5",
+              "es_correcta": false
+            },
+            {
+              "texto": "25",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La derivada de una función de posición respecto al tiempo representa físicamente:",
+          "tipo": "conceptual",
+          "dificultad": "media",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "La velocidad",
+              "es_correcta": true
+            },
+            {
+              "texto": "La aceleración",
+              "es_correcta": false
+            },
+            {
+              "texto": "La distancia recorrida",
+              "es_correcta": false
+            },
+            {
+              "texto": "La fuerza neta",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

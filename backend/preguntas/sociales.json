@@ -1,0 +1,2466 @@
+{
+  "nombre": "Ciencias_Sociales_y_Competencias_Ciudadanas",
+  "descripcion": "Evalúa los conocimientos en ciencias sociales.",
+  "contextos": [
+    {
+      "tipo": "historia",
+      "contexto": "Durante el siglo XIX, varios países de América Latina lograron su independencia del dominio colonial europeo.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Una causa común de los procesos de independencia en América Latina fue:",
+          "tipo": "causa_historica",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "La influencia de las ideas ilustradas y liberales",
+              "es_correcta": true
+            },
+            {
+              "texto": "La expansión del feudalismo",
+              "es_correcta": false
+            },
+            {
+              "texto": "El aumento del poder de las monarquías europeas",
+              "es_correcta": false
+            },
+            {
+              "texto": "La industrialización temprana en América",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "constitucion",
+      "contexto": "La Constitución Política de Colombia establece los derechos y deberes fundamentales de los ciudadanos.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál de los siguientes es un derecho fundamental según la Constitución colombiana?",
+          "tipo": "derecho_fundamental",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Derecho a la vida",
+              "es_correcta": true
+            },
+            {
+              "texto": "Derecho a vacaciones pagadas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Derecho a subsidios permanentes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Derecho a exención de impuestos",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "geografia",
+      "contexto": "Colombia cuenta con una gran diversidad de regiones naturales.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál región natural de Colombia se caracteriza por una alta biodiversidad y clima cálido y húmedo?",
+          "tipo": "region_natural",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Región Amazónica",
+              "es_correcta": true
+            },
+            {
+              "texto": "Región Andina",
+              "es_correcta": false
+            },
+            {
+              "texto": "Región Caribe",
+              "es_correcta": false
+            },
+            {
+              "texto": "Región Insular",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "competencias_ciudadanas",
+      "contexto": "En un curso escolar se presenta un conflicto entre dos estudiantes por diferencias de opinión.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la acción más adecuada para resolver el conflicto de forma pacífica?",
+          "tipo": "resolucion_conflictos",
+          "dificultad": "media",
+          "competencia": "evaluar",
+          "opciones": [
+            {
+              "texto": "Dialogar y escuchar los puntos de vista de ambas partes",
+              "es_correcta": true
+            },
+            {
+              "texto": "Evitar hablar del problema",
+              "es_correcta": false
+            },
+            {
+              "texto": "Imponer la opinión de uno de los estudiantes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ignorar el conflicto completamente",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "economia",
+      "contexto": "El Estado interviene en la economía para garantizar el bienestar general.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Una función económica del Estado es:",
+          "tipo": "rol_del_estado",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Regular los mercados para evitar abusos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Eliminar totalmente los impuestos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Reemplazar todas las empresas privadas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Controlar las decisiones individuales",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "historia_colombia",
+      "contexto": "Durante el siglo XX, Colombia vivió un periodo conocido como La Violencia, caracterizado por enfrentamientos entre distintos sectores políticos.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Una consecuencia social directa del periodo conocido como La Violencia fue:",
+          "tipo": "consecuencia_historica",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "El desplazamiento forzado de población rural",
+              "es_correcta": true
+            },
+            {
+              "texto": "La industrialización acelerada del país",
+              "es_correcta": false
+            },
+            {
+              "texto": "La eliminación total de los partidos políticos",
+              "es_correcta": false
+            },
+            {
+              "texto": "La independencia de Colombia",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "analisis_fuentes",
+      "contexto": "Fragmento de un artículo periodístico que describe un aumento en la deforestación en una región del país.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la intención principal del autor del texto?",
+          "tipo": "intencion_comunicativa",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Alertar sobre un problema ambiental",
+              "es_correcta": true
+            },
+            {
+              "texto": "Promocionar actividades económicas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Justificar la deforestación",
+              "es_correcta": false
+            },
+            {
+              "texto": "Relatar un hecho histórico antiguo",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "geografia_humana",
+      "contexto": "En una ciudad se observa un crecimiento acelerado de la población.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Una posible causa de este crecimiento poblacional es:",
+          "tipo": "dinamica_poblacional",
+          "dificultad": "media",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "La migración desde zonas rurales",
+              "es_correcta": true
+            },
+            {
+              "texto": "La disminución de la esperanza de vida",
+              "es_correcta": false
+            },
+            {
+              "texto": "La reducción de oportunidades laborales",
+              "es_correcta": false
+            },
+            {
+              "texto": "La escasez de servicios públicos",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "competencias_ciudadanas",
+      "contexto": "Un grupo de estudiantes organiza una votación para elegir un representante.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué principio democrático se está poniendo en práctica?",
+          "tipo": "democracia",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Participación ciudadana",
+              "es_correcta": true
+            },
+            {
+              "texto": "Autoritarismo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Exclusión social",
+              "es_correcta": false
+            },
+            {
+              "texto": "Imposición de poder",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "economia",
+      "contexto": "El aumento del desempleo afecta el bienestar de una sociedad.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Una consecuencia probable del aumento del desempleo es:",
+          "tipo": "impacto_economico",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Incremento de la pobreza",
+              "es_correcta": true
+            },
+            {
+              "texto": "Aumento inmediato de la producción",
+              "es_correcta": false
+            },
+            {
+              "texto": "Reducción del gasto público",
+              "es_correcta": false
+            },
+            {
+              "texto": "Mayor estabilidad económica",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "lectura_graficos",
+      "contexto": "Un gráfico muestra el porcentaje de población urbana y rural en Colombia entre 1990 y 2020.",
+      "archivo": "grafico_poblacion.png",
+      "preguntas": [
+        {
+          "enunciado": "Según el gráfico, ¿qué tendencia se observa en la población urbana?",
+          "tipo": "interpretacion_grafica",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Aumento progresivo con el paso del tiempo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Disminución constante",
+              "es_correcta": false
+            },
+            {
+              "texto": "Se mantiene igual",
+              "es_correcta": false
+            },
+            {
+              "texto": "Fluctúa sin tendencia clara",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "constitucion",
+      "contexto": "La Constitución Política de Colombia establece mecanismos para la participación ciudadana.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál de los siguientes es un mecanismo de participación ciudadana?",
+          "tipo": "participacion",
+          "dificultad": "media",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "El referendo",
+              "es_correcta": true
+            },
+            {
+              "texto": "El estado de sitio",
+              "es_correcta": false
+            },
+            {
+              "texto": "La fuerza pública",
+              "es_correcta": false
+            },
+            {
+              "texto": "El poder judicial",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "dilema_ciudadano",
+      "contexto": "En una comunidad se discute la construcción de una vía que afectará un área natural protegida.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el principal dilema que se presenta en esta situación?",
+          "tipo": "analisis_dilema",
+          "dificultad": "alta",
+          "competencia": "evaluar",
+          "opciones": [
+            {
+              "texto": "Desarrollo económico versus protección ambiental",
+              "es_correcta": true
+            },
+            {
+              "texto": "Intereses individuales versus normas escolares",
+              "es_correcta": false
+            },
+            {
+              "texto": "Seguridad ciudadana versus movilidad",
+              "es_correcta": false
+            },
+            {
+              "texto": "Educación versus salud",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "historia_mundial",
+      "contexto": "La Guerra Fría fue un periodo de tensión entre dos bloques ideológicos.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál fue una característica principal de la Guerra Fría?",
+          "tipo": "caracteristica_historica",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Conflictos indirectos entre potencias",
+              "es_correcta": true
+            },
+            {
+              "texto": "Guerras coloniales europeas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Enfrentamientos directos permanentes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Aislamiento total de los países involucrados",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "economia",
+      "contexto": "El aumento de impuestos puede generar diferentes efectos en la economía.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Un posible efecto del aumento de impuestos es:",
+          "tipo": "politica_fiscal",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Mayor recaudo para inversión pública",
+              "es_correcta": true
+            },
+            {
+              "texto": "Eliminar el comercio",
+              "es_correcta": false
+            },
+            {
+              "texto": "Reducción automática de la inflación",
+              "es_correcta": false
+            },
+            {
+              "texto": "Desaparición del sector privado",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "analisis_fuentes",
+      "contexto": "Fragmento de un discurso político en el que se defiende la importancia de la separación de poderes.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "La idea principal que se defiende en el texto es que la separación de poderes:",
+          "tipo": "idea_principal",
+          "dificultad": "alta",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Evita la concentración del poder y protege la democracia",
+              "es_correcta": true
+            },
+            {
+              "texto": "Permite que un solo poder tome decisiones rápidas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Reduce la participación ciudadana",
+              "es_correcta": false
+            },
+            {
+              "texto": "Debilita el Estado",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "historia_colombia",
+      "contexto": "El Frente Nacional fue un acuerdo político entre los partidos Liberal y Conservador en Colombia.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál fue uno de los principales objetivos del Frente Nacional?",
+          "tipo": "objetivo_historico",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Reducir la violencia bipartidista",
+              "es_correcta": true
+            },
+            {
+              "texto": "Eliminar la democracia",
+              "es_correcta": false
+            },
+            {
+              "texto": "Imponer un partido único permanente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Aumentar la desigualdad social",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "geografia",
+      "contexto": "Una región presenta altos niveles de desertificación debido al uso inadecuado del suelo.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál acción contribuiría a disminuir la desertificación?",
+          "tipo": "gestion_ambiental",
+          "dificultad": "media",
+          "competencia": "evaluar",
+          "opciones": [
+            {
+              "texto": "Implementar prácticas de reforestación",
+              "es_correcta": true
+            },
+            {
+              "texto": "Aumentar la tala de árboles",
+              "es_correcta": false
+            },
+            {
+              "texto": "Expandir la ganadería extensiva",
+              "es_correcta": false
+            },
+            {
+              "texto": "Eliminar áreas protegidas",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "competencias_ciudadanas",
+      "contexto": "Un ciudadano observa un acto de corrupción en una entidad pública.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la acción más adecuada según los principios ciudadanos?",
+          "tipo": "control_social",
+          "dificultad": "alta",
+          "competencia": "evaluar",
+          "opciones": [
+            {
+              "texto": "Denunciar el hecho ante las autoridades competentes",
+              "es_correcta": true
+            },
+            {
+              "texto": "Ignorar la situación para evitar problemas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Difundir rumores sin pruebas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Aprovecharse del acto de corrupción",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "economia",
+      "contexto": "Un país experimenta un aumento sostenido de la inflación.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es un efecto directo de la inflación alta en los hogares?",
+          "tipo": "impacto_economico",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Disminución del poder adquisitivo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Aumento inmediato del ahorro",
+              "es_correcta": false
+            },
+            {
+              "texto": "Reducción automática del desempleo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Estabilidad de precios",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "lectura_critica_social",
+      "contexto": "Un texto argumenta que el acceso desigual a la educación profundiza las brechas sociales en un país.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Según el texto, ¿por qué la educación es clave para reducir la desigualdad?",
+          "tipo": "inferencia",
+          "dificultad": "alta",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Porque amplía las oportunidades económicas y sociales",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque elimina automáticamente la pobreza",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque reduce el tamaño de la población",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque reemplaza las políticas públicas",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "historia_mundial",
+      "contexto": "La Revolución Industrial transformó profundamente las relaciones sociales y económicas.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Una consecuencia social directa de la Revolución Industrial fue:",
+          "tipo": "consecuencia_historica",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "El crecimiento de la clase obrera urbana",
+              "es_correcta": true
+            },
+            {
+              "texto": "La desaparición inmediata del trabajo manual",
+              "es_correcta": false
+            },
+            {
+              "texto": "La reducción total de las ciudades",
+              "es_correcta": false
+            },
+            {
+              "texto": "El fin de las desigualdades sociales",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "geografia_economica",
+      "contexto": "Una región basa su economía principalmente en la extracción de recursos naturales.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es un riesgo económico de depender excesivamente de esta actividad?",
+          "tipo": "analisis_riesgo",
+          "dificultad": "alta",
+          "competencia": "evaluar",
+          "opciones": [
+            {
+              "texto": "Vulnerabilidad a la fluctuación de precios internacionales",
+              "es_correcta": true
+            },
+            {
+              "texto": "Mayor diversificación productiva",
+              "es_correcta": false
+            },
+            {
+              "texto": "Estabilidad económica garantizada",
+              "es_correcta": false
+            },
+            {
+              "texto": "Reducción del impacto ambiental",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "competencias_ciudadanas",
+      "contexto": "En una comunidad se debate una norma que limita el uso del espacio público.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué criterio debe primar en la toma de esta decisión?",
+          "tipo": "toma_decisiones",
+          "dificultad": "alta",
+          "competencia": "evaluar",
+          "opciones": [
+            {
+              "texto": "El equilibrio entre derechos individuales y bienestar colectivo",
+              "es_correcta": true
+            },
+            {
+              "texto": "La imposición de la autoridad sin consulta",
+              "es_correcta": false
+            },
+            {
+              "texto": "El beneficio exclusivo de un grupo",
+              "es_correcta": false
+            },
+            {
+              "texto": "La eliminación total del espacio público",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "constitucion",
+      "contexto": "La Constitución colombiana protege la diversidad étnica y cultural.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Este principio busca principalmente:",
+          "tipo": "principio_constitucional",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Garantizar el respeto y la inclusión de todos los grupos culturales",
+              "es_correcta": true
+            },
+            {
+              "texto": "Imponer una cultura dominante",
+              "es_correcta": false
+            },
+            {
+              "texto": "Eliminar las tradiciones locales",
+              "es_correcta": false
+            },
+            {
+              "texto": "Restringir la identidad cultural",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "caso_social",
+      "contexto": "Una alcaldía planea reubicar a varias familias que viven en una zona de alto riesgo por deslizamientos.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál debe ser el principal criterio para tomar esta decisión?",
+          "tipo": "toma_decisiones_publicas",
+          "dificultad": "alta",
+          "competencia": "evaluar",
+          "opciones": [
+            {
+              "texto": "La protección de la vida y la dignidad humana",
+              "es_correcta": true
+            },
+            {
+              "texto": "La reducción inmediata del gasto público",
+              "es_correcta": false
+            },
+            {
+              "texto": "La presión política de algunos grupos",
+              "es_correcta": false
+            },
+            {
+              "texto": "El interés económico de empresas privadas",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "historia_colombia",
+      "contexto": "La Constitución de 1991 marcó un cambio significativo en la organización política del país.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Uno de los principales cambios introducidos por la Constitución de 1991 fue:",
+          "tipo": "cambio_constitucional",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "El reconocimiento de Colombia como Estado social de derecho",
+              "es_correcta": true
+            },
+            {
+              "texto": "La eliminación del poder judicial",
+              "es_correcta": false
+            },
+            {
+              "texto": "La restricción de los derechos fundamentales",
+              "es_correcta": false
+            },
+            {
+              "texto": "La supresión de la participación ciudadana",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "geografia_politica",
+      "contexto": "Algunos conflictos territoriales surgen por el control de recursos estratégicos.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál recurso suele estar en el centro de muchos conflictos territoriales?",
+          "tipo": "recurso_estrategico",
+          "dificultad": "media",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "El petróleo",
+              "es_correcta": true
+            },
+            {
+              "texto": "El aire",
+              "es_correcta": false
+            },
+            {
+              "texto": "La arena común",
+              "es_correcta": false
+            },
+            {
+              "texto": "La luz solar",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "competencias_ciudadanas",
+      "contexto": "Un funcionario público recibe un soborno para favorecer a un contratista.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué valor ciudadano se vulnera principalmente en esta situación?",
+          "tipo": "etica_publica",
+          "dificultad": "alta",
+          "competencia": "evaluar",
+          "opciones": [
+            {
+              "texto": "La transparencia",
+              "es_correcta": true
+            },
+            {
+              "texto": "La solidaridad",
+              "es_correcta": false
+            },
+            {
+              "texto": "La diversidad cultural",
+              "es_correcta": false
+            },
+            {
+              "texto": "La recreación",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "economia",
+      "contexto": "Un país decide aumentar el salario mínimo por decreto.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál podría ser un efecto económico positivo de esta medida?",
+          "tipo": "politica_laboral",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Mejorar el poder adquisitivo de los trabajadores",
+              "es_correcta": true
+            },
+            {
+              "texto": "Eliminar el desempleo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Reducir automáticamente la inflación",
+              "es_correcta": false
+            },
+            {
+              "texto": "Eliminar la informalidad laboral",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "caso_integrador",
+      "contexto": "Una comunidad indígena se opone a un proyecto minero aprobado por el gobierno debido a posibles impactos ambientales y culturales.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el principal conflicto que se presenta en esta situación?",
+          "tipo": "conflicto_social",
+          "dificultad": "alta",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "El choque entre desarrollo económico y derechos culturales",
+              "es_correcta": true
+            },
+            {
+              "texto": "La falta de recursos tecnológicos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un conflicto entre países vecinos",
+              "es_correcta": false
+            },
+            {
+              "texto": "La ausencia de normas ambientales",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "analisis_constitucional",
+      "contexto": "La Corte Constitucional revisa una ley que limita la libertad de expresión.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué criterio debería primar en el análisis de la Corte?",
+          "tipo": "control_constitucional",
+          "dificultad": "alta",
+          "competencia": "evaluar",
+          "opciones": [
+            {
+              "texto": "La protección de los derechos fundamentales",
+              "es_correcta": true
+            },
+            {
+              "texto": "La conveniencia política del gobierno",
+              "es_correcta": false
+            },
+            {
+              "texto": "La opinión mayoritaria momentánea",
+              "es_correcta": false
+            },
+            {
+              "texto": "El beneficio económico inmediato",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "historia_mundial",
+      "contexto": "Tras la Segunda Guerra Mundial se crearon organismos internacionales como la ONU.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "El objetivo principal de la creación de la ONU fue:",
+          "tipo": "organismos_internacionales",
+          "dificultad": "media",
+          "competencia": "interpretar",
+          "opciones": [
+            {
+              "texto": "Promover la paz y la cooperación internacional",
+              "es_correcta": true
+            },
+            {
+              "texto": "Imponer gobiernos autoritarios",
+              "es_correcta": false
+            },
+            {
+              "texto": "Controlar la economía mundial",
+              "es_correcta": false
+            },
+            {
+              "texto": "Eliminar los conflictos regionales de inmediato",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "geografia_ambiental",
+      "contexto": "El cambio climático ha incrementado la frecuencia de eventos extremos.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es una consecuencia social del cambio climático?",
+          "tipo": "impacto_ambiental",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Aumento de desplazamientos humanos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Reducción total de la población mundial",
+              "es_correcta": false
+            },
+            {
+              "texto": "Eliminación de los recursos naturales",
+              "es_correcta": false
+            },
+            {
+              "texto": "Desaparición inmediata de las ciudades",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "competencias_ciudadanas",
+      "contexto": "Durante una protesta social se presentan actos de violencia aislados.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál debe ser la postura ciudadana frente a esta situación?",
+          "tipo": "convivencia_democratica",
+          "dificultad": "alta",
+          "competencia": "evaluar",
+          "opciones": [
+            {
+              "texto": "Defender la protesta pacífica y rechazar la violencia",
+              "es_correcta": true
+            },
+            {
+              "texto": "Justificar cualquier forma de violencia",
+              "es_correcta": false
+            },
+            {
+              "texto": "Prohibir toda manifestación social",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ignorar los hechos ocurridos",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "historia_guerra_fria",
+      "contexto": "Tras la Segunda Guerra Mundial, el mundo quedó dividido en dos bloques ideológicamente opuestos: el bloque occidental capitalista y el bloque oriental comunista.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué término acuñado por Winston Churchill describía la frontera ideográfica y física que dividía a Europa?",
+          "tipo": "historico",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Muro de Berlín",
+              "es_correcta": false
+            },
+            {
+              "texto": "Telón de Acero (o Cortina de Hierro)",
+              "es_correcta": true
+            },
+            {
+              "texto": "Frontera de Cristal",
+              "es_correcta": false
+            },
+            {
+              "texto": "Pacto de Varsovia",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La Guerra Fría se caracterizó principalmente por:",
+          "tipo": "historico",
+          "dificultad": "media",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "Conflictos directos entre EE.UU. y la URSS",
+              "es_correcta": false
+            },
+            {
+              "texto": "Tensión diplomática y guerras subsidiarias en otros países",
+              "es_correcta": true
+            },
+            {
+              "texto": "Una alianza militar permanente entre ambas potencias",
+              "es_correcta": false
+            },
+            {
+              "texto": "La eliminación total de las armas nucleares",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "historia_revolucion_francesa",
+      "contexto": "La Revolución Francesa de 1789 marcó el inicio de la Edad Contemporánea al derrocar al Antiguo Régimen y promover los derechos ciudadanos.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál fue el lema principal de la Revolución Francesa?",
+          "tipo": "historico",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Orden y Progreso",
+              "es_correcta": false
+            },
+            {
+              "texto": "Libertad, Igualdad, Fraternidad",
+              "es_correcta": true
+            },
+            {
+              "texto": "Pan, Tierra y Libertad",
+              "es_correcta": false
+            },
+            {
+              "texto": "Dios y Patria",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La Declaración de los Derechos del Hombre y del Ciudadano fue fundamental porque:",
+          "tipo": "historico",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Establecía que los reyes tenían origen divino",
+              "es_correcta": false
+            },
+            {
+              "texto": "Reconocía la igualdad ante la ley y derechos inalienables",
+              "es_correcta": true
+            },
+            {
+              "texto": "Prohibía la lectura de libros filosóficos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Daba el poder total al ejército",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "historia_guerra_mundial_2",
+      "contexto": "El uso de la bomba atómica en 1945 puso fin a la guerra en el Pacífico contra Japón, pero abrió un profundo debate ético.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿En qué ciudades japonesas se lanzaron las bombas atómicas?",
+          "tipo": "historico",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Tokio y Kioto",
+              "es_correcta": false
+            },
+            {
+              "texto": "Hiroshima y Nagasaki",
+              "es_correcta": true
+            },
+            {
+              "texto": "Osaka y Nagoya",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sapporo y Fukuoka",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "El principal argumento ético EN CONTRA del uso de estas bombas fue:",
+          "tipo": "competencia_ciudadana",
+          "dificultad": "media",
+          "competencia": "reflexionar",
+          "opciones": [
+            {
+              "texto": "Que el costo de las bombas fue muy alto",
+              "es_correcta": false
+            },
+            {
+              "texto": "El ataque indiscriminado a población civil no combatiente",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que Japón ya se había rendido meses antes",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que la radiación no afecta a los humanos",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "geografia_globalizacion",
+      "contexto": "La globalización ha interconectado las economías del mundo, permitiendo un flujo masivo de productos, personas e información.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Un efecto positivo de la globalización económica es:",
+          "tipo": "geografia_economica",
+          "dificultad": "bajo",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "El aumento de los aranceles comerciales",
+              "es_correcta": false
+            },
+            {
+              "texto": "El acceso a una mayor variedad de bienes y tecnologías",
+              "es_correcta": true
+            },
+            {
+              "texto": "La desaparición de las empresas locales en todo el mundo",
+              "es_correcta": false
+            },
+            {
+              "texto": "El aislamiento de los mercados nacionales",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Una crítica frecuente a la globalización es que:",
+          "tipo": "geografia_economica",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Todos los países se vuelven ricos al mismo tiempo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Puede aumentar la desigualdad entre países desarrollados y en desarrollo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Elimina por completo la necesidad de moneda física",
+              "es_correcta": false
+            },
+            {
+              "texto": "Reduce el uso de internet",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "derechos_humanos",
+      "contexto": "La Declaración Universal de los Derechos Humanos fue adoptada por la ONU en 1948.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué característica de los Derechos Humanos indica que pertenecen a todas las personas sin excepción?",
+          "tipo": "competencia_ciudadana",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Irrevocabilidad",
+              "es_correcta": false
+            },
+            {
+              "texto": "Universalidad",
+              "es_correcta": true
+            },
+            {
+              "texto": "Jerarquía",
+              "es_correcta": false
+            },
+            {
+              "texto": "Nacionalidad",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "El derecho a la vida y a la libertad se consideran derechos de:",
+          "tipo": "politica",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Primera generación (civiles y políticos)",
+              "es_correcta": true
+            },
+            {
+              "texto": "Segunda generación (económicos y sociales)",
+              "es_correcta": false
+            },
+            {
+              "texto": "Tercera generación (de los pueblos)",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cuarta generación (digitales)",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "sistema_politico",
+      "contexto": "La división de poderes (Ejecutivo, Legislativo y Judicial) busca evitar la tiranía en las democracias.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "En Colombia, ¿qué institución es la máxima autoridad del poder Legislativo?",
+          "tipo": "politica",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "La Presidenca",
+              "es_correcta": false
+            },
+            {
+              "texto": "El Congreso de la República",
+              "es_correcta": true
+            },
+            {
+              "texto": "La Corte Suprema de Justicia",
+              "es_correcta": false
+            },
+            {
+              "texto": "La Registraduría",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La función principal del poder Judicial es:",
+          "tipo": "politica",
+          "dificultad": "media",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "Aprobar el presupuesto nacional",
+              "es_correcta": false
+            },
+            {
+              "texto": "Administrar justicia y resolver conflictos legales",
+              "es_correcta": true
+            },
+            {
+              "texto": "Firmar tratados internacionales",
+              "es_correcta": false
+            },
+            {
+              "texto": "Crear nuevas leyes",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "economia_conceptos",
+      "contexto": "La inflación es el aumento generalizado y sostenido de los precios de los bienes y servicios.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Cuando hay una alta inflación, ¿qué sucede con el poder adquisitivo del dinero?",
+          "tipo": "economia",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Aumenta",
+              "es_correcta": false
+            },
+            {
+              "texto": "Disminuye",
+              "es_correcta": true
+            },
+            {
+              "texto": "Permanece igual",
+              "es_correcta": false
+            },
+            {
+              "texto": "Se duplica",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Una causa común de la inflación puede ser:",
+          "tipo": "economia",
+          "dificultad": "media",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "Un exceso de oferta de productos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un aumento excesivo de la demanda o de los costos de producción",
+              "es_correcta": true
+            },
+            {
+              "texto": "La reducción de la moneda en circulación",
+              "es_correcta": false
+            },
+            {
+              "texto": "La baja de los salarios",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "desarrollo_sostenible",
+      "contexto": "El desarrollo sostenible implica un equilibrio entre el crecimiento económico, el cuidado ambiental y el bienestar social.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Para que un proyecto sea socialmente sostenible, debe:",
+          "tipo": "social",
+          "dificultad": "media",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "Generar dinero solo para los dueños",
+              "es_correcta": false
+            },
+            {
+              "texto": "Respetar los derechos y la cultura de las comunidades locales",
+              "es_correcta": true
+            },
+            {
+              "texto": "Ignorar las leyes ambientales",
+              "es_correcta": false
+            },
+            {
+              "texto": "Usar solo máquinas automáticas",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál es un objetivo común de la agenda internacional de desarrollo sostenible?",
+          "tipo": "politica_internacional",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Acabar con la pobreza y proteger el planeta",
+              "es_correcta": true
+            },
+            {
+              "texto": "Aumentar el consumo de carbón",
+              "es_correcta": false
+            },
+            {
+              "texto": "Fomentar la guerra comercial",
+              "es_correcta": false
+            },
+            {
+              "texto": "Eliminar las fronteras nacionales",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "historia_colonialismo",
+      "contexto": "El periodo colonial en América Latina estructuró las sociedades bajo un sistema de castas y una economía extractiva para la metrópoli.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cómo se llamaba el sistema de trabajo forzado impuesto a los indígenas en las minas?",
+          "tipo": "historico",
+          "dificultad": "media",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Feudalismo",
+              "es_correcta": false
+            },
+            {
+              "texto": "La Mita",
+              "es_correcta": true
+            },
+            {
+              "texto": "El Sindicato",
+              "es_correcta": false
+            },
+            {
+              "texto": "La Democracia directa",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La principal consecuencia social de la colonia hoy en día es:",
+          "tipo": "social",
+          "dificultad": "alta",
+          "competencia": "reflexionar",
+          "opciones": [
+            {
+              "texto": "La desaparición total de las lenguas nativas",
+              "es_correcta": false
+            },
+            {
+              "texto": "El mestizaje cultural y las desigualdades estructurales heredadas",
+              "es_correcta": true
+            },
+            {
+              "texto": "La igualdad absoluta de derechos desde hace siglos",
+              "es_correcta": false
+            },
+            {
+              "texto": "La ausencia de influencia europea en el idioma",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "historia_revolucion_industrial",
+      "contexto": "La Revolución Industrial cambió radicalmente la producción y la vida urbana desde mediados del siglo XVIII.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué invento fue clave para mecanizar el transporte y la industria textil?",
+          "tipo": "historico",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "La radio",
+              "es_correcta": false
+            },
+            {
+              "texto": "La máquina de vapor",
+              "es_correcta": true
+            },
+            {
+              "texto": "La bombilla eléctrica",
+              "es_correcta": false
+            },
+            {
+              "texto": "El telégrafo",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál fue una consecuencia social inmediata para los trabajadores?",
+          "tipo": "historico",
+          "dificultad": "media",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "Reducción de la jornada laboral a 4 horas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Urbanización acelerada y condiciones de trabajo precarias",
+              "es_correcta": true
+            },
+            {
+              "texto": "Aumento masivo de la población rural",
+              "es_correcta": false
+            },
+            {
+              "texto": "Prohibición total del trabajo infantil",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "geografia_poblacion",
+      "contexto": "Las migraciones forzadas se producen debido a conflictos armados, persecuciones o desastres climáticos.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Una persona que huye de su país por temor a ser perseguida por sus ideas políticas es un:",
+          "tipo": "social",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Turista",
+              "es_correcta": false
+            },
+            {
+              "texto": "Refugiado",
+              "es_correcta": true
+            },
+            {
+              "texto": "Nómada digital",
+              "es_correcta": false
+            },
+            {
+              "texto": "Inmigrante económico solamente",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál suele ser la mayor dificultad para la integración de los migrantes en un nuevo país?",
+          "tipo": "competencia_ciudadana",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "La falta de transporte público",
+              "es_correcta": false
+            },
+            {
+              "texto": "La xenofobia y la falta de leyes de protección",
+              "es_correcta": true
+            },
+            {
+              "texto": "El exceso de ofertas de trabajo",
+              "es_correcta": false
+            },
+            {
+              "texto": "El clima demasiado soleado",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "ciudadania_digital",
+      "contexto": "Las redes sociales han democratizado la información, pero también han facilitado la propagación de noticias falsas (fake news).",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la mejor estrategia ciudadana para combatir las noticias falsas?",
+          "tipo": "competencia_ciudadana",
+          "dificultad": "media",
+          "competencia": "evaluar",
+          "opciones": [
+            {
+              "texto": "Compartir la noticia rápido por si acaso",
+              "es_correcta": false
+            },
+            {
+              "texto": "Verificar la fuente y contrastar con medios oficiales",
+              "es_correcta": true
+            },
+            {
+              "texto": "Creer solo en lo que dicen los influencers",
+              "es_correcta": false
+            },
+            {
+              "texto": "No leer más noticias",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Las 'cámaras de eco' en redes sociales se refieren a:",
+          "tipo": "social",
+          "dificultad": "alta",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "Dispositivos que repiten el sonido",
+              "es_correcta": false
+            },
+            {
+              "texto": "Algoritmos que solo nos muestran ideas que ya compartimos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Grupos de personas que cantan juntas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Sistemas de seguridad del gobierno",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "resolucion_conflictos",
+      "contexto": "En una democracia, el diálogo y la mediación son herramientas clave para resolver conflictos sin recurrir a la violencia.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué rol cumple un mediador en un conflicto?",
+          "tipo": "competencia_ciudadana",
+          "dificultad": "media",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "Decidir quién tiene la razón",
+              "es_correcta": false
+            },
+            {
+              "texto": "Facilitar la comunicación para que las partes lleguen a un acuerdo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Castigar a la parte más débil",
+              "es_correcta": false
+            },
+            {
+              "texto": "Contarle a todo el mundo el problema",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Una base necesaria para la mediación exitosa es:",
+          "tipo": "competencia_ciudadana",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "El uso de la fuerza",
+              "es_correcta": false
+            },
+            {
+              "texto": "La escucha activa y la empatía",
+              "es_correcta": true
+            },
+            {
+              "texto": "El dinero de por medio",
+              "es_correcta": false
+            },
+            {
+              "texto": "Tener un juez presente siempre",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "libertad_expresion",
+      "contexto": "La libertad de expresión es un derecho fundamental, pero no es absoluto.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿En qué caso se puede limitar válidamente la libertad de expresión?",
+          "tipo": "politica_ley",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Cuando se critica al gobierno",
+              "es_correcta": false
+            },
+            {
+              "texto": "Cuando incita al odio o a la violencia contra un grupo",
+              "es_correcta": true
+            },
+            {
+              "texto": "Cuando la opinión es aburrida",
+              "es_correcta": false
+            },
+            {
+              "texto": "Nunca se puede limitar bajo ninguna circunstancia",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La censura previa se diferencia de la responsabilidad ulterior en que:",
+          "tipo": "politica_ley",
+          "dificultad": "alta",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "La censura previa impide la publicación antes de ocurrir",
+              "es_correcta": true
+            },
+            {
+              "texto": "La responsabilidad ulterior ocurre antes del delito",
+              "es_correcta": false
+            },
+            {
+              "texto": "Son lo mismo",
+              "es_correcta": false
+            },
+            {
+              "texto": "La censura previa es legal en todas las democracias",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "diversidad_cultural",
+      "contexto": "El pluralismo cultural reconoce y valora la existencia de múltiples identidades dentro de una misma nación.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "La Constitución colombiana de 1991 define a Colombia como:",
+          "tipo": "politica",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Una nación con una única cultura oficial",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un estado pluriétnico y multicultural",
+              "es_correcta": true
+            },
+            {
+              "texto": "Una colonia dependiente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Una monarquía constitucional",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Un ejemplo de respeto por la diversidad es:",
+          "tipo": "competencia_ciudadana",
+          "dificultad": "baja",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "Obligar a todos a hablar el mismo idioma nativo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Garantizar la educación bilingüe para comunidades indígenas",
+              "es_correcta": true
+            },
+            {
+              "texto": "Prohibir ceremonias religiosas diferentes a la mayoritaria",
+              "es_correcta": false
+            },
+            {
+              "texto": "Eliminar las fronteras regionales",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "geopolitica_recursos",
+      "contexto": "El control de los recursos energéticos, como el petróleo, ha sido causa de numerosos conflictos internacionales.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué organización agrupa a los principales países exportadores de petróleo?",
+          "tipo": "geopolitica",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "OTAN",
+              "es_correcta": false
+            },
+            {
+              "texto": "OPEP",
+              "es_correcta": true
+            },
+            {
+              "texto": "ONU",
+              "es_correcta": false
+            },
+            {
+              "texto": "UNESCO",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "La transición hacia energías limpias busca, además de proteger el clima:",
+          "tipo": "geopolitica",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Aumentar el precio de la gasolina",
+              "es_correcta": false
+            },
+            {
+              "texto": "Reducir la dependencia estratégica de combustibles fósiles",
+              "es_correcta": true
+            },
+            {
+              "texto": "Eliminar por completo el uso de electricidad",
+              "es_correcta": false
+            },
+            {
+              "texto": "Hacer que los autos sean más lentos",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "historia_roma",
+      "contexto": "El Imperio Romano dejó un legado fundamental en leyes, arquitectura y lengua para el mundo occidental.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "El sistema legal de muchos países modernos se basa en el antiguo:",
+          "tipo": "historico",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Código Samurai",
+              "es_correcta": false
+            },
+            {
+              "texto": "Derecho Romano",
+              "es_correcta": true
+            },
+            {
+              "texto": "Código Maya",
+              "es_correcta": false
+            },
+            {
+              "texto": "Derecho Vikingo",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué lengua hablaban los romanos y es el origen del español, francés e italiano?",
+          "tipo": "historico",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Griego",
+              "es_correcta": false
+            },
+            {
+              "texto": "Latín",
+              "es_correcta": true
+            },
+            {
+              "texto": "Árabe",
+              "es_correcta": false
+            },
+            {
+              "texto": "Alemán",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "historia_edad_media",
+      "contexto": "El feudalismo fue el sistema social y económico predominante en Europa durante la Edad Media.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "La relación de vasallaje consistía en:",
+          "tipo": "historico",
+          "dificultad": "media",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "Un contrato comercial libre",
+              "es_correcta": false
+            },
+            {
+              "texto": "Un pacto de fidelidad y protección a cambio de tierra",
+              "es_correcta": true
+            },
+            {
+              "texto": "Un sistema democrático de votación",
+              "es_correcta": false
+            },
+            {
+              "texto": "La esclavitud total sin derechos",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué institución tenía el mayor poder cultural y político en la Europa medieval?",
+          "tipo": "historico",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "La Universidad de Internet",
+              "es_correcta": false
+            },
+            {
+              "texto": "La Iglesia Católica",
+              "es_correcta": true
+            },
+            {
+              "texto": "Las corporaciones multinacionales",
+              "es_correcta": false
+            },
+            {
+              "texto": "El Banco Mundial",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "historia_renacimiento",
+      "contexto": "El Renacimiento y el Humanismo pusieron al hombre en el centro del pensamiento (antropocentrismo).",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué invención facilitó la difusión masiva de las ideas renacentistas?",
+          "tipo": "historico",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "El motor de combustión",
+              "es_correcta": false
+            },
+            {
+              "texto": "La imprenta de tipos móviles",
+              "es_correcta": true
+            },
+            {
+              "texto": "El teléfono",
+              "es_correcta": false
+            },
+            {
+              "texto": "La televisión",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "El paso del teocentrismo al antropocentrismo significa:",
+          "tipo": "historico",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Que Dios deja de existir",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que el ser humano y la razón son el centro del estudio",
+              "es_correcta": true
+            },
+            {
+              "texto": "Que los animales son lo más importante",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que solo importa la naturaleza virgen",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "organizaciones_internacionales",
+      "contexto": "La Organización de las Naciones Unidas (ONU) fue creada para mantener la paz tras la Segunda Guerra Mundial.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es el órgano de la ONU encargado de tomar decisiones sobre seguridad y paz internacional?",
+          "tipo": "politica",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Asamblea General",
+              "es_correcta": false
+            },
+            {
+              "texto": "Consejo de Seguridad",
+              "es_correcta": true
+            },
+            {
+              "texto": "Corte Internacional de Justicia",
+              "es_correcta": false
+            },
+            {
+              "texto": "Secretaría",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Qué derecho tienen los 5 miembros permanentes del Consejo de Seguridad?",
+          "tipo": "politica",
+          "dificultad": "media",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "Derecho de veto",
+              "es_correcta": true
+            },
+            {
+              "texto": "Derecho a no pagar impuestos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Derecho a invadir países sin permiso",
+              "es_correcta": false
+            },
+            {
+              "texto": "Derecho a cambiar la sede de la ONU",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "sistemas_economicos",
+      "contexto": "El capitalismo y el socialismo son modelos económicos y sociales con visiones distintas sobre la propiedad y el mercado.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "Una base del capitalismo es:",
+          "tipo": "economia",
+          "dificultad": "media",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "La propiedad estatal total de los medios de producción",
+              "es_correcta": false
+            },
+            {
+              "texto": "La propiedad privada y el libre mercado",
+              "es_correcta": true
+            },
+            {
+              "texto": "La prohibición de las empresas",
+              "es_correcta": false
+            },
+            {
+              "texto": "El reparto igualitario de todos los salarios por decreto",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "El socialismo, en teoría, busca principalmente:",
+          "tipo": "economia",
+          "dificultad": "media",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "Aumentar las ganancias de los bancos",
+              "es_correcta": false
+            },
+            {
+              "texto": "La reducción de las brechas sociales mediante intervención estatal",
+              "es_correcta": true
+            },
+            {
+              "texto": "La competencia desleal entre empresas",
+              "es_correcta": false
+            },
+            {
+              "texto": "El aislamiento comercial total",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "igualdad_genero",
+      "contexto": "La equidad de género busca asegurar que hombres y mujeres tengan los mismos derechos y oportunidades.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Cómo se llama la brecha de salario entre hombres y mujeres por el mismo trabajo?",
+          "tipo": "social",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Brecha salarial de género",
+              "es_correcta": true
+            },
+            {
+              "texto": "Diferencial de impuestos",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ahorro programado",
+              "es_correcta": false
+            },
+            {
+              "texto": "Pensión de jubilación",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Promover la participación política de las mujeres es una medida de:",
+          "tipo": "competencia_ciudadana",
+          "dificultad": "baja",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "Privilegio injustificado",
+              "es_correcta": false
+            },
+            {
+              "texto": "Acción afirmativa para garantizar equidad",
+              "es_correcta": true
+            },
+            {
+              "texto": "Discriminación contra los hombres",
+              "es_correcta": false
+            },
+            {
+              "texto": "Eliminación de la democracia",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "problematica_social",
+      "contexto": "La corrupción administrativa desvía recursos que deberían destinarse a salud, educación e infraestructura.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué efecto tiene la corrupción en la confianza ciudadana?",
+          "tipo": "competencia_ciudadana",
+          "dificultad": "baja",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "La aumenta notablemente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Genera apatía y desconfianza en las instituciones",
+              "es_correcta": true
+            },
+            {
+              "texto": "No produce ningún efecto",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ayuda a que la gente vote más",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Una herramienta ciudadana para combatir la corrupción es:",
+          "tipo": "competencia_ciudadana",
+          "dificultad": "media",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "La veeduría ciudadana y el control social",
+              "es_correcta": true
+            },
+            {
+              "texto": "Pagar sobornos para agilizar trámites",
+              "es_correcta": false
+            },
+            {
+              "texto": "No denunciar para no tener problemas",
+              "es_correcta": false
+            },
+            {
+              "texto": "Crear noticias falsas sobre los políticos",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "educacion_derecho",
+      "contexto": "El acceso a la educación de calidad es un motor fundamental para el desarrollo de un país.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Por qué la educación gratuita es importante en una sociedad desigual?",
+          "tipo": "social",
+          "dificultad": "baja",
+          "competencia": "reflexionar",
+          "opciones": [
+            {
+              "texto": "Porque así la gente gasta menos dinero",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque permite la movilidad social y la igualdad de oportunidades",
+              "es_correcta": true
+            },
+            {
+              "texto": "Porque los profesores no necesitan sueldo",
+              "es_correcta": false
+            },
+            {
+              "texto": "Porque sobran cupos en las universidades",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "¿Cuál es un beneficio de la educación en competencias ciudadanas?",
+          "tipo": "competencia_ciudadana",
+          "dificultad": "media",
+          "competencia": "explicar",
+          "opciones": [
+            {
+              "texto": "Aprender a obedecer sin dudar",
+              "es_correcta": false
+            },
+            {
+              "texto": "Formar ciudadanos críticos, participativos y éticos",
+              "es_correcta": true
+            },
+            {
+              "texto": "Saber solo matemáticas y español",
+              "es_correcta": false
+            },
+            {
+              "texto": "Ganar dinero rápido",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "politica_ambiental",
+      "contexto": "El cambio climático requiere políticas públicas globales para reducir la emisión de gases de efecto invernadero.",
+      "archivo": null,
+      "preguntas": [
+        {
+          "enunciado": "¿Qué acuerdo internacional busca limitar el aumento de la temperatura global?",
+          "tipo": "politica_internacional",
+          "dificultad": "baja",
+          "competencia": "identificar",
+          "opciones": [
+            {
+              "texto": "Pacto de Varsovia",
+              "es_correcta": false
+            },
+            {
+              "texto": "Acuerdo de París",
+              "es_correcta": true
+            },
+            {
+              "texto": "Tratado de Versalles",
+              "es_correcta": false
+            },
+            {
+              "texto": "Acuerdo de Cartagena",
+              "es_correcta": false
+            }
+          ]
+        },
+        {
+          "enunciado": "Un obstáculo político para estas medidas suele ser:",
+          "tipo": "geopolitica",
+          "dificultad": "media",
+          "competencia": "analizar",
+          "opciones": [
+            {
+              "texto": "Que el sol no calienta lo suficiente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Los intereses económicos a corto plazo vinculados a combustibles fósiles",
+              "es_correcta": true
+            },
+            {
+              "texto": "La falta de tecnología totalmente",
+              "es_correcta": false
+            },
+            {
+              "texto": "Que nadie cree en la ciencia",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
