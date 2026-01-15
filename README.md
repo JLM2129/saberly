@@ -1,85 +1,63 @@
-# Ciencia Loca - Backend (Simulador ICFES)
+# Saberly 🎓
 
-Este es el backend oficial para la aplicación **Ciencia Loca**, construido con Django, Django Rest Framework y PostgreSQL.
+**Saberly** es una plataforma integral para la preparación de exámenes de estado (ICFES), diseñada para ofrecer una experiencia de usuario fluida tanto en entornos web como móviles gracias a su naturaleza como PWA.
 
-## 🚀 Requisitos Previos
-- Python 3.10+
-- PostgreSQL instalado y corriendo.
-- Virtualenv recomendado.
+## ✨ Características Principales
 
-## 🛠️ Instalación y Configuración
+- **Simulacros Dinámicos:** Generación de exámenes basados en áreas específicas cargadas desde JSON.
+- **Modo Offline:** Capacidad de persistencia local para continuar estudios sin conexión.
+- **Arquitectura Robusta:** Backend escalable con Django REST Framework y Frontend reactivo con React + Vite.
+- **PWA Ready:** Instalable en dispositivos móviles para acceso rápido.
 
-1. **Crear entorno virtual**
-   ```bash
-   python -m venv venv
-   # Windows
-   .\venv\Scripts\activate
-   # Linux/Mac
-   source venv/bin/activate
-   ```
+## 🛠️ Stack Tecnológico
 
-2. **Instalar dependencias**
-   ```bash
-   pip install -r requirements.txt
-   ```
+| Componente | Tecnología |
+| :--- | :--- |
+| **Frontend** | React 18, Vite, Tailwind CSS, Vite PWA Plugin |
+| **Backend** | Django 5.x, Django REST Framework, SimpleJWT |
+| **Base de Datos** | PostgreSQL |
+| **Contenedores** | Docker & Docker Compose |
 
-3. **Configurar Variables de Entorno**
-   - Copia el archivo `.env.example` a `.env` en `backend/`.
-   - Modifica los valores de base de datos y llaves secretas.
+---
 
-4. **Base de Datos**
-   - Asegúrate de crear la base de datos en Postgres:
-     ```sql
-     CREATE DATABASE ciencia_loca_db;
-     ```
-   - Corre las migraciones (desde la carpeta `backend/`):
-     ```bash
-     cd backend
-     python manage.py makemigrations
-     python manage.py migrate
-     ```
+## 🚀 Guía de Inicio Rápido
 
-5. **Crear Superusuario**
-   ```bash
-   python manage.py createsuperuser
-   ```
+### 1. Requisitos
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado.
+- Git.
 
-6. **Correr el Servidor**
-   ```bash
-   python manage.py runserver
-   ```
-
-## 📂 Estructura del Proyecto
-
-- **apps/users**: Gestión de usuarios, autenticación JWT, registro.
-- **apps/preguntas**: Banco de preguntas, Áreas, Subáreas.
-  - *Modelos*: Area, SubArea, Pregunta, OpcionRespuesta.
-- **apps/simulacros**: Lógica para generar exámenes aleatorios y guardar resultados.
-  - *Endpoints*: `/api/simulacros/generar/`, `/api/simulacros/{id}/finalizar/`.
-- **apps/estadisticas**: Consultas de rendimiento del estudiante.
-
-## 🔒 Endpoints Principales
-
-- **Auth**:
-  - `POST /api/users/login/` - Obtener Token JWT.
-  - `POST /api/users/register/` - Crear cuenta.
-- **Simulacros**:
-  - `POST /api/simulacros/generar/` - `{ "cantidad": 10, "areas": [] }`.
-  - `POST /api/simulacros/{id}/finalizar/` - Enviar respuestas para calificar.
-
-## ☁️ Recomendaciones para Despliegue y Escalabilidad
-
-1. **Servidor WSGI/ASGI**: En producción, no uses `runserver`. Usa **Gunicorn** o **Uvicorn**.
-2. **Base de Datos**: Usa un servicio gestionado como **AWS RDS** o **DigitalOcean Managed Databases** para PostgreSQL.
-3. **Archivos Estáticos**: Configurar `Whitenoise` o servir archivos estáticos via Nginx/S3 si la app crece.
-4. **Seguridad**:
-   - `DEBUG=False` en producción.
-   - Configurar `CORS_ALLOWED_ORIGINS` estrictamente al dominio del frontend.
-5. **Cache**: Implementar **Redis** para cachear respuestas de preguntas frecuentes o estadísticas pesadas.
-6. **Docker**: Contenerizar la aplicación con Docker para facilitar el despliegue en cualquier plataforma (AWS ECS, Kubernetes, etc.).
-
-## 🧪 Testing
-Para correr tests (cuando se implementen):
+### 2. Instalación
+Clona el proyecto y entra en la carpeta:
 ```bash
-python manage.py test
-```
+git clone [https://github.com/JLM2129/saberly.git](https://github.com/JLM2129/saberly.git)
+cd saberly
+
+3. Despliegue con Docker
+Construye y levanta todos los servicios (Frontend, Backend, DB):
+
+docker-compose up --build
+
+4. Configuración de Base de Datos
+En una nueva terminal, aplica las migraciones y carga los datos de los simulacros:
+
+# Aplicar tablas
+docker exec -it pruebas_app-backend-1 python manage.py migrate
+
+# Importar preguntas y áreas desde JSON
+docker exec -it pruebas_app-backend-1 python manage.py import_icfes_json
+
+# Crear acceso al administrador
+docker exec -it pruebas_app-backend-1 python manage.py createsuperuser
+
+📂 Estructura del Repositorio
+/backend: Contiene la lógica del servidor, modelos de Preguntas, Simulacros y la configuración de la API.
+
+/frontend: Aplicación SPA en React con configuración para Service Workers (PWA).
+
+docker-compose.yml: Orquestación de los contenedores para desarrollo.
+
+📱 Modo Offline
+El proyecto utiliza localStorage y un Service Worker para permitir que el usuario visualice simulacros previamente cargados incluso si el servidor backend no está disponible.
+
+
+

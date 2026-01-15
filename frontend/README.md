@@ -1,16 +1,40 @@
-# React + Vite
+# Saberly - Frontend 📱
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es el cliente de **Saberly**, una aplicación web moderna (SPA) construida con **React** y **Vite**. Está diseñada como una **Progressive Web App (PWA)** para permitir el estudio de simulacros incluso sin conexión a internet.
 
-Currently, two official plugins are available:
+## ✨ Características Específicas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Interfaz Reactiva:** Construida con componentes funcionales y Hooks.
+- **PWA (Progressive Web App):** Configurada para ser instalada en dispositivos móviles y funcionar offline.
+- **Gestión de Estado:** Manejo de simulacros locales mediante `localStorage` para persistencia.
+- **Tailwind CSS:** Estilos modernos y responsivos.
 
-## React Compiler
+## 🛠️ Tecnologías
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18**
+- **Vite** (Build tool ultra rápido)
+- **Vite PWA Plugin** (Service Workers y Manifiesto)
+- **React Router Dom** (Navegación)
 
-## Expanding the ESLint configuration
+## 🚀 Desarrollo Local
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Si deseas ejecutar el frontend fuera de Docker (requiere Node.js instalado):
+
+1. **Instalar dependencias:**
+   ```bash
+   npm install
+
+2. Configurar variables de entorno: Crea un archivo .env en esta carpeta:
+
+VITE_API_URL=http://localhost:8000/api
+
+3. Iniciar servidor de desarrollo:
+
+npm run dev
+
+🐳 Uso con Docker
+Este frontend está configurado para servirse automáticamente mediante el docker-compose.yml en la raíz. El puerto por defecto en desarrollo es el 5173.
+
+Nota: Para que la PWA funcione correctamente en producción, el sitio debe servirse bajo HTTPS.
+
+
