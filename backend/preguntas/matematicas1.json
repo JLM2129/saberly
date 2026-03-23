@@ -1,0 +1,321 @@
+{
+  "nombre": "Matematicas",
+  "descripcion": "Evalúa la logica y conocimientos matematicos.",
+  "contextos": [
+    {
+      "tipo": "grafico",
+      "contexto": "Un agricultor necesita decidir cuál de los dos tanques representados en la imagen tiene mayor capacidad de almacenamiento para su sistema de riego.",
+      "archivo": "/imagenes/capacidad_tanques.png",
+      "preguntas": [
+        {
+          "enunciado": "Considerando que el volumen de un cilindro se calcula como V = π * r^2 * h y el de un prisma rectangular como V = largo * ancho * alto, ¿cuál de las siguientes afirmaciones es correcta? (Tome π ≈ 3,14).",
+          "tipo": "modelacion",
+          "dificultad": "media",
+          "competencia": "formular",
+          "opciones": [
+            {
+              "texto": "A. El tanque cilíndrico tiene una capacidad de 20π m³, lo cual es menor que los 24 m³ del tanque prismático.",
+              "es_correcta": false
+            },
+            {
+              "texto": "B. El tanque prismático tiene mayor capacidad porque sus dimensiones base (4m y 3m) son mayores al radio del cilindro.",
+              "es_correcta": false
+            },
+            {
+              "texto": "C. El tanque cilíndrico tiene una capacidad aproximada de 62,8 m³, superando la capacidad de 24 m³ del tanque prismático.",
+              "es_correcta": true
+            },
+            {
+              "texto": "D. Ambos tanques tienen la misma capacidad de almacenamiento ya que el promedio de sus dimensiones es similar.",
+              "es_correcta": false
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "tipo": "grafico",
+      "contexto": "Una pizza circular se divide originalmente en 8 porciones iguales para ser repartida entre un grupo de personas.",
+      "archivo": "/imagenes/reparto_pizza.png",
+      "preguntas": [
+        {
+          "enunciado": "Si se retiran 3 de las 8 porciones originales, ¿qué porcentaje del total de la pizza queda disponible en el plato?",
+          "tipo": "razonamiento",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            {
+              "texto": "37,5%",
+              "es_correcta": false
+            },
+            {
+              "texto": "62,5%",
+              "es_correcta": true
+            },
+            {
+              "texto": "75%",
+              "es_correcta": false
+            },
+            {
+              "texto": "30%",
+              "es_correcta": false
+            }
+          ]
+        }
+      ] 
+    },
+    {
+  "tipo": "grafico",
+  "contexto": "En el plano cartesiano se representa una función lineal que pasa por los puntos (0, 2) y (4, 10), como se observa en la imagen.",
+  "archivo": "/imagenes/plano_cartesiano_recta.png",
+  "preguntas": [
+    {
+      "enunciado": "La pendiente (m) de una recta se define como la razón de cambio entre el eje y y el eje x ($m = \\frac{y_2 - y_1}{x_2 - x_1}$). ¿Cuál es el valor de la pendiente para la recta mostrada?",
+      "tipo": "razonamiento",
+      "dificultad": "media",
+      "competencia": "argumentar",
+      "opciones": [
+        {
+          "texto": "m = 0,5",
+          "es_correcta": false
+        },
+        {
+          "texto": "m = 2",
+          "es_correcta": true
+        },
+        {
+          "texto": "m = 4",
+          "es_correcta": false
+        },
+        {
+          "texto": "m = 8",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se realizó una encuesta a 100 estudiantes sobre su deporte favorito. Los resultados se presentan en la siguiente gráfica de barras.",
+  "archivo": "/imagenes/grafica_deportes_estudiantes.png",
+  "preguntas": [
+    {
+      "enunciado": "Si se elige a un estudiante al azar de este grupo de 100, ¿cuál es la probabilidad de que su deporte favorito sea el Baloncesto (Basketball) o la Natación (Swimming)?",
+      "tipo": "razonamiento",
+      "dificultad": "media",
+      "competencia": "resolver",
+      "opciones": [
+        {
+          "texto": "25%",
+          "es_correcta": false
+        },
+        {
+          "texto": "15%",
+          "es_correcta": false
+        },
+        {
+          "texto": "40%",
+          "es_correcta": true
+        },
+        {
+          "texto": "60%",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un experimento aleatorio consiste en dos etapas: primero se lanza una moneda equilibrada (Cara/Sello) y luego se extrae una bola de una bolsa que contiene 3 bolas rojas y 2 bolas azules.",
+  "archivo": "/imagenes/image_generation_content.png",
+  "preguntas": [
+    {
+      "enunciado": "Utilizando el diagrama de árbol, ¿cuál es la probabilidad de que el resultado del experimento sea 'Sello' (Tails) y luego se extraiga una 'Bola Roja' (Red Ball)?",
+      "tipo": "razonamiento",
+      "dificultad": "alta",
+      "competencia": "resolver",
+      "opciones": [
+        {
+          "text": "3/10",
+          "rationale": "Para eventos independientes consecutivos, se multiplican las probabilidades de cada rama: (1/2) * (3/5) = 3/10.",
+          "isCorrect": true
+        },
+        {
+          "text": "3/5",
+          "rationale": "Esta es solo la probabilidad de sacar la bola roja, pero no tiene en cuenta el resultado previo de la moneda.",
+          "isCorrect": false
+        },
+        {
+          "text": "1/2",
+          "rationale": "Esta es la probabilidad de lanzar la moneda, pero ignora la segunda fase de extraer la bola.",
+          "isCorrect": false
+        },
+        {
+          "text": "4/5",
+          "rationale": "Este valor no corresponde a la combinación de las ramas del diagrama de árbol presentado.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Recuerda que para hallar la probabilidad de un camino específico en un diagrama de árbol, debes multiplicar las probabilidades de las ramas que lo componen."
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "La figura mostrada representa el diseño de una ventana rectangular coronada por un semicírculo. Las medidas dadas están en metros.",
+  "archivo": "/imagenes/area_figura_compuesta_ventana.png",
+  "preguntas": [
+    {
+      "enunciado": "Si se desea instalar un vidrio especial en toda la ventana, ¿cuál es el área total, en metros cuadrados (m²), que debe cubrir el vidrio? (Utilice $\\pi \\approx 3,14$).",
+      "tipo": "resolucion",
+      "dificultad": "alta",
+      "competencia": "resolver",
+      "opciones": [
+        {
+          "texto": "21,57 m²",
+          "es_correcta": true
+        },
+        {
+          "texto": "18,28 m²",
+          "es_correcta": false
+        },
+        {
+          "texto": "15,14 m²",
+          "es_correcta": false
+        },
+        {
+          "texto": "24,71 m²",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se planea construir una rampa de carga para un almacén. Las especificaciones técnicas indican que la base de la rampa debe medir 12 metros de largo y alcanzar una altura vertical de 5 metros, como se muestra en la imagen.",
+  "archivo": "/imagenes/image_generation_content1.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es la longitud total de la superficie inclinada (hipotenusa) de la rampa que se debe construir?",
+      "tipo": "resolucion",
+      "dificultad": "media",
+      "competencia": "resolver",
+      "opciones": [
+        {
+          "texto": "17 metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "13 metros",
+          "es_correcta": true
+        },
+        {
+          "texto": "10,5 metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "7 metros",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se diseñó un tanque de almacenamiento de agua con forma cilíndrica. Las especificaciones técnicas indican que el radio de la base es de 2 metros y la altura del cilindro es de 7 metros, como se observa en la imagen.",
+  "archivo": "/imagenes/volumen_cilindro_tanque.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es la capacidad total de almacenamiento, en metros cúbicos ($m^3$), de este tanque cilíndrico? (Utilice $\\pi \\approx 3,14$).",
+      "tipo": "resolucion",
+      "dificultad": "media",
+      "competencia": "resolver",
+      "opciones": [
+        {
+          "texto": "87,92 $m^3$",
+          "es_correcta": true
+        },
+        {
+          "texto": "43,96 $m^3$",
+          "es_correcta": false
+        },
+        {
+          "texto": "28,26 $m^3$",
+          "es_correcta": false
+        },
+        {
+          "texto": "61,54 $m^3$",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se presenta un círculo cuyo área total es de 120 cm². En él se ha resaltado un sector circular con un ángulo central de 90°, como se muestra en la figura.",
+  "archivo": "/imagenes/image_generation_content2.png",
+  "preguntas": [
+    {
+      "enunciado": "De acuerdo con la información de la imagen, ¿cuál es el área del sector circular resaltado en color rojo?",
+      "tipo": "razonamiento",
+      "dificultad": "media",
+      "competencia": "resolver",
+      "opciones": [
+        {
+          "texto": "30 cm²",
+          "es_correcta": true
+        },
+        {
+          "texto": "60 cm²",
+          "es_correcta": false
+        },
+        {
+          "texto": "45 cm²",
+          "es_correcta": false
+        },
+        {
+          "texto": "90 cm²",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "La siguiente gráfica muestra la relación entre el tiempo transcurrido (en horas) y la distancia recorrida (en kilómetros) por un vehículo que mantiene una velocidad constante.",
+  "archivo": "/imagenes/grafica_funcion_lineal_distancia.png",
+  "preguntas": [
+    {
+      "enunciado": "De acuerdo con la gráfica, ¿cuál es la velocidad del vehículo (la pendiente de la recta) y qué distancia habrá recorrido al cabo de 6 horas?",
+      "tipo": "razonamiento",
+      "dificultad": "alta",
+      "competencia": "argumentar",
+      "opciones": [
+        {
+          "texto": "Velocidad: 2 km/h; Distancia: 14 km",
+          "es_correcta": true
+        },
+        {
+          "texto": "Velocidad: 4 km/h; Distancia: 24 km",
+          "es_correcta": false
+        },
+        {
+          "texto": "Velocidad: 2 km/h; Distancia: 12 km",
+          "es_correcta": false
+        },
+        {
+          "texto": "Velocidad: 1 km/h; Distancia: 10 km",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+} 
+  ] 
+} 

@@ -1,6 +1,24 @@
-from rest_framework import viewsets, permissions
+from rest_framework import viewsets, permissions, status
+from rest_framework.decorators import api_view, permission_classes, action
+from rest_framework.permissions import IsAdminUser, IsAuthenticated
+from rest_framework.response import Response
+
 from .models import Area, Pregunta
-from .serializers import AreaSerializer, PreguntaSerializer
+from .serializers import AreaSerializer, PreguntaSerializer, PreguntaCreateSerializer
+
+from apps.preguntas.services.contexto_service import (
+    asegurar_contexto_por_area,
+    asignar_contextos_a_preguntas
+)
+
+
+class IsTeacher(permissions.BasePermission):
+    """
+    Permiso personalizado para verificar si el usuario es docente
+    """
+    def has_permission(self, request, view):
+        return request.user and request.user.is_authenticated and request.user.is_teacher
+
 
 class AreaViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Area.objects.all()
@@ -24,14 +42,48 @@ class PreguntaViewSet(viewsets.ModelViewSet):
         if area_id:
             queryset = queryset.filter(subarea__area_id=area_id)
         return queryset
-from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import IsAdminUser
-from rest_framework.response import Response
 
-from apps.preguntas.services.contexto_service import (
-    asegurar_contexto_por_area,
-    asignar_contextos_a_preguntas
-)
+
+class TeacherPreguntaViewSet(viewsets.ModelViewSet):
+    """
+    ViewSet para que los docentes puedan crear, editar y eliminar preguntas
+    """
+    queryset = Pregunta.objects.all().select_related('contexto', 'area', 'subarea').prefetch_related('opciones')
+    permission_classes = [IsAuthenticated, IsTeacher]
+    
+    def get_serializer_class(self):
+        if self.action in ['create', 'update', 'partial_update']:
+            return PreguntaCreateSerializer
+        return PreguntaSerializer
+    
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        self.perform_create(serializer)
+        
+        # Retornar la pregunta creada con el serializer de lectura
+        pregunta = serializer.instance
+        response_serializer = PreguntaSerializer(pregunta)
+        headers = self.get_success_headers(serializer.data)
+        return Response(
+            response_serializer.data, 
+            status=status.HTTP_201_CREATED, 
+            headers=headers
+        )
+    
+    @action(detail=False, methods=['get'])
+    def my_questions(self, request):
+        """
+        Retorna todas las preguntas creadas (útil para estadísticas)
+        """
+        preguntas = self.get_queryset()
+        page = self.paginate_queryset(preguntas)
+        if page is not None:
+            serializer = PreguntaSerializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+        
+        serializer = PreguntaSerializer(preguntas, many=True)
+        return Response(serializer.data)
 
 
 @api_view(['POST'])

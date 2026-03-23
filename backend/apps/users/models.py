@@ -40,6 +40,10 @@ class User(AbstractUser):
     email = models.EmailField(_('email address'), unique=True)
     full_name = models.CharField(max_length=255, blank=True)
     is_verified = models.BooleanField(default=False)
+    is_teacher = models.BooleanField(
+        default=False, 
+        help_text='Designa si este usuario es docente y puede agregar preguntas'
+    )
     
     # Optional: Add fields for "grade" or "school" if needed for students
 

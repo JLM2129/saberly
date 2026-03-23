@@ -1,0 +1,117 @@
+.multi-container {
+    padding-top: 100px;
+    padding-bottom: 5rem;
+    min-height: 100vh;
+    background: radial-gradient(circle at top right, #1e293b 0%, #020617 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lobby-box {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 3rem;
+}
+
+.room-code-display {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--primary);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    margin: 1.5rem 0;
+    letter-spacing: 5px;
+    border: 2px dashed var(--primary);
+}
+
+.players-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.player-tag {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-tag.is-creador {
+    border: 1px solid var(--primary);
+}
+
+/* Game Styles */
+.multi-game-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    width: 95%;
+    max-width: 1200px;
+}
+
+.ranking-panel {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ranking-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.buzzer-btn {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #ef4444;
+    border: 10px solid #991b1b;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 0 #7f1d1d, 0 20px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.1s;
+    margin: 2rem 0;
+}
+
+.buzzer-btn:active {
+    transform: translateY(10px);
+    box-shadow: 0 0 0 transparent;
+}
+
+.buzzer-btn:disabled {
+    background: #444;
+    border-color: #222;
+    box-shadow: none;
+    cursor: not-allowed;
+    transform: translateY(10px);
+}
+
+.penalty-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(239, 68, 68, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+}

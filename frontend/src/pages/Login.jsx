@@ -23,8 +23,9 @@ export default function Login() {
 
         try {
             await login(email, password);
+            localStorage.setItem('user_email', email);
             navigate('/simulacros');
-            window.location.reload(); // Para actualizar el estado de autenticación en el Navbar (temporal)
+            window.location.reload();
         } catch (err) {
             setError(err.message || 'Credenciales inválidas');
         } finally {

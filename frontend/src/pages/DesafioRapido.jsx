@@ -54,6 +54,7 @@ const DesafioRapido = () => {
         setGameState('FINISHED');
         try {
             await juegosService.guardarPartida({
+                tipo_juego: 'quick',
                 puntaje_total: score,
                 preguntas_correctas: stats.correct,
                 preguntas_incorrectas: stats.incorrect,

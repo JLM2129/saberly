@@ -38,13 +38,13 @@ export default function Home() {
                         <Link to="/simulacros" className="btn-primary" style={{ textDecoration: 'none', display: 'inline-block' }}>
                             Comenzar Simulacro
                         </Link>
-                        <Link to="/desafio-rapido" className="btn-primary" style={{
+                        <Link to="/desafios" className="btn-primary" style={{
                             textDecoration: 'none',
                             display: 'inline-block',
                             background: 'linear-gradient(135deg, var(--accent), #f472b6)',
                             border: 'none'
                         }}>
-                            Modo Desafío 🔥
+                            Zona de Desafíos 🔥
                         </Link>
                     </div>
                 </div>

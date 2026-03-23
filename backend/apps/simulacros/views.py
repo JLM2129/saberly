@@ -136,7 +136,27 @@ class FinalizarSimulacroView(views.APIView):
         simulacro.completado = True
         simulacro.save()
 
-        return Response(
-            SimulacroSerializer(simulacro).data,
-            status=status.HTTP_200_OK
+        return Response({"mensaje": "Simulacro finalizado correctamente"}, status=status.HTTP_200_OK)
+
+class SincronizarOfflineView(views.APIView):
+    permission_classes = [permissions.IsAuthenticated]
+
+    def post(self, request):
+        data = request.data
+        # data contiene el objeto 'resultado' del frontend (puntaje, correctas, detalles, etc.)
+        
+        # Crear el simulacro
+        simulacro = Simulacro.objects.create(
+            usuario=request.user,
+            completado=True,
+            puntaje_total=data.get('puntaje', 0),
+            tiempo_usado_segundos=data.get('tiempo_usado_segundos', 0),
+            fecha_fin=timezone.now()
         )
+        
+        # Guardar detalles (opcionalmente simplificado si no queremos reconstruir todo)
+        # Por ahora guardaremos los resultados generales para las estadísticas
+        
+        return Response({"status": "sincronizado", "id": simulacro.id}, status=status.HTTP_201_CREATED)
+
+# URLs se actualizarán automáticamente si el router está bien configurado o si las añadimos manualmente

@@ -1,24 +1,64 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { NavLink, Link, useNavigate } from 'react-router-dom';
 import { checkBackendConnection } from '../services/api';
 import { isAuthenticated, logout } from '../services/auth';
 import { useMode } from '../context/ModeContext';
+// import axios from 'axios'; // Eliminado para evitar problemas de dependencias
+
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8001/api';
 
 export default function Navbar() {
     const { isOffline, toggleMode } = useMode();
     const [isConnected, setIsConnected] = useState(null);
     const [isAuth, setIsAuth] = useState(isAuthenticated());
+    const [isTeacher, setIsTeacher] = useState(false);
     const navigate = useNavigate();
+
+    const navLinkStyle = ({ isActive }) => ({
+        color: isActive ? 'var(--primary)' : 'var(--text-muted)',
+        fontWeight: isActive ? '700' : '500',
+        textDecoration: 'none',
+        transition: 'all 0.2s ease'
+    });
 
     useEffect(() => {
         checkBackendConnection().then(setIsConnected);
         // Verificar auth periódicamente o al montar
-        setIsAuth(isAuthenticated());
-    }, []);
+        const authStatus = isAuthenticated();
+        setIsAuth(authStatus);
+
+        // Verificar si es docente
+        if (authStatus) {
+            checkTeacherStatus();
+        }
+
+        // Sincronizar resultados offline si estamos online
+        if (!isOffline && authStatus) {
+            import('../offline/offlineService').then(module => {
+                module.syncOfflineResults();
+            });
+        }
+    }, [isOffline]);
+
+    const checkTeacherStatus = async () => {
+        try {
+            const token = localStorage.getItem('access_token');
+            const response = await fetch(`${API_URL}/users/profile/`, {
+                headers: { 'Authorization': `Bearer ${token}` }
+            });
+            if (response.ok) {
+                const data = await response.json();
+                setIsTeacher(data.is_teacher || false);
+            }
+        } catch (error) {
+            console.error('Error verificando status de docente:', error);
+        }
+    };
 
     const handleLogout = () => {
         logout();
         setIsAuth(false);
+        setIsTeacher(false);
         navigate('/login');
     };
 
@@ -41,10 +81,27 @@ export default function Navbar() {
                 </h2>
             </Link>
             <nav style={{ display: 'flex', gap: 'var(--spacing-md)', alignItems: 'center' }}>
-                <Link to="/" style={{ color: 'var(--text-main)', fontWeight: '500' }}>Inicio</Link>
-                <Link to="/simulacros" style={{ color: 'var(--text-muted)' }}>Simulacros</Link>
-                <Link to="/desafio-rapido" style={{ color: 'var(--text-muted)' }}>Desafío</Link>
-                <Link to="/estadisticas" style={{ color: 'var(--text-muted)' }}>Estadísticas</Link>
+                <NavLink to="/" style={navLinkStyle} className="nav-item" end>Inicio</NavLink>
+                <NavLink to="/simulacros" style={navLinkStyle} className="nav-item">Simulacros</NavLink>
+                <NavLink to="/desafios" style={navLinkStyle} className="nav-item">Desafíos</NavLink>
+                <NavLink to="/estadisticas" style={navLinkStyle} className="nav-item">Estadísticas</NavLink>
+
+                {/* Mostrar enlace al panel de docentes si el usuario es docente */}
+                {isAuth && isTeacher && (
+                    <Link
+                        to="/teacher-panel"
+                        style={{
+                            color: 'var(--accent)',
+                            fontWeight: '600',
+                            padding: '6px 12px',
+                            background: 'rgba(168, 85, 247, 0.1)',
+                            borderRadius: '6px',
+                            border: '1px solid rgba(168, 85, 247, 0.2)'
+                        }}
+                    >
+                        📚 Panel Docente
+                    </Link>
+                )}
 
                 <div style={{ width: '1px', height: '20px', background: 'var(--glass-border)', margin: '0 8px' }}></div>
 

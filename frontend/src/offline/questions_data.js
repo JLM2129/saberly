@@ -1,36 +1,13 @@
+// Archivo generado desde la Base de Datos
 export const OFF_QUESTIONS_DATA = {
   "ciencias_naturales": {
-    "nombre": "Ciencias Naturales",
+    "nombre": "Ciencias_Naturales",
     "contextos": [
       {
-        "tipo": "contexto_cientifico",
+        "tipo": "texto",
         "contexto": "Un estudiante observa al microscopio células de una hoja y nota que algunas estructuras están presentes solo en ciertas células.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál estructura permite diferenciar una célula vegetal de una célula animal?",
-            "tipo": "uso_conocimiento",
-            "dificultad": "media",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Mitocondria",
-                "es_correcta": false
-              },
-              {
-                "texto": "Núcleo",
-                "es_correcta": false
-              },
-              {
-                "texto": "Cloroplasto",
-                "es_correcta": true
-              },
-              {
-                "texto": "Ribosomas",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La función principal del cloroplasto es:",
             "tipo": "uso_conocimiento",
@@ -54,38 +31,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál estructura permite diferenciar una célula vegetal de una célula animal?",
+            "tipo": "uso_conocimiento",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Mitocondria",
+                "es_correcta": false
+              },
+              {
+                "texto": "Núcleo",
+                "es_correcta": false
+              },
+              {
+                "texto": "Cloroplasto",
+                "es_correcta": true
+              },
+              {
+                "texto": "Ribosomas",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "experimento",
+        "tipo": "texto",
         "contexto": "Se coloca una planta durante una semana en un lugar oscuro y otra en un lugar con luz.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál variable se está modificando en el experimento?",
-            "tipo": "indagacion",
-            "dificultad": "media",
-            "competencia": "formular",
-            "opciones": [
-              {
-                "texto": "Cantidad de agua",
-                "es_correcta": false
-              },
-              {
-                "texto": "Tipo de planta",
-                "es_correcta": false
-              },
-              {
-                "texto": "Presencia de luz",
-                "es_correcta": true
-              },
-              {
-                "texto": "Temperatura",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Qué proceso se ve directamente afectado por la ausencia de luz?",
             "tipo": "razonamiento",
@@ -109,38 +86,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál variable se está modificando en el experimento?",
+            "tipo": "indagacion",
+            "dificultad": "media",
+            "competencia": "formular",
+            "opciones": [
+              {
+                "texto": "Cantidad de agua",
+                "es_correcta": false
+              },
+              {
+                "texto": "Tipo de planta",
+                "es_correcta": false
+              },
+              {
+                "texto": "Presencia de luz",
+                "es_correcta": true
+              },
+              {
+                "texto": "Temperatura",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "situacion_quimica",
+        "tipo": "texto",
         "contexto": "Un clavo de hierro se deja a la intemperie durante varios días y se observa la formación de una sustancia rojiza.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "El cambio observado corresponde a:",
-            "tipo": "clasificacion",
-            "dificultad": "media",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Cambio físico",
-                "es_correcta": false
-              },
-              {
-                "texto": "Reacción química",
-                "es_correcta": true
-              },
-              {
-                "texto": "Mezcla homogénea",
-                "es_correcta": false
-              },
-              {
-                "texto": "Disolución",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La sustancia rojiza formada es un ejemplo de:",
             "tipo": "uso_conocimiento",
@@ -164,38 +141,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "situacion_fisica",
-        "contexto": "Un objeto se mueve en línea recta con velocidad constante.",
-        "archivo": null,
-        "preguntas": [
+          },
           {
-            "enunciado": "Según las leyes de Newton, la fuerza neta que actúa sobre el objeto es:",
-            "tipo": "razonamiento",
+            "enunciado": "El cambio observado corresponde a:",
+            "tipo": "clasificacion",
             "dificultad": "media",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Mayor que cero",
+                "texto": "Cambio físico",
                 "es_correcta": false
               },
               {
-                "texto": "Menor que cero",
-                "es_correcta": false
-              },
-              {
-                "texto": "Igual a cero",
+                "texto": "Reacción química",
                 "es_correcta": true
               },
               {
-                "texto": "Variable",
+                "texto": "Mezcla homogénea",
+                "es_correcta": false
+              },
+              {
+                "texto": "Disolución",
                 "es_correcta": false
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un objeto se mueve en línea recta con velocidad constante.",
+        "archivo": null,
+        "preguntas": [
           {
             "enunciado": "Si la masa del objeto aumenta y la fuerza aplicada es la misma, la aceleración:",
             "tipo": "razonamiento",
@@ -219,38 +196,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "Según las leyes de Newton, la fuerza neta que actúa sobre el objeto es:",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Mayor que cero",
+                "es_correcta": false
+              },
+              {
+                "texto": "Menor que cero",
+                "es_correcta": false
+              },
+              {
+                "texto": "Igual a cero",
+                "es_correcta": true
+              },
+              {
+                "texto": "Variable",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "contexto_biologico",
+        "tipo": "texto",
         "contexto": "En un ecosistema se observa una disminución considerable de una población de insectos debido al uso intensivo de pesticidas.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es una consecuencia directa de la disminución de insectos en el ecosistema?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Aumento de la biodiversidad",
-                "es_correcta": false
-              },
-              {
-                "texto": "Alteración de las cadenas alimentarias",
-                "es_correcta": true
-              },
-              {
-                "texto": "Incremento de la fotosíntesis",
-                "es_correcta": false
-              },
-              {
-                "texto": "Reducción del oxígeno atmosférico",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Qué tipo de relación ecológica se ve afectada principalmente?",
             "tipo": "uso_conocimiento",
@@ -274,38 +251,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es una consecuencia directa de la disminución de insectos en el ecosistema?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Aumento de la biodiversidad",
+                "es_correcta": false
+              },
+              {
+                "texto": "Alteración de las cadenas alimentarias",
+                "es_correcta": true
+              },
+              {
+                "texto": "Incremento de la fotosíntesis",
+                "es_correcta": false
+              },
+              {
+                "texto": "Reducción del oxígeno atmosférico",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "experimento",
+        "tipo": "texto",
         "contexto": "Un grupo de estudiantes calienta agua en un recipiente y mide la temperatura cada minuto.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es la variable dependiente en este experimento?",
-            "tipo": "indagacion",
-            "dificultad": "media",
-            "competencia": "formular",
-            "opciones": [
-              {
-                "texto": "Tiempo de calentamiento",
-                "es_correcta": false
-              },
-              {
-                "texto": "Cantidad de agua",
-                "es_correcta": false
-              },
-              {
-                "texto": "Temperatura del agua",
-                "es_correcta": true
-              },
-              {
-                "texto": "Tipo de recipiente",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Si el agua alcanza los 100 °C, ¿qué proceso ocurre a nivel macroscópico?",
             "tipo": "uso_conocimiento",
@@ -329,38 +306,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es la variable dependiente en este experimento?",
+            "tipo": "indagacion",
+            "dificultad": "media",
+            "competencia": "formular",
+            "opciones": [
+              {
+                "texto": "Tiempo de calentamiento",
+                "es_correcta": false
+              },
+              {
+                "texto": "Cantidad de agua",
+                "es_correcta": false
+              },
+              {
+                "texto": "Temperatura del agua",
+                "es_correcta": true
+              },
+              {
+                "texto": "Tipo de recipiente",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "situacion_quimica",
+        "tipo": "texto",
         "contexto": "Se mezclan bicarbonato de sodio y vinagre en un recipiente cerrado.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "La formación de burbujas indica que se produce:",
-            "tipo": "clasificacion",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Un cambio físico",
-                "es_correcta": false
-              },
-              {
-                "texto": "Una reacción química",
-                "es_correcta": true
-              },
-              {
-                "texto": "Una disolución homogénea",
-                "es_correcta": false
-              },
-              {
-                "texto": "Un proceso nuclear",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "El gas liberado en esta reacción es principalmente:",
             "tipo": "uso_conocimiento",
@@ -384,38 +361,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "La formación de burbujas indica que se produce:",
+            "tipo": "clasificacion",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Un cambio físico",
+                "es_correcta": false
+              },
+              {
+                "texto": "Una reacción química",
+                "es_correcta": true
+              },
+              {
+                "texto": "Una disolución homogénea",
+                "es_correcta": false
+              },
+              {
+                "texto": "Un proceso nuclear",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "situacion_fisica",
+        "tipo": "texto",
         "contexto": "Un automóvil frena bruscamente al acercarse a un semáforo en rojo.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué fuerza es responsable de la disminución de la velocidad del automóvil?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Fuerza gravitacional",
-                "es_correcta": false
-              },
-              {
-                "texto": "Fuerza de fricción",
-                "es_correcta": true
-              },
-              {
-                "texto": "Fuerza normal",
-                "es_correcta": false
-              },
-              {
-                "texto": "Fuerza eléctrica",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Si la masa del automóvil es mayor, para detenerlo en la misma distancia se requiere:",
             "tipo": "razonamiento",
@@ -439,38 +416,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Qué fuerza es responsable de la disminución de la velocidad del automóvil?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Fuerza gravitacional",
+                "es_correcta": false
+              },
+              {
+                "texto": "Fuerza de fricción",
+                "es_correcta": true
+              },
+              {
+                "texto": "Fuerza normal",
+                "es_correcta": false
+              },
+              {
+                "texto": "Fuerza eléctrica",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "ciencia_tecnologia_sociedad",
+        "tipo": "texto",
         "contexto": "El uso excesivo de antibióticos ha generado resistencia bacteriana.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es una consecuencia directa de la resistencia bacteriana?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Mayor eficacia de los antibióticos",
-                "es_correcta": false
-              },
-              {
-                "texto": "Dificultad para tratar infecciones",
-                "es_correcta": true
-              },
-              {
-                "texto": "Eliminación total de bacterias",
-                "es_correcta": false
-              },
-              {
-                "texto": "Reducción del sistema inmunológico humano",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Qué acción contribuye a disminuir este problema?",
             "tipo": "competencias_cts",
@@ -494,38 +471,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es una consecuencia directa de la resistencia bacteriana?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Mayor eficacia de los antibióticos",
+                "es_correcta": false
+              },
+              {
+                "texto": "Dificultad para tratar infecciones",
+                "es_correcta": true
+              },
+              {
+                "texto": "Eliminación total de bacterias",
+                "es_correcta": false
+              },
+              {
+                "texto": "Reducción del sistema inmunológico humano",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "contexto_biologico",
+        "tipo": "texto",
         "contexto": "En una familia, ambos padres tienen ojos cafés, pero uno de sus hijos tiene ojos claros.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "La aparición de ojos claros en el hijo se explica porque:",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "El rasgo de ojos claros es dominante",
-                "es_correcta": false
-              },
-              {
-                "texto": "Ambos padres portan el gen recesivo",
-                "es_correcta": true
-              },
-              {
-                "texto": "Ocurrió una mutación ambiental",
-                "es_correcta": false
-              },
-              {
-                "texto": "El color de ojos cambia con la edad",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "El gen que no se expresa pero se hereda se denomina:",
             "tipo": "uso_conocimiento",
@@ -549,38 +526,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "La aparición de ojos claros en el hijo se explica porque:",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "El rasgo de ojos claros es dominante",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ambos padres portan el gen recesivo",
+                "es_correcta": true
+              },
+              {
+                "texto": "Ocurrió una mutación ambiental",
+                "es_correcta": false
+              },
+              {
+                "texto": "El color de ojos cambia con la edad",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "contexto_energetico",
+        "tipo": "texto",
         "contexto": "Un estudiante deja una bicicleta detenida en la cima de una colina.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "La energía que posee la bicicleta en ese punto es:",
-            "tipo": "uso_conocimiento",
-            "dificultad": "baja",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Cinética",
-                "es_correcta": false
-              },
-              {
-                "texto": "Potencial gravitacional",
-                "es_correcta": true
-              },
-              {
-                "texto": "Térmica",
-                "es_correcta": false
-              },
-              {
-                "texto": "Eléctrica",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Cuando la bicicleta desciende, la energía potencial se transforma en:",
             "tipo": "razonamiento",
@@ -604,38 +581,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "La energía que posee la bicicleta en ese punto es:",
+            "tipo": "uso_conocimiento",
+            "dificultad": "baja",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Cinética",
+                "es_correcta": false
+              },
+              {
+                "texto": "Potencial gravitacional",
+                "es_correcta": true
+              },
+              {
+                "texto": "Térmica",
+                "es_correcta": false
+              },
+              {
+                "texto": "Eléctrica",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "situacion_quimica",
+        "tipo": "texto",
         "contexto": "Se quema un trozo de papel en presencia de oxígeno.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "El proceso observado corresponde a:",
-            "tipo": "clasificacion",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Cambio físico",
-                "es_correcta": false
-              },
-              {
-                "texto": "Reacción de combustión",
-                "es_correcta": true
-              },
-              {
-                "texto": "Disolución",
-                "es_correcta": false
-              },
-              {
-                "texto": "Evaporación",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Una evidencia de que ocurrió una reacción química es:",
             "tipo": "razonamiento",
@@ -659,38 +636,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "El proceso observado corresponde a:",
+            "tipo": "clasificacion",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Cambio físico",
+                "es_correcta": false
+              },
+              {
+                "texto": "Reacción de combustión",
+                "es_correcta": true
+              },
+              {
+                "texto": "Disolución",
+                "es_correcta": false
+              },
+              {
+                "texto": "Evaporación",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "situacion_fisica",
+        "tipo": "texto",
         "contexto": "Un bombillo se conecta a una batería y enciende.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "La energía que permite el funcionamiento del bombillo es:",
-            "tipo": "uso_conocimiento",
-            "dificultad": "baja",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Mecánica",
-                "es_correcta": false
-              },
-              {
-                "texto": "Eléctrica",
-                "es_correcta": true
-              },
-              {
-                "texto": "Química",
-                "es_correcta": false
-              },
-              {
-                "texto": "Nuclear",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La transformación principal de energía en el bombillo es:",
             "tipo": "razonamiento",
@@ -714,38 +691,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "La energía que permite el funcionamiento del bombillo es:",
+            "tipo": "uso_conocimiento",
+            "dificultad": "baja",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Mecánica",
+                "es_correcta": false
+              },
+              {
+                "texto": "Eléctrica",
+                "es_correcta": true
+              },
+              {
+                "texto": "Química",
+                "es_correcta": false
+              },
+              {
+                "texto": "Nuclear",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "ciencia_tecnologia_sociedad",
+        "tipo": "texto",
         "contexto": "Las energías renovables se promueven como alternativa a los combustibles fósiles.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "Una ventaja ambiental de las energías renovables es que:",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Reducen la emisión de gases contaminantes",
-                "es_correcta": true
-              },
-              {
-                "texto": "Son ilimitadas en cualquier lugar",
-                "es_correcta": false
-              },
-              {
-                "texto": "No requieren tecnología",
-                "es_correcta": false
-              },
-              {
-                "texto": "Eliminan el consumo energético",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Un ejemplo de energía renovable es:",
             "tipo": "uso_conocimiento",
@@ -769,34 +746,58 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "contexto_ecologico",
-        "contexto": "En un ecosistema acuático se observa una disminución en la cantidad de oxígeno disuelto en el agua.",
-        "archivo": null,
-        "preguntas": [
+          },
           {
-            "enunciado": "¿Cuál organismo se vería más afectado por la disminución del oxígeno?",
+            "enunciado": "Una ventaja ambiental de las energías renovables es que:",
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
             "opciones": [
               {
-                "texto": "Peces",
+                "texto": "Reducen la emisión de gases contaminantes",
                 "es_correcta": true
               },
               {
-                "texto": "Plantas acuáticas",
+                "texto": "Son ilimitadas en cualquier lugar",
                 "es_correcta": false
               },
               {
-                "texto": "Algas",
+                "texto": "No requieren tecnología",
                 "es_correcta": false
               },
               {
-                "texto": "Bacterias anaerobias",
+                "texto": "Eliminan el consumo energético",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En un ecosistema acuático se observa una disminución en la cantidad de oxígeno disuelto en el agua.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Una causa común de esta disminución de oxígeno es:",
+            "tipo": "uso_conocimiento",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Contaminación por residuos orgánicos",
+                "es_correcta": true
+              },
+              {
+                "texto": "Evaporación del agua",
+                "es_correcta": false
+              },
+              {
+                "texto": "Movimiento de corrientes",
+                "es_correcta": false
+              },
+              {
+                "texto": "Presencia de sales minerales",
                 "es_correcta": false
               }
             ]
@@ -826,25 +827,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "Una causa común de esta disminución de oxígeno es:",
-            "tipo": "uso_conocimiento",
+            "enunciado": "¿Cuál organismo se vería más afectado por la disminución del oxígeno?",
+            "tipo": "razonamiento",
             "dificultad": "media",
-            "competencia": "explicar",
+            "competencia": "analizar",
             "opciones": [
               {
-                "texto": "Contaminación por residuos orgánicos",
+                "texto": "Peces",
                 "es_correcta": true
               },
               {
-                "texto": "Evaporación del agua",
+                "texto": "Plantas acuáticas",
                 "es_correcta": false
               },
               {
-                "texto": "Movimiento de corrientes",
+                "texto": "Algas",
                 "es_correcta": false
               },
               {
-                "texto": "Presencia de sales minerales",
+                "texto": "Bacterias anaerobias",
                 "es_correcta": false
               }
             ]
@@ -852,30 +853,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "situacion_fisica",
+        "tipo": "texto",
         "contexto": "Un estudiante empuja una caja sobre el suelo aplicando una fuerza constante.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "La fuerza que se opone al movimiento de la caja es:",
+            "enunciado": "El trabajo mecánico se realiza cuando:",
             "tipo": "uso_conocimiento",
-            "dificultad": "baja",
+            "dificultad": "media",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Fuerza de fricción",
+                "texto": "Una fuerza produce desplazamiento",
                 "es_correcta": true
               },
               {
-                "texto": "Fuerza normal",
+                "texto": "Existe masa",
                 "es_correcta": false
               },
               {
-                "texto": "Fuerza gravitacional",
+                "texto": "Hay fricción",
                 "es_correcta": false
               },
               {
-                "texto": "Fuerza eléctrica",
+                "texto": "Se aplica calor",
                 "es_correcta": false
               }
             ]
@@ -905,25 +906,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "El trabajo mecánico se realiza cuando:",
+            "enunciado": "La fuerza que se opone al movimiento de la caja es:",
             "tipo": "uso_conocimiento",
-            "dificultad": "media",
+            "dificultad": "baja",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Una fuerza produce desplazamiento",
+                "texto": "Fuerza de fricción",
                 "es_correcta": true
               },
               {
-                "texto": "Existe masa",
+                "texto": "Fuerza normal",
                 "es_correcta": false
               },
               {
-                "texto": "Hay fricción",
+                "texto": "Fuerza gravitacional",
                 "es_correcta": false
               },
               {
-                "texto": "Se aplica calor",
+                "texto": "Fuerza eléctrica",
                 "es_correcta": false
               }
             ]
@@ -931,30 +932,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "situacion_quimica",
+        "tipo": "texto",
         "contexto": "Se mide el pH de diferentes sustancias domésticas.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "Una sustancia con pH menor a 7 se considera:",
-            "tipo": "clasificacion",
+            "enunciado": "Una solución con pH 7 se clasifica como:",
+            "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Ácida",
+                "texto": "Neutra",
                 "es_correcta": true
+              },
+              {
+                "texto": "Ácida",
+                "es_correcta": false
               },
               {
                 "texto": "Básica",
                 "es_correcta": false
               },
               {
-                "texto": "Neutra",
-                "es_correcta": false
-              },
-              {
-                "texto": "Salina",
+                "texto": "Corrosiva",
                 "es_correcta": false
               }
             ]
@@ -984,25 +985,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "Una solución con pH 7 se clasifica como:",
-            "tipo": "uso_conocimiento",
+            "enunciado": "Una sustancia con pH menor a 7 se considera:",
+            "tipo": "clasificacion",
             "dificultad": "baja",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Neutra",
-                "es_correcta": true
-              },
-              {
                 "texto": "Ácida",
-                "es_correcta": false
+                "es_correcta": true
               },
               {
                 "texto": "Básica",
                 "es_correcta": false
               },
               {
-                "texto": "Corrosiva",
+                "texto": "Neutra",
+                "es_correcta": false
+              },
+              {
+                "texto": "Salina",
                 "es_correcta": false
               }
             ]
@@ -1010,30 +1011,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "contexto_biologico",
+        "tipo": "texto",
         "contexto": "Un aumento de temperatura afecta el funcionamiento de las enzimas en el cuerpo humano.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "Las enzimas son importantes porque:",
-            "tipo": "uso_conocimiento",
-            "dificultad": "baja",
+            "enunciado": "La fiebre prolongada puede afectar procesos del cuerpo porque:",
+            "tipo": "razonamiento",
+            "dificultad": "alta",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Aceleran reacciones químicas",
+                "texto": "Altera el funcionamiento de las enzimas",
                 "es_correcta": true
               },
               {
-                "texto": "Producen energía",
+                "texto": "Aumenta el número de células",
                 "es_correcta": false
               },
               {
-                "texto": "Transportan oxígeno",
+                "texto": "Reduce el oxígeno ambiental",
                 "es_correcta": false
               },
               {
-                "texto": "Forman células",
+                "texto": "Mejora todas las reacciones químicas",
                 "es_correcta": false
               }
             ]
@@ -1063,25 +1064,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "La fiebre prolongada puede afectar procesos del cuerpo porque:",
-            "tipo": "razonamiento",
-            "dificultad": "alta",
+            "enunciado": "Las enzimas son importantes porque:",
+            "tipo": "uso_conocimiento",
+            "dificultad": "baja",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Altera el funcionamiento de las enzimas",
+                "texto": "Aceleran reacciones químicas",
                 "es_correcta": true
               },
               {
-                "texto": "Aumenta el número de células",
+                "texto": "Producen energía",
                 "es_correcta": false
               },
               {
-                "texto": "Reduce el oxígeno ambiental",
+                "texto": "Transportan oxígeno",
                 "es_correcta": false
               },
               {
-                "texto": "Mejora todas las reacciones químicas",
+                "texto": "Forman células",
                 "es_correcta": false
               }
             ]
@@ -1089,30 +1090,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "ciencia_tecnologia_sociedad",
+        "tipo": "texto",
         "contexto": "El uso de fertilizantes químicos incrementa la producción agrícola.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "Una consecuencia negativa del uso excesivo de fertilizantes es:",
-            "tipo": "razonamiento",
+            "enunciado": "Una práctica agrícola más sostenible es:",
+            "tipo": "competencias_cts",
             "dificultad": "media",
-            "competencia": "analizar",
+            "competencia": "evaluar",
             "opciones": [
               {
-                "texto": "Contaminación de fuentes hídricas",
+                "texto": "Uso racional de fertilizantes",
                 "es_correcta": true
               },
               {
-                "texto": "Aumento de biodiversidad",
+                "texto": "Aplicación diaria de químicos",
                 "es_correcta": false
               },
               {
-                "texto": "Reducción del suelo fértil",
+                "texto": "Eliminar la rotación de cultivos",
                 "es_correcta": false
               },
               {
-                "texto": "Disminución de cultivos",
+                "texto": "Incrementar pesticidas",
                 "es_correcta": false
               }
             ]
@@ -1142,25 +1143,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "Una práctica agrícola más sostenible es:",
-            "tipo": "competencias_cts",
+            "enunciado": "Una consecuencia negativa del uso excesivo de fertilizantes es:",
+            "tipo": "razonamiento",
             "dificultad": "media",
-            "competencia": "evaluar",
+            "competencia": "analizar",
             "opciones": [
               {
-                "texto": "Uso racional de fertilizantes",
+                "texto": "Contaminación de fuentes hídricas",
                 "es_correcta": true
               },
               {
-                "texto": "Aplicación diaria de químicos",
+                "texto": "Aumento de biodiversidad",
                 "es_correcta": false
               },
               {
-                "texto": "Eliminar la rotación de cultivos",
+                "texto": "Reducción del suelo fértil",
                 "es_correcta": false
               },
               {
-                "texto": "Incrementar pesticidas",
+                "texto": "Disminución de cultivos",
                 "es_correcta": false
               }
             ]
@@ -1168,30 +1169,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "situacion_fisica",
+        "tipo": "texto",
         "contexto": "Un circuito eléctrico simple está formado por una pila, un interruptor y un bombillo conectados por cables.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "La función principal de la pila en el circuito es:",
-            "tipo": "uso_conocimiento",
+            "enunciado": "Un material que permite el paso de la corriente eléctrica es:",
+            "tipo": "clasificacion",
             "dificultad": "baja",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Proporcionar energía eléctrica",
+                "texto": "Cobre",
                 "es_correcta": true
               },
               {
-                "texto": "Encender el interruptor",
+                "texto": "Plástico",
                 "es_correcta": false
               },
               {
-                "texto": "Iluminar directamente",
+                "texto": "Madera seca",
                 "es_correcta": false
               },
               {
-                "texto": "Reducir la corriente",
+                "texto": "Vidrio",
                 "es_correcta": false
               }
             ]
@@ -1221,25 +1222,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "Un material que permite el paso de la corriente eléctrica es:",
-            "tipo": "clasificacion",
+            "enunciado": "La función principal de la pila en el circuito es:",
+            "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Cobre",
+                "texto": "Proporcionar energía eléctrica",
                 "es_correcta": true
               },
               {
-                "texto": "Plástico",
+                "texto": "Encender el interruptor",
                 "es_correcta": false
               },
               {
-                "texto": "Madera seca",
+                "texto": "Iluminar directamente",
                 "es_correcta": false
               },
               {
-                "texto": "Vidrio",
+                "texto": "Reducir la corriente",
                 "es_correcta": false
               }
             ]
@@ -1247,30 +1248,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "contexto_biologico",
+        "tipo": "texto",
         "contexto": "El sistema respiratorio permite el intercambio de gases entre el cuerpo y el ambiente.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "El órgano donde ocurre el intercambio de oxígeno y dióxido de carbono es:",
-            "tipo": "uso_conocimiento",
-            "dificultad": "baja",
+            "enunciado": "Un daño en los pulmones afecta principalmente:",
+            "tipo": "razonamiento",
+            "dificultad": "media",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Alvéolos",
+                "texto": "La respiración celular",
                 "es_correcta": true
               },
               {
-                "texto": "Tráquea",
+                "texto": "La digestión",
                 "es_correcta": false
               },
               {
-                "texto": "Bronquios",
+                "texto": "La circulación sanguínea",
                 "es_correcta": false
               },
               {
-                "texto": "Faringe",
+                "texto": "La excreción",
                 "es_correcta": false
               }
             ]
@@ -1300,25 +1301,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "Un daño en los pulmones afecta principalmente:",
-            "tipo": "razonamiento",
-            "dificultad": "media",
+            "enunciado": "El órgano donde ocurre el intercambio de oxígeno y dióxido de carbono es:",
+            "tipo": "uso_conocimiento",
+            "dificultad": "baja",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "La respiración celular",
+                "texto": "Alvéolos",
                 "es_correcta": true
               },
               {
-                "texto": "La digestión",
+                "texto": "Tráquea",
                 "es_correcta": false
               },
               {
-                "texto": "La circulación sanguínea",
+                "texto": "Bronquios",
                 "es_correcta": false
               },
               {
-                "texto": "La excreción",
+                "texto": "Faringe",
                 "es_correcta": false
               }
             ]
@@ -1326,30 +1327,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "contexto_biologico",
+        "tipo": "texto",
         "contexto": "El sistema circulatorio transporta sustancias a través del cuerpo humano.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "El órgano que impulsa la sangre por el cuerpo es:",
-            "tipo": "uso_conocimiento",
-            "dificultad": "baja",
-            "competencia": "explicar",
+            "enunciado": "Si el sistema circulatorio falla, se afecta principalmente:",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "analizar",
             "opciones": [
               {
-                "texto": "Corazón",
+                "texto": "El transporte de sustancias",
                 "es_correcta": true
               },
               {
-                "texto": "Pulmones",
+                "texto": "La digestión mecánica",
                 "es_correcta": false
               },
               {
-                "texto": "Riñones",
+                "texto": "La audición",
                 "es_correcta": false
               },
               {
-                "texto": "Hígado",
+                "texto": "La percepción visual",
                 "es_correcta": false
               }
             ]
@@ -1379,25 +1380,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "Si el sistema circulatorio falla, se afecta principalmente:",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "analizar",
+            "enunciado": "El órgano que impulsa la sangre por el cuerpo es:",
+            "tipo": "uso_conocimiento",
+            "dificultad": "baja",
+            "competencia": "explicar",
             "opciones": [
               {
-                "texto": "El transporte de sustancias",
+                "texto": "Corazón",
                 "es_correcta": true
               },
               {
-                "texto": "La digestión mecánica",
+                "texto": "Pulmones",
                 "es_correcta": false
               },
               {
-                "texto": "La audición",
+                "texto": "Riñones",
                 "es_correcta": false
               },
               {
-                "texto": "La percepción visual",
+                "texto": "Hígado",
                 "es_correcta": false
               }
             ]
@@ -1405,30 +1406,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "situacion_quimica",
+        "tipo": "texto",
         "contexto": "Se mezclan diferentes sustancias para formar mezclas.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "Una mezcla homogénea se caracteriza porque:",
-            "tipo": "clasificacion",
-            "dificultad": "baja",
+            "enunciado": "La filtración es un método que permite separar:",
+            "tipo": "uso_conocimiento",
+            "dificultad": "media",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "No se distinguen sus componentes",
+                "texto": "Un sólido insoluble de un líquido",
                 "es_correcta": true
               },
               {
-                "texto": "Tiene fases visibles",
+                "texto": "Dos líquidos miscibles",
                 "es_correcta": false
               },
               {
-                "texto": "Es siempre sólida",
+                "texto": "Gases",
                 "es_correcta": false
               },
               {
-                "texto": "Reacciona químicamente",
+                "texto": "Sustancias puras",
                 "es_correcta": false
               }
             ]
@@ -1458,25 +1459,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "La filtración es un método que permite separar:",
-            "tipo": "uso_conocimiento",
-            "dificultad": "media",
+            "enunciado": "Una mezcla homogénea se caracteriza porque:",
+            "tipo": "clasificacion",
+            "dificultad": "baja",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Un sólido insoluble de un líquido",
+                "texto": "No se distinguen sus componentes",
                 "es_correcta": true
               },
               {
-                "texto": "Dos líquidos miscibles",
+                "texto": "Tiene fases visibles",
                 "es_correcta": false
               },
               {
-                "texto": "Gases",
+                "texto": "Es siempre sólida",
                 "es_correcta": false
               },
               {
-                "texto": "Sustancias puras",
+                "texto": "Reacciona químicamente",
                 "es_correcta": false
               }
             ]
@@ -1484,30 +1485,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "ciencia_tecnologia_sociedad",
+        "tipo": "texto",
         "contexto": "El uso de la electricidad ha transformado la vida cotidiana.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "Un beneficio del uso de la electricidad es:",
+            "enunciado": "El ahorro de energía contribuye principalmente a:",
             "tipo": "competencias_cts",
-            "dificultad": "baja",
-            "competencia": "evaluar",
+            "dificultad": "media",
+            "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Facilita la comunicación y el trabajo",
+                "texto": "La protección del ambiente",
                 "es_correcta": true
               },
               {
-                "texto": "Aumenta la contaminación siempre",
+                "texto": "El aumento del consumo",
                 "es_correcta": false
               },
               {
-                "texto": "Reduce la tecnología",
+                "texto": "La pérdida de recursos",
                 "es_correcta": false
               },
               {
-                "texto": "Limita el desarrollo social",
+                "texto": "La contaminación del aire",
                 "es_correcta": false
               }
             ]
@@ -1537,25 +1538,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "El ahorro de energía contribuye principalmente a:",
+            "enunciado": "Un beneficio del uso de la electricidad es:",
             "tipo": "competencias_cts",
-            "dificultad": "media",
-            "competencia": "explicar",
+            "dificultad": "baja",
+            "competencia": "evaluar",
             "opciones": [
               {
-                "texto": "La protección del ambiente",
+                "texto": "Facilita la comunicación y el trabajo",
                 "es_correcta": true
               },
               {
-                "texto": "El aumento del consumo",
+                "texto": "Aumenta la contaminación siempre",
                 "es_correcta": false
               },
               {
-                "texto": "La pérdida de recursos",
+                "texto": "Reduce la tecnología",
                 "es_correcta": false
               },
               {
-                "texto": "La contaminación del aire",
+                "texto": "Limita el desarrollo social",
                 "es_correcta": false
               }
             ]
@@ -1563,30 +1564,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "contexto_ecologico",
+        "tipo": "texto",
         "contexto": "En un ecosistema interactúan seres vivos y factores no vivos como el agua, la luz y el suelo.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "Un factor biótico dentro de un ecosistema es:",
-            "tipo": "clasificacion",
-            "dificultad": "baja",
-            "competencia": "explicar",
+            "enunciado": "La desaparición de un factor biótico puede afectar:",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "analizar",
             "opciones": [
               {
-                "texto": "Una planta",
+                "texto": "El equilibrio del ecosistema",
                 "es_correcta": true
               },
               {
-                "texto": "La temperatura",
+                "texto": "Solo el clima",
                 "es_correcta": false
               },
               {
-                "texto": "La luz solar",
+                "texto": "Únicamente el suelo",
                 "es_correcta": false
               },
               {
-                "texto": "El agua",
+                "texto": "Los factores abióticos únicamente",
                 "es_correcta": false
               }
             ]
@@ -1616,25 +1617,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "La desaparición de un factor biótico puede afectar:",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "analizar",
+            "enunciado": "Un factor biótico dentro de un ecosistema es:",
+            "tipo": "clasificacion",
+            "dificultad": "baja",
+            "competencia": "explicar",
             "opciones": [
               {
-                "texto": "El equilibrio del ecosistema",
+                "texto": "Una planta",
                 "es_correcta": true
               },
               {
-                "texto": "Solo el clima",
+                "texto": "La temperatura",
                 "es_correcta": false
               },
               {
-                "texto": "Únicamente el suelo",
+                "texto": "La luz solar",
                 "es_correcta": false
               },
               {
-                "texto": "Los factores abióticos únicamente",
+                "texto": "El agua",
                 "es_correcta": false
               }
             ]
@@ -1642,30 +1643,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "situacion_quimica",
+        "tipo": "texto",
         "contexto": "La materia puede presentarse en diferentes estados y sufrir cambios.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "El cambio de estado de sólido a líquido se denomina:",
+            "enunciado": "Derretir hielo es un ejemplo de:",
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
-            "competencia": "explicar",
+            "competencia": "analizar",
             "opciones": [
               {
-                "texto": "Fusión",
+                "texto": "Cambio físico",
                 "es_correcta": true
               },
               {
-                "texto": "Evaporación",
+                "texto": "Cambio químico",
                 "es_correcta": false
               },
               {
-                "texto": "Condensación",
+                "texto": "Reacción química",
                 "es_correcta": false
               },
               {
-                "texto": "Solidificación",
+                "texto": "Combustión",
                 "es_correcta": false
               }
             ]
@@ -1695,25 +1696,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "Derretir hielo es un ejemplo de:",
+            "enunciado": "El cambio de estado de sólido a líquido se denomina:",
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
-            "competencia": "analizar",
+            "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Cambio físico",
+                "texto": "Fusión",
                 "es_correcta": true
               },
               {
-                "texto": "Cambio químico",
+                "texto": "Evaporación",
                 "es_correcta": false
               },
               {
-                "texto": "Reacción química",
+                "texto": "Condensación",
                 "es_correcta": false
               },
               {
-                "texto": "Combustión",
+                "texto": "Solidificación",
                 "es_correcta": false
               }
             ]
@@ -1721,30 +1722,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "situacion_fisica",
+        "tipo": "texto",
         "contexto": "Las fuerzas pueden cambiar el movimiento o la forma de los objetos.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "Una fuerza puede provocar:",
+            "enunciado": "La fricción es una fuerza que:",
             "tipo": "uso_conocimiento",
-            "dificultad": "baja",
+            "dificultad": "media",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Cambios en la velocidad o dirección",
+                "texto": "Se opone al movimiento",
                 "es_correcta": true
               },
               {
-                "texto": "Solo cambios de color",
+                "texto": "Aumenta siempre la velocidad",
                 "es_correcta": false
               },
               {
-                "texto": "Únicamente calor",
+                "texto": "No actúa sobre los objetos",
                 "es_correcta": false
               },
               {
-                "texto": "Solo cambios químicos",
+                "texto": "Solo existe en el aire",
                 "es_correcta": false
               }
             ]
@@ -1774,25 +1775,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "La fricción es una fuerza que:",
+            "enunciado": "Una fuerza puede provocar:",
             "tipo": "uso_conocimiento",
-            "dificultad": "media",
+            "dificultad": "baja",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Se opone al movimiento",
+                "texto": "Cambios en la velocidad o dirección",
                 "es_correcta": true
               },
               {
-                "texto": "Aumenta siempre la velocidad",
+                "texto": "Solo cambios de color",
                 "es_correcta": false
               },
               {
-                "texto": "No actúa sobre los objetos",
+                "texto": "Únicamente calor",
                 "es_correcta": false
               },
               {
-                "texto": "Solo existe en el aire",
+                "texto": "Solo cambios químicos",
                 "es_correcta": false
               }
             ]
@@ -1800,30 +1801,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "contexto_salud",
+        "tipo": "texto",
         "contexto": "El cuerpo humano necesita hábitos saludables para funcionar correctamente.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "Una alimentación balanceada contribuye principalmente a:",
+            "enunciado": "La actividad física regular ayuda a:",
             "tipo": "competencias_cts",
             "dificultad": "baja",
-            "competencia": "explicar",
+            "competencia": "evaluar",
             "opciones": [
               {
-                "texto": "El buen funcionamiento del organismo",
+                "texto": "Mantener un cuerpo saludable",
                 "es_correcta": true
               },
               {
-                "texto": "La aparición de enfermedades",
+                "texto": "Debilitar los músculos",
                 "es_correcta": false
               },
               {
-                "texto": "El aumento del estrés",
+                "texto": "Reducir la capacidad pulmonar",
                 "es_correcta": false
               },
               {
-                "texto": "La pérdida de energía",
+                "texto": "Aumentar el sedentarismo",
                 "es_correcta": false
               }
             ]
@@ -1853,25 +1854,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "La actividad física regular ayuda a:",
+            "enunciado": "Una alimentación balanceada contribuye principalmente a:",
             "tipo": "competencias_cts",
             "dificultad": "baja",
-            "competencia": "evaluar",
+            "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Mantener un cuerpo saludable",
+                "texto": "El buen funcionamiento del organismo",
                 "es_correcta": true
               },
               {
-                "texto": "Debilitar los músculos",
+                "texto": "La aparición de enfermedades",
                 "es_correcta": false
               },
               {
-                "texto": "Reducir la capacidad pulmonar",
+                "texto": "El aumento del estrés",
                 "es_correcta": false
               },
               {
-                "texto": "Aumentar el sedentarismo",
+                "texto": "La pérdida de energía",
                 "es_correcta": false
               }
             ]
@@ -1879,30 +1880,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "ciencia_tecnologia_sociedad",
+        "tipo": "texto",
         "contexto": "Las acciones humanas pueden impactar positiva o negativamente el ambiente.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "Una acción que ayuda a proteger el ambiente es:",
+            "enunciado": "Reducir el consumo de plásticos contribuye a:",
             "tipo": "competencias_cts",
-            "dificultad": "baja",
-            "competencia": "evaluar",
+            "dificultad": "media",
+            "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Reciclar residuos",
+                "texto": "Disminuir la contaminación ambiental",
                 "es_correcta": true
               },
               {
-                "texto": "Botar basura en ríos",
+                "texto": "Aumentar los residuos",
                 "es_correcta": false
               },
               {
-                "texto": "Talar bosques sin control",
+                "texto": "Acelerar el cambio climático",
                 "es_correcta": false
               },
               {
-                "texto": "Desperdiciar agua",
+                "texto": "Reducir la biodiversidad",
                 "es_correcta": false
               }
             ]
@@ -1932,25 +1933,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "Reducir el consumo de plásticos contribuye a:",
+            "enunciado": "Una acción que ayuda a proteger el ambiente es:",
             "tipo": "competencias_cts",
-            "dificultad": "media",
-            "competencia": "explicar",
+            "dificultad": "baja",
+            "competencia": "evaluar",
             "opciones": [
               {
-                "texto": "Disminuir la contaminación ambiental",
+                "texto": "Reciclar residuos",
                 "es_correcta": true
               },
               {
-                "texto": "Aumentar los residuos",
+                "texto": "Botar basura en ríos",
                 "es_correcta": false
               },
               {
-                "texto": "Acelerar el cambio climático",
+                "texto": "Talar bosques sin control",
                 "es_correcta": false
               },
               {
-                "texto": "Reducir la biodiversidad",
+                "texto": "Desperdiciar agua",
                 "es_correcta": false
               }
             ]
@@ -1958,30 +1959,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "situacion_fisica",
+        "tipo": "texto",
         "contexto": "La energía permite realizar cambios en los sistemas físicos y puede transformarse de una forma a otra.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "La energía que posee un objeto debido a su movimiento se llama:",
+            "enunciado": "Un ejemplo de transformación de energía es:",
             "tipo": "uso_conocimiento",
-            "dificultad": "baja",
+            "dificultad": "media",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Energía cinética",
+                "texto": "Un foco que transforma energía eléctrica en luminosa",
                 "es_correcta": true
               },
               {
-                "texto": "Energía potencial",
+                "texto": "Un libro en reposo",
                 "es_correcta": false
               },
               {
-                "texto": "Energía térmica",
+                "texto": "Una piedra inmóvil",
                 "es_correcta": false
               },
               {
-                "texto": "Energía química",
+                "texto": "Una mesa estable",
                 "es_correcta": false
               }
             ]
@@ -2011,25 +2012,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "Un ejemplo de transformación de energía es:",
+            "enunciado": "La energía que posee un objeto debido a su movimiento se llama:",
             "tipo": "uso_conocimiento",
-            "dificultad": "media",
+            "dificultad": "baja",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Un foco que transforma energía eléctrica en luminosa",
+                "texto": "Energía cinética",
                 "es_correcta": true
               },
               {
-                "texto": "Un libro en reposo",
+                "texto": "Energía potencial",
                 "es_correcta": false
               },
               {
-                "texto": "Una piedra inmóvil",
+                "texto": "Energía térmica",
                 "es_correcta": false
               },
               {
-                "texto": "Una mesa estable",
+                "texto": "Energía química",
                 "es_correcta": false
               }
             ]
@@ -2037,30 +2038,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "contexto_biologico",
+        "tipo": "texto",
         "contexto": "El cuerpo humano está formado por sistemas que trabajan de manera coordinada.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "El sistema encargado de transportar oxígeno y nutrientes es el:",
-            "tipo": "uso_conocimiento",
-            "dificultad": "baja",
-            "competencia": "explicar",
+            "enunciado": "Una consecuencia del mal funcionamiento del sistema respiratorio es:",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "analizar",
             "opciones": [
               {
-                "texto": "Sistema circulatorio",
+                "texto": "Dificultad para obtener oxígeno",
                 "es_correcta": true
               },
               {
-                "texto": "Sistema nervioso",
+                "texto": "Mejor digestión",
                 "es_correcta": false
               },
               {
-                "texto": "Sistema digestivo",
+                "texto": "Mayor fuerza muscular",
                 "es_correcta": false
               },
               {
-                "texto": "Sistema óseo",
+                "texto": "Aumento de la estatura",
                 "es_correcta": false
               }
             ]
@@ -2090,25 +2091,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "Una consecuencia del mal funcionamiento del sistema respiratorio es:",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "analizar",
+            "enunciado": "El sistema encargado de transportar oxígeno y nutrientes es el:",
+            "tipo": "uso_conocimiento",
+            "dificultad": "baja",
+            "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Dificultad para obtener oxígeno",
+                "texto": "Sistema circulatorio",
                 "es_correcta": true
               },
               {
-                "texto": "Mejor digestión",
+                "texto": "Sistema nervioso",
                 "es_correcta": false
               },
               {
-                "texto": "Mayor fuerza muscular",
+                "texto": "Sistema digestivo",
                 "es_correcta": false
               },
               {
-                "texto": "Aumento de la estatura",
+                "texto": "Sistema óseo",
                 "es_correcta": false
               }
             ]
@@ -2116,30 +2117,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "situacion_quimica",
+        "tipo": "texto",
         "contexto": "Las reacciones químicas transforman unas sustancias en otras con propiedades diferentes.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "Una reacción química se identifica porque:",
-            "tipo": "clasificacion",
+            "enunciado": "Un indicio de que ocurrió una reacción química es:",
+            "tipo": "razonamiento",
             "dificultad": "media",
-            "competencia": "explicar",
+            "competencia": "analizar",
             "opciones": [
               {
-                "texto": "Se forman nuevas sustancias",
+                "texto": "Cambio de color",
                 "es_correcta": true
               },
               {
-                "texto": "Solo cambia la forma",
+                "texto": "Cambio de tamaño",
                 "es_correcta": false
               },
               {
-                "texto": "Siempre es reversible",
+                "texto": "Cambio de posición",
                 "es_correcta": false
               },
               {
-                "texto": "No hay cambios visibles",
+                "texto": "Cambio de volumen sin reacción",
                 "es_correcta": false
               }
             ]
@@ -2169,25 +2170,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "Un indicio de que ocurrió una reacción química es:",
-            "tipo": "razonamiento",
+            "enunciado": "Una reacción química se identifica porque:",
+            "tipo": "clasificacion",
             "dificultad": "media",
-            "competencia": "analizar",
+            "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Cambio de color",
+                "texto": "Se forman nuevas sustancias",
                 "es_correcta": true
               },
               {
-                "texto": "Cambio de tamaño",
+                "texto": "Solo cambia la forma",
                 "es_correcta": false
               },
               {
-                "texto": "Cambio de posición",
+                "texto": "Siempre es reversible",
                 "es_correcta": false
               },
               {
-                "texto": "Cambio de volumen sin reacción",
+                "texto": "No hay cambios visibles",
                 "es_correcta": false
               }
             ]
@@ -2195,30 +2196,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "contexto_ambiental",
+        "tipo": "texto",
         "contexto": "El uso de los recursos naturales debe hacerse de manera responsable para garantizar su conservación.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "Un recurso natural renovable es:",
-            "tipo": "clasificacion",
-            "dificultad": "baja",
-            "competencia": "explicar",
+            "enunciado": "Una práctica que favorece el uso sostenible de recursos es:",
+            "tipo": "competencias_cts",
+            "dificultad": "media",
+            "competencia": "evaluar",
             "opciones": [
               {
-                "texto": "El agua",
+                "texto": "Ahorrar agua y energía",
                 "es_correcta": true
               },
               {
-                "texto": "El petróleo",
+                "texto": "Explotar recursos sin control",
                 "es_correcta": false
               },
               {
-                "texto": "El carbón",
+                "texto": "Aumentar la contaminación",
                 "es_correcta": false
               },
               {
-                "texto": "El gas natural",
+                "texto": "Eliminar áreas verdes",
                 "es_correcta": false
               }
             ]
@@ -2248,25 +2249,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "Una práctica que favorece el uso sostenible de recursos es:",
-            "tipo": "competencias_cts",
-            "dificultad": "media",
-            "competencia": "evaluar",
+            "enunciado": "Un recurso natural renovable es:",
+            "tipo": "clasificacion",
+            "dificultad": "baja",
+            "competencia": "explicar",
             "opciones": [
               {
-                "texto": "Ahorrar agua y energía",
+                "texto": "El agua",
                 "es_correcta": true
               },
               {
-                "texto": "Explotar recursos sin control",
+                "texto": "El petróleo",
                 "es_correcta": false
               },
               {
-                "texto": "Aumentar la contaminación",
+                "texto": "El carbón",
                 "es_correcta": false
               },
               {
-                "texto": "Eliminar áreas verdes",
+                "texto": "El gas natural",
                 "es_correcta": false
               }
             ]
@@ -2274,30 +2275,30 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "ciencia_tecnologia_sociedad",
+        "tipo": "texto",
         "contexto": "La ciencia y la tecnología influyen en la calidad de vida de las personas.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "Un beneficio del avance tecnológico en la salud es:",
+            "enunciado": "La relación entre ciencia, tecnología y sociedad se evidencia cuando:",
             "tipo": "competencias_cts",
-            "dificultad": "baja",
+            "dificultad": "alta",
             "competencia": "evaluar",
             "opciones": [
               {
-                "texto": "Mejor diagnóstico de enfermedades",
+                "texto": "Las decisiones científicas afectan a la comunidad",
                 "es_correcta": true
               },
               {
-                "texto": "Mayor contaminación siempre",
+                "texto": "Solo se estudian teorías",
                 "es_correcta": false
               },
               {
-                "texto": "Aumento de enfermedades",
+                "texto": "No se consideran impactos sociales",
                 "es_correcta": false
               },
               {
-                "texto": "Reducción de la esperanza de vida",
+                "texto": "La ciencia se aísla de la sociedad",
                 "es_correcta": false
               }
             ]
@@ -2327,25 +2328,25 @@ export const OFF_QUESTIONS_DATA = {
             ]
           },
           {
-            "enunciado": "La relación entre ciencia, tecnología y sociedad se evidencia cuando:",
+            "enunciado": "Un beneficio del avance tecnológico en la salud es:",
             "tipo": "competencias_cts",
-            "dificultad": "alta",
+            "dificultad": "baja",
             "competencia": "evaluar",
             "opciones": [
               {
-                "texto": "Las decisiones científicas afectan a la comunidad",
+                "texto": "Mejor diagnóstico de enfermedades",
                 "es_correcta": true
               },
               {
-                "texto": "Solo se estudian teorías",
+                "texto": "Mayor contaminación siempre",
                 "es_correcta": false
               },
               {
-                "texto": "No se consideran impactos sociales",
+                "texto": "Aumento de enfermedades",
                 "es_correcta": false
               },
               {
-                "texto": "La ciencia se aísla de la sociedad",
+                "texto": "Reducción de la esperanza de vida",
                 "es_correcta": false
               }
             ]
@@ -2353,34 +2354,10 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "contexto_biologico",
+        "tipo": "texto",
         "contexto": "El ADN es la molécula que contiene la información genética de los seres vivos. Su estructura de doble hélice permite la replicación y transmisión de esta información.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué tipo de enlace mantiene unidas las bases nitrogenadas en la doble hélice del ADN?",
-            "tipo": "uso_conocimiento",
-            "dificultad": "media",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Enlaces iónicos",
-                "es_correcta": false
-              },
-              {
-                "texto": "Puentes de hidrógeno",
-                "es_correcta": true
-              },
-              {
-                "texto": "Enlaces covalentes polares",
-                "es_correcta": false
-              },
-              {
-                "texto": "Enlaces peptídicos",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Si una cadena de ADN tiene la secuencia ATGC, la cadena complementaria será:",
             "tipo": "razonamiento",
@@ -2404,38 +2381,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Qué tipo de enlace mantiene unidas las bases nitrogenadas en la doble hélice del ADN?",
+            "tipo": "uso_conocimiento",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Enlaces iónicos",
+                "es_correcta": false
+              },
+              {
+                "texto": "Puentes de hidrógeno",
+                "es_correcta": true
+              },
+              {
+                "texto": "Enlaces covalentes polares",
+                "es_correcta": false
+              },
+              {
+                "texto": "Enlaces peptídicos",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "ciclo_celular",
+        "tipo": "texto",
         "contexto": "La mitosis es el proceso por el cual una célula se divide para formar dos células hijas idénticas.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿En qué fase de la mitosis los cromosomas se alinean en el centro de la célula?",
-            "tipo": "uso_conocimiento",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Profase",
-                "es_correcta": false
-              },
-              {
-                "texto": "Metafase",
-                "es_correcta": true
-              },
-              {
-                "texto": "Anafase",
-                "es_correcta": false
-              },
-              {
-                "texto": "Telofase",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La importancia de la mitosis para los organismos multicelulares radica principalmente en:",
             "tipo": "razonamiento",
@@ -2459,38 +2436,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿En qué fase de la mitosis los cromosomas se alinean en el centro de la célula?",
+            "tipo": "uso_conocimiento",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Profase",
+                "es_correcta": false
+              },
+              {
+                "texto": "Metafase",
+                "es_correcta": true
+              },
+              {
+                "texto": "Anafase",
+                "es_correcta": false
+              },
+              {
+                "texto": "Telofase",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "fisiologia_animal",
+        "tipo": "texto",
         "contexto": "El sistema digestivo humano descompone los alimentos en nutrientes que el cuerpo puede absorber.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué órgano produce la bilis para ayudar en la digestión de las grasas?",
-            "tipo": "uso_conocimiento",
-            "dificultad": "bajo",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Estómago",
-                "es_correcta": false
-              },
-              {
-                "texto": "Páncreas",
-                "es_correcta": false
-              },
-              {
-                "texto": "Hígado",
-                "es_correcta": true
-              },
-              {
-                "texto": "Intestino grueso",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La mayor parte de la absorción de nutrientes ocurre en:",
             "tipo": "uso_conocimiento",
@@ -2514,38 +2491,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Qué órgano produce la bilis para ayudar en la digestión de las grasas?",
+            "tipo": "uso_conocimiento",
+            "dificultad": "bajo",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Estómago",
+                "es_correcta": false
+              },
+              {
+                "texto": "Páncreas",
+                "es_correcta": false
+              },
+              {
+                "texto": "Hígado",
+                "es_correcta": true
+              },
+              {
+                "texto": "Intestino grueso",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "fisiologia_animal",
+        "tipo": "texto",
         "contexto": "El sistema circulatorio transporta oxígeno y nutrientes a todas las células del cuerpo.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es la función principal de los glóbulos rojos?",
-            "tipo": "uso_conocimiento",
-            "dificultad": "baja",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Defender al cuerpo de infecciones",
-                "es_correcta": false
-              },
-              {
-                "texto": "Transportar oxígeno mediante la hemoglobina",
-                "es_correcta": true
-              },
-              {
-                "texto": "Cerrar heridas mediante la coagulación",
-                "es_correcta": false
-              },
-              {
-                "texto": "Transportar desechos gaseosos solamente",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Qué cámara del corazón bombea sangre oxigenada al resto del cuerpo?",
             "tipo": "uso_conocimiento",
@@ -2569,38 +2546,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": true
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es la función principal de los glóbulos rojos?",
+            "tipo": "uso_conocimiento",
+            "dificultad": "baja",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Defender al cuerpo de infecciones",
+                "es_correcta": false
+              },
+              {
+                "texto": "Transportar oxígeno mediante la hemoglobina",
+                "es_correcta": true
+              },
+              {
+                "texto": "Cerrar heridas mediante la coagulación",
+                "es_correcta": false
+              },
+              {
+                "texto": "Transportar desechos gaseosos solamente",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "fisiologia_animal",
+        "tipo": "texto",
         "contexto": "El sistema endocrino regula funciones corporales mediante la liberación de hormonas.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "La insulina es una hormona producida por el páncreas cuya función principal es:",
-            "tipo": "uso_conocimiento",
-            "dificultad": "media",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Aumentar los niveles de glucosa en sangre",
-                "es_correcta": false
-              },
-              {
-                "texto": "Disminuir los niveles de glucosa en sangre",
-                "es_correcta": true
-              },
-              {
-                "texto": "Regular el crecimiento óseo",
-                "es_correcta": false
-              },
-              {
-                "texto": "Estimular la producción de glóbulos blancos",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Qué glándula es conocida como la 'glándula maestra' por regular a otras glándulas?",
             "tipo": "uso_conocimiento",
@@ -2624,38 +2601,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "La insulina es una hormona producida por el páncreas cuya función principal es:",
+            "tipo": "uso_conocimiento",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Aumentar los niveles de glucosa en sangre",
+                "es_correcta": false
+              },
+              {
+                "texto": "Disminuir los niveles de glucosa en sangre",
+                "es_correcta": true
+              },
+              {
+                "texto": "Regular el crecimiento óseo",
+                "es_correcta": false
+              },
+              {
+                "texto": "Estimular la producción de glóbulos blancos",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "fenomenos_ondulatorios",
+        "tipo": "texto",
         "contexto": "Las ondas son perturbaciones que transportan energía sin transportar materia.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué sucede con la longitud de onda de un sonido si su frecuencia aumenta, manteniendo la velocidad constante?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Aumenta proporcionalmente",
-                "es_correcta": false
-              },
-              {
-                "texto": "Disminuye proporcionalmente",
-                "es_correcta": true
-              },
-              {
-                "texto": "Permanece igual",
-                "es_correcta": false
-              },
-              {
-                "texto": "Se vuelve infinita",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "El fenómeno por el cual una onda cambia de dirección al pasar de un medio a otro se llama:",
             "tipo": "uso_conocimiento",
@@ -2679,38 +2656,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Qué sucede con la longitud de onda de un sonido si su frecuencia aumenta, manteniendo la velocidad constante?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Aumenta proporcionalmente",
+                "es_correcta": false
+              },
+              {
+                "texto": "Disminuye proporcionalmente",
+                "es_correcta": true
+              },
+              {
+                "texto": "Permanece igual",
+                "es_correcta": false
+              },
+              {
+                "texto": "Se vuelve infinita",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "termodinamica",
+        "tipo": "texto",
         "contexto": "El calor es energía en tránsito que fluye de un cuerpo de mayor temperatura a uno de menor temperatura.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué proceso de transferencia de calor se observa al calentar el extremo de una barra metálica?",
-            "tipo": "uso_conocimiento",
-            "dificultad": "baja",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Convección",
-                "es_correcta": false
-              },
-              {
-                "texto": "Conducción",
-                "es_correcta": true
-              },
-              {
-                "texto": "Radiación",
-                "es_correcta": false
-              },
-              {
-                "texto": "Sublimación",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Cuando un gas se expande rápidamente sin intercambiar calor con el entorno, el proceso se denomina:",
             "tipo": "uso_conocimiento",
@@ -2734,38 +2711,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Qué proceso de transferencia de calor se observa al calentar el extremo de una barra metálica?",
+            "tipo": "uso_conocimiento",
+            "dificultad": "baja",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Convección",
+                "es_correcta": false
+              },
+              {
+                "texto": "Conducción",
+                "es_correcta": true
+              },
+              {
+                "texto": "Radiación",
+                "es_correcta": false
+              },
+              {
+                "texto": "Sublimación",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "electromagnetismo",
+        "tipo": "texto",
         "contexto": "Los circuitos eléctricos permiten el flujo controlado de electrones para realizar trabajo.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "Si en un circuito en serie se añade una resistencia adicional, la corriente total del circuito:",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Aumenta",
-                "es_correcta": false
-              },
-              {
-                "texto": "Disminuye",
-                "es_correcta": true
-              },
-              {
-                "texto": "Permanece igual",
-                "es_correcta": false
-              },
-              {
-                "texto": "Se duplica",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La ley que establece la relación entre voltaje, corriente y resistencia es la ley de:",
             "tipo": "uso_conocimiento",
@@ -2789,38 +2766,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "gravitacion",
-        "contexto": "La gravedad es la fuerza de atracción entre dos masas cualesquiera en el universo.",
-        "archivo": null,
-        "preguntas": [
+          },
           {
-            "enunciado": "Si la distancia entre dos planetas se duplica, la fuerza gravitatoria entre ellos:",
+            "enunciado": "Si en un circuito en serie se añade una resistencia adicional, la corriente total del circuito:",
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
             "opciones": [
               {
-                "texto": "Se duplica",
+                "texto": "Aumenta",
                 "es_correcta": false
               },
               {
-                "texto": "Se reduce a la mitad",
-                "es_correcta": false
-              },
-              {
-                "texto": "Se reduce a la cuarta parte",
+                "texto": "Disminuye",
                 "es_correcta": true
               },
               {
                 "texto": "Permanece igual",
                 "es_correcta": false
+              },
+              {
+                "texto": "Se duplica",
+                "es_correcta": false
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La gravedad es la fuerza de atracción entre dos masas cualesquiera en el universo.",
+        "archivo": null,
+        "preguntas": [
           {
             "enunciado": "Un astronauta en la Luna pesa menos que en la Tierra porque:",
             "tipo": "razonamiento",
@@ -2844,38 +2821,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "Si la distancia entre dos planetas se duplica, la fuerza gravitatoria entre ellos:",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Se duplica",
+                "es_correcta": false
+              },
+              {
+                "texto": "Se reduce a la mitad",
+                "es_correcta": false
+              },
+              {
+                "texto": "Se reduce a la cuarta parte",
+                "es_correcta": true
+              },
+              {
+                "texto": "Permanece igual",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "fluidos",
+        "tipo": "texto",
         "contexto": "El principio de Arquímedes explica por qué algunos objetos flotan y otros se hunden.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "Un objeto flotará en el agua si su densidad es:",
-            "tipo": "uso_conocimiento",
-            "dificultad": "baja",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Mayor que la del agua",
-                "es_correcta": false
-              },
-              {
-                "texto": "Igual a la del agua",
-                "es_correcta": false
-              },
-              {
-                "texto": "Menor que la del agua",
-                "es_correcta": true
-              },
-              {
-                "texto": "Cero",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La fuerza hacia arriba que ejerce un fluido sobre un cuerpo sumergido se llama:",
             "tipo": "uso_conocimiento",
@@ -2899,38 +2876,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "Un objeto flotará en el agua si su densidad es:",
+            "tipo": "uso_conocimiento",
+            "dificultad": "baja",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Mayor que la del agua",
+                "es_correcta": false
+              },
+              {
+                "texto": "Igual a la del agua",
+                "es_correcta": false
+              },
+              {
+                "texto": "Menor que la del agua",
+                "es_correcta": true
+              },
+              {
+                "texto": "Cero",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "tabla_periodica",
+        "tipo": "texto",
         "contexto": "La tabla periódica organiza los elementos según sus propiedades químicas y físicas.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué propiedad tiende a aumentar al descender por un grupo en la tabla periódica?",
-            "tipo": "uso_conocimiento",
-            "dificultad": "media",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Electronegatividad",
-                "es_correcta": false
-              },
-              {
-                "texto": "Energía de ionización",
-                "es_correcta": false
-              },
-              {
-                "texto": "Radio atómico",
-                "es_correcta": true
-              },
-              {
-                "texto": "Afinidad electrónica",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Los gases nobles se encuentran en el grupo 18 porque:",
             "tipo": "razonamiento",
@@ -2954,38 +2931,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Qué propiedad tiende a aumentar al descender por un grupo en la tabla periódica?",
+            "tipo": "uso_conocimiento",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Electronegatividad",
+                "es_correcta": false
+              },
+              {
+                "texto": "Energía de ionización",
+                "es_correcta": false
+              },
+              {
+                "texto": "Radio atómico",
+                "es_correcta": true
+              },
+              {
+                "texto": "Afinidad electrónica",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "estequiometria",
+        "tipo": "texto",
         "contexto": "La estequiometría estudia las relaciones cuantitativas entre reactivos y productos en una reacción química.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "En la reacción 2H2 + O2 -> 2H2O, ¿cuántos moles de agua se producen a partir de 4 moles de H2?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "2 moles",
-                "es_correcta": false
-              },
-              {
-                "texto": "4 moles",
-                "es_correcta": true
-              },
-              {
-                "texto": "6 moles",
-                "es_correcta": false
-              },
-              {
-                "texto": "8 moles",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La ley que indica que en una reacción química la masa total no cambia es la ley de:",
             "tipo": "uso_conocimiento",
@@ -3009,38 +2986,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "En la reacción 2H2 + O2 -> 2H2O, ¿cuántos moles de agua se producen a partir de 4 moles de H2?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "2 moles",
+                "es_correcta": false
+              },
+              {
+                "texto": "4 moles",
+                "es_correcta": true
+              },
+              {
+                "texto": "6 moles",
+                "es_correcta": false
+              },
+              {
+                "texto": "8 moles",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "ph_acidez",
+        "tipo": "texto",
         "contexto": "La escala de pH mide el grado de acidez o basicidad de una solución acuosa.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "Una sustancia con un pH de 2 se clasifica como:",
-            "tipo": "uso_conocimiento",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Base fuerte",
-                "es_correcta": false
-              },
-              {
-                "texto": "Ácido fuerte",
-                "es_correcta": true
-              },
-              {
-                "texto": "Solución neutra",
-                "es_correcta": false
-              },
-              {
-                "texto": "Ácido débil",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Al mezclar un ácido con una base en proporciones estequiométricas, se produce una reacción de:",
             "tipo": "uso_conocimiento",
@@ -3064,38 +3041,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "Una sustancia con un pH de 2 se clasifica como:",
+            "tipo": "uso_conocimiento",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Base fuerte",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ácido fuerte",
+                "es_correcta": true
+              },
+              {
+                "texto": "Solución neutra",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ácido débil",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "quimica_organica",
+        "tipo": "texto",
         "contexto": "La química orgánica se centra en el estudio de las moléculas que contienen carbono.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué grupo funcional caracteriza a los alcoholes?",
-            "tipo": "uso_conocimiento",
-            "dificultad": "media",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "-COOH",
-                "es_correcta": false
-              },
-              {
-                "texto": "-OH",
-                "es_correcta": true
-              },
-              {
-                "texto": "-CHO",
-                "es_correcta": false
-              },
-              {
-                "texto": "-NH2",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Los hidrocarburos que solo contienen enlaces sencillos entre átomos de carbono se llaman:",
             "tipo": "uso_conocimiento",
@@ -3119,38 +3096,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Qué grupo funcional caracteriza a los alcoholes?",
+            "tipo": "uso_conocimiento",
+            "dificultad": "media",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "-COOH",
+                "es_correcta": false
+              },
+              {
+                "texto": "-OH",
+                "es_correcta": true
+              },
+              {
+                "texto": "-CHO",
+                "es_correcta": false
+              },
+              {
+                "texto": "-NH2",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "disoluciones",
+        "tipo": "texto",
         "contexto": "Una disolución es una mezcla homogénea de dos o más sustancias.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "Si se añade más soluto a una disolución que ya no puede disolver más, se dice que la disolución está:",
-            "tipo": "uso_conocimiento",
-            "dificultad": "baja",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Diluida",
-                "es_correcta": false
-              },
-              {
-                "texto": "Concentrada",
-                "es_correcta": false
-              },
-              {
-                "texto": "Saturada",
-                "es_correcta": true
-              },
-              {
-                "texto": "Insaturada",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La molaridad de una solución se define como:",
             "tipo": "uso_conocimiento",
@@ -3174,38 +3151,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "Si se añade más soluto a una disolución que ya no puede disolver más, se dice que la disolución está:",
+            "tipo": "uso_conocimiento",
+            "dificultad": "baja",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Diluida",
+                "es_correcta": false
+              },
+              {
+                "texto": "Concentrada",
+                "es_correcta": false
+              },
+              {
+                "texto": "Saturada",
+                "es_correcta": true
+              },
+              {
+                "texto": "Insaturada",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "ciclos_biogeoquimicos",
+        "tipo": "texto",
         "contexto": "Los ciclos biogeoquímicos describen el movimiento de elementos entre los seres vivos y el ambiente.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué tipo de organismos son fundamentales para 'fijar' el nitrógeno atmosférico y hacerlo disponible para las plantas?",
-            "tipo": "uso_conocimiento",
-            "dificultad": "media",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Animales herbívoros",
-                "es_correcta": false
-              },
-              {
-                "texto": "Bacterias fijadoras de nitrógeno",
-                "es_correcta": true
-              },
-              {
-                "texto": "Hongos descomponedores",
-                "es_correcta": false
-              },
-              {
-                "texto": "Algas verdes",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "El principal reservorio de carbono que las plantas utilizan para la fotosíntesis es:",
             "tipo": "uso_conocimiento",
@@ -3229,38 +3206,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "ecologia_comunidades",
-        "contexto": "En un ecosistema, la energía fluye a través de los niveles tróficos.",
-        "archivo": null,
-        "preguntas": [
+          },
           {
-            "enunciado": "¿Qué porcentaje aproximado de energía se transfiere de un nivel trófico al siguiente?",
+            "enunciado": "¿Qué tipo de organismos son fundamentales para 'fijar' el nitrógeno atmosférico y hacerlo disponible para las plantas?",
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
             "opciones": [
               {
-                "texto": "100%",
+                "texto": "Animales herbívoros",
                 "es_correcta": false
               },
               {
-                "texto": "50%",
-                "es_correcta": false
-              },
-              {
-                "texto": "10%",
+                "texto": "Bacterias fijadoras de nitrógeno",
                 "es_correcta": true
               },
               {
-                "texto": "1%",
+                "texto": "Hongos descomponedores",
+                "es_correcta": false
+              },
+              {
+                "texto": "Algas verdes",
                 "es_correcta": false
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En un ecosistema, la energía fluye a través de los niveles tróficos.",
+        "archivo": null,
+        "preguntas": [
           {
             "enunciado": "¿Qué nivel trófico tiene siempre la mayor cantidad de biomasa disponible en un ecosistema saludable?",
             "tipo": "razonamiento",
@@ -3284,38 +3261,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Qué porcentaje aproximado de energía se transfiere de un nivel trófico al siguiente?",
+            "tipo": "uso_conocimiento",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "100%",
+                "es_correcta": false
+              },
+              {
+                "texto": "50%",
+                "es_correcta": false
+              },
+              {
+                "texto": "10%",
+                "es_correcta": true
+              },
+              {
+                "texto": "1%",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "problematica_ambiental",
+        "tipo": "texto",
         "contexto": "La pérdida de biodiversidad afecta la estabilidad de los ecosistemas mundiales.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es la principal causa humana de la extinción de especies actualmente?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "El cambio climático natural",
-                "es_correcta": false
-              },
-              {
-                "texto": "La caza deportiva exclusivamente",
-                "es_correcta": false
-              },
-              {
-                "texto": "La destrucción y fragmentación de hábitats",
-                "es_correcta": true
-              },
-              {
-                "texto": "El aumento de la radiación solar",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La deforestación masiva contribuye al calentamiento global principalmente porque:",
             "tipo": "razonamiento",
@@ -3339,38 +3316,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "especias_invasoras",
-        "contexto": "La introducción de especies no nativas en un ecosistema puede tener consecuencias imprevistas.",
-        "archivo": null,
-        "preguntas": [
+          },
           {
-            "enunciado": "¿Qué sucede usualmente cuando una especie invasora no tiene depredadores naturales en su nuevo ambiente?",
+            "enunciado": "¿Cuál es la principal causa humana de la extinción de especies actualmente?",
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
             "opciones": [
               {
-                "texto": "Se extingue rápidamente",
+                "texto": "El cambio climático natural",
                 "es_correcta": false
               },
               {
-                "texto": "Su población crece de forma descontrolada",
+                "texto": "La caza deportiva exclusivamente",
+                "es_correcta": false
+              },
+              {
+                "texto": "La destrucción y fragmentación de hábitats",
                 "es_correcta": true
               },
               {
-                "texto": "Se adapta para volverse herbívora",
-                "es_correcta": false
-              },
-              {
-                "texto": "Ayuda a aumentar la diversidad de especies nativas",
+                "texto": "El aumento de la radiación solar",
                 "es_correcta": false
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La introducción de especies no nativas en un ecosistema puede tener consecuencias imprevistas.",
+        "archivo": null,
+        "preguntas": [
           {
             "enunciado": "Un ejemplo famoso de especie invasora con impacto negativo en Colombia es:",
             "tipo": "uso_conocimiento",
@@ -3394,38 +3371,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Qué sucede usualmente cuando una especie invasora no tiene depredadores naturales en su nuevo ambiente?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Se extingue rápidamente",
+                "es_correcta": false
+              },
+              {
+                "texto": "Su población crece de forma descontrolada",
+                "es_correcta": true
+              },
+              {
+                "texto": "Se adapta para volverse herbívora",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ayuda a aumentar la diversidad de especies nativas",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "sostenibilidad",
+        "tipo": "texto",
         "contexto": "El desarrollo sostenible busca satisfacer las necesidades presentes sin comprometer las futuras.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué acción individual tiene un mayor impacto positivo en la reducción de residuos sólidos?",
-            "tipo": "competencias_cts",
-            "dificultad": "baja",
-            "competencia": "evaluar",
-            "opciones": [
-              {
-                "texto": "Quemar la basura en casa",
-                "es_correcta": false
-              },
-              {
-                "texto": "Reducir el consumo de plásticos de un solo uso",
-                "es_correcta": true
-              },
-              {
-                "texto": "Enterrar los desechos electrónicos",
-                "es_correcta": false
-              },
-              {
-                "texto": "Mezclar todos los desechos para que el camión los recoja",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Cuál de los siguientes recursos se considera NO renovable?",
             "tipo": "uso_conocimiento",
@@ -3449,38 +3426,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Qué acción individual tiene un mayor impacto positivo en la reducción de residuos sólidos?",
+            "tipo": "competencias_cts",
+            "dificultad": "baja",
+            "competencia": "evaluar",
+            "opciones": [
+              {
+                "texto": "Quemar la basura en casa",
+                "es_correcta": false
+              },
+              {
+                "texto": "Reducir el consumo de plásticos de un solo uso",
+                "es_correcta": true
+              },
+              {
+                "texto": "Enterrar los desechos electrónicos",
+                "es_correcta": false
+              },
+              {
+                "texto": "Mezclar todos los desechos para que el camión los recoja",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "salud_publica",
+        "tipo": "texto",
         "contexto": "Las vacunas son una herramienta de salud pública para prevenir enfermedades infecciosas.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cómo actúan las vacunas en el cuerpo humano?",
-            "tipo": "uso_conocimiento",
-            "dificultad": "media",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Matan directamente a las bacterias",
-                "es_correcta": false
-              },
-              {
-                "texto": "Estimulan el sistema inmunológico para crear memoria",
-                "es_correcta": true
-              },
-              {
-                "texto": "Reemplazan a los antibióticos en todas las infecciones",
-                "es_correcta": false
-              },
-              {
-                "texto": "Alteran permanentemente el ADN de la persona",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La 'inmunidad de rebaño' se logra cuando:",
             "tipo": "uso_conocimiento",
@@ -3504,38 +3481,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cómo actúan las vacunas en el cuerpo humano?",
+            "tipo": "uso_conocimiento",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Matan directamente a las bacterias",
+                "es_correcta": false
+              },
+              {
+                "texto": "Estimulan el sistema inmunológico para crear memoria",
+                "es_correcta": true
+              },
+              {
+                "texto": "Reemplazan a los antibióticos en todas las infecciones",
+                "es_correcta": false
+              },
+              {
+                "texto": "Alteran permanentemente el ADN de la persona",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "ingenieria_genetica",
+        "tipo": "texto",
         "contexto": "La ingeniería genética permite modificar el material genético de los organismos para diversos fines.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es una aplicación común de los organismos genéticamente modificados (OGM) en la agricultura?",
-            "tipo": "competencias_cts",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Hacer que las plantas caminen",
-                "es_correcta": false
-              },
-              {
-                "texto": "Aumentar el tamaño de las flores exclusivamente",
-                "es_correcta": false
-              },
-              {
-                "texto": "Otorgar resistencia a plagas o herbicidas",
-                "es_correcta": true
-              },
-              {
-                "texto": "Reducir la velocidad de crecimiento",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Un debate ético frecuente sobre la edición genética en humanos es:",
             "tipo": "competencias_cts",
@@ -3559,38 +3536,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es una aplicación común de los organismos genéticamente modificados (OGM) en la agricultura?",
+            "tipo": "competencias_cts",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Hacer que las plantas caminen",
+                "es_correcta": false
+              },
+              {
+                "texto": "Aumentar el tamaño de las flores exclusivamente",
+                "es_correcta": false
+              },
+              {
+                "texto": "Otorgar resistencia a plagas o herbicidas",
+                "es_correcta": true
+              },
+              {
+                "texto": "Reducir la velocidad de crecimiento",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "metodo_cientifico",
+        "tipo": "texto",
         "contexto": "Un científico nota que las plantas de su jardín crecen más rápido si les pone música clásica.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué paso del método científico representa la afirmación anterior?",
-            "tipo": "indagacion",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Hipótesis",
-                "es_correcta": false
-              },
-              {
-                "texto": "Observación",
-                "es_correcta": true
-              },
-              {
-                "texto": "Conclusión",
-                "es_correcta": false
-              },
-              {
-                "texto": "Experimentación",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Para demostrar que la música es la causa del crecimiento, el científico debería:",
             "tipo": "indagacion",
@@ -3614,38 +3591,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Qué paso del método científico representa la afirmación anterior?",
+            "tipo": "indagacion",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Hipótesis",
+                "es_correcta": false
+              },
+              {
+                "texto": "Observación",
+                "es_correcta": true
+              },
+              {
+                "texto": "Conclusión",
+                "es_correcta": false
+              },
+              {
+                "texto": "Experimentación",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "energia",
+        "tipo": "texto",
         "contexto": "La transición energética busca pasar de combustibles fósiles a fuentes limpias.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es la principal desventaja de la energía solar y eólica actualmente?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Son extremadamente contaminantes",
-                "es_correcta": false
-              },
-              {
-                "texto": "Su generación depende del clima (intermitencia)",
-                "es_correcta": true
-              },
-              {
-                "texto": "No producen suficiente electricidad para una casa",
-                "es_correcta": false
-              },
-              {
-                "texto": "Son fuentes de energía que se agotan rápido",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Qué gas es el principal responsable del efecto invernadero derivado de la quema de carbón?",
             "tipo": "uso_conocimiento",
@@ -3669,38 +3646,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es la principal desventaja de la energía solar y eólica actualmente?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Son extremadamente contaminantes",
+                "es_correcta": false
+              },
+              {
+                "texto": "Su generación depende del clima (intermitencia)",
+                "es_correcta": true
+              },
+              {
+                "texto": "No producen suficiente electricidad para una casa",
+                "es_correcta": false
+              },
+              {
+                "texto": "Son fuentes de energía que se agotan rápido",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "astronomia",
+        "tipo": "texto",
         "contexto": "El estudio del universo utiliza telescopios que captan diferentes tipos de luz.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "Un telescopio espacial como el James Webb puede ver objetos muy lejanos porque capta principalmente:",
-            "tipo": "uso_conocimiento",
-            "dificultad": "media",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Sonidos del espacio",
-                "es_correcta": false
-              },
-              {
-                "texto": "Luz infrarroja",
-                "es_correcta": true
-              },
-              {
-                "texto": "Ondas de radio FM",
-                "es_correcta": false
-              },
-              {
-                "texto": "Luz ultravioleta solamente",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Cuál es la unidad de distancia más adecuada para medir la separación entre estrellas?",
             "tipo": "uso_conocimiento",
@@ -3724,43 +3701,3295 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "Un telescopio espacial como el James Webb puede ver objetos muy lejanos porque capta principalmente:",
+            "tipo": "uso_conocimiento",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Sonidos del espacio",
+                "es_correcta": false
+              },
+              {
+                "texto": "Luz infrarroja",
+                "es_correcta": true
+              },
+              {
+                "texto": "Ondas de radio FM",
+                "es_correcta": false
+              },
+              {
+                "texto": "Luz ultravioleta solamente",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "lectura_critica": {
+    "nombre": "Lectura Crítica",
+    "contextos": [
+      {
+        "tipo": "texto",
+        "contexto": "La lectura no consiste únicamente en reconocer palabras, sino en comprender las ideas, relaciones e intenciones que un texto comunica. Un lector crítico es capaz de identificar no solo lo que se dice explícitamente, sino también aquello que se sugiere o se omite.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Del texto se puede inferir que la lectura crítica permite al lector:",
+            "tipo": "inferencia",
+            "dificultad": "alta",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "Aceptar sin cuestionar la información presentada.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Identificar posibles intenciones ocultas del autor.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Leer únicamente textos académicos.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Evitar interpretaciones personales.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es la intención principal del autor al escribir el texto?",
+            "tipo": "analisis",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Describir un método para aprender a leer más rápido.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Explicar qué implica una lectura crítica.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Narrar una experiencia personal como lector.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Criticar los sistemas educativos actuales.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Según el texto, ¿qué caracteriza principalmente a un lector crítico?",
+            "tipo": "inferencia",
+            "dificultad": "media",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "Reconoce palabras y memoriza definiciones.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Comprende ideas explícitas e implícitas del texto.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Lee rápidamente sin detenerse en detalles.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Se limita a identificar la estructura del texto.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En muchas ciudades, el crecimiento urbano ha transformado profundamente la forma en que las personas se relacionan con su entorno. Aunque este crecimiento ha facilitado el acceso a servicios, también ha generado problemas como la congestión, la contaminación y la pérdida de espacios verdes.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Del texto se puede concluir que el autor mantiene una postura:",
+            "tipo": "inferencia",
+            "dificultad": "media",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "Totalmente negativa frente al crecimiento urbano.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Equilibrada frente a los efectos del crecimiento urbano.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Optimista sin reconocer problemas.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Indiferente frente al tema.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Según el texto, uno de los efectos negativos del crecimiento urbano es:",
+            "tipo": "localizacion",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "La mejora en el transporte público.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La pérdida de espacios verdes.",
+                "es_correcta": true
+              },
+              {
+                "texto": "El aumento de oportunidades educativas.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La diversificación cultural.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es la idea principal del texto?",
+            "tipo": "idea_principal",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "El crecimiento urbano solo trae beneficios a las ciudades.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El crecimiento urbano ha generado tanto beneficios como problemas.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Las ciudades han dejado de ofrecer servicios básicos.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La contaminación es el único problema urbano.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La participación ciudadana es un elemento fundamental de las democracias modernas. A través de ella, los ciudadanos no solo eligen a sus representantes, sino que también pueden incidir en las decisiones públicas mediante mecanismos como el debate, la protesta pacífica y la veeduría social.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Del texto se puede inferir que una democracia sólida requiere:",
+            "tipo": "inferencia",
+            "dificultad": "media",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "Ciudadanos pasivos.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Participación activa de la ciudadanía.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Autoridad centralizada.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ausencia de debate público.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Según el texto, ¿qué acción NO es mencionada como forma de participación ciudadana?",
+            "tipo": "localizacion",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Elegir representantes.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Participar en debates.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Realizar protestas pacíficas.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Formar partidos políticos.",
+                "es_correcta": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El desarrollo tecnológico ha permitido avances significativos en la medicina, desde diagnósticos más precisos hasta tratamientos menos invasivos. Sin embargo, también plantea dilemas éticos relacionados con el acceso equitativo a estos avances y el uso responsable de la información médica.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "¿Qué se puede concluir a partir del texto?",
+            "tipo": "analisis",
+            "dificultad": "alta",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "El avance tecnológico elimina la necesidad de regulación.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Los avances médicos deben acompañarse de reflexión ética.",
+                "es_correcta": true
+              },
+              {
+                "texto": "La tecnología médica solo beneficia a unos pocos.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La ética limita el progreso científico.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Según el texto, uno de los dilemas éticos mencionados es:",
+            "tipo": "localizacion",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "La falta de médicos especializados.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El acceso equitativo a los avances médicos.",
+                "es_correcta": true
+              },
+              {
+                "texto": "La reducción de hospitales.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La eliminación de tratamientos tradicionales.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es la postura del autor frente al desarrollo tecnológico en la medicina?",
+            "tipo": "inferencia",
+            "dificultad": "media",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "Totalmente negativa.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Reconoce beneficios, pero advierte dilemas éticos.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Indiferente frente al tema.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Exclusivamente optimista.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El hábito de la lectura en la infancia está estrechamente relacionado con el desarrollo del pensamiento crítico y la creatividad. Los niños que leen con frecuencia suelen adquirir un vocabulario más amplio y una mayor capacidad para comprender distintos puntos de vista.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Del texto se puede inferir que los niños lectores:",
+            "tipo": "inferencia",
+            "dificultad": "media",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "Tienen dificultades para comprender otras opiniones.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Desarrollan mayor comprensión de distintos puntos de vista.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Dependen menos del lenguaje oral.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Presentan menor creatividad.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es la relación que establece el texto entre lectura y desarrollo infantil?",
+            "tipo": "interpretacion",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "La lectura solo mejora el rendimiento académico.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La lectura favorece el pensamiento crítico y la creatividad.",
+                "es_correcta": true
+              },
+              {
+                "texto": "La lectura limita la imaginación.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La lectura reemplaza la interacción social.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El cambio climático es uno de los principales desafíos actuales. Aunque existe consenso científico sobre su origen y consecuencias, la respuesta social y política frente a este fenómeno ha sido desigual, influenciada por intereses económicos, culturales y geográficos.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Del texto se puede inferir que enfrentar el cambio climático requiere:",
+            "tipo": "inferencia",
+            "dificultad": "alta",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "Ignorar los factores culturales.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Articular ciencia, política y sociedad.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Delegar la solución únicamente a los científicos.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Evitar acuerdos internacionales.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Según el texto, uno de los factores que influyen en la respuesta frente al cambio climático es:",
+            "tipo": "localizacion",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "La velocidad de los avances tecnológicos.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Los intereses económicos.",
+                "es_correcta": true
+              },
+              {
+                "texto": "La edad de la población.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El nivel educativo individual.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La memoria colectiva se construye a partir de relatos compartidos sobre el pasado. Estos relatos no solo preservan hechos históricos, sino que también influyen en la manera en que una sociedad se percibe a sí misma y proyecta su futuro.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál sería una consecuencia de modificar los relatos que conforman la memoria colectiva?",
+            "tipo": "analisis",
+            "dificultad": "alta",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "La pérdida total del pasado histórico.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Un cambio en la forma en que la sociedad se proyecta al futuro.",
+                "es_correcta": true
+              },
+              {
+                "texto": "La eliminación de los hechos históricos.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La desaparición de la identidad cultural.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Del texto se puede inferir que los relatos sobre el pasado:",
+            "tipo": "inferencia",
+            "dificultad": "media",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "Son completamente objetivos.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Influyen en cómo una sociedad se entiende a sí misma.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Carecen de impacto en el presente.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Solo interesan a los historiadores.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Qué función cumple la memoria colectiva según el texto?",
+            "tipo": "interpretacion",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "Registrar únicamente fechas y eventos.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Influir en la identidad y proyección social.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Reemplazar el estudio de la historia.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Evitar interpretaciones del pasado.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El trabajo colaborativo se ha convertido en una estrategia común en entornos educativos y laborales. Al combinar habilidades y perspectivas diversas, los grupos pueden abordar problemas complejos de manera más efectiva que los individuos de forma aislada.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Del texto se puede inferir que el trabajo individual:",
+            "tipo": "inferencia",
+            "dificultad": "media",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "Es siempre menos eficiente que el grupal.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Puede ser limitado frente a problemas complejos.",
+                "es_correcta": true
+              },
+              {
+                "texto": "No aporta al aprendizaje.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Es incompatible con el trabajo colaborativo.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es el principal beneficio del trabajo colaborativo según el texto?",
+            "tipo": "idea_principal",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "Reduce la responsabilidad individual.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Permite abordar problemas complejos con mayor efectividad.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Elimina los conflictos entre personas.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Evita la necesidad de liderazgo.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La migración ha sido un fenómeno constante a lo largo de la historia humana. Las personas migran por diversas razones, como la búsqueda de mejores oportunidades económicas, la huida de conflictos o desastres naturales, y el deseo de reunificación familiar.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Del texto se puede inferir que la migración:",
+            "tipo": "inferencia",
+            "dificultad": "media",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "Es un proceso uniforme en todas las regiones.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Responde a condiciones sociales, económicas y familiares.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Carece de impacto en las sociedades.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Solo ocurre en países en desarrollo.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Según el texto, una causa de migración es:",
+            "tipo": "localizacion",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "La estabilidad política permanente.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La huida de conflictos o desastres naturales.",
+                "es_correcta": true
+              },
+              {
+                "texto": "La disminución de la población mundial.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La eliminación de fronteras.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La publicidad influye en las decisiones de consumo al asociar productos con emociones, estilos de vida o aspiraciones. Esta estrategia busca persuadir al consumidor más allá de las características objetivas del producto.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál sería una actitud crítica frente a la publicidad, según el texto?",
+            "tipo": "analisis",
+            "dificultad": "alta",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Aceptar los mensajes publicitarios sin cuestionarlos.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Analizar más allá de las emociones que el anuncio provoca.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Evitar todo tipo de consumo.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Confiar solo en marcas reconocidas.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Del texto se puede inferir que la publicidad:",
+            "tipo": "inferencia",
+            "dificultad": "media",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "Se basa únicamente en información objetiva.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Busca influir en las emociones del consumidor.",
+                "es_correcta": true
+              },
+              {
+                "texto": "No afecta las decisiones de compra.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Es irrelevante en la sociedad actual.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Qué estrategia publicitaria describe el texto?",
+            "tipo": "interpretacion",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "Presentar datos técnicos detallados.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Asociar productos con emociones o aspiraciones.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Reducir el consumo de ciertos productos.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Evitar el uso de imágenes.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El lenguaje no solo sirve para comunicar información, sino también para construir realidades sociales. A través de él se refuerzan creencias, valores y relaciones de poder presentes en una sociedad.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Del texto se puede inferir que el lenguaje:",
+            "tipo": "inferencia",
+            "dificultad": "media",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "Es completamente objetivo.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Refleja y reproduce relaciones de poder.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Carece de impacto social.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Solo cumple una función informativa.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es la función del lenguaje según el texto?",
+            "tipo": "idea_principal",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "Transmitir información de manera neutral.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Construir y reforzar realidades sociales.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Evitar conflictos sociales.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Eliminar diferencias culturales.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Durante años se pensó que el éxito académico dependía exclusivamente del esfuerzo individual. Sin embargo, investigaciones recientes muestran que factores como el entorno familiar, la calidad educativa y el acceso a recursos influyen significativamente en el rendimiento de los estudiantes.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Del texto se puede inferir que mejorar el acceso a recursos educativos:",
+            "tipo": "inferencia",
+            "dificultad": "media",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "No tendría impacto en el rendimiento.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Podría contribuir a un mejor desempeño académico.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Reduciría la necesidad de esfuerzo personal.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Afectaría negativamente la educación.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Según el texto, uno de los factores que influye en el rendimiento académico es:",
+            "tipo": "localizacion",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "La suerte del estudiante.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El entorno familiar.",
+                "es_correcta": true
+              },
+              {
+                "texto": "La edad del docente.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El tipo de examen aplicado.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es la postura del texto frente al éxito académico?",
+            "tipo": "idea_principal",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "Depende únicamente del esfuerzo personal.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Está influido por múltiples factores sociales y educativos.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Es irrelevante el entorno del estudiante.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Se determina solo por la inteligencia.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Las redes sociales han transformado la manera en que las personas se informan y se comunican. Aunque facilitan el acceso rápido a noticias, también pueden propagar información falsa si no se verifican adecuadamente las fuentes.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál sería una actitud crítica frente a la información en redes sociales?",
+            "tipo": "evaluacion",
+            "dificultad": "alta",
+            "competencia": "evaluar",
+            "opciones": [
+              {
+                "texto": "Aceptar la información sin cuestionarla.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Contrastar la información con fuentes confiables.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Difundirla rápidamente.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ignorar todo tipo de noticias.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Del texto se puede inferir que el uso responsable de redes sociales implica:",
+            "tipo": "inferencia",
+            "dificultad": "media",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "Compartir toda la información disponible.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Verificar las fuentes antes de difundir contenidos.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Evitar informarse por completo.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Confiar únicamente en titulares.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es uno de los riesgos asociados al uso de redes sociales según el texto?",
+            "tipo": "localizacion",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "La disminución de la comunicación.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La propagación de información falsa.",
+                "es_correcta": true
+              },
+              {
+                "texto": "La falta de acceso a noticias.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La censura total de contenidos.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El cuidado del medio ambiente requiere acciones tanto individuales como colectivas. Reducir el consumo, reciclar y promover políticas públicas sostenibles son estrategias clave para enfrentar los problemas ambientales actuales.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Según el texto, una estrategia para enfrentar los problemas ambientales es:",
+            "tipo": "localizacion",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Aumentar el consumo.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Promover políticas públicas sostenibles.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Evitar la participación ciudadana.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ignorar el impacto ambiental.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es la idea central del texto?",
+            "tipo": "idea_principal",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "El medio ambiente es responsabilidad exclusiva del Estado.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La protección ambiental requiere acciones individuales y colectivas.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Reciclar es la única solución ambiental.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Los problemas ambientales son inevitables.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La lectura no solo permite adquirir información, sino que también desarrolla la capacidad crítica del lector. A través de ella, las personas pueden cuestionar ideas, analizar argumentos y formarse opiniones propias.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Del texto se puede inferir que una persona que lee con frecuencia:",
+            "tipo": "inferencia",
+            "dificultad": "media",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "Acepta todas las ideas sin cuestionarlas.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Tiene mayor capacidad para analizar argumentos.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Depende menos de la información escrita.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Evita formarse opiniones.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Según el texto, una consecuencia de la lectura es:",
+            "tipo": "localizacion",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "La repetición mecánica de ideas.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La formación de opiniones propias.",
+                "es_correcta": true
+              },
+              {
+                "texto": "La eliminación del pensamiento crítico.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La reducción del análisis.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es el propósito principal del texto?",
+            "tipo": "idea_principal",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "Describir los tipos de lectura existentes.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Resaltar la importancia de la lectura en el pensamiento crítico.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Explicar cómo memorizar textos.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Criticar la falta de hábitos lectores.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En muchas ciudades, el uso del transporte público ha disminuido debido al aumento del transporte privado. Esta situación ha generado mayores niveles de contaminación y congestión vial.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál sería la posición más coherente con el texto?",
+            "tipo": "evaluacion",
+            "dificultad": "alta",
+            "competencia": "evaluar",
+            "opciones": [
+              {
+                "texto": "Promover políticas que fortalezcan el transporte público.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Eliminar completamente el transporte público.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Incentivar el uso de vehículos privados.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ignorar los efectos ambientales.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Del texto se puede inferir que fomentar el uso del transporte público:",
+            "tipo": "inferencia",
+            "dificultad": "media",
+            "competencia": "inferir",
+            "opciones": [
+              {
+                "texto": "Aumentaría el uso de vehículos privados.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Podría reducir la contaminación y el tráfico.",
+                "es_correcta": true
+              },
+              {
+                "texto": "No tendría impacto ambiental.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Empeoraría la movilidad urbana.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es una consecuencia del aumento del transporte privado según el texto?",
+            "tipo": "localizacion",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "La reducción de la contaminación.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El aumento de la congestión vial.",
+                "es_correcta": true
+              },
+              {
+                "texto": "La mejora del transporte público.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La disminución del tráfico.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La ciencia avanza mediante la formulación de hipótesis que luego son sometidas a verificación experimental. Este proceso permite aceptar, modificar o rechazar explicaciones sobre fenómenos naturales.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Según el texto, una hipótesis puede ser:",
+            "tipo": "localizacion",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Aceptada, modificada o rechazada.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Siempre confirmada.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Inmodificable.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Independiente de la experimentación.",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es la función principal de la verificación experimental en la ciencia?",
+            "tipo": "idea_principal",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "Confirmar todas las hipótesis sin cambios.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Evaluar la validez de las hipótesis.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Eliminar la necesidad de teorías.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Evitar la formulación de hipótesis.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Había un hombre que se propuso la tarea de dibujar el mundo. A lo largo de los añospobla un espacio con imágenes de provincias, de reinos, de montañas, de bahías, de naves, de islas, de peces, de habitaciones, de instrumentos, de astros, de caballos y de personas. Poco antes de morir, descubre que ese paciente laberinto de líneas traza la imagen de su cara.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Del texto se puede inferir que el autor considera que el conocimiento del mundo:",
+            "tipo": "filosofico",
+            "dificultad": "alta",
+            "competencia": "reflexionar",
+            "opciones": [
+              {
+                "texto": "Es imposible de alcanzar plenamente",
+                "es_correcta": false
+              },
+              {
+                "texto": "Está íntimamente ligado al autoconocimiento",
+                "es_correcta": true
+              },
+              {
+                "texto": "Se logra solo a través del arte del dibujo",
+                "es_correcta": false
+              },
+              {
+                "texto": "Es una tarea que debe realizarse solo",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Qué figura literaria predomina en la enumeración de objetos que el hombre dibuja?",
+            "tipo": "literario",
+            "dificultad": "media",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Metáfora",
+                "es_correcta": false
+              },
+              {
+                "texto": "Polisíndeton (por el uso repetido de 'de')",
+                "es_correcta": true
+              },
+              {
+                "texto": "Hipérbole",
+                "es_correcta": false
+              },
+              {
+                "texto": "Personificación",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "La gran revelación del personaje al final de su vida consiste en que:",
+            "tipo": "literario",
+            "dificultad": "alta",
+            "competencia": "comprender",
+            "opciones": [
+              {
+                "texto": "El mundo es mucho más grande de lo que pensaba",
+                "es_correcta": false
+              },
+              {
+                "texto": "Su obra es en realidad un autorretrato involuntario",
+                "es_correcta": true
+              },
+              {
+                "texto": "Ha perdido el tiempo dibujando cosas inútiles",
+                "es_correcta": false
+              },
+              {
+                "texto": "El laberinto es la única forma de representar la realidad",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "La palabra 'paciente' en el contexto del fragmento califica al laberinto como:",
+            "tipo": "semantico",
+            "dificultad": "media",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Un lugar donde se espera a los enfermos",
+                "es_correcta": false
+              },
+              {
+                "texto": "Una obra que requirió mucho tiempo y dedicación",
+                "es_correcta": true
+              },
+              {
+                "texto": "Una estructura que no tiene salida",
+                "es_correcta": false
+              },
+              {
+                "texto": "Un dibujo hecho con mucha resignación",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La inteligencia artificial generativa no piensa; predice la siguiente palabra basándose en probabilidades estadísticas extraídas de billones de textos. Confundir esta fluidez verbal con sabiduría es el gran error de nuestra era digital.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Una consecuencia lógica de lo planteado en el texto sería:",
+            "tipo": "argumentativo",
+            "dificultad": "alta",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Debemos confiar plenamente en lo que dice la IA",
+                "es_correcta": false
+              },
+              {
+                "texto": "Es necesario verificar la información generada por IA",
+                "es_correcta": true
+              },
+              {
+                "texto": "La IA dejará de usarse en el futuro cercano",
+                "es_correcta": false
+              },
+              {
+                "texto": "La sabiduría humana ya no es necesaria",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "El tono del autor al hablar del 'gran error de nuestra era digital' se puede calificar como:",
+            "tipo": "analisis",
+            "dificultad": "media",
+            "competencia": "reflexionar",
+            "opciones": [
+              {
+                "texto": "Optimista y entusiasta",
+                "es_correcta": false
+              },
+              {
+                "texto": "Crítico y de advertencia",
+                "es_correcta": true
+              },
+              {
+                "texto": "Indiferente y neutral",
+                "es_correcta": false
+              },
+              {
+                "texto": "Sarcástico y burlón",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Según el texto, ¿en qué se basa la operación de la IA generativa?",
+            "tipo": "informativo",
+            "dificultad": "baja",
+            "competencia": "comprender",
+            "opciones": [
+              {
+                "texto": "En la conciencia propia",
+                "es_correcta": false
+              },
+              {
+                "texto": "En el razonamiento lógico deductivo",
+                "es_correcta": false
+              },
+              {
+                "texto": "En cálculos probabilísticos sobre datos masivos",
+                "es_correcta": true
+              },
+              {
+                "texto": "En la sabiduría acumulada de los programadores",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "La tesis principal del autor es que:",
+            "tipo": "argumentativo",
+            "dificultad": "media",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "La IA superará pronto la sabiduría humana",
+                "es_correcta": false
+              },
+              {
+                "texto": "Existe un malentendido sobre la naturaleza de la IA",
+                "es_correcta": true
+              },
+              {
+                "texto": "Las estadísticas son la base de todo pensamiento",
+                "es_correcta": false
+              },
+              {
+                "texto": "La fluidez verbal es síntoma de inteligencia verdadera",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "No te dejes arrastrar por los accidentes exteriores; procúrate tiempo libre para aprender algo bueno y cesa de girar como un trompo. Pero también debes guardarte de otro extravío: el de aquellos que, cansados de la vida por sus actividades, no tienen blanco hacia donde dirigir todo su impulso y, en suma, su pensamiento.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "La palabra 'blanco' en el texto es sinónimo de:",
+            "tipo": "semantico",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Color claro",
+                "es_correcta": false
+              },
+              {
+                "texto": "Objetivo o meta",
+                "es_correcta": true
+              },
+              {
+                "texto": "Vacío mental",
+                "es_correcta": false
+              },
+              {
+                "texto": "Pureza espiritual",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Del texto se deduce que para el autor una vida plena requiere:",
+            "tipo": "filosofico",
+            "dificultad": "alta",
+            "competencia": "reflexionar",
+            "opciones": [
+              {
+                "texto": "Riqueza y reconocimiento social",
+                "es_correcta": false
+              },
+              {
+                "texto": "Equilibrio entre aprendizaje y propósito",
+                "es_correcta": true
+              },
+              {
+                "texto": "Aislamiento total de la sociedad",
+                "es_correcta": false
+              },
+              {
+                "texto": "Trabajo ininterrumpido hasta el cansancio",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "El autor advierte sobre dos peligros: dejarse llevar por lo externo y:",
+            "tipo": "informativo",
+            "dificultad": "media",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Aprender cosas que no son útiles",
+                "es_correcta": false
+              },
+              {
+                "texto": "Vivir una vida sin objetivos o metas",
+                "es_correcta": true
+              },
+              {
+                "texto": "Tener demasiado tiempo libre",
+                "es_correcta": false
+              },
+              {
+                "texto": "Descansar demasiado durante el día",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "La expresión 'girar como un trompo' se utiliza para criticar:",
+            "tipo": "semantico",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "El juego excesivo en los adultos",
+                "es_correcta": false
+              },
+              {
+                "texto": "La actividad constante sin un propósito claro",
+                "es_correcta": true
+              },
+              {
+                "texto": "La falta de ejercicio físico",
+                "es_correcta": false
+              },
+              {
+                "texto": "La sabiduría de los antiguos filósofos",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "[Imagina una infografía sobre el ciclo del agua que muestra que el 97% es salada, 2% está en glaciares y solo el 1% es apta para consumo humano].",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Un título adecuado para esta infografía sería:",
+            "tipo": "analisis",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "El inmenso mar azul",
+                "es_correcta": false
+              },
+              {
+                "texto": "La fragilidad del agua potable",
+                "es_correcta": true
+              },
+              {
+                "texto": "Cómo purificar agua en casa",
+                "es_correcta": false
+              },
+              {
+                "texto": "Los seres vivos y el agua",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "La mayor parte del agua dulce del planeta se encuentra en:",
+            "tipo": "informativo",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Los océanos",
+                "es_correcta": false
+              },
+              {
+                "texto": "Los glaciares",
+                "es_correcta": true
+              },
+              {
+                "texto": "Los ríos y lagos",
+                "es_correcta": false
+              },
+              {
+                "texto": "La atmósfera",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Si el calentamiento global derrite los glaciares hacia el mar, según los datos:",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Aumentará el agua potable disponible",
+                "es_correcta": false
+              },
+              {
+                "texto": "El agua dulce de los glaciares se volverá salada",
+                "es_correcta": true
+              },
+              {
+                "texto": "El porcentaje de agua salada disminuirá drásticamente",
+                "es_correcta": false
+              },
+              {
+                "texto": "El ciclo del agua se detendrá por completo",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es la intención principal de presentar estos datos en una infografía?",
+            "tipo": "analisis",
+            "dificultad": "baja",
+            "competencia": "reflexionar",
+            "opciones": [
+              {
+                "texto": "Fomentar el turismo en los glaciares",
+                "es_correcta": false
+              },
+              {
+                "texto": "Concientizar sobre la escasez del agua dulce",
+                "es_correcta": true
+              },
+              {
+                "texto": "Explicar por qué el mar es salado",
+                "es_correcta": false
+              },
+              {
+                "texto": "Promover la desalinización masiva",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "[Imagina una caricatura donde un niño le pregunta a su padre: '¿Por qué los adultos construyen muros si luego quieren puentes para cruzar?', el padre responde leyendo el periódico: 'Es para que no se nos olvide cómo construir puentes'].",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "¿Qué sentimiento evoca principalmente la escena?",
+            "tipo": "analisis",
+            "dificultad": "media",
+            "competencia": "reflexionar",
+            "opciones": [
+              {
+                "texto": "Alegría y celebración",
+                "es_correcta": false
+              },
+              {
+                "texto": "Reflexión melancólica sobre la sociedad",
+                "es_correcta": true
+              },
+              {
+                "texto": "Miedo ante una catástrofe inminente",
+                "es_correcta": false
+              },
+              {
+                "texto": "Entusiasmo por el progreso tecnológico",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "En la caricatura, los 'muros' y 'puentes' funcionan como:",
+            "tipo": "literario",
+            "dificultad": "media",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Metáforas de conflicto y comunicación",
+                "es_correcta": true
+              },
+              {
+                "texto": "Ejemplos de infraestructura urbana",
+                "es_correcta": false
+              },
+              {
+                "texto": "Adornos del dibujo sin significado profundo",
+                "es_correcta": false
+              },
+              {
+                "texto": "Objetos de estudio de la física",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "La respuesta del padre puede interpretarse como:",
+            "tipo": "analisis",
+            "dificultad": "alta",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "Una explicación lógica y satisfactoria",
+                "es_correcta": false
+              },
+              {
+                "texto": "Una evasiva irónica ante la dura realidad",
+                "es_correcta": true
+              },
+              {
+                "texto": "Un consejo práctico para el futuro del niño",
+                "es_correcta": false
+              },
+              {
+                "texto": "Un dato histórico real sobre la ingeniería",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "La pregunta del niño resalta una:",
+            "tipo": "analisis",
+            "dificultad": "media",
+            "competencia": "reflexionar",
+            "opciones": [
+              {
+                "texto": "Curiosidad técnica por la arquitectura",
+                "es_correcta": false
+              },
+              {
+                "texto": "Contradicción en el comportamiento humano",
+                "es_correcta": true
+              },
+              {
+                "texto": "Falta de educación sobre geografía",
+                "es_correcta": false
+              },
+              {
+                "texto": "Preocupación por el costo de las obras públicas",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La Regeneración en Colombia (finales del siglo XIX) buscó centralizar el poder y unificar el país bajo una sola religión y lengua, dándole fin al federalismo extremo imperante. Sin embargo, esto exacerbó tensiones que llevaron a la Guerra de los Mil Días.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "La palabra 'exacerbó' en el texto significa:",
+            "tipo": "semantico",
+            "dificultad": "media",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Solucionó",
+                "es_correcta": false
+              },
+              {
+                "texto": "Intensificó o agravó",
+                "es_correcta": true
+              },
+              {
+                "texto": "Disminuyó",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ignoró",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "El texto presenta una relación de:",
+            "tipo": "argumentativo",
+            "dificultad": "media",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Causa y efecto",
+                "es_correcta": true
+              },
+              {
+                "texto": "Problema sin solución",
+                "es_correcta": false
+              },
+              {
+                "texto": "Comparación por analogía",
+                "es_correcta": false
+              },
+              {
+                "texto": "Cronología de éxitos",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Una consecuencia NO deseada de este movimiento fue:",
+            "tipo": "analisis",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "La unificación del idioma",
+                "es_correcta": false
+              },
+              {
+                "texto": "El estallido de un conflicto civil sangriento",
+                "es_correcta": true
+              },
+              {
+                "texto": "El fin del federalismo",
+                "es_correcta": false
+              },
+              {
+                "texto": "La centralización de la justicia",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "El objetivo principal de la Regeneración era:",
+            "tipo": "historico",
+            "dificultad": "baja",
+            "competencia": "comprender",
+            "opciones": [
+              {
+                "texto": "Promover la diversidad cultural",
+                "es_correcta": false
+              },
+              {
+                "texto": "Fortalecer el poder del gobierno central",
+                "es_correcta": true
+              },
+              {
+                "texto": "Permitir que cada región fuera independiente",
+                "es_correcta": false
+              },
+              {
+                "texto": "Eliminar la religión de la vida pública",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Puedo escribir los versos más tristes esta noche. / Escribir, por ejemplo: 'La noche está estrellada, / y tiritan, azules, los astros, a lo lejos'. / El viento de la noche gira en el cielo y canta.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "La estructura 'Puedo escribir... Escribir, por ejemplo...' sugiere que el poeta:",
+            "tipo": "analisis",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "No sabe qué escribir realmente",
+                "es_correcta": false
+              },
+              {
+                "texto": "Está en un proceso de creación y reflexión sobre su dolor",
+                "es_correcta": true
+              },
+              {
+                "texto": "Está obligado a escribir por un contrato",
+                "es_correcta": false
+              },
+              {
+                "texto": "Prefiere hablar que escribir",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Qué efecto produce la mención de que los astros están 'a lo lejos'?",
+            "tipo": "analisis",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "Sensación de cercanía y calidez",
+                "es_correcta": false
+              },
+              {
+                "texto": "Refuerza la soledad y distancia emocional del yo lírico",
+                "es_correcta": true
+              },
+              {
+                "texto": "Indica un interés por la astronomía",
+                "es_correcta": false
+              },
+              {
+                "texto": "Sugiere que el autor tiene problemas de vista",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "El sentimiento predominante en estos versos es la:",
+            "tipo": "analisis",
+            "dificultad": "baja",
+            "competencia": "comprender",
+            "opciones": [
+              {
+                "texto": "Melancolía",
+                "es_correcta": true
+              },
+              {
+                "texto": "Euforia",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ira",
+                "es_correcta": false
+              },
+              {
+                "texto": "Indiferencia",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "El uso del verbo 'tiritan' para referirse a los astros es una:",
+            "tipo": "literario",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Hipérbole",
+                "es_correcta": false
+              },
+              {
+                "texto": "Personificación",
+                "es_correcta": true
+              },
+              {
+                "texto": "Comparación",
+                "es_correcta": false
+              },
+              {
+                "texto": "Onomatopeya",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La física cuántica nos dice que, a nivel subatómico, las partículas pueden estar en dos lugares al mismo tiempo (superposición). Esto desafía nuestra intuición cotidiana, formada en un mundo de objetos grandes donde las cosas son o no son.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "La intención del fragmento es principalmente:",
+            "tipo": "informativo",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Criticar a los científicos",
+                "es_correcta": false
+              },
+              {
+                "texto": "Divulgar un concepto científico complejo de forma sencilla",
+                "es_correcta": true
+              },
+              {
+                "texto": "Hacer un experimento en casa",
+                "es_correcta": false
+              },
+              {
+                "texto": "Demostrar que el mundo macroscópico no existe",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Un sinónimo de 'intuición' en este contexto sería:",
+            "tipo": "semantico",
+            "dificultad": "media",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Sentido común o percepción habitual",
+                "es_correcta": true
+              },
+              {
+                "texto": "Adivinación mágica",
+                "es_correcta": false
+              },
+              {
+                "texto": "Teoría científica compleja",
+                "es_correcta": false
+              },
+              {
+                "texto": "Instinto de supervivencia",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Nuestra intuición nos suele engañar en el mundo cuántico porque:",
+            "tipo": "analisis",
+            "dificultad": "media",
+            "competencia": "reflexionar",
+            "opciones": [
+              {
+                "texto": "No somos lo suficientemente inteligentes",
+                "es_correcta": false
+              },
+              {
+                "texto": "Estamos acostumbrados a las reglas del mundo macroscópico",
+                "es_correcta": true
+              },
+              {
+                "texto": "La física cuántica es una invención sin pruebas",
+                "es_correcta": false
+              },
+              {
+                "texto": "Nuestros ojos no pueden ver partículas",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "El concepto de 'superposición' se refiere a:",
+            "tipo": "informativo",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Estar encima de otro objeto",
+                "es_correcta": false
+              },
+              {
+                "texto": "La capacidad de ocupar múltiples estados simultáneamente",
+                "es_correcta": true
+              },
+              {
+                "texto": "La desaparición total de la materia",
+                "es_correcta": false
+              },
+              {
+                "texto": "El movimiento muy rápido de los planetas",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En la 'modernidad líquida', los vínculos humanos son frágiles y transitorios. Las redes sociales han reemplazado la 'comunidad' por la 'red', donde es tan fácil conectarse como desconectarse, evitando el compromiso real.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Una consecuencia de los 'vínculos frágiles' es:",
+            "tipo": "argumentativo",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Relaciones que duran toda la vida",
+                "es_correcta": false
+              },
+              {
+                "texto": "Falta de profundidad en el compromiso mutuo",
+                "es_correcta": true
+              },
+              {
+                "texto": "Mayor seguridad emocional para todos",
+                "es_correcta": false
+              },
+              {
+                "texto": "Eliminación completa de los conflictos",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Del texto se infiere que el autor tiene una visión:",
+            "tipo": "analisis",
+            "dificultad": "media",
+            "competencia": "reflexionar",
+            "opciones": [
+              {
+                "texto": "Muy positiva sobre los avances tecnológicos",
+                "es_correcta": false
+              },
+              {
+                "texto": "Crítica sobre la calidad de las relaciones modernas",
+                "es_correcta": true
+              },
+              {
+                "texto": "Entusiasta por la libertad de desconexión",
+                "es_correcta": false
+              },
+              {
+                "texto": "Científica sobre la viscosidad de los líquidos",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "La principal diferencia entre una 'comunidad' y una 'red' según el texto es:",
+            "tipo": "argumentativo",
+            "dificultad": "alta",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "La red tiene más personas",
+                "es_correcta": false
+              },
+              {
+                "texto": "El nivel de compromiso y la facilidad de abandono",
+                "es_correcta": true
+              },
+              {
+                "texto": "Que la comunidad es digital y la red es física",
+                "es_correcta": false
+              },
+              {
+                "texto": "No hay diferencia sustancial",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "La metáfora de lo 'líquido' sugiere que la sociedad actual es:",
+            "tipo": "filosofico",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "Fluida, cambiante e inestable",
+                "es_correcta": true
+              },
+              {
+                "texto": "Refrescante y necesaria",
+                "es_correcta": false
+              },
+              {
+                "texto": "Dura y difícil de romper",
+                "es_correcta": false
+              },
+              {
+                "texto": "Transparente y honesta",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Don Quijote no es un loco, es un hombre que decide vivir en una obra de arte. Su 'locura' es una herramienta política para denunciar la chatura de un mundo que ha perdido sus ideales de caballería y justicia.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "El texto sugiere que la caballería:",
+            "tipo": "analisis",
+            "dificultad": "alta",
+            "competencia": "reflexionar",
+            "opciones": [
+              {
+                "texto": "Es una pérdida de tiempo",
+                "es_correcta": false
+              },
+              {
+                "texto": "Es un conjunto de valores que el mundo actual extraña",
+                "es_correcta": true
+              },
+              {
+                "texto": "Solo existió en los libros de ficción",
+                "es_correcta": false
+              },
+              {
+                "texto": "Debe ser prohibida por ser peligrosa",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Según el texto, la locura de Don Quijote tiene una función:",
+            "tipo": "analisis",
+            "dificultad": "media",
+            "competencia": "comprender",
+            "opciones": [
+              {
+                "texto": "Médica",
+                "es_correcta": false
+              },
+              {
+                "texto": "Denunciatoria y transformadora",
+                "es_correcta": true
+              },
+              {
+                "texto": "Cómica exclusivamente",
+                "es_correcta": false
+              },
+              {
+                "texto": "Decorativa",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "La 'chatura del mundo' se refiere a:",
+            "tipo": "semantico",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "La forma plana de la Tierra",
+                "es_correcta": false
+              },
+              {
+                "texto": "La falta de profundidad y de grandes ideales",
+                "es_correcta": true
+              },
+              {
+                "texto": "Los paisajes de la Mancha",
+                "es_correcta": false
+              },
+              {
+                "texto": "La sencillez de la vida campestre",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "El autor del fragmento propone una relectura del Quijote como:",
+            "tipo": "analisis",
+            "dificultad": "media",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Un enfermo mental digno de lástima",
+                "es_correcta": false
+              },
+              {
+                "texto": "Un rebelde consciente con un propósito idealista",
+                "es_correcta": true
+              },
+              {
+                "texto": "Un anciano que no sabe lo que hace",
+                "es_correcta": false
+              },
+              {
+                "texto": "Un actor de teatro profesional",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Los microplásticos están ya en la nieve del Ártico, en la sangre humana y en las profundidades del foso de las Marianas. No es solo un problema de basura visible; es una contaminación invisible que ha entrado en la cadena trófica.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Una medida efectiva contra este problema, basada en el texto, sería:",
+            "tipo": "argumentativo",
+            "dificultad": "alta",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Limpiar solo las playas turísticas",
+                "es_correcta": false
+              },
+              {
+                "texto": "Reducir drásticamente la producción de plásticos desde la fuente",
+                "es_correcta": true
+              },
+              {
+                "texto": "Poner filtros en los ojos para no verlos",
+                "es_correcta": false
+              },
+              {
+                "texto": "Exportar la basura a otros planetas",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "La mención de lugares tan distantes (Ártico y foso de las Marianas) sirve para resaltar:",
+            "tipo": "analisis",
+            "dificultad": "media",
+            "competencia": "reflexionar",
+            "opciones": [
+              {
+                "texto": "La belleza de la naturaleza",
+                "es_correcta": false
+              },
+              {
+                "texto": "La ubicuidad y gravedad global del problema",
+                "es_correcta": true
+              },
+              {
+                "texto": "Lo difícil que es viajar a esos sitios",
+                "es_correcta": false
+              },
+              {
+                "texto": "Que el plástico flota muy bien",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Qué implica que hayan entrado en la cadena trófica?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Que los animales los usan para construir nidos",
+                "es_correcta": false
+              },
+              {
+                "texto": "Que son consumidos por organismos y llegan hasta nosotros",
+                "es_correcta": true
+              },
+              {
+                "texto": "Que ayudan a la digestión de los peces",
+                "es_correcta": false
+              },
+              {
+                "texto": "Que se disuelven en el estómago sin dejar rastro",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "El término 'contaminación invisible' se refiere a que los microplásticos:",
+            "tipo": "informativo",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Son transparentes",
+                "es_correcta": false
+              },
+              {
+                "texto": "Son tan pequeños que no se notan pero están presentes",
+                "es_correcta": true
+              },
+              {
+                "texto": "No causan ningún daño real",
+                "es_correcta": false
+              },
+              {
+                "texto": "Se evaporan con el sol",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El hombre está condenado a ser libre. Condenado, porque no se ha creado a sí mismo y, sin embargo, es libre, porque una vez arrojado al mundo es responsable de todo lo que hace.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "La frase 'no se ha creado a sí mismo' sugiere que:",
+            "tipo": "filosofico",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "El hombre es un robot",
+                "es_correcta": false
+              },
+              {
+                "texto": "Nacemos en un mundo que no elegimos",
+                "es_correcta": true
+              },
+              {
+                "texto": "Podemos cambiar nuestro ADN al nacer",
+                "es_correcta": false
+              },
+              {
+                "texto": "El hombre es eterno",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "Ser 'responsable de todo lo que hace' implica que:",
+            "tipo": "analisis",
+            "dificultad": "media",
+            "competencia": "comprender",
+            "opciones": [
+              {
+                "texto": "No podemos culpar al destino o a la herencia por nuestros actos",
+                "es_correcta": true
+              },
+              {
+                "texto": "Nuestras acciones no tienen importancia",
+                "es_correcta": false
+              },
+              {
+                "texto": "Debemos pedir permiso para cada decisión",
+                "es_correcta": false
+              },
+              {
+                "texto": "Alguien más pagará por nuestros errores",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Por qué el autor usa la palabra 'condenado' para referirse a la libertad?",
+            "tipo": "filosofico",
+            "dificultad": "alta",
+            "competencia": "reflexionar",
+            "opciones": [
+              {
+                "texto": "Porque la libertad es un castigo divino",
+                "es_correcta": false
+              },
+              {
+                "texto": "Porque implica una responsabilidad ineludible y a veces pesada",
+                "es_correcta": true
+              },
+              {
+                "texto": "Porque nadie quiere ser realmente libre",
+                "es_correcta": false
+              },
+              {
+                "texto": "Porque la libertad solo existe en las cárceles",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La privacidad digital es el derecho de los individuos a controlar qué información personal se recopila, almacena y comparte. En la era de los datos, el usuario a menudo es el producto, no el cliente.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "El control sobre la información personal es un:",
+            "tipo": "informativo",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Lujo para pocos",
+                "es_correcta": false
+              },
+              {
+                "texto": "Derecho fundamental en la era digital",
+                "es_correcta": true
+              },
+              {
+                "texto": "Delito informático",
+                "es_correcta": false
+              },
+              {
+                "texto": "Secreto de estado",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Qué acción fortalece la privacidad digital?",
+            "tipo": "informativo",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Compartir todas las contraseñas en foros",
+                "es_correcta": false
+              },
+              {
+                "texto": "Configurar opciones de privacidad y usar cifrado",
+                "es_correcta": true
+              },
+              {
+                "texto": "Aceptar todos los términos y condiciones sin leer",
+                "es_correcta": false
+              },
+              {
+                "texto": "No usar internet nunca más",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "La frase 'el usuario es el producto' sugiere que:",
+            "tipo": "analisis",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "Las empresas nos regalan todo por bondad",
+                "es_correcta": false
+              },
+              {
+                "texto": "Nuestros datos son la mercancía que las empresas venden",
+                "es_correcta": true
+              },
+              {
+                "texto": "Somos dueños de las empresas digitales",
+                "es_correcta": false
+              },
+              {
+                "texto": "Debemos pagar más por las aplicaciones",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       }
     ]
   },
   "matematicas": {
-    "nombre": "Matemáticas",
+    "nombre": "Matematicas",
     "contextos": [
       {
-        "tipo": "contexto_matematico",
-        "contexto": "Un colegio organiza una excursión y contrata un bus cuyo costo fijo es de $200.000 más $5.000 por cada estudiante que asista.",
+        "tipo": "texto",
+        "contexto": "Los números primos son esenciales en criptografía moderna.",
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "¿Cuál expresión representa el costo total C en función del número de estudiantes x?",
+            "enunciado": "La descomposición en factores primos de 60 es:",
+            "tipo": "resolucion",
+            "dificultad": "baja",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "2² * 3 * 5",
+                "es_correcta": true
+              },
+              {
+                "texto": "2 * 3 * 10",
+                "es_correcta": false
+              },
+              {
+                "texto": "2 * 3 * 5",
+                "es_correcta": false
+              },
+              {
+                "texto": "4 * 15",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál de los siguientes números es primo?",
+            "tipo": "conceptos_numericos",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "37",
+                "es_correcta": true
+              },
+              {
+                "texto": "39",
+                "es_correcta": false
+              },
+              {
+                "texto": "51",
+                "es_correcta": false
+              },
+              {
+                "texto": "91",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El valor absoluto mide la distancia de un número al origen zero.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "La solución a la ecuación | x - 3 | = 5 es:",
+            "tipo": "algebra",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "x = 8 y x = -2",
+                "es_correcta": true
+              },
+              {
+                "texto": "x = 8",
+                "es_correcta": false
+              },
+              {
+                "texto": "x = 2",
+                "es_correcta": false
+              },
+              {
+                "texto": "x = -8 y x = 2",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es el resultado de | -15 | + | 8 |?",
+            "tipo": "resolucion",
+            "dificultad": "baja",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "23",
+                "es_correcta": true
+              },
+              {
+                "texto": "7",
+                "es_correcta": false
+              },
+              {
+                "texto": "-7",
+                "es_correcta": false
+              },
+              {
+                "texto": "-23",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un estudiante tiene 50.000 pesos para comprar cuadernos de 4.000 y bolígrafos de 2.000.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Si compra 10 cuadernos, ¿cuántos bolígrafos como máximo puede comprar?",
+            "tipo": "resolucion",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "5",
+                "es_correcta": true
+              },
+              {
+                "texto": "10",
+                "es_correcta": false
+              },
+              {
+                "texto": "2",
+                "es_correcta": false
+              },
+              {
+                "texto": "25",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Qué inecuación representa que el gasto total de x cuadernos y y bolígrafos no debe superar su presupuesto?",
             "tipo": "modelacion",
             "dificultad": "media",
             "competencia": "formular",
             "opciones": [
               {
-                "texto": "C = 200000 + 5000x",
+                "texto": "4000x + 2000y <= 50000",
                 "es_correcta": true
               },
               {
-                "texto": "C = 5000 + 200000x",
+                "texto": "4000x + 2000y >= 50000",
                 "es_correcta": false
               },
               {
-                "texto": "C = 200000x + 5000",
+                "texto": "2000x + 4000y < 50000",
                 "es_correcta": false
               },
               {
-                "texto": "C = 205000x",
+                "texto": "x + y <= 50000",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un hexágono regular es una figura con seis lados iguales y seis ángulos iguales.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "¿Cuánto mide cada ángulo interno de un hexágono regular?",
+            "tipo": "geometria",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "120°",
+                "es_correcta": true
+              },
+              {
+                "texto": "108°",
+                "es_correcta": false
+              },
+              {
+                "texto": "60°",
+                "es_correcta": false
+              },
+              {
+                "texto": "90°",
                 "es_correcta": false
               }
             ]
           },
+          {
+            "enunciado": "¿Cuál es la suma de los ángulos internos de un hexágono?",
+            "tipo": "geometria",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "720°",
+                "es_correcta": true
+              },
+              {
+                "texto": "540°",
+                "es_correcta": false
+              },
+              {
+                "texto": "360°",
+                "es_correcta": false
+              },
+              {
+                "texto": "900°",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un poste de 3 metros proyecta una sombra de 2 metros. Al mismo tiempo, un edificio proyecta una sombra de 20 metros.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "¿Qué criterio de semejanza se aplica aquí?",
+            "tipo": "conceptual",
+            "dificultad": "media",
+            "competencia": "argumentar",
+            "opciones": [
+              {
+                "texto": "Ángulo-Ángulo (AA)",
+                "es_correcta": true
+              },
+              {
+                "texto": "Lado-Lado-Lado",
+                "es_correcta": false
+              },
+              {
+                "texto": "Lado-Ángulo-Lado",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ninguno",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es la altura del edificio?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "30 metros",
+                "es_correcta": true
+              },
+              {
+                "texto": "40 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "15 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "60 metros",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La intensidad sonora en decibeles (dB) se mide mediante una escala logarítmica.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Si la intensidad de un sonido se multiplica por 10, ¿cuántos decibeles aumenta?",
+            "tipo": "razonamiento",
+            "dificultad": "alta",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "10 dB",
+                "es_correcta": true
+              },
+              {
+                "texto": "1 dB",
+                "es_correcta": false
+              },
+              {
+                "texto": "100 dB",
+                "es_correcta": false
+              },
+              {
+                "texto": "No aumenta",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es el valor de log₁₀(1.000)?",
+            "tipo": "algebra",
+            "dificultad": "baja",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "3",
+                "es_correcta": true
+              },
+              {
+                "texto": "2",
+                "es_correcta": false
+              },
+              {
+                "texto": "10",
+                "es_correcta": false
+              },
+              {
+                "texto": "100",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un estudiante tiene 4 camisas y 3 pantalones diferentes.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Si quiere elegir a 2 representantes de un grupo de 5 personas, ¿cuántas combinaciones posibles hay?",
+            "tipo": "combinatoria",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "10",
+                "es_correcta": true
+              },
+              {
+                "texto": "20",
+                "es_correcta": false
+              },
+              {
+                "texto": "5",
+                "es_correcta": false
+              },
+              {
+                "texto": "25",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿De cuántas formas diferentes puede vestirse combinando una camisa y un pantalón?",
+            "tipo": "conteo",
+            "dificultad": "baja",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "12",
+                "es_correcta": true
+              },
+              {
+                "texto": "7",
+                "es_correcta": false
+              },
+              {
+                "texto": "1",
+                "es_correcta": false
+              },
+              {
+                "texto": "24",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Una función f(x) se acerca al valor 2 cuando x tiende a 3.",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "Si f(3) está definido y es igual a 2, y el límite también es 2, se dice que f es:",
+            "tipo": "conceptual",
+            "dificultad": "media",
+            "competencia": "argumentar",
+            "opciones": [
+              {
+                "texto": "Continua en x=3",
+                "es_correcta": true
+              },
+              {
+                "texto": "Discontinua",
+                "es_correcta": false
+              },
+              {
+                "texto": "Derivable únicamente",
+                "es_correcta": false
+              },
+              {
+                "texto": "Infinita",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cómo se escribe formalmente esta afirmación?",
+            "tipo": "conceptual",
+            "dificultad": "media",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "lim (x->3) f(x) = 2",
+                "es_correcta": true
+              },
+              {
+                "texto": "lim (x->2) f(x) = 3",
+                "es_correcta": false
+              },
+              {
+                "texto": "f(3) = 2 siempre",
+                "es_correcta": false
+              },
+              {
+                "texto": "f(2) = 3 siempre",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La posición de un móvil está dada por s(t) = 5t².",
+        "archivo": null,
+        "preguntas": [
+          {
+            "enunciado": "La derivada de una función de posición respecto al tiempo representa físicamente:",
+            "tipo": "conceptual",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "La velocidad",
+                "es_correcta": true
+              },
+              {
+                "texto": "La aceleración",
+                "es_correcta": false
+              },
+              {
+                "texto": "La distancia recorrida",
+                "es_correcta": false
+              },
+              {
+                "texto": "La fuerza neta",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Cuál es la velocidad instantánea en t=2? (v(t) = s'(t))",
+            "tipo": "razonamiento",
+            "dificultad": "alta",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "20",
+                "es_correcta": true
+              },
+              {
+                "texto": "10",
+                "es_correcta": false
+              },
+              {
+                "texto": "5",
+                "es_correcta": false
+              },
+              {
+                "texto": "25",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un agricultor necesita decidir cuál de los dos tanques representados en la imagen tiene mayor capacidad de almacenamiento para su sistema de riego.",
+        "archivo": "/imagenes/capacidad_tanques.png",
+        "preguntas": [
+          {
+            "enunciado": "Considerando que el volumen de un cilindro se calcula como V = π * r^2 * h y el de un prisma rectangular como V = largo * ancho * alto, ¿cuál de las siguientes afirmaciones es correcta? (Tome π ≈ 3,14).",
+            "tipo": "modelacion",
+            "dificultad": "media",
+            "competencia": "formular",
+            "opciones": [
+              {
+                "texto": "A. El tanque cilíndrico tiene una capacidad de 20π m³, lo cual es menor que los 24 m³ del tanque prismático.",
+                "es_correcta": false
+              },
+              {
+                "texto": "B. El tanque prismático tiene mayor capacidad porque sus dimensiones base (4m y 3m) son mayores al radio del cilindro.",
+                "es_correcta": false
+              },
+              {
+                "texto": "C. El tanque cilíndrico tiene una capacidad aproximada de 62,8 m³, superando la capacidad de 24 m³ del tanque prismático.",
+                "es_correcta": true
+              },
+              {
+                "texto": "D. Ambos tanques tienen la misma capacidad de almacenamiento ya que el promedio de sus dimensiones es similar.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Una pizza circular se divide originalmente en 8 porciones iguales para ser repartida entre un grupo de personas.",
+        "archivo": "/imagenes/reparto_pizza.png",
+        "preguntas": [
+          {
+            "enunciado": "Si se retiran 3 de las 8 porciones originales, ¿qué porcentaje del total de la pizza queda disponible en el plato?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "37,5%",
+                "es_correcta": false
+              },
+              {
+                "texto": "62,5%",
+                "es_correcta": true
+              },
+              {
+                "texto": "75%",
+                "es_correcta": false
+              },
+              {
+                "texto": "30%",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En el plano cartesiano se representa una función lineal que pasa por los puntos (0, 2) y (4, 10), como se observa en la imagen.",
+        "archivo": "/imagenes/plano_cartesiano_recta.png",
+        "preguntas": [
+          {
+            "enunciado": "La pendiente (m) de una recta se define como la razón de cambio entre el eje y y el eje x ($m = \\frac{y_2 - y_1}{x_2 - x_1}$). ¿Cuál es el valor de la pendiente para la recta mostrada?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "argumentar",
+            "opciones": [
+              {
+                "texto": "m = 0,5",
+                "es_correcta": false
+              },
+              {
+                "texto": "m = 2",
+                "es_correcta": true
+              },
+              {
+                "texto": "m = 4",
+                "es_correcta": false
+              },
+              {
+                "texto": "m = 8",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se realizó una encuesta a 100 estudiantes sobre su deporte favorito. Los resultados se presentan en la siguiente gráfica de barras.",
+        "archivo": "/imagenes/grafica_deportes_estudiantes.png",
+        "preguntas": [
+          {
+            "enunciado": "Si se elige a un estudiante al azar de este grupo de 100, ¿cuál es la probabilidad de que su deporte favorito sea el Baloncesto (Basketball) o la Natación (Swimming)?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "25%",
+                "es_correcta": false
+              },
+              {
+                "texto": "15%",
+                "es_correcta": false
+              },
+              {
+                "texto": "40%",
+                "es_correcta": true
+              },
+              {
+                "texto": "60%",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un experimento aleatorio consiste en dos etapas: primero se lanza una moneda equilibrada (Cara/Sello) y luego se extrae una bola de una bolsa que contiene 3 bolas rojas y 2 bolas azules.",
+        "archivo": "/imagenes/image_generation_content.png",
+        "preguntas": [
+          {
+            "enunciado": "Utilizando el diagrama de árbol, ¿cuál es la probabilidad de que el resultado del experimento sea 'Sello' (Tails) y luego se extraiga una 'Bola Roja' (Red Ball)?",
+            "tipo": "razonamiento",
+            "dificultad": "alta",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "",
+                "es_correcta": false
+              },
+              {
+                "texto": "",
+                "es_correcta": false
+              },
+              {
+                "texto": "",
+                "es_correcta": false
+              },
+              {
+                "texto": "",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La figura mostrada representa el diseño de una ventana rectangular coronada por un semicírculo. Las medidas dadas están en metros.",
+        "archivo": "/imagenes/area_figura_compuesta_ventana.png",
+        "preguntas": [
+          {
+            "enunciado": "Si se desea instalar un vidrio especial en toda la ventana, ¿cuál es el área total, en metros cuadrados (m²), que debe cubrir el vidrio? (Utilice $\\pi \\approx 3,14$).",
+            "tipo": "resolucion",
+            "dificultad": "alta",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "21,57 m²",
+                "es_correcta": true
+              },
+              {
+                "texto": "18,28 m²",
+                "es_correcta": false
+              },
+              {
+                "texto": "15,14 m²",
+                "es_correcta": false
+              },
+              {
+                "texto": "24,71 m²",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se planea construir una rampa de carga para un almacén. Las especificaciones técnicas indican que la base de la rampa debe medir 12 metros de largo y alcanzar una altura vertical de 5 metros, como se muestra en la imagen.",
+        "archivo": "/imagenes/image_generation_content1.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es la longitud total de la superficie inclinada (hipotenusa) de la rampa que se debe construir?",
+            "tipo": "resolucion",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "17 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "13 metros",
+                "es_correcta": true
+              },
+              {
+                "texto": "10,5 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "7 metros",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se diseñó un tanque de almacenamiento de agua con forma cilíndrica. Las especificaciones técnicas indican que el radio de la base es de 2 metros y la altura del cilindro es de 7 metros, como se observa en la imagen.",
+        "archivo": "/imagenes/volumen_cilindro_tanque.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es la capacidad total de almacenamiento, en metros cúbicos ($m^3$), de este tanque cilíndrico? (Utilice $\\pi \\approx 3,14$).",
+            "tipo": "resolucion",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "87,92 $m^3$",
+                "es_correcta": true
+              },
+              {
+                "texto": "43,96 $m^3$",
+                "es_correcta": false
+              },
+              {
+                "texto": "28,26 $m^3$",
+                "es_correcta": false
+              },
+              {
+                "texto": "61,54 $m^3$",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se presenta un círculo cuyo área total es de 120 cm². En él se ha resaltado un sector circular con un ángulo central de 90°, como se muestra en la figura.",
+        "archivo": "/imagenes/image_generation_content2.png",
+        "preguntas": [
+          {
+            "enunciado": "De acuerdo con la información de la imagen, ¿cuál es el área del sector circular resaltado en color rojo?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "30 cm²",
+                "es_correcta": true
+              },
+              {
+                "texto": "60 cm²",
+                "es_correcta": false
+              },
+              {
+                "texto": "45 cm²",
+                "es_correcta": false
+              },
+              {
+                "texto": "90 cm²",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La siguiente gráfica muestra la relación entre el tiempo transcurrido (en horas) y la distancia recorrida (en kilómetros) por un vehículo que mantiene una velocidad constante.",
+        "archivo": "/imagenes/grafica_funcion_lineal_distancia.png",
+        "preguntas": [
+          {
+            "enunciado": "De acuerdo con la gráfica, ¿cuál es la velocidad del vehículo (la pendiente de la recta) y qué distancia habrá recorrido al cabo de 6 horas?",
+            "tipo": "razonamiento",
+            "dificultad": "alta",
+            "competencia": "argumentar",
+            "opciones": [
+              {
+                "texto": "Velocidad: 2 km/h; Distancia: 14 km",
+                "es_correcta": true
+              },
+              {
+                "texto": "Velocidad: 4 km/h; Distancia: 24 km",
+                "es_correcta": false
+              },
+              {
+                "texto": "Velocidad: 2 km/h; Distancia: 12 km",
+                "es_correcta": false
+              },
+              {
+                "texto": "Velocidad: 1 km/h; Distancia: 10 km",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un colegio organiza una excursión y contrata un bus cuyo costo fijo es de $200.000 más $5.000 por cada estudiante que asista.",
+        "archivo": null,
+        "preguntas": [
           {
             "enunciado": "Si asisten 30 estudiantes, ¿cuál es el costo total del bus?",
             "tipo": "resolucion",
@@ -3784,38 +7013,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál expresión representa el costo total C en función del número de estudiantes x?",
+            "tipo": "modelacion",
+            "dificultad": "media",
+            "competencia": "formular",
+            "opciones": [
+              {
+                "texto": "C = 200000 + 5000x",
+                "es_correcta": true
+              },
+              {
+                "texto": "C = 5000 + 200000x",
+                "es_correcta": false
+              },
+              {
+                "texto": "C = 200000x + 5000",
+                "es_correcta": false
+              },
+              {
+                "texto": "C = 205000x",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "problema",
+        "tipo": "texto",
         "contexto": "Un rectángulo tiene un perímetro de 40 cm. El largo mide el doble del ancho.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es la medida del ancho del rectángulo?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "5 cm",
-                "es_correcta": true
-              },
-              {
-                "texto": "10 cm",
-                "es_correcta": false
-              },
-              {
-                "texto": "8 cm",
-                "es_correcta": false
-              },
-              {
-                "texto": "4 cm",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Cuál es el área del rectángulo?",
             "tipo": "razonamiento",
@@ -3839,6 +7068,30 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": true
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es la medida del ancho del rectángulo?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "5 cm",
+                "es_correcta": true
+              },
+              {
+                "texto": "10 cm",
+                "es_correcta": false
+              },
+              {
+                "texto": "8 cm",
+                "es_correcta": false
+              },
+              {
+                "texto": "4 cm",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
@@ -3847,30 +7100,6 @@ export const OFF_QUESTIONS_DATA = {
         "contexto": "Relación entre horas trabajadas y dinero ganado.\nHoras: 1, 2, 3, 4\nDinero ($): 8000, 16000, 24000, 32000",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es el valor que se gana por cada hora de trabajo?",
-            "tipo": "interpretacion_datos",
-            "dificultad": "baja",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "$8.000",
-                "es_correcta": true
-              },
-              {
-                "texto": "$4.000",
-                "es_correcta": false
-              },
-              {
-                "texto": "$16.000",
-                "es_correcta": false
-              },
-              {
-                "texto": "$32.000",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Qué tipo de relación existe entre las horas trabajadas y el dinero ganado?",
             "tipo": "razonamiento",
@@ -3894,11 +7123,35 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es el valor que se gana por cada hora de trabajo?",
+            "tipo": "interpretacion_datos",
+            "dificultad": "baja",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "$8.000",
+                "es_correcta": true
+              },
+              {
+                "texto": "$4.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "$16.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "$32.000",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "probabilidad",
+        "tipo": "texto",
         "contexto": "En una bolsa hay 3 bolas rojas, 5 azules y 2 verdes.",
         "archivo": null,
         "preguntas": [
@@ -3929,7 +7182,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "algebra",
+        "tipo": "texto",
         "contexto": "Resuelve la ecuación: 3x − 7 = 11",
         "archivo": null,
         "preguntas": [
@@ -3960,34 +7213,10 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "funciones",
+        "tipo": "texto",
         "contexto": "La función f(x) = 2x + 3 representa el costo, en miles de pesos, de un servicio según el número de horas x.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es el costo del servicio si se usan 4 horas?",
-            "tipo": "resolucion",
-            "dificultad": "baja",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "11",
-                "es_correcta": true
-              },
-              {
-                "texto": "8",
-                "es_correcta": false
-              },
-              {
-                "texto": "10",
-                "es_correcta": false
-              },
-              {
-                "texto": "7",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Qué representa el número 3 en la función?",
             "tipo": "interpretacion",
@@ -4011,38 +7240,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es el costo del servicio si se usan 4 horas?",
+            "tipo": "resolucion",
+            "dificultad": "baja",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "11",
+                "es_correcta": true
+              },
+              {
+                "texto": "8",
+                "es_correcta": false
+              },
+              {
+                "texto": "10",
+                "es_correcta": false
+              },
+              {
+                "texto": "7",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "geometria",
+        "tipo": "texto",
         "contexto": "Un triángulo rectángulo tiene catetos de 6 cm y 8 cm.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es la longitud de la hipotenusa?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "10 cm",
-                "es_correcta": true
-              },
-              {
-                "texto": "14 cm",
-                "es_correcta": false
-              },
-              {
-                "texto": "12 cm",
-                "es_correcta": false
-              },
-              {
-                "texto": "8 cm",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Qué teorema permite calcular la hipotenusa?",
             "tipo": "conceptual",
@@ -4066,38 +7295,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es la longitud de la hipotenusa?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "10 cm",
+                "es_correcta": true
+              },
+              {
+                "texto": "14 cm",
+                "es_correcta": false
+              },
+              {
+                "texto": "12 cm",
+                "es_correcta": false
+              },
+              {
+                "texto": "8 cm",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "estadistica",
+        "tipo": "texto",
         "contexto": "Las edades de un grupo de estudiantes son: 14, 15, 15, 16, 16, 16, 17.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es la moda de las edades?",
-            "tipo": "estadistica",
-            "dificultad": "baja",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "16",
-                "es_correcta": true
-              },
-              {
-                "texto": "15",
-                "es_correcta": false
-              },
-              {
-                "texto": "14",
-                "es_correcta": false
-              },
-              {
-                "texto": "17",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Cuál es el promedio de las edades?",
             "tipo": "estadistica",
@@ -4121,11 +7350,35 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es la moda de las edades?",
+            "tipo": "estadistica",
+            "dificultad": "baja",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "16",
+                "es_correcta": true
+              },
+              {
+                "texto": "15",
+                "es_correcta": false
+              },
+              {
+                "texto": "14",
+                "es_correcta": false
+              },
+              {
+                "texto": "17",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "proporcionalidad",
+        "tipo": "texto",
         "contexto": "Para preparar una bebida se usan 2 cucharadas de polvo por cada 500 ml de agua.",
         "archivo": null,
         "preguntas": [
@@ -4156,7 +7409,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "probabilidad",
+        "tipo": "texto",
         "contexto": "Se lanza un dado estándar de seis caras.",
         "archivo": null,
         "preguntas": [
@@ -4187,34 +7440,10 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "porcentajes",
+        "tipo": "texto",
         "contexto": "Un artículo cuesta $80.000 y tiene un descuento del 25%.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es el valor del descuento?",
-            "tipo": "resolucion",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "$20.000",
-                "es_correcta": true
-              },
-              {
-                "texto": "$15.000",
-                "es_correcta": false
-              },
-              {
-                "texto": "$25.000",
-                "es_correcta": false
-              },
-              {
-                "texto": "$10.000",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Cuál es el precio final del artículo?",
             "tipo": "resolucion",
@@ -4238,11 +7467,35 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es el valor del descuento?",
+            "tipo": "resolucion",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "$20.000",
+                "es_correcta": true
+              },
+              {
+                "texto": "$15.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "$25.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "$10.000",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "ecuacion_cuadratica",
+        "tipo": "texto",
         "contexto": "Resuelve la ecuación: x² − 5x + 6 = 0",
         "archivo": null,
         "preguntas": [
@@ -4278,30 +7531,6 @@ export const OFF_QUESTIONS_DATA = {
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "¿Cuál es la pendiente de la recta?",
-            "tipo": "interpretacion_grafica",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "2",
-                "es_correcta": true
-              },
-              {
-                "texto": "3",
-                "es_correcta": false
-              },
-              {
-                "texto": "6",
-                "es_correcta": false
-              },
-              {
-                "texto": "8",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
             "enunciado": "¿Cuál es la ecuación de la recta?",
             "tipo": "modelacion",
             "dificultad": "alta",
@@ -4324,11 +7553,35 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es la pendiente de la recta?",
+            "tipo": "interpretacion_grafica",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "2",
+                "es_correcta": true
+              },
+              {
+                "texto": "3",
+                "es_correcta": false
+              },
+              {
+                "texto": "6",
+                "es_correcta": false
+              },
+              {
+                "texto": "8",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "razonamiento",
+        "tipo": "texto",
         "contexto": "Si el triple de un número disminuido en 4 es igual a 11.",
         "archivo": null,
         "preguntas": [
@@ -4359,7 +7612,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "geometria",
+        "tipo": "texto",
         "contexto": "Un círculo tiene un radio de 7 cm. (π ≈ 3,14)",
         "archivo": null,
         "preguntas": [
@@ -4390,34 +7643,10 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "trigonometria",
+        "tipo": "texto",
         "contexto": "En un triángulo rectángulo, un ángulo agudo mide 30° y la hipotenusa mide 10 cm.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es la longitud del cateto opuesto al ángulo de 30°?",
-            "tipo": "trigonometria",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "5 cm",
-                "es_correcta": true
-              },
-              {
-                "texto": "8,66 cm",
-                "es_correcta": false
-              },
-              {
-                "texto": "10 cm",
-                "es_correcta": false
-              },
-              {
-                "texto": "4 cm",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Qué razón trigonométrica se utiliza para relacionar el cateto opuesto y la hipotenusa?",
             "tipo": "conceptual",
@@ -4441,38 +7670,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "sistema_ecuaciones",
-        "contexto": "Resuelve el sistema de ecuaciones:\n2x + y = 7\nx + y = 5",
-        "archivo": null,
-        "preguntas": [
+          },
           {
-            "enunciado": "¿Cuál es el valor de x?",
-            "tipo": "algebra",
+            "enunciado": "¿Cuál es la longitud del cateto opuesto al ángulo de 30°?",
+            "tipo": "trigonometria",
             "dificultad": "media",
             "competencia": "resolver",
             "opciones": [
               {
-                "texto": "2",
+                "texto": "5 cm",
                 "es_correcta": true
               },
               {
-                "texto": "3",
+                "texto": "8,66 cm",
                 "es_correcta": false
               },
               {
-                "texto": "1",
+                "texto": "10 cm",
                 "es_correcta": false
               },
               {
-                "texto": "4",
+                "texto": "4 cm",
                 "es_correcta": false
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Resuelve el sistema de ecuaciones:\n2x + y = 7\nx + y = 5",
+        "archivo": null,
+        "preguntas": [
           {
             "enunciado": "¿Cuál es el valor de y?",
             "tipo": "algebra",
@@ -4505,30 +7734,6 @@ export const OFF_QUESTIONS_DATA = {
         "archivo": null,
         "preguntas": [
           {
-            "enunciado": "¿Cuál es el costo de un cuaderno?",
-            "tipo": "interpretacion_datos",
-            "dificultad": "baja",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "$3.000",
-                "es_correcta": true
-              },
-              {
-                "texto": "$2.000",
-                "es_correcta": false
-              },
-              {
-                "texto": "$6.000",
-                "es_correcta": false
-              },
-              {
-                "texto": "$9.000",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
             "enunciado": "¿Qué tipo de relación existe entre cuadernos y costo?",
             "tipo": "razonamiento",
             "dificultad": "media",
@@ -4551,11 +7756,35 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es el costo de un cuaderno?",
+            "tipo": "interpretacion_datos",
+            "dificultad": "baja",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "$3.000",
+                "es_correcta": true
+              },
+              {
+                "texto": "$2.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "$6.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "$9.000",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "razones",
+        "tipo": "texto",
         "contexto": "La razón entre el número de niños y niñas en un curso es 3:2. En total hay 25 estudiantes.",
         "archivo": null,
         "preguntas": [
@@ -4586,7 +7815,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "medidas",
+        "tipo": "texto",
         "contexto": "Un terreno rectangular mide 20 m de largo y 15 m de ancho.",
         "archivo": null,
         "preguntas": [
@@ -4617,34 +7846,10 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "funcion_cuadratica",
+        "tipo": "texto",
         "contexto": "La función h(x) = -x² + 6x representa la altura (en metros) de un objeto lanzado verticalmente, en función del tiempo x (en segundos).",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿En qué tiempo el objeto alcanza su altura máxima?",
-            "tipo": "interpretacion",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "3 segundos",
-                "es_correcta": true
-              },
-              {
-                "texto": "6 segundos",
-                "es_correcta": false
-              },
-              {
-                "texto": "0 segundos",
-                "es_correcta": false
-              },
-              {
-                "texto": "−3 segundos",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Cuál es la altura máxima alcanzada?",
             "tipo": "resolucion",
@@ -4668,11 +7873,35 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿En qué tiempo el objeto alcanza su altura máxima?",
+            "tipo": "interpretacion",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "3 segundos",
+                "es_correcta": true
+              },
+              {
+                "texto": "6 segundos",
+                "es_correcta": false
+              },
+              {
+                "texto": "0 segundos",
+                "es_correcta": false
+              },
+              {
+                "texto": "−3 segundos",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "variacion_inversa",
+        "tipo": "texto",
         "contexto": "Cuatro trabajadores realizan una obra en 12 días, trabajando al mismo ritmo.",
         "archivo": null,
         "preguntas": [
@@ -4734,7 +7963,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "razonamiento_logico",
+        "tipo": "texto",
         "contexto": "Si hoy es lunes, dentro de 100 días será:",
         "archivo": null,
         "preguntas": [
@@ -4765,7 +7994,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "contexto_financiero",
+        "tipo": "texto",
         "contexto": "Una persona invierte $1.000.000 a una tasa de interés simple del 10% anual.",
         "archivo": null,
         "preguntas": [
@@ -4796,7 +8025,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "probabilidad_compuesta",
+        "tipo": "texto",
         "contexto": "En una caja hay 4 fichas rojas, 3 azules y 3 verdes. Se extrae una ficha al azar y luego otra, sin devolver la primera.",
         "archivo": null,
         "preguntas": [
@@ -4827,34 +8056,10 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "analisis_grafico",
+        "tipo": "texto",
         "contexto": "Una gráfica muestra el crecimiento de una planta durante 6 semanas. En las primeras 3 semanas el crecimiento es lento y luego se acelera.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿En qué periodo el crecimiento de la planta es mayor?",
-            "tipo": "interpretacion_grafica",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "Entre la semana 4 y 6",
-                "es_correcta": true
-              },
-              {
-                "texto": "Entre la semana 1 y 3",
-                "es_correcta": false
-              },
-              {
-                "texto": "Es constante en todo el periodo",
-                "es_correcta": false
-              },
-              {
-                "texto": "Disminuye al final",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Del comportamiento de la gráfica se puede inferir que:",
             "tipo": "inferencia",
@@ -4878,34 +8083,27 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "razonamiento_logico",
-        "contexto": "Si el doble de un número más 5 es igual a 21.",
-        "archivo": null,
-        "preguntas": [
+          },
           {
-            "enunciado": "¿Cuál es el número?",
-            "tipo": "algebra",
+            "enunciado": "¿En qué periodo el crecimiento de la planta es mayor?",
+            "tipo": "interpretacion_grafica",
             "dificultad": "media",
-            "competencia": "resolver",
+            "competencia": "interpretar",
             "opciones": [
               {
-                "texto": "8",
+                "texto": "Entre la semana 4 y 6",
                 "es_correcta": true
               },
               {
-                "texto": "6",
+                "texto": "Entre la semana 1 y 3",
                 "es_correcta": false
               },
               {
-                "texto": "10",
+                "texto": "Es constante en todo el periodo",
                 "es_correcta": false
               },
               {
-                "texto": "7",
+                "texto": "Disminuye al final",
                 "es_correcta": false
               }
             ]
@@ -4913,7 +8111,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "proporcion",
+        "tipo": "texto",
         "contexto": "Para preparar una mezcla se utilizan 3 litros de agua por cada 2 litros de concentrado.",
         "archivo": null,
         "preguntas": [
@@ -4944,7 +8142,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "estadistica",
+        "tipo": "texto",
         "contexto": "Los puntajes de un grupo de estudiantes en una prueba son: 50, 60, 70, 70, 80, 90.",
         "archivo": null,
         "preguntas": [
@@ -4975,7 +8173,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "funciones",
+        "tipo": "texto",
         "contexto": "La función f(x) = 2x + 3 representa el costo de un servicio según la cantidad de horas trabajadas.",
         "archivo": null,
         "preguntas": [
@@ -5002,35 +8200,11 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          },
-          {
-            "enunciado": "¿Qué representa el número 3 en la función?",
-            "tipo": "interpretacion",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "El costo fijo del servicio",
-                "es_correcta": true
-              },
-              {
-                "texto": "El número de horas",
-                "es_correcta": false
-              },
-              {
-                "texto": "El costo por hora",
-                "es_correcta": false
-              },
-              {
-                "texto": "Un error de cálculo",
-                "es_correcta": false
-              }
-            ]
           }
         ]
       },
       {
-        "tipo": "geometria",
+        "tipo": "texto",
         "contexto": "Un triángulo tiene dos lados que miden 5 cm y 7 cm.",
         "archivo": null,
         "preguntas": [
@@ -5061,7 +8235,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "geometria_analitica",
+        "tipo": "texto",
         "contexto": "Se tiene el punto A(2,3) en el plano cartesiano.",
         "archivo": null,
         "preguntas": [
@@ -5092,7 +8266,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "modelacion",
+        "tipo": "texto",
         "contexto": "Un automóvil consume 1 litro de gasolina por cada 12 km recorridos.",
         "archivo": null,
         "preguntas": [
@@ -5123,7 +8297,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "probabilidad",
+        "tipo": "texto",
         "contexto": "En una rifa hay 10 boletos, de los cuales 4 son ganadores.",
         "archivo": null,
         "preguntas": [
@@ -5154,34 +8328,10 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "geometria_espacial",
+        "tipo": "texto",
         "contexto": "Un tanque cilíndrico tiene un radio de 2 metros y una altura de 5 metros.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es el volumen del tanque en metros cúbicos? (Use π ≈ 3,14)",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "62,8 m³",
-                "es_correcta": true
-              },
-              {
-                "texto": "31,4 m³",
-                "es_correcta": false
-              },
-              {
-                "texto": "20,0 m³",
-                "es_correcta": false
-              },
-              {
-                "texto": "125,6 m³",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Si el radio del tanque se duplica y la altura se mantiene, el volumen:",
             "tipo": "razonamiento",
@@ -5205,38 +8355,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es el volumen del tanque en metros cúbicos? (Use π ≈ 3,14)",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "62,8 m³",
+                "es_correcta": true
+              },
+              {
+                "texto": "31,4 m³",
+                "es_correcta": false
+              },
+              {
+                "texto": "20,0 m³",
+                "es_correcta": false
+              },
+              {
+                "texto": "125,6 m³",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "porcentajes_finanzas",
+        "tipo": "texto",
         "contexto": "Una tienda ofrece un televisor de $1.200.000 con un descuento del 15% por pago en efectivo.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿De cuánto es el ahorro en pesos si se paga en efectivo?",
-            "tipo": "resolucion",
-            "dificultad": "baja",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "$180.000",
-                "es_correcta": true
-              },
-              {
-                "texto": "$150.000",
-                "es_correcta": false
-              },
-              {
-                "texto": "$120.000",
-                "es_correcta": false
-              },
-              {
-                "texto": "$200.000",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Si después del descuento se debe pagar un IVA del 10% sobre el valor rebajado, el precio final es:",
             "tipo": "resolucion",
@@ -5260,38 +8410,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿De cuánto es el ahorro en pesos si se paga en efectivo?",
+            "tipo": "resolucion",
+            "dificultad": "baja",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "$180.000",
+                "es_correcta": true
+              },
+              {
+                "texto": "$150.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "$120.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "$200.000",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "sistemas_lineales",
+        "tipo": "texto",
         "contexto": "En una granja hay gallinas y conejos. En total hay 20 cabezas y 50 patas.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuántas gallinas hay en la granja?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "15",
-                "es_correcta": true
-              },
-              {
-                "texto": "5",
-                "es_correcta": false
-              },
-              {
-                "texto": "10",
-                "es_correcta": false
-              },
-              {
-                "texto": "12",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Cuántos conejos hay en la granja?",
             "tipo": "razonamiento",
@@ -5315,38 +8465,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuántas gallinas hay en la granja?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "15",
+                "es_correcta": true
+              },
+              {
+                "texto": "5",
+                "es_correcta": false
+              },
+              {
+                "texto": "10",
+                "es_correcta": false
+              },
+              {
+                "texto": "12",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "probabilidad",
+        "tipo": "texto",
         "contexto": "De una baraja española de 40 cartas se extrae una carta al azar.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es la probabilidad de que la carta sea un as (hay 4 ases)?",
-            "tipo": "probabilidad",
-            "dificultad": "baja",
-            "competencia": "razonar",
-            "opciones": [
-              {
-                "texto": "1/10",
-                "es_correcta": true
-              },
-              {
-                "texto": "1/40",
-                "es_correcta": false
-              },
-              {
-                "texto": "4/10",
-                "es_correcta": false
-              },
-              {
-                "texto": "1/4",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Cuál es la probabilidad de que sea una carta de oros (hay 10 cartas de cada palo)?",
             "tipo": "probabilidad",
@@ -5370,38 +8520,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es la probabilidad de que la carta sea un as (hay 4 ases)?",
+            "tipo": "probabilidad",
+            "dificultad": "baja",
+            "competencia": "razonar",
+            "opciones": [
+              {
+                "texto": "1/10",
+                "es_correcta": true
+              },
+              {
+                "texto": "1/40",
+                "es_correcta": false
+              },
+              {
+                "texto": "4/10",
+                "es_correcta": false
+              },
+              {
+                "texto": "1/4",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "estadistica_avanzada",
+        "tipo": "texto",
         "contexto": "Un conjunto de datos tiene una media de 50 y una desviación estándar de 0.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué se puede concluir sobre los datos del conjunto?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "argumentar",
-            "opciones": [
-              {
-                "texto": "Todos los datos son iguales a 50",
-                "es_correcta": true
-              },
-              {
-                "texto": "La mitad de los datos es mayor a 50",
-                "es_correcta": false
-              },
-              {
-                "texto": "No hay datos en el conjunto",
-                "es_correcta": false
-              },
-              {
-                "texto": "Los datos varían mucho entre sí",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La desviación estándar es una medida de:",
             "tipo": "conceptual",
@@ -5425,38 +8575,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Qué se puede concluir sobre los datos del conjunto?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "argumentar",
+            "opciones": [
+              {
+                "texto": "Todos los datos son iguales a 50",
+                "es_correcta": true
+              },
+              {
+                "texto": "La mitad de los datos es mayor a 50",
+                "es_correcta": false
+              },
+              {
+                "texto": "No hay datos en el conjunto",
+                "es_correcta": false
+              },
+              {
+                "texto": "Los datos varían mucho entre sí",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "funciones_exponenciales",
+        "tipo": "texto",
         "contexto": "Una población de bacterias se duplica cada hora. Inicialmente hay 100 bacterias (t=0).",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál función representa la población P en función del tiempo t en horas?",
-            "tipo": "modelacion",
-            "dificultad": "media",
-            "competencia": "formular",
-            "opciones": [
-              {
-                "texto": "P(t) = 100 * 2^t",
-                "es_correcta": true
-              },
-              {
-                "texto": "P(t) = 100 + 2t",
-                "es_correcta": false
-              },
-              {
-                "texto": "P(t) = 200t",
-                "es_correcta": false
-              },
-              {
-                "texto": "P(t) = 100 * t^2",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Cuántas bacterias habrá después de 3 horas?",
             "tipo": "resolucion",
@@ -5480,38 +8630,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál función representa la población P en función del tiempo t en horas?",
+            "tipo": "modelacion",
+            "dificultad": "media",
+            "competencia": "formular",
+            "opciones": [
+              {
+                "texto": "P(t) = 100 * 2^t",
+                "es_correcta": true
+              },
+              {
+                "texto": "P(t) = 100 + 2t",
+                "es_correcta": false
+              },
+              {
+                "texto": "P(t) = 200t",
+                "es_correcta": false
+              },
+              {
+                "texto": "P(t) = 100 * t^2",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "trigonometria_aplicada",
+        "tipo": "texto",
         "contexto": "Un árbol proyecta una sombra de 12 metros cuando el ángulo de elevación del sol es de 30°.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es la altura aproximada del árbol? (tan 30° ≈ 0,577)",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "6,92 metros",
-                "es_correcta": true
-              },
-              {
-                "texto": "10,39 metros",
-                "es_correcta": false
-              },
-              {
-                "texto": "6,00 metros",
-                "es_correcta": false
-              },
-              {
-                "texto": "24,00 metros",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Si el ángulo de elevación aumenta a 45°, la sombra será:",
             "tipo": "razonamiento",
@@ -5535,38 +8685,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es la altura aproximada del árbol? (tan 30° ≈ 0,577)",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "6,92 metros",
+                "es_correcta": true
+              },
+              {
+                "texto": "10,39 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "6,00 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "24,00 metros",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "funciones_inversas",
+        "tipo": "texto",
         "contexto": "Sea la función f(x) = 3x - 5.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es el valor de f(4)?",
-            "tipo": "resolucion",
-            "dificultad": "baja",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "7",
-                "es_correcta": true
-              },
-              {
-                "texto": "12",
-                "es_correcta": false
-              },
-              {
-                "texto": "17",
-                "es_correcta": false
-              },
-              {
-                "texto": "1",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Cuál es la expresión de la función inversa f⁻¹(x)?",
             "tipo": "algebra",
@@ -5590,38 +8740,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es el valor de f(4)?",
+            "tipo": "resolucion",
+            "dificultad": "baja",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "7",
+                "es_correcta": true
+              },
+              {
+                "texto": "12",
+                "es_correcta": false
+              },
+              {
+                "texto": "17",
+                "es_correcta": false
+              },
+              {
+                "texto": "1",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "logica_secuencias",
+        "tipo": "texto",
         "contexto": "Observe la siguiente secuencia de números: 2, 6, 12, 20, 30, ...",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es el siguiente número en la secuencia?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "razonar",
-            "opciones": [
-              {
-                "texto": "42",
-                "es_correcta": true
-              },
-              {
-                "texto": "40",
-                "es_correcta": false
-              },
-              {
-                "texto": "36",
-                "es_correcta": false
-              },
-              {
-                "texto": "45",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La regla que define la secuencia para el término n (donde n=1 es el primero) es:",
             "tipo": "modelacion",
@@ -5645,38 +8795,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es el siguiente número en la secuencia?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "razonar",
+            "opciones": [
+              {
+                "texto": "42",
+                "es_correcta": true
+              },
+              {
+                "texto": "40",
+                "es_correcta": false
+              },
+              {
+                "texto": "36",
+                "es_correcta": false
+              },
+              {
+                "texto": "45",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "razones_proporciones",
+        "tipo": "texto",
         "contexto": "Una receta para 4 personas requiere 600 gramos de carne.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuánta carne se necesita para preparar la misma receta para 10 personas?",
-            "tipo": "resolucion",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "1.500 gramos",
-                "es_correcta": true
-              },
-              {
-                "texto": "1.200 gramos",
-                "es_correcta": false
-              },
-              {
-                "texto": "1.800 gramos",
-                "es_correcta": false
-              },
-              {
-                "texto": "1.000 gramos",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Si solo se tienen 450 gramos de carne, ¿para cuántas personas alcanza la receta?",
             "tipo": "resolucion",
@@ -5700,11 +8850,35 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuánta carne se necesita para preparar la misma receta para 10 personas?",
+            "tipo": "resolucion",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "1.500 gramos",
+                "es_correcta": true
+              },
+              {
+                "texto": "1.200 gramos",
+                "es_correcta": false
+              },
+              {
+                "texto": "1.800 gramos",
+                "es_correcta": false
+              },
+              {
+                "texto": "1.000 gramos",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "circunferencia",
+        "tipo": "texto",
         "contexto": "Un círculo tiene una circunferencia (perímetro) de 20π centímetros.",
         "archivo": null,
         "preguntas": [
@@ -5731,62 +8905,14 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          },
-          {
-            "enunciado": "¿Cuál es el área del círculo?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "100π cm²",
-                "es_correcta": true
-              },
-              {
-                "texto": "20π cm²",
-                "es_correcta": false
-              },
-              {
-                "texto": "400π cm²",
-                "es_correcta": false
-              },
-              {
-                "texto": "50π cm²",
-                "es_correcta": false
-              }
-            ]
           }
         ]
       },
       {
-        "tipo": "funciones_cuadraticas",
+        "tipo": "texto",
         "contexto": "La ganancia G de una empresa depende del precio x de los artículos: G(x) = -x² + 40x - 300.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿A qué precio x se obtiene la ganancia máxima? (Vértice de la parábola)",
-            "tipo": "interpretacion",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "20",
-                "es_correcta": true
-              },
-              {
-                "texto": "40",
-                "es_correcta": false
-              },
-              {
-                "texto": "10",
-                "es_correcta": false
-              },
-              {
-                "texto": "300",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Cuál es la ganancia máxima posible?",
             "tipo": "resolucion",
@@ -5810,38 +8936,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿A qué precio x se obtiene la ganancia máxima? (Vértice de la parábola)",
+            "tipo": "interpretacion",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "20",
+                "es_correcta": true
+              },
+              {
+                "texto": "40",
+                "es_correcta": false
+              },
+              {
+                "texto": "10",
+                "es_correcta": false
+              },
+              {
+                "texto": "300",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "analisis_datos",
+        "tipo": "texto",
         "contexto": "Una empresa registra sus ventas mensuales: Ene: 10, Feb: 15, Mar: 12, Abr: 18, May: 15.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es la mediana de las ventas?",
-            "tipo": "estadistica",
-            "dificultad": "baja",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "15",
-                "es_correcta": true
-              },
-              {
-                "texto": "12",
-                "es_correcta": false
-              },
-              {
-                "texto": "14",
-                "es_correcta": false
-              },
-              {
-                "texto": "18",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿En qué mes se presentó el mayor incremento de ventas respecto al mes anterior?",
             "tipo": "analisis",
@@ -5865,38 +8991,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es la mediana de las ventas?",
+            "tipo": "estadistica",
+            "dificultad": "baja",
+            "competencia": "interpretar",
+            "opciones": [
+              {
+                "texto": "15",
+                "es_correcta": true
+              },
+              {
+                "texto": "12",
+                "es_correcta": false
+              },
+              {
+                "texto": "14",
+                "es_correcta": false
+              },
+              {
+                "texto": "18",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "vectores",
+        "tipo": "texto",
         "contexto": "Dos fuerzas actúan sobre un objeto: F1 de 3N hacia el Norte y F2 de 4N hacia el Este.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es la magnitud de la fuerza resultante?",
-            "tipo": "fisica_matematica",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "5N",
-                "es_correcta": true
-              },
-              {
-                "texto": "7N",
-                "es_correcta": false
-              },
-              {
-                "texto": "1N",
-                "es_correcta": false
-              },
-              {
-                "texto": "12N",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Qué rama de la matemática permite resolver este problema fácilmente?",
             "tipo": "conceptual",
@@ -5920,38 +9046,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "interes_simple",
-        "contexto": "Se invierten $500.000 a una tasa de interés simple del 10% anual durante 2 años.",
-        "archivo": null,
-        "preguntas": [
+          },
           {
-            "enunciado": "¿Cuánto dinero en intereses se genera en total?",
-            "tipo": "finanzas",
+            "enunciado": "¿Cuál es la magnitud de la fuerza resultante?",
+            "tipo": "fisica_matematica",
             "dificultad": "media",
             "competencia": "resolver",
             "opciones": [
               {
-                "texto": "$100.000",
+                "texto": "5N",
                 "es_correcta": true
               },
               {
-                "texto": "$50.000",
+                "texto": "7N",
                 "es_correcta": false
               },
               {
-                "texto": "$110.000",
+                "texto": "1N",
                 "es_correcta": false
               },
               {
-                "texto": "$600.000",
+                "texto": "12N",
                 "es_correcta": false
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se invierten $500.000 a una tasa de interés simple del 10% anual durante 2 años.",
+        "archivo": null,
+        "preguntas": [
           {
             "enunciado": "¿Cuál es el monto total (capital + intereses) al finalizar los 2 años?",
             "tipo": "finanzas",
@@ -5975,38 +9101,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuánto dinero en intereses se genera en total?",
+            "tipo": "finanzas",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "opciones": [
+              {
+                "texto": "$100.000",
+                "es_correcta": true
+              },
+              {
+                "texto": "$50.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "$110.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "$600.000",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "teoria_conjuntos",
+        "tipo": "texto",
         "contexto": "En un grupo de 30 personas, 20 hablan inglés y 15 hablan español. 10 hablan ambos idiomas.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuántas personas hablan ÚNICAMENTE inglés?",
-            "tipo": "logica",
-            "dificultad": "media",
-            "competencia": "razonar",
-            "opciones": [
-              {
-                "texto": "10",
-                "es_correcta": true
-              },
-              {
-                "texto": "20",
-                "es_correcta": false
-              },
-              {
-                "texto": "5",
-                "es_correcta": false
-              },
-              {
-                "texto": "15",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Cuántas de estas personas no hablan ninguno de los dos idiomas?",
             "tipo": "logica",
@@ -6030,373 +9156,12 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "numeros_primos",
-        "contexto": "Los números primos son esenciales en criptografía moderna.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál de los siguientes números es primo?",
-            "tipo": "conceptos_numericos",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "37",
-                "es_correcta": true
-              },
-              {
-                "texto": "39",
-                "es_correcta": false
-              },
-              {
-                "texto": "51",
-                "es_correcta": false
-              },
-              {
-                "texto": "91",
-                "es_correcta": false
-              }
-            ]
           },
           {
-            "enunciado": "La descomposición en factores primos de 60 es:",
-            "tipo": "resolucion",
-            "dificultad": "baja",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "2² * 3 * 5",
-                "es_correcta": true
-              },
-              {
-                "texto": "2 * 3 * 10",
-                "es_correcta": false
-              },
-              {
-                "texto": "2 * 3 * 5",
-                "es_correcta": false
-              },
-              {
-                "texto": "4 * 15",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "valor_absoluto",
-        "contexto": "El valor absoluto mide la distancia de un número al origen zero.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es el resultado de | -15 | + | 8 |?",
-            "tipo": "resolucion",
-            "dificultad": "baja",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "23",
-                "es_correcta": true
-              },
-              {
-                "texto": "7",
-                "es_correcta": false
-              },
-              {
-                "texto": "-7",
-                "es_correcta": false
-              },
-              {
-                "texto": "-23",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "La solución a la ecuación | x - 3 | = 5 es:",
-            "tipo": "algebra",
+            "enunciado": "¿Cuántas personas hablan ÚNICAMENTE inglés?",
+            "tipo": "logica",
             "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "x = 8 y x = -2",
-                "es_correcta": true
-              },
-              {
-                "texto": "x = 8",
-                "es_correcta": false
-              },
-              {
-                "texto": "x = 2",
-                "es_correcta": false
-              },
-              {
-                "texto": "x = -8 y x = 2",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "desigualdades",
-        "contexto": "Un estudiante tiene 50.000 pesos para comprar cuadernos de 4.000 y bolígrafos de 2.000.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Qué inecuación representa que el gasto total de x cuadernos y y bolígrafos no debe superar su presupuesto?",
-            "tipo": "modelacion",
-            "dificultad": "media",
-            "competencia": "formular",
-            "opciones": [
-              {
-                "texto": "4000x + 2000y <= 50000",
-                "es_correcta": true
-              },
-              {
-                "texto": "4000x + 2000y >= 50000",
-                "es_correcta": false
-              },
-              {
-                "texto": "2000x + 4000y < 50000",
-                "es_correcta": false
-              },
-              {
-                "texto": "x + y <= 50000",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Si compra 10 cuadernos, ¿cuántos bolígrafos como máximo puede comprar?",
-            "tipo": "resolucion",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "5",
-                "es_correcta": true
-              },
-              {
-                "texto": "10",
-                "es_correcta": false
-              },
-              {
-                "texto": "2",
-                "es_correcta": false
-              },
-              {
-                "texto": "25",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "poligonos",
-        "contexto": "Un hexágono regular es una figura con seis lados iguales y seis ángulos iguales.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la suma de los ángulos internos de un hexágono?",
-            "tipo": "geometria",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "720°",
-                "es_correcta": true
-              },
-              {
-                "texto": "540°",
-                "es_correcta": false
-              },
-              {
-                "texto": "360°",
-                "es_correcta": false
-              },
-              {
-                "texto": "900°",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "¿Cuánto mide cada ángulo interno de un hexágono regular?",
-            "tipo": "geometria",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "120°",
-                "es_correcta": true
-              },
-              {
-                "texto": "108°",
-                "es_correcta": false
-              },
-              {
-                "texto": "60°",
-                "es_correcta": false
-              },
-              {
-                "texto": "90°",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "semejanza_triangulos",
-        "contexto": "Un poste de 3 metros proyecta una sombra de 2 metros. Al mismo tiempo, un edificio proyecta una sombra de 20 metros.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la altura del edificio?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "30 metros",
-                "es_correcta": true
-              },
-              {
-                "texto": "40 metros",
-                "es_correcta": false
-              },
-              {
-                "texto": "15 metros",
-                "es_correcta": false
-              },
-              {
-                "texto": "60 metros",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "¿Qué criterio de semejanza se aplica aquí?",
-            "tipo": "conceptual",
-            "dificultad": "media",
-            "competencia": "argumentar",
-            "opciones": [
-              {
-                "texto": "Ángulo-Ángulo (AA)",
-                "es_correcta": true
-              },
-              {
-                "texto": "Lado-Lado-Lado",
-                "es_correcta": false
-              },
-              {
-                "texto": "Lado-Ángulo-Lado",
-                "es_correcta": false
-              },
-              {
-                "texto": "Ninguno",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "logaritmos",
-        "contexto": "La intensidad sonora en decibeles (dB) se mide mediante una escala logarítmica.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es el valor de log₁₀(1.000)?",
-            "tipo": "algebra",
-            "dificultad": "baja",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "3",
-                "es_correcta": true
-              },
-              {
-                "texto": "2",
-                "es_correcta": false
-              },
-              {
-                "texto": "10",
-                "es_correcta": false
-              },
-              {
-                "texto": "100",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Si la intensidad de un sonido se multiplica por 10, ¿cuántos decibeles aumenta?",
-            "tipo": "razonamiento",
-            "dificultad": "alta",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "10 dB",
-                "es_correcta": true
-              },
-              {
-                "texto": "1 dB",
-                "es_correcta": false
-              },
-              {
-                "texto": "100 dB",
-                "es_correcta": false
-              },
-              {
-                "texto": "No aumenta",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "conteo_combinatoria",
-        "contexto": "Un estudiante tiene 4 camisas y 3 pantalones diferentes.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿De cuántas formas diferentes puede vestirse combinando una camisa y un pantalón?",
-            "tipo": "conteo",
-            "dificultad": "baja",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "12",
-                "es_correcta": true
-              },
-              {
-                "texto": "7",
-                "es_correcta": false
-              },
-              {
-                "texto": "1",
-                "es_correcta": false
-              },
-              {
-                "texto": "24",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Si quiere elegir a 2 representantes de un grupo de 5 personas, ¿cuántas combinaciones posibles hay?",
-            "tipo": "combinatoria",
-            "dificultad": "media",
-            "competencia": "resolver",
+            "competencia": "razonar",
             "opciones": [
               {
                 "texto": "10",
@@ -6411,117 +9176,7 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               },
               {
-                "texto": "25",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "limites_continuidad",
-        "contexto": "Una función f(x) se acerca al valor 2 cuando x tiende a 3.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cómo se escribe formalmente esta afirmación?",
-            "tipo": "conceptual",
-            "dificultad": "media",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "lim (x->3) f(x) = 2",
-                "es_correcta": true
-              },
-              {
-                "texto": "lim (x->2) f(x) = 3",
-                "es_correcta": false
-              },
-              {
-                "texto": "f(3) = 2 siempre",
-                "es_correcta": false
-              },
-              {
-                "texto": "f(2) = 3 siempre",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Si f(3) está definido y es igual a 2, y el límite también es 2, se dice que f es:",
-            "tipo": "conceptual",
-            "dificultad": "media",
-            "competencia": "argumentar",
-            "opciones": [
-              {
-                "texto": "Continua en x=3",
-                "es_correcta": true
-              },
-              {
-                "texto": "Discontinua",
-                "es_correcta": false
-              },
-              {
-                "texto": "Derivable únicamente",
-                "es_correcta": false
-              },
-              {
-                "texto": "Infinita",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "calculo_basico",
-        "contexto": "La posición de un móvil está dada por s(t) = 5t².",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la velocidad instantánea en t=2? (v(t) = s'(t))",
-            "tipo": "razonamiento",
-            "dificultad": "alta",
-            "competencia": "resolver",
-            "opciones": [
-              {
-                "texto": "20",
-                "es_correcta": true
-              },
-              {
-                "texto": "10",
-                "es_correcta": false
-              },
-              {
-                "texto": "5",
-                "es_correcta": false
-              },
-              {
-                "texto": "25",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "La derivada de una función de posición respecto al tiempo representa físicamente:",
-            "tipo": "conceptual",
-            "dificultad": "media",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "La velocidad",
-                "es_correcta": true
-              },
-              {
-                "texto": "La aceleración",
-                "es_correcta": false
-              },
-              {
-                "texto": "La distancia recorrida",
-                "es_correcta": false
-              },
-              {
-                "texto": "La fuerza neta",
+                "texto": "15",
                 "es_correcta": false
               }
             ]
@@ -6530,2530 +9185,11 @@ export const OFF_QUESTIONS_DATA = {
       }
     ]
   },
-  "lectura_critica": {
-    "nombre": "Lectura Crítica",
+  "ciencias_sociales_y_competencias_ciudadanas": {
+    "nombre": "Ciencias_Sociales_y_Competencias_Ciudadanas",
     "contextos": [
       {
         "tipo": "texto",
-        "contexto": "La lectura no consiste únicamente en reconocer palabras, sino en comprender las ideas, relaciones e intenciones que un texto comunica. Un lector crítico es capaz de identificar no solo lo que se dice explícitamente, sino también aquello que se sugiere o se omite.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "Según el texto, ¿qué caracteriza principalmente a un lector crítico?",
-            "tipo": "inferencia",
-            "dificultad": "media",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "Reconoce palabras y memoriza definiciones.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Comprende ideas explícitas e implícitas del texto.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Lee rápidamente sin detenerse en detalles.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Se limita a identificar la estructura del texto.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "¿Cuál es la intención principal del autor al escribir el texto?",
-            "tipo": "analisis",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Describir un método para aprender a leer más rápido.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Explicar qué implica una lectura crítica.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Narrar una experiencia personal como lector.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Criticar los sistemas educativos actuales.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se puede inferir que la lectura crítica permite al lector:",
-            "tipo": "inferencia",
-            "dificultad": "alta",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "Aceptar sin cuestionar la información presentada.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Identificar posibles intenciones ocultas del autor.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Leer únicamente textos académicos.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Evitar interpretaciones personales.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "En muchas ciudades, el crecimiento urbano ha transformado profundamente la forma en que las personas se relacionan con su entorno. Aunque este crecimiento ha facilitado el acceso a servicios, también ha generado problemas como la congestión, la contaminación y la pérdida de espacios verdes.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la idea principal del texto?",
-            "tipo": "idea_principal",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "El crecimiento urbano solo trae beneficios a las ciudades.",
-                "es_correcta": false
-              },
-              {
-                "texto": "El crecimiento urbano ha generado tanto beneficios como problemas.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Las ciudades han dejado de ofrecer servicios básicos.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La contaminación es el único problema urbano.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Según el texto, uno de los efectos negativos del crecimiento urbano es:",
-            "tipo": "localizacion",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "La mejora en el transporte público.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La pérdida de espacios verdes.",
-                "es_correcta": true
-              },
-              {
-                "texto": "El aumento de oportunidades educativas.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La diversificación cultural.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se puede concluir que el autor mantiene una postura:",
-            "tipo": "inferencia",
-            "dificultad": "media",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "Totalmente negativa frente al crecimiento urbano.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Equilibrada frente a los efectos del crecimiento urbano.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Optimista sin reconocer problemas.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Indiferente frente al tema.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "La participación ciudadana es un elemento fundamental de las democracias modernas. A través de ella, los ciudadanos no solo eligen a sus representantes, sino que también pueden incidir en las decisiones públicas mediante mecanismos como el debate, la protesta pacífica y la veeduría social.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la idea principal del texto?",
-            "tipo": "idea_principal",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "La democracia se limita al voto.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La participación ciudadana fortalece la democracia.",
-                "es_correcta": true
-              },
-              {
-                "texto": "La protesta pacífica debilita el orden social.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La veeduría social es innecesaria.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Según el texto, ¿qué acción NO es mencionada como forma de participación ciudadana?",
-            "tipo": "localizacion",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Elegir representantes.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Participar en debates.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Realizar protestas pacíficas.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Formar partidos políticos.",
-                "es_correcta": true
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se puede inferir que una democracia sólida requiere:",
-            "tipo": "inferencia",
-            "dificultad": "media",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "Ciudadanos pasivos.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Participación activa de la ciudadanía.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Autoridad centralizada.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Ausencia de debate público.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "El desarrollo tecnológico ha permitido avances significativos en la medicina, desde diagnósticos más precisos hasta tratamientos menos invasivos. Sin embargo, también plantea dilemas éticos relacionados con el acceso equitativo a estos avances y el uso responsable de la información médica.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la postura del autor frente al desarrollo tecnológico en la medicina?",
-            "tipo": "inferencia",
-            "dificultad": "media",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "Totalmente negativa.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Reconoce beneficios, pero advierte dilemas éticos.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Indiferente frente al tema.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Exclusivamente optimista.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Según el texto, uno de los dilemas éticos mencionados es:",
-            "tipo": "localizacion",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "La falta de médicos especializados.",
-                "es_correcta": false
-              },
-              {
-                "texto": "El acceso equitativo a los avances médicos.",
-                "es_correcta": true
-              },
-              {
-                "texto": "La reducción de hospitales.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La eliminación de tratamientos tradicionales.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "¿Qué se puede concluir a partir del texto?",
-            "tipo": "analisis",
-            "dificultad": "alta",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "El avance tecnológico elimina la necesidad de regulación.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Los avances médicos deben acompañarse de reflexión ética.",
-                "es_correcta": true
-              },
-              {
-                "texto": "La tecnología médica solo beneficia a unos pocos.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La ética limita el progreso científico.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "El hábito de la lectura en la infancia está estrechamente relacionado con el desarrollo del pensamiento crítico y la creatividad. Los niños que leen con frecuencia suelen adquirir un vocabulario más amplio y una mayor capacidad para comprender distintos puntos de vista.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la relación que establece el texto entre lectura y desarrollo infantil?",
-            "tipo": "interpretacion",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "La lectura solo mejora el rendimiento académico.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La lectura favorece el pensamiento crítico y la creatividad.",
-                "es_correcta": true
-              },
-              {
-                "texto": "La lectura limita la imaginación.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La lectura reemplaza la interacción social.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se puede inferir que los niños lectores:",
-            "tipo": "inferencia",
-            "dificultad": "media",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "Tienen dificultades para comprender otras opiniones.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Desarrollan mayor comprensión de distintos puntos de vista.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Dependen menos del lenguaje oral.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Presentan menor creatividad.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "El cambio climático es uno de los principales desafíos actuales. Aunque existe consenso científico sobre su origen y consecuencias, la respuesta social y política frente a este fenómeno ha sido desigual, influenciada por intereses económicos, culturales y geográficos.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la idea principal del texto?",
-            "tipo": "idea_principal",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "El cambio climático es un fenómeno natural sin impacto humano.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La respuesta al cambio climático varía según factores sociales y políticos.",
-                "es_correcta": true
-              },
-              {
-                "texto": "No existe consenso científico sobre el cambio climático.",
-                "es_correcta": false
-              },
-              {
-                "texto": "El cambio climático solo afecta a ciertos países.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Según el texto, uno de los factores que influyen en la respuesta frente al cambio climático es:",
-            "tipo": "localizacion",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "La velocidad de los avances tecnológicos.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Los intereses económicos.",
-                "es_correcta": true
-              },
-              {
-                "texto": "La edad de la población.",
-                "es_correcta": false
-              },
-              {
-                "texto": "El nivel educativo individual.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se puede inferir que enfrentar el cambio climático requiere:",
-            "tipo": "inferencia",
-            "dificultad": "alta",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "Ignorar los factores culturales.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Articular ciencia, política y sociedad.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Delegar la solución únicamente a los científicos.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Evitar acuerdos internacionales.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "La memoria colectiva se construye a partir de relatos compartidos sobre el pasado. Estos relatos no solo preservan hechos históricos, sino que también influyen en la manera en que una sociedad se percibe a sí misma y proyecta su futuro.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Qué función cumple la memoria colectiva según el texto?",
-            "tipo": "interpretacion",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "Registrar únicamente fechas y eventos.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Influir en la identidad y proyección social.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Reemplazar el estudio de la historia.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Evitar interpretaciones del pasado.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se puede inferir que los relatos sobre el pasado:",
-            "tipo": "inferencia",
-            "dificultad": "media",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "Son completamente objetivos.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Influyen en cómo una sociedad se entiende a sí misma.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Carecen de impacto en el presente.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Solo interesan a los historiadores.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "¿Cuál sería una consecuencia de modificar los relatos que conforman la memoria colectiva?",
-            "tipo": "analisis",
-            "dificultad": "alta",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "La pérdida total del pasado histórico.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Un cambio en la forma en que la sociedad se proyecta al futuro.",
-                "es_correcta": true
-              },
-              {
-                "texto": "La eliminación de los hechos históricos.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La desaparición de la identidad cultural.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "El trabajo colaborativo se ha convertido en una estrategia común en entornos educativos y laborales. Al combinar habilidades y perspectivas diversas, los grupos pueden abordar problemas complejos de manera más efectiva que los individuos de forma aislada.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es el principal beneficio del trabajo colaborativo según el texto?",
-            "tipo": "idea_principal",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "Reduce la responsabilidad individual.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Permite abordar problemas complejos con mayor efectividad.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Elimina los conflictos entre personas.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Evita la necesidad de liderazgo.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se puede inferir que el trabajo individual:",
-            "tipo": "inferencia",
-            "dificultad": "media",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "Es siempre menos eficiente que el grupal.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Puede ser limitado frente a problemas complejos.",
-                "es_correcta": true
-              },
-              {
-                "texto": "No aporta al aprendizaje.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Es incompatible con el trabajo colaborativo.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "La migración ha sido un fenómeno constante a lo largo de la historia humana. Las personas migran por diversas razones, como la búsqueda de mejores oportunidades económicas, la huida de conflictos o desastres naturales, y el deseo de reunificación familiar.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la idea principal del texto?",
-            "tipo": "idea_principal",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "La migración es un fenómeno reciente.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La migración responde a múltiples causas históricas y sociales.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Las personas migran solo por razones económicas.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La migración siempre es voluntaria.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Según el texto, una causa de migración es:",
-            "tipo": "localizacion",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "La estabilidad política permanente.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La huida de conflictos o desastres naturales.",
-                "es_correcta": true
-              },
-              {
-                "texto": "La disminución de la población mundial.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La eliminación de fronteras.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se puede inferir que la migración:",
-            "tipo": "inferencia",
-            "dificultad": "media",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "Es un proceso uniforme en todas las regiones.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Responde a condiciones sociales, económicas y familiares.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Carece de impacto en las sociedades.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Solo ocurre en países en desarrollo.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "La publicidad influye en las decisiones de consumo al asociar productos con emociones, estilos de vida o aspiraciones. Esta estrategia busca persuadir al consumidor más allá de las características objetivas del producto.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Qué estrategia publicitaria describe el texto?",
-            "tipo": "interpretacion",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "Presentar datos técnicos detallados.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Asociar productos con emociones o aspiraciones.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Reducir el consumo de ciertos productos.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Evitar el uso de imágenes.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se puede inferir que la publicidad:",
-            "tipo": "inferencia",
-            "dificultad": "media",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "Se basa únicamente en información objetiva.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Busca influir en las emociones del consumidor.",
-                "es_correcta": true
-              },
-              {
-                "texto": "No afecta las decisiones de compra.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Es irrelevante en la sociedad actual.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "¿Cuál sería una actitud crítica frente a la publicidad, según el texto?",
-            "tipo": "analisis",
-            "dificultad": "alta",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Aceptar los mensajes publicitarios sin cuestionarlos.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Analizar más allá de las emociones que el anuncio provoca.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Evitar todo tipo de consumo.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Confiar solo en marcas reconocidas.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "El lenguaje no solo sirve para comunicar información, sino también para construir realidades sociales. A través de él se refuerzan creencias, valores y relaciones de poder presentes en una sociedad.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la función del lenguaje según el texto?",
-            "tipo": "idea_principal",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "Transmitir información de manera neutral.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Construir y reforzar realidades sociales.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Evitar conflictos sociales.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Eliminar diferencias culturales.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se puede inferir que el lenguaje:",
-            "tipo": "inferencia",
-            "dificultad": "media",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "Es completamente objetivo.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Refleja y reproduce relaciones de poder.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Carece de impacto social.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Solo cumple una función informativa.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "Durante años se pensó que el éxito académico dependía exclusivamente del esfuerzo individual. Sin embargo, investigaciones recientes muestran que factores como el entorno familiar, la calidad educativa y el acceso a recursos influyen significativamente en el rendimiento de los estudiantes.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la postura del texto frente al éxito académico?",
-            "tipo": "idea_principal",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "Depende únicamente del esfuerzo personal.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Está influido por múltiples factores sociales y educativos.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Es irrelevante el entorno del estudiante.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Se determina solo por la inteligencia.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Según el texto, uno de los factores que influye en el rendimiento académico es:",
-            "tipo": "localizacion",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "La suerte del estudiante.",
-                "es_correcta": false
-              },
-              {
-                "texto": "El entorno familiar.",
-                "es_correcta": true
-              },
-              {
-                "texto": "La edad del docente.",
-                "es_correcta": false
-              },
-              {
-                "texto": "El tipo de examen aplicado.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se puede inferir que mejorar el acceso a recursos educativos:",
-            "tipo": "inferencia",
-            "dificultad": "media",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "No tendría impacto en el rendimiento.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Podría contribuir a un mejor desempeño académico.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Reduciría la necesidad de esfuerzo personal.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Afectaría negativamente la educación.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "Las redes sociales han transformado la manera en que las personas se informan y se comunican. Aunque facilitan el acceso rápido a noticias, también pueden propagar información falsa si no se verifican adecuadamente las fuentes.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es uno de los riesgos asociados al uso de redes sociales según el texto?",
-            "tipo": "localizacion",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "La disminución de la comunicación.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La propagación de información falsa.",
-                "es_correcta": true
-              },
-              {
-                "texto": "La falta de acceso a noticias.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La censura total de contenidos.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se puede inferir que el uso responsable de redes sociales implica:",
-            "tipo": "inferencia",
-            "dificultad": "media",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "Compartir toda la información disponible.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Verificar las fuentes antes de difundir contenidos.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Evitar informarse por completo.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Confiar únicamente en titulares.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "¿Cuál sería una actitud crítica frente a la información en redes sociales?",
-            "tipo": "evaluacion",
-            "dificultad": "alta",
-            "competencia": "evaluar",
-            "opciones": [
-              {
-                "texto": "Aceptar la información sin cuestionarla.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Contrastar la información con fuentes confiables.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Difundirla rápidamente.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Ignorar todo tipo de noticias.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "El cuidado del medio ambiente requiere acciones tanto individuales como colectivas. Reducir el consumo, reciclar y promover políticas públicas sostenibles son estrategias clave para enfrentar los problemas ambientales actuales.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la idea central del texto?",
-            "tipo": "idea_principal",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "El medio ambiente es responsabilidad exclusiva del Estado.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La protección ambiental requiere acciones individuales y colectivas.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Reciclar es la única solución ambiental.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Los problemas ambientales son inevitables.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Según el texto, una estrategia para enfrentar los problemas ambientales es:",
-            "tipo": "localizacion",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Aumentar el consumo.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Promover políticas públicas sostenibles.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Evitar la participación ciudadana.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Ignorar el impacto ambiental.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "La lectura no solo permite adquirir información, sino que también desarrolla la capacidad crítica del lector. A través de ella, las personas pueden cuestionar ideas, analizar argumentos y formarse opiniones propias.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es el propósito principal del texto?",
-            "tipo": "idea_principal",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "Describir los tipos de lectura existentes.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Resaltar la importancia de la lectura en el pensamiento crítico.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Explicar cómo memorizar textos.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Criticar la falta de hábitos lectores.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Según el texto, una consecuencia de la lectura es:",
-            "tipo": "localizacion",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "La repetición mecánica de ideas.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La formación de opiniones propias.",
-                "es_correcta": true
-              },
-              {
-                "texto": "La eliminación del pensamiento crítico.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La reducción del análisis.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se puede inferir que una persona que lee con frecuencia:",
-            "tipo": "inferencia",
-            "dificultad": "media",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "Acepta todas las ideas sin cuestionarlas.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Tiene mayor capacidad para analizar argumentos.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Depende menos de la información escrita.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Evita formarse opiniones.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "En muchas ciudades, el uso del transporte público ha disminuido debido al aumento del transporte privado. Esta situación ha generado mayores niveles de contaminación y congestión vial.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es una consecuencia del aumento del transporte privado según el texto?",
-            "tipo": "localizacion",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "La reducción de la contaminación.",
-                "es_correcta": false
-              },
-              {
-                "texto": "El aumento de la congestión vial.",
-                "es_correcta": true
-              },
-              {
-                "texto": "La mejora del transporte público.",
-                "es_correcta": false
-              },
-              {
-                "texto": "La disminución del tráfico.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se puede inferir que fomentar el uso del transporte público:",
-            "tipo": "inferencia",
-            "dificultad": "media",
-            "competencia": "inferir",
-            "opciones": [
-              {
-                "texto": "Aumentaría el uso de vehículos privados.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Podría reducir la contaminación y el tráfico.",
-                "es_correcta": true
-              },
-              {
-                "texto": "No tendría impacto ambiental.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Empeoraría la movilidad urbana.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "¿Cuál sería la posición más coherente con el texto?",
-            "tipo": "evaluacion",
-            "dificultad": "alta",
-            "competencia": "evaluar",
-            "opciones": [
-              {
-                "texto": "Promover políticas que fortalezcan el transporte público.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Eliminar completamente el transporte público.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Incentivar el uso de vehículos privados.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Ignorar los efectos ambientales.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "La ciencia avanza mediante la formulación de hipótesis que luego son sometidas a verificación experimental. Este proceso permite aceptar, modificar o rechazar explicaciones sobre fenómenos naturales.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la función principal de la verificación experimental en la ciencia?",
-            "tipo": "idea_principal",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "Confirmar todas las hipótesis sin cambios.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Evaluar la validez de las hipótesis.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Eliminar la necesidad de teorías.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Evitar la formulación de hipótesis.",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Según el texto, una hipótesis puede ser:",
-            "tipo": "localizacion",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Aceptada, modificada o rechazada.",
-                "es_correcta": true
-              },
-              {
-                "texto": "Siempre confirmada.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Inmodificable.",
-                "es_correcta": false
-              },
-              {
-                "texto": "Independiente de la experimentación.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto_literario",
-        "contexto": "Había un hombre que se propuso la tarea de dibujar el mundo. A lo largo de los añospobla un espacio con imágenes de provincias, de reinos, de montañas, de bahías, de naves, de islas, de peces, de habitaciones, de instrumentos, de astros, de caballos y de personas. Poco antes de morir, descubre que ese paciente laberinto de líneas traza la imagen de su cara.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "La palabra 'paciente' en el contexto del fragmento califica al laberinto como:",
-            "tipo": "semantico",
-            "dificultad": "media",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Un lugar donde se espera a los enfermos",
-                "es_correcta": false
-              },
-              {
-                "texto": "Una obra que requirió mucho tiempo y dedicación",
-                "es_correcta": true
-              },
-              {
-                "texto": "Una estructura que no tiene salida",
-                "es_correcta": false
-              },
-              {
-                "texto": "Un dibujo hecho con mucha resignación",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "La gran revelación del personaje al final de su vida consiste en que:",
-            "tipo": "literario",
-            "dificultad": "alta",
-            "competencia": "comprender",
-            "opciones": [
-              {
-                "texto": "El mundo es mucho más grande de lo que pensaba",
-                "es_correcta": false
-              },
-              {
-                "texto": "Su obra es en realidad un autorretrato involuntario",
-                "es_correcta": true
-              },
-              {
-                "texto": "Ha perdido el tiempo dibujando cosas inútiles",
-                "es_correcta": false
-              },
-              {
-                "texto": "El laberinto es la única forma de representar la realidad",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "¿Qué figura literaria predomina en la enumeración de objetos que el hombre dibuja?",
-            "tipo": "literario",
-            "dificultad": "media",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Metáfora",
-                "es_correcta": false
-              },
-              {
-                "texto": "Polisíndeton (por el uso repetido de 'de')",
-                "es_correcta": true
-              },
-              {
-                "texto": "Hipérbole",
-                "es_correcta": false
-              },
-              {
-                "texto": "Personificación",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se puede inferir que el autor considera que el conocimiento del mundo:",
-            "tipo": "filosofico",
-            "dificultad": "alta",
-            "competencia": "reflexionar",
-            "opciones": [
-              {
-                "texto": "Es imposible de alcanzar plenamente",
-                "es_correcta": false
-              },
-              {
-                "texto": "Está íntimamente ligado al autoconocimiento",
-                "es_correcta": true
-              },
-              {
-                "texto": "Se logra solo a través del arte del dibujo",
-                "es_correcta": false
-              },
-              {
-                "texto": "Es una tarea que debe realizarse solo",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto_informativo",
-        "contexto": "La inteligencia artificial generativa no piensa; predice la siguiente palabra basándose en probabilidades estadísticas extraídas de billones de textos. Confundir esta fluidez verbal con sabiduría es el gran error de nuestra era digital.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "La tesis principal del autor es que:",
-            "tipo": "argumentativo",
-            "dificultad": "media",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "La IA superará pronto la sabiduría humana",
-                "es_correcta": false
-              },
-              {
-                "texto": "Existe un malentendido sobre la naturaleza de la IA",
-                "es_correcta": true
-              },
-              {
-                "texto": "Las estadísticas son la base de todo pensamiento",
-                "es_correcta": false
-              },
-              {
-                "texto": "La fluidez verbal es síntoma de inteligencia verdadera",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Según el texto, ¿en qué se basa la operación de la IA generativa?",
-            "tipo": "informativo",
-            "dificultad": "baja",
-            "competencia": "comprender",
-            "opciones": [
-              {
-                "texto": "En la conciencia propia",
-                "es_correcta": false
-              },
-              {
-                "texto": "En el razonamiento lógico deductivo",
-                "es_correcta": false
-              },
-              {
-                "texto": "En cálculos probabilísticos sobre datos masivos",
-                "es_correcta": true
-              },
-              {
-                "texto": "En la sabiduría acumulada de los programadores",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "El tono del autor al hablar del 'gran error de nuestra era digital' se puede calificar como:",
-            "tipo": "analisis",
-            "dificultad": "media",
-            "competencia": "reflexionar",
-            "opciones": [
-              {
-                "texto": "Optimista y entusiasta",
-                "es_correcta": false
-              },
-              {
-                "texto": "Crítico y de advertencia",
-                "es_correcta": true
-              },
-              {
-                "texto": "Indiferente y neutral",
-                "es_correcta": false
-              },
-              {
-                "texto": "Sarcástico y burlón",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Una consecuencia lógica de lo planteado en el texto sería:",
-            "tipo": "argumentativo",
-            "dificultad": "alta",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Debemos confiar plenamente en lo que dice la IA",
-                "es_correcta": false
-              },
-              {
-                "texto": "Es necesario verificar la información generada por IA",
-                "es_correcta": true
-              },
-              {
-                "texto": "La IA dejará de usarse en el futuro cercano",
-                "es_correcta": false
-              },
-              {
-                "texto": "La sabiduría humana ya no es necesaria",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto_filosofico",
-        "contexto": "No te dejes arrastrar por los accidentes exteriores; procúrate tiempo libre para aprender algo bueno y cesa de girar como un trompo. Pero también debes guardarte de otro extravío: el de aquellos que, cansados de la vida por sus actividades, no tienen blanco hacia donde dirigir todo su impulso y, en suma, su pensamiento.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "La expresión 'girar como un trompo' se utiliza para criticar:",
-            "tipo": "semantico",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "El juego excesivo en los adultos",
-                "es_correcta": false
-              },
-              {
-                "texto": "La actividad constante sin un propósito claro",
-                "es_correcta": true
-              },
-              {
-                "texto": "La falta de ejercicio físico",
-                "es_correcta": false
-              },
-              {
-                "texto": "La sabiduría de los antiguos filósofos",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "El autor advierte sobre dos peligros: dejarse llevar por lo externo y:",
-            "tipo": "informativo",
-            "dificultad": "media",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Aprender cosas que no son útiles",
-                "es_correcta": false
-              },
-              {
-                "texto": "Vivir una vida sin objetivos o metas",
-                "es_correcta": true
-              },
-              {
-                "texto": "Tener demasiado tiempo libre",
-                "es_correcta": false
-              },
-              {
-                "texto": "Descansar demasiado durante el día",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se deduce que para el autor una vida plena requiere:",
-            "tipo": "filosofico",
-            "dificultad": "alta",
-            "competencia": "reflexionar",
-            "opciones": [
-              {
-                "texto": "Riqueza y reconocimiento social",
-                "es_correcta": false
-              },
-              {
-                "texto": "Equilibrio entre aprendizaje y propósito",
-                "es_correcta": true
-              },
-              {
-                "texto": "Aislamiento total de la sociedad",
-                "es_correcta": false
-              },
-              {
-                "texto": "Trabajo ininterrumpido hasta el cansancio",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "La palabra 'blanco' en el texto es sinónimo de:",
-            "tipo": "semantico",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Color claro",
-                "es_correcta": false
-              },
-              {
-                "texto": "Objetivo o meta",
-                "es_correcta": true
-              },
-              {
-                "texto": "Vacío mental",
-                "es_correcta": false
-              },
-              {
-                "texto": "Pureza espiritual",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto_discontinuo",
-        "contexto": "[Imagina una infografía sobre el ciclo del agua que muestra que el 97% es salada, 2% está en glaciares y solo el 1% es apta para consumo humano].",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la intención principal de presentar estos datos en una infografía?",
-            "tipo": "analisis",
-            "dificultad": "baja",
-            "competencia": "reflexionar",
-            "opciones": [
-              {
-                "texto": "Fomentar el turismo en los glaciares",
-                "es_correcta": false
-              },
-              {
-                "texto": "Concientizar sobre la escasez del agua dulce",
-                "es_correcta": true
-              },
-              {
-                "texto": "Explicar por qué el mar es salado",
-                "es_correcta": false
-              },
-              {
-                "texto": "Promover la desalinización masiva",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Si el calentamiento global derrite los glaciares hacia el mar, según los datos:",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Aumentará el agua potable disponible",
-                "es_correcta": false
-              },
-              {
-                "texto": "El agua dulce de los glaciares se volverá salada",
-                "es_correcta": true
-              },
-              {
-                "texto": "El porcentaje de agua salada disminuirá drásticamente",
-                "es_correcta": false
-              },
-              {
-                "texto": "El ciclo del agua se detendrá por completo",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "La mayor parte del agua dulce del planeta se encuentra en:",
-            "tipo": "informativo",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Los océanos",
-                "es_correcta": false
-              },
-              {
-                "texto": "Los glaciares",
-                "es_correcta": true
-              },
-              {
-                "texto": "Los ríos y lagos",
-                "es_correcta": false
-              },
-              {
-                "texto": "La atmósfera",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Un título adecuado para esta infografía sería:",
-            "tipo": "analisis",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "El inmenso mar azul",
-                "es_correcta": false
-              },
-              {
-                "texto": "La fragilidad del agua potable",
-                "es_correcta": true
-              },
-              {
-                "texto": "Cómo purificar agua en casa",
-                "es_correcta": false
-              },
-              {
-                "texto": "Los seres vivos y el agua",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto_discontinuo",
-        "contexto": "[Imagina una caricatura donde un niño le pregunta a su padre: '¿Por qué los adultos construyen muros si luego quieren puentes para cruzar?', el padre responde leyendo el periódico: 'Es para que no se nos olvide cómo construir puentes'].",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "La pregunta del niño resalta una:",
-            "tipo": "analisis",
-            "dificultad": "media",
-            "competencia": "reflexionar",
-            "opciones": [
-              {
-                "texto": "Curiosidad técnica por la arquitectura",
-                "es_correcta": false
-              },
-              {
-                "texto": "Contradicción en el comportamiento humano",
-                "es_correcta": true
-              },
-              {
-                "texto": "Falta de educación sobre geografía",
-                "es_correcta": false
-              },
-              {
-                "texto": "Preocupación por el costo de las obras públicas",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "La respuesta del padre puede interpretarse como:",
-            "tipo": "analisis",
-            "dificultad": "alta",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "Una explicación lógica y satisfactoria",
-                "es_correcta": false
-              },
-              {
-                "texto": "Una evasiva irónica ante la dura realidad",
-                "es_correcta": true
-              },
-              {
-                "texto": "Un consejo práctico para el futuro del niño",
-                "es_correcta": false
-              },
-              {
-                "texto": "Un dato histórico real sobre la ingeniería",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "En la caricatura, los 'muros' y 'puentes' funcionan como:",
-            "tipo": "literario",
-            "dificultad": "media",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Metáforas de conflicto y comunicación",
-                "es_correcta": true
-              },
-              {
-                "texto": "Ejemplos de infraestructura urbana",
-                "es_correcta": false
-              },
-              {
-                "texto": "Adornos del dibujo sin significado profundo",
-                "es_correcta": false
-              },
-              {
-                "texto": "Objetos de estudio de la física",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "¿Qué sentimiento evoca principalmente la escena?",
-            "tipo": "analisis",
-            "dificultad": "media",
-            "competencia": "reflexionar",
-            "opciones": [
-              {
-                "texto": "Alegría y celebración",
-                "es_correcta": false
-              },
-              {
-                "texto": "Reflexión melancólica sobre la sociedad",
-                "es_correcta": true
-              },
-              {
-                "texto": "Miedo ante una catástrofe inminente",
-                "es_correcta": false
-              },
-              {
-                "texto": "Entusiasmo por el progreso tecnológico",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto_informativo",
-        "contexto": "La Regeneración en Colombia (finales del siglo XIX) buscó centralizar el poder y unificar el país bajo una sola religión y lengua, dándole fin al federalismo extremo imperante. Sin embargo, esto exacerbó tensiones que llevaron a la Guerra de los Mil Días.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "El objetivo principal de la Regeneración era:",
-            "tipo": "historico",
-            "dificultad": "baja",
-            "competencia": "comprender",
-            "opciones": [
-              {
-                "texto": "Promover la diversidad cultural",
-                "es_correcta": false
-              },
-              {
-                "texto": "Fortalecer el poder del gobierno central",
-                "es_correcta": true
-              },
-              {
-                "texto": "Permitir que cada región fuera independiente",
-                "es_correcta": false
-              },
-              {
-                "texto": "Eliminar la religión de la vida pública",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Una consecuencia NO deseada de este movimiento fue:",
-            "tipo": "analisis",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "La unificación del idioma",
-                "es_correcta": false
-              },
-              {
-                "texto": "El estallido de un conflicto civil sangriento",
-                "es_correcta": true
-              },
-              {
-                "texto": "El fin del federalismo",
-                "es_correcta": false
-              },
-              {
-                "texto": "La centralización de la justicia",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "El texto presenta una relación de:",
-            "tipo": "argumentativo",
-            "dificultad": "media",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Causa y efecto",
-                "es_correcta": true
-              },
-              {
-                "texto": "Problema sin solución",
-                "es_correcta": false
-              },
-              {
-                "texto": "Comparación por analogía",
-                "es_correcta": false
-              },
-              {
-                "texto": "Cronología de éxitos",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "La palabra 'exacerbó' en el texto significa:",
-            "tipo": "semantico",
-            "dificultad": "media",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Solucionó",
-                "es_correcta": false
-              },
-              {
-                "texto": "Intensificó o agravó",
-                "es_correcta": true
-              },
-              {
-                "texto": "Disminuyó",
-                "es_correcta": false
-              },
-              {
-                "texto": "Ignoró",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto_literario",
-        "contexto": "Puedo escribir los versos más tristes esta noche. / Escribir, por ejemplo: 'La noche está estrellada, / y tiritan, azules, los astros, a lo lejos'. / El viento de la noche gira en el cielo y canta.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "El uso del verbo 'tiritan' para referirse a los astros es una:",
-            "tipo": "literario",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Hipérbole",
-                "es_correcta": false
-              },
-              {
-                "texto": "Personificación",
-                "es_correcta": true
-              },
-              {
-                "texto": "Comparación",
-                "es_correcta": false
-              },
-              {
-                "texto": "Onomatopeya",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "El sentimiento predominante en estos versos es la:",
-            "tipo": "analisis",
-            "dificultad": "baja",
-            "competencia": "comprender",
-            "opciones": [
-              {
-                "texto": "Melancolía",
-                "es_correcta": true
-              },
-              {
-                "texto": "Euforia",
-                "es_correcta": false
-              },
-              {
-                "texto": "Ira",
-                "es_correcta": false
-              },
-              {
-                "texto": "Indiferencia",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "¿Qué efecto produce la mención de que los astros están 'a lo lejos'?",
-            "tipo": "analisis",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "Sensación de cercanía y calidez",
-                "es_correcta": false
-              },
-              {
-                "texto": "Refuerza la soledad y distancia emocional del yo lírico",
-                "es_correcta": true
-              },
-              {
-                "texto": "Indica un interés por la astronomía",
-                "es_correcta": false
-              },
-              {
-                "texto": "Sugiere que el autor tiene problemas de vista",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "La estructura 'Puedo escribir... Escribir, por ejemplo...' sugiere que el poeta:",
-            "tipo": "analisis",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "No sabe qué escribir realmente",
-                "es_correcta": false
-              },
-              {
-                "texto": "Está en un proceso de creación y reflexión sobre su dolor",
-                "es_correcta": true
-              },
-              {
-                "texto": "Está obligado a escribir por un contrato",
-                "es_correcta": false
-              },
-              {
-                "texto": "Prefiere hablar que escribir",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto_informativo",
-        "contexto": "La física cuántica nos dice que, a nivel subatómico, las partículas pueden estar en dos lugares al mismo tiempo (superposición). Esto desafía nuestra intuición cotidiana, formada en un mundo de objetos grandes donde las cosas son o no son.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "El concepto de 'superposición' se refiere a:",
-            "tipo": "informativo",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Estar encima de otro objeto",
-                "es_correcta": false
-              },
-              {
-                "texto": "La capacidad de ocupar múltiples estados simultáneamente",
-                "es_correcta": true
-              },
-              {
-                "texto": "La desaparición total de la materia",
-                "es_correcta": false
-              },
-              {
-                "texto": "El movimiento muy rápido de los planetas",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Nuestra intuición nos suele engañar en el mundo cuántico porque:",
-            "tipo": "analisis",
-            "dificultad": "media",
-            "competencia": "reflexionar",
-            "opciones": [
-              {
-                "texto": "No somos lo suficientemente inteligentes",
-                "es_correcta": false
-              },
-              {
-                "texto": "Estamos acostumbrados a las reglas del mundo macroscópico",
-                "es_correcta": true
-              },
-              {
-                "texto": "La física cuántica es una invención sin pruebas",
-                "es_correcta": false
-              },
-              {
-                "texto": "Nuestros ojos no pueden ver partículas",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Un sinónimo de 'intuición' en este contexto sería:",
-            "tipo": "semantico",
-            "dificultad": "media",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Sentido común o percepción habitual",
-                "es_correcta": true
-              },
-              {
-                "texto": "Adivinación mágica",
-                "es_correcta": false
-              },
-              {
-                "texto": "Teoría científica compleja",
-                "es_correcta": false
-              },
-              {
-                "texto": "Instinto de supervivencia",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "La intención del fragmento es principalmente:",
-            "tipo": "informativo",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Criticar a los científicos",
-                "es_correcta": false
-              },
-              {
-                "texto": "Divulgar un concepto científico complejo de forma sencilla",
-                "es_correcta": true
-              },
-              {
-                "texto": "Hacer un experimento en casa",
-                "es_correcta": false
-              },
-              {
-                "texto": "Demostrar que el mundo macroscópico no existe",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto_filosofico",
-        "contexto": "En la 'modernidad líquida', los vínculos humanos son frágiles y transitorios. Las redes sociales han reemplazado la 'comunidad' por la 'red', donde es tan fácil conectarse como desconectarse, evitando el compromiso real.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "La metáfora de lo 'líquido' sugiere que la sociedad actual es:",
-            "tipo": "filosofico",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "Fluida, cambiante e inestable",
-                "es_correcta": true
-              },
-              {
-                "texto": "Refrescante y necesaria",
-                "es_correcta": false
-              },
-              {
-                "texto": "Dura y difícil de romper",
-                "es_correcta": false
-              },
-              {
-                "texto": "Transparente y honesta",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "La principal diferencia entre una 'comunidad' y una 'red' según el texto es:",
-            "tipo": "argumentativo",
-            "dificultad": "alta",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "La red tiene más personas",
-                "es_correcta": false
-              },
-              {
-                "texto": "El nivel de compromiso y la facilidad de abandono",
-                "es_correcta": true
-              },
-              {
-                "texto": "Que la comunidad es digital y la red es física",
-                "es_correcta": false
-              },
-              {
-                "texto": "No hay diferencia sustancial",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Del texto se infiere que el autor tiene una visión:",
-            "tipo": "analisis",
-            "dificultad": "media",
-            "competencia": "reflexionar",
-            "opciones": [
-              {
-                "texto": "Muy positiva sobre los avances tecnológicos",
-                "es_correcta": false
-              },
-              {
-                "texto": "Crítica sobre la calidad de las relaciones modernas",
-                "es_correcta": true
-              },
-              {
-                "texto": "Entusiasta por la libertad de desconexión",
-                "es_correcta": false
-              },
-              {
-                "texto": "Científica sobre la viscosidad de los líquidos",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Una consecuencia de los 'vínculos frágiles' es:",
-            "tipo": "argumentativo",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Relaciones que duran toda la vida",
-                "es_correcta": false
-              },
-              {
-                "texto": "Falta de profundidad en el compromiso mutuo",
-                "es_correcta": true
-              },
-              {
-                "texto": "Mayor seguridad emocional para todos",
-                "es_correcta": false
-              },
-              {
-                "texto": "Eliminación completa de los conflictos",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto_literario",
-        "contexto": "Don Quijote no es un loco, es un hombre que decide vivir en una obra de arte. Su 'locura' es una herramienta política para denunciar la chatura de un mundo que ha perdido sus ideales de caballería y justicia.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "El autor del fragmento propone una relectura del Quijote como:",
-            "tipo": "analisis",
-            "dificultad": "media",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Un enfermo mental digno de lástima",
-                "es_correcta": false
-              },
-              {
-                "texto": "Un rebelde consciente con un propósito idealista",
-                "es_correcta": true
-              },
-              {
-                "texto": "Un anciano que no sabe lo que hace",
-                "es_correcta": false
-              },
-              {
-                "texto": "Un actor de teatro profesional",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "La 'chatura del mundo' se refiere a:",
-            "tipo": "semantico",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "La forma plana de la Tierra",
-                "es_correcta": false
-              },
-              {
-                "texto": "La falta de profundidad y de grandes ideales",
-                "es_correcta": true
-              },
-              {
-                "texto": "Los paisajes de la Mancha",
-                "es_correcta": false
-              },
-              {
-                "texto": "La sencillez de la vida campestre",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Según el texto, la locura de Don Quijote tiene una función:",
-            "tipo": "analisis",
-            "dificultad": "media",
-            "competencia": "comprender",
-            "opciones": [
-              {
-                "texto": "Médica",
-                "es_correcta": false
-              },
-              {
-                "texto": "Denunciatoria y transformadora",
-                "es_correcta": true
-              },
-              {
-                "texto": "Cómica exclusivamente",
-                "es_correcta": false
-              },
-              {
-                "texto": "Decorativa",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "El texto sugiere que la caballería:",
-            "tipo": "analisis",
-            "dificultad": "alta",
-            "competencia": "reflexionar",
-            "opciones": [
-              {
-                "texto": "Es una pérdida de tiempo",
-                "es_correcta": false
-              },
-              {
-                "texto": "Es un conjunto de valores que el mundo actual extraña",
-                "es_correcta": true
-              },
-              {
-                "texto": "Solo existió en los libros de ficción",
-                "es_correcta": false
-              },
-              {
-                "texto": "Debe ser prohibida por ser peligrosa",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto_informativo",
-        "contexto": "Los microplásticos están ya en la nieve del Ártico, en la sangre humana y en las profundidades del foso de las Marianas. No es solo un problema de basura visible; es una contaminación invisible que ha entrado en la cadena trófica.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "El término 'contaminación invisible' se refiere a que los microplásticos:",
-            "tipo": "informativo",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Son transparentes",
-                "es_correcta": false
-              },
-              {
-                "texto": "Son tan pequeños que no se notan pero están presentes",
-                "es_correcta": true
-              },
-              {
-                "texto": "No causan ningún daño real",
-                "es_correcta": false
-              },
-              {
-                "texto": "Se evaporan con el sol",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "¿Qué implica que hayan entrado en la cadena trófica?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Que los animales los usan para construir nidos",
-                "es_correcta": false
-              },
-              {
-                "texto": "Que son consumidos por organismos y llegan hasta nosotros",
-                "es_correcta": true
-              },
-              {
-                "texto": "Que ayudan a la digestión de los peces",
-                "es_correcta": false
-              },
-              {
-                "texto": "Que se disuelven en el estómago sin dejar rastro",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "La mención de lugares tan distantes (Ártico y foso de las Marianas) sirve para resaltar:",
-            "tipo": "analisis",
-            "dificultad": "media",
-            "competencia": "reflexionar",
-            "opciones": [
-              {
-                "texto": "La belleza de la naturaleza",
-                "es_correcta": false
-              },
-              {
-                "texto": "La ubicuidad y gravedad global del problema",
-                "es_correcta": true
-              },
-              {
-                "texto": "Lo difícil que es viajar a esos sitios",
-                "es_correcta": false
-              },
-              {
-                "texto": "Que el plástico flota muy bien",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Una medida efectiva contra este problema, basada en el texto, sería:",
-            "tipo": "argumentativo",
-            "dificultad": "alta",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Limpiar solo las playas turísticas",
-                "es_correcta": false
-              },
-              {
-                "texto": "Reducir drásticamente la producción de plásticos desde la fuente",
-                "es_correcta": true
-              },
-              {
-                "texto": "Poner filtros en los ojos para no verlos",
-                "es_correcta": false
-              },
-              {
-                "texto": "Exportar la basura a otros planetas",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto_filosofico",
-        "contexto": "El hombre está condenado a ser libre. Condenado, porque no se ha creado a sí mismo y, sin embargo, es libre, porque una vez arrojado al mundo es responsable de todo lo que hace.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "¿Por qué el autor usa la palabra 'condenado' para referirse a la libertad?",
-            "tipo": "filosofico",
-            "dificultad": "alta",
-            "competencia": "reflexionar",
-            "opciones": [
-              {
-                "texto": "Porque la libertad es un castigo divino",
-                "es_correcta": false
-              },
-              {
-                "texto": "Porque implica una responsabilidad ineludible y a veces pesada",
-                "es_correcta": true
-              },
-              {
-                "texto": "Porque nadie quiere ser realmente libre",
-                "es_correcta": false
-              },
-              {
-                "texto": "Porque la libertad solo existe en las cárceles",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "Ser 'responsable de todo lo que hace' implica que:",
-            "tipo": "analisis",
-            "dificultad": "media",
-            "competencia": "comprender",
-            "opciones": [
-              {
-                "texto": "No podemos culpar al destino o a la herencia por nuestros actos",
-                "es_correcta": true
-              },
-              {
-                "texto": "Nuestras acciones no tienen importancia",
-                "es_correcta": false
-              },
-              {
-                "texto": "Debemos pedir permiso para cada decisión",
-                "es_correcta": false
-              },
-              {
-                "texto": "Alguien más pagará por nuestros errores",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "La frase 'no se ha creado a sí mismo' sugiere que:",
-            "tipo": "filosofico",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "El hombre es un robot",
-                "es_correcta": false
-              },
-              {
-                "texto": "Nacemos en un mundo que no elegimos",
-                "es_correcta": true
-              },
-              {
-                "texto": "Podemos cambiar nuestro ADN al nacer",
-                "es_correcta": false
-              },
-              {
-                "texto": "El hombre es eterno",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto_informativo",
-        "contexto": "La privacidad digital es el derecho de los individuos a controlar qué información personal se recopila, almacena y comparte. En la era de los datos, el usuario a menudo es el producto, no el cliente.",
-        "archivo": null,
-        "preguntas": [
-          {
-            "enunciado": "La frase 'el usuario es el producto' sugiere que:",
-            "tipo": "analisis",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "opciones": [
-              {
-                "texto": "Las empresas nos regalan todo por bondad",
-                "es_correcta": false
-              },
-              {
-                "texto": "Nuestros datos son la mercancía que las empresas venden",
-                "es_correcta": true
-              },
-              {
-                "texto": "Somos dueños de las empresas digitales",
-                "es_correcta": false
-              },
-              {
-                "texto": "Debemos pagar más por las aplicaciones",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "¿Qué acción fortalece la privacidad digital?",
-            "tipo": "informativo",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Compartir todas las contraseñas en foros",
-                "es_correcta": false
-              },
-              {
-                "texto": "Configurar opciones de privacidad y usar cifrado",
-                "es_correcta": true
-              },
-              {
-                "texto": "Aceptar todos los términos y condiciones sin leer",
-                "es_correcta": false
-              },
-              {
-                "texto": "No usar internet nunca más",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "El control sobre la información personal es un:",
-            "tipo": "informativo",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Lujo para pocos",
-                "es_correcta": false
-              },
-              {
-                "texto": "Derecho fundamental en la era digital",
-                "es_correcta": true
-              },
-              {
-                "texto": "Delito informático",
-                "es_correcta": false
-              },
-              {
-                "texto": "Secreto de estado",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "sociales": {
-    "nombre": "Sociales",
-    "contextos": [
-      {
-        "tipo": "historia",
         "contexto": "Durante el siglo XIX, varios países de América Latina lograron su independencia del dominio colonial europeo.",
         "archivo": null,
         "preguntas": [
@@ -9084,7 +9220,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "constitucion",
+        "tipo": "texto",
         "contexto": "La Constitución Política de Colombia establece los derechos y deberes fundamentales de los ciudadanos.",
         "archivo": null,
         "preguntas": [
@@ -9115,7 +9251,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "geografia",
+        "tipo": "texto",
         "contexto": "Colombia cuenta con una gran diversidad de regiones naturales.",
         "archivo": null,
         "preguntas": [
@@ -9146,7 +9282,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "competencias_ciudadanas",
+        "tipo": "texto",
         "contexto": "En un curso escolar se presenta un conflicto entre dos estudiantes por diferencias de opinión.",
         "archivo": null,
         "preguntas": [
@@ -9177,7 +9313,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "economia",
+        "tipo": "texto",
         "contexto": "El Estado interviene en la economía para garantizar el bienestar general.",
         "archivo": null,
         "preguntas": [
@@ -9208,7 +9344,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "historia_colombia",
+        "tipo": "texto",
         "contexto": "Durante el siglo XX, Colombia vivió un periodo conocido como La Violencia, caracterizado por enfrentamientos entre distintos sectores políticos.",
         "archivo": null,
         "preguntas": [
@@ -9239,7 +9375,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "analisis_fuentes",
+        "tipo": "texto",
         "contexto": "Fragmento de un artículo periodístico que describe un aumento en la deforestación en una región del país.",
         "archivo": null,
         "preguntas": [
@@ -9270,7 +9406,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "geografia_humana",
+        "tipo": "texto",
         "contexto": "En una ciudad se observa un crecimiento acelerado de la población.",
         "archivo": null,
         "preguntas": [
@@ -9301,7 +9437,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "competencias_ciudadanas",
+        "tipo": "texto",
         "contexto": "Un grupo de estudiantes organiza una votación para elegir un representante.",
         "archivo": null,
         "preguntas": [
@@ -9332,7 +9468,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "economia",
+        "tipo": "texto",
         "contexto": "El aumento del desempleo afecta el bienestar de una sociedad.",
         "archivo": null,
         "preguntas": [
@@ -9363,9 +9499,9 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "lectura_graficos",
+        "tipo": "texto",
         "contexto": "Un gráfico muestra el porcentaje de población urbana y rural en Colombia entre 1990 y 2020.",
-        "archivo": "grafico_poblacion.png",
+        "archivo": "/grafico_poblacion.png",
         "preguntas": [
           {
             "enunciado": "Según el gráfico, ¿qué tendencia se observa en la población urbana?",
@@ -9394,7 +9530,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "constitucion",
+        "tipo": "texto",
         "contexto": "La Constitución Política de Colombia establece mecanismos para la participación ciudadana.",
         "archivo": null,
         "preguntas": [
@@ -9425,7 +9561,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "dilema_ciudadano",
+        "tipo": "texto",
         "contexto": "En una comunidad se discute la construcción de una vía que afectará un área natural protegida.",
         "archivo": null,
         "preguntas": [
@@ -9456,7 +9592,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "historia_mundial",
+        "tipo": "texto",
         "contexto": "La Guerra Fría fue un periodo de tensión entre dos bloques ideológicos.",
         "archivo": null,
         "preguntas": [
@@ -9487,7 +9623,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "economia",
+        "tipo": "texto",
         "contexto": "El aumento de impuestos puede generar diferentes efectos en la economía.",
         "archivo": null,
         "preguntas": [
@@ -9518,7 +9654,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "analisis_fuentes",
+        "tipo": "texto",
         "contexto": "Fragmento de un discurso político en el que se defiende la importancia de la separación de poderes.",
         "archivo": null,
         "preguntas": [
@@ -9549,7 +9685,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "historia_colombia",
+        "tipo": "texto",
         "contexto": "El Frente Nacional fue un acuerdo político entre los partidos Liberal y Conservador en Colombia.",
         "archivo": null,
         "preguntas": [
@@ -9580,7 +9716,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "geografia",
+        "tipo": "texto",
         "contexto": "Una región presenta altos niveles de desertificación debido al uso inadecuado del suelo.",
         "archivo": null,
         "preguntas": [
@@ -9611,7 +9747,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "competencias_ciudadanas",
+        "tipo": "texto",
         "contexto": "Un ciudadano observa un acto de corrupción en una entidad pública.",
         "archivo": null,
         "preguntas": [
@@ -9642,7 +9778,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "economia",
+        "tipo": "texto",
         "contexto": "Un país experimenta un aumento sostenido de la inflación.",
         "archivo": null,
         "preguntas": [
@@ -9673,7 +9809,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "lectura_critica_social",
+        "tipo": "texto",
         "contexto": "Un texto argumenta que el acceso desigual a la educación profundiza las brechas sociales en un país.",
         "archivo": null,
         "preguntas": [
@@ -9704,7 +9840,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "historia_mundial",
+        "tipo": "texto",
         "contexto": "La Revolución Industrial transformó profundamente las relaciones sociales y económicas.",
         "archivo": null,
         "preguntas": [
@@ -9735,7 +9871,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "geografia_economica",
+        "tipo": "texto",
         "contexto": "Una región basa su economía principalmente en la extracción de recursos naturales.",
         "archivo": null,
         "preguntas": [
@@ -9766,7 +9902,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "competencias_ciudadanas",
+        "tipo": "texto",
         "contexto": "En una comunidad se debate una norma que limita el uso del espacio público.",
         "archivo": null,
         "preguntas": [
@@ -9797,7 +9933,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "constitucion",
+        "tipo": "texto",
         "contexto": "La Constitución colombiana protege la diversidad étnica y cultural.",
         "archivo": null,
         "preguntas": [
@@ -9828,7 +9964,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "caso_social",
+        "tipo": "texto",
         "contexto": "Una alcaldía planea reubicar a varias familias que viven en una zona de alto riesgo por deslizamientos.",
         "archivo": null,
         "preguntas": [
@@ -9859,7 +9995,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "historia_colombia",
+        "tipo": "texto",
         "contexto": "La Constitución de 1991 marcó un cambio significativo en la organización política del país.",
         "archivo": null,
         "preguntas": [
@@ -9890,7 +10026,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "geografia_politica",
+        "tipo": "texto",
         "contexto": "Algunos conflictos territoriales surgen por el control de recursos estratégicos.",
         "archivo": null,
         "preguntas": [
@@ -9921,7 +10057,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "competencias_ciudadanas",
+        "tipo": "texto",
         "contexto": "Un funcionario público recibe un soborno para favorecer a un contratista.",
         "archivo": null,
         "preguntas": [
@@ -9952,7 +10088,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "economia",
+        "tipo": "texto",
         "contexto": "Un país decide aumentar el salario mínimo por decreto.",
         "archivo": null,
         "preguntas": [
@@ -9983,7 +10119,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "caso_integrador",
+        "tipo": "texto",
         "contexto": "Una comunidad indígena se opone a un proyecto minero aprobado por el gobierno debido a posibles impactos ambientales y culturales.",
         "archivo": null,
         "preguntas": [
@@ -10014,7 +10150,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "analisis_constitucional",
+        "tipo": "texto",
         "contexto": "La Corte Constitucional revisa una ley que limita la libertad de expresión.",
         "archivo": null,
         "preguntas": [
@@ -10045,7 +10181,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "historia_mundial",
+        "tipo": "texto",
         "contexto": "Tras la Segunda Guerra Mundial se crearon organismos internacionales como la ONU.",
         "archivo": null,
         "preguntas": [
@@ -10076,7 +10212,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "geografia_ambiental",
+        "tipo": "texto",
         "contexto": "El cambio climático ha incrementado la frecuencia de eventos extremos.",
         "archivo": null,
         "preguntas": [
@@ -10107,7 +10243,7 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "competencias_ciudadanas",
+        "tipo": "texto",
         "contexto": "Durante una protesta social se presentan actos de violencia aislados.",
         "archivo": null,
         "preguntas": [
@@ -10138,34 +10274,10 @@ export const OFF_QUESTIONS_DATA = {
         ]
       },
       {
-        "tipo": "historia_guerra_fria",
+        "tipo": "texto",
         "contexto": "Tras la Segunda Guerra Mundial, el mundo quedó dividido en dos bloques ideológicamente opuestos: el bloque occidental capitalista y el bloque oriental comunista.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué término acuñado por Winston Churchill describía la frontera ideográfica y física que dividía a Europa?",
-            "tipo": "historico",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Muro de Berlín",
-                "es_correcta": false
-              },
-              {
-                "texto": "Telón de Acero (o Cortina de Hierro)",
-                "es_correcta": true
-              },
-              {
-                "texto": "Frontera de Cristal",
-                "es_correcta": false
-              },
-              {
-                "texto": "Pacto de Varsovia",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La Guerra Fría se caracterizó principalmente por:",
             "tipo": "historico",
@@ -10189,38 +10301,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "historia_revolucion_francesa",
-        "contexto": "La Revolución Francesa de 1789 marcó el inicio de la Edad Contemporánea al derrocar al Antiguo Régimen y promover los derechos ciudadanos.",
-        "archivo": null,
-        "preguntas": [
+          },
           {
-            "enunciado": "¿Cuál fue el lema principal de la Revolución Francesa?",
+            "enunciado": "¿Qué término acuñado por Winston Churchill describía la frontera ideográfica y física que dividía a Europa?",
             "tipo": "historico",
             "dificultad": "baja",
             "competencia": "identificar",
             "opciones": [
               {
-                "texto": "Orden y Progreso",
+                "texto": "Muro de Berlín",
                 "es_correcta": false
               },
               {
-                "texto": "Libertad, Igualdad, Fraternidad",
+                "texto": "Telón de Acero (o Cortina de Hierro)",
                 "es_correcta": true
               },
               {
-                "texto": "Pan, Tierra y Libertad",
+                "texto": "Frontera de Cristal",
                 "es_correcta": false
               },
               {
-                "texto": "Dios y Patria",
+                "texto": "Pacto de Varsovia",
                 "es_correcta": false
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La Revolución Francesa de 1789 marcó el inicio de la Edad Contemporánea al derrocar al Antiguo Régimen y promover los derechos ciudadanos.",
+        "archivo": null,
+        "preguntas": [
           {
             "enunciado": "La Declaración de los Derechos del Hombre y del Ciudadano fue fundamental porque:",
             "tipo": "historico",
@@ -10244,38 +10356,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "historia_guerra_mundial_2",
-        "contexto": "El uso de la bomba atómica en 1945 puso fin a la guerra en el Pacífico contra Japón, pero abrió un profundo debate ético.",
-        "archivo": null,
-        "preguntas": [
+          },
           {
-            "enunciado": "¿En qué ciudades japonesas se lanzaron las bombas atómicas?",
+            "enunciado": "¿Cuál fue el lema principal de la Revolución Francesa?",
             "tipo": "historico",
             "dificultad": "baja",
             "competencia": "identificar",
             "opciones": [
               {
-                "texto": "Tokio y Kioto",
+                "texto": "Orden y Progreso",
                 "es_correcta": false
               },
               {
-                "texto": "Hiroshima y Nagasaki",
+                "texto": "Libertad, Igualdad, Fraternidad",
                 "es_correcta": true
               },
               {
-                "texto": "Osaka y Nagoya",
+                "texto": "Pan, Tierra y Libertad",
                 "es_correcta": false
               },
               {
-                "texto": "Sapporo y Fukuoka",
+                "texto": "Dios y Patria",
                 "es_correcta": false
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El uso de la bomba atómica en 1945 puso fin a la guerra en el Pacífico contra Japón, pero abrió un profundo debate ético.",
+        "archivo": null,
+        "preguntas": [
           {
             "enunciado": "El principal argumento ético EN CONTRA del uso de estas bombas fue:",
             "tipo": "competencia_ciudadana",
@@ -10299,38 +10411,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿En qué ciudades japonesas se lanzaron las bombas atómicas?",
+            "tipo": "historico",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Tokio y Kioto",
+                "es_correcta": false
+              },
+              {
+                "texto": "Hiroshima y Nagasaki",
+                "es_correcta": true
+              },
+              {
+                "texto": "Osaka y Nagoya",
+                "es_correcta": false
+              },
+              {
+                "texto": "Sapporo y Fukuoka",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "geografia_globalizacion",
+        "tipo": "texto",
         "contexto": "La globalización ha interconectado las economías del mundo, permitiendo un flujo masivo de productos, personas e información.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "Un efecto positivo de la globalización económica es:",
-            "tipo": "geografia_economica",
-            "dificultad": "bajo",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "El aumento de los aranceles comerciales",
-                "es_correcta": false
-              },
-              {
-                "texto": "El acceso a una mayor variedad de bienes y tecnologías",
-                "es_correcta": true
-              },
-              {
-                "texto": "La desaparición de las empresas locales en todo el mundo",
-                "es_correcta": false
-              },
-              {
-                "texto": "El aislamiento de los mercados nacionales",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Una crítica frecuente a la globalización es que:",
             "tipo": "geografia_economica",
@@ -10354,38 +10466,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "Un efecto positivo de la globalización económica es:",
+            "tipo": "geografia_economica",
+            "dificultad": "bajo",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "El aumento de los aranceles comerciales",
+                "es_correcta": false
+              },
+              {
+                "texto": "El acceso a una mayor variedad de bienes y tecnologías",
+                "es_correcta": true
+              },
+              {
+                "texto": "La desaparición de las empresas locales en todo el mundo",
+                "es_correcta": false
+              },
+              {
+                "texto": "El aislamiento de los mercados nacionales",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "derechos_humanos",
+        "tipo": "texto",
         "contexto": "La Declaración Universal de los Derechos Humanos fue adoptada por la ONU en 1948.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué característica de los Derechos Humanos indica que pertenecen a todas las personas sin excepción?",
-            "tipo": "competencia_ciudadana",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Irrevocabilidad",
-                "es_correcta": false
-              },
-              {
-                "texto": "Universalidad",
-                "es_correcta": true
-              },
-              {
-                "texto": "Jerarquía",
-                "es_correcta": false
-              },
-              {
-                "texto": "Nacionalidad",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "El derecho a la vida y a la libertad se consideran derechos de:",
             "tipo": "politica",
@@ -10409,38 +10521,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "sistema_politico",
-        "contexto": "La división de poderes (Ejecutivo, Legislativo y Judicial) busca evitar la tiranía en las democracias.",
-        "archivo": null,
-        "preguntas": [
+          },
           {
-            "enunciado": "En Colombia, ¿qué institución es la máxima autoridad del poder Legislativo?",
-            "tipo": "politica",
+            "enunciado": "¿Qué característica de los Derechos Humanos indica que pertenecen a todas las personas sin excepción?",
+            "tipo": "competencia_ciudadana",
             "dificultad": "baja",
             "competencia": "identificar",
             "opciones": [
               {
-                "texto": "La Presidenca",
+                "texto": "Irrevocabilidad",
                 "es_correcta": false
               },
               {
-                "texto": "El Congreso de la República",
+                "texto": "Universalidad",
                 "es_correcta": true
               },
               {
-                "texto": "La Corte Suprema de Justicia",
+                "texto": "Jerarquía",
                 "es_correcta": false
               },
               {
-                "texto": "La Registraduría",
+                "texto": "Nacionalidad",
                 "es_correcta": false
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La división de poderes (Ejecutivo, Legislativo y Judicial) busca evitar la tiranía en las democracias.",
+        "archivo": null,
+        "preguntas": [
           {
             "enunciado": "La función principal del poder Judicial es:",
             "tipo": "politica",
@@ -10464,38 +10576,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "En Colombia, ¿qué institución es la máxima autoridad del poder Legislativo?",
+            "tipo": "politica",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "La Presidenca",
+                "es_correcta": false
+              },
+              {
+                "texto": "El Congreso de la República",
+                "es_correcta": true
+              },
+              {
+                "texto": "La Corte Suprema de Justicia",
+                "es_correcta": false
+              },
+              {
+                "texto": "La Registraduría",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "economia_conceptos",
+        "tipo": "texto",
         "contexto": "La inflación es el aumento generalizado y sostenido de los precios de los bienes y servicios.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "Cuando hay una alta inflación, ¿qué sucede con el poder adquisitivo del dinero?",
-            "tipo": "economia",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Aumenta",
-                "es_correcta": false
-              },
-              {
-                "texto": "Disminuye",
-                "es_correcta": true
-              },
-              {
-                "texto": "Permanece igual",
-                "es_correcta": false
-              },
-              {
-                "texto": "Se duplica",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Una causa común de la inflación puede ser:",
             "tipo": "economia",
@@ -10519,38 +10631,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "Cuando hay una alta inflación, ¿qué sucede con el poder adquisitivo del dinero?",
+            "tipo": "economia",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Aumenta",
+                "es_correcta": false
+              },
+              {
+                "texto": "Disminuye",
+                "es_correcta": true
+              },
+              {
+                "texto": "Permanece igual",
+                "es_correcta": false
+              },
+              {
+                "texto": "Se duplica",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "desarrollo_sostenible",
+        "tipo": "texto",
         "contexto": "El desarrollo sostenible implica un equilibrio entre el crecimiento económico, el cuidado ambiental y el bienestar social.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "Para que un proyecto sea socialmente sostenible, debe:",
-            "tipo": "social",
-            "dificultad": "media",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Generar dinero solo para los dueños",
-                "es_correcta": false
-              },
-              {
-                "texto": "Respetar los derechos y la cultura de las comunidades locales",
-                "es_correcta": true
-              },
-              {
-                "texto": "Ignorar las leyes ambientales",
-                "es_correcta": false
-              },
-              {
-                "texto": "Usar solo máquinas automáticas",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Cuál es un objetivo común de la agenda internacional de desarrollo sostenible?",
             "tipo": "politica_internacional",
@@ -10574,38 +10686,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "Para que un proyecto sea socialmente sostenible, debe:",
+            "tipo": "social",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Generar dinero solo para los dueños",
+                "es_correcta": false
+              },
+              {
+                "texto": "Respetar los derechos y la cultura de las comunidades locales",
+                "es_correcta": true
+              },
+              {
+                "texto": "Ignorar las leyes ambientales",
+                "es_correcta": false
+              },
+              {
+                "texto": "Usar solo máquinas automáticas",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "historia_colonialismo",
+        "tipo": "texto",
         "contexto": "El periodo colonial en América Latina estructuró las sociedades bajo un sistema de castas y una economía extractiva para la metrópoli.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cómo se llamaba el sistema de trabajo forzado impuesto a los indígenas en las minas?",
-            "tipo": "historico",
-            "dificultad": "media",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Feudalismo",
-                "es_correcta": false
-              },
-              {
-                "texto": "La Mita",
-                "es_correcta": true
-              },
-              {
-                "texto": "El Sindicato",
-                "es_correcta": false
-              },
-              {
-                "texto": "La Democracia directa",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La principal consecuencia social de la colonia hoy en día es:",
             "tipo": "social",
@@ -10629,38 +10741,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cómo se llamaba el sistema de trabajo forzado impuesto a los indígenas en las minas?",
+            "tipo": "historico",
+            "dificultad": "media",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Feudalismo",
+                "es_correcta": false
+              },
+              {
+                "texto": "La Mita",
+                "es_correcta": true
+              },
+              {
+                "texto": "El Sindicato",
+                "es_correcta": false
+              },
+              {
+                "texto": "La Democracia directa",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "historia_revolucion_industrial",
+        "tipo": "texto",
         "contexto": "La Revolución Industrial cambió radicalmente la producción y la vida urbana desde mediados del siglo XVIII.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué invento fue clave para mecanizar el transporte y la industria textil?",
-            "tipo": "historico",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "La radio",
-                "es_correcta": false
-              },
-              {
-                "texto": "La máquina de vapor",
-                "es_correcta": true
-              },
-              {
-                "texto": "La bombilla eléctrica",
-                "es_correcta": false
-              },
-              {
-                "texto": "El telégrafo",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Cuál fue una consecuencia social inmediata para los trabajadores?",
             "tipo": "historico",
@@ -10684,38 +10796,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "geografia_poblacion",
-        "contexto": "Las migraciones forzadas se producen debido a conflictos armados, persecuciones o desastres climáticos.",
-        "archivo": null,
-        "preguntas": [
+          },
           {
-            "enunciado": "Una persona que huye de su país por temor a ser perseguida por sus ideas políticas es un:",
-            "tipo": "social",
+            "enunciado": "¿Qué invento fue clave para mecanizar el transporte y la industria textil?",
+            "tipo": "historico",
             "dificultad": "baja",
             "competencia": "identificar",
             "opciones": [
               {
-                "texto": "Turista",
+                "texto": "La radio",
                 "es_correcta": false
               },
               {
-                "texto": "Refugiado",
+                "texto": "La máquina de vapor",
                 "es_correcta": true
               },
               {
-                "texto": "Nómada digital",
+                "texto": "La bombilla eléctrica",
                 "es_correcta": false
               },
               {
-                "texto": "Inmigrante económico solamente",
+                "texto": "El telégrafo",
                 "es_correcta": false
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Las migraciones forzadas se producen debido a conflictos armados, persecuciones o desastres climáticos.",
+        "archivo": null,
+        "preguntas": [
           {
             "enunciado": "¿Cuál suele ser la mayor dificultad para la integración de los migrantes en un nuevo país?",
             "tipo": "competencia_ciudadana",
@@ -10739,38 +10851,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "Una persona que huye de su país por temor a ser perseguida por sus ideas políticas es un:",
+            "tipo": "social",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Turista",
+                "es_correcta": false
+              },
+              {
+                "texto": "Refugiado",
+                "es_correcta": true
+              },
+              {
+                "texto": "Nómada digital",
+                "es_correcta": false
+              },
+              {
+                "texto": "Inmigrante económico solamente",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "ciudadania_digital",
+        "tipo": "texto",
         "contexto": "Las redes sociales han democratizado la información, pero también han facilitado la propagación de noticias falsas (fake news).",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cuál es la mejor estrategia ciudadana para combatir las noticias falsas?",
-            "tipo": "competencia_ciudadana",
-            "dificultad": "media",
-            "competencia": "evaluar",
-            "opciones": [
-              {
-                "texto": "Compartir la noticia rápido por si acaso",
-                "es_correcta": false
-              },
-              {
-                "texto": "Verificar la fuente y contrastar con medios oficiales",
-                "es_correcta": true
-              },
-              {
-                "texto": "Creer solo en lo que dicen los influencers",
-                "es_correcta": false
-              },
-              {
-                "texto": "No leer más noticias",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Las 'cámaras de eco' en redes sociales se refieren a:",
             "tipo": "social",
@@ -10794,38 +10906,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es la mejor estrategia ciudadana para combatir las noticias falsas?",
+            "tipo": "competencia_ciudadana",
+            "dificultad": "media",
+            "competencia": "evaluar",
+            "opciones": [
+              {
+                "texto": "Compartir la noticia rápido por si acaso",
+                "es_correcta": false
+              },
+              {
+                "texto": "Verificar la fuente y contrastar con medios oficiales",
+                "es_correcta": true
+              },
+              {
+                "texto": "Creer solo en lo que dicen los influencers",
+                "es_correcta": false
+              },
+              {
+                "texto": "No leer más noticias",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "resolucion_conflictos",
+        "tipo": "texto",
         "contexto": "En una democracia, el diálogo y la mediación son herramientas clave para resolver conflictos sin recurrir a la violencia.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué rol cumple un mediador en un conflicto?",
-            "tipo": "competencia_ciudadana",
-            "dificultad": "media",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Decidir quién tiene la razón",
-                "es_correcta": false
-              },
-              {
-                "texto": "Facilitar la comunicación para que las partes lleguen a un acuerdo",
-                "es_correcta": true
-              },
-              {
-                "texto": "Castigar a la parte más débil",
-                "es_correcta": false
-              },
-              {
-                "texto": "Contarle a todo el mundo el problema",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Una base necesaria para la mediación exitosa es:",
             "tipo": "competencia_ciudadana",
@@ -10849,38 +10961,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Qué rol cumple un mediador en un conflicto?",
+            "tipo": "competencia_ciudadana",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Decidir quién tiene la razón",
+                "es_correcta": false
+              },
+              {
+                "texto": "Facilitar la comunicación para que las partes lleguen a un acuerdo",
+                "es_correcta": true
+              },
+              {
+                "texto": "Castigar a la parte más débil",
+                "es_correcta": false
+              },
+              {
+                "texto": "Contarle a todo el mundo el problema",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "libertad_expresion",
+        "tipo": "texto",
         "contexto": "La libertad de expresión es un derecho fundamental, pero no es absoluto.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿En qué caso se puede limitar válidamente la libertad de expresión?",
-            "tipo": "politica_ley",
-            "dificultad": "media",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "Cuando se critica al gobierno",
-                "es_correcta": false
-              },
-              {
-                "texto": "Cuando incita al odio o a la violencia contra un grupo",
-                "es_correcta": true
-              },
-              {
-                "texto": "Cuando la opinión es aburrida",
-                "es_correcta": false
-              },
-              {
-                "texto": "Nunca se puede limitar bajo ninguna circunstancia",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "La censura previa se diferencia de la responsabilidad ulterior en que:",
             "tipo": "politica_ley",
@@ -10904,38 +11016,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿En qué caso se puede limitar válidamente la libertad de expresión?",
+            "tipo": "politica_ley",
+            "dificultad": "media",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "Cuando se critica al gobierno",
+                "es_correcta": false
+              },
+              {
+                "texto": "Cuando incita al odio o a la violencia contra un grupo",
+                "es_correcta": true
+              },
+              {
+                "texto": "Cuando la opinión es aburrida",
+                "es_correcta": false
+              },
+              {
+                "texto": "Nunca se puede limitar bajo ninguna circunstancia",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "diversidad_cultural",
+        "tipo": "texto",
         "contexto": "El pluralismo cultural reconoce y valora la existencia de múltiples identidades dentro de una misma nación.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "La Constitución colombiana de 1991 define a Colombia como:",
-            "tipo": "politica",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Una nación con una única cultura oficial",
-                "es_correcta": false
-              },
-              {
-                "texto": "Un estado pluriétnico y multicultural",
-                "es_correcta": true
-              },
-              {
-                "texto": "Una colonia dependiente",
-                "es_correcta": false
-              },
-              {
-                "texto": "Una monarquía constitucional",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Un ejemplo de respeto por la diversidad es:",
             "tipo": "competencia_ciudadana",
@@ -10959,38 +11071,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "geopolitica_recursos",
-        "contexto": "El control de los recursos energéticos, como el petróleo, ha sido causa de numerosos conflictos internacionales.",
-        "archivo": null,
-        "preguntas": [
+          },
           {
-            "enunciado": "¿Qué organización agrupa a los principales países exportadores de petróleo?",
-            "tipo": "geopolitica",
+            "enunciado": "La Constitución colombiana de 1991 define a Colombia como:",
+            "tipo": "politica",
             "dificultad": "baja",
             "competencia": "identificar",
             "opciones": [
               {
-                "texto": "OTAN",
+                "texto": "Una nación con una única cultura oficial",
                 "es_correcta": false
               },
               {
-                "texto": "OPEP",
+                "texto": "Un estado pluriétnico y multicultural",
                 "es_correcta": true
               },
               {
-                "texto": "ONU",
+                "texto": "Una colonia dependiente",
                 "es_correcta": false
               },
               {
-                "texto": "UNESCO",
+                "texto": "Una monarquía constitucional",
                 "es_correcta": false
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El control de los recursos energéticos, como el petróleo, ha sido causa de numerosos conflictos internacionales.",
+        "archivo": null,
+        "preguntas": [
           {
             "enunciado": "La transición hacia energías limpias busca, además de proteger el clima:",
             "tipo": "geopolitica",
@@ -11014,38 +11126,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "historia_roma",
-        "contexto": "El Imperio Romano dejó un legado fundamental en leyes, arquitectura y lengua para el mundo occidental.",
-        "archivo": null,
-        "preguntas": [
+          },
           {
-            "enunciado": "El sistema legal de muchos países modernos se basa en el antiguo:",
-            "tipo": "historico",
+            "enunciado": "¿Qué organización agrupa a los principales países exportadores de petróleo?",
+            "tipo": "geopolitica",
             "dificultad": "baja",
             "competencia": "identificar",
             "opciones": [
               {
-                "texto": "Código Samurai",
+                "texto": "OTAN",
                 "es_correcta": false
               },
               {
-                "texto": "Derecho Romano",
+                "texto": "OPEP",
                 "es_correcta": true
               },
               {
-                "texto": "Código Maya",
+                "texto": "ONU",
                 "es_correcta": false
               },
               {
-                "texto": "Derecho Vikingo",
+                "texto": "UNESCO",
                 "es_correcta": false
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El Imperio Romano dejó un legado fundamental en leyes, arquitectura y lengua para el mundo occidental.",
+        "archivo": null,
+        "preguntas": [
           {
             "enunciado": "¿Qué lengua hablaban los romanos y es el origen del español, francés e italiano?",
             "tipo": "historico",
@@ -11069,38 +11181,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "El sistema legal de muchos países modernos se basa en el antiguo:",
+            "tipo": "historico",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Código Samurai",
+                "es_correcta": false
+              },
+              {
+                "texto": "Derecho Romano",
+                "es_correcta": true
+              },
+              {
+                "texto": "Código Maya",
+                "es_correcta": false
+              },
+              {
+                "texto": "Derecho Vikingo",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "historia_edad_media",
+        "tipo": "texto",
         "contexto": "El feudalismo fue el sistema social y económico predominante en Europa durante la Edad Media.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "La relación de vasallaje consistía en:",
-            "tipo": "historico",
-            "dificultad": "media",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "Un contrato comercial libre",
-                "es_correcta": false
-              },
-              {
-                "texto": "Un pacto de fidelidad y protección a cambio de tierra",
-                "es_correcta": true
-              },
-              {
-                "texto": "Un sistema democrático de votación",
-                "es_correcta": false
-              },
-              {
-                "texto": "La esclavitud total sin derechos",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Qué institución tenía el mayor poder cultural y político en la Europa medieval?",
             "tipo": "historico",
@@ -11124,38 +11236,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "La relación de vasallaje consistía en:",
+            "tipo": "historico",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "Un contrato comercial libre",
+                "es_correcta": false
+              },
+              {
+                "texto": "Un pacto de fidelidad y protección a cambio de tierra",
+                "es_correcta": true
+              },
+              {
+                "texto": "Un sistema democrático de votación",
+                "es_correcta": false
+              },
+              {
+                "texto": "La esclavitud total sin derechos",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "historia_renacimiento",
+        "tipo": "texto",
         "contexto": "El Renacimiento y el Humanismo pusieron al hombre en el centro del pensamiento (antropocentrismo).",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué invención facilitó la difusión masiva de las ideas renacentistas?",
-            "tipo": "historico",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "El motor de combustión",
-                "es_correcta": false
-              },
-              {
-                "texto": "La imprenta de tipos móviles",
-                "es_correcta": true
-              },
-              {
-                "texto": "El teléfono",
-                "es_correcta": false
-              },
-              {
-                "texto": "La televisión",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "El paso del teocentrismo al antropocentrismo significa:",
             "tipo": "historico",
@@ -11179,38 +11291,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
-          }
-        ]
-      },
-      {
-        "tipo": "organizaciones_internacionales",
-        "contexto": "La Organización de las Naciones Unidas (ONU) fue creada para mantener la paz tras la Segunda Guerra Mundial.",
-        "archivo": null,
-        "preguntas": [
+          },
           {
-            "enunciado": "¿Cuál es el órgano de la ONU encargado de tomar decisiones sobre seguridad y paz internacional?",
-            "tipo": "politica",
+            "enunciado": "¿Qué invención facilitó la difusión masiva de las ideas renacentistas?",
+            "tipo": "historico",
             "dificultad": "baja",
             "competencia": "identificar",
             "opciones": [
               {
-                "texto": "Asamblea General",
+                "texto": "El motor de combustión",
                 "es_correcta": false
               },
               {
-                "texto": "Consejo de Seguridad",
+                "texto": "La imprenta de tipos móviles",
                 "es_correcta": true
               },
               {
-                "texto": "Corte Internacional de Justicia",
+                "texto": "El teléfono",
                 "es_correcta": false
               },
               {
-                "texto": "Secretaría",
+                "texto": "La televisión",
                 "es_correcta": false
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La Organización de las Naciones Unidas (ONU) fue creada para mantener la paz tras la Segunda Guerra Mundial.",
+        "archivo": null,
+        "preguntas": [
           {
             "enunciado": "¿Qué derecho tienen los 5 miembros permanentes del Consejo de Seguridad?",
             "tipo": "politica",
@@ -11234,38 +11346,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cuál es el órgano de la ONU encargado de tomar decisiones sobre seguridad y paz internacional?",
+            "tipo": "politica",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Asamblea General",
+                "es_correcta": false
+              },
+              {
+                "texto": "Consejo de Seguridad",
+                "es_correcta": true
+              },
+              {
+                "texto": "Corte Internacional de Justicia",
+                "es_correcta": false
+              },
+              {
+                "texto": "Secretaría",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "sistemas_economicos",
+        "tipo": "texto",
         "contexto": "El capitalismo y el socialismo son modelos económicos y sociales con visiones distintas sobre la propiedad y el mercado.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "Una base del capitalismo es:",
-            "tipo": "economia",
-            "dificultad": "media",
-            "competencia": "explicar",
-            "opciones": [
-              {
-                "texto": "La propiedad estatal total de los medios de producción",
-                "es_correcta": false
-              },
-              {
-                "texto": "La propiedad privada y el libre mercado",
-                "es_correcta": true
-              },
-              {
-                "texto": "La prohibición de las empresas",
-                "es_correcta": false
-              },
-              {
-                "texto": "El reparto igualitario de todos los salarios por decreto",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "El socialismo, en teoría, busca principalmente:",
             "tipo": "economia",
@@ -11289,38 +11401,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "Una base del capitalismo es:",
+            "tipo": "economia",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "opciones": [
+              {
+                "texto": "La propiedad estatal total de los medios de producción",
+                "es_correcta": false
+              },
+              {
+                "texto": "La propiedad privada y el libre mercado",
+                "es_correcta": true
+              },
+              {
+                "texto": "La prohibición de las empresas",
+                "es_correcta": false
+              },
+              {
+                "texto": "El reparto igualitario de todos los salarios por decreto",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "igualdad_genero",
+        "tipo": "texto",
         "contexto": "La equidad de género busca asegurar que hombres y mujeres tengan los mismos derechos y oportunidades.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Cómo se llama la brecha de salario entre hombres y mujeres por el mismo trabajo?",
-            "tipo": "social",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Brecha salarial de género",
-                "es_correcta": true
-              },
-              {
-                "texto": "Diferencial de impuestos",
-                "es_correcta": false
-              },
-              {
-                "texto": "Ahorro programado",
-                "es_correcta": false
-              },
-              {
-                "texto": "Pensión de jubilación",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Promover la participación política de las mujeres es una medida de:",
             "tipo": "competencia_ciudadana",
@@ -11344,38 +11456,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Cómo se llama la brecha de salario entre hombres y mujeres por el mismo trabajo?",
+            "tipo": "social",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Brecha salarial de género",
+                "es_correcta": true
+              },
+              {
+                "texto": "Diferencial de impuestos",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ahorro programado",
+                "es_correcta": false
+              },
+              {
+                "texto": "Pensión de jubilación",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "problematica_social",
+        "tipo": "texto",
         "contexto": "La corrupción administrativa desvía recursos que deberían destinarse a salud, educación e infraestructura.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué efecto tiene la corrupción en la confianza ciudadana?",
-            "tipo": "competencia_ciudadana",
-            "dificultad": "baja",
-            "competencia": "analizar",
-            "opciones": [
-              {
-                "texto": "La aumenta notablemente",
-                "es_correcta": false
-              },
-              {
-                "texto": "Genera apatía y desconfianza en las instituciones",
-                "es_correcta": true
-              },
-              {
-                "texto": "No produce ningún efecto",
-                "es_correcta": false
-              },
-              {
-                "texto": "Ayuda a que la gente vote más",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Una herramienta ciudadana para combatir la corrupción es:",
             "tipo": "competencia_ciudadana",
@@ -11399,38 +11511,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Qué efecto tiene la corrupción en la confianza ciudadana?",
+            "tipo": "competencia_ciudadana",
+            "dificultad": "baja",
+            "competencia": "analizar",
+            "opciones": [
+              {
+                "texto": "La aumenta notablemente",
+                "es_correcta": false
+              },
+              {
+                "texto": "Genera apatía y desconfianza en las instituciones",
+                "es_correcta": true
+              },
+              {
+                "texto": "No produce ningún efecto",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ayuda a que la gente vote más",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "educacion_derecho",
+        "tipo": "texto",
         "contexto": "El acceso a la educación de calidad es un motor fundamental para el desarrollo de un país.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Por qué la educación gratuita es importante en una sociedad desigual?",
-            "tipo": "social",
-            "dificultad": "baja",
-            "competencia": "reflexionar",
-            "opciones": [
-              {
-                "texto": "Porque así la gente gasta menos dinero",
-                "es_correcta": false
-              },
-              {
-                "texto": "Porque permite la movilidad social y la igualdad de oportunidades",
-                "es_correcta": true
-              },
-              {
-                "texto": "Porque los profesores no necesitan sueldo",
-                "es_correcta": false
-              },
-              {
-                "texto": "Porque sobran cupos en las universidades",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "¿Cuál es un beneficio de la educación en competencias ciudadanas?",
             "tipo": "competencia_ciudadana",
@@ -11454,38 +11566,38 @@ export const OFF_QUESTIONS_DATA = {
                 "es_correcta": false
               }
             ]
+          },
+          {
+            "enunciado": "¿Por qué la educación gratuita es importante en una sociedad desigual?",
+            "tipo": "social",
+            "dificultad": "baja",
+            "competencia": "reflexionar",
+            "opciones": [
+              {
+                "texto": "Porque así la gente gasta menos dinero",
+                "es_correcta": false
+              },
+              {
+                "texto": "Porque permite la movilidad social y la igualdad de oportunidades",
+                "es_correcta": true
+              },
+              {
+                "texto": "Porque los profesores no necesitan sueldo",
+                "es_correcta": false
+              },
+              {
+                "texto": "Porque sobran cupos en las universidades",
+                "es_correcta": false
+              }
+            ]
           }
         ]
       },
       {
-        "tipo": "politica_ambiental",
+        "tipo": "texto",
         "contexto": "El cambio climático requiere políticas públicas globales para reducir la emisión de gases de efecto invernadero.",
         "archivo": null,
         "preguntas": [
-          {
-            "enunciado": "¿Qué acuerdo internacional busca limitar el aumento de la temperatura global?",
-            "tipo": "politica_internacional",
-            "dificultad": "baja",
-            "competencia": "identificar",
-            "opciones": [
-              {
-                "texto": "Pacto de Varsovia",
-                "es_correcta": false
-              },
-              {
-                "texto": "Acuerdo de París",
-                "es_correcta": true
-              },
-              {
-                "texto": "Tratado de Versalles",
-                "es_correcta": false
-              },
-              {
-                "texto": "Acuerdo de Cartagena",
-                "es_correcta": false
-              }
-            ]
-          },
           {
             "enunciado": "Un obstáculo político para estas medidas suele ser:",
             "tipo": "geopolitica",
@@ -11506,6 +11618,30 @@ export const OFF_QUESTIONS_DATA = {
               },
               {
                 "texto": "Que nadie cree en la ciencia",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "¿Qué acuerdo internacional busca limitar el aumento de la temperatura global?",
+            "tipo": "politica_internacional",
+            "dificultad": "baja",
+            "competencia": "identificar",
+            "opciones": [
+              {
+                "texto": "Pacto de Varsovia",
+                "es_correcta": false
+              },
+              {
+                "texto": "Acuerdo de París",
+                "es_correcta": true
+              },
+              {
+                "texto": "Tratado de Versalles",
+                "es_correcta": false
+              },
+              {
+                "texto": "Acuerdo de Cartagena",
                 "es_correcta": false
               }
             ]
