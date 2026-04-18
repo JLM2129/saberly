@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import juegosService from '../services/juegos';
+import { formatImageUrl } from '../utils/url';
 import './DesafioRachas.css';
 
 const DesafioRachas = () => {
@@ -165,7 +166,7 @@ const DesafioRachas = () => {
                         )}
                         {currentQ.contexto.archivo && (
                             <img
-                                src={currentQ.contexto.archivo}
+                                src={formatImageUrl(currentQ.contexto.archivo)}
                                 alt="Contexto"
                                 style={{ maxWidth: '100%', borderRadius: '8px', display: 'block', margin: '0 auto' }}
                             />
@@ -173,6 +174,13 @@ const DesafioRachas = () => {
                     </div>
                 )}
 
+                {currentQ.imagen_url && (
+                    <img 
+                        src={formatImageUrl(currentQ.imagen_url)} 
+                        alt="Pregunta" 
+                        style={{ maxWidth: '100%', borderRadius: '12px', display: 'block', margin: '0 auto 1.5rem' }} 
+                    />
+                )}
                 <p style={{ fontSize: '1.3rem', textAlign: 'center', marginBottom: '2rem' }}>{currentQ.enunciado}</p>
 
                 <div className="bomb-options">

@@ -44,7 +44,8 @@ class Command(BaseCommand):
                     enunciado=item['enunciado'] + suffix,
                     tipo=item['tipo'],
                     dificultad=item['dificultad'],
-                    explicacion=item['explicacion']
+                    explicacion=item['explicacion'],
+                    imagen_url=item.get('imagen_url')
                 )
 
                 # Create Options

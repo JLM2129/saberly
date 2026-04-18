@@ -81,7 +81,7 @@ export const generateLocalSimulacro = (tipo = '20%') => {
                 pregunta: {
                     id: Math.floor(Math.random() * 1000000),
                     enunciado: p.enunciado,
-                    imagen_url: p.archivo,
+                    imagen_url: p.imagen_url,
                     contexto: {
                         id: Math.floor(Math.random() * 1000000),
                         contenido: p.contexto_obj.contenido,

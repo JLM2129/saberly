@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import juegosService from '../services/juegos';
+import { formatImageUrl } from '../utils/url';
 import './DesafioRapido.css';
 
 const GAME_DURATION = 60;
@@ -190,7 +191,7 @@ const DesafioRapido = () => {
                         )}
                         {currentQuestion.contexto.archivo && (
                             <img
-                                src={currentQuestion.contexto.archivo}
+                                src={formatImageUrl(currentQuestion.contexto.archivo)}
                                 alt="Contexto"
                                 style={{ maxWidth: '100%', borderRadius: '8px', display: 'block', margin: '0 auto' }}
                             />
@@ -199,6 +200,15 @@ const DesafioRapido = () => {
                 )}
                 <div className="question-area">
                     <span className="area-tag">{currentQuestion.area_nombre}</span>
+                    {currentQuestion.imagen_url && (
+                        <div style={{ padding: '0 0 1.5rem' }}>
+                            <img 
+                                src={formatImageUrl(currentQuestion.imagen_url)} 
+                                alt="Pregunta" 
+                                className="question-image"
+                            />
+                        </div>
+                    )}
                     <p className="question-text">{currentQuestion.enunciado}</p>
                 </div>
 

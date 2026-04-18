@@ -13,6 +13,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Producir proteínas",
@@ -37,6 +38,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Mitocondria",
@@ -68,6 +70,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Respiración celular",
@@ -92,6 +95,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "indagacion",
             "dificultad": "media",
             "competencia": "formular",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Cantidad de agua",
@@ -123,6 +127,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Óxido",
@@ -147,6 +152,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "clasificacion",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Cambio físico",
@@ -178,6 +184,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "alta",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aumenta",
@@ -202,6 +209,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Mayor que cero",
@@ -233,6 +241,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Depredación",
@@ -257,6 +266,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aumento de la biodiversidad",
@@ -288,6 +298,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Fusión",
@@ -312,6 +323,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "indagacion",
             "dificultad": "media",
             "competencia": "formular",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Tiempo de calentamiento",
@@ -343,6 +355,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Oxígeno",
@@ -367,6 +380,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "clasificacion",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Un cambio físico",
@@ -398,6 +412,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "alta",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Menor fuerza de fricción",
@@ -422,6 +437,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Fuerza gravitacional",
@@ -453,6 +469,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencias_cts",
             "dificultad": "media",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Usar antibióticos solo bajo prescripción médica",
@@ -477,6 +494,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Mayor eficacia de los antibióticos",
@@ -508,6 +526,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Dominante",
@@ -532,6 +551,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El rasgo de ojos claros es dominante",
@@ -563,6 +583,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Energía térmica",
@@ -587,6 +608,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Cinética",
@@ -618,6 +640,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Cambio de color y liberación de calor",
@@ -642,6 +665,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "clasificacion",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Cambio físico",
@@ -673,6 +697,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Eléctrica a luminosa",
@@ -697,6 +722,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Mecánica",
@@ -728,6 +754,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Carbón",
@@ -752,6 +779,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Reducen la emisión de gases contaminantes",
@@ -783,6 +811,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Contaminación por residuos orgánicos",
@@ -807,6 +836,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Migración o muerte de especies",
@@ -831,6 +861,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Peces",
@@ -862,6 +893,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Una fuerza produce desplazamiento",
@@ -886,6 +918,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aumenta",
@@ -910,6 +943,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Fuerza de fricción",
@@ -941,6 +975,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Neutra",
@@ -965,6 +1000,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Jugo de limón",
@@ -989,6 +1025,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "clasificacion",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Ácida",
@@ -1020,6 +1057,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "alta",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Altera el funcionamiento de las enzimas",
@@ -1044,6 +1082,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Disminuye por desnaturalización",
@@ -1068,6 +1107,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aceleran reacciones químicas",
@@ -1099,6 +1139,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencias_cts",
             "dificultad": "media",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Uso racional de fertilizantes",
@@ -1123,6 +1164,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Eutrofización",
@@ -1147,6 +1189,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Contaminación de fuentes hídricas",
@@ -1178,6 +1221,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "clasificacion",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Cobre",
@@ -1202,6 +1246,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "baja",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El circuito se interrumpe y el bombillo se apaga",
@@ -1226,6 +1271,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Proporcionar energía eléctrica",
@@ -1257,6 +1303,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La respiración celular",
@@ -1281,6 +1328,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Permitir la obtención de energía en las células",
@@ -1305,6 +1353,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Alvéolos",
@@ -1336,6 +1385,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El transporte de sustancias",
@@ -1360,6 +1410,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Los glóbulos rojos",
@@ -1384,6 +1435,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Corazón",
@@ -1415,6 +1467,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Un sólido insoluble de un líquido",
@@ -1439,6 +1492,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Agua con sal",
@@ -1463,6 +1517,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "clasificacion",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "No se distinguen sus componentes",
@@ -1494,6 +1549,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencias_cts",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La protección del ambiente",
@@ -1518,6 +1574,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencias_cts",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Ahorrar energía cuando no se necesita",
@@ -1542,6 +1599,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencias_cts",
             "dificultad": "baja",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Facilita la comunicación y el trabajo",
@@ -1573,6 +1631,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El equilibrio del ecosistema",
@@ -1597,6 +1656,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "No tener vida",
@@ -1621,6 +1681,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "clasificacion",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Una planta",
@@ -1652,6 +1713,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Cambio físico",
@@ -1676,6 +1738,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "clasificacion",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "No se forman nuevas sustancias",
@@ -1700,6 +1763,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Fusión",
@@ -1731,6 +1795,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Se opone al movimiento",
@@ -1755,6 +1820,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Comenzar a moverse",
@@ -1779,6 +1845,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Cambios en la velocidad o dirección",
@@ -1810,6 +1877,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencias_cts",
             "dificultad": "baja",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Mantener un cuerpo saludable",
@@ -1834,6 +1902,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Problemas de salud",
@@ -1858,6 +1927,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencias_cts",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El buen funcionamiento del organismo",
@@ -1889,6 +1959,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencias_cts",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Disminuir la contaminación ambiental",
@@ -1913,6 +1984,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La salud de los seres vivos",
@@ -1937,6 +2009,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencias_cts",
             "dificultad": "baja",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Reciclar residuos",
@@ -1968,6 +2041,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Un foco que transforma energía eléctrica en luminosa",
@@ -1992,6 +2066,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Energía potencial",
@@ -2016,6 +2091,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Energía cinética",
@@ -2047,6 +2123,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Dificultad para obtener oxígeno",
@@ -2071,6 +2148,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Intercambiar gases",
@@ -2095,6 +2173,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Sistema circulatorio",
@@ -2126,6 +2205,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Cambio de color",
@@ -2150,6 +2230,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Reacción química",
@@ -2174,6 +2255,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "clasificacion",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Se forman nuevas sustancias",
@@ -2205,6 +2287,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencias_cts",
             "dificultad": "media",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Ahorrar agua y energía",
@@ -2229,6 +2312,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La biodiversidad",
@@ -2253,6 +2337,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "clasificacion",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El agua",
@@ -2284,6 +2369,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencias_cts",
             "dificultad": "alta",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Las decisiones científicas afectan a la comunidad",
@@ -2308,6 +2394,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Impactos negativos en el ambiente",
@@ -2332,6 +2419,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencias_cts",
             "dificultad": "baja",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Mejor diagnóstico de enfermedades",
@@ -2363,6 +2451,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "TACG",
@@ -2387,6 +2476,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Enlaces iónicos",
@@ -2418,6 +2508,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La producción de gametos",
@@ -2442,6 +2533,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Profase",
@@ -2473,6 +2565,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El esófago",
@@ -2497,6 +2590,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "bajo",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Estómago",
@@ -2528,6 +2622,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aurícula derecha",
@@ -2552,6 +2647,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Defender al cuerpo de infecciones",
@@ -2583,6 +2679,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Tiroides",
@@ -2607,6 +2704,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aumentar los niveles de glucosa en sangre",
@@ -2638,6 +2736,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Reflexión",
@@ -2662,6 +2761,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aumenta proporcionalmente",
@@ -2693,6 +2793,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "alta",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Isotérmico",
@@ -2717,6 +2818,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Convección",
@@ -2748,6 +2850,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Newton",
@@ -2772,6 +2875,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aumenta",
@@ -2803,6 +2907,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Su masa disminuye en el espacio",
@@ -2827,6 +2932,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Se duplica",
@@ -2858,6 +2964,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Tesion",
@@ -2882,6 +2989,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Mayor que la del agua",
@@ -2913,6 +3021,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Son extremadamente reactivos",
@@ -2937,6 +3046,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Electronegatividad",
@@ -2968,6 +3078,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Lavoisier",
@@ -2992,6 +3103,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "2 moles",
@@ -3023,6 +3135,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Combustión",
@@ -3047,6 +3160,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Base fuerte",
@@ -3078,6 +3192,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Alquenos",
@@ -3102,6 +3217,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "-COOH",
@@ -3133,6 +3249,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Gramos de soluto por litro de solución",
@@ -3157,6 +3274,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Diluida",
@@ -3188,6 +3306,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Los combustibles fósiles",
@@ -3212,6 +3331,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Animales herbívoros",
@@ -3243,6 +3363,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "baja",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Productores primarios",
@@ -3267,6 +3388,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "100%",
@@ -3298,6 +3420,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aumenta la humedad del aire",
@@ -3322,6 +3445,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El cambio climático natural",
@@ -3353,6 +3477,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El Cóndor de los Andes",
@@ -3377,6 +3502,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Se extingue rápidamente",
@@ -3408,6 +3534,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Viento (Eólica)",
@@ -3432,6 +3559,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencias_cts",
             "dificultad": "baja",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Quemar la basura en casa",
@@ -3463,6 +3591,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Una sola persona se vacuna",
@@ -3487,6 +3616,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Matan directamente a las bacterias",
@@ -3518,6 +3648,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencias_cts",
             "dificultad": "media",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El color de la ropa de los científicos",
@@ -3542,6 +3673,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencias_cts",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Hacer que las plantas caminen",
@@ -3573,6 +3705,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "indagacion",
             "dificultad": "media",
             "competencia": "formular",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Poner música a todas las plantas del mundo",
@@ -3597,6 +3730,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "indagacion",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Hipótesis",
@@ -3628,6 +3762,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Oxígeno",
@@ -3652,6 +3787,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Son extremadamente contaminantes",
@@ -3683,6 +3819,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Kilómetros",
@@ -3707,6 +3844,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "uso_conocimiento",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Sonidos del espacio",
@@ -3743,6 +3881,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "alta",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aceptar sin cuestionar la información presentada.",
@@ -3767,6 +3906,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Describir un método para aprender a leer más rápido.",
@@ -3791,6 +3931,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "media",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Reconoce palabras y memoriza definiciones.",
@@ -3822,6 +3963,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "media",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Totalmente negativa frente al crecimiento urbano.",
@@ -3846,6 +3988,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "localizacion",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La mejora en el transporte público.",
@@ -3870,6 +4013,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "idea_principal",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El crecimiento urbano solo trae beneficios a las ciudades.",
@@ -3901,6 +4045,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "media",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Ciudadanos pasivos.",
@@ -3925,6 +4070,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "localizacion",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Elegir representantes.",
@@ -3956,6 +4102,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "alta",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El avance tecnológico elimina la necesidad de regulación.",
@@ -3980,6 +4127,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "localizacion",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La falta de médicos especializados.",
@@ -4004,6 +4152,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "media",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Totalmente negativa.",
@@ -4035,6 +4184,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "media",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Tienen dificultades para comprender otras opiniones.",
@@ -4059,6 +4209,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "interpretacion",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La lectura solo mejora el rendimiento académico.",
@@ -4090,6 +4241,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "alta",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Ignorar los factores culturales.",
@@ -4114,6 +4266,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "localizacion",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La velocidad de los avances tecnológicos.",
@@ -4145,6 +4298,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "alta",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La pérdida total del pasado histórico.",
@@ -4169,6 +4323,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "media",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Son completamente objetivos.",
@@ -4193,6 +4348,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "interpretacion",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Registrar únicamente fechas y eventos.",
@@ -4224,6 +4380,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "media",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Es siempre menos eficiente que el grupal.",
@@ -4248,6 +4405,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "idea_principal",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Reduce la responsabilidad individual.",
@@ -4279,6 +4437,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "media",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Es un proceso uniforme en todas las regiones.",
@@ -4303,6 +4462,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "localizacion",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La estabilidad política permanente.",
@@ -4334,6 +4494,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "alta",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aceptar los mensajes publicitarios sin cuestionarlos.",
@@ -4358,6 +4519,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "media",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Se basa únicamente en información objetiva.",
@@ -4382,6 +4544,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "interpretacion",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Presentar datos técnicos detallados.",
@@ -4413,6 +4576,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "media",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Es completamente objetivo.",
@@ -4437,6 +4601,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "idea_principal",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Transmitir información de manera neutral.",
@@ -4468,6 +4633,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "media",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "No tendría impacto en el rendimiento.",
@@ -4492,6 +4658,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "localizacion",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La suerte del estudiante.",
@@ -4516,6 +4683,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "idea_principal",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Depende únicamente del esfuerzo personal.",
@@ -4547,6 +4715,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "evaluacion",
             "dificultad": "alta",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aceptar la información sin cuestionarla.",
@@ -4571,6 +4740,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "media",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Compartir toda la información disponible.",
@@ -4595,6 +4765,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "localizacion",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La disminución de la comunicación.",
@@ -4626,6 +4797,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "localizacion",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aumentar el consumo.",
@@ -4650,6 +4822,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "idea_principal",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El medio ambiente es responsabilidad exclusiva del Estado.",
@@ -4681,6 +4854,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "media",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Acepta todas las ideas sin cuestionarlas.",
@@ -4705,6 +4879,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "localizacion",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La repetición mecánica de ideas.",
@@ -4729,6 +4904,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "idea_principal",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Describir los tipos de lectura existentes.",
@@ -4760,6 +4936,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "evaluacion",
             "dificultad": "alta",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Promover políticas que fortalezcan el transporte público.",
@@ -4784,6 +4961,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "media",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aumentaría el uso de vehículos privados.",
@@ -4808,6 +4986,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "localizacion",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La reducción de la contaminación.",
@@ -4839,6 +5018,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "localizacion",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aceptada, modificada o rechazada.",
@@ -4863,6 +5043,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "idea_principal",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Confirmar todas las hipótesis sin cambios.",
@@ -4894,6 +5075,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "filosofico",
             "dificultad": "alta",
             "competencia": "reflexionar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Es imposible de alcanzar plenamente",
@@ -4918,6 +5100,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "literario",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Metáfora",
@@ -4942,6 +5125,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "literario",
             "dificultad": "alta",
             "competencia": "comprender",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El mundo es mucho más grande de lo que pensaba",
@@ -4966,6 +5150,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "semantico",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Un lugar donde se espera a los enfermos",
@@ -4997,6 +5182,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "argumentativo",
             "dificultad": "alta",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Debemos confiar plenamente en lo que dice la IA",
@@ -5021,6 +5207,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "media",
             "competencia": "reflexionar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Optimista y entusiasta",
@@ -5045,6 +5232,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "informativo",
             "dificultad": "baja",
             "competencia": "comprender",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "En la conciencia propia",
@@ -5069,6 +5257,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "argumentativo",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La IA superará pronto la sabiduría humana",
@@ -5100,6 +5289,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "semantico",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Color claro",
@@ -5124,6 +5314,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "filosofico",
             "dificultad": "alta",
             "competencia": "reflexionar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Riqueza y reconocimiento social",
@@ -5148,6 +5339,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "informativo",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aprender cosas que no son útiles",
@@ -5172,6 +5364,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "semantico",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El juego excesivo en los adultos",
@@ -5203,6 +5396,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El inmenso mar azul",
@@ -5227,6 +5421,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "informativo",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Los océanos",
@@ -5251,6 +5446,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aumentará el agua potable disponible",
@@ -5275,6 +5471,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "baja",
             "competencia": "reflexionar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Fomentar el turismo en los glaciares",
@@ -5306,6 +5503,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "media",
             "competencia": "reflexionar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Alegría y celebración",
@@ -5330,6 +5528,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "literario",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Metáforas de conflicto y comunicación",
@@ -5354,6 +5553,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "alta",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Una explicación lógica y satisfactoria",
@@ -5378,6 +5578,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "media",
             "competencia": "reflexionar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Curiosidad técnica por la arquitectura",
@@ -5409,6 +5610,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "semantico",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Solucionó",
@@ -5433,6 +5635,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "argumentativo",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Causa y efecto",
@@ -5457,6 +5660,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La unificación del idioma",
@@ -5481,6 +5685,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "historico",
             "dificultad": "baja",
             "competencia": "comprender",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Promover la diversidad cultural",
@@ -5512,6 +5717,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "No sabe qué escribir realmente",
@@ -5536,6 +5742,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Sensación de cercanía y calidez",
@@ -5560,6 +5767,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "baja",
             "competencia": "comprender",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Melancolía",
@@ -5584,6 +5792,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "literario",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Hipérbole",
@@ -5615,6 +5824,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "informativo",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Criticar a los científicos",
@@ -5639,6 +5849,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "semantico",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Sentido común o percepción habitual",
@@ -5663,6 +5874,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "media",
             "competencia": "reflexionar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "No somos lo suficientemente inteligentes",
@@ -5687,6 +5899,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "informativo",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Estar encima de otro objeto",
@@ -5718,6 +5931,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "argumentativo",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Relaciones que duran toda la vida",
@@ -5742,6 +5956,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "media",
             "competencia": "reflexionar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Muy positiva sobre los avances tecnológicos",
@@ -5766,6 +5981,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "argumentativo",
             "dificultad": "alta",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La red tiene más personas",
@@ -5790,6 +6006,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "filosofico",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Fluida, cambiante e inestable",
@@ -5821,6 +6038,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "alta",
             "competencia": "reflexionar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Es una pérdida de tiempo",
@@ -5845,6 +6063,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "media",
             "competencia": "comprender",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Médica",
@@ -5869,6 +6088,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "semantico",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La forma plana de la Tierra",
@@ -5893,6 +6113,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Un enfermo mental digno de lástima",
@@ -5924,6 +6145,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "argumentativo",
             "dificultad": "alta",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Limpiar solo las playas turísticas",
@@ -5948,6 +6170,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "media",
             "competencia": "reflexionar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La belleza de la naturaleza",
@@ -5972,6 +6195,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Que los animales los usan para construir nidos",
@@ -5996,6 +6220,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "informativo",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Son transparentes",
@@ -6027,6 +6252,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "filosofico",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El hombre es un robot",
@@ -6051,6 +6277,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "media",
             "competencia": "comprender",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "No podemos culpar al destino o a la herencia por nuestros actos",
@@ -6075,6 +6302,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "filosofico",
             "dificultad": "alta",
             "competencia": "reflexionar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Porque la libertad es un castigo divino",
@@ -6106,6 +6334,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "informativo",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Lujo para pocos",
@@ -6130,6 +6359,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "informativo",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Compartir todas las contraseñas en foros",
@@ -6154,6 +6384,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Las empresas nos regalan todo por bondad",
@@ -6190,6 +6421,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion",
             "dificultad": "baja",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "2² * 3 * 5",
@@ -6214,6 +6446,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "conceptos_numericos",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "37",
@@ -6245,6 +6478,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "algebra",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "x = 8 y x = -2",
@@ -6269,6 +6503,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion",
             "dificultad": "baja",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "23",
@@ -6300,6 +6535,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "5",
@@ -6324,6 +6560,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "modelacion",
             "dificultad": "media",
             "competencia": "formular",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "4000x + 2000y <= 50000",
@@ -6355,6 +6592,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "geometria",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "120°",
@@ -6379,6 +6617,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "geometria",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "720°",
@@ -6410,6 +6649,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "conceptual",
             "dificultad": "media",
             "competencia": "argumentar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Ángulo-Ángulo (AA)",
@@ -6434,6 +6674,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "30 metros",
@@ -6465,6 +6706,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "alta",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "10 dB",
@@ -6489,6 +6731,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "algebra",
             "dificultad": "baja",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "3",
@@ -6520,6 +6763,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "combinatoria",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "10",
@@ -6544,6 +6788,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "conteo",
             "dificultad": "baja",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "12",
@@ -6575,6 +6820,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "conceptual",
             "dificultad": "media",
             "competencia": "argumentar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Continua en x=3",
@@ -6599,6 +6845,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "conceptual",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "lim (x->3) f(x) = 2",
@@ -6630,6 +6877,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "conceptual",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La velocidad",
@@ -6654,6 +6902,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "alta",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "20",
@@ -6678,13 +6927,14 @@ export const OFF_QUESTIONS_DATA = {
       {
         "tipo": "texto",
         "contexto": "Un agricultor necesita decidir cuál de los dos tanques representados en la imagen tiene mayor capacidad de almacenamiento para su sistema de riego.",
-        "archivo": "/imagenes/capacidad_tanques.png",
+        "archivo": "/media/imagenes/capacidad_tanques.png",
         "preguntas": [
           {
             "enunciado": "Considerando que el volumen de un cilindro se calcula como V = π * r^2 * h y el de un prisma rectangular como V = largo * ancho * alto, ¿cuál de las siguientes afirmaciones es correcta? (Tome π ≈ 3,14).",
             "tipo": "modelacion",
             "dificultad": "media",
             "competencia": "formular",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "A. El tanque cilíndrico tiene una capacidad de 20π m³, lo cual es menor que los 24 m³ del tanque prismático.",
@@ -6709,13 +6959,14 @@ export const OFF_QUESTIONS_DATA = {
       {
         "tipo": "texto",
         "contexto": "Una pizza circular se divide originalmente en 8 porciones iguales para ser repartida entre un grupo de personas.",
-        "archivo": "/imagenes/reparto_pizza.png",
+        "archivo": "/media/imagenes/reparto_pizza.png",
         "preguntas": [
           {
             "enunciado": "Si se retiran 3 de las 8 porciones originales, ¿qué porcentaje del total de la pizza queda disponible en el plato?",
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "37,5%",
@@ -6740,13 +6991,14 @@ export const OFF_QUESTIONS_DATA = {
       {
         "tipo": "texto",
         "contexto": "En el plano cartesiano se representa una función lineal que pasa por los puntos (0, 2) y (4, 10), como se observa en la imagen.",
-        "archivo": "/imagenes/plano_cartesiano_recta.png",
+        "archivo": "/media/imagenes/plano_cartesiano_recta.png",
         "preguntas": [
           {
             "enunciado": "La pendiente (m) de una recta se define como la razón de cambio entre el eje y y el eje x ($m = \\frac{y_2 - y_1}{x_2 - x_1}$). ¿Cuál es el valor de la pendiente para la recta mostrada?",
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "argumentar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "m = 0,5",
@@ -6771,13 +7023,14 @@ export const OFF_QUESTIONS_DATA = {
       {
         "tipo": "texto",
         "contexto": "Se realizó una encuesta a 100 estudiantes sobre su deporte favorito. Los resultados se presentan en la siguiente gráfica de barras.",
-        "archivo": "/imagenes/grafica_deportes_estudiantes.png",
+        "archivo": "/media/imagenes/grafica_deportes_estudiantes.png",
         "preguntas": [
           {
             "enunciado": "Si se elige a un estudiante al azar de este grupo de 100, ¿cuál es la probabilidad de que su deporte favorito sea el Baloncesto (Basketball) o la Natación (Swimming)?",
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "25%",
@@ -6802,13 +7055,14 @@ export const OFF_QUESTIONS_DATA = {
       {
         "tipo": "texto",
         "contexto": "Un experimento aleatorio consiste en dos etapas: primero se lanza una moneda equilibrada (Cara/Sello) y luego se extrae una bola de una bolsa que contiene 3 bolas rojas y 2 bolas azules.",
-        "archivo": "/imagenes/image_generation_content.png",
+        "archivo": "/media/imagenes/image_generation_content.png",
         "preguntas": [
           {
             "enunciado": "Utilizando el diagrama de árbol, ¿cuál es la probabilidad de que el resultado del experimento sea 'Sello' (Tails) y luego se extraiga una 'Bola Roja' (Red Ball)?",
             "tipo": "razonamiento",
             "dificultad": "alta",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "",
@@ -6833,13 +7087,14 @@ export const OFF_QUESTIONS_DATA = {
       {
         "tipo": "texto",
         "contexto": "La figura mostrada representa el diseño de una ventana rectangular coronada por un semicírculo. Las medidas dadas están en metros.",
-        "archivo": "/imagenes/area_figura_compuesta_ventana.png",
+        "archivo": "/media/imagenes/area_figura_compuesta_ventana.png",
         "preguntas": [
           {
             "enunciado": "Si se desea instalar un vidrio especial en toda la ventana, ¿cuál es el área total, en metros cuadrados (m²), que debe cubrir el vidrio? (Utilice $\\pi \\approx 3,14$).",
             "tipo": "resolucion",
             "dificultad": "alta",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "21,57 m²",
@@ -6864,13 +7119,14 @@ export const OFF_QUESTIONS_DATA = {
       {
         "tipo": "texto",
         "contexto": "Se planea construir una rampa de carga para un almacén. Las especificaciones técnicas indican que la base de la rampa debe medir 12 metros de largo y alcanzar una altura vertical de 5 metros, como se muestra en la imagen.",
-        "archivo": "/imagenes/image_generation_content1.png",
+        "archivo": "/media/imagenes/image_generation_content1.png",
         "preguntas": [
           {
             "enunciado": "¿Cuál es la longitud total de la superficie inclinada (hipotenusa) de la rampa que se debe construir?",
             "tipo": "resolucion",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "17 metros",
@@ -6895,13 +7151,14 @@ export const OFF_QUESTIONS_DATA = {
       {
         "tipo": "texto",
         "contexto": "Se diseñó un tanque de almacenamiento de agua con forma cilíndrica. Las especificaciones técnicas indican que el radio de la base es de 2 metros y la altura del cilindro es de 7 metros, como se observa en la imagen.",
-        "archivo": "/imagenes/volumen_cilindro_tanque.png",
+        "archivo": "/media/imagenes/volumen_cilindro_tanque.png",
         "preguntas": [
           {
             "enunciado": "¿Cuál es la capacidad total de almacenamiento, en metros cúbicos ($m^3$), de este tanque cilíndrico? (Utilice $\\pi \\approx 3,14$).",
             "tipo": "resolucion",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "87,92 $m^3$",
@@ -6926,13 +7183,14 @@ export const OFF_QUESTIONS_DATA = {
       {
         "tipo": "texto",
         "contexto": "Se presenta un círculo cuyo área total es de 120 cm². En él se ha resaltado un sector circular con un ángulo central de 90°, como se muestra en la figura.",
-        "archivo": "/imagenes/image_generation_content2.png",
+        "archivo": "/media/imagenes/image_generation_content2.png",
         "preguntas": [
           {
             "enunciado": "De acuerdo con la información de la imagen, ¿cuál es el área del sector circular resaltado en color rojo?",
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "30 cm²",
@@ -6957,13 +7215,14 @@ export const OFF_QUESTIONS_DATA = {
       {
         "tipo": "texto",
         "contexto": "La siguiente gráfica muestra la relación entre el tiempo transcurrido (en horas) y la distancia recorrida (en kilómetros) por un vehículo que mantiene una velocidad constante.",
-        "archivo": "/imagenes/grafica_funcion_lineal_distancia.png",
+        "archivo": "/media/imagenes/grafica_funcion_lineal_distancia.png",
         "preguntas": [
           {
             "enunciado": "De acuerdo con la gráfica, ¿cuál es la velocidad del vehículo (la pendiente de la recta) y qué distancia habrá recorrido al cabo de 6 horas?",
             "tipo": "razonamiento",
             "dificultad": "alta",
             "competencia": "argumentar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Velocidad: 2 km/h; Distancia: 14 km",
@@ -6995,6 +7254,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion",
             "dificultad": "baja",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "$350.000",
@@ -7019,6 +7279,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "modelacion",
             "dificultad": "media",
             "competencia": "formular",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "C = 200000 + 5000x",
@@ -7050,6 +7311,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "100 cm²",
@@ -7074,6 +7336,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "5 cm",
@@ -7105,6 +7368,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "argumentar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Proporcional directa",
@@ -7129,6 +7393,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "interpretacion_datos",
             "dificultad": "baja",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "$8.000",
@@ -7160,6 +7425,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "probabilidad",
             "dificultad": "media",
             "competencia": "razonar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "5/10",
@@ -7191,6 +7457,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "algebra",
             "dificultad": "baja",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "6",
@@ -7222,6 +7489,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "interpretacion",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El costo fijo del servicio",
@@ -7246,6 +7514,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion",
             "dificultad": "baja",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "11",
@@ -7277,6 +7546,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "conceptual",
             "dificultad": "baja",
             "competencia": "argumentar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Teorema de Pitágoras",
@@ -7301,6 +7571,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "10 cm",
@@ -7332,6 +7603,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "estadistica",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "15,6",
@@ -7356,6 +7628,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "estadistica",
             "dificultad": "baja",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "16",
@@ -7387,6 +7660,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "6",
@@ -7418,6 +7692,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "probabilidad",
             "dificultad": "baja",
             "competencia": "razonar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "1/2",
@@ -7449,6 +7724,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "$60.000",
@@ -7473,6 +7749,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "$20.000",
@@ -7504,6 +7781,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "algebra",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "x = 2 y x = 3",
@@ -7535,6 +7813,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "modelacion",
             "dificultad": "alta",
             "competencia": "formular",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "y = 2x + 2",
@@ -7559,6 +7838,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "interpretacion_grafica",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "2",
@@ -7590,6 +7870,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "algebra",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "5",
@@ -7621,6 +7902,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "geometria",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "153,86 cm²",
@@ -7652,6 +7934,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "conceptual",
             "dificultad": "baja",
             "competencia": "argumentar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Seno",
@@ -7676,6 +7959,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "trigonometria",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "5 cm",
@@ -7707,6 +7991,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "algebra",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "3",
@@ -7738,6 +8023,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "argumentar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Proporcional directa",
@@ -7762,6 +8048,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "interpretacion_datos",
             "dificultad": "baja",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "$3.000",
@@ -7793,6 +8080,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "alta",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "15",
@@ -7824,6 +8112,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "geometria",
             "dificultad": "baja",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "70 m",
@@ -7855,6 +8144,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "9 metros",
@@ -7879,6 +8169,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "interpretacion",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "3 segundos",
@@ -7910,6 +8201,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "8 días",
@@ -7941,6 +8233,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "modelacion",
             "dificultad": "alta",
             "competencia": "formular",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "y = (x − 1)(x − 5)",
@@ -7972,6 +8265,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "razonar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Miércoles",
@@ -8003,6 +8297,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "financiero",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "$1.200.000",
@@ -8034,6 +8329,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "probabilidad",
             "dificultad": "alta",
             "competencia": "razonar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "2/15",
@@ -8065,6 +8361,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "media",
             "competencia": "inferir",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Las condiciones cambiaron favoreciendo el crecimiento",
@@ -8089,6 +8386,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "interpretacion_grafica",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Entre la semana 4 y 6",
@@ -8120,6 +8418,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "8 litros",
@@ -8151,6 +8450,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "estadistica",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "70",
@@ -8182,6 +8482,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "funcion_lineal",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "13",
@@ -8213,6 +8514,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento_geometrico",
             "dificultad": "media",
             "competencia": "razonar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "6 cm",
@@ -8244,6 +8546,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "plano_cartesiano",
             "dificultad": "baja",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Primer cuadrante",
@@ -8275,6 +8578,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "proporcionalidad",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "15 litros",
@@ -8306,6 +8610,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "probabilidad_simple",
             "dificultad": "baja",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "2/5",
@@ -8337,6 +8642,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Se duplica",
@@ -8361,6 +8667,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "62,8 m³",
@@ -8392,6 +8699,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion",
             "dificultad": "alta",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "$1.122.000",
@@ -8416,6 +8724,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion",
             "dificultad": "baja",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "$180.000",
@@ -8447,6 +8756,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "5",
@@ -8471,6 +8781,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "15",
@@ -8502,6 +8813,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "probabilidad",
             "dificultad": "baja",
             "competencia": "razonar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "0,25",
@@ -8526,6 +8838,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "probabilidad",
             "dificultad": "baja",
             "competencia": "razonar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "1/10",
@@ -8557,6 +8870,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "conceptual",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Dispersión",
@@ -8581,6 +8895,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "argumentar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Todos los datos son iguales a 50",
@@ -8612,6 +8927,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion",
             "dificultad": "baja",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "800",
@@ -8636,6 +8952,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "modelacion",
             "dificultad": "media",
             "competencia": "formular",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "P(t) = 100 * 2^t",
@@ -8667,6 +8984,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Más corta que 12 metros",
@@ -8691,6 +9009,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "6,92 metros",
@@ -8722,6 +9041,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "algebra",
             "dificultad": "alta",
             "competencia": "formular",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "(x + 5) / 3",
@@ -8746,6 +9066,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion",
             "dificultad": "baja",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "7",
@@ -8777,6 +9098,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "modelacion",
             "dificultad": "alta",
             "competencia": "formular",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "n² + n",
@@ -8801,6 +9123,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "media",
             "competencia": "razonar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "42",
@@ -8832,6 +9155,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "3 personas",
@@ -8856,6 +9180,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "1.500 gramos",
@@ -8887,6 +9212,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "razonamiento",
             "dificultad": "baja",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "10 cm",
@@ -8918,6 +9244,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "100",
@@ -8942,6 +9269,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "interpretacion",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "20",
@@ -8973,6 +9301,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Abril",
@@ -8997,6 +9326,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "estadistica",
             "dificultad": "baja",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "15",
@@ -9028,6 +9358,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "conceptual",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Geometría (Vectores)",
@@ -9052,6 +9383,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "fisica_matematica",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "5N",
@@ -9083,6 +9415,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "finanzas",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "$600.000",
@@ -9107,6 +9440,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "finanzas",
             "dificultad": "media",
             "competencia": "resolver",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "$100.000",
@@ -9138,6 +9472,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "logica",
             "dificultad": "media",
             "competencia": "razonar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "5",
@@ -9162,6 +9497,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "logica",
             "dificultad": "media",
             "competencia": "razonar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "10",
@@ -9198,6 +9534,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "causa_historica",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La influencia de las ideas ilustradas y liberales",
@@ -9229,6 +9566,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "derecho_fundamental",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Derecho a la vida",
@@ -9260,6 +9598,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "region_natural",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Región Amazónica",
@@ -9291,6 +9630,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "resolucion_conflictos",
             "dificultad": "media",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Dialogar y escuchar los puntos de vista de ambas partes",
@@ -9322,6 +9662,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "rol_del_estado",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Regular los mercados para evitar abusos",
@@ -9353,6 +9694,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "consecuencia_historica",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El desplazamiento forzado de población rural",
@@ -9384,6 +9726,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "intencion_comunicativa",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Alertar sobre un problema ambiental",
@@ -9415,6 +9758,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "dinamica_poblacional",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La migración desde zonas rurales",
@@ -9446,6 +9790,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "democracia",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Participación ciudadana",
@@ -9477,6 +9822,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "impacto_economico",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Incremento de la pobreza",
@@ -9501,13 +9847,14 @@ export const OFF_QUESTIONS_DATA = {
       {
         "tipo": "texto",
         "contexto": "Un gráfico muestra el porcentaje de población urbana y rural en Colombia entre 1990 y 2020.",
-        "archivo": "/grafico_poblacion.png",
+        "archivo": "/media/grafico_poblacion.png",
         "preguntas": [
           {
             "enunciado": "Según el gráfico, ¿qué tendencia se observa en la población urbana?",
             "tipo": "interpretacion_grafica",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aumento progresivo con el paso del tiempo",
@@ -9539,6 +9886,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "participacion",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El referendo",
@@ -9570,6 +9918,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis_dilema",
             "dificultad": "alta",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Desarrollo económico versus protección ambiental",
@@ -9601,6 +9950,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "caracteristica_historica",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Conflictos indirectos entre potencias",
@@ -9632,6 +9982,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "politica_fiscal",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Mayor recaudo para inversión pública",
@@ -9663,6 +10014,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "idea_principal",
             "dificultad": "alta",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Evita la concentración del poder y protege la democracia",
@@ -9694,6 +10046,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "objetivo_historico",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Reducir la violencia bipartidista",
@@ -9725,6 +10078,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "gestion_ambiental",
             "dificultad": "media",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Implementar prácticas de reforestación",
@@ -9756,6 +10110,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "control_social",
             "dificultad": "alta",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Denunciar el hecho ante las autoridades competentes",
@@ -9787,6 +10142,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "impacto_economico",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Disminución del poder adquisitivo",
@@ -9818,6 +10174,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "inferencia",
             "dificultad": "alta",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Porque amplía las oportunidades económicas y sociales",
@@ -9849,6 +10206,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "consecuencia_historica",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El crecimiento de la clase obrera urbana",
@@ -9880,6 +10238,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "analisis_riesgo",
             "dificultad": "alta",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Vulnerabilidad a la fluctuación de precios internacionales",
@@ -9911,6 +10270,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "toma_decisiones",
             "dificultad": "alta",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El equilibrio entre derechos individuales y bienestar colectivo",
@@ -9942,6 +10302,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "principio_constitucional",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Garantizar el respeto y la inclusión de todos los grupos culturales",
@@ -9973,6 +10334,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "toma_decisiones_publicas",
             "dificultad": "alta",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La protección de la vida y la dignidad humana",
@@ -10004,6 +10366,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "cambio_constitucional",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El reconocimiento de Colombia como Estado social de derecho",
@@ -10035,6 +10398,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "recurso_estrategico",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El petróleo",
@@ -10066,6 +10430,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "etica_publica",
             "dificultad": "alta",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La transparencia",
@@ -10097,6 +10462,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "politica_laboral",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Mejorar el poder adquisitivo de los trabajadores",
@@ -10128,6 +10494,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "conflicto_social",
             "dificultad": "alta",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El choque entre desarrollo económico y derechos culturales",
@@ -10159,6 +10526,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "control_constitucional",
             "dificultad": "alta",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La protección de los derechos fundamentales",
@@ -10190,6 +10558,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "organismos_internacionales",
             "dificultad": "media",
             "competencia": "interpretar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Promover la paz y la cooperación internacional",
@@ -10221,6 +10590,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "impacto_ambiental",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aumento de desplazamientos humanos",
@@ -10252,6 +10622,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "convivencia_democratica",
             "dificultad": "alta",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Defender la protesta pacífica y rechazar la violencia",
@@ -10283,6 +10654,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "historico",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Conflictos directos entre EE.UU. y la URSS",
@@ -10307,6 +10679,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "historico",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Muro de Berlín",
@@ -10338,6 +10711,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "historico",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Establecía que los reyes tenían origen divino",
@@ -10362,6 +10736,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "historico",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Orden y Progreso",
@@ -10393,6 +10768,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencia_ciudadana",
             "dificultad": "media",
             "competencia": "reflexionar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Que el costo de las bombas fue muy alto",
@@ -10417,6 +10793,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "historico",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Tokio y Kioto",
@@ -10448,6 +10825,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "geografia_economica",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Todos los países se vuelven ricos al mismo tiempo",
@@ -10472,6 +10850,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "geografia_economica",
             "dificultad": "bajo",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El aumento de los aranceles comerciales",
@@ -10503,6 +10882,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "politica",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Primera generación (civiles y políticos)",
@@ -10527,6 +10907,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencia_ciudadana",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Irrevocabilidad",
@@ -10558,6 +10939,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "politica",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aprobar el presupuesto nacional",
@@ -10582,6 +10964,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "politica",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La Presidenca",
@@ -10613,6 +10996,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "economia",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Un exceso de oferta de productos",
@@ -10637,6 +11021,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "economia",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aumenta",
@@ -10668,6 +11053,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "politica_internacional",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Acabar con la pobreza y proteger el planeta",
@@ -10692,6 +11078,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "social",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Generar dinero solo para los dueños",
@@ -10723,6 +11110,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "social",
             "dificultad": "alta",
             "competencia": "reflexionar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La desaparición total de las lenguas nativas",
@@ -10747,6 +11135,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "historico",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Feudalismo",
@@ -10778,6 +11167,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "historico",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Reducción de la jornada laboral a 4 horas",
@@ -10802,6 +11192,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "historico",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La radio",
@@ -10833,6 +11224,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencia_ciudadana",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La falta de transporte público",
@@ -10857,6 +11249,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "social",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Turista",
@@ -10888,6 +11281,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "social",
             "dificultad": "alta",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Dispositivos que repiten el sonido",
@@ -10912,6 +11306,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencia_ciudadana",
             "dificultad": "media",
             "competencia": "evaluar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Compartir la noticia rápido por si acaso",
@@ -10943,6 +11338,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencia_ciudadana",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El uso de la fuerza",
@@ -10967,6 +11363,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencia_ciudadana",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Decidir quién tiene la razón",
@@ -10998,6 +11395,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "politica_ley",
             "dificultad": "alta",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La censura previa impide la publicación antes de ocurrir",
@@ -11022,6 +11420,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "politica_ley",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Cuando se critica al gobierno",
@@ -11053,6 +11452,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencia_ciudadana",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Obligar a todos a hablar el mismo idioma nativo",
@@ -11077,6 +11477,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "politica",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Una nación con una única cultura oficial",
@@ -11108,6 +11509,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "geopolitica",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aumentar el precio de la gasolina",
@@ -11132,6 +11534,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "geopolitica",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "OTAN",
@@ -11163,6 +11566,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "historico",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Griego",
@@ -11187,6 +11591,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "historico",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Código Samurai",
@@ -11218,6 +11623,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "historico",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La Universidad de Internet",
@@ -11242,6 +11648,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "historico",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Un contrato comercial libre",
@@ -11273,6 +11680,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "historico",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Que Dios deja de existir",
@@ -11297,6 +11705,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "historico",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "El motor de combustión",
@@ -11328,6 +11737,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "politica",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Derecho de veto",
@@ -11352,6 +11762,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "politica",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Asamblea General",
@@ -11383,6 +11794,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "economia",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aumentar las ganancias de los bancos",
@@ -11407,6 +11819,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "economia",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La propiedad estatal total de los medios de producción",
@@ -11438,6 +11851,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencia_ciudadana",
             "dificultad": "baja",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Privilegio injustificado",
@@ -11462,6 +11876,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "social",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Brecha salarial de género",
@@ -11493,6 +11908,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencia_ciudadana",
             "dificultad": "media",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La veeduría ciudadana y el control social",
@@ -11517,6 +11933,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencia_ciudadana",
             "dificultad": "baja",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "La aumenta notablemente",
@@ -11548,6 +11965,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "competencia_ciudadana",
             "dificultad": "media",
             "competencia": "explicar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Aprender a obedecer sin dudar",
@@ -11572,6 +11990,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "social",
             "dificultad": "baja",
             "competencia": "reflexionar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Porque así la gente gasta menos dinero",
@@ -11603,6 +12022,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "geopolitica",
             "dificultad": "media",
             "competencia": "analizar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Que el sol no calienta lo suficiente",
@@ -11627,6 +12047,7 @@ export const OFF_QUESTIONS_DATA = {
             "tipo": "politica_internacional",
             "dificultad": "baja",
             "competencia": "identificar",
+            "imagen_url": null,
             "opciones": [
               {
                 "texto": "Pacto de Varsovia",

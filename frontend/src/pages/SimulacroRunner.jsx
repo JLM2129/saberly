@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { getSimulacroById, submitSimulacro } from '../services/simulacros';
 import { useMode } from '../context/ModeContext';
 import { submitLocalSimulacro } from '../offline/offlineService';
+import { formatImageUrl } from '../utils/url';
 
 export default function SimulacroRunner() {
     const { isOffline } = useMode();
@@ -150,11 +151,25 @@ export default function SimulacroRunner() {
                 {/* Dashboard del Examen */}
                 <div className="glass-card" style={{ padding: '1.2rem', marginBottom: '1.5rem', borderLeft: '5px solid var(--primary)' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <div>
-                            <p style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: 'bold', margin: 0 }}>PROGRESO</p>
+                        <div style={{ flex: '0 0 auto' }}>
+                            <p style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: 'bold', margin: '0 0 4px 0' }}>PROGRESO</p>
                             <h3 style={{ margin: 0, fontSize: '1.4rem' }}>
                                 Pregunta <span style={{ color: 'var(--primary)', fontWeight: '800' }}>{(currentIndex + 1)}</span> de {total}
                             </h3>
+                            <div style={{ 
+                                marginTop: '4px', 
+                                display: 'inline-block',
+                                padding: '2px 8px', 
+                                background: 'rgba(99, 102, 241, 0.1)', 
+                                border: '1px solid rgba(99, 102, 241, 0.2)',
+                                borderRadius: '4px',
+                                fontSize: '0.7rem',
+                                color: 'var(--primary)',
+                                fontWeight: '700',
+                                textTransform: 'uppercase'
+                            }}>
+                                📁 {pregunta?.area_nombre || 'General'}
+                            </div>
                         </div>
                         <div style={{ flex: 1, margin: '0 30px', maxWidth: '300px' }}>
                             <div style={{ width: '100%', height: '8px', background: 'rgba(255,255,255,0.1)', borderRadius: '10px', overflow: 'hidden' }}>
@@ -189,7 +204,7 @@ export default function SimulacroRunner() {
                             fontSize: '0.95rem'
                         }}>
                             {contexto.contenido && <p style={{ whiteSpace: 'pre-line', lineHeight: '1.6' }}>{contexto.contenido}</p>}
-                            {contexto.archivo && <img src={contexto.archivo} alt="Contexto" style={{ maxWidth: '100%', borderRadius: '8px', marginTop: '10px' }} />}
+                            {contexto.archivo && <img src={formatImageUrl(contexto.archivo)} alt="Contexto" style={{ maxWidth: '100%', borderRadius: '8px', marginTop: '10px', display: 'block', margin: '10px auto' }} />}
                         </div>
                     )}
 
@@ -198,7 +213,7 @@ export default function SimulacroRunner() {
                     </h2>
 
                     {pregunta?.imagen_url && (
-                        <img src={pregunta.imagen_url} alt="Pregunta" style={{ maxWidth: '100%', borderRadius: '8px', marginBottom: '1.5rem' }} />
+                        <img src={formatImageUrl(pregunta.imagen_url)} alt="Pregunta" style={{ maxWidth: '100%', borderRadius: '8px', marginBottom: '1.5rem', display: 'block', margin: '0 auto 1.5rem' }} />
                     )}
 
                     <div style={{ display: 'grid', gap: '0.8rem' }}>

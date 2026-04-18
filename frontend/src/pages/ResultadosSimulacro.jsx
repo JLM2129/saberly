@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getSimulacroById } from '../services/simulacros';
 import { useMode } from '../context/ModeContext';
+import { formatImageUrl } from '../utils/url';
+import ExplicacionIA from '../components/ExplicacionIA';
 
 export default function ResultadosSimulacro() {
     const { isOffline } = useMode();
@@ -26,6 +28,8 @@ export default function ResultadosSimulacro() {
             } else {
                 const data = await getSimulacroById(id);
                 setSimulacro(data);
+                const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+                const BASE_URL = API_URL.replace('/api', '');
             }
         } catch (error) {
             console.error(error);
@@ -68,40 +72,81 @@ export default function ResultadosSimulacro() {
                 <h3 style={{ marginBottom: '1.5rem', borderBottom: '1px solid var(--border-subtle)', paddingBottom: '0.5rem' }}>Revisión de Preguntas</h3>
 
                 <div style={{ display: 'grid', gap: '1rem' }}>
-                    {simulacro.detalles.map((detalle, index) => (
-                        <div key={detalle.id} className="glass-card" style={{ borderLeft: detalle.es_correcta ? '4px solid #22c55e' : '4px solid #ef4444' }}>
-                            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-                                <span style={{ fontWeight: 'bold' }}>Pregunta {index + 1}</span>
-                                <span style={{ color: detalle.es_correcta ? '#22c55e' : '#ef4444', fontWeight: 'bold' }}>
-                                    {detalle.es_correcta ? 'Correcta' : 'Incorrecta'}
-                                </span>
-                            </div>
-                            <p style={{ marginBottom: '1rem' }}>{detalle.pregunta.enunciado}</p>
+                    {simulacro.detalles.map((detalle, index) => {
+                        const correctOption = detalle.pregunta.opciones?.find(o => o.es_correcta);
+                        const selectedOption = detalle.pregunta.opciones?.find(o => o.id === detalle.opcion_seleccionada);
 
-                            {/* Opciones (Simplified review) */}
-                            {/* Note: Depending on serializer depth, we might need to iterate options.
-                                PreguntaSerializer usually includes options. Let's assume it does.
-                            */}
-                            {detalle.pregunta.opciones && (
-                                <div style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-                                    {detalle.pregunta.opciones.map(op => {
-                                        const isSelected = detalle.opcion_seleccionada === op.id;
-                                        const isCorrect = op.es_correcta; // Assuming PreguntaSerializer returns this for completed tests
-
-                                        let style = {};
-                                        if (isCorrect) style = { color: '#22c55e', fontWeight: 'bold' };
-                                        if (isSelected && !isCorrect) style = { color: '#ef4444', textDecoration: 'line-through' };
-
-                                        return (
-                                            <div key={op.id} style={style}>
-                                                - {op.texto} {isSelected ? '(Tu respuesta)' : ''} {isCorrect ? '✓' : ''}
-                                            </div>
-                                        );
-                                    })}
+                        return (
+                            <div key={detalle.id} className="glass-card" style={{ borderLeft: detalle.es_correcta ? '4px solid #22c55e' : '4px solid #ef4444' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+                                    <span style={{ fontWeight: 'bold' }}>Pregunta {index + 1}</span>
+                                    <span style={{ color: detalle.es_correcta ? '#22c55e' : '#ef4444', fontWeight: 'bold' }}>
+                                        {detalle.es_correcta ? 'Correcta' : 'Incorrecta'}
+                                    </span>
                                 </div>
-                            )}
-                        </div>
-                    ))}
+                                <div className="status-badge" style={{ marginBottom: '1rem' }}>
+                                    <span>{detalle.pregunta.area_nombre}</span>
+                                </div>
+
+                                {detalle.pregunta.contexto && (
+                                    <div className="context-review" style={{
+                                        padding: '1rem',
+                                        background: 'rgba(0,0,0,0.2)',
+                                        borderRadius: '8px',
+                                        marginBottom: '1rem',
+                                        borderLeft: '4px solid var(--primary)'
+                                    }}>
+                                        {detalle.pregunta.contexto.contenido && <p style={{ fontSize: '0.9rem' }}>{detalle.pregunta.contexto.contenido}</p>}
+                                        {detalle.pregunta.contexto.archivo && (
+                                            <img
+                                                src={formatImageUrl(detalle.pregunta.contexto.archivo)}
+                                                alt="Contexto"
+                                                style={{ maxWidth: '100%', borderRadius: '8px', marginTop: '0.5rem' }}
+                                            />
+                                        )}
+                                    </div>
+                                )}
+
+                                <p style={{ marginBottom: '1rem', fontWeight: 'bold' }}>{detalle.pregunta.enunciado}</p>
+                                {detalle.pregunta.imagen_url && (
+                                    <img
+                                        src={formatImageUrl(detalle.pregunta.imagen_url)}
+                                        alt="Pregunta"
+                                        style={{ maxWidth: '100%', borderRadius: '8px', marginBottom: '1rem', display: 'block' }}
+                                    />
+                                )}
+
+                                {/* Opciones */}
+                                {detalle.pregunta.opciones && (
+                                    <div style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
+                                        {detalle.pregunta.opciones.map(op => {
+                                            const isSelected = detalle.opcion_seleccionada === op.id;
+                                            const isCorrect = op.es_correcta;
+
+                                            let style = {};
+                                            if (isCorrect) style = { color: '#22c55e', fontWeight: 'bold' };
+                                            if (isSelected && !isCorrect) style = { color: '#ef4444', textDecoration: 'line-through' };
+
+                                            return (
+                                                <div key={op.id} style={style}>
+                                                    - {op.texto} {isSelected ? '(Tu respuesta)' : ''} {isCorrect ? '✓' : ''}
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                )}
+
+                                {/* AI Explanation Tool */}
+                                {!isOffline && (
+                                    <ExplicacionIA 
+                                        questionId={detalle.pregunta.id}
+                                        userAnswer={selectedOption?.texto || 'No respondida'}
+                                        correctAnswer={correctOption?.texto || 'N/A'}
+                                    />
+                                )}
+                            </div>
+                        );
+                    })}
                 </div>
 
                 <div style={{ marginTop: '2rem', textAlign: 'center' }}>
@@ -112,3 +157,4 @@ export default function ResultadosSimulacro() {
         </div>
     );
 }
+

@@ -2,6 +2,8 @@ from django.contrib import admin
 from django.urls import path, include
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
 from django.http import JsonResponse
+from django.conf import settings
+from django.conf.urls.static import static
 
 def health_check(request):
     return JsonResponse({"status": "ok", "message": "Backend is running"})
@@ -14,9 +16,13 @@ urlpatterns = [
     path('api/simulacros/', include('apps.simulacros.urls')),
     path('api/estadisticas/', include('apps.estadisticas.urls')),
     path('api/juegos/', include('apps.juegos.urls')),
+    path('api/tutor/', include('apps.tutor.urls')),
     
     # Documentation
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
     path('api/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

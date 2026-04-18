@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import juegosService from '../services/juegos';
+import { formatImageUrl } from '../utils/url';
 import './MillionaireGame.css';
 
 const PRIZES = [
@@ -262,7 +263,7 @@ const MillionaireGame = () => {
                                 )}
                                 {currentQ.contexto.archivo && (
                                     <img
-                                        src={currentQ.contexto.archivo}
+                                        src={formatImageUrl(currentQ.contexto.archivo)}
                                         alt="Contexto"
                                         style={{ maxWidth: '100%', borderRadius: '8px', display: 'block', margin: '0 auto' }}
                                     />
@@ -270,6 +271,13 @@ const MillionaireGame = () => {
                             </div>
                         )}
 
+                        {currentQ.imagen_url && (
+                             <img 
+                                src={formatImageUrl(currentQ.imagen_url)} 
+                                alt="Pregunta" 
+                                style={{ maxWidth: '100%', borderRadius: '12px', display: 'block', margin: '0 auto 1.5rem' }} 
+                            />
+                        )}
                         <p className="millionaire-question">{currentQ.enunciado}</p>
 
                         {hint && <div className="hint-box" style={{

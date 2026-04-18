@@ -11,6 +11,7 @@ export default function Navbar() {
     const { isOffline, toggleMode } = useMode();
     const [isConnected, setIsConnected] = useState(null);
     const [isAuth, setIsAuth] = useState(isAuthenticated());
+    const [user, setUser] = useState(null);
     const [isTeacher, setIsTeacher] = useState(false);
     const navigate = useNavigate();
 
@@ -23,16 +24,13 @@ export default function Navbar() {
 
     useEffect(() => {
         checkBackendConnection().then(setIsConnected);
-        // Verificar auth periódicamente o al montar
         const authStatus = isAuthenticated();
         setIsAuth(authStatus);
 
-        // Verificar si es docente
         if (authStatus) {
-            checkTeacherStatus();
+            loadProfile();
         }
 
-        // Sincronizar resultados offline si estamos online
         if (!isOffline && authStatus) {
             import('../offline/offlineService').then(module => {
                 module.syncOfflineResults();
@@ -40,18 +38,20 @@ export default function Navbar() {
         }
     }, [isOffline]);
 
-    const checkTeacherStatus = async () => {
+    const loadProfile = async () => {
         try {
             const token = localStorage.getItem('access_token');
+            if (!token) return;
             const response = await fetch(`${API_URL}/users/profile/`, {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
             if (response.ok) {
                 const data = await response.json();
+                setUser(data);
                 setIsTeacher(data.is_teacher || false);
             }
         } catch (error) {
-            console.error('Error verificando status de docente:', error);
+            console.error('Error cargando perfil:', error);
         }
     };
 
@@ -59,6 +59,7 @@ export default function Navbar() {
         logout();
         setIsAuth(false);
         setIsTeacher(false);
+        setUser(null);
         navigate('/login');
     };
 
@@ -106,20 +107,31 @@ export default function Navbar() {
                 <div style={{ width: '1px', height: '20px', background: 'var(--glass-border)', margin: '0 8px' }}></div>
 
                 {isAuth ? (
-                    <>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                        <div style={{ textAlign: 'right', display: 'flex', flexDirection: 'column' }}>
+                             <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--primary)' }}>
+                                 {user?.full_name || user?.email?.split('@')[0] || 'Usuario'}
+                             </span>
+                             <span style={{ fontSize: '0.65rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                                 {isTeacher ? '👨‍🏫 Docente' : '🎓 Estudiante'}
+                             </span>
+                        </div>
                         <button
                             onClick={handleLogout}
                             style={{
-                                background: 'transparent',
-                                border: 'none',
+                                background: 'rgba(255,255,255,0.05)',
+                                border: '1px solid rgba(255,255,255,0.1)',
                                 color: 'var(--text-muted)',
                                 cursor: 'pointer',
-                                fontWeight: '500'
+                                fontWeight: '500',
+                                padding: '6px 12px',
+                                borderRadius: '6px',
+                                fontSize: '0.8rem'
                             }}
                         >
                             Cerrar Sesión
                         </button>
-                    </>
+                    </div>
                 ) : (
                     <>
                         <Link to="/login" style={{ color: 'var(--text-muted)', fontWeight: '500' }}>Ingresar</Link>

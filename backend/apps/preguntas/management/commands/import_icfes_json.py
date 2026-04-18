@@ -2,6 +2,8 @@ import json
 import os
 from pathlib import Path
 from django.core.management.base import BaseCommand
+import shutil
+from django.conf import settings
 from apps.preguntas.models import Area, SubArea, Contexto, Pregunta, OpcionRespuesta
 
 
@@ -88,7 +90,8 @@ class Command(BaseCommand):
                             'contexto': contexto,
                             'tipo': p.get("tipo", "seleccion_unica"),
                             'dificultad': p.get("dificultad", "media"),
-                            'competencia': p.get("competencia", "interpretar")
+                            'competencia': p.get("competencia", "interpretar"),
+                            'imagen_url': p.get("imagen_url") # 'imagen_url' is already supported here
                         }
                     )
                     
@@ -104,6 +107,16 @@ class Command(BaseCommand):
                             total_opciones += 1
 
             self.stdout.write(self.style.SUCCESS(f"OK: {archivo} importado"))
+
+        # Asegurar desplegar imágenes a media/
+        img_src = folder_path / "imagenes"
+        img_dest = Path(settings.MEDIA_ROOT) / "imagenes"
+        if img_src.exists():
+            img_dest.mkdir(parents=True, exist_ok=True)
+            self.stdout.write(f"Desplegando imágenes desde {img_src} a {img_dest}...")
+            for img_file in os.listdir(img_src):
+                shutil.copy2(img_src / img_file, img_dest / img_file)
+            self.stdout.write(self.style.SUCCESS("Imágenes desplegadas correctamente."))
 
         self.stdout.write(self.style.SUCCESS(
             f"\nRESUMEN FINAL\n"

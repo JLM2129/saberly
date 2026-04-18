@@ -14,7 +14,7 @@ def export_to_js():
     
     for area in areas:
         area_key = area.nombre.lower().replace(' ', '_')
-        # Limpiar tildes de la clave si es necesario para coincidir con lo que espera el frontend
+        # Limpiar tildes de la clave
         area_key = area_key.replace('á', 'a').replace('é', 'e').replace('í', 'i').replace('ó', 'o').replace('ú', 'u')
         
         area_data = {
@@ -39,6 +39,7 @@ def export_to_js():
                     "tipo": p.tipo,
                     "dificultad": p.dificultad,
                     "competencia": p.competencia,
+                    "imagen_url": p.imagen_url,
                     "opciones": [
                         {"texto": o.texto, "es_correcta": o.es_correcta}
                         for o in p.opciones.all()
@@ -64,6 +65,7 @@ def export_to_js():
                     "tipo": p.tipo,
                     "dificultad": p.dificultad,
                     "competencia": p.competencia,
+                    "imagen_url": p.imagen_url,
                     "opciones": [
                         {"texto": o.texto, "es_correcta": o.es_correcta}
                         for o in p.opciones.all()
@@ -81,7 +83,7 @@ def export_to_js():
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(js_content)
     
-    print(f"✅ Exportación completada en el contenedor.")
+    print(f"✅ Exportación completada.")
 
 if __name__ == '__main__':
     export_to_js()

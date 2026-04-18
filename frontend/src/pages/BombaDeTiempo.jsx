@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import juegosService from '../services/juegos';
+import { formatImageUrl } from '../utils/url';
 import './BombaDeTiempo.css';
 
 const START_TIME = 120;
@@ -163,9 +164,23 @@ const BombaDeTiempo = () => {
 
             <div className="bomb-game-box fade-in">
                 {currentQ?.contexto && (
-                    <div className="context-mini" style={{ fontSize: '0.9rem', color: '#9ca3af', marginBottom: '1rem', fontStyle: 'italic' }}>
-                        {currentQ.contexto.contenido?.substring(0, 100)}...
+                    <div className="context-mini" style={{ fontSize: '0.9rem', color: '#9ca3af', marginBottom: '1rem', fontStyle: 'italic', background: 'rgba(0,0,0,0.2)', padding: '10px', borderRadius: '8px' }}>
+                        {currentQ.contexto.contenido && <p>{currentQ.contexto.contenido.substring(0, 150)}...</p>}
+                        {currentQ.contexto.archivo && (
+                            <img 
+                                src={formatImageUrl(currentQ.contexto.archivo)} 
+                                alt="Contexto" 
+                                style={{ maxWidth: '100%', maxHeight: '150px', borderRadius: '6px', marginTop: '5px', display: 'block', margin: '5px auto' }} 
+                            />
+                        )}
                     </div>
+                )}
+                {currentQ?.imagen_url && (
+                    <img 
+                        src={formatImageUrl(currentQ.imagen_url)} 
+                        alt="Pregunta" 
+                        style={{ maxWidth: '100%', maxHeight: '200px', borderRadius: '10px', marginBottom: '15px', display: 'block', margin: '0 auto 15px' }} 
+                    />
                 )}
                 <p className="question-text">{currentQ?.enunciado}</p>
 

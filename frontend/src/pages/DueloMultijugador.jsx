@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import juegosService from '../services/juegos';
+import { formatImageUrl } from '../utils/url';
 import './DueloMultijugador.css';
 
 const DueloMultijugador = () => {
@@ -262,7 +263,7 @@ const DueloMultijugador = () => {
                                     {currentQ.contexto.contenido}
                                     {currentQ.contexto.archivo && (
                                         <img
-                                            src={`${import.meta.env.VITE_API_URL.replace('/api', '')}${currentQ.contexto.archivo}`}
+                                            src={formatImageUrl(currentQ.contexto.archivo)}
                                             alt="Contexto"
                                             style={{ maxWidth: '100%', marginTop: '1rem', borderRadius: '8px', display: 'block' }}
                                         />
@@ -272,9 +273,9 @@ const DueloMultijugador = () => {
 
                             {currentQ?.imagen_url && (
                                 <img
-                                    src={currentQ.imagen_url}
+                                    src={formatImageUrl(currentQ.imagen_url)}
                                     alt="Pregunta"
-                                    style={{ maxWidth: '100%', marginBottom: '1.5rem', borderRadius: '8px' }}
+                                    style={{ maxWidth: '100%', marginBottom: '1.5rem', borderRadius: '8px', display: 'block', margin: '0 auto 1.5rem' }}
                                 />
                             )}
 
