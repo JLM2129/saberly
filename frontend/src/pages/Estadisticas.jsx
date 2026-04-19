@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { getSimulacros } from '../services/simulacros';
 import { isAuthenticated } from '../services/auth';
 import juegosService from '../services/juegos';
+import RefuerzoIA from '../components/RefuerzoIA';
 
 export default function Estadisticas() {
     const [simulacros, setSimulacros] = useState([]);
@@ -167,6 +168,9 @@ export default function Estadisticas() {
                     </div>
                 ))}
             </div>
+            
+            {/* Nuevo: Refuerzo Personalizado con IA */}
+            <RefuerzoIA />
 
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
                 {/* Resumen de Simulacros */}

@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 import random
 
 class Area(models.Model):
@@ -198,3 +199,32 @@ class OpcionRespuesta(models.Model):
         verbose_name = 'Opción de respuesta'
         verbose_name_plural = 'Opciones de respuesta'
         ordering = ['orden', 'id']
+
+
+class Flashcard(models.Model):
+    """
+    Cartas de estudio generadas por IA basadas en errores del usuario.
+    """
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name='flashcards'
+    )
+    pregunta_relacionada = models.ForeignKey(
+        Pregunta,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='flashcards_generadas'
+    )
+    frente = models.TextField()
+    dorso = models.TextField()
+    fecha_creacion = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Flashcard - {self.user.username} - {self.fecha_creacion.date()}"
+
+    class Meta:
+        verbose_name = 'Flashcard'
+        verbose_name_plural = 'Flashcards'
+        ordering = ['-fecha_creacion']

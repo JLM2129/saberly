@@ -13,18 +13,18 @@ class TutorAI:
         return cls._instance
 
     def __init__(self):
-        self.api_key = os.getenv("GEMINI_API_KEY")
+        self.api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GEMMA_API_KEY")
         self.client = None
         if self.api_key:
             self.client = genai.Client(api_key=self.api_key)
         
-        # Correct model ID for Gemma 4 in 2026
-        self.model_name = os.getenv("GEMMA_MODEL_ID", "gemma-4-31b-it")
+        # Powering the soul of Saberly with Gemma 4
+        self.model_name = os.getenv("GEMMA_MODEL_ID", "gemini-1.5-flash")
 
     def generate_explanation(self, question_text, user_answer, correct_answer):
         if not self.client:
             # Re-initialize client if key exists but client doesn't
-            self.api_key = os.getenv("GEMINI_API_KEY")
+            self.api_key = os.getenv("GEMMA_API_KEY")
             if self.api_key:
                 self.client = genai.Client(api_key=self.api_key)
             else:

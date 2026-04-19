@@ -2,8 +2,11 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
-from apps.preguntas.models import Pregunta
+from apps.preguntas.models import Pregunta, Flashcard
+from apps.simulacros.models import DetalleSimulacro
+from django.db.models import Count
 from .ai_service import TutorAI
+from .flashcard_service import FlashcardService
 import logging
 
 logger = logging.getLogger(__name__)
@@ -63,3 +66,90 @@ class ExplicarPreguntaView(APIView):
         return Response({
             "explanation": explanation
         })
+
+class GenerateFlashcardsView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        question_id = request.data.get('question_id')
+        user_answer = request.data.get('user_answer', "Respuesta incorrecta")
+
+        if not question_id:
+            return Response({"error": "Falta el ID de la pregunta"}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            pregunta = Pregunta.objects.get(id=question_id)
+        except Pregunta.DoesNotExist:
+            return Response({"error": "Pregunta no encontrada"}, status=status.HTTP_404_NOT_FOUND)
+
+        # Generate using Gemma
+        try:
+            flashcards_data = FlashcardService.generate_flashcards(
+                pregunta_texto=pregunta.enunciado,
+                error_usuario=user_answer
+            )
+            
+            # Save to DB
+            created_flashcards = []
+            for item in flashcards_data:
+                flashcard = Flashcard.objects.create(
+                    user=request.user,
+                    pregunta_relacionada=pregunta,
+                    frente=item.get('frente', ''),
+                    dorso=item.get('dorso', '')
+                )
+                created_flashcards.append({
+                    "id": flashcard.id,
+                    "frente": flashcard.frente,
+                    "dorso": flashcard.dorso
+                })
+                
+            return Response(created_flashcards, status=status.HTTP_201_CREATED)
+            
+        except Exception as e:
+            logger.error(f"Error generando flashcards: {str(e)}")
+            return Response({"error": "No se pudieron generar las flashcards"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+class GenerateWeaknessFlashcardsView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        # 1. Obtener debilidades del usuario
+        # Analizamos los últimos detalles de simulacros donde falló
+        fallos = DetalleSimulacro.objects.filter(
+            simulacro__usuario=request.user,
+            es_correcta=False
+        ).values('pregunta__area__nombre').annotate(
+            total_fallos=Count('id')
+        ).order_by('-total_fallos')[:5]
+
+        if not fallos:
+            return Response({"error": "No hay suficientes fallos registrados para analizar debilidades."}, status=status.HTTP_404_NOT_FOUND)
+
+        topics_data = [
+            {'area': f['pregunta__area__nombre'], 'errors': f['total_fallos']} 
+            for f in fallos
+        ]
+
+        # 2. Generar con Gemma
+        try:
+            flashcards_json = FlashcardService.generate_from_topics(topics_data)
+            
+            # 3. Guardar en Base de Datos
+            created_objects = []
+            for item in flashcards_json:
+                flashcard = Flashcard.objects.create(
+                    user=request.user,
+                    frente=item.get('frente', ''),
+                    dorso=item.get('dorso', '')
+                )
+                created_objects.append({
+                    "id": flashcard.id,
+                    "frente": flashcard.frente,
+                    "dorso": flashcard.dorso
+                })
+
+            return Response(created_objects, status=status.HTTP_201_CREATED)
+
+        except Exception as e:
+            logger.error(f"Error en GenerateWeaknessFlashcardsView: {str(e)}")
+            return Response({"error": "No se pudieron generar las flashcards de debilidades"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
