@@ -12,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .refuerzo-info h3 {
@@ -26,6 +27,20 @@
     font-size: 0.95rem;
 }
 
+.refuerzo-timestamp {
+    margin-top: 0.5rem !important;
+    font-size: 0.8rem !important;
+    color: rgba(167, 139, 250, 0.6) !important;
+    font-style: italic;
+}
+
+.refuerzo-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+
 .btn-generate-refuerzo {
     background: var(--primary);
     color: white;
@@ -37,6 +52,7 @@
     transition: all 0.3s ease;
     box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
     min-width: 250px;
+    font-size: 0.95rem;
 }
 
 .btn-generate-refuerzo:hover:not(:disabled) {
@@ -49,6 +65,33 @@
     opacity: 0.7;
     cursor: not-allowed;
     background: #6366f1;
+}
+
+.btn-regenerate {
+    background: transparent;
+    border: 1px solid rgba(139, 92, 246, 0.5);
+    box-shadow: none;
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+    min-width: auto;
+}
+
+.btn-regenerate:hover:not(:disabled) {
+    background: rgba(139, 92, 246, 0.15);
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+    border-color: var(--primary);
+}
+
+.offline-badge {
+    display: inline-block;
+    background: rgba(251, 191, 36, 0.2);
+    color: #fbbf24;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+    font-weight: 600;
+    vertical-align: middle;
 }
 
 .refuerzo-loading {
@@ -95,11 +138,51 @@
     font-weight: bold;
 }
 
+/* Overview toggle (details/summary) */
+.flashcards-overview {
+    margin-top: 1.5rem;
+    border: 1px solid rgba(139, 92, 246, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.overview-toggle {
+    cursor: pointer;
+    padding: 0.8rem 1.2rem;
+    background: rgba(139, 92, 246, 0.08);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    list-style: none;
+    user-select: none;
+}
+
+.overview-toggle::-webkit-details-marker {
+    display: none;
+}
+
+.overview-toggle::before {
+    content: '▶ ';
+    display: inline-block;
+    transition: transform 0.2s ease;
+    margin-right: 0.3rem;
+    font-size: 0.7rem;
+}
+
+.flashcards-overview[open] > .overview-toggle::before {
+    transform: rotate(90deg);
+}
+
+.overview-toggle:hover {
+    background: rgba(139, 92, 246, 0.15);
+    color: white;
+}
+
 .flashcards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1.5rem;
-    margin-bottom: 2rem;
+    padding: 1.5rem;
 }
 
 .mini-card {
@@ -171,4 +254,21 @@
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .refuerzo-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .refuerzo-actions {
+        align-items: stretch;
+    }
+
+    .btn-generate-refuerzo {
+        min-width: unset;
+        width: 100%;
+    }
 }

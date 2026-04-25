@@ -168,7 +168,7 @@ export default function Estadisticas() {
                     </div>
                 ))}
             </div>
-            
+
             {/* Nuevo: Refuerzo Personalizado con IA */}
             <RefuerzoIA />
 

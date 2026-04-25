@@ -1,0 +1,268 @@
+{
+  "nombre": "Matematicas",
+  "descripcion": "Evalúa la lógica y conocimientos matemáticos a través de componentes numéricos, geométricos y aleatorios.",
+  "contextos": [
+    {
+      "tipo": "grafico",
+      "contexto": "La siguiente gráfica muestra la relación entre el tiempo transcurrido (en horas) y la distancia recorrida (en kilómetros) por un vehículo que mantiene una velocidad constante.",
+      "archivo": "/imagenes/grafica_funcion_lineal_distancia1.png",
+      "preguntas": [
+        {
+          "enunciado": "De acuerdo con la gráfica, ¿cuál es la velocidad del vehículo y qué distancia habrá recorrido al cabo de 6 horas?",
+          "tipo": "razonamiento",
+          "dificultad": "alta",
+          "competencia": "resolver",
+          "opciones": [
+            { "texto": "Velocidad: 2 km/h; Distancia: 14 km", "es_correcta": true },
+            { "texto": "Velocidad: 4 km/h; Distancia: 24 km", "es_correcta": false },
+            { "texto": "Velocidad: 2 km/h; Distancia: 12 km", "es_correcta": false },
+            { "texto": "Velocidad: 8 km/h; Distancia: 50 km", "es_correcta": false }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "grafico",
+      "contexto": "Una institución educativa comparó los puntajes obtenidos en el área de Matemáticas por dos grupos diferentes de estudiantes (Grupo A y Grupo B). Los resultados se representaron en el siguiente diagrama de caja y bigotes.",
+      "archivo": "/imagenes/boxplot_comparativo_matematicas.png",
+      "preguntas": [
+        {
+          "enunciado": "Basándose en los diagramas de caja, ¿cuál de las siguientes afirmaciones sobre la dispersión y tendencia central de los puntajes es correcta?",
+          "tipo": "análisis",
+          "dificultad": "media",
+          "competencia": "argumentar",
+          "opciones": [
+            { "texto": "El 50% de los estudiantes del Grupo A obtuvo puntajes superiores a la mediana del Grupo B.", "es_correcta": true },
+            { "texto": "El rango de los puntajes es el mismo para ambos grupos.", "es_correcta": false },
+            { "texto": "El Grupo B tiene un mejor desempeño general que el Grupo A.", "es_correcta": false },
+            { "texto": "El puntaje máximo del Grupo B es mayor que el puntaje máximo del Grupo A.", "es_correcta": false }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "grafico",
+      "contexto": "En un mercado campesino, dos familias realizaron compras de bolsas de frutas de igual peso. La familia Pérez compró 2 bolsas de manzanas y 3 de peras por un total de $31.000. La familia Ruiz compró 3 bolsas de manzanas y 2 de peras por $29.000.",
+      "archivo": "/imagenes/sistema_ecuaciones_frutas.png",
+      "preguntas": [
+        {
+          "enunciado": "Si una tercera familia desea comprar exactamente una bolsa de manzanas y una bolsa de peras, ¿cuánto deberá pagar en total?",
+          "tipo": "resolución",
+          "dificultad": "media",
+          "competencia": "resolver",
+          "opciones": [
+            { "texto": "$10.000", "es_correcta": false },
+            { "texto": "$12.000", "es_correcta": true },
+            { "texto": "$15.000", "es_correcta": false },
+            { "texto": "$6.000", "es_correcta": false }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "grafico",
+      "contexto": "Un ingeniero topógrafo necesita medir la longitud de un sendero recto (lado x) que atraviesa un parque de forma triangular. Para ello, mide los otros dos lados del parque, obteniendo 100 metros y 150 metros, y el ángulo entre ellos, que es de 60°, como se muestra en la figura.",
+      "archivo": "/imagenes/parque_triangular_trigonometria.png",
+      "preguntas": [
+        {
+          "enunciado": "¿Cuál es la longitud aproximada del sendero x? (Considere que cos(60°) = 0,5 y utilice la Ley del Coseno: a² = b² + c² - 2bc · cos(A)).",
+          "tipo": "resolución",
+          "dificultad": "alta",
+          "competencia": "resolver",
+          "opciones": [
+            { "texto": "132,3 metros", "es_correcta": true },
+            { "texto": "180,2 metros", "es_correcta": false },
+            { "texto": "115,5 metros", "es_correcta": false },
+            { "texto": "150,0 metros", "es_correcta": false }
+          ]
+        }
+      ]
+    },
+    {
+  "tipo": "grafico",
+  "contexto": "La siguiente gráfica representa el volumen de agua $V(t)$ en un tanque de almacenamiento en función del tiempo $t$ durante un proceso de vaciado. La curva muestra cómo varía la cantidad de agua desde que se abre la válvula hasta que el tanque queda vacío.",
+  "archivo": "/imagenes/vaciado_tanque_derivada.png",
+  "preguntas": [
+    {
+      "enunciado": "Teniendo en cuenta que la razón de cambio instantánea del volumen respecto al tiempo ($dV/dt$) representa la velocidad de vaciado, ¿en cuál de los puntos señalados en la gráfica es mayor la velocidad a la que está saliendo el agua?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "argumentar",
+      "opciones": [
+        {
+          "texto": "En el punto A, porque la pendiente de la recta tangente a la curva es más pronunciada.",
+          "es_correcta": true
+        },
+        {
+          "texto": "En el punto C, porque es cuando el tanque tiene menos agua y sale con más calma.",
+          "es_correcta": false
+        },
+        {
+          "texto": "En el punto B, porque representa el promedio exacto de la velocidad de vaciado.",
+          "es_correcta": false
+        },
+        {
+          "texto": "La velocidad es constante en todos los puntos por tratarse de un mismo tanque.",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un centro de idiomas realizó una encuesta a 200 estudiantes sobre su preferencia entre dos idiomas (Inglés y Francés). Los resultados se organizaron en la siguiente tabla, clasificando a los estudiantes por su nivel de estudio (Básico o Avanzado).",
+  "archivo": "/imagenes/tabla_contingencia_idiomas.png",
+  "preguntas": [
+    {
+      "enunciado": "Si se selecciona al azar un estudiante que prefiere el Inglés, ¿cuál es la probabilidad de que este pertenezca al nivel Avanzado?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "resolver",
+      "opciones": [
+        {
+          "texto": "80 / 200 (40%)",
+          "es_correcta": false
+        },
+        {
+          "texto": "80 / 120 (66,6%)",
+          "es_correcta": true
+        },
+        {
+          "texto": "80 / 100 (80%)",
+          "es_correcta": false
+        },
+        {
+          "texto": "120 / 200 (60%)",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Una familia registra sus gastos mensuales en un gráfico circular para controlar sus finanzas. El presupuesto total mensual de la familia es de $2.400.000.",
+  "archivo": "/imagenes/grafico_circular_presupuesto.png",
+  "preguntas": [
+    {
+      "enunciado": "De acuerdo con el gráfico, ¿cuánto dinero destina la familia mensualmente al rubro de 'Alimentación' y cuánto lograrían ahorrar en un semestre si mantienen este mismo plan?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "resolver",
+      "opciones": [
+        {
+          "texto": "Alimentación: $960.000; Ahorro semestral: $1.440.000",
+          "es_correcta": true
+        },
+        {
+          "texto": "Alimentación: $400.000; Ahorro semestral: $2.400.000",
+          "es_correcta": false
+        },
+        {
+          "texto": "Alimentación: $960.000; Ahorro semestral: $240.000",
+          "es_correcta": false
+        },
+        {
+          "texto": "Alimentación: $1.200.000; Ahorro semestral: $1.200.000",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Una empresa de energía solar desea instalar un panel sobre el techo de una casa. El diseño técnico muestra que el soporte del panel debe formar un triángulo rectángulo con la base del techo. La base horizontal mide 12 metros y el ángulo de inclinación requerido es de 30°, como se observa en la figura.",
+  "archivo": "/imagenes/trigonometria_panel_solar.png",
+  "preguntas": [
+    {
+      "enunciado": "Para asegurar la estabilidad de la estructura, el técnico necesita conocer la longitud del panel solar (la hipotenusa L). ¿Cuál es el valor de L? (Considere que cos(30°) ≈ 0,86 y cos(60°) = 0,5).",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "resolver",
+      "opciones": [
+        {
+          "texto": "13,95 metros",
+          "es_correcta": true
+        },
+        {
+          "texto": "6,00 metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "24,00 metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "10,32 metros",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Una empresa de tecnología ha determinado que el costo de producción $C$ de un nuevo dispositivo depende de la cantidad de unidades fabricadas $x$, según la función: $C(x) = 0,5x^2 - 10x + 100$. El costo marginal se define como la derivada de la función de costo, $C'(x)$, y representa el costo adicional de producir una unidad más.",
+  "archivo": "/imagenes/grafica_costo_derivada.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es la expresión del costo marginal $C'(x)$ y en qué nivel de producción el costo marginal es igual a cero?",
+      "tipo": "resolución",
+      "dificultad": "alta",
+      "competencia": "resolver",
+      "opciones": [
+        {
+          "texto": "$C'(x) = x - 10$; el costo marginal es cero a las 10 unidades.",
+          "es_correcta": true
+        },
+        {
+          "texto": "$C'(x) = 0,5x - 10$; el costo marginal es cero a las 20 unidades.",
+          "es_correcta": false
+        },
+        {
+          "texto": "$C'(x) = x$; el costo marginal es cero a las 0 unidades.",
+          "es_correcta": false
+        },
+        {
+          "texto": "$C'(x) = x^2 - 10$; el costo marginal es cero a las 3,16 unidades.",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un laboratorio químico analiza la concentración de un reactivo $f(t)$ en función del tiempo $t$ (en horas). La función que describe el comportamiento está dada por $f(t) = (t^2 - 4) / (t - 2)$. El sistema presenta una inestabilidad justo a las 2 horas, como se muestra en la gráfica.",
+  "archivo": "/imagenes/limite_discontinuidad_evitable.png",
+  "preguntas": [
+    {
+      "enunciado": "De acuerdo con el análisis gráfico y algebraico, ¿cuál es el límite de la concentración $f(t)$ cuando el tiempo $t$ se aproxima a 2 horas?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "argumentar",
+      "opciones": [
+        {
+          "texto": "El límite es 4.",
+          "es_correcta": true
+        },
+        {
+          "texto": "El límite no existe porque la función está indefinida en t = 2.",
+          "es_correcta": false
+        },
+        {
+          "texto": "El límite es 2.",
+          "es_correcta": false
+        },
+        {
+          "texto": "El límite es infinito.",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+}
+  ]
+}

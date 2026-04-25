@@ -55,7 +55,7 @@ export default function ResultadosSimulacro() {
                 {/* Score Card */}
                 <div className="glass-card" style={{ textAlign: 'center', marginBottom: 'var(--spacing-xl)', padding: '2rem' }}>
                     <div style={{ fontSize: '4rem', fontWeight: 'bold', color: 'var(--primary)', marginBottom: '1rem' }}>
-                        {isOffline ? simulacro.puntaje : simulacro.puntaje_total} / 100
+                        {Math.round(isOffline ? simulacro.puntaje : simulacro.puntaje_total)} / 100
                     </div>
                     <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)' }}>
                         Respondiste correctamente {correctas} de {totalPreguntas} preguntas.
@@ -138,7 +138,7 @@ export default function ResultadosSimulacro() {
 
                                 {/* AI Explanation Tool */}
                                 {!isOffline && (
-                                    <ExplicacionIA 
+                                    <ExplicacionIA
                                         questionId={detalle.pregunta.id}
                                         userAnswer={selectedOption?.texto || 'No respondida'}
                                         correctAnswer={correctOption?.texto || 'N/A'}
