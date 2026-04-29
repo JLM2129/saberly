@@ -36,6 +36,8 @@ const MillionaireGame = () => {
             setQuestions(data);
             setGameState('PLAYING');
             setCurrentLevel(0);
+            setSelectedOption(null);
+            setIsChecking(false);
             setLifelines({
                 fiftyFifty: { used: false },
                 phone: { used: false },
@@ -144,25 +146,33 @@ const MillionaireGame = () => {
         const votes = [0, 0, 0, 0];
         let remaining = 100;
 
+        // Filter available options (not removed by 50:50)
+        const availableIndices = currentQ.opciones
+            .map((o, i) => i)
+            .filter(i => !removedOptions.includes(currentQ.opciones[i].id));
+
         // Give the correct one a majority
-        const mainPercentage = Math.floor(Math.random() * (75 - 45) + 45);
+        const mainPercentage = Math.floor(Math.random() * (75 - 55) + 55);
         votes[correctIdx] = mainPercentage;
         remaining -= mainPercentage;
 
-        // Distribute remaining
-        for (let i = 0; i < 3; i++) {
-            const idx = votes.findIndex((v, index) => v === 0 && index !== correctIdx);
-            if (idx === -1) break;
-            if (i === 2) {
+        // Distribute remaining ONLY among other available options
+        const otherAvailable = availableIndices.filter(i => i !== correctIdx);
+        
+        otherAvailable.forEach((idx, i) => {
+            if (i === otherAvailable.length - 1) {
                 votes[idx] = remaining;
             } else {
                 const p = Math.floor(Math.random() * remaining);
                 votes[idx] = p;
                 remaining -= p;
             }
-        }
+        });
 
-        const hintText = votes.map((v, i) => `${['A', 'B', 'C', 'D'][i]}: ${v}%`).join(' | ');
+        const hintText = availableIndices
+            .map(i => `${['A', 'B', 'C', 'D'][i]}: ${votes[i]}%`)
+            .join(' | ');
+            
         setHint(`Votación del público: ${hintText}`);
         setLifelines(prev => ({ ...prev, public: { used: true } }));
     };

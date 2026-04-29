@@ -6413,6 +6413,934 @@ export const OFF_QUESTIONS_DATA = {
     "contextos": [
       {
         "tipo": "texto",
+        "contexto": "Una institución educativa comparó los puntajes obtenidos en el área de Matemáticas por dos grupos diferentes de estudiantes (Grupo A y Grupo B). Los resultados se representaron en el siguiente diagrama de caja y bigotes.",
+        "archivo": "/media/imagenes/boxplot_comparativo_matematicas.png",
+        "preguntas": [
+          {
+            "enunciado": "Basándose en los diagramas de caja, ¿cuál de las siguientes afirmaciones sobre la dispersión y tendencia central de los puntajes es correcta?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "argumentar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "El 50% de los estudiantes del Grupo A obtuvo puntajes superiores a la mediana del Grupo B.",
+                "es_correcta": true
+              },
+              {
+                "texto": "El rango de los puntajes es el mismo para ambos grupos.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El Grupo B tiene un mejor desempeño general que el Grupo A.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El puntaje máximo del Grupo B es mayor que el puntaje máximo del Grupo A.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En un mercado campesino, dos familias realizaron compras de bolsas de frutas de igual peso. La familia Pérez compró 2 bolsas de manzanas y 3 de peras por un total de $31.000. La familia Ruiz compró 3 bolsas de manzanas y 2 de peras por $29.000.",
+        "archivo": "/media/imagenes/sistema_ecuaciones_frutas.png",
+        "preguntas": [
+          {
+            "enunciado": "Si una tercera familia desea comprar exactamente una bolsa de manzanas y una bolsa de peras, ¿cuánto deberá pagar en total?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "$10.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "$12.000",
+                "es_correcta": true
+              },
+              {
+                "texto": "$15.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "$6.000",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un ingeniero topógrafo necesita medir la longitud de un sendero recto (lado x) que atraviesa un parque de forma triangular. Para ello, mide los otros dos lados del parque, obteniendo 100 metros y 150 metros, y el ángulo entre ellos, que es de 60°, como se muestra en la figura.",
+        "archivo": "/media/imagenes/parque_triangular_trigonometria.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es la longitud aproximada del sendero x? (Considere que cos(60°) = 0,5 y utilice la Ley del Coseno: a² = b² + c² - 2bc · cos(A)).",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "132,3 metros",
+                "es_correcta": true
+              },
+              {
+                "texto": "180,2 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "115,5 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "150,0 metros",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La siguiente gráfica representa el volumen de agua $V(t)$ en un tanque de almacenamiento en función del tiempo $t$ durante un proceso de vaciado. La curva muestra cómo varía la cantidad de agua desde que se abre la válvula hasta que el tanque queda vacío.",
+        "archivo": "/media/imagenes/vaciado_tanque_derivada.png",
+        "preguntas": [
+          {
+            "enunciado": "Teniendo en cuenta que la razón de cambio instantánea del volumen respecto al tiempo ($dV/dt$) representa la velocidad de vaciado, ¿en cuál de los puntos señalados en la gráfica es mayor la velocidad a la que está saliendo el agua?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "argumentar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "En el punto A, porque la pendiente de la recta tangente a la curva es más pronunciada.",
+                "es_correcta": true
+              },
+              {
+                "texto": "En el punto C, porque es cuando el tanque tiene menos agua y sale con más calma.",
+                "es_correcta": false
+              },
+              {
+                "texto": "En el punto B, porque representa el promedio exacto de la velocidad de vaciado.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La velocidad es constante en todos los puntos por tratarse de un mismo tanque.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un centro de idiomas realizó una encuesta a 200 estudiantes sobre su preferencia entre dos idiomas (Inglés y Francés). Los resultados se organizaron en la siguiente tabla, clasificando a los estudiantes por su nivel de estudio (Básico o Avanzado).",
+        "archivo": "/media/imagenes/tabla_contingencia_idiomas.png",
+        "preguntas": [
+          {
+            "enunciado": "Si se selecciona al azar un estudiante que prefiere el Inglés, ¿cuál es la probabilidad de que este pertenezca al nivel Avanzado?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "80 / 200 (40%)",
+                "es_correcta": false
+              },
+              {
+                "texto": "80 / 120 (66,6%)",
+                "es_correcta": true
+              },
+              {
+                "texto": "80 / 100 (80%)",
+                "es_correcta": false
+              },
+              {
+                "texto": "120 / 200 (60%)",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Una familia registra sus gastos mensuales en un gráfico circular para controlar sus finanzas. El presupuesto total mensual de la familia es de $2.400.000.",
+        "archivo": "/media/imagenes/grafico_circular_presupuesto.png",
+        "preguntas": [
+          {
+            "enunciado": "De acuerdo con el gráfico, ¿cuánto dinero destina la familia mensualmente al rubro de 'Alimentación' y cuánto lograrían ahorrar en un semestre si mantienen este mismo plan?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Alimentación: $960.000; Ahorro semestral: $1.440.000",
+                "es_correcta": true
+              },
+              {
+                "texto": "Alimentación: $400.000; Ahorro semestral: $2.400.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "Alimentación: $960.000; Ahorro semestral: $240.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "Alimentación: $1.200.000; Ahorro semestral: $1.200.000",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Una empresa de energía solar desea instalar un panel sobre el techo de una casa. El diseño técnico muestra que el soporte del panel debe formar un triángulo rectángulo con la base del techo. La base horizontal mide 12 metros y el ángulo de inclinación requerido es de 30°, como se observa en la figura.",
+        "archivo": "/media/imagenes/trigonometria_panel_solar.png",
+        "preguntas": [
+          {
+            "enunciado": "Para asegurar la estabilidad de la estructura, el técnico necesita conocer la longitud del panel solar (la hipotenusa L). ¿Cuál es el valor de L? (Considere que cos(30°) ≈ 0,86 y cos(60°) = 0,5).",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "13,95 metros",
+                "es_correcta": true
+              },
+              {
+                "texto": "6,00 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "24,00 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "10,32 metros",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Una empresa de tecnología ha determinado que el costo de producción $C$ de un nuevo dispositivo depende de la cantidad de unidades fabricadas $x$, según la función: $C(x) = 0,5x^2 - 10x + 100$. El costo marginal se define como la derivada de la función de costo, $C'(x)$, y representa el costo adicional de producir una unidad más.",
+        "archivo": "/media/imagenes/grafica_costo_derivada.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es la expresión del costo marginal $C'(x)$ y en qué nivel de producción el costo marginal es igual a cero?",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "$C'(x) = x - 10$; el costo marginal es cero a las 10 unidades.",
+                "es_correcta": true
+              },
+              {
+                "texto": "$C'(x) = 0,5x - 10$; el costo marginal es cero a las 20 unidades.",
+                "es_correcta": false
+              },
+              {
+                "texto": "$C'(x) = x$; el costo marginal es cero a las 0 unidades.",
+                "es_correcta": false
+              },
+              {
+                "texto": "$C'(x) = x^2 - 10$; el costo marginal es cero a las 3,16 unidades.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un laboratorio químico analiza la concentración de un reactivo $f(t)$ en función del tiempo $t$ (en horas). La función que describe el comportamiento está dada por $f(t) = (t^2 - 4) / (t - 2)$. El sistema presenta una inestabilidad justo a las 2 horas, como se muestra en la gráfica.",
+        "archivo": "/media/imagenes/limite_discontinuidad_evitable.png",
+        "preguntas": [
+          {
+            "enunciado": "De acuerdo con el análisis gráfico y algebraico, ¿cuál es el límite de la concentración $f(t)$ cuando el tiempo $t$ se aproxima a 2 horas?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "argumentar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "El límite es 4.",
+                "es_correcta": true
+              },
+              {
+                "texto": "El límite no existe porque la función está indefinida en t = 2.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El límite es 2.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El límite es infinito.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un diseñador gráfico está creando un logotipo que incluye una sección circular (un sector). La figura muestra un círculo con un radio de 15 cm y un ángulo central sombreado de 120°, que representa la parte que será de color azul en el diseño final.",
+        "archivo": "/media/imagenes/sector_circular_area.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es el área aproximada de la sección sombreada en el logotipo? (Utilice la fórmula del área del sector: $A = \\frac{\\theta}{360} \\cdot \\pi \\cdot r^2$ y considere $\\pi \\approx 3,14$).",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "235,5 cm²",
+                "es_correcta": true
+              },
+              {
+                "texto": "706,5 cm²",
+                "es_correcta": false
+              },
+              {
+                "texto": "31,4 cm²",
+                "es_correcta": false
+              },
+              {
+                "texto": "157,0 cm²",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un empleado analiza sus opciones para llegar al trabajo. Puede usar 'Transporte Público' o 'Vehículo Privado'. Si usa transporte público, la probabilidad de llegar a tiempo es 0,7. Si usa vehículo privado, la probabilidad de llegar a tiempo aumenta a 0,9. El empleado elige su medio de transporte lanzando una moneda (50% de probabilidad para cada uno).",
+        "archivo": "/media/imagenes/diagrama_arbol_probabilidad.png",
+        "preguntas": [
+          {
+            "enunciado": "Si se sabe que el empleado llegó tarde a su trabajo, ¿cuál es la probabilidad de que haya utilizado el Transporte Público? (Utilice el Teorema de Bayes o analice las ramas del diagrama).",
+            "tipo": "análisis",
+            "dificultad": "alta",
+            "competencia": "argumentar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "0,75 (75%)",
+                "es_correcta": true
+              },
+              {
+                "texto": "0,30 (30%)",
+                "es_correcta": false
+              },
+              {
+                "texto": "0,15 (15%)",
+                "es_correcta": false
+              },
+              {
+                "texto": "0,50 (50%)",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un fabricante de cajas de cartón necesita diseñar un empaque con forma de prisma rectangular (paralelepípedo). Las dimensiones de la caja son: largo = 10 cm, ancho = 5 cm y alto = 8 cm. El costo del material depende del área total de la superficie exterior de la caja.",
+        "archivo": "/media/imagenes/area_superficial_prisma.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es el área total de la superficie exterior de la caja de cartón?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "340 cm²",
+                "es_correcta": true
+              },
+              {
+                "texto": "400 cm²",
+                "es_correcta": false
+              },
+              {
+                "texto": "170 cm²",
+                "es_correcta": false
+              },
+              {
+                "texto": "230 cm²",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En un puesto de frutas, dos clientes realizan compras diferentes. El cliente A compra 3 manzanas y 2 peras por un total de $11.000. El cliente B compra 2 manzanas y 4 peras por un total de $10.000. El sistema de ecuaciones que representa esta situación se muestra en la gráfica adjunta.",
+        "archivo": "/media/imagenes/sistema_ecuaciones_frutas1.png",
+        "preguntas": [
+          {
+            "enunciado": "Utilizando el método de eliminación o analizando el punto de intersección en la gráfica, ¿cuál es el precio individual de una manzana ($x$) y de una pera ($y$)?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Manzana: $3.000; Pera: $1.000",
+                "es_correcta": true
+              },
+              {
+                "texto": "Manzana: $2.500; Pera: $1.500",
+                "es_correcta": false
+              },
+              {
+                "texto": "Manzana: $3.500; Pera: $500",
+                "es_correcta": false
+              },
+              {
+                "texto": "Manzana: $2.000; Pera: $2.000",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un ingeniero de sonido analiza una señal acústica representada por una función trigonométrica. En la pantalla del osciloscopio se observa la gráfica de la función básica $f(x) = \text{sen}(x)$ y una nueva señal modificada $g(x) = 2 \\cdot \text{sen}(x)$, como se muestra en la ilustración.",
+        "archivo": "/media/imagenes/amplitud_trigonometrica.png",
+        "preguntas": [
+          {
+            "enunciado": "Al comparar la función original $f(x)$ con la función modificada $g(x)$, ¿cuál fue el cambio principal que sufrió la señal en términos de su amplitud y su periodo?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "argumentar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "La amplitud se duplicó a 2, pero el periodo se mantuvo igual ($2\\pi$).",
+                "es_correcta": true
+              },
+              {
+                "texto": "La amplitud se mantuvo en 1, pero el periodo se duplicó a $4\\pi$.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Tanto la amplitud como el periodo se duplicaron.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La amplitud se duplicó, pero el periodo se redujo a la mitad ($\\pi$).",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un biólogo estudia el crecimiento de una población de bacterias que se duplica cada hora. La relación entre el tiempo (t) en horas y el número de bacterias (N) está dada por la función exponencial $N = 100 \\cdot 2^t$. Para facilitar el análisis, el biólogo utiliza la función logarítmica inversa para hallar el tiempo en función del número de bacterias.",
+        "archivo": "/media/imagenes/crecimiento_logaritmico_bacterias.png",
+        "preguntas": [
+          {
+            "enunciado": "Si el biólogo desea expresar el tiempo ($t$) en términos del número de bacterias ($N$), ¿cuál de las siguientes expresiones logarítmicas es la correcta partiendo de $N = 100 \\cdot 2^t$?",
+            "tipo": "análisis",
+            "dificultad": "alta",
+            "competencia": "argumentar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "$t = \\log_2(\\frac{N}{100})$",
+                "es_correcta": true
+              },
+              {
+                "texto": "$t = \\log_{100}(\\frac{N}{2})$",
+                "es_correcta": false
+              },
+              {
+                "texto": "$t = \\frac{\\log_2(N)}{100}$",
+                "es_correcta": false
+              },
+              {
+                "texto": "$t = 100 \\cdot \\log_2(N)$",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un colegio compara los resultados obtenidos por dos grupos (Grado A y Grado B) en una prueba de matemáticas de 0 a 100 puntos. Los resultados se resumen en los diagramas de caja y bigotes que se muestran a continuación.",
+        "archivo": "/media/imagenes/diagrama_caja_bigotes_comparativo.png",
+        "preguntas": [
+          {
+            "enunciado": "A partir de la información de los diagramas, ¿cuál de las siguientes afirmaciones es CIERTA respecto a la mediana y la dispersión de los datos de ambos grupos?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "argumentar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "La mediana del Grado B es mayor que la del Grado A, y el Grado B presenta menor dispersión en el 50% central de sus datos.",
+                "es_correcta": true
+              },
+              {
+                "texto": "El Grado A tiene una mediana superior, pero sus datos están más dispersos.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ambos grupos tienen el mismo rango intercuartílico (RIC).",
+                "es_correcta": false
+              },
+              {
+                "texto": "El 75% de los estudiantes del Grado A obtuvo una nota superior a la mediana del Grado B.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un arquitecto diseña una ventana con forma elíptica centrada en el origen de un plano cartesiano. La elipse es horizontal y tiene sus vértices en los puntos (5, 0) y (-5, 0), mientras que sus focos se encuentran en los puntos (3, 0) y (-3, 0).",
+        "archivo": "/media/imagenes/elipse_geometria_analitica.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es la ecuación canónica que representa la forma de la ventana diseñada por el arquitecto?",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "x²/25 + y²/16 = 1",
+                "es_correcta": true
+              },
+              {
+                "texto": "x²/25 + y²/9 = 1",
+                "es_correcta": false
+              },
+              {
+                "texto": "x²/16 + y²/25 = 1",
+                "es_correcta": false
+              },
+              {
+                "texto": "x²/5 + y²/4 = 1",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un programa de ahorro incentiva a los usuarios a aumentar su aporte mensualmente. En el primer mes, el usuario ahorra $50.000. Cada mes siguiente, aumenta su ahorro en una cantidad fija de $15.000 respecto al mes anterior, formando una sucesión aritmética.",
+        "archivo": "/media/imagenes/image_54.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es la expresión general que permite calcular el ahorro del mes 'n' ($a_n$) y cuánto dinero ahorrará el usuario exactamente en el mes 12?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "a_n = 50.000 + (n - 1)15.000; Mes 12 = $215.000",
+                "es_correcta": true
+              },
+              {
+                "texto": "a_n = 50.000 + 15.000n; Mes 12 = $230.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "a_n = 15.000 + (n - 1)50.000; Mes 12 = $565.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "a_n = 50.000n + 15.000; Mes 12 = $615.000",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un topógrafo necesita medir la altura de un edificio. Para ello, utiliza un poste de 2 metros de altura colocado verticalmente. En un momento del día, el edificio proyecta una sombra de 15 metros, mientras que el poste proyecta una sombra de 3 metros. Las visuales de los rayos del sol son paralelas, formando triángulos semejantes.",
+        "archivo": "/media/imagenes/teorema_tales_edificio.png",
+        "preguntas": [
+          {
+            "enunciado": "Aplicando el Teorema de Tales sobre la semejanza de triángulos, ¿cuál es la altura (h) del edificio?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "10 metros",
+                "es_correcta": true
+              },
+              {
+                "texto": "22.5 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "7.5 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "30 metros",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En una tienda de tecnología, la suma de los precios de un teclado (x) y un mouse (y) es de $120.000. Si el precio del teclado es el triple del precio del mouse, se puede plantear un sistema de ecuaciones para hallar el valor de cada artículo.",
+        "archivo": "/media/imagenes/sistema_ecuaciones_tecnologia.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál de los siguientes sistemas de ecuaciones representa correctamente la situación y cuál es el precio del teclado?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "{ x + y = 120.000; x = 3y }; Teclado = $90.000",
+                "es_correcta": true
+              },
+              {
+                "texto": "{ x + y = 120.000; y = 3x }; Teclado = $30.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "{ x - y = 120.000; x = 3y }; Teclado = $90.000",
+                "es_correcta": false
+              },
+              {
+                "texto": "{ x + y = 120.000; x = y/3 }; Teclado = $40.000",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La figura muestra una placa metálica de forma cuadrada con un lado de 10 cm. Dentro del cuadrado se ha inscrito un círculo exacto, como se ilustra.",
+        "archivo": "/media/imagenes/image_60.png",
+        "preguntas": [
+          {
+            "enunciado": "Si la zona sombreada corresponde a la parte de la placa metálica que queda fuera del círculo, ¿cuál es el valor exacto del área sombreada en cm²?",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "$100 - 25\\pi$",
+                "es_correcta": true
+              },
+              {
+                "texto": "$100 - 100\\pi$",
+                "es_correcta": false
+              },
+              {
+                "texto": "$25\\pi - 100$",
+                "es_correcta": false
+              },
+              {
+                "texto": "$100 - 50\\pi$",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un agricultor tiene 40 metros de malla para encerrar un terreno rectangular aprovechando un muro de piedra ya existente, por lo que solo necesita cercar tres lados del rectángulo.",
+        "archivo": "/media/imagenes/optimizacion_area_maxima.png",
+        "preguntas": [
+          {
+            "enunciado": "Si 'x' representa el ancho de los dos lados laterales perpendiculares al muro, ¿cuál es el valor de 'x' que permite obtener el área máxima encerrada?",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "10 metros",
+                "es_correcta": true
+              },
+              {
+                "texto": "20 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "5 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "13.3 metros",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un salvavidas observa a un nadador en el mar desde una torre de vigilancia que tiene una altura de 12 metros sobre el nivel del mar. El ángulo de depresión desde la vista del salvavidas hasta el nadador es de 30°.",
+        "archivo": "/media/imagenes/trigonometria_salvavidas.png",
+        "preguntas": [
+          {
+            "enunciado": "Considerando que el ángulo de depresión es igual al ángulo de elevación desde el nadador hacia la torre, ¿a qué distancia horizontal (d) se encuentra el nadador de la base de la torre?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "12√3 metros (aprox. 20.7 m)",
+                "es_correcta": true
+              },
+              {
+                "texto": "12 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "24 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "6√3 metros (aprox. 10.4 m)",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "De una baraja inglesa estándar de 52 cartas (compuesta por 4 palos: corazones, diamantes, tréboles y picas; cada uno con 13 cartas), se extrae una sola carta al azar.",
+        "archivo": "/media/imagenes/probabilidad_baraja_inglesa.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es la probabilidad de que la carta extraída sea un 'As' o una carta del palo de 'Corazones'?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "4/13",
+                "es_correcta": true
+              },
+              {
+                "texto": "17/52",
+                "es_correcta": false
+              },
+              {
+                "texto": "1/13",
+                "es_correcta": false
+              },
+              {
+                "texto": "16/52",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un estudiante debe simplificar la siguiente expresión algebraica para encontrar el área de la base de un contenedor rectangular, donde el volumen está dado por el numerador y la altura por el denominador.",
+        "archivo": "/media/imagenes/expresion_algebraica_simplificar.png",
+        "preguntas": [
+          {
+            "enunciado": "Al simplificar la expresión racional $\\frac{x^2 - 9}{x^2 + 5x + 6}$ para valores de $x$ diferentes de -2 y -3, ¿cuál es el resultado obtenido?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "\\frac{x - 3}{x + 2}",
+                "es_correcta": true
+              },
+              {
+                "texto": "\\frac{x + 3}{x + 2}",
+                "es_correcta": false
+              },
+              {
+                "texto": "\\frac{x - 3}{x - 2}",
+                "es_correcta": false
+              },
+              {
+                "texto": "x - 3",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Una partícula se desplaza a lo largo de una línea recta y su posición en metros, en función del tiempo $t$ (en segundos), está dada por la ecuación $s(t) = t^3 - 6t^2 + 9t$.",
+        "archivo": "/media/imagenes/image_65.png",
+        "preguntas": [
+          {
+            "enunciado": "¿En qué instante de tiempo $t$ (en segundos) la velocidad de la partícula es igual a cero?",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "$t = 1$ s y $t = 3$ s",
+                "es_correcta": true
+              },
+              {
+                "texto": "$t = 0$ s y $t = 2$ s",
+                "es_correcta": false
+              },
+              {
+                "texto": "$t = 3$ s únicamente",
+                "es_correcta": false
+              },
+              {
+                "texto": "$t = 2$ s y $t = 4$ s",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Una empresa de mensajería registró el peso en kilogramos de 10 paquetes enviados en una mañana: {5, 8, 5, 12, 10, 8, 15, 5, 10, 2}.",
+        "archivo": "/media/imagenes/estadistica_pesos_paquetes.png",
+        "preguntas": [
+          {
+            "enunciado": "Al organizar los datos y calcular las medidas de tendencia central, ¿cuál es el valor de la mediana de los pesos de los paquetes?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "8 kg",
+                "es_correcta": true
+              },
+              {
+                "texto": "5 kg",
+                "es_correcta": false
+              },
+              {
+                "texto": "8.5 kg",
+                "es_correcta": false
+              },
+              {
+                "texto": "10 kg",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un depósito de granos tiene forma de cono circular recto. Se sabe que la generatriz (la distancia desde la cúspide hasta el borde de la base) mide 10 metros y forma un ángulo de 60° con el radio de la base.",
+        "archivo": "/media/imagenes/volumen_cono_trigonometria.png",
+        "preguntas": [
+          {
+            "enunciado": "Utilizando las razones trigonométricas para hallar el radio (r) y la altura (h), ¿cuál es el volumen aproximado del depósito? (Considere $V = \\frac{1}{3}\\pi r^2 h$)",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "\\frac{125\\sqrt{3}}{3}\\pi \\text{ m}^3",
+                "es_correcta": true
+              },
+              {
+                "texto": "125\\pi \\text{ m}^3",
+                "es_correcta": false
+              },
+              {
+                "texto": "\\frac{250\\sqrt{3}}{3}\\pi \\text{ m}^3",
+                "es_correcta": false
+              },
+              {
+                "texto": "50\\sqrt{3}\\pi \\text{ m}^3",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se desea calcular el área exacta de la región sombreada limitada por la función cuadrática $f(x) = -x^2 + 4x$ y el eje horizontal ($x$) en el intervalo donde la función es positiva.",
+        "archivo": "/media/imagenes/calculo_integral_area.png",
+        "preguntas": [
+          {
+            "enunciado": "Utilizando la integral definida $\\int_{0}^{4} (-x^2 + 4x) dx$ para hallar el área bajo la parábola, ¿cuál es el valor resultante en unidades cuadradas?",
+            "tipo": "resolución",
+            "dificultad": "muy alta",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "32/3 unidades²",
+                "es_correcta": true
+              },
+              {
+                "texto": "16 unidades²",
+                "es_correcta": false
+              },
+              {
+                "texto": "32 unidades²",
+                "es_correcta": false
+              },
+              {
+                "texto": "64/3 unidades²",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
         "contexto": "Los números primos son esenciales en criptografía moderna.",
         "archivo": null,
         "preguntas": [
@@ -7217,6 +8145,31 @@ export const OFF_QUESTIONS_DATA = {
         "contexto": "La siguiente gráfica muestra la relación entre el tiempo transcurrido (en horas) y la distancia recorrida (en kilómetros) por un vehículo que mantiene una velocidad constante.",
         "archivo": "/media/imagenes/grafica_funcion_lineal_distancia.png",
         "preguntas": [
+          {
+            "enunciado": "De acuerdo con la gráfica, ¿cuál es la velocidad del vehículo y qué distancia habrá recorrido al cabo de 6 horas?",
+            "tipo": "razonamiento",
+            "dificultad": "alta",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Velocidad: 2 km/h; Distancia: 14 km",
+                "es_correcta": true
+              },
+              {
+                "texto": "Velocidad: 4 km/h; Distancia: 24 km",
+                "es_correcta": false
+              },
+              {
+                "texto": "Velocidad: 2 km/h; Distancia: 12 km",
+                "es_correcta": false
+              },
+              {
+                "texto": "Velocidad: 8 km/h; Distancia: 50 km",
+                "es_correcta": false
+              }
+            ]
+          },
           {
             "enunciado": "De acuerdo con la gráfica, ¿cuál es la velocidad del vehículo (la pendiente de la recta) y qué distancia habrá recorrido al cabo de 6 horas?",
             "tipo": "razonamiento",

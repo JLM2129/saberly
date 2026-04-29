@@ -15,12 +15,7 @@ class Command(BaseCommand):
         base_dir = Path(__file__).resolve().parent.parent.parent.parent.parent
         folder_path = base_dir / "preguntas"
 
-        self.stdout.write("Limpiando base de datos antes de importar...")
-        OpcionRespuesta.objects.all().delete()
-        Pregunta.objects.all().delete()
-        Contexto.objects.all().delete()
-        SubArea.objects.all().delete()
-        Area.objects.all().delete()
+        self.stdout.write("Buscando nuevas preguntas en la carpeta preguntas/...")
 
         total_contextos = 0
         total_preguntas = 0

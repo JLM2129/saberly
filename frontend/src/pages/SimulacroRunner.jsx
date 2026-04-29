@@ -140,13 +140,48 @@ export default function SimulacroRunner() {
 
     return (
         <div style={{
-            paddingTop: '100px',
+            paddingTop: '40px', // Reducido porque el Navbar está oculto
             minHeight: '100vh',
             background: 'var(--bg-app)',
             color: 'var(--text-main)',
             paddingBottom: '50px'
         }}>
             <div style={{ maxWidth: '850px', margin: '0 auto', padding: '0 var(--spacing-md)' }}>
+
+                <div style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'flex-start' }}>
+                    <button 
+                        onClick={() => {
+                            if(window.confirm('¿Seguro que quieres abandonar el simulacro? Tu progreso no se guardará.')) {
+                                navigate('/simulacros');
+                            }
+                        }}
+                        style={{
+                            background: 'rgba(255, 255, 255, 0.05)',
+                            border: '1px solid rgba(255, 255, 255, 0.1)',
+                            color: 'var(--text-muted)',
+                            cursor: 'pointer',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '8px',
+                            fontWeight: '600',
+                            padding: '8px 16px',
+                            borderRadius: '8px',
+                            transition: 'all 0.2s ease'
+                        }}
+                        onMouseOver={(e) => {
+                            e.currentTarget.style.background = 'rgba(239, 68, 68, 0.1)';
+                            e.currentTarget.style.color = '#ef4444';
+                            e.currentTarget.style.borderColor = 'rgba(239, 68, 68, 0.3)';
+                        }}
+                        onMouseOut={(e) => {
+                            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                            e.currentTarget.style.color = 'var(--text-muted)';
+                            e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                        }}
+                    >
+                        <span>←</span> Abandonar Simulacro
+                    </button>
+                </div>
 
                 {/* Dashboard del Examen */}
                 <div className="glass-card" style={{ padding: '1.2rem', marginBottom: '1.5rem', borderLeft: '5px solid var(--primary)' }}>

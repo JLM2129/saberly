@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, Link, useNavigate } from 'react-router-dom';
+import { NavLink, Link, useNavigate, useLocation } from 'react-router-dom';
 import { checkBackendConnection } from '../services/api';
 import { isAuthenticated, logout } from '../services/auth';
 import { useMode } from '../context/ModeContext';
@@ -62,6 +62,13 @@ export default function Navbar() {
         setUser(null);
         navigate('/login');
     };
+
+    const location = useLocation();
+    const isSimulacroRunner = location.pathname.match(/^\/simulacro\/[^\/]+$/);
+
+    if (isSimulacroRunner) {
+        return null;
+    }
 
     return (
         <header style={{
