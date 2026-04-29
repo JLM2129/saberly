@@ -140,6 +140,7 @@ export default function ResultadosSimulacro() {
                                 {!isOffline && (
                                     <ExplicacionIA
                                         questionId={detalle.pregunta.id}
+                                        questionText={detalle.pregunta.enunciado}
                                         userAnswer={selectedOption?.texto || 'No respondida'}
                                         correctAnswer={correctOption?.texto || 'N/A'}
                                     />

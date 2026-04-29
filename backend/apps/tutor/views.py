@@ -153,3 +153,65 @@ class GenerateWeaknessFlashcardsView(APIView):
         except Exception as e:
             logger.error(f"Error en GenerateWeaknessFlashcardsView: {str(e)}")
             return Response({"error": "No se pudieron generar las flashcards de debilidades"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+class InteraccionTutorView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        action = request.data.get('action') # diagnosticar, pista, ejemplo, explicacion, perfil, flashcard, personalizacion
+        
+        tutor_ai = TutorAI.get_instance()
+        
+        try:
+            if action == 'diagnosticar':
+                pregunta = request.data.get('pregunta')
+                correcta = request.data.get('respuesta_correcta')
+                estudiante = request.data.get('respuesta_estudiante')
+                res = tutor_ai.diagnosticar_error(pregunta, correcta, estudiante)
+                return Response(res)
+                
+            elif action == 'pista':
+                tipo_error = request.data.get('tipo_error')
+                pregunta = request.data.get('pregunta')
+                res = tutor_ai.generar_pista(tipo_error, pregunta)
+                return Response({"pista": res})
+                
+            elif action == 'ejemplo':
+                tipo_error = request.data.get('tipo_error')
+                pregunta = request.data.get('pregunta')
+                res = tutor_ai.generar_ejemplo(tipo_error, pregunta)
+                return Response({"ejemplo": res})
+                
+            elif action == 'explicacion':
+                tipo_error = request.data.get('tipo_error')
+                pregunta = request.data.get('pregunta')
+                estudiante = request.data.get('respuesta_estudiante')
+                correcta = request.data.get('respuesta_correcta')
+                res = tutor_ai.generar_explicacion_final(tipo_error, pregunta, estudiante, correcta)
+                return Response({"explicacion": res})
+                
+            elif action == 'perfil':
+                historial = request.data.get('historial_errores')
+                res = tutor_ai.generar_perfil_cognitivo(historial)
+                return Response(res)
+                
+            elif action == 'flashcard':
+                tipo_error = request.data.get('tipo_error')
+                tema = request.data.get('tema')
+                res = tutor_ai.generar_flashcard_inteligente(tipo_error, tema)
+                return Response(res)
+                
+            elif action == 'personalizacion':
+                perfil = request.data.get('perfil_cognitivo')
+                tipo_error = request.data.get('tipo_error')
+                pregunta = request.data.get('pregunta')
+                res = tutor_ai.intervencion_personalizada(perfil, tipo_error, pregunta)
+                return Response({"intervencion": res})
+                
+            else:
+                return Response({"error": "Acción no válida"}, status=status.HTTP_400_BAD_REQUEST)
+                
+        except Exception as e:
+            logger.error(f"Error en InteraccionTutorView ({action}): {str(e)}")
+            return Response({"error": "Hubo un problema con la IA del tutor"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
