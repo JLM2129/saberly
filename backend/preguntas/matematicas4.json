@@ -1,0 +1,936 @@
+{
+  "nombre": "Matematicas",
+  "descripcion": "Evalúa la lógica y conocimientos matemáticos a través de componentes numéricos, geométricos y aleatorios.",
+  "contextos": [
+    {
+  "tipo": "grafico",
+  "contexto": "En un laboratorio de química, se tiene un frasco de Erlenmeyer (que puede modelarse como un cono circular recto para efectos de volumen) lleno hasta la mitad de su altura con una solución de sulfato de cobre. El frasco tiene una altura total de 10 cm y un radio de base de 3.16 cm.",
+  "archivo": "watermarked_img_568491806777946577.png",
+  "preguntas": [
+    {
+      "enunciado": "Si la densidad de la solución es de 1.9 g/cm³ y el volumen total del frasco es de aproximadamente 104.7 cm³, ¿cuál es la masa aproximada de la solución contenida si esta solo ocupa la octava parte del volumen total del cono (debido a que la altura del líquido es la mitad de la altura total)?",
+      "tipo": "resolución",
+      "dificultad": "muy alta",
+      "competencia": "uso del conocimiento científico",
+      "opciones": [
+        {
+          "texto": "24.86 g",
+          "es_correcta": true
+        },
+        {
+          "texto": "198.93 g",
+          "es_correcta": false
+        },
+        {
+          "texto": "99.46 g",
+          "es_correcta": false
+        },
+        {
+          "texto": "13.08 g",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "En un sistema de navegación por satélite, la órbita de un objeto alrededor de un punto central se describe mediante la ecuación canónica de una elipse: $\\frac{x^2}{25} + \\frac{y^2}{9} = 1$.",
+  "archivo": "geometria_analitica_elipse.png",
+  "preguntas": [
+    {
+      "enunciado": "A partir de la ecuación dada, ¿cuál es la distancia focal (distancia entre los dos focos) de esta órbita elíptica?",
+      "tipo": "resolución",
+      "dificultad": "muy alta",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "8 unidades",
+          "es_correcta": true
+        },
+        {
+          "texto": "4 unidades",
+          "es_correcta": false
+        },
+        {
+          "texto": "16 unidades",
+          "es_correcta": false
+        },
+        {
+          "texto": "10 unidades",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un arquitecto diseña una plaza circular y decide triplicar el radio del diseño original para aumentar la capacidad de personas.",
+  "archivo": "proporcionalidad_areas_circulo.png",
+  "preguntas": [
+    {
+      "enunciado": "Si el radio del círculo original se triplica (se multiplica por 3), ¿cuántas veces aumenta el área de la plaza con respecto al diseño inicial?",
+      "tipo": "análisis",
+      "dificultad": "media-alta",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "9 veces",
+          "es_correcta": true
+        },
+        {
+          "texto": "3 veces",
+          "es_correcta": false
+        },
+        {
+          "texto": "6 veces",
+          "es_correcta": false
+        },
+        {
+          "texto": "27 veces",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Una empresa de logística analiza sus retrasos. El 70% de sus camiones usa la Ruta A y el 30% la Ruta B. La probabilidad de retraso en la Ruta A es del 20%, mientras que en la Ruta B es del 10%.",
+  "archivo": "watermarked_img_1450885484950461166.png",
+  "preguntas": [
+    {
+      "enunciado": "Si se sabe que un camión llegó con retraso, ¿cuál es la probabilidad de que haya seguido la Ruta A?",
+      "tipo": "resolución",
+      "dificultad": "muy alta",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "14/17 (aprox. 82.3%)",
+          "es_correcta": true
+        },
+        {
+          "texto": "70%",
+          "es_correcta": false
+        },
+        {
+          "texto": "20%",
+          "es_correcta": false
+        },
+        {
+          "texto": "14/100 (14%)",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se definen dos funciones: una exponencial $f(x) = e^{0.5x}$ y una logarítmica $g(y) = \\ln(y)$. Se desea realizar la composición $(g \\circ f)(x)$, lo que implica evaluar $g(f(x))$.",
+  "archivo": "watermarked_img_10924695195758540317.png",
+  "preguntas": [
+    {
+      "enunciado": "Al simplificar la expresión de la función compuesta $(g \\circ f)(x)$, ¿cuál es la función resultante y cuál es su dominio en el conjunto de los números reales?",
+      "tipo": "análisis",
+      "dificultad": "alta",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "Resultante: $0.5x$; Dominio: Todos los reales ($\\mathbb{R}$)",
+          "es_correcta": true
+        },
+        {
+          "texto": "Resultante: $e^{0.5x}$; Dominio: $x > 0$",
+          "es_correcta": false
+        },
+        {
+          "texto": "Resultante: $0.5x$; Dominio: $x > 0$",
+          "es_correcta": false
+        },
+        {
+          "texto": "Resultante: $\\ln(0.5x)$; Dominio: $x \\neq 0$",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un colegio compara los resultados obtenidos por dos grupos (A y B) en una prueba de matemáticas de 0 a 100 puntos. Los resultados se resumen en el siguiente diagrama de caja.",
+  "archivo": "estadistica_boxplot_comparativo.png",
+  "preguntas": [
+    {
+      "enunciado": "Basándose en el diagrama, ¿cuál de las siguientes afirmaciones es matemáticamente correcta sobre la dispersión y tendencia central de los grupos?",
+      "tipo": "análisis",
+      "dificultad": "media-alta",
+      "competencia": "interpretación de datos",
+      "opciones": [
+        {
+          "texto": "El 50% superior del Grupo B tiene puntajes más altos que el 50% superior del Grupo A.",
+          "es_correcta": true
+        },
+        {
+          "texto": "La mediana del Grupo A es mayor que la mediana del Grupo B.",
+          "es_correcta": false
+        },
+        {
+          "texto": "El Grupo A tiene un rango intercuartílico menor que el Grupo B.",
+          "es_correcta": false
+        },
+        {
+          "texto": "Ambos grupos tienen exactamente el mismo puntaje máximo.",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "En el círculo unitario, se representa un ángulo $\\theta$ en el segundo cuadrante. Se sabe que el valor de $\\sin(\\theta) = 0.8$.",
+  "archivo": "trigonometria_circulo_unitario.png",
+  "preguntas": [
+    {
+      "enunciado": "Utilizando la identidad pitagórica $\\sin^2(\\theta) + \\cos^2(\\theta) = 1$, ¿cuál es el valor exacto de $\\cos(\\theta)$ para este ángulo en el segundo cuadrante?",
+      "tipo": "resolución",
+      "dificultad": "alta",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "-0.6",
+          "es_correcta": true
+        },
+        {
+          "texto": "0.6",
+          "es_correcta": false
+        },
+        {
+          "texto": "-0.2",
+          "es_correcta": false
+        },
+        {
+          "texto": "-0.36",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se presenta la función cuadrática $f(x) = x^2$ en el intervalo $[0, 2]$. Se sombrea la región limitada por la curva, el eje $x$ y la recta vertical $x = 2$.",
+  "archivo": "calculo_integral_area1.png",
+  "preguntas": [
+    {
+      "enunciado": "Utilizando el Teorema Fundamental del Cálculo, ¿cuál es el valor exacto del área de la región sombreada bajo la curva de la función $f(x) = x^2$ desde $x = 0$ hasta $x = 2$?",
+      "tipo": "resolución",
+      "dificultad": "muy alta",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "8/3 unidades cuadradas",
+          "es_correcta": true
+        },
+        {
+          "texto": "4 unidades cuadradas",
+          "es_correcta": false
+        },
+        {
+          "texto": "2 unidades cuadradas",
+          "es_correcta": false
+        },
+        {
+          "texto": "7/3 unidades cuadradas",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se analizan dos ofertas de servicios de internet representadas en un plano cartesiano. La oferta A tiene un cargo fijo y un costo por GB, mientras que la oferta B es un plan de solo consumo con una tarifa distinta.",
+  "archivo": "sistemas_ecuaciones_lineales.png",
+  "preguntas": [
+    {
+      "enunciado": "En el gráfico se observa que las rectas se intersectan en el punto (10, 50). ¿Qué representa matemáticamente este punto de intersección en el contexto del problema?",
+      "tipo": "interpretación",
+      "dificultad": "media",
+      "competencia": "comunicación",
+      "opciones": [
+        {
+          "texto": "El punto donde ambas ofertas tienen el mismo costo para la misma cantidad de datos.",
+          "es_correcta": true
+        },
+        {
+          "texto": "El momento en que la oferta A se vuelve más barata que la oferta B.",
+          "es_correcta": false
+        },
+        {
+          "texto": "La cantidad máxima de datos que un usuario puede consumir en el mes.",
+          "es_correcta": false
+        },
+        {
+          "texto": "El costo inicial de contratar cualquiera de los dos servicios.",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se analiza la trayectoria de un satélite que sigue una órbita elíptica alrededor de un cuerpo celeste. La ecuación que describe su trayectoria es $\\frac{x^2}{25} + \\frac{y^2}{9} = 1$.",
+  "archivo": "elipse_geometria_analitica1.png",
+  "preguntas": [
+    {
+      "enunciado": "A partir de la ecuación dada, ¿cuál es la distancia focal (distancia entre los dos focos) de la trayectoria del satélite?",
+      "tipo": "resolución",
+      "dificultad": "alta",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "8 unidades",
+          "es_correcta": true
+        },
+        {
+          "texto": "4 unidades",
+          "es_correcta": false
+        },
+        {
+          "texto": "16 unidades",
+          "es_correcta": false
+        },
+        {
+          "texto": "6 unidades",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se diseña un silo de almacenamiento de granos que consta de un cilindro recto con un cono en la parte superior. Ambos tienen un radio de 3 metros. La altura del cilindro es de 10 metros y la altura del cono es de 4 metros.",
+  "archivo": "geometria_solidos_compuestos.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es el volumen total de almacenamiento del silo en términos de $\\pi$?",
+      "tipo": "resolución",
+      "dificultad": "alta",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "$102\\pi$ $m^3$",
+          "es_correcta": true
+        },
+        {
+          "texto": "$126\\pi$ $m^3$",
+          "es_correcta": false
+        },
+        {
+          "texto": "$90\\pi$ $m^3$",
+          "es_correcta": false
+        },
+        {
+          "texto": "$114\\pi$ $m^3$",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un chef está creando un menú especial de degustación. Dispone de 6 ingredientes base únicos y desea presentar un plato compuesto por 3 de estos ingredientes, organizados en capas visuales. El orden en que se colocan las capas es fundamental para la experiencia del sabor y la presentación.",
+  "archivo": "probabilidad_conteo_permutaciones.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuántas combinaciones diferentes de platos (considerando el orden de las capas) puede crear el chef utilizando 3 ingredientes distintos de los 6 disponibles?",
+      "tipo": "resolución",
+      "dificultad": "media-alta",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "120",
+          "es_correcta": true
+        },
+        {
+          "texto": "20",
+          "es_correcta": false
+        },
+        {
+          "texto": "720",
+          "es_correcta": false
+        },
+        {
+          "texto": "18",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se desea fabricar una caja abierta a partir de una lámina cuadrada de cartón de 12 cm de lado, recortando cuadrados de lado $x$ en cada esquina y doblando hacia arriba. La función que describe el volumen de la caja es $V(x) = x(12 - 2x)^2$.",
+  "archivo": "calculo_diferencial_optimizacion.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Qué valor debe tener $x$ para que el volumen de la caja sea máximo?",
+      "tipo": "resolución",
+      "dificultad": "muy alta",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "2 cm",
+          "es_correcta": true
+        },
+        {
+          "texto": "3 cm",
+          "es_correcta": false
+        },
+        {
+          "texto": "6 cm",
+          "es_correcta": false
+        },
+        {
+          "texto": "4 cm",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Los resultados de una prueba de aptitud nacional siguen una distribución normal con una media ($\\mu$) de 70 puntos y una desviación estándar ($\\sigma$) de 10 puntos.",
+  "archivo": "estadistica_distribucion_normal.png",
+  "preguntas": [
+    {
+      "enunciado": "De acuerdo con la regla empírica de la distribución normal, ¿qué porcentaje aproximado de los estudiantes obtuvo una puntuación entre 50 y 90 puntos?",
+      "tipo": "interpretación",
+      "dificultad": "media",
+      "competencia": "comunicación",
+      "opciones": [
+        {
+          "texto": "95%",
+          "es_correcta": true
+        },
+        {
+          "texto": "68%",
+          "es_correcta": false
+        },
+        {
+          "texto": "99.7%",
+          "es_correcta": false
+        },
+        {
+          "texto": "50%",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se registra el movimiento oscilatorio de una boya en el mar. La altura de la boya respecto al nivel medio del agua está modelada por la función $h(t) = 3\\sin(2t)$, donde $t$ es el tiempo en segundos.",
+  "archivo": "trigonometria_funciones_periodicas.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es el periodo de oscilación de la boya, es decir, cuánto tiempo tarda en completar un ciclo completo?",
+      "tipo": "resolución",
+      "dificultad": "media-alta",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "$\\pi$ segundos",
+          "es_correcta": true
+        },
+        {
+          "texto": "$2\\pi$ segundos",
+          "es_correcta": false
+        },
+        {
+          "texto": "2 segundos",
+          "es_correcta": false
+        },
+        {
+          "texto": "3 segundos",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se observa el crecimiento de una población de bacterias en un cultivo controlado. Inicialmente hay 5 bacterias, y cada hora la cantidad de bacterias se triplica respecto a la hora anterior.",
+  "archivo": "sucesiones_geometricas_bacterias.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es la expresión general que permite calcular la cantidad de bacterias ($a_n$) después de $n$ horas, y cuántas bacterias habrá exactamente al finalizar la cuarta hora?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "$a_n = 5 \\cdot 3^{(n)}$; 405 bacterias",
+          "es_correcta": true
+        },
+        {
+          "texto": "$a_n = 5 + 3n$; 17 bacterias",
+          "es_correcta": false
+        },
+        {
+          "texto": "$a_n = 5 \\cdot 3^{(n-1)}$; 135 bacterias",
+          "es_correcta": false
+        },
+        {
+          "texto": "$a_n = 3 \\cdot 5^n$; 1875 bacterias",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se analiza la estabilidad de un sistema estructural representado por la matriz de coeficientes $M = \\begin{pmatrix} 4 & 6 \\\\ 2 & 8 \\end{pmatrix}$. Para determinar si el sistema tiene una solución única, es necesario calcular su determinante.",
+  "archivo": "algebra_lineal_determinantes.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es el valor del determinante de la matriz $M$?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "20",
+          "es_correcta": true
+        },
+        {
+          "texto": "44",
+          "es_correcta": false
+        },
+        {
+          "texto": "32",
+          "es_correcta": false
+        },
+        {
+          "texto": "12",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se está diseñando un elemento arquitectónico en forma de arco elíptico. La forma de la base del arco sigue la ecuación standard de una elipse centrada en el origen: $\\frac{x^2}{16} + \\frac{y^2}{4} = 1$, donde las unidades son metros. Es crucial para el ingeniero identificar las dimensiones clave del arco.",
+  "archivo": "geometria_analitica_elipse1.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuáles son las longitudes del eje mayor ($2a$) y del eje menor ($2b$) de la elipse, respectivamente?",
+      "tipo": "interpretación",
+      "dificultad": "media",
+      "competencia": "comunicación",
+      "opciones": [
+        {
+          "texto": "$8$ m y $4$ m",
+          "es_correcta": true
+        },
+        {
+          "texto": "$16$ m y $4$ m",
+          "es_correcta": false
+        },
+        {
+          "texto": "$4$ m y $2$ m",
+          "es_correcta": false
+        },
+        {
+          "texto": "$8$ m y $2$ m",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Considera el conjunto de simetrías de un triángulo equilátero, conocido como el Grupo Diedral $D_3$. Este grupo contiene 6 elementos: 3 rotaciones ($R_0, R_{120}, R_{240}$) y 3 reflexiones ($S_1, S_2, S_3$) respecto a las mediatrices. La imagen muestra una 'Tabla de Cayley' parcial para la operación de composición de simetrías.",
+  "archivo": "algebra_abstracta_cayley.png",
+  "preguntas": [
+    {
+      "enunciado": "Utilizando la información de la tabla parcial y las propiedades de los grupos de simetría, ¿cuál es el resultado de la composición $S_2 \\circ S_1$ (aplicar $S_1$ y luego $S_2$)?",
+      "tipo": "interpretación",
+      "dificultad": "alta",
+      "competencia": "abstraer",
+      "opciones": [
+        {
+          "texto": "$R_{240}$",
+          "es_correcta": true
+        },
+        {
+          "texto": "$R_{120}$",
+          "es_correcta": false
+        },
+        {
+          "texto": "$S_3$",
+          "es_correcta": false
+        },
+        {
+          "texto": "$R_0$",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se requiere calcular el área de una sección transversal de un nuevo diseño de ala para un prototipo de dron. La curva superior del ala está definida por la función $f(x) = -x^2 + 4$ en el intervalo $[0, 2]$.",
+  "archivo": "calculo_integral_area2.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es el valor exacto del área bajo la curva $f(x)$ en el intervalo indicado?",
+      "tipo": "resolución",
+      "dificultad": "alta",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "$16/3$ unidades cuadradas",
+          "es_correcta": true
+        },
+        {
+          "texto": "$8/3$ unidades cuadradas",
+          "es_correcta": false
+        },
+        {
+          "texto": "4 unidades cuadradas",
+          "es_correcta": false
+        },
+        {
+          "texto": "8 unidades cuadradas",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "En una planta de procesamiento de agua, se mide el pH de las muestras tratadas. Se ha determinado que los valores de pH siguen una distribución normal con una media ($\\mu$) de 7.0 y una desviación estándar ($\\sigma$) de 0.5. Para garantizar la calidad, el pH debe mantenerse entre 6.5 y 7.5.",
+  "archivo": "estadistica_distribucion_normal1.png",
+  "preguntas": [
+    {
+      "enunciado": "De acuerdo con la regla empírica de la distribución normal (68-95-99.7), ¿qué porcentaje aproximado de las muestras de agua tendrá un pH que cumple con el estándar de calidad (entre 6.5 y 7.5)?",
+      "tipo": "interpretación",
+      "dificultad": "media",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "68%",
+          "es_correcta": true
+        },
+        {
+          "texto": "95%",
+          "es_correcta": false
+        },
+        {
+          "texto": "34%",
+          "es_correcta": false
+        },
+        {
+          "texto": "50%",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un camión de recolección de basura debe recorrer todas las calles de un pequeño barrio. Para minimizar el combustible, el conductor quiere encontrar una ruta que pase por cada calle exactamente una vez y termine en el mismo punto donde empezó.",
+  "archivo": "teoria_grafos_euleriano.png",
+  "preguntas": [
+    {
+      "enunciado": "Analizando el grafo que representa el mapa del barrio, ¿es posible realizar esta ruta euleriana completa? (Pista: Revisa el grado de los vértices).",
+      "tipo": "interpretación",
+      "dificultad": "media",
+      "competencia": "razonar",
+      "opciones": [
+        {
+          "texto": "Sí, es posible, porque es un 'Grafo Euleriano'.",
+          "es_correcta": true
+        },
+        {
+          "texto": "No, es imposible, porque es un 'Grafo Semi-Euleriano'.",
+          "es_correcta": false
+        },
+        {
+          "texto": "No, no cumple con el teorema de los grados impares.",
+          "es_correcta": false
+        },
+        {
+          "texto": "Sí, pero solo es posible realizar un camino euleriano.",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un equipo de topografía necesita determinar la distancia entre dos puntos, $A$ y $B$, situados a orillas del río Magdalena. Desde un tercer punto $C$, se miden los ángulos $\\angle BCA = 45^\\circ$ y $\\angle CAB = 60^\\circ$. La distancia medida entre $A$ y $C$ es de $120$ metros.",
+  "archivo": "trigonometria_ley_seno.png",
+  "preguntas": [
+    {
+      "enunciado": "Utilizando la Ley del Seno, ¿cuál es la distancia aproximada entre los puntos $A$ y $B$?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "modelar",
+      "opciones": [
+        {
+          "texto": "$87.8$ metros",
+          "es_correcta": true
+        },
+        {
+          "texto": "$146.9$ metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "$103.9$ metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "$60.0$ metros",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un estudiante desea calcular la altura de un poste de luz utilizando su propia sombra. El estudiante mide 1.70 metros de altura y proyecta una sombra de 2 metros. En ese mismo instante, la sombra del poste mide 8 metros.",
+  "archivo": "matematicas_semejanza_triangulos.png",
+  "preguntas": [
+    {
+      "enunciado": "Aplicando el concepto de semejanza de triángulos, ¿cuál es la altura real del poste de luz?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "razonamiento cuantitativo",
+      "opciones": [
+        {
+          "texto": "6.8 metros",
+          "es_correcta": true
+        },
+        {
+          "texto": "9.4 metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "7.5 metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "5.6 metros",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un ingeniero ambiental está analizando la trayectoria del agua expulsada por un aspersor para optimizar el riego en un cultivo. La altura ($h$, en metros) del agua respecto al suelo en función de la distancia horizontal ($x$, en metros) desde el aspersor sigue la función cuadrática: $h(x) = -0.25x^2 + 2x + 1$.",
+  "archivo": "matematicas_funciones_cuadraticas_riego.png",
+  "preguntas": [
+    {
+      "enunciado": "Utilizando la función cuadrática provista, ¿cuál es la **altura máxima** que alcanza el chorro de agua y a qué **distancia horizontal** desde el aspersor se logra?",
+      "tipo": "resolución",
+      "dificultad": "alta",
+      "competencia": "modelar y optimizar",
+      "opciones": [
+        {
+          "texto": "$5$ metros de altura, a $4$ metros de distancia.",
+          "es_correcta": true
+        },
+        {
+          "texto": "$4$ metros de altura, a $5$ metros de distancia.",
+          "es_correcta": false
+        },
+        {
+          "texto": "$6$ metros de altura, a $3$ metros de distancia.",
+          "es_correcta": false
+        },
+        {
+          "texto": "$1$ metro de altura, a $0$ metros de distancia.",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "La alcaldía de Pinillos realizó una encuesta a 400 jóvenes sobre su área de interés para cursos técnicos. Los resultados se muestran en la siguiente gráfica de barras.",
+  "archivo": "estadistica_barras_intereses.png",
+  "preguntas": [
+    {
+      "enunciado": "Si el 25% de los jóvenes interesados en 'Programación' decide inscribirse en un taller avanzado, ¿cuántos jóvenes asistirán a dicho taller según los datos de la gráfica?",
+      "tipo": "interpretación",
+      "dificultad": "media",
+      "competencia": "interpretación y representación",
+      "opciones": [
+        {
+          "texto": "40 jóvenes",
+          "es_correcta": true
+        },
+        {
+          "texto": "160 jóvenes",
+          "es_correcta": false
+        },
+        {
+          "texto": "100 jóvenes",
+          "es_correcta": false
+        },
+        {
+          "texto": "25 jóvenes",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un diseñador gráfico está creando un nuevo logo sobre una placa cuadrada metálica de 10 cm de lado. Para el diseño, inscribe un círculo que toca exactamente los cuatro lados del cuadrado y desea pintar de color gris las cuatro esquinas que quedan fuera del círculo.",
+  "archivo": "geometria_area_sombreada_circulo.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es el área total aproximada de las cuatro esquinas sombreadas? (Considere $\\pi \\approx 3.14$)",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "razonamiento cuantitativo",
+      "opciones": [
+        {
+          "texto": "21.5 cm²",
+          "es_correcta": true
+        },
+        {
+          "texto": "78.5 cm²",
+          "es_correcta": false
+        },
+        {
+          "texto": "31.4 cm²",
+          "es_correcta": false
+        },
+        {
+          "texto": "5.37 cm²",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un técnico de telecomunicaciones en Pinillos necesita asegurar una antena de 12 metros de altura utilizando un cable de tensión. El cable debe anclarse a un punto en el suelo que está exactamente a 5 metros de la base de la antena.",
+  "archivo": "geometria_pitagoras_antena.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál debe ser la longitud total del cable de tensión para que quede perfectamente estirado desde la punta de la antena hasta el punto de anclaje?",
+      "tipo": "resolución",
+      "dificultad": "baja",
+      "competencia": "razonamiento cuantitativo",
+      "opciones": [
+        {
+          "texto": "13 metros",
+          "es_correcta": true
+        },
+        {
+          "texto": "17 metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "15 metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "11.5 metros",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "En una jornada de orientación vocacional en Pinillos, se utiliza una urna que contiene 20 tarjetas numeradas del 1 al 20. Cada número corresponde a una beca para diferentes áreas técnicas. Un estudiante extrae una tarjeta al azar.",
+  "archivo": "estadistica_probabilidad_becas.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es la probabilidad de que el estudiante extraiga una tarjeta que sea un **número primo**?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "razonamiento cuantitativo",
+      "opciones": [
+        {
+          "texto": "2/5 (40%)",
+          "es_correcta": true
+        },
+        {
+          "texto": "1/2 (50%)",
+          "es_correcta": false
+        },
+        {
+          "texto": "9/20 (45%)",
+          "es_correcta": false
+        },
+        {
+          "texto": "7/20 (35%)",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un topógrafo en las llanuras de Pinillos observa la parte más alta de una torre de comunicaciones con un ángulo de elevación de 30°. Él se encuentra a una distancia horizontal de 60 metros de la base de la torre.",
+  "archivo": "matematicas_trigonometria_torre.png",
+  "preguntas": [
+    {
+      "enunciado": "Usando la razón trigonométrica de la Tangente ($\tan 30^\\circ \\approx 0.57$), ¿cuál es la altura aproximada de la torre?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "modelación",
+      "opciones": [
+        {
+          "texto": "34.2 metros",
+          "es_correcta": true
+        },
+        {
+          "texto": "105.2 metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "20.0 metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "51.9 metros",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+}
+  ]
+}

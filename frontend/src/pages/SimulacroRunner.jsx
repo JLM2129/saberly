@@ -15,6 +15,7 @@ export default function SimulacroRunner() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [respuestas, setRespuestas] = useState({});
     const [elapsedTime, setElapsedTime] = useState(0);
+    const [focusedNavBtn, setFocusedNavBtn] = useState('siguiente');
 
     useEffect(() => {
         let isMounted = true;
@@ -280,13 +281,19 @@ export default function SimulacroRunner() {
                 </div>
 
                 {/* Botones de Navegación */}
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2.5rem' }}>
+                <div 
+                    style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2.5rem' }}
+                    onMouseLeave={() => setFocusedNavBtn('siguiente')}
+                >
                     <button
                         type="button"
                         className="btn-primary"
-                        style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', color: 'var(--text-muted)' }}
+                        style={focusedNavBtn === 'anterior' ? {} : { background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', color: 'var(--text-muted)' }}
                         disabled={currentIndex === 0}
                         onClick={handlePrev}
+                        onMouseEnter={() => setFocusedNavBtn('anterior')}
+                        onFocus={() => setFocusedNavBtn('anterior')}
+                        onBlur={() => setFocusedNavBtn('siguiente')}
                     >
                         Anterior
                     </button>
@@ -295,7 +302,10 @@ export default function SimulacroRunner() {
                         <button
                             type="button"
                             className="btn-primary"
+                            style={focusedNavBtn === 'siguiente' ? {} : { background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', color: 'var(--text-muted)', boxShadow: 'none' }}
                             onClick={handleNext}
+                            onMouseEnter={() => setFocusedNavBtn('siguiente')}
+                            onFocus={() => setFocusedNavBtn('siguiente')}
                         >
                             Siguiente
                         </button>
