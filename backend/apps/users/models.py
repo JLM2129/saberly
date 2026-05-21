@@ -44,6 +44,10 @@ class User(AbstractUser):
         default=False, 
         help_text='Designa si este usuario es docente y puede agregar preguntas'
     )
+    is_content_admin = models.BooleanField(
+        default=False,
+        help_text='Designa si este usuario puede realizar importaciones masivas de contenido'
+    )
     
     # Optional: Add fields for "grade" or "school" if needed for students
 

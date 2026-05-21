@@ -16,6 +16,7 @@ import BombaDeTiempo from './pages/BombaDeTiempo';
 import DesafioRachas from './pages/DesafioRachas';
 import DueloMultijugador from './pages/DueloMultijugador';
 import TeacherPanel from './pages/TeacherPanel';
+import ContentAdmin from './pages/ContentAdmin';
 import './App.css';
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
             <Route path="/registro" element={<Register />} />
             <Route path="/estadisticas" element={<Estadisticas />} />
             <Route path="/teacher-panel" element={<TeacherPanel />} />
+            <Route path="/content-admin" element={<ContentAdmin />} />
           </Routes>
         </div>
       </BrowserRouter>

@@ -13,6 +13,7 @@ export default function Navbar() {
     const [isAuth, setIsAuth] = useState(isAuthenticated());
     const [user, setUser] = useState(null);
     const [isTeacher, setIsTeacher] = useState(false);
+    const [isContentAdmin, setIsContentAdmin] = useState(false);
     const navigate = useNavigate();
 
     const navLinkStyle = ({ isActive }) => ({
@@ -49,6 +50,7 @@ export default function Navbar() {
                 const data = await response.json();
                 setUser(data);
                 setIsTeacher(data.is_teacher || false);
+                setIsContentAdmin(data.is_content_admin || false);
             }
         } catch (error) {
             console.error('Error cargando perfil:', error);
@@ -59,6 +61,7 @@ export default function Navbar() {
         logout();
         setIsAuth(false);
         setIsTeacher(false);
+        setIsContentAdmin(false);
         setUser(null);
         navigate('/login');
     };
@@ -111,6 +114,22 @@ export default function Navbar() {
                     </Link>
                 )}
 
+                {isAuth && isContentAdmin && (
+                    <Link
+                        to="/content-admin"
+                        style={{
+                            color: 'var(--accent)',
+                            fontWeight: '600',
+                            padding: '6px 12px',
+                            background: 'rgba(59, 130, 246, 0.1)',
+                            borderRadius: '6px',
+                            border: '1px solid rgba(59, 130, 246, 0.2)'
+                        }}
+                    >
+                        ⚙️ Importador Masivo
+                    </Link>
+                )}
+
                 <div style={{ width: '1px', height: '20px', background: 'var(--glass-border)', margin: '0 8px' }}></div>
 
                 {isAuth ? (
@@ -120,7 +139,7 @@ export default function Navbar() {
                                  {user?.full_name || user?.email?.split('@')[0] || 'Usuario'}
                              </span>
                              <span style={{ fontSize: '0.65rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                                 {isTeacher ? '👨‍🏫 Docente' : '🎓 Estudiante'}
+                                 {isContentAdmin ? '⚙️ Admin Contenido' : isTeacher ? '👨‍🏫 Docente' : '🎓 Estudiante'}
                              </span>
                         </div>
                         <button
