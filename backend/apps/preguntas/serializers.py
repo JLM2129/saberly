@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Area, SubArea, Pregunta, OpcionRespuesta, Contexto
+from .models import Area, SubArea, Pregunta, OpcionRespuesta, Contexto, PreguntaIA, OpcionRespuestaIA, ProgresoDebilidad
 
 
 class OpcionRespuestaSerializer(serializers.ModelSerializer):
@@ -143,4 +143,83 @@ class PreguntaCreateSerializer(serializers.ModelSerializer):
             OpcionRespuesta.objects.create(pregunta=pregunta, **opcion_data)
         
         return pregunta
+
+
+class OpcionRespuestaIASerializer(serializers.ModelSerializer):
+    class Meta:
+        model = OpcionRespuestaIA
+        fields = ['id', 'texto', 'es_correcta']
+
+
+class OpcionRespuestaIABlindSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = OpcionRespuestaIA
+        fields = ['id', 'texto']
+
+
+class PreguntaIASerializer(serializers.ModelSerializer):
+    opciones = OpcionRespuestaIASerializer(many=True, read_only=True)
+    area_nombre = serializers.ReadOnlyField(source='area.nombre')
+
+    class Meta:
+        model = PreguntaIA
+        fields = [
+            'id',
+            'area_nombre',
+            'debilidad_objetivo',
+            'enunciado',
+            'dificultad',
+            'pista',
+            'ejemplo',
+            'explicacion',
+            'opciones',
+            'tasa_exito',
+            'veces_respondida',
+            'veces_correcta',
+            'estado_validacion',
+            'promocionada',
+            'created_at'
+        ]
+
+
+class PreguntaIABlindSerializer(serializers.ModelSerializer):
+    opciones = OpcionRespuestaIABlindSerializer(many=True, read_only=True)
+    area_nombre = serializers.ReadOnlyField(source='area.nombre')
+
+    class Meta:
+        model = PreguntaIA
+        fields = [
+            'id',
+            'area_nombre',
+            'debilidad_objetivo',
+            'enunciado',
+            'dificultad',
+            'pista',
+            'ejemplo',
+            'opciones'
+        ]
+
+
+class ProgresoDebilidadSerializer(serializers.ModelSerializer):
+    area_nombre = serializers.ReadOnlyField(source='area.nombre')
+    precision = serializers.SerializerMethodField()
+
+    class Meta:
+        model = ProgresoDebilidad
+        fields = [
+            'id',
+            'debilidad',
+            'area_nombre',
+            'intentos_totales',
+            'aciertos_totales',
+            'porcentaje_mejora',
+            'nivel_actual',
+            'historial_recuperacion',
+            'ultimo_entrenamiento',
+            'precision'
+        ]
+
+    def get_precision(self, obj):
+        return obj.calcular_precision()
+
 

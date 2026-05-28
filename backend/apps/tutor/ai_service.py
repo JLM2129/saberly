@@ -239,3 +239,64 @@ Reglas:
         except Exception as e:
             print(f"Error llamando a Google GenAI (Gemma 4): {str(e)}")
             raise e
+
+    def generar_pregunta_entrenamiento(self, debilidad, dificultad, tipo_error_frecuente=None):
+        """
+        Genera una pregunta de opción múltiple adaptativa e inteligente con su respectiva pista,
+        ejemplo similar resuelto y explicación detallada, utilizando Gemma 4.
+        """
+        self._ensure_client()
+        
+        tipo_error_context = ""
+        if tipo_error_frecuente:
+            tipo_error_context = f"El estudiante suele cometer errores de tipo '{tipo_error_frecuente}'. Diseña los distractores (opciones incorrectas) para abordar este error común."
+
+        prompt = f"""Eres un tutor pedagógico de alto nivel especializado en las pruebas del estado ICFES de Colombia y experto en el modelo Gemma 4.
+Genera un ejercicio interactivo adaptado para entrenar la debilidad del estudiante: '{debilidad}'.
+La dificultad de la pregunta debe ser: '{dificultad}'.
+{tipo_error_context}
+
+Usa el formato oficial de preguntas del ICFES de selección múltiple con única respuesta (4 opciones: una correcta y tres distractores plausibles).
+Genera también las tres fases del andamiaje (scaffolding) de aprendizaje:
+1. Pista (Nivel 1): Una pista corta, socrática y motivadora en español que guíe al estudiante sin darle la respuesta. (Máximo 2 líneas).
+2. Ejemplo Guiado (Nivel 2): Un ejercicio similar resuelto paso a paso (enunciado más simple, resolución y resultado) para corregir el tipo de error.
+3. Explicación Completa (Nivel 3): La explicación detallada y clara de por qué la opción correcta es la adecuada y por qué las otras fallan.
+
+Devuelve únicamente un objeto JSON con la siguiente estructura (no agregues texto fuera del JSON, usa markdown limpio para las fórmulas si es necesario):
+{{
+  "enunciado": "Enunciado completo de la pregunta contextualizado al estilo ICFES...",
+  "dificultad": "{dificultad}",
+  "opciones": [
+    {{"texto": "Texto de la opción correcta...", "es_correcta": true}},
+    {{"texto": "Texto de distractor plausible 1...", "es_correcta": false}},
+    {{"texto": "Texto de distractor plausible 2...", "es_correcta": false}},
+    {{"texto": "Texto de distractor plausible 3...", "es_correcta": false}}
+  ],
+  "pista": "Texto de la pista socrática...",
+  "ejemplo": "### Problema Similar\\n...\\n### Solución paso a paso\\n...",
+  "explicacion": "Explicación detallada..."
+}}"""
+
+        try:
+            response = self.client.models.generate_content(
+                model=self.model_name,
+                contents=prompt
+            )
+            return self._extract_json(response.text.strip())
+        except Exception as e:
+            print(f"Error generando pregunta de entrenamiento con Gemma: {str(e)}")
+            # Fallback local en caso de error de la API
+            return {
+                "enunciado": f"Pregunta de refuerzo sobre {debilidad} (Modo Local). ¿Cuál de las siguientes describe mejor la aplicación del concepto en un problema ICFES?",
+                "dificultad": dificultad,
+                "opciones": [
+                    {"texto": f"La opción correcta que resuelve la debilidad sobre {debilidad}.", "es_correcta": True},
+                    {"texto": "Opción de error común conceptual.", "es_correcta": False},
+                    {"texto": "Opción de error procedimental.", "es_correcta": False},
+                    {"texto": "Opción por lectura descuidada.", "es_correcta": False}
+                ],
+                "pista": f"Recuerda que en {debilidad} debes relacionar adecuadamente las variables o la regla principal.",
+                "ejemplo": f"### Problema Similar de {debilidad}\nSi 2 variables son proporcionales y una se duplica, ¿qué pasa con la otra?\n\n### Solución paso a paso\nMultiplica la segunda por 2. Por tanto, también se duplica.",
+                "explicacion": f"Explicación local: La definición formal del concepto {debilidad} requiere que se cumplan las propiedades mostradas en la opción correcta."
+            }
+

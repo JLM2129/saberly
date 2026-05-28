@@ -1,18 +1,20 @@
 from django.contrib import admin
-from .models import Area, SubArea, Contexto, Pregunta, OpcionRespuesta
-
+from .models import Area, SubArea, Contexto, Pregunta, OpcionRespuesta, PreguntaIA, OpcionRespuestaIA, ProgresoDebilidad
 
 class OpcionRespuestaInline(admin.TabularInline):
     model = OpcionRespuesta
     extra = 4
     fields = ['texto', 'es_correcta', 'orden']
 
+class OpcionRespuestaIAInline(admin.TabularInline):
+    model = OpcionRespuestaIA
+    extra = 4
+    fields = ['texto', 'es_correcta']
 
 @admin.register(Area)
 class AreaAdmin(admin.ModelAdmin):
     list_display = ['nombre', 'descripcion']
     search_fields = ['nombre']
-
 
 @admin.register(SubArea)
 class SubAreaAdmin(admin.ModelAdmin):
@@ -20,14 +22,12 @@ class SubAreaAdmin(admin.ModelAdmin):
     list_filter = ['area']
     search_fields = ['nombre', 'area__nombre']
 
-
 @admin.register(Contexto)
 class ContextoAdmin(admin.ModelAdmin):
     list_display = ['titulo', 'area', 'tipo']
     list_filter = ['area', 'tipo']
     search_fields = ['titulo', 'contenido']
     fields = ['area', 'tipo', 'titulo', 'contenido', 'archivo', 'url_externa']
-
 
 @admin.register(Pregunta)
 class PreguntaAdmin(admin.ModelAdmin):
@@ -53,7 +53,6 @@ class PreguntaAdmin(admin.ModelAdmin):
         return obj.enunciado[:75] + '...' if len(obj.enunciado) > 75 else obj.enunciado
     enunciado_corto.short_description = 'Enunciado'
 
-
 @admin.register(OpcionRespuesta)
 class OpcionRespuestaAdmin(admin.ModelAdmin):
     list_display = ['id', 'pregunta_id', 'texto_corto', 'es_correcta', 'orden']
@@ -63,3 +62,16 @@ class OpcionRespuestaAdmin(admin.ModelAdmin):
     def texto_corto(self, obj):
         return obj.texto[:50] + '...' if len(obj.texto) > 50 else obj.texto
     texto_corto.short_description = 'Texto'
+
+@admin.register(PreguntaIA)
+class PreguntaIAAdmin(admin.ModelAdmin):
+    list_display = ['id', 'usuario', 'debilidad_objetivo', 'area', 'dificultad', 'estado_validacion', 'promocionada', 'created_at']
+    list_filter = ['dificultad', 'estado_validacion', 'promocionada', 'area']
+    search_fields = ['enunciado', 'debilidad_objetivo', 'usuario__username']
+    inlines = [OpcionRespuestaIAInline]
+
+@admin.register(ProgresoDebilidad)
+class ProgresoDebilidadAdmin(admin.ModelAdmin):
+    list_display = ['usuario', 'debilidad', 'area', 'nivel_actual', 'intentos_totales', 'aciertos_totales', 'porcentaje_mejora', 'ultimo_entrenamiento']
+    list_filter = ['nivel_actual', 'area']
+    search_fields = ['debilidad', 'usuario__username']

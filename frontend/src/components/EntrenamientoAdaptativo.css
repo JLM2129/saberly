@@ -1,0 +1,490 @@
+.entrenamiento-adaptativo-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+.section-subtitle {
+    color: var(--text-muted, #9ca3af);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* --- Loader --- */
+.loading-card {
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.pulse-loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--primary, #3b82f6);
+    box-shadow: 0 0 20px var(--primary-glow, rgba(59, 130, 246, 0.5));
+    animation: pulse 1.5s infinite ease-in-out;
+    margin-bottom: 1.5rem;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.6; }
+    50% { transform: scale(1.1); opacity: 1; box-shadow: 0 0 30px var(--primary, #3b82f6); }
+    100% { transform: scale(0.9); opacity: 0.6; }
+}
+
+/* --- Dashboard Grid --- */
+.debilidades-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.empty-state {
+    grid-column: 1 / -1;
+    padding: 3rem;
+    text-align: center;
+    color: var(--text-muted, #9ca3af);
+}
+
+/* --- Weakness Card --- */
+.weakness-card {
+    background: rgba(17, 24, 39, 0.6);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    backdrop-filter: blur(10px);
+}
+
+.weakness-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15);
+    border-color: rgba(59, 130, 246, 0.4);
+}
+
+.weakness-card-header h4 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.badge-area {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #e5e7eb;
+    margin-top: 0.5rem;
+}
+
+.weakness-card-body {
+    margin-top: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #d1d5db;
+}
+
+.mastery-level {
+    font-weight: 700;
+    text-shadow: 0 0 8px currentColor;
+}
+
+.text-success { color: #10b981; }
+.text-danger { color: #ef4444; }
+
+.btn-start-training {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.btn-start-training:hover {
+    opacity: 0.9;
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+}
+
+/* --- Training Workspace Card --- */
+.training-card {
+    background: rgba(17, 24, 39, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.training-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.badge-debilidad {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-right: 0.75rem;
+}
+
+.badge-dificultad {
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.btn-close-training {
+    background: transparent;
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    color: #ef4444;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-close-training:hover {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: #ef4444;
+}
+
+.generating-container {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.gemma-pulse {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid rgba(96, 165, 250, 0.1);
+    border-top-color: #3b82f6;
+    animation: spin 1s infinite linear;
+    margin: 0 auto 2rem;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.pedagogical-hint {
+    color: var(--text-muted, #9ca3af);
+    font-size: 0.9rem;
+    max-width: 450px;
+    margin: 1rem auto 0;
+}
+
+.question-workspace {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+}
+
+@media (max-width: 900px) {
+    .question-workspace {
+        grid-template-columns: 1fr;
+    }
+}
+
+.question-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.question-meta {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    margin-bottom: 0.5rem;
+}
+
+.question-enunciado {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.option-btn {
+    text-align: left;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
+    color: #e5e7eb;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.option-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(59, 130, 246, 0.5);
+    transform: translateX(4px);
+}
+
+.option-btn.selected {
+    background: rgba(59, 130, 246, 0.15);
+    border-color: #3b82f6;
+    color: #60a5fa;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.15);
+}
+
+.option-btn.correct {
+    background: rgba(16, 185, 129, 0.2);
+    border-color: #10b981;
+    color: #34d399;
+}
+
+.option-btn.incorrect {
+    background: rgba(239, 68, 68, 0.2);
+    border-color: #ef4444;
+    color: #fca5a5;
+}
+
+.btn-submit-answer {
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    background: #3b82f6;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+    align-self: flex-start;
+    transition: all 0.2s ease;
+}
+
+.btn-submit-answer:hover:not(:disabled) {
+    background: #2563eb;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+}
+
+.btn-submit-answer:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* --- Scaffolding Column --- */
+.scaffolding-area {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.scaffolding-title {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.scaffolding-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.scaffold-toggle-btn {
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #d1d5db;
+    transition: all 0.2s ease;
+}
+
+.scaffold-toggle-btn:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.scaffold-toggle-btn.active {
+    background: rgba(245, 158, 11, 0.15);
+    border-color: #f59e0b;
+    color: #fbbf24;
+}
+
+.scaffold-content-card {
+    background: rgba(245, 158, 11, 0.04);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.scaffold-content-card h5 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #fbbf24;
+}
+
+.scaffold-content-card p {
+    margin: 0;
+    color: #e5e7eb;
+    line-height: 1.5;
+}
+
+.ejemplo-card {
+    background: rgba(59, 130, 246, 0.04);
+    border-color: rgba(59, 130, 246, 0.2);
+}
+
+.ejemplo-card h5 {
+    color: #60a5fa;
+}
+
+.markdown-content p {
+    margin-bottom: 0.5rem;
+}
+
+/* --- Feedback Card --- */
+.feedback-card {
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-top: auto;
+}
+
+.correct-feed {
+    background: rgba(16, 185, 129, 0.08);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.incorrect-feed {
+    background: rgba(239, 68, 68, 0.08);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.feedback-card h4 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.correct-feed h4 { color: #34d399; }
+.incorrect-feed h4 { color: #fca5a5; }
+
+.explicacion-block {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+}
+
+.explicacion-block h5 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.post-action-buttons {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.btn-next-question {
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: none;
+    background: #10b981;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-next-question:hover {
+    background: #059669;
+}
+
+.btn-finish {
+    padding: 10px 18px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-finish:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.btn-retry {
+    margin-top: 1rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    background: #ef4444;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-retry:hover {
+    background: #dc2626;
+}
+
+.error-banner {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid #ef4444;
+    color: #fca5a5;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}

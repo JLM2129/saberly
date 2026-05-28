@@ -228,3 +228,132 @@ class Flashcard(models.Model):
         verbose_name = 'Flashcard'
         verbose_name_plural = 'Flashcards'
         ordering = ['-fecha_creacion']
+
+
+class PreguntaIA(models.Model):
+    """
+    Pregunta dinámica generada por IA para refuerzo personalizado.
+    """
+    ESTADO_VALIDACION_CHOICES = [
+        ('pendiente', 'Pendiente'),
+        ('aprobada', 'Aprobada'),
+        ('rechazada', 'Rechazada'),
+    ]
+
+    usuario = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name='preguntas_ia'
+    )
+    debilidad_objetivo = models.CharField(
+        max_length=150,
+        help_text="Concepto o tema de debilidad específica, e.g. proporcionalidad"
+    )
+    area = models.ForeignKey(
+        Area,
+        on_delete=models.CASCADE,
+        related_name='preguntas_ia'
+    )
+    enunciado = models.TextField(help_text="Texto de la pregunta generada")
+    dificultad = models.CharField(
+        max_length=20,
+        choices=Pregunta.DIFICULTAD_CHOICES,
+        default='media'
+    )
+    pista = models.TextField(blank=True, help_text="Scaffolding Nivel 1: pista socrática")
+    ejemplo = models.TextField(blank=True, help_text="Scaffolding Nivel 2: ejemplo resuelto")
+    explicacion = models.TextField(blank=True, help_text="Scaffolding Nivel 3: explicación completa")
+    
+    # Metadatos e indicadores pedagógicos
+    tasa_exito = models.FloatField(default=0.0, help_text="Tasa de éxito del estudiante en esta pregunta")
+    veces_respondida = models.IntegerField(default=0)
+    veces_correcta = models.IntegerField(default=0)
+    
+    estado_validacion = models.CharField(
+        max_length=20,
+        choices=ESTADO_VALIDACION_CHOICES,
+        default='pendiente'
+    )
+    promocionada = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"PreguntaIA - {self.usuario.username} - {self.debilidad_objetivo} - {self.enunciado[:50]}"
+
+    class Meta:
+        verbose_name = 'Pregunta IA'
+        verbose_name_plural = 'Preguntas IA'
+        ordering = ['-created_at']
+
+
+class OpcionRespuestaIA(models.Model):
+    """
+    Opción de respuesta para una pregunta IA.
+    """
+    pregunta_ia = models.ForeignKey(
+        PreguntaIA,
+        related_name='opciones',
+        on_delete=models.CASCADE
+    )
+    texto = models.TextField()
+    es_correcta = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f"{self.texto[:50]} - {'✓' if self.es_correcta else '✗'}"
+
+    class Meta:
+        verbose_name = 'Opción de respuesta IA'
+        verbose_name_plural = 'Opciones de respuesta IA'
+
+
+class ProgresoDebilidad(models.Model):
+    """
+    Progreso detallado del estudiante para una debilidad específica.
+    """
+    NIVEL_CHOICES = [
+        ('bajo', 'Bajo'),
+        ('medio', 'Medio'),
+        ('alto', 'Alto'),
+    ]
+
+    usuario = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name='progresos_debilidades'
+    )
+    debilidad = models.CharField(max_length=150)
+    area = models.ForeignKey(
+        Area,
+        on_delete=models.CASCADE,
+        related_name='progresos_debilidades'
+    )
+    intentos_totales = models.IntegerField(default=0)
+    aciertos_totales = models.IntegerField(default=0)
+    porcentaje_mejora = models.FloatField(
+        default=0.0,
+        help_text="Mejora porcentual de precisión reciente vs histórica"
+    )
+    nivel_actual = models.CharField(
+        max_length=20,
+        choices=NIVEL_CHOICES,
+        default='bajo'
+    )
+    historial_recuperacion = models.JSONField(
+        default=list,
+        help_text="Historial de intentos: [{'fecha': '...', 'es_correcta': bool, 'dificultad': '...'}]"
+    )
+    ultimo_entrenamiento = models.DateTimeField(auto_now=True)
+
+    def calcular_precision(self):
+        if self.intentos_totales == 0:
+            return 0.0
+        return (self.aciertos_totales / self.intentos_totales) * 100.0
+
+    def __str__(self):
+        return f"{self.usuario.username} - {self.debilidad} - Nivel {self.nivel_actual}"
+
+    class Meta:
+        verbose_name = 'Progreso de Debilidad'
+        verbose_name_plural = 'Progresos de Debilidades'
+        unique_together = ('usuario', 'debilidad')
+

@@ -4,6 +4,7 @@ import { getSimulacros } from '../services/simulacros';
 import { isAuthenticated } from '../services/auth';
 import juegosService from '../services/juegos';
 import RefuerzoIA from '../components/RefuerzoIA';
+import EntrenamientoAdaptativo from '../components/EntrenamientoAdaptativo';
 
 export default function Estadisticas() {
     const [simulacros, setSimulacros] = useState([]);
@@ -168,6 +169,9 @@ export default function Estadisticas() {
                     </div>
                 ))}
             </div>
+
+            {/* Nuevo: Entrenamiento Adaptativo e Inteligente */}
+            <EntrenamientoAdaptativo />
 
             {/* Nuevo: Refuerzo Personalizado con IA */}
             <RefuerzoIA />
