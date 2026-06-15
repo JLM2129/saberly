@@ -57,6 +57,24 @@ export default function Navbar() {
         }
     };
 
+    useEffect(() => {
+        const handleUserProfileUpdated = (event) => {
+            const updatedData = event.detail || {};
+            setUser(prev => ({ ...prev, ...updatedData }));
+            if (updatedData.is_teacher !== undefined) {
+                setIsTeacher(updatedData.is_teacher);
+            }
+            if (updatedData.is_content_admin !== undefined) {
+                setIsContentAdmin(updatedData.is_content_admin);
+            }
+        };
+
+        window.addEventListener('userProfileUpdated', handleUserProfileUpdated);
+        return () => {
+            window.removeEventListener('userProfileUpdated', handleUserProfileUpdated);
+        };
+    }, []);
+
     const handleLogout = () => {
         logout();
         setIsAuth(false);
@@ -134,14 +152,42 @@ export default function Navbar() {
 
                 {isAuth ? (
                     <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-                        <div style={{ textAlign: 'right', display: 'flex', flexDirection: 'column' }}>
-                             <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--primary)' }}>
-                                 {user?.full_name || user?.email?.split('@')[0] || 'Usuario'}
-                             </span>
-                             <span style={{ fontSize: '0.65rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                                 {isContentAdmin ? '⚙️ Admin Contenido' : isTeacher ? '👨‍🏫 Docente' : '🎓 Estudiante'}
-                             </span>
-                        </div>
+                        <Link to="/perfil" 
+                            style={{ 
+                                textAlign: 'right', 
+                                display: 'flex', 
+                                flexDirection: 'column',
+                                textDecoration: 'none',
+                                padding: '4px 8px',
+                                borderRadius: 'var(--radius-sm)',
+                                transition: 'background 0.2s ease',
+                                cursor: 'pointer'
+                            }}
+                            onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}
+                            onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}
+                        >
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                {user?.avatar_url ? (
+                                    <img
+                                        src={user.avatar_url}
+                                        alt="Avatar"
+                                        style={{ width: '36px', height: '36px', borderRadius: '50%', objectFit: 'cover', border: '1px solid rgba(255,255,255,0.2)' }}
+                                    />
+                                ) : (
+                                    <div style={{ width: '36px', height: '36px', borderRadius: '50%', background: 'rgba(255,255,255,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-main)', fontWeight: '700' }}>
+                                        {user?.full_name ? user.full_name[0].toUpperCase() : 'U'}
+                                    </div>
+                                )}
+                                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                                    <span style={{ fontSize: '0.85rem', fontWeight: '700', color: 'var(--primary)' }}>
+                                        {user?.full_name || user?.email?.split('@')[0] || 'Usuario'}
+                                    </span>
+                                    <span style={{ fontSize: '0.65rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                                        {isContentAdmin ? '⚙️ Admin Contenido' : isTeacher ? '👨‍🏫 Docente' : '🎓 Estudiante'}
+                                    </span>
+                                </div>
+                            </div>
+                        </Link>
                         <button
                             onClick={handleLogout}
                             style={{

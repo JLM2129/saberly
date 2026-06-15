@@ -13,9 +13,9 @@ class DetalleSimulacroSerializer(serializers.ModelSerializer):
         # Determine strictness based on parent Simulacro status
         # Note: optimizing this access (prefetching) is important for performance
         if instance.simulacro.completado:
-            ret['pregunta'] = PreguntaSerializer(instance.pregunta).data
+            ret['pregunta'] = PreguntaSerializer(instance.pregunta, context=self.context).data
         else:
-            ret['pregunta'] = PreguntaBlindSerializer(instance.pregunta).data
+            ret['pregunta'] = PreguntaBlindSerializer(instance.pregunta, context=self.context).data
             # Also hide 'es_correcta' from the detail itself if you want to be extra safe,
             # but currently 'es_correcta' is 0/False until graded anyway?
             # Actually, 'es_correcta' in DetalleSimulacro is calculated at the end.

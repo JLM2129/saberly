@@ -38,7 +38,7 @@ class QuickQuestionsView(views.APIView):
         else:
             preguntas_qs = Pregunta.objects.filter(id__in=ids_validas).order_by('?')[:40]
 
-        serializer = PreguntaSerializer(preguntas_qs, many=True)
+        serializer = PreguntaSerializer(preguntas_qs, many=True, context={'request': request})
         return Response(serializer.data)
 
 
@@ -60,7 +60,7 @@ class MillionaireQuestionsView(views.APIView):
             extra = Pregunta.objects.exclude(id__in=[p.id for p in final_qs]).order_by('?')[:faltantes]
             final_qs.extend(list(extra))
             
-        serializer = PreguntaSerializer(final_qs, many=True)
+        serializer = PreguntaSerializer(final_qs, many=True, context={'request': request})
         return Response(serializer.data)
 
 class StreakQuestionsView(views.APIView):
@@ -69,7 +69,7 @@ class StreakQuestionsView(views.APIView):
     def get(self, request):
         # Modo racha: Mandamos un pool grande de preguntas (50 por ej)
         preguntas = Pregunta.objects.filter(active=True).order_by('?')[:50]
-        serializer = PreguntaSerializer(preguntas, many=True)
+        serializer = PreguntaSerializer(preguntas, many=True, context={'request': request})
         return Response(serializer.data)
 
 class GuardarPartidaView(generics.CreateAPIView):
@@ -192,7 +192,7 @@ class SalaStatusView(views.APIView):
             if sala.estado == 'PLAYING':
                 pregunta_id = sala.preguntas_ids[sala.pregunta_actual_idx]
                 pregunta = Pregunta.objects.get(id=pregunta_id)
-                data['pregunta_actual'] = PreguntaSerializer(pregunta).data
+                data['pregunta_actual'] = PreguntaSerializer(pregunta, context={'request': request}).data
             return Response(data)
         except Sala.DoesNotExist:
             return Response({"error": "Sala no encontrada"}, status=404)

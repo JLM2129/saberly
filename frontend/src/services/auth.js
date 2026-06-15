@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8001/api';
 
 export const login = async (email, password) => {
     const response = await fetch(`${API_URL}/users/login/`, {
@@ -10,11 +10,22 @@ export const login = async (email, password) => {
     });
 
     if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.detail || 'Error en el inicio de sesión');
+        let errorText = 'Error en el inicio de sesión';
+        try {
+            const errorData = await response.json();
+            errorText = errorData.detail || JSON.stringify(errorData) || errorText;
+        } catch (err) {
+            try { errorText = await response.text(); } catch (e) { /* ignore */ }
+        }
+        throw new Error(errorText);
     }
 
-    const data = await response.json();
+    let data;
+    try {
+        data = await response.json();
+    } catch (err) {
+        throw new Error('Respuesta inválida del servidor');
+    }
     localStorage.setItem('access_token', data.access);
     localStorage.setItem('refresh_token', data.refresh);
     return data;
@@ -31,12 +42,20 @@ export const register = async (userData) => {
     });
 
     if (!response.ok) {
-        const errorData = await response.json();
-        // Mejor manejo de errores para mostrar detalles del formulario
-        throw errorData;
+        try {
+            const errorData = await response.json();
+            throw errorData;
+        } catch (err) {
+            const txt = await response.text().catch(() => 'Error desconocido');
+            throw { detail: txt };
+        }
     }
 
-    return await response.json();
+    try {
+        return await response.json();
+    } catch (err) {
+        throw { detail: 'Respuesta inválida del servidor' };
+    }
 };
 
 export const logout = () => {

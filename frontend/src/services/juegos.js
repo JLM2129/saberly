@@ -17,8 +17,19 @@ const juegosService = {
     },
 
     guardarPartida: async (datos) => {
-        const response = await api.post('/juegos/guardar-partida/', datos);
-        return response.data;
+        try {
+            const response = await api.post('/juegos/guardar-partida/', datos);
+            return response.data;
+        } catch (error) {
+            console.warn("Error guardando partida en el servidor, guardando localmente (offline):", error);
+            try {
+                const { savePartidaOffline } = await import('../offline/offlineService');
+                return savePartidaOffline(datos);
+            } catch (importError) {
+                console.error("No se pudo cargar offlineService para guardar la partida:", importError);
+                throw error;
+            }
+        }
     },
 
     getHighScores: async () => {

@@ -70,7 +70,7 @@ class TeacherPreguntaViewSet(viewsets.ModelViewSet):
         
         # Retornar la pregunta creada con el serializer de lectura
         pregunta = serializer.instance
-        response_serializer = PreguntaSerializer(pregunta)
+        response_serializer = PreguntaSerializer(pregunta, context=self.get_serializer_context())
         headers = self.get_success_headers(serializer.data)
         return Response(
             response_serializer.data, 
@@ -86,10 +86,10 @@ class TeacherPreguntaViewSet(viewsets.ModelViewSet):
         preguntas = self.get_queryset()
         page = self.paginate_queryset(preguntas)
         if page is not None:
-            serializer = PreguntaSerializer(page, many=True)
+            serializer = PreguntaSerializer(page, many=True, context=self.get_serializer_context())
             return self.get_paginated_response(serializer.data)
         
-        serializer = PreguntaSerializer(preguntas, many=True)
+        serializer = PreguntaSerializer(preguntas, many=True, context=self.get_serializer_context())
         return Response(serializer.data)
 
 

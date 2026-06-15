@@ -17,9 +17,18 @@ import DesafioRachas from './pages/DesafioRachas';
 import DueloMultijugador from './pages/DueloMultijugador';
 import TeacherPanel from './pages/TeacherPanel';
 import ContentAdmin from './pages/ContentAdmin';
+import Perfil, { applyTheme } from './pages/Perfil';
+import { useEffect } from 'react';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('app_theme') || 'dark';
+    const savedBlur = parseInt(localStorage.getItem('app_glass_blur') || '12');
+    const savedOpacity = parseFloat(localStorage.getItem('app_glass_opacity') || '0.7');
+    applyTheme(savedTheme, savedBlur, savedOpacity);
+  }, []);
+
   return (
     <ModeProvider>
       <BrowserRouter>
@@ -41,6 +50,7 @@ function App() {
             <Route path="/estadisticas" element={<Estadisticas />} />
             <Route path="/teacher-panel" element={<TeacherPanel />} />
             <Route path="/content-admin" element={<ContentAdmin />} />
+            <Route path="/perfil" element={<Perfil />} />
           </Routes>
         </div>
       </BrowserRouter>

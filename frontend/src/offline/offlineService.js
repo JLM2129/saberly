@@ -161,32 +161,68 @@ export const submitLocalSimulacro = (simulacro, respuestas) => {
 
 // Función para sincronizar pendientes
 export const syncOfflineResults = async () => {
+    // 1. Sincronizar Simulacros
     const historial = JSON.parse(localStorage.getItem('historial_offline') || '[]');
     const pendientes = historial.filter(r => !r.sincronizado);
 
-    if (pendientes.length === 0) return;
+    if (pendientes.length > 0) {
+        for (const resultado of pendientes) {
+            try {
+                const response = await fetch(`${import.meta.env.VITE_API_URL}/simulacros/sincronizar_offline/`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${localStorage.getItem('access_token')}`
+                    },
+                    body: JSON.stringify(resultado)
+                });
 
-    for (const resultado of pendientes) {
+                if (response.ok) {
+                    resultado.sincronizado = true;
+                }
+            } catch (error) {
+                console.error('Error sincronizando:', error);
+                break; // Si falla uno (ej. sigue sin internet real), paramos
+            }
+        }
+        localStorage.setItem('historial_offline', JSON.stringify(historial));
+    }
+
+    // 2. Sincronizar Partidas de Juegos
+    const partidas = JSON.parse(localStorage.getItem('partidas_offline') || '[]');
+    const pendientesPartidas = partidas.filter(p => !p.sincronizado);
+
+    if (pendientesPartidas.length > 0) {
         try {
-            // Aquí llamarías a un nuevo endpoint en el backend que acepte simulacros completos
-            // Por ahora simularemos la lógica de envío
-            const response = await fetch(`${import.meta.env.VITE_API_URL}/simulacros/sincronizar_offline/`, {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/simulacros/sincronizar_partidas_offline/`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${localStorage.getItem('access_token')}`
                 },
-                body: JSON.stringify(resultado)
+                body: JSON.stringify(pendientesPartidas)
             });
 
             if (response.ok) {
-                resultado.sincronizado = true;
+                pendientesPartidas.forEach(p => p.sincronizado = true);
+                localStorage.setItem('partidas_offline', JSON.stringify(partidas));
             }
         } catch (error) {
-            console.error('Error sincronizando:', error);
-            break; // Si falla uno (ej. sigue sin internet real), paramos
+            console.error('Error sincronizando partidas offline:', error);
         }
     }
+};
 
-    localStorage.setItem('historial_offline', JSON.stringify(historial));
+// Guardar partida localmente
+export const savePartidaOffline = (partida) => {
+    const partidas = JSON.parse(localStorage.getItem('partidas_offline') || '[]');
+    const nuevaPartida = {
+        ...partida,
+        fecha: new Date().toISOString(),
+        sincronizado: false,
+        usuario_email: localStorage.getItem('user_email')
+    };
+    partidas.push(nuevaPartida);
+    localStorage.setItem('partidas_offline', JSON.stringify(partidas));
+    return nuevaPartida;
 };

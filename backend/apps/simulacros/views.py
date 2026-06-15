@@ -142,21 +142,111 @@ class SincronizarOfflineView(views.APIView):
     permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request):
+        """
+        Recibe un simulacro completado en modo offline y lo persiste en la BD.
+        Intenta reconstruir DetalleSimulacro haciendo match por texto de enunciado.
+        Payload esperado: { puntaje, correctas, total, tiempo_usado_segundos, detalles: [...] }
+        """
         data = request.data
-        # data contiene el objeto 'resultado' del frontend (puntaje, correctas, detalles, etc.)
-        
-        # Crear el simulacro
+
+        puntaje   = data.get('puntaje', 0)
+        tiempo    = data.get('tiempo_usado_segundos', 0)
+        detalles  = data.get('detalles', [])
+
         simulacro = Simulacro.objects.create(
             usuario=request.user,
             completado=True,
-            puntaje_total=data.get('puntaje', 0),
-            tiempo_usado_segundos=data.get('tiempo_usado_segundos', 0),
+            puntaje_total=puntaje,
+            tiempo_usado_segundos=tiempo,
             fecha_fin=timezone.now()
         )
-        
-        # Guardar detalles (opcionalmente simplificado si no queremos reconstruir todo)
-        # Por ahora guardaremos los resultados generales para las estadísticas
-        
-        return Response({"status": "sincronizado", "id": simulacro.id}, status=status.HTTP_201_CREATED)
 
-# URLs se actualizarán automáticamente si el router está bien configurado o si las añadimos manualmente
+        # Intentar reconstruir DetalleSimulacro buscando la pregunta por enunciado
+        detalles_a_crear = []
+        for det in detalles:
+            pregunta_data = det.get('pregunta', {})
+            enunciado     = pregunta_data.get('enunciado', '').strip()
+            es_correcta   = det.get('es_correcta', False)
+
+            if not enunciado:
+                continue
+
+            # Buscar pregunta oficial por texto de enunciado (exacto o similar)
+            pregunta_obj = Pregunta.objects.filter(enunciado=enunciado).first()
+
+            if pregunta_obj:
+                # Intentar hallar la opción seleccionada
+                opcion_seleccionada = None
+                opcion_seleccionada_texto = None
+
+                # El objeto offline puede tener opcion_seleccionada como ID local o texto
+                opciones_offline = pregunta_data.get('opciones', [])
+                opcion_id_local  = det.get('opcion_seleccionada')
+
+                for op in opciones_offline:
+                    if op.get('id') == opcion_id_local:
+                        opcion_seleccionada_texto = op.get('texto', '').strip()
+                        break
+
+                if opcion_seleccionada_texto:
+                    opcion_seleccionada = OpcionRespuesta.objects.filter(
+                        pregunta=pregunta_obj,
+                        texto=opcion_seleccionada_texto
+                    ).first()
+
+                detalles_a_crear.append(DetalleSimulacro(
+                    simulacro=simulacro,
+                    pregunta=pregunta_obj,
+                    opcion_seleccionada=opcion_seleccionada,
+                    es_correcta=es_correcta
+                ))
+
+        if detalles_a_crear:
+            DetalleSimulacro.objects.bulk_create(detalles_a_crear)
+
+            # Recalcular puntaje real basado en los detalles reconstruidos
+            correctas_reales = sum(1 for d in detalles_a_crear if d.es_correcta)
+            if detalles_a_crear:
+                simulacro.puntaje_total = (correctas_reales / len(detalles_a_crear)) * 100
+                simulacro.save()
+
+        return Response({
+            "status": "sincronizado",
+            "id": simulacro.id,
+            "detalles_guardados": len(detalles_a_crear),
+            "detalles_recibidos": len(detalles)
+        }, status=status.HTTP_201_CREATED)
+
+
+class SincronizarPartidasOfflineView(views.APIView):
+    """
+    Recibe una lista de partidas de juegos guardadas en modo offline
+    y las persiste en la BD.
+    Payload: [ { tipo_juego, puntaje_total, preguntas_correctas, preguntas_incorrectas, max_combo }, ... ]
+    """
+    permission_classes = [permissions.IsAuthenticated]
+
+    def post(self, request):
+        from apps.juegos.models import PartidaDesafio
+
+        partidas_data = request.data if isinstance(request.data, list) else [request.data]
+        creadas = 0
+
+        for p in partidas_data:
+            try:
+                PartidaDesafio.objects.create(
+                    usuario=request.user,
+                    tipo_juego=p.get('tipo_juego', 'quick'),
+                    puntaje_total=p.get('puntaje_total', 0),
+                    preguntas_correctas=p.get('preguntas_correctas', 0),
+                    preguntas_incorrectas=p.get('preguntas_incorrectas', 0),
+                    max_combo=p.get('max_combo', 0),
+                )
+                creadas += 1
+            except Exception as e:
+                continue
+
+        return Response({
+            "status": "sincronizado",
+            "partidas_guardadas": creadas
+        }, status=status.HTTP_201_CREATED)
