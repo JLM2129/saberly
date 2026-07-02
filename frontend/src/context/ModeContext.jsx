@@ -3,8 +3,12 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 const ModeContext = createContext();
 
 export const ModeProvider = ({ children }) => {
-    // Al iniciar, verificamos si hay internet o si el usuario prefirió offline
-    const [isOffline, setIsOffline] = useState(localStorage.getItem('preferred_mode') === 'offline');
+    // Al iniciar, preferimos modo offline sin servidor si no hay preferencia guardada.
+    const [isOffline, setIsOffline] = useState(() => {
+        const saved = localStorage.getItem('preferred_mode');
+        if (saved !== null) return saved === 'offline';
+        return true;
+    });
 
     const toggleMode = (manual = null) => {
         const newValue = manual !== null ? manual : !isOffline;

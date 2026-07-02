@@ -1,0 +1,23 @@
+[
+  {
+    "email": "guest@example.com",
+    "password": "password123",
+    "full_name": "Invitado Offline",
+    "avatar_url": "",
+    "birthdate": "",
+    "gender": "",
+    "school": "",
+    "grade": "",
+    "learning_style": "",
+    "study_habits": "",
+    "language_preference": "",
+    "special_education_needs": "",
+    "extra_support": false,
+    "access_to_devices": "",
+    "student_type": "",
+    "learning_goals": "",
+    "is_verified": false,
+    "is_teacher": false,
+    "is_content_admin": false
+  }
+]

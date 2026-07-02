@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { ModeProvider } from './context/ModeContext';
 import Navbar from './components/Navbar';
 
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <ModeProvider>
-      <BrowserRouter>
+      <HashRouter>
         <div className="app-container">
           <Navbar />
           <Routes>
@@ -53,7 +53,7 @@ function App() {
             <Route path="/perfil" element={<Perfil />} />
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </ModeProvider>
   );
 }

@@ -931,6 +931,658 @@
       ]
     }
   ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Una pequeña asociación comunitaria recolectó fondos vendiendo dos tipos de bolsas de café artesanal: tipo Premium y tipo Tradicional. En total se vendieron 60 bolsas y se recaudaron $1.100.000 COP. Si la bolsa Premium se vendió a $25.000 COP y la Tradicional a $15.000 COP, el contador de la asociación plantea un sistema de ecuaciones para hallar la cantidad exacta vendida de cada tipo.",
+  "archivo": "algebra_sistema_ecuaciones_cafe.png",
+  "preguntas": [
+    {
+      "enunciado": "Si $x$ representa la cantidad de bolsas de café Premium e $y$ la cantidad de bolsas de café Tradicional, ¿cuál de los siguientes sistemas de ecuaciones modela correctamente la situación económica de la asociación?",
+      "tipo": "modelación",
+      "dificultad": "media",
+      "competencia": "formulación y ejecución",
+      "opciones": [
+        {
+          "texto": "$\\begin{cases} x + y = 60 \\\\ 25.000x + 15.000y = 1.100.000 \\end{cases}$",
+          "es_correcta": true
+        },
+        {
+          "texto": "$\\begin{cases} x + y = 1.100.000 \\\\ 25.000x + 15.000y = 60 \\end{cases}$",
+          "es_correcta": false
+        },
+        {
+          "texto": "$\\begin{cases} 25.000x + y = 60 \\\\ x + 15.000y = 1.100.000 \\end{cases}$",
+          "es_correcta": false
+        },
+        {
+          "texto": "$\\begin{cases} x \\cdot y = 60 \\\\ 25.000x + 15.000y = 1.100.000 \\end{cases}$",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un técnico agrícola necesita calcular la altura de un silo cilíndrico de almacenamiento de grano en una finca. Para hacerlo sin subirse, se ubica a una distancia horizontal de 12 metros de la base del silo y, utilizando un teodolito a nivel del suelo, mide que el ángulo de elevación hasta la parte más alta de la estructura es exactamente de $30^\\circ$.",
+  "archivo": "geometria_trigonometria_altura_silo.png",
+  "preguntas": [
+    {
+      "enunciado": "Teniendo en cuenta los datos del gráfico y que $\\tan(30^\\circ) \\approx 0.577$, ¿cuál es la altura aproximada del silo de grano?",
+      "tipo": "resolución",
+      "dificultad": "alta",
+      "competencia": "formulación y ejecución",
+      "opciones": [
+        {
+          "texto": "6.92 metros",
+          "es_correcta": true
+        },
+        {
+          "texto": "20.79 metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "10.39 metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "12.00 metros",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un productor agrícola analiza el costo total del transporte de sus cosechas hacia el centro de acopio. El costo incluye un valor fijo por el uso del camión más un cobro constante por cada kilómetro recorrido. Al graficar la relación entre la distancia recorrida ($x$, en km) y el costo total ($y$, en miles de pesos), obtiene una línea recta que pasa por los puntos $(0, 50)$ y $(40, 130)$.",
+  "archivo": "algebra_funcion_lineal_costo_transporte.png",
+  "preguntas": [
+    {
+      "enunciado": "Con base en el comportamiento lineal mostrado en el gráfico, ¿cuál es el costo adicional en miles de pesos por cada kilómetro recorrido (es decir, el valor de la pendiente de la recta)?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "formulación y ejecución",
+      "opciones": [
+        {
+          "texto": "2 (2 mil pesos por km)",
+          "es_correcta": true
+        },
+        {
+          "texto": "50 (50 mil pesos por km)",
+          "es_correcta": false
+        },
+        {
+          "texto": "3.25 (3,25 mil pesos por km)",
+          "es_correcta": false
+        },
+        {
+          "texto": "80 (80 mil pesos por km)",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un agricultor planea cercar un terreno destinado al pastoreo que tiene una forma irregular compuesta. El terreno está formado por un rectángulo principal de 40 metros de largo por 20 metros de ancho, al cual se le ha anexado en uno de sus lados menores un semicírculo que amplía el área de alimentación.",
+  "archivo": "geometria_perimetro_figura_compuesta.png",
+  "preguntas": [
+    {
+      "enunciado": "Utilizando la aproximación de $\\pi \\approx 3.14$, ¿cuántos metros de alambre se requieren para rodear completamente el perímetro exterior de este terreno de pastoreo?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "formulación y ejecución",
+      "opciones": [
+        {
+          "texto": "131.4 metros",
+          "es_correcta": true
+        },
+        {
+          "texto": "162.8 metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "100.0 metros",
+          "es_correcta": false
+        },
+        {
+          "texto": "151.4 metros",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un agrónomo realiza un estudio sobre la productividad de cinco fincas cafeteras vecinas en una región rural. El gráfico muestra la producción obtenida en sacos de café por hectárea durante la última cosecha para cada una de las fincas estudiadas.",
+  "archivo": "estadistica_media_produccion_cafe.png",
+  "preguntas": [
+    {
+      "enunciado": "Con base en la producción por hectárea registrada en el gráfico para las cinco fincas, ¿cuál es el promedio (media aritmética) de sacos de café producidos por hectárea en esta región?",
+      "tipo": "resolución",
+      "dificultad": "baja",
+      "competencia": "interpretación y representación",
+      "opciones": [
+        {
+          "texto": "18 sacos",
+          "es_correcta": true
+        },
+        {
+          "texto": "16 sacos",
+          "es_correcta": false
+        },
+        {
+          "texto": "20 sacos",
+          "es_correcta": false
+        },
+        {
+          "texto": "15 sacos",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "En una planta de empaque rural se utiliza una banda transportadora para clasificar un lote de 100 mangos según su calidad. El sistema distribuye las frutas en cinco contenedores diferentes: Óptimo, Manchas Superficiales, Sobremaduro, Defectuoso y No Comercializable. Los datos de la clasificación y la cantidad de unidades por categoría se muestran detalladamente en la infografía.",
+  "archivo": "watermarked_img_16391677281891258989.png",
+  "preguntas": [
+    {
+      "enunciado": "Con la información presentada en el gráfico, si se selecciona un mango al azar del lote total, ¿cuál es la probabilidad de que este pertenezca a la categoría de 'Manchas Superficiales'?",
+      "tipo": "resolución",
+      "dificultad": "baja",
+      "competencia": "formulación y ejecución",
+      "opciones": [
+        {
+          "texto": "15%",
+          "es_correcta": true
+        },
+        {
+          "texto": "70%",
+          "es_correcta": false
+        },
+        {
+          "texto": "10%",
+          "es_correcta": false
+        },
+        {
+          "texto": "5%",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "En una escuela rural se ha destinado un terreno cuadrado de 10 metros de lado para proyectos agrícolas. La zona sombreada corresponde a la sección asignada para las huertas de hortalizas, mientras que las cuatro esquinas blancas idénticas (con forma de cuartos de círculo de radio 5 metros) se utilizarán para sistemas de compostaje.",
+  "archivo": "geometria_area_sombreada_huerta.png",
+  "preguntas": [
+    {
+      "enunciado": "Tomando la aproximación de $\\pi \\approx 3.14$, ¿cuál es el área aproximada, en metros cuadrados, de la zona sombreada destinada a la huerta de hortalizas?",
+      "tipo": "resolución",
+      "dificultad": "alta",
+      "competencia": "formulación y ejecución",
+      "opciones": [
+        {
+          "texto": "21.5 metros cuadrados",
+          "es_correcta": true
+        },
+        {
+          "texto": "78.5 metros cuadrados",
+          "es_correcta": false
+        },
+        {
+          "texto": "25.0 metros cuadrados",
+          "es_correcta": false
+        },
+        {
+          "texto": "43.0 metros cuadrados",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un grupo de estudiantes de un colegio rural registró durante un trimestre la cantidad de horas de riego semanales aplicadas a 8 parcelas de control idénticas y la producción final obtenida en kilogramos de hortalizas por cada una.",
+  "archivo": "estadistica_dispersion_riego_cosecha.png",
+  "preguntas": [
+    {
+      "enunciado": "Con base en el comportamiento de los puntos distribuidos en el gráfico de dispersión, ¿qué tipo de relación o correlación se evidencia entre las horas de riego y la producción de hortalizas?",
+      "tipo": "interpretación",
+      "dificultad": "media",
+      "competencia": "interpretación y representación",
+      "opciones": [
+        {
+          "texto": "Correlación lineal positiva (a mayor cantidad de horas de riego, tiende a aumentar la producción).",
+          "es_correcta": true
+        },
+        {
+          "texto": "Correlación lineal negativa (a mayor cantidad de horas de riego, la producción disminuye drásticamente).",
+          "es_correcta": false
+        },
+        {
+          "texto": "Sin correlación (las horas de riego no muestran ninguna tendencia ni influencia sobre la producción).",
+          "es_correcta": false
+        },
+        {
+          "texto": "Relación constante (la producción se mantiene exactamente igual sin importar las horas de riego).",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un agricultor compró en la cooperativa insumos para su cosecha bajo dos ofertas distintas. La primera semana adquirió 3 bultos de fertilizante orgánico y 2 bultos de semillas de maíz por un valor total de 240 mil pesos. La segunda semana, compró 4 bultos de fertilizante orgánico y 1 bulto de semillas de maíz por un valor total de 220 mil pesos.",
+  "archivo": "algebra_sistema_ecuaciones_insumos.png",
+  "preguntas": [
+    {
+      "enunciado": "Con base en las compras realizadas por el agricultor, ¿cuál es el costo individual (en miles de pesos) de un bulto de fertilizante orgánico y de un bulto de semillas de maíz respectivamente?",
+      "tipo": "resolución",
+      "dificultad": "alta",
+      "competencia": "formulación y ejecución",
+      "opciones": [
+        {
+          "texto": "40 y 60 (40 mil el fertilizante y 60 mil las semillas)",
+          "es_correcta": true
+        },
+        {
+          "texto": "50 y 45 (50 mil el fertilizante y 45 mil las semillas)",
+          "es_correcta": false
+        },
+        {
+          "texto": "30 y 75 (30 mil el fertilizante y 75 mil las semillas)",
+          "es_correcta": false
+        },
+        {
+          "texto": "45 y 52 (45 mil el fertilizante y 52 mil las semillas)",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "En una finca comunitaria, el tiempo que se tarda en llenar un tanque de reserva de agua para riego depende de la cantidad de motobombas (de la misma potencia y flujo) que se utilicen simultáneamente. Si se activa 1 sola motobomba, el tanque tarda exactamente 12 horas en llenarse por completo.",
+  "archivo": "algebra_proporcionalidad_inversa_llenado.png",
+  "preguntas": [
+    {
+      "enunciado": "Si para acelerar el proceso se decide poner a funcionar un total de 3 motobombas idénticas al mismo tiempo, ¿cuántas horas tardará en llenarse el tanque de reserva bajo estas condiciones?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "formulación y ejecución",
+      "opciones": [
+        {
+          "texto": "4 horas",
+          "es_correcta": true
+        },
+        {
+          "texto": "36 horas",
+          "es_correcta": false
+        },
+        {
+          "texto": "6 horas",
+          "es_correcta": false
+        },
+        {
+          "texto": "3 horas",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "texto",
+  "contexto": "Un almacén agropecuario tiene un lote de 200 paquetes de semillas de alta calidad. De estos, 120 paquetes son de variedad 'Maíz Amarillo' y 80 paquetes son de variedad 'Maíz Blanco'. Se sabe que el 10% de los paquetes de 'Maíz Amarillo' tienen certificación orgánica y el 25% de los paquetes de 'Maíz Blanco' tienen certificación orgánica.",
+  "archivo": "Code_Generated_Image.png",
+  "preguntas": [
+    {
+      "enunciado": "Si se selecciona un paquete al azar del lote total y se observa que tiene certificación orgánica, ¿cuál es la probabilidad de que este paquete sea de la variedad 'Maíz Blanco'?",
+      "tipo": "resolución",
+      "dificultad": "alta",
+      "competencia": "formulación y ejecución",
+      "opciones": [
+        {
+          "texto": "20/32 o 62.5%",
+          "es_correcta": true
+        },
+        {
+          "texto": "12/32 o 37.5%",
+          "es_correcta": false
+        },
+        {
+          "texto": "25/100 o 25%",
+          "es_correcta": false
+        },
+        {
+          "texto": "80/200 o 40%",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un agricultor necesita almacenar bultos de abono en una bodega cuya área de base es de 12 metros cuadrados. La altura útil de la bodega para el apilamiento de los bultos es de 3 metros. Se planea llenar la bodega hasta un 80% de su capacidad total para permitir la ventilación adecuada de los productos.",
+  "archivo": "geometria_volumen_bodega.png",
+  "preguntas": [
+    {
+      "enunciado": "Considerando la capacidad total de la bodega, ¿cuál es el volumen máximo en metros cúbicos ($m^3$) que debe ocupar el abono para cumplir con la norma de ventilación (80% de la capacidad total)?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "formulación y ejecución",
+      "opciones": [
+        {
+          "texto": "28.8 m³",
+          "es_correcta": true
+        },
+        {
+          "texto": "36.0 m³",
+          "es_correcta": false
+        },
+        {
+          "texto": "24.0 m³",
+          "es_correcta": false
+        },
+        {
+          "texto": "30.0 m³",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "En una clase de dibujo técnico, se presenta el siguiente sólido isométrico compuesto por cubos idénticos. Se han identificado tres vistas principales: la vista frontal (mirando desde la dirección de la flecha 'F'), la vista lateral derecha (mirando desde 'L') y la vista superior (mirando desde 'S').",
+  "archivo": "geometria_vistas_ortogonales_solido.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál de las siguientes opciones representa correctamente la proyección de la **vista lateral derecha** (L) del sólido isométrico presentado?",
+      "tipo": "interpretación",
+      "dificultad": "alta",
+      "competencia": "interpretación y representación",
+      "opciones": [
+        {
+          "texto": "Una 'L' invertida compuesta por 3 cuadrados.",
+          "es_correcta": true
+        },
+        {
+          "texto": "Una 'U' compuesta por 3 cuadrados.",
+          "es_correcta": false
+        },
+        {
+          "texto": "Un cuadrado simple de 1x1.",
+          "es_correcta": false
+        },
+        {
+          "texto": "Una 'T' compuesta por 3 cuadrados.",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "En una caja de herramientas de un trabajador rural, hay 12 herramientas en total: 5 machetes, 4 palas y 3 azadones. Todas las herramientas tienen el mismo peso y dimensiones, por lo que es imposible diferenciarlas al tacto sin verlas.",
+  "archivo": "probabilidad_herramientas_rural.png",
+  "preguntas": [
+    {
+      "enunciado": "Si el trabajador extrae una herramienta al azar de la caja, ¿cuál es la probabilidad de que esta sea una pala?",
+      "tipo": "interpretación",
+      "dificultad": "baja",
+      "competencia": "interpretación y representación",
+      "opciones": [
+        {
+          "texto": "1/3 o 33.3%",
+          "es_correcta": true
+        },
+        {
+          "texto": "4/12 o 25%",
+          "es_correcta": false
+        },
+        {
+          "texto": "1/4 o 25%",
+          "es_correcta": false
+        },
+        {
+          "texto": "3/12 o 33.3%",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un tractor adquirido por una asociación agrícola tiene un valor comercial inicial de 120 millones de pesos. Se estima que, debido al uso, su valor disminuye linealmente a razón de 10 millones de pesos por cada año de servicio.",
+  "archivo": "algebra_funcion_lineal_depreciacion.png",
+  "preguntas": [
+    {
+      "enunciado": "Si $V$ representa el valor del tractor en millones de pesos y $t$ representa el tiempo en años, ¿cuál es la ecuación que modela correctamente el valor del tractor en función del tiempo?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "formulación y ejecución",
+      "opciones": [
+        {
+          "texto": "V(t) = 120 - 10t",
+          "es_correcta": true
+        },
+        {
+          "texto": "V(t) = 120 + 10t",
+          "es_correcta": false
+        },
+        {
+          "texto": "V(t) = 10 - 120t",
+          "es_correcta": false
+        },
+        {
+          "texto": "V(t) = 120t - 10",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "En una finca, se realiza un censo de cultivos. Se tienen 100 plantas en total, clasificadas por tipo de cultivo (Maíz o Fríjol) y por sistema de riego (Goteo o Aspersión).",
+  "archivo": "probabilidad_contingencia_cultivos.png",
+  "preguntas": [
+    {
+      "enunciado": "De acuerdo con la siguiente tabla, si se elige una planta al azar, ¿cuál es la probabilidad de que la planta sea de Maíz y utilice sistema de riego por Goteo?",
+      "tipo": "interpretación",
+      "dificultad": "media",
+      "competencia": "interpretación y representación",
+      "opciones": [
+        {
+          "texto": "30/100 o 30%",
+          "es_correcta": true
+        },
+        {
+          "texto": "40/100 o 40%",
+          "es_correcta": false
+        },
+        {
+          "texto": "30/60 o 50%",
+          "es_correcta": false
+        },
+        {
+          "texto": "50/100 o 50%",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Una asociación de pequeños agricultores dispone de un presupuesto fijo para el alquiler de maquinaria pesada. El número de horas de alquiler ($h$) depende directamente de la tarifa por hora ($t$) que cobre la empresa proveedora.",
+  "archivo": "proporcionalidad_inversa_maquinaria.png",
+  "preguntas": [
+    {
+      "enunciado": "Si el presupuesto total disponible es de $1,200,000 COP, ¿cuál es el modelo matemático que representa la cantidad de horas ($h$) que la asociación puede alquilar en función de la tarifa por hora ($t$)?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "formulación y ejecución",
+      "opciones": [
+        {
+          "texto": "h(t) = 1,200,000 / t",
+          "es_correcta": true
+        },
+        {
+          "texto": "h(t) = 1,200,000 * t",
+          "es_correcta": false
+        },
+        {
+          "texto": "h(t) = 1,200,000 - t",
+          "es_correcta": false
+        },
+        {
+          "texto": "h(t) = t / 1,200,000",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un agricultor registra la producción semanal de café (en arrobas) durante 8 semanas de cosecha. Los datos son: 12, 15, 14, 18, 12, 16, 15, 14.",
+  "archivo": "estadistica_promedio_cafe.png",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es el promedio de producción semanal de café en arrobas durante este periodo?",
+      "tipo": "resolución",
+      "dificultad": "baja",
+      "competencia": "interpretación y representación",
+      "opciones": [
+        {
+          "texto": "14.5 arrobas",
+          "es_correcta": true
+        },
+        {
+          "texto": "15.0 arrobas",
+          "es_correcta": false
+        },
+        {
+          "texto": "14.0 arrobas",
+          "es_correcta": false
+        },
+        {
+          "texto": "16.0 arrobas",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un diseñador gráfico está creando un nuevo logo para una cooperativa agrícola. El logo se compone de tres figuras geométricas superpuestas y simétricas: un cuadrado, un círculo y un triángulo equilátero.",
+  "archivo": "geometria_composicion_figuras.png",
+  "preguntas": [
+    {
+      "enunciado": "Si el diseñador desea calcular el área total sombreada del logo, ¿cuál de las siguientes afirmaciones describe mejor el procedimiento correcto para determinar dicha área basándose en la composición geométrica?",
+      "tipo": "interpretación",
+      "dificultad": "media",
+      "competencia": "interpretación y representación",
+      "opciones": [
+        {
+          "texto": "El área sombreada es la suma del área del cuadrado y del triángulo, menos el área del círculo.",
+          "es_correcta": false
+        },
+        {
+          "texto": "El área sombreada es el resultado de restar el área del círculo a la suma de las áreas del cuadrado y del triángulo, teniendo en cuenta la superposición de las tres figuras.",
+          "es_correcta": true
+        },
+        {
+          "texto": "El área sombreada es simplemente la suma de las áreas de las tres figuras, sin importar dónde se superpongan.",
+          "es_correcta": false
+        },
+        {
+          "texto": "El área sombreada es el área del círculo menos el área del cuadrado, ignorando el triángulo.",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "La cooperativa cuenta con 200 caficultores. 120 cultivan café variedad Castillo y 80 variedad Colombia. De los de la variedad Castillo, 40 utilizan fertilizantes orgánicos, mientras que de la variedad Colombia, 30 los utilizan.",
+  "archivo": "probabilidad_condicional_fertilizantes.png",
+  "preguntas": [
+    {
+      "enunciado": "Si se selecciona al azar un caficultor que utiliza fertilizantes orgánicos, ¿cuál es la probabilidad de que pertenezca a la variedad Castillo?",
+      "tipo": "resolución",
+      "dificultad": "alta",
+      "competencia": "interpretación y representación",
+      "opciones": [
+        {
+          "texto": "40/70",
+          "es_correcta": true
+        },
+        {
+          "texto": "40/120",
+          "es_correcta": false
+        },
+        {
+          "texto": "40/200",
+          "es_correcta": false
+        },
+        {
+          "texto": "70/200",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El costo de mantenimiento de una despulpadora de café se modela mediante la función C(h) = 50.000 + 15.000h, donde 'C' es el costo total en pesos y 'h' son las horas de trabajo técnico.",
+  "archivo": "funcion_lineal_mantenimiento.png",
+  "preguntas": [
+    {
+      "enunciado": "Si el presupuesto máximo de mantenimiento es de 350.000 pesos, ¿cuántas horas de trabajo técnico puede contratar la cooperativa?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "interpretación y representación",
+      "opciones": [
+        {
+          "texto": "20 horas",
+          "es_correcta": true
+        },
+        {
+          "texto": "23.3 horas",
+          "es_correcta": false
+        },
+        {
+          "texto": "25 horas",
+          "es_correcta": false
+        },
+        {
+          "texto": "15 horas",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
 }
+
   ]
 }

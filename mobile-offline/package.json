@@ -1,0 +1,14 @@
+{
+  "name": "saberly-mobile-offline",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "node build.js",
+    "prepare": "npm install"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.4"
+  }
+}

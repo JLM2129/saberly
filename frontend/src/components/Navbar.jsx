@@ -24,15 +24,17 @@ export default function Navbar() {
     });
 
     useEffect(() => {
-        checkBackendConnection().then(setIsConnected);
+        if (!isOffline) {
+            checkBackendConnection().then(setIsConnected);
+        } else {
+            setIsConnected(false);
+        }
+
         const authStatus = isAuthenticated();
         setIsAuth(authStatus);
 
-        if (authStatus) {
-            loadProfile();
-        }
-
         if (!isOffline && authStatus) {
+            loadProfile();
             import('../offline/offlineService').then(module => {
                 module.syncOfflineResults();
             });

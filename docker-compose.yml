@@ -42,7 +42,7 @@ services:
   frontend:
     build: ./frontend
     environment:
-      - VITE_API_URL=http://localhost:8001/api
+      - VITE_API_URL=http://192.168.80.87:8001/api
     volumes:
       - ./frontend:/app
       - /app/node_modules
