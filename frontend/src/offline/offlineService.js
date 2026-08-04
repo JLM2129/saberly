@@ -44,25 +44,11 @@ export const generateLocalSimulacro = (tipo = '20%') => {
 
     const detalles = [];
     let questionCounter = 1;
+    const uniqueKeys = new Set();
 
     areasToUse.forEach((area, index) => {
         const cantidadATomar = preguntasPorArea + (index === 0 ? restante : 0);
 
-        // Obtener todas las preguntas del area (aplanar contextos)
-        let poolPreguntas = [];
-        area.contextos.forEach(ctx => {
-            ctx.preguntas.forEach(p => {
-                poolPreguntas.push({
-                    ...p,
-                    contexto_obj: {
-                        contenido: ctx.contexto,
-                        archivo: ctx.archivo
-                    }
-                });
-            });
-        });
-
-        // Mezclar usando Fisher-Yates para asegurar verdadera aleatoriedad
         const shuffleArray = (array) => {
             const arr = [...array];
             for (let i = arr.length - 1; i > 0; i--) {
@@ -72,18 +58,53 @@ export const generateLocalSimulacro = (tipo = '20%') => {
             return arr;
         };
 
-        const mezcladas = shuffleArray(poolPreguntas);
-        const seleccionadas = mezcladas.slice(0, cantidadATomar);
+        // Separar preguntas con imagen vs sin imagen para garantizar presencia equilibrada
+        let poolConImagen = [];
+        let poolSinImagen = [];
+
+        area.contextos.forEach(ctx => {
+            ctx.preguntas.forEach(p => {
+                const item = {
+                    ...p,
+                    contexto_obj: {
+                        contenido: ctx.contexto,
+                        archivo: ctx.archivo
+                    }
+                };
+                if (ctx.archivo || p.imagen_url) {
+                    poolConImagen.push(item);
+                } else {
+                    poolSinImagen.push(item);
+                }
+            });
+        });
+
+        const conImgMezcladas = shuffleArray(poolConImagen);
+        const sinImgMezcladas = shuffleArray(poolSinImagen);
+
+        // Garantizar al menos 1/3 de preguntas con imagen por área si hay disponibles
+        const cuotaImagen = Math.min(conImgMezcladas.length, Math.max(1, Math.floor(cantidadATomar * 0.35)));
+        const seleccionConImg = conImgMezcladas.slice(0, cuotaImagen);
+        const cuotaSinImagen = cantidadATomar - seleccionConImg.length;
+        const seleccionSinImg = sinImgMezcladas.slice(0, cuotaSinImagen);
+
+        const seleccionadas = shuffleArray([...seleccionConImg, ...seleccionSinImg]);
 
         seleccionadas.forEach(p => {
+            const preguntaKey = `${p.enunciado}||${p.contexto_obj.contenido || ''}||${p.contexto_obj.archivo || ''}`;
+            if (uniqueKeys.has(preguntaKey)) return;
+            uniqueKeys.add(preguntaKey);
+
+            const preguntaId = questionCounter++;
             detalles.push({
-                id: questionCounter++,
+                id: preguntaId,
                 pregunta: {
-                    id: Math.floor(Math.random() * 1000000),
+                    id: preguntaId,
                     enunciado: p.enunciado,
                     imagen_url: p.imagen_url,
+                    area_nombre: area.nombre || 'General',
                     contexto: {
-                        id: Math.floor(Math.random() * 1000000),
+                        id: preguntaId,
                         contenido: p.contexto_obj.contenido,
                         archivo: p.contexto_obj.archivo
                     },
@@ -148,7 +169,7 @@ export const submitLocalSimulacro = (simulacro, respuestas) => {
         total,
         es_offline: true,
         sincronizado: false, // Nuevo: para saber si está en el servidor
-        usuario_email: localStorage.getItem('user_email') // Guardamos quién lo hizo
+        usuario_email: localStorage.getItem('user_email') || 'offline_guest' // Guardamos quién lo hizo
     };
 
     // Guardar en localStorage para persistencia

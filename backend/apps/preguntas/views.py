@@ -189,6 +189,24 @@ def validate_import_api(request):
         "area_id": area.id
     })
 
+def normalize_archivo_path(archivo_raw):
+    if not archivo_raw or not isinstance(archivo_raw, str):
+        return None
+
+    archivo = archivo_raw.strip()
+    if not archivo:
+        return None
+
+    if archivo.startswith('/'):
+        archivo = archivo.lstrip('/')
+    if archivo.startswith('media/'):
+        archivo = archivo[len('media/'):]
+    if not archivo.startswith('imagenes/'):
+        archivo = f'imagenes/{archivo}'
+
+    return archivo
+
+
 @api_view(['POST'])
 @permission_classes([IsAuthenticated, IsContentAdmin])
 def confirm_import_api(request):
@@ -229,12 +247,14 @@ def confirm_import_api(request):
         # Crear contexto
         contexto = None
         if ctx_data.get('contexto') or ctx_data.get('archivo'):
+            archivo_normalizado = normalize_archivo_path(ctx_data.get('archivo'))
             contexto = Contexto.objects.create(
                 area=area,
                 tipo=ctx_data.get('tipo', 'texto'),
                 contenido=ctx_data.get('contexto', ''),
+                archivo=archivo_normalizado
             )
-            # Manejo de archivo omitido por simplicidad de JSON, pero se podria descargar
+            # Si el archivo no existe en el filesystem, Django mostrará 404 al intentar cargarlo
         
         for preg_data in preguntas_validas_en_ctx:
             nueva_pregunta = Pregunta.objects.create(

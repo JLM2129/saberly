@@ -300,3 +300,270 @@
         width: 100%;
     }
 }
+
+/* ── Tabs de modo ────────────────────────────────────────────────────── */
+.mode-tabs {
+    display: flex;
+    gap: var(--spacing-sm);
+    max-width: 900px;
+    margin: 0 auto var(--spacing-lg);
+    border-bottom: 2px solid rgba(255,255,255,0.08);
+    padding-bottom: 0;
+}
+
+.tab-btn {
+    padding: 10px 24px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: var(--text-muted);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: -2px;
+}
+
+.tab-btn:hover {
+    color: var(--text-primary);
+    background: rgba(255,255,255,0.05);
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+}
+
+.tab-btn.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+/* ── Contenedor del listado ──────────────────────────────────────────── */
+.questions-list-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+}
+
+/* ── Barra de herramientas ───────────────────────────────────────────── */
+.list-toolbar {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.search-input {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px 14px;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.05);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+}
+
+.filter-select {
+    padding: 10px 14px;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.05);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.questions-count {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+/* ── Tabla de preguntas ──────────────────────────────────────────────── */
+.questions-table {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 1fr 160px 100px 180px;
+    gap: var(--spacing-md);
+    padding: 10px 16px;
+    background: rgba(255,255,255,0.05);
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.question-row {
+    display: grid;
+    grid-template-columns: 1fr 160px 100px 180px;
+    gap: var(--spacing-md);
+    padding: 14px 16px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: var(--radius-sm);
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.question-row:hover {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(99,102,241,0.25);
+}
+
+.row-enunciado {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+.row-area {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* ── Badges de dificultad ────────────────────────────────────────────── */
+.badge-dificultad {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.badge-facil   { background: rgba(34,197,94,0.15);  color: #22c55e; border: 1px solid rgba(34,197,94,0.3); }
+.badge-media   { background: rgba(234,179,8,0.15);  color: #eab308; border: 1px solid rgba(234,179,8,0.3); }
+.badge-dificil { background: rgba(239,68,68,0.15);  color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
+
+/* ── Botones de acción por fila ──────────────────────────────────────── */
+.row-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.btn-edit,
+.btn-deactivate {
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.btn-edit {
+    background: rgba(99,102,241,0.15);
+    color: #818cf8;
+    border: 1px solid rgba(99,102,241,0.3);
+}
+
+.btn-edit:hover {
+    background: rgba(99,102,241,0.3);
+    transform: translateY(-1px);
+}
+
+.btn-deactivate {
+    background: rgba(239,68,68,0.1);
+    color: #f87171;
+    border: 1px solid rgba(239,68,68,0.25);
+}
+
+.btn-deactivate:hover {
+    background: rgba(239,68,68,0.2);
+    transform: translateY(-1px);
+}
+
+/* ── Paginación ──────────────────────────────────────────────────────── */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+    color: var(--text-muted);
+}
+
+.btn-page {
+    padding: 8px 18px;
+    border-radius: var(--radius-md);
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+
+.btn-page:hover:not(:disabled) {
+    background: rgba(99,102,241,0.2);
+    border-color: rgba(99,102,241,0.4);
+}
+
+.btn-page:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* ── Estados vacío / cargando ────────────────────────────────────────── */
+.list-loading,
+.list-empty {
+    text-align: center;
+    padding: var(--spacing-xl);
+    color: var(--text-muted);
+}
+
+.list-empty p { margin-bottom: var(--spacing-md); font-size: 1rem; }
+
+/* ── Botón volver ────────────────────────────────────────────────────── */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    max-width: 900px;
+    margin: 0 auto var(--spacing-md);
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius-md);
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    display: block;
+}
+
+.btn-back:hover {
+    background: rgba(255,255,255,0.09);
+    color: var(--text-primary);
+}
+
+/* ── Responsive para el listado ─────────────────────────────────────── */
+@media (max-width: 768px) {
+    .table-header { display: none; }
+
+    .question-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .row-area    { color: var(--text-muted); font-size: 0.82rem; }
+    .row-actions { justify-content: flex-start; }
+
+    .list-toolbar { flex-direction: column; align-items: stretch; }
+    .search-input { min-width: unset; }
+}

@@ -150,7 +150,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Media files
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# Sirve las imágenes desde la carpeta de preguntas, que es donde están almacenadas en este proyecto
+MEDIA_ROOT = os.path.join(BASE_DIR, 'preguntas')
 
 # Custom User Model
 AUTH_USER_MODEL = 'users.User'

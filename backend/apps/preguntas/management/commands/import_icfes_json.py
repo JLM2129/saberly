@@ -52,21 +52,41 @@ class Command(BaseCommand):
                 raw_tipo = bloque.get("tipo", "texto")
                 tipo_final = raw_tipo if raw_tipo in valid_types else "texto"
 
+                archivo_raw = bloque.get("archivo")
+                archivo_normalizado = None
+                if isinstance(archivo_raw, str) and archivo_raw.strip():
+                    archivo_raw = archivo_raw.strip()
+                    if archivo_raw.startswith("/"):
+                        archivo_raw = archivo_raw.lstrip("/")
+                    if archivo_raw.startswith("media/"):
+                        archivo_raw = archivo_raw[len("media/"):]
+                    if not archivo_raw.startswith("imagenes/"):
+                        archivo_raw = f"imagenes/{archivo_raw}"
+                    archivo_normalizado = archivo_raw
+
                 if contenido:
-                    # Usar get_or_create para evitar duplicados y update_or_create logic para corregir tipos erróneos
+                    # Usar get_or_create para evitar duplicados.
                     contexto, created = Contexto.objects.get_or_create(
                         area=area,
                         contenido=contenido,
                         defaults={
                             'tipo': tipo_final,
-                            'archivo': bloque.get("archivo"),
+                            'archivo': archivo_normalizado,
                             'titulo': bloque.get("titulo", "")
                         }
                     )
-                    # Si ya existía pero tenía un tipo incorrecto (ej: "experimento"), lo corregimos
-                    if not created and contexto.tipo != tipo_final:
-                        contexto.tipo = tipo_final
-                        contexto.save()
+
+                    if not created:
+                        needs_save = False
+                        if contexto.tipo != tipo_final:
+                            contexto.tipo = tipo_final
+                            needs_save = True
+                        if archivo_normalizado and contexto.archivo != archivo_normalizado:
+                            contexto.archivo = archivo_normalizado
+                            needs_save = True
+                        if needs_save:
+                            contexto.save()
+
                     total_contextos += 1 if created else 0
                 else:
                     contexto = None

@@ -13,6 +13,9 @@ export default function Login() {
 
     const handleOffline = () => {
         toggleMode(true);
+        if (!localStorage.getItem('user_email')) {
+            localStorage.setItem('user_email', 'offline_guest');
+        }
         navigate('/simulacros');
     };
 
@@ -27,7 +30,14 @@ export default function Login() {
             navigate('/simulacros');
             window.location.reload();
         } catch (err) {
-            setError(err.message || 'Credenciales inválidas');
+            const message = err.message || 'Credenciales inválidas';
+            const isConnectionError = /failed to fetch|network|operación/i.test(message);
+            if (isConnectionError) {
+                alert('No se pudo conectar al servidor. Continuarás como invitado en modo offline.');
+                handleOffline();
+                return;
+            }
+            setError(message);
         } finally {
             setLoading(false);
         }

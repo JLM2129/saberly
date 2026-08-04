@@ -5,7 +5,7 @@
     {
       "tipo": "grafico",
       "contexto": "La siguiente gráfica muestra la relación entre el tiempo transcurrido (en horas) y la distancia recorrida (en kilómetros) por un vehículo que mantiene una velocidad constante.",
-      "archivo": "/imagenes/grafica_funcion_lineal_distancia1.png",
+      "archivo": "grafica_funcion_lineal_distancia1.png",
       "preguntas": [
         {
           "enunciado": "De acuerdo con la gráfica, ¿cuál es la velocidad del vehículo y qué distancia habrá recorrido al cabo de 6 horas?",
@@ -24,7 +24,7 @@
     {
       "tipo": "grafico",
       "contexto": "Una institución educativa comparó los puntajes obtenidos en el área de Matemáticas por dos grupos diferentes de estudiantes (Grupo A y Grupo B). Los resultados se representaron en el siguiente diagrama de caja y bigotes.",
-      "archivo": "/imagenes/boxplot_comparativo_matematicas.png",
+      "archivo": "boxplot_comparativo_matematicas.png",
       "preguntas": [
         {
           "enunciado": "Basándose en los diagramas de caja, ¿cuál de las siguientes afirmaciones sobre la dispersión y tendencia central de los puntajes es correcta?",
@@ -43,7 +43,7 @@
     {
       "tipo": "grafico",
       "contexto": "En un mercado campesino, dos familias realizaron compras de bolsas de frutas de igual peso. La familia Pérez compró 2 bolsas de manzanas y 3 de peras por un total de $31.000. La familia Ruiz compró 3 bolsas de manzanas y 2 de peras por $29.000.",
-      "archivo": "/imagenes/sistema_ecuaciones_frutas.png",
+      "archivo": "sistema_ecuaciones_frutas.png",
       "preguntas": [
         {
           "enunciado": "Si una tercera familia desea comprar exactamente una bolsa de manzanas y una bolsa de peras, ¿cuánto deberá pagar en total?",
@@ -62,7 +62,7 @@
     {
       "tipo": "grafico",
       "contexto": "Un ingeniero topógrafo necesita medir la longitud de un sendero recto (lado x) que atraviesa un parque de forma triangular. Para ello, mide los otros dos lados del parque, obteniendo 100 metros y 150 metros, y el ángulo entre ellos, que es de 60°, como se muestra en la figura.",
-      "archivo": "/imagenes/parque_triangular_trigonometria.png",
+      "archivo": "parque_triangular_trigonometria.png",
       "preguntas": [
         {
           "enunciado": "¿Cuál es la longitud aproximada del sendero x? (Considere que cos(60°) = 0,5 y utilice la Ley del Coseno: a² = b² + c² - 2bc · cos(A)).",
@@ -81,7 +81,7 @@
     {
   "tipo": "grafico",
   "contexto": "La siguiente gráfica representa el volumen de agua $V(t)$ en un tanque de almacenamiento en función del tiempo $t$ durante un proceso de vaciado. La curva muestra cómo varía la cantidad de agua desde que se abre la válvula hasta que el tanque queda vacío.",
-  "archivo": "/imagenes/vaciado_tanque_derivada.png",
+  "archivo": "vaciado_tanque_derivada.png",
   "preguntas": [
     {
       "enunciado": "Teniendo en cuenta que la razón de cambio instantánea del volumen respecto al tiempo ($dV/dt$) representa la velocidad de vaciado, ¿en cuál de los puntos señalados en la gráfica es mayor la velocidad a la que está saliendo el agua?",
@@ -112,7 +112,7 @@
 {
   "tipo": "grafico",
   "contexto": "Un centro de idiomas realizó una encuesta a 200 estudiantes sobre su preferencia entre dos idiomas (Inglés y Francés). Los resultados se organizaron en la siguiente tabla, clasificando a los estudiantes por su nivel de estudio (Básico o Avanzado).",
-  "archivo": "/imagenes/tabla_contingencia_idiomas.png",
+  "archivo": "tabla_contingencia_idiomas.png",
   "preguntas": [
     {
       "enunciado": "Si se selecciona al azar un estudiante que prefiere el Inglés, ¿cuál es la probabilidad de que este pertenezca al nivel Avanzado?",
@@ -143,7 +143,7 @@
 {
   "tipo": "grafico",
   "contexto": "Una familia registra sus gastos mensuales en un gráfico circular para controlar sus finanzas. El presupuesto total mensual de la familia es de $2.400.000.",
-  "archivo": "/imagenes/grafico_circular_presupuesto.png",
+  "archivo": "grafico_circular_presupuesto.png",
   "preguntas": [
     {
       "enunciado": "De acuerdo con el gráfico, ¿cuánto dinero destina la familia mensualmente al rubro de 'Alimentación' y cuánto lograrían ahorrar en un semestre si mantienen este mismo plan?",
@@ -174,7 +174,7 @@
 {
   "tipo": "grafico",
   "contexto": "Una empresa de energía solar desea instalar un panel sobre el techo de una casa. El diseño técnico muestra que el soporte del panel debe formar un triángulo rectángulo con la base del techo. La base horizontal mide 12 metros y el ángulo de inclinación requerido es de 30°, como se observa en la figura.",
-  "archivo": "/imagenes/trigonometria_panel_solar.png",
+  "archivo": "trigonometria_panel_solar.png",
   "preguntas": [
     {
       "enunciado": "Para asegurar la estabilidad de la estructura, el técnico necesita conocer la longitud del panel solar (la hipotenusa L). ¿Cuál es el valor de L? (Considere que cos(30°) ≈ 0,86 y cos(60°) = 0,5).",
@@ -205,7 +205,7 @@
 {
   "tipo": "grafico",
   "contexto": "Una empresa de tecnología ha determinado que el costo de producción $C$ de un nuevo dispositivo depende de la cantidad de unidades fabricadas $x$, según la función: $C(x) = 0,5x^2 - 10x + 100$. El costo marginal se define como la derivada de la función de costo, $C'(x)$, y representa el costo adicional de producir una unidad más.",
-  "archivo": "/imagenes/grafica_costo_derivada.png",
+  "archivo": "grafica_costo_derivada.png",
   "preguntas": [
     {
       "enunciado": "¿Cuál es la expresión del costo marginal $C'(x)$ y en qué nivel de producción el costo marginal es igual a cero?",
@@ -236,7 +236,7 @@
 {
   "tipo": "grafico",
   "contexto": "Un laboratorio químico analiza la concentración de un reactivo $f(t)$ en función del tiempo $t$ (en horas). La función que describe el comportamiento está dada por $f(t) = (t^2 - 4) / (t - 2)$. El sistema presenta una inestabilidad justo a las 2 horas, como se muestra en la gráfica.",
-  "archivo": "/imagenes/limite_discontinuidad_evitable.png",
+  "archivo": "limite_discontinuidad_evitable.png",
   "preguntas": [
     {
       "enunciado": "De acuerdo con el análisis gráfico y algebraico, ¿cuál es el límite de la concentración $f(t)$ cuando el tiempo $t$ se aproxima a 2 horas?",

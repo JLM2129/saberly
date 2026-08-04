@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { isAuthenticated } from '../services/auth';
 import './Perfil.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8001/api';
+const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8001/api').replace(/\/$/, '');
 
 const AVATAR_OPTIONS = [
     { style: 'adventurer', label: 'Aventurero' },

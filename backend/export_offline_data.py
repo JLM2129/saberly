@@ -1,6 +1,7 @@
 import os
 import django
 import json
+import shutil
 
 # Configurar Django
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
@@ -8,7 +9,24 @@ django.setup()
 
 from apps.preguntas.models import Area, Pregunta, Contexto
 
+def sync_images():
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    src_dir = os.path.join(base_dir, 'preguntas', 'imagenes')
+    dst_media = os.path.join(base_dir, 'media', 'imagenes')
+    dst_public = os.path.join(os.path.dirname(base_dir), 'frontend', 'public', 'imagenes')
+    
+    for dst in [dst_media, dst_public]:
+        if os.path.exists(src_dir):
+            os.makedirs(dst, exist_ok=True)
+            for f in os.listdir(src_dir):
+                s_path = os.path.join(src_dir, f)
+                d_path = os.path.join(dst, f)
+                if os.path.isfile(s_path) and not os.path.exists(d_path):
+                    shutil.copy2(s_path, d_path)
+    print("Sincronización de imágenes completada.")
+
 def export_to_js():
+    sync_images()
     data_bundle = {}
     areas = Area.objects.all()
     
@@ -83,7 +101,8 @@ def export_to_js():
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(js_content)
     
-    print(f"✅ Exportación completada.")
+    print("Exportacion offline completada con exito.")
 
 if __name__ == '__main__':
     export_to_js()
+

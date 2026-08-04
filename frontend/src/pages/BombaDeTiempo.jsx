@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import juegosService from '../services/juegos';
-import { formatImageUrl } from '../utils/url';
+import { formatImageUrl, hasValidImageUrl } from '../utils/url';
 import './BombaDeTiempo.css';
 
 const START_TIME = 120;
@@ -166,7 +166,7 @@ const BombaDeTiempo = () => {
                 {currentQ?.contexto && (
                     <div className="context-mini" style={{ fontSize: '0.9rem', color: '#9ca3af', marginBottom: '1rem', fontStyle: 'italic', background: 'rgba(0,0,0,0.2)', padding: '10px', borderRadius: '8px' }}>
                         {currentQ.contexto.contenido && <p>{currentQ.contexto.contenido.substring(0, 150)}...</p>}
-                        {currentQ.contexto.archivo && (
+                        {currentQ.contexto.archivo && hasValidImageUrl(currentQ.contexto.archivo) && (
                             <img 
                                 src={formatImageUrl(currentQ.contexto.archivo)} 
                                 alt="Contexto" 
@@ -175,7 +175,7 @@ const BombaDeTiempo = () => {
                         )}
                     </div>
                 )}
-                {currentQ?.imagen_url && (
+                {currentQ?.imagen_url && hasValidImageUrl(currentQ.imagen_url) && (
                     <img 
                         src={formatImageUrl(currentQ.imagen_url)} 
                         alt="Pregunta" 

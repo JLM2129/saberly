@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { getSimulacroById, submitSimulacro } from '../services/simulacros';
 import { useMode } from '../context/ModeContext';
 import { submitLocalSimulacro } from '../offline/offlineService';
-import { formatImageUrl } from '../utils/url';
+import { formatImageUrl, hasValidImageUrl } from '../utils/url';
 
 export default function SimulacroRunner() {
     const { isOffline } = useMode();
@@ -17,6 +17,14 @@ export default function SimulacroRunner() {
     const [elapsedTime, setElapsedTime] = useState(0);
     const [focusedNavBtn, setFocusedNavBtn] = useState('siguiente');
 
+    const safeParse = (key, fallback) => {
+        try {
+            return JSON.parse(localStorage.getItem(key) || 'null');
+        } catch {
+            return fallback;
+        }
+    };
+
     useEffect(() => {
         let isMounted = true;
         const load = async () => {
@@ -25,7 +33,20 @@ export default function SimulacroRunner() {
 
                 if (isOffline || id.startsWith('local_')) {
                     // Modo Offline
-                    const data = JSON.parse(localStorage.getItem('current_offline_simulacro'));
+                    const current = safeParse('current_offline_simulacro', null);
+                    const historial = safeParse('historial_offline', []);
+                    const lastResult = safeParse('last_offline_result', null);
+
+                    let data = null;
+                    if (current && String(current.id) === String(id)) {
+                        data = current;
+                    } else {
+                        data = historial.find(s => String(s.id) === String(id));
+                        if (!data && lastResult && String(lastResult.id) === String(id)) {
+                            data = lastResult;
+                        }
+                    }
+
                     if (isMounted) {
                         if (!data) {
                             navigate('/simulacros');
@@ -240,7 +261,7 @@ export default function SimulacroRunner() {
                             fontSize: '0.95rem'
                         }}>
                             {contexto.contenido && <p style={{ whiteSpace: 'pre-line', lineHeight: '1.6' }}>{contexto.contenido}</p>}
-                            {contexto.archivo && <img src={formatImageUrl(contexto.archivo)} alt="Contexto" style={{ maxWidth: '100%', borderRadius: '8px', marginTop: '10px', display: 'block', margin: '10px auto' }} />}
+                            {contexto.archivo && hasValidImageUrl(contexto.archivo) && <img src={formatImageUrl(contexto.archivo)} alt="Contexto" style={{ maxWidth: '100%', borderRadius: '8px', marginTop: '10px', display: 'block', margin: '10px auto' }} />}
                         </div>
                     )}
 
@@ -248,7 +269,7 @@ export default function SimulacroRunner() {
                         {pregunta?.enunciado}
                     </h2>
 
-                    {pregunta?.imagen_url && (
+                    {pregunta?.imagen_url && hasValidImageUrl(pregunta.imagen_url) && (
                         <img src={formatImageUrl(pregunta.imagen_url)} alt="Pregunta" style={{ maxWidth: '100%', borderRadius: '8px', marginBottom: '1.5rem', display: 'block', margin: '0 auto 1.5rem' }} />
                     )}
 

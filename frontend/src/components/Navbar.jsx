@@ -5,7 +5,7 @@ import { isAuthenticated, logout } from '../services/auth';
 import { useMode } from '../context/ModeContext';
 // import axios from 'axios'; // Eliminado para evitar problemas de dependencias
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8001/api';
+const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8001/api').replace(/\/$/, '');
 
 export default function Navbar() {
     const { isOffline, toggleMode } = useMode();

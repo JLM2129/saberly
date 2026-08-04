@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getSimulacroById } from '../services/simulacros';
 import { useMode } from '../context/ModeContext';
-import { formatImageUrl } from '../utils/url';
+import { formatImageUrl, hasValidImageUrl } from '../utils/url';
 import ExplicacionIA from '../components/ExplicacionIA';
 
 export default function ResultadosSimulacro() {
@@ -16,10 +16,24 @@ export default function ResultadosSimulacro() {
         loadData();
     }, [id]);
 
+    const safeParse = (key, fallback) => {
+        try {
+            return JSON.parse(localStorage.getItem(key) || 'null');
+        } catch {
+            return fallback;
+        }
+    };
+
     const loadData = async () => {
         try {
             if (isOffline || id.startsWith('local_')) {
-                const data = JSON.parse(localStorage.getItem('last_offline_result'));
+                const historial = safeParse('historial_offline', []);
+                const lastResult = safeParse('last_offline_result', null);
+
+                let data = historial.find(s => String(s.id) === String(id));
+                if (!data && lastResult && String(lastResult.id) === String(id)) {
+                    data = lastResult;
+                }
                 if (!data) {
                     navigate('/simulacros');
                     return;
@@ -28,7 +42,7 @@ export default function ResultadosSimulacro() {
             } else {
                 const data = await getSimulacroById(id);
                 setSimulacro(data);
-                const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+                const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8001/api').replace(/\/$/, '');
                 const BASE_URL = API_URL.replace('/api', '');
             }
         } catch (error) {

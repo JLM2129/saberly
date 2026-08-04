@@ -1,5 +1,36 @@
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8001';
+const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8001/api').replace(/\/$/, '');
 const BASE_URL = API_URL.replace('/api', '');
+
+const encodePathSegments = (path) => {
+    const segments = Array.isArray(path) ? path : String(path).split('/');
+    return segments
+        .filter((segment) => segment !== '')
+        .map((segment) => encodeURIComponent(segment))
+        .join('/');
+};
+
+const normalizeLocalPath = (path) => {
+    const cleaned = String(path).trim().replace(/\\+/g, '/');
+    let clean = cleaned;
+
+    if (clean.startsWith('/media/')) {
+        clean = clean.slice(7);
+    } else if (clean.startsWith('media/')) {
+        clean = clean.slice(6);
+    } else if (clean.startsWith('/imagenes/')) {
+        clean = clean.slice(10);
+    } else if (clean.startsWith('imagenes/')) {
+        clean = clean.slice(9);
+    } else if (clean.startsWith('/')) {
+        clean = clean.slice(1);
+    }
+
+    if (!clean.startsWith('imagenes/')) {
+        clean = `imagenes/${clean}`;
+    }
+
+    return `/${encodePathSegments(clean.split('/'))}`;
+};
 
 /**
  * Formatea una URL de imagen para asegurar que sea absoluta y apunte al backend si es necesario.
@@ -8,35 +39,52 @@ const BASE_URL = API_URL.replace('/api', '');
  */
 export const formatImageUrl = (url) => {
     if (!url) return null;
-    
+
+    const normalized = String(url).trim();
+
     // Si ya es una URL absoluta o base64, no hacer nada
-    if (url.startsWith('http://') || url.startsWith('https://') || url.startsWith('data:')) {
-        return url;
+    if (normalized.startsWith('http://') || normalized.startsWith('https://') || normalized.startsWith('data:')) {
+        return normalized;
     }
 
-    // En modo offline, si la ruta empieza por /media, intentamos buscarla en public directamente
-    // (Asumiendo que las imágenes se copiaron a public/imagenes o similar sin el prefijo /media)
     const isOffline = localStorage.getItem('preferred_mode') === 'offline';
-    
-    if (isOffline && url.startsWith('/media/')) {
-        return url.replace('/media/', '/');
+
+    if (isOffline) {
+        return normalizeLocalPath(normalized);
     }
 
-    // Si la URL es relativa y empieza con /imagenes, le pegamos /media (como espera Django)
-    if (url.startsWith('/imagenes/')) {
-        return `${BASE_URL}/media${url}`;
+    const cleaned = normalized.replace(/\\+/g, '/');
+
+    if (cleaned.startsWith('/media/')) {
+        return `${BASE_URL}${cleaned}`;
     }
 
-    // Si la URL ya incluye /media/, solo pegamos el BASE_URL
-    if (url.startsWith('/media/')) {
-        return `${BASE_URL}${url}`;
+    if (cleaned.startsWith('/imagenes/')) {
+        return `${BASE_URL}/media/${encodePathSegments(cleaned.split('/').slice(1))}`;
     }
 
-    // Caso por defecto para otras rutas relativas
-    if (url.startsWith('/')) {
-        return `${BASE_URL}${url}`;
+    if (cleaned.startsWith('imagenes/')) {
+        return `${BASE_URL}/media/${encodePathSegments(cleaned.split('/'))}`;
     }
-    
-    // Caso por si viene sin la barra inicial
-    return `${BASE_URL}/${url}`;
+
+    if (cleaned.startsWith('media/')) {
+        return `${BASE_URL}/${encodePathSegments(cleaned.split('/'))}`;
+    }
+
+    if (!cleaned.includes('/')) {
+        return `${BASE_URL}/media/imagenes/${encodeURIComponent(cleaned)}`;
+    }
+
+    return `${BASE_URL}/media/${encodePathSegments(cleaned.split('/'))}`;
+};
+
+export const hasValidImageUrl = (url) => {
+    if (!url) return false;
+    const normalized = String(url).trim();
+    if (!normalized) return false;
+    if (normalized.startsWith('http://') || normalized.startsWith('https://') || normalized.startsWith('data:')) {
+        return true;
+    }
+    const lower = normalized.toLowerCase();
+    return lower.includes('.png') || lower.includes('.jpg') || lower.includes('.jpeg') || lower.includes('.webp') || lower.includes('.gif');
 };

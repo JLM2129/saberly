@@ -12,7 +12,7 @@ export default defineConfig({
       includeAssets: ['favicon.ico', 'pwa-icon.png', 'robots.txt'],
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,json}'],
-        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5MB - Suficiente para tus miles de preguntas
+        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024, // 10MB - Suficiente para imágenes pesadas
       },
       manifest: {
         name: 'Saberly - Prep ICFES',

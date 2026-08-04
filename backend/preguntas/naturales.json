@@ -1,0 +1,341 @@
+{
+  "nombre": "Ciencias_Naturales",
+  "descripcion": "Evalúa la comprensión de fenómenos biológicos, físicos y químicos mediante contextos científicos.",
+  "contextos": [
+    {
+  "tipo": "grafico",
+  "contexto": "En una reserva natural, se ha estudiado la tasa de crecimiento poblacional de una especie de ave en peligro de extinción tras la implementación de un programa de protección. La gráfica muestra el cambio en el número de individuos de la población en función del tiempo (años).",
+  "archivo": "grafica_crecimiento_poblacional_aves.png",
+  "preguntas": [
+    {
+      "enunciado": "Observando la tendencia de la curva entre el año 2 y el año 4, ¿qué fenómeno biológico es el más probable que esté ocurriendo en la población?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "La población ha alcanzado su capacidad de carga y el crecimiento se ha estabilizado.", "es_correcta": false },
+        { "texto": "La población presenta un crecimiento exponencial debido a la ausencia de competidores.", "es_correcta": true },
+        { "texto": "La tasa de natalidad es igual a la tasa de mortalidad, manteniendo el equilibrio.", "es_correcta": false },
+        { "texto": "La especie está entrando en una fase de declive poblacional por falta de recursos.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "La tabla periódica permite predecir el tipo de enlace químico que se formará entre dos elementos basándose en la diferencia de electronegatividad ($\u0394EN$) entre ellos. La siguiente gráfica relaciona la diferencia de electronegatividad con el carácter iónico o covalente del enlace resultante.",
+  "archivo": "grafica_enlaces_electronegatividad.png",
+  "preguntas": [
+    {
+      "enunciado": "Considerando que el Sodio (Na) tiene una electronegatividad de 0.9 y el Cloro (Cl) tiene 3.0, según la gráfica, ¿qué tipo de enlace se forma entre estos dos elementos y cómo se justifica?",
+      "tipo": "análisis",
+      "dificultad": "alta",
+      "competencia": "argumentar",
+      "opciones": [
+        { "texto": "Enlace covalente apolar, porque la diferencia es mayor a 1.7.", "es_correcta": false },
+        { "texto": "Enlace iónico, porque la diferencia es 2.1, lo cual sitúa al compuesto en la zona de alto carácter iónico.", "es_correcta": true },
+        { "texto": "Enlace covalente polar, porque los elementos están en diferentes periodos de la tabla.", "es_correcta": false },
+        { "texto": "Enlace metálico, porque el Sodio es un metal alcalino y el Cloro es un no metal.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema simplificado ilustra las principales vías de flujo de energía y nutrientes en un ecosistema acuático. Las flechas indican la dirección de la transferencia.",
+  "archivo": "esquema_red_trofica_acuatica.png",
+  "preguntas": [
+    {
+      "enunciado": "Si una sustancia tóxica (como un pesticida) llega al agua y se acumula en los productores primarios (bioacumulación), ¿cuál sería el nivel trófico más afectado en términos de concentración del tóxico debido a la biomagnificación?",
+      "tipo": "análisis",
+      "dificultad": "alta",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "Productores Primarios (Fitoplancton)", "es_correcta": false },
+        { "texto": "Consumidores Primarios (Zooplancton)", "es_correcta": false },
+        { "texto": "Consumidores Secundarios (Peces pequeños)", "es_correcta": false },
+        { "texto": "Consumidores Terciarios (Peces grandes/Aves pescadoras)", "es_correcta": true }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un bloque de madera se encuentra suspendido en reposo mediante un sistema de dos cuerdas fijadas a un techo. El esquema muestra las fuerzas que actúan sobre el bloque.",
+  "archivo": "diagrama_cuerpo_libre_bloque.png",
+  "preguntas": [
+    {
+      "enunciado": "Si el bloque se encuentra en equilibrio estático, ¿qué se puede afirmar sobre la suma de las fuerzas (fuerza neta) que actúan sobre él?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "La suma de las fuerzas es igual a la masa del bloque multiplicada por la gravedad.", "es_correcta": false },
+        { "texto": "La fuerza neta es igual a cero, ya que el bloque no presenta aceleración.", "es_correcta": true },
+        { "texto": "La tensión de las cuerdas debe ser menor que el peso del bloque.", "es_correcta": false },
+        { "texto": "La fuerza neta es diferente de cero porque existen fuerzas de tensión actuando en direcciones opuestas.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El esquema ilustra la organización interna de dos tipos celulares básicos: la Célula A y la Célula B. Se señalan algunas de sus estructuras principales.",
+  "archivo": "esquema_comparativo_celular.png",
+  "preguntas": [
+    {
+      "enunciado": "Analizando las estructuras presentes en el esquema, ¿cuál es la clasificación correcta para la Célula A y la Célula B, y cuál es la justificación?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "indagar",
+      "opciones": [
+        { "texto": "Célula A: Eucariota (tiene núcleo definido); Célula B: Procariota (tiene plásmidos).", "es_correcta": false },
+        { "texto": "Célula A: Procariota (ausencia de núcleo y organelos membranosos); Célula B: Eucariota (presencia de núcleo definido y mitocondrias).", "es_correcta": true },
+        { "texto": "Célula A: Eucariota vegetal (tiene pared celular); Célula B: Eucariota animal (tiene centriolos).", "es_correcta": false },
+        { "texto": "Célula A: Procariota (tiene flagelo); Célula B: Eucariota (tiene citoesqueleto complejo).", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente diagrama de fases muestra las condiciones de presión y temperatura en las que una sustancia pura puede encontrarse en estado sólido, líquido o gaseoso. El punto triple representa las condiciones donde las tres fases coexisten en equilibrio.",
+  "archivo": "diagrama_fases_sustancia.png",
+  "preguntas": [
+    {
+      "enunciado": "Si una muestra de esta sustancia se encuentra a una presión constante y se aumenta gradualmente su temperatura desde el punto A hasta el punto B, ¿qué cambios de fase experimenta la sustancia según la trayectoria trazada?",
+      "tipo": "análisis",
+      "dificultad": "alta",
+      "competencia": "argumentar",
+      "opciones": [
+        { "texto": "La sustancia pasa directamente de sólido a gas (sublimación) y luego a líquido.", "es_correcta": false },
+        { "texto": "La sustancia experimenta primero una fusión (sólido a líquido) y posteriormente una vaporización (líquido a gas).", "es_correcta": true },
+        { "texto": "La sustancia permanece en estado sólido debido a que la presión es constante.", "es_correcta": false },
+        { "texto": "La sustancia se condensa al aumentar la temperatura, pasando de gas a líquido.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Se realiza un cruce entre dos plantas de guisantes, una heterocigota (Aa) para el color de la semilla y otra homocigota recesiva (aa). El color amarillo (A) es dominante sobre el verde (a).",
+  "archivo": "cuadro_punnett_genetica.png",
+  "preguntas": [
+    {
+      "enunciado": "Basándose en el cuadro de Punnett resultante del cruce, ¿cuál es la probabilidad porcentual de obtener plantas con fenotipo de semilla color verde?",
+      "tipo": "resolución",
+      "dificultad": "media",
+      "competencia": "resolver",
+      "opciones": [
+        { "texto": "25%", "es_correcta": false },
+        { "texto": "50%", "es_correcta": true },
+        { "texto": "75%", "es_correcta": false },
+        { "texto": "100%", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "La hidrólisis es una reacción química en la que una molécula de agua se utiliza para romper un enlace glicosídico, separando un disacárido en dos monosacáridos simples, como se muestra en el siguiente esquema.",
+  "archivo": "hidrolisis_disacarido.png",
+  "preguntas": [
+    {
+      "enunciado": "A partir del esquema, ¿qué sucede con los átomos de hidrógeno (H) y el grupo hidroxilo (OH) provenientes de la molécula de agua durante la ruptura del enlace?",
+      "tipo": "análisis",
+      "dificultad": "alta",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "Ambas partes se unen a una sola de las moléculas resultantes.", "es_correcta": false },
+        { "texto": "La molécula de agua se libera como subproducto del proceso.", "es_correcta": false },
+        { "texto": "El grupo -OH se une a un monosacárido y el átomo de -H se une al otro, restaurando sus grupos funcionales originales.", "es_correcta": true },
+        { "texto": "El agua actúa únicamente como catalizador y no se incorpora a los productos.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema ilustra la posición de la Tierra en su órbita alrededor del Sol en diferentes momentos del año, destacando la inclinación de su eje de rotación.",
+  "archivo": "esquema_estaciones_tierra.png",
+  "preguntas": [
+    {
+      "enunciado": "Si el hemisferio norte se encuentra inclinado hacia el Sol, tal como se muestra en la posición A del esquema, ¿qué estación del año experimentan los países situados en esa región y por qué?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "Invierno, porque la mayor distancia al Sol reduce la temperatura.", "es_correcta": false },
+        { "texto": "Verano, debido a que reciben una mayor intensidad de radiación solar directa por la inclinación del eje.", "es_correcta": true },
+        { "texto": "Primavera, debido al equinoccio que ocurre en esa posición.", "es_correcta": false },
+        { "texto": "Otoño, porque la Tierra se encuentra en el punto más cercano a su órbita.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "Un rayo de luz viaja a través del aire y entra en un bloque de vidrio con un ángulo de incidencia. Al cruzar la frontera entre los dos medios, el rayo cambia su dirección, fenómeno conocido como refracción.",
+  "archivo": "esquema_refraccion_luz.png",
+  "preguntas": [
+    {
+      "enunciado": "Considerando que el índice de refracción del vidrio es mayor que el del aire, ¿qué sucede con la velocidad y la dirección del rayo de luz al entrar al vidrio?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "La velocidad aumenta y el rayo se aleja de la normal.", "es_correcta": false },
+        { "texto": "La velocidad disminuye y el rayo se acerca a la normal.", "es_correcta": true },
+        { "texto": "La velocidad permanece constante y el rayo continúa en línea recta.", "es_correcta": false },
+        { "texto": "La velocidad disminuye y el rayo se aleja de la normal.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema ilustra dos mecanismos de transporte pasivo a través de la bicapa lipídica de una célula.",
+  "archivo": "esquema_difusion_membrana.png",
+  "preguntas": [
+    {
+      "enunciado": "A partir del esquema, ¿cuál es la diferencia fundamental en el mecanismo de transporte entre la difusión simple (A) y la difusión facilitada (B)?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        {
+          "texto": "En A, las moléculas atraviesan la bicapa directamente, mientras que en B requieren el uso de proteínas de membrana específicas.",
+          "es_correcta": true
+        },
+        {
+          "texto": "En B, el transporte ocurre a favor del gradiente de concentración, mientras que en A ocurre en contra.",
+          "es_correcta": false
+        },
+        {
+          "texto": "Ambos procesos requieren energía en forma de ATP para mover las moléculas.",
+          "es_correcta": false
+        },
+        {
+          "texto": "La difusión simple (A) solo transporta moléculas grandes, y la facilitada (B) solo moléculas pequeñas.",
+          "es_correcta": false
+        }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema muestra las estructuras de tres hidrocarburos alifáticos con la misma fórmula molecular (C4H10), pero diferente disposición atómica.",
+  "archivo": "esquema_isomeria_butano.png",
+  "preguntas": [
+    {
+      "enunciado": "Considerando las estructuras mostradas, ¿qué tipo de relación existe entre el n-butano y el isobutano?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "Son isómeros de cadena.", "es_correcta": true },
+        { "texto": "Son isómeros de posición.", "es_correcta": false },
+        { "texto": "Son el mismo compuesto con diferente orientación espacial.", "es_correcta": false },
+        { "texto": "Son isómeros funcionales.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema ilustra las relaciones de alimentación entre diferentes organismos en un ecosistema de bosque templado.",
+  "archivo": "esquema_red_trofica_bosque.png",
+  "preguntas": [
+    {
+      "enunciado": "A partir de la red trófica mostrada, ¿qué ocurriría si una enfermedad elimina a la mayor parte de la población de conejos?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "Aumentaría la población de zorros y disminuiría la de hierbas.", "es_correcta": false },
+        { "texto": "Disminuiría la población de zorros y aumentaría la de hierbas.", "es_correcta": true },
+        { "texto": "No habría cambios significativos en el ecosistema.", "es_correcta": false },
+        { "texto": "Aumentaría la población de halcones y disminuiría la de serpientes.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema muestra el ciclo de las rocas, que describe cómo las rocas se transforman entre sí a través de procesos geológicos a lo largo del tiempo.",
+  "archivo": "esquema_ciclo_rocas.png",
+  "preguntas": [
+    {
+      "enunciado": "Si una roca sedimentaria es sometida a altas presiones y temperaturas sin llegar a fundirse, ¿en qué tipo de roca se transformará?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "Roca ígnea.", "es_correcta": false },
+        { "texto": "Roca metamórfica.", "es_correcta": true },
+        { "texto": "Sedimento suelto.", "es_correcta": false },
+        { "texto": "Magma.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema ilustra la Ley de Gravitación Universal de Newton, que describe la fuerza de atracción entre dos cuerpos con masa.",
+  "archivo": "esquema_gravitacion_universal.png",
+  "preguntas": [
+    {
+      "enunciado": "De acuerdo con la ley de gravitación universal, si se duplica la distancia entre dos objetos manteniendo sus masas constantes, ¿qué sucede con la fuerza de atracción gravitatoria?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "La fuerza se duplica.", "es_correcta": false },
+        { "texto": "La fuerza se reduce a la mitad.", "es_correcta": false },
+        { "texto": "La fuerza se reduce a una cuarta parte.", "es_correcta": true },
+        { "texto": "La fuerza permanece constante.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema presenta la escala de pH, clasificando sustancias comunes según su nivel de acidez, neutralidad o basicidad.",
+  "archivo": "esquema_escala_ph.png",
+  "preguntas": [
+    {
+      "enunciado": "Si una sustancia tiene un valor de pH de 3, ¿cómo se clasifica según la escala de pH y qué indica esto sobre su concentración de iones de hidrógeno?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "Es una sustancia básica y tiene baja concentración de iones de hidrógeno.", "es_correcta": false },
+        { "texto": "Es una sustancia neutra, con equilibrio de iones.", "es_correcta": false },
+        { "texto": "Es una sustancia ácida y tiene una alta concentración de iones de hidrógeno.", "es_correcta": true },
+        { "texto": "Es una sustancia ácida, pero no tiene iones de hidrógeno.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema ilustra las líneas de campo magnético alrededor de un imán de barra, indicando la dirección del campo y la polaridad.",
+  "archivo": "esquema_campo_magnetico.png",
+  "preguntas": [
+    {
+      "enunciado": "A partir del esquema, ¿qué propiedad fundamental de las líneas de campo magnético se representa correctamente en la región entre los dos polos norte (N) enfrentados?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "Las líneas se cruzan para indicar una atracción máxima.", "es_correcta": false },
+        { "texto": "Las líneas divergen y se alejan entre sí, indicando repulsión.", "es_correcta": true },
+        { "texto": "Las líneas forman un bucle cerrado continuo entre los dos imanes.", "es_correcta": false },
+        { "texto": "La densidad de líneas es mayor en el centro exacto, indicando un punto neutro.", "es_correcta": false }
+      ]
+    }
+  ]
+}
+  ]
+}

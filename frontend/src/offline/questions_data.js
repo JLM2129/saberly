@@ -3865,6 +3865,550 @@ export const OFF_QUESTIONS_DATA = {
             ]
           }
         ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En una reserva natural, se ha estudiado la tasa de crecimiento poblacional de una especie de ave en peligro de extinción tras la implementación de un programa de protección. La gráfica muestra el cambio en el número de individuos de la población en función del tiempo (años).",
+        "archivo": "/media/imagenes/grafica_crecimiento_poblacional_aves.png",
+        "preguntas": [
+          {
+            "enunciado": "Observando la tendencia de la curva entre el año 2 y el año 4, ¿qué fenómeno biológico es el más probable que esté ocurriendo en la población?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "La población ha alcanzado su capacidad de carga y el crecimiento se ha estabilizado.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La población presenta un crecimiento exponencial debido a la ausencia de competidores.",
+                "es_correcta": true
+              },
+              {
+                "texto": "La tasa de natalidad es igual a la tasa de mortalidad, manteniendo el equilibrio.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La especie está entrando en una fase de declive poblacional por falta de recursos.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La tabla periódica permite predecir el tipo de enlace químico que se formará entre dos elementos basándose en la diferencia de electronegatividad ($ΔEN$) entre ellos. La siguiente gráfica relaciona la diferencia de electronegatividad con el carácter iónico o covalente del enlace resultante.",
+        "archivo": "/media/imagenes/grafica_enlaces_electronegatividad.png",
+        "preguntas": [
+          {
+            "enunciado": "Considerando que el Sodio (Na) tiene una electronegatividad de 0.9 y el Cloro (Cl) tiene 3.0, según la gráfica, ¿qué tipo de enlace se forma entre estos dos elementos y cómo se justifica?",
+            "tipo": "análisis",
+            "dificultad": "alta",
+            "competencia": "argumentar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Enlace covalente apolar, porque la diferencia es mayor a 1.7.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Enlace iónico, porque la diferencia es 2.1, lo cual sitúa al compuesto en la zona de alto carácter iónico.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Enlace covalente polar, porque los elementos están en diferentes periodos de la tabla.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Enlace metálico, porque el Sodio es un metal alcalino y el Cloro es un no metal.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El siguiente esquema simplificado ilustra las principales vías de flujo de energía y nutrientes en un ecosistema acuático. Las flechas indican la dirección de la transferencia.",
+        "archivo": "/media/imagenes/esquema_red_trofica_acuatica.png",
+        "preguntas": [
+          {
+            "enunciado": "Si una sustancia tóxica (como un pesticida) llega al agua y se acumula en los productores primarios (bioacumulación), ¿cuál sería el nivel trófico más afectado en términos de concentración del tóxico debido a la biomagnificación?",
+            "tipo": "análisis",
+            "dificultad": "alta",
+            "competencia": "explicar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Productores Primarios (Fitoplancton)",
+                "es_correcta": false
+              },
+              {
+                "texto": "Consumidores Primarios (Zooplancton)",
+                "es_correcta": false
+              },
+              {
+                "texto": "Consumidores Secundarios (Peces pequeños)",
+                "es_correcta": false
+              },
+              {
+                "texto": "Consumidores Terciarios (Peces grandes/Aves pescadoras)",
+                "es_correcta": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un bloque de madera se encuentra suspendido en reposo mediante un sistema de dos cuerdas fijadas a un techo. El esquema muestra las fuerzas que actúan sobre el bloque.",
+        "archivo": "/media/imagenes/diagrama_cuerpo_libre_bloque.png",
+        "preguntas": [
+          {
+            "enunciado": "Si el bloque se encuentra en equilibrio estático, ¿qué se puede afirmar sobre la suma de las fuerzas (fuerza neta) que actúan sobre él?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "La suma de las fuerzas es igual a la masa del bloque multiplicada por la gravedad.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La fuerza neta es igual a cero, ya que el bloque no presenta aceleración.",
+                "es_correcta": true
+              },
+              {
+                "texto": "La tensión de las cuerdas debe ser menor que el peso del bloque.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La fuerza neta es diferente de cero porque existen fuerzas de tensión actuando en direcciones opuestas.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El esquema ilustra la organización interna de dos tipos celulares básicos: la Célula A y la Célula B. Se señalan algunas de sus estructuras principales.",
+        "archivo": "/media/imagenes/esquema_comparativo_celular.png",
+        "preguntas": [
+          {
+            "enunciado": "Analizando las estructuras presentes en el esquema, ¿cuál es la clasificación correcta para la Célula A y la Célula B, y cuál es la justificación?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "indagar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Célula A: Eucariota (tiene núcleo definido); Célula B: Procariota (tiene plásmidos).",
+                "es_correcta": false
+              },
+              {
+                "texto": "Célula A: Procariota (ausencia de núcleo y organelos membranosos); Célula B: Eucariota (presencia de núcleo definido y mitocondrias).",
+                "es_correcta": true
+              },
+              {
+                "texto": "Célula A: Eucariota vegetal (tiene pared celular); Célula B: Eucariota animal (tiene centriolos).",
+                "es_correcta": false
+              },
+              {
+                "texto": "Célula A: Procariota (tiene flagelo); Célula B: Eucariota (tiene citoesqueleto complejo).",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El siguiente diagrama de fases muestra las condiciones de presión y temperatura en las que una sustancia pura puede encontrarse en estado sólido, líquido o gaseoso. El punto triple representa las condiciones donde las tres fases coexisten en equilibrio.",
+        "archivo": "/media/imagenes/diagrama_fases_sustancia.png",
+        "preguntas": [
+          {
+            "enunciado": "Si una muestra de esta sustancia se encuentra a una presión constante y se aumenta gradualmente su temperatura desde el punto A hasta el punto B, ¿qué cambios de fase experimenta la sustancia según la trayectoria trazada?",
+            "tipo": "análisis",
+            "dificultad": "alta",
+            "competencia": "argumentar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "La sustancia pasa directamente de sólido a gas (sublimación) y luego a líquido.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La sustancia experimenta primero una fusión (sólido a líquido) y posteriormente una vaporización (líquido a gas).",
+                "es_correcta": true
+              },
+              {
+                "texto": "La sustancia permanece en estado sólido debido a que la presión es constante.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La sustancia se condensa al aumentar la temperatura, pasando de gas a líquido.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se realiza un cruce entre dos plantas de guisantes, una heterocigota (Aa) para el color de la semilla y otra homocigota recesiva (aa). El color amarillo (A) es dominante sobre el verde (a).",
+        "archivo": "/media/imagenes/cuadro_punnett_genetica.png",
+        "preguntas": [
+          {
+            "enunciado": "Basándose en el cuadro de Punnett resultante del cruce, ¿cuál es la probabilidad porcentual de obtener plantas con fenotipo de semilla color verde?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "25%",
+                "es_correcta": false
+              },
+              {
+                "texto": "50%",
+                "es_correcta": true
+              },
+              {
+                "texto": "75%",
+                "es_correcta": false
+              },
+              {
+                "texto": "100%",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La hidrólisis es una reacción química en la que una molécula de agua se utiliza para romper un enlace glicosídico, separando un disacárido en dos monosacáridos simples, como se muestra en el siguiente esquema.",
+        "archivo": "/media/imagenes/hidrolisis_disacarido.png",
+        "preguntas": [
+          {
+            "enunciado": "A partir del esquema, ¿qué sucede con los átomos de hidrógeno (H) y el grupo hidroxilo (OH) provenientes de la molécula de agua durante la ruptura del enlace?",
+            "tipo": "análisis",
+            "dificultad": "alta",
+            "competencia": "explicar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Ambas partes se unen a una sola de las moléculas resultantes.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La molécula de agua se libera como subproducto del proceso.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El grupo -OH se une a un monosacárido y el átomo de -H se une al otro, restaurando sus grupos funcionales originales.",
+                "es_correcta": true
+              },
+              {
+                "texto": "El agua actúa únicamente como catalizador y no se incorpora a los productos.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El siguiente esquema ilustra la posición de la Tierra en su órbita alrededor del Sol en diferentes momentos del año, destacando la inclinación de su eje de rotación.",
+        "archivo": "/media/imagenes/esquema_estaciones_tierra.png",
+        "preguntas": [
+          {
+            "enunciado": "Si el hemisferio norte se encuentra inclinado hacia el Sol, tal como se muestra en la posición A del esquema, ¿qué estación del año experimentan los países situados en esa región y por qué?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Invierno, porque la mayor distancia al Sol reduce la temperatura.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Verano, debido a que reciben una mayor intensidad de radiación solar directa por la inclinación del eje.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Primavera, debido al equinoccio que ocurre en esa posición.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Otoño, porque la Tierra se encuentra en el punto más cercano a su órbita.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un rayo de luz viaja a través del aire y entra en un bloque de vidrio con un ángulo de incidencia. Al cruzar la frontera entre los dos medios, el rayo cambia su dirección, fenómeno conocido como refracción.",
+        "archivo": "/media/imagenes/esquema_refraccion_luz.png",
+        "preguntas": [
+          {
+            "enunciado": "Considerando que el índice de refracción del vidrio es mayor que el del aire, ¿qué sucede con la velocidad y la dirección del rayo de luz al entrar al vidrio?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "La velocidad aumenta y el rayo se aleja de la normal.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La velocidad disminuye y el rayo se acerca a la normal.",
+                "es_correcta": true
+              },
+              {
+                "texto": "La velocidad permanece constante y el rayo continúa en línea recta.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La velocidad disminuye y el rayo se aleja de la normal.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El siguiente esquema ilustra dos mecanismos de transporte pasivo a través de la bicapa lipídica de una célula.",
+        "archivo": "/media/imagenes/esquema_difusion_membrana.png",
+        "preguntas": [
+          {
+            "enunciado": "A partir del esquema, ¿cuál es la diferencia fundamental en el mecanismo de transporte entre la difusión simple (A) y la difusión facilitada (B)?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "En A, las moléculas atraviesan la bicapa directamente, mientras que en B requieren el uso de proteínas de membrana específicas.",
+                "es_correcta": true
+              },
+              {
+                "texto": "En B, el transporte ocurre a favor del gradiente de concentración, mientras que en A ocurre en contra.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ambos procesos requieren energía en forma de ATP para mover las moléculas.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La difusión simple (A) solo transporta moléculas grandes, y la facilitada (B) solo moléculas pequeñas.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El siguiente esquema muestra las estructuras de tres hidrocarburos alifáticos con la misma fórmula molecular (C4H10), pero diferente disposición atómica.",
+        "archivo": "/media/imagenes/esquema_isomeria_butano.png",
+        "preguntas": [
+          {
+            "enunciado": "Considerando las estructuras mostradas, ¿qué tipo de relación existe entre el n-butano y el isobutano?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Son isómeros de cadena.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Son isómeros de posición.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Son el mismo compuesto con diferente orientación espacial.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Son isómeros funcionales.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El siguiente esquema ilustra las relaciones de alimentación entre diferentes organismos en un ecosistema de bosque templado.",
+        "archivo": "/media/imagenes/esquema_red_trofica_bosque.png",
+        "preguntas": [
+          {
+            "enunciado": "A partir de la red trófica mostrada, ¿qué ocurriría si una enfermedad elimina a la mayor parte de la población de conejos?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Aumentaría la población de zorros y disminuiría la de hierbas.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Disminuiría la población de zorros y aumentaría la de hierbas.",
+                "es_correcta": true
+              },
+              {
+                "texto": "No habría cambios significativos en el ecosistema.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Aumentaría la población de halcones y disminuiría la de serpientes.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El siguiente esquema muestra el ciclo de las rocas, que describe cómo las rocas se transforman entre sí a través de procesos geológicos a lo largo del tiempo.",
+        "archivo": "/media/imagenes/esquema_ciclo_rocas.png",
+        "preguntas": [
+          {
+            "enunciado": "Si una roca sedimentaria es sometida a altas presiones y temperaturas sin llegar a fundirse, ¿en qué tipo de roca se transformará?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Roca ígnea.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Roca metamórfica.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Sedimento suelto.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Magma.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El siguiente esquema ilustra la Ley de Gravitación Universal de Newton, que describe la fuerza de atracción entre dos cuerpos con masa.",
+        "archivo": "/media/imagenes/esquema_gravitacion_universal.png",
+        "preguntas": [
+          {
+            "enunciado": "De acuerdo con la ley de gravitación universal, si se duplica la distancia entre dos objetos manteniendo sus masas constantes, ¿qué sucede con la fuerza de atracción gravitatoria?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "La fuerza se duplica.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La fuerza se reduce a la mitad.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La fuerza se reduce a una cuarta parte.",
+                "es_correcta": true
+              },
+              {
+                "texto": "La fuerza permanece constante.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El siguiente esquema presenta la escala de pH, clasificando sustancias comunes según su nivel de acidez, neutralidad o basicidad.",
+        "archivo": "/media/imagenes/esquema_escala_ph.png",
+        "preguntas": [
+          {
+            "enunciado": "Si una sustancia tiene un valor de pH de 3, ¿cómo se clasifica según la escala de pH y qué indica esto sobre su concentración de iones de hidrógeno?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Es una sustancia básica y tiene baja concentración de iones de hidrógeno.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Es una sustancia neutra, con equilibrio de iones.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Es una sustancia ácida y tiene una alta concentración de iones de hidrógeno.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Es una sustancia ácida, pero no tiene iones de hidrógeno.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El siguiente esquema ilustra las líneas de campo magnético alrededor de un imán de barra, indicando la dirección del campo y la polaridad.",
+        "archivo": "/media/imagenes/esquema_campo_magnetico.png",
+        "preguntas": [
+          {
+            "enunciado": "A partir del esquema, ¿qué propiedad fundamental de las líneas de campo magnético se representa correctamente en la región entre los dos polos norte (N) enfrentados?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "explicar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Las líneas se cruzan para indicar una atracción máxima.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Las líneas divergen y se alejan entre sí, indicando repulsión.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Las líneas forman un bucle cerrado continuo entre los dos imanes.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La densidad de líneas es mayor en el centro exacto, indicando un punto neutro.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -6413,38 +6957,6 @@ export const OFF_QUESTIONS_DATA = {
     "contextos": [
       {
         "tipo": "texto",
-        "contexto": "Una institución educativa comparó los puntajes obtenidos en el área de Matemáticas por dos grupos diferentes de estudiantes (Grupo A y Grupo B). Los resultados se representaron en el siguiente diagrama de caja y bigotes.",
-        "archivo": "/media/imagenes/boxplot_comparativo_matematicas.png",
-        "preguntas": [
-          {
-            "enunciado": "Basándose en los diagramas de caja, ¿cuál de las siguientes afirmaciones sobre la dispersión y tendencia central de los puntajes es correcta?",
-            "tipo": "análisis",
-            "dificultad": "media",
-            "competencia": "argumentar",
-            "imagen_url": null,
-            "opciones": [
-              {
-                "texto": "El 50% de los estudiantes del Grupo A obtuvo puntajes superiores a la mediana del Grupo B.",
-                "es_correcta": true
-              },
-              {
-                "texto": "El rango de los puntajes es el mismo para ambos grupos.",
-                "es_correcta": false
-              },
-              {
-                "texto": "El Grupo B tiene un mejor desempeño general que el Grupo A.",
-                "es_correcta": false
-              },
-              {
-                "texto": "El puntaje máximo del Grupo B es mayor que el puntaje máximo del Grupo A.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
         "contexto": "En un mercado campesino, dos familias realizaron compras de bolsas de frutas de igual peso. La familia Pérez compró 2 bolsas de manzanas y 3 de peras por un total de $31.000. La familia Ruiz compró 3 bolsas de manzanas y 2 de peras por $29.000.",
         "archivo": "/media/imagenes/sistema_ecuaciones_frutas.png",
         "preguntas": [
@@ -6725,38 +7237,6 @@ export const OFF_QUESTIONS_DATA = {
               },
               {
                 "texto": "157,0 cm²",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "Un empleado analiza sus opciones para llegar al trabajo. Puede usar 'Transporte Público' o 'Vehículo Privado'. Si usa transporte público, la probabilidad de llegar a tiempo es 0,7. Si usa vehículo privado, la probabilidad de llegar a tiempo aumenta a 0,9. El empleado elige su medio de transporte lanzando una moneda (50% de probabilidad para cada uno).",
-        "archivo": "/media/imagenes/diagrama_arbol_probabilidad.png",
-        "preguntas": [
-          {
-            "enunciado": "Si se sabe que el empleado llegó tarde a su trabajo, ¿cuál es la probabilidad de que haya utilizado el Transporte Público? (Utilice el Teorema de Bayes o analice las ramas del diagrama).",
-            "tipo": "análisis",
-            "dificultad": "alta",
-            "competencia": "argumentar",
-            "imagen_url": null,
-            "opciones": [
-              {
-                "texto": "0,75 (75%)",
-                "es_correcta": true
-              },
-              {
-                "texto": "0,30 (30%)",
-                "es_correcta": false
-              },
-              {
-                "texto": "0,15 (15%)",
-                "es_correcta": false
-              },
-              {
-                "texto": "0,50 (50%)",
                 "es_correcta": false
               }
             ]
@@ -7117,6 +7597,70 @@ export const OFF_QUESTIONS_DATA = {
       },
       {
         "tipo": "texto",
+        "contexto": "Una institución educativa comparó los puntajes obtenidos en el área de Matemáticas por dos grupos diferentes de estudiantes (Grupo A y Grupo B). Los resultados se representaron en el siguiente diagrama de caja y bigotes.",
+        "archivo": "/media/imagenes/boxplot_comparativo_matematicas.png",
+        "preguntas": [
+          {
+            "enunciado": "Basándose en los diagramas de caja, ¿cuál de las siguientes afirmaciones sobre la dispersión y tendencia central de los puntajes es correcta?",
+            "tipo": "análisis",
+            "dificultad": "media",
+            "competencia": "argumentar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "El 50% de los estudiantes del Grupo A obtuvo puntajes superiores a la mediana del Grupo B.",
+                "es_correcta": true
+              },
+              {
+                "texto": "El rango de los puntajes es el mismo para ambos grupos.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El Grupo B tiene un mejor desempeño general que el Grupo A.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El puntaje máximo del Grupo B es mayor que el puntaje máximo del Grupo A.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un empleado analiza sus opciones para llegar al trabajo. Puede usar 'Transporte Público' o 'Vehículo Privado'. Si usa transporte público, la probabilidad de llegar a tiempo es 0,7. Si usa vehículo privado, la probabilidad de llegar a tiempo aumenta a 0,9. El empleado elige su medio de transporte lanzando una moneda (50% de probabilidad para cada uno).",
+        "archivo": "/media/imagenes/diagrama_arbol_probabilidad.png",
+        "preguntas": [
+          {
+            "enunciado": "Si se sabe que el empleado llegó tarde a su trabajo, ¿cuál es la probabilidad de que haya utilizado el Transporte Público? (Utilice el Teorema de Bayes o analice las ramas del diagrama).",
+            "tipo": "análisis",
+            "dificultad": "alta",
+            "competencia": "argumentar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "0,75 (75%)",
+                "es_correcta": true
+              },
+              {
+                "texto": "0,30 (30%)",
+                "es_correcta": false
+              },
+              {
+                "texto": "0,15 (15%)",
+                "es_correcta": false
+              },
+              {
+                "texto": "0,50 (50%)",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
         "contexto": "Un salvavidas observa a un nadador en el mar desde una torre de vigilancia que tiene una altura de 12 metros sobre el nivel del mar. El ángulo de depresión desde la vista del salvavidas hasta el nadador es de 30°.",
         "archivo": "/media/imagenes/trigonometria_salvavidas.png",
         "preguntas": [
@@ -7333,6 +7877,1439 @@ export const OFF_QUESTIONS_DATA = {
               },
               {
                 "texto": "64/3 unidades²",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En un laboratorio de química, se tiene un frasco de Erlenmeyer (que puede modelarse como un cono circular recto para efectos de volumen) lleno hasta la mitad de su altura con una solución de sulfato de cobre. El frasco tiene una altura total de 10 cm y un radio de base de 3.16 cm.",
+        "archivo": "/media/imagenes/watermarked_img_568491806777946577.png",
+        "preguntas": [
+          {
+            "enunciado": "Si la densidad de la solución es de 1.9 g/cm³ y el volumen total del frasco es de aproximadamente 104.7 cm³, ¿cuál es la masa aproximada de la solución contenida si esta solo ocupa la octava parte del volumen total del cono (debido a que la altura del líquido es la mitad de la altura total)?",
+            "tipo": "resolución",
+            "dificultad": "muy alta",
+            "competencia": "uso del conocimiento científico",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "24.86 g",
+                "es_correcta": true
+              },
+              {
+                "texto": "198.93 g",
+                "es_correcta": false
+              },
+              {
+                "texto": "99.46 g",
+                "es_correcta": false
+              },
+              {
+                "texto": "13.08 g",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se está diseñando un elemento arquitectónico en forma de arco elíptico. La forma de la base del arco sigue la ecuación standard de una elipse centrada en el origen: $\\frac{x^2}{16} + \\frac{y^2}{4} = 1$, donde las unidades son metros. Es crucial para el ingeniero identificar las dimensiones clave del arco.",
+        "archivo": "/media/imagenes/geometria_analitica_elipse1.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuáles son las longitudes del eje mayor ($2a$) y del eje menor ($2b$) de la elipse, respectivamente?",
+            "tipo": "interpretación",
+            "dificultad": "media",
+            "competencia": "comunicación",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "$8$ m y $4$ m",
+                "es_correcta": true
+              },
+              {
+                "texto": "$16$ m y $4$ m",
+                "es_correcta": false
+              },
+              {
+                "texto": "$4$ m y $2$ m",
+                "es_correcta": false
+              },
+              {
+                "texto": "$8$ m y $2$ m",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un agricultor necesita decidir cuál de los dos tanques representados en la imagen tiene mayor capacidad de almacenamiento para su sistema de riego.",
+        "archivo": "/media/imagenes/capacidad_tanques.png",
+        "preguntas": [
+          {
+            "enunciado": "Considerando que el volumen de un cilindro se calcula como V = π * r^2 * h y el de un prisma rectangular como V = largo * ancho * alto, ¿cuál de las siguientes afirmaciones es correcta? (Tome π ≈ 3,14).",
+            "tipo": "modelacion",
+            "dificultad": "media",
+            "competencia": "formular",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "A. El tanque cilíndrico tiene una capacidad de 20π m³, lo cual es menor que los 24 m³ del tanque prismático.",
+                "es_correcta": false
+              },
+              {
+                "texto": "B. El tanque prismático tiene mayor capacidad porque sus dimensiones base (4m y 3m) son mayores al radio del cilindro.",
+                "es_correcta": false
+              },
+              {
+                "texto": "C. El tanque cilíndrico tiene una capacidad aproximada de 62,8 m³, superando la capacidad de 24 m³ del tanque prismático.",
+                "es_correcta": true
+              },
+              {
+                "texto": "D. Ambos tanques tienen la misma capacidad de almacenamiento ya que el promedio de sus dimensiones es similar.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Una pequeña asociación comunitaria recolectó fondos vendiendo dos tipos de bolsas de café artesanal: tipo Premium y tipo Tradicional. En total se vendieron 60 bolsas y se recaudaron $1.100.000 COP. Si la bolsa Premium se vendió a $25.000 COP y la Tradicional a $15.000 COP, el contador de la asociación plantea un sistema de ecuaciones para hallar la cantidad exacta vendida de cada tipo.",
+        "archivo": "/media/imagenes/algebra_sistema_ecuaciones_cafe.png",
+        "preguntas": [
+          {
+            "enunciado": "Si $x$ representa la cantidad de bolsas de café Premium e $y$ la cantidad de bolsas de café Tradicional, ¿cuál de los siguientes sistemas de ecuaciones modela correctamente la situación económica de la asociación?",
+            "tipo": "modelación",
+            "dificultad": "media",
+            "competencia": "formulación y ejecución",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "$\\begin{cases} x + y = 60 \\\\ 25.000x + 15.000y = 1.100.000 \\end{cases}$",
+                "es_correcta": true
+              },
+              {
+                "texto": "$\\begin{cases} x + y = 1.100.000 \\\\ 25.000x + 15.000y = 60 \\end{cases}$",
+                "es_correcta": false
+              },
+              {
+                "texto": "$\\begin{cases} 25.000x + y = 60 \\\\ x + 15.000y = 1.100.000 \\end{cases}$",
+                "es_correcta": false
+              },
+              {
+                "texto": "$\\begin{cases} x \\cdot y = 60 \\\\ 25.000x + 15.000y = 1.100.000 \\end{cases}$",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un técnico agrícola necesita calcular la altura de un silo cilíndrico de almacenamiento de grano en una finca. Para hacerlo sin subirse, se ubica a una distancia horizontal de 12 metros de la base del silo y, utilizando un teodolito a nivel del suelo, mide que el ángulo de elevación hasta la parte más alta de la estructura es exactamente de $30^\\circ$.",
+        "archivo": "/media/imagenes/geometria_trigonometria_altura_silo.png",
+        "preguntas": [
+          {
+            "enunciado": "Teniendo en cuenta los datos del gráfico y que $\\tan(30^\\circ) \\approx 0.577$, ¿cuál es la altura aproximada del silo de grano?",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "formulación y ejecución",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "6.92 metros",
+                "es_correcta": true
+              },
+              {
+                "texto": "20.79 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "10.39 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "12.00 metros",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un productor agrícola analiza el costo total del transporte de sus cosechas hacia el centro de acopio. El costo incluye un valor fijo por el uso del camión más un cobro constante por cada kilómetro recorrido. Al graficar la relación entre la distancia recorrida ($x$, en km) y el costo total ($y$, en miles de pesos), obtiene una línea recta que pasa por los puntos $(0, 50)$ y $(40, 130)$.",
+        "archivo": "/media/imagenes/algebra_funcion_lineal_costo_transporte.png",
+        "preguntas": [
+          {
+            "enunciado": "Con base en el comportamiento lineal mostrado en el gráfico, ¿cuál es el costo adicional en miles de pesos por cada kilómetro recorrido (es decir, el valor de la pendiente de la recta)?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "formulación y ejecución",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "2 (2 mil pesos por km)",
+                "es_correcta": true
+              },
+              {
+                "texto": "50 (50 mil pesos por km)",
+                "es_correcta": false
+              },
+              {
+                "texto": "3.25 (3,25 mil pesos por km)",
+                "es_correcta": false
+              },
+              {
+                "texto": "80 (80 mil pesos por km)",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un agricultor planea cercar un terreno destinado al pastoreo que tiene una forma irregular compuesta. El terreno está formado por un rectángulo principal de 40 metros de largo por 20 metros de ancho, al cual se le ha anexado en uno de sus lados menores un semicírculo que amplía el área de alimentación.",
+        "archivo": "/media/imagenes/geometria_perimetro_figura_compuesta.png",
+        "preguntas": [
+          {
+            "enunciado": "Utilizando la aproximación de $\\pi \\approx 3.14$, ¿cuántos metros de alambre se requieren para rodear completamente el perímetro exterior de este terreno de pastoreo?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "formulación y ejecución",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "131.4 metros",
+                "es_correcta": true
+              },
+              {
+                "texto": "162.8 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "100.0 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "151.4 metros",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un agrónomo realiza un estudio sobre la productividad de cinco fincas cafeteras vecinas en una región rural. El gráfico muestra la producción obtenida en sacos de café por hectárea durante la última cosecha para cada una de las fincas estudiadas.",
+        "archivo": "/media/imagenes/estadistica_media_produccion_cafe.png",
+        "preguntas": [
+          {
+            "enunciado": "Con base en la producción por hectárea registrada en el gráfico para las cinco fincas, ¿cuál es el promedio (media aritmética) de sacos de café producidos por hectárea en esta región?",
+            "tipo": "resolución",
+            "dificultad": "baja",
+            "competencia": "interpretación y representación",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "18 sacos",
+                "es_correcta": true
+              },
+              {
+                "texto": "16 sacos",
+                "es_correcta": false
+              },
+              {
+                "texto": "20 sacos",
+                "es_correcta": false
+              },
+              {
+                "texto": "15 sacos",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En una planta de empaque rural se utiliza una banda transportadora para clasificar un lote de 100 mangos según su calidad. El sistema distribuye las frutas en cinco contenedores diferentes: Óptimo, Manchas Superficiales, Sobremaduro, Defectuoso y No Comercializable. Los datos de la clasificación y la cantidad de unidades por categoría se muestran detalladamente en la infografía.",
+        "archivo": "/media/imagenes/watermarked_img_16391677281891258989.png",
+        "preguntas": [
+          {
+            "enunciado": "Con la información presentada en el gráfico, si se selecciona un mango al azar del lote total, ¿cuál es la probabilidad de que este pertenezca a la categoría de 'Manchas Superficiales'?",
+            "tipo": "resolución",
+            "dificultad": "baja",
+            "competencia": "formulación y ejecución",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "15%",
+                "es_correcta": true
+              },
+              {
+                "texto": "70%",
+                "es_correcta": false
+              },
+              {
+                "texto": "10%",
+                "es_correcta": false
+              },
+              {
+                "texto": "5%",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En una escuela rural se ha destinado un terreno cuadrado de 10 metros de lado para proyectos agrícolas. La zona sombreada corresponde a la sección asignada para las huertas de hortalizas, mientras que las cuatro esquinas blancas idénticas (con forma de cuartos de círculo de radio 5 metros) se utilizarán para sistemas de compostaje.",
+        "archivo": "/media/imagenes/geometria_area_sombreada_huerta.png",
+        "preguntas": [
+          {
+            "enunciado": "Tomando la aproximación de $\\pi \\approx 3.14$, ¿cuál es el área aproximada, en metros cuadrados, de la zona sombreada destinada a la huerta de hortalizas?",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "formulación y ejecución",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "21.5 metros cuadrados",
+                "es_correcta": true
+              },
+              {
+                "texto": "78.5 metros cuadrados",
+                "es_correcta": false
+              },
+              {
+                "texto": "25.0 metros cuadrados",
+                "es_correcta": false
+              },
+              {
+                "texto": "43.0 metros cuadrados",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un grupo de estudiantes de un colegio rural registró durante un trimestre la cantidad de horas de riego semanales aplicadas a 8 parcelas de control idénticas y la producción final obtenida en kilogramos de hortalizas por cada una.",
+        "archivo": "/media/imagenes/estadistica_dispersion_riego_cosecha.png",
+        "preguntas": [
+          {
+            "enunciado": "Con base en el comportamiento de los puntos distribuidos en el gráfico de dispersión, ¿qué tipo de relación o correlación se evidencia entre las horas de riego y la producción de hortalizas?",
+            "tipo": "interpretación",
+            "dificultad": "media",
+            "competencia": "interpretación y representación",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Correlación lineal positiva (a mayor cantidad de horas de riego, tiende a aumentar la producción).",
+                "es_correcta": true
+              },
+              {
+                "texto": "Correlación lineal negativa (a mayor cantidad de horas de riego, la producción disminuye drásticamente).",
+                "es_correcta": false
+              },
+              {
+                "texto": "Sin correlación (las horas de riego no muestran ninguna tendencia ni influencia sobre la producción).",
+                "es_correcta": false
+              },
+              {
+                "texto": "Relación constante (la producción se mantiene exactamente igual sin importar las horas de riego).",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un agricultor compró en la cooperativa insumos para su cosecha bajo dos ofertas distintas. La primera semana adquirió 3 bultos de fertilizante orgánico y 2 bultos de semillas de maíz por un valor total de 240 mil pesos. La segunda semana, compró 4 bultos de fertilizante orgánico y 1 bulto de semillas de maíz por un valor total de 220 mil pesos.",
+        "archivo": "/media/imagenes/algebra_sistema_ecuaciones_insumos.png",
+        "preguntas": [
+          {
+            "enunciado": "Con base en las compras realizadas por el agricultor, ¿cuál es el costo individual (en miles de pesos) de un bulto de fertilizante orgánico y de un bulto de semillas de maíz respectivamente?",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "formulación y ejecución",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "40 y 60 (40 mil el fertilizante y 60 mil las semillas)",
+                "es_correcta": true
+              },
+              {
+                "texto": "50 y 45 (50 mil el fertilizante y 45 mil las semillas)",
+                "es_correcta": false
+              },
+              {
+                "texto": "30 y 75 (30 mil el fertilizante y 75 mil las semillas)",
+                "es_correcta": false
+              },
+              {
+                "texto": "45 y 52 (45 mil el fertilizante y 52 mil las semillas)",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En un sistema de navegación por satélite, la órbita de un objeto alrededor de un punto central se describe mediante la ecuación canónica de una elipse: $\\frac{x^2}{25} + \\frac{y^2}{9} = 1$.",
+        "archivo": "/media/imagenes/geometria_analitica_elipse.png",
+        "preguntas": [
+          {
+            "enunciado": "A partir de la ecuación dada, ¿cuál es la distancia focal (distancia entre los dos focos) de esta órbita elíptica?",
+            "tipo": "resolución",
+            "dificultad": "muy alta",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "8 unidades",
+                "es_correcta": true
+              },
+              {
+                "texto": "4 unidades",
+                "es_correcta": false
+              },
+              {
+                "texto": "16 unidades",
+                "es_correcta": false
+              },
+              {
+                "texto": "10 unidades",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un arquitecto diseña una plaza circular y decide triplicar el radio del diseño original para aumentar la capacidad de personas.",
+        "archivo": "/media/imagenes/proporcionalidad_areas_circulo.png",
+        "preguntas": [
+          {
+            "enunciado": "Si el radio del círculo original se triplica (se multiplica por 3), ¿cuántas veces aumenta el área de la plaza con respecto al diseño inicial?",
+            "tipo": "análisis",
+            "dificultad": "media-alta",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "9 veces",
+                "es_correcta": true
+              },
+              {
+                "texto": "3 veces",
+                "es_correcta": false
+              },
+              {
+                "texto": "6 veces",
+                "es_correcta": false
+              },
+              {
+                "texto": "27 veces",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Una empresa de logística analiza sus retrasos. El 70% de sus camiones usa la Ruta A y el 30% la Ruta B. La probabilidad de retraso en la Ruta A es del 20%, mientras que en la Ruta B es del 10%.",
+        "archivo": "/media/imagenes/watermarked_img_1450885484950461166.png",
+        "preguntas": [
+          {
+            "enunciado": "Si se sabe que un camión llegó con retraso, ¿cuál es la probabilidad de que haya seguido la Ruta A?",
+            "tipo": "resolución",
+            "dificultad": "muy alta",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "14/17 (aprox. 82.3%)",
+                "es_correcta": true
+              },
+              {
+                "texto": "70%",
+                "es_correcta": false
+              },
+              {
+                "texto": "20%",
+                "es_correcta": false
+              },
+              {
+                "texto": "14/100 (14%)",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se definen dos funciones: una exponencial $f(x) = e^{0.5x}$ y una logarítmica $g(y) = \\ln(y)$. Se desea realizar la composición $(g \\circ f)(x)$, lo que implica evaluar $g(f(x))$.",
+        "archivo": "/media/imagenes/watermarked_img_10924695195758540317.png",
+        "preguntas": [
+          {
+            "enunciado": "Al simplificar la expresión de la función compuesta $(g \\circ f)(x)$, ¿cuál es la función resultante y cuál es su dominio en el conjunto de los números reales?",
+            "tipo": "análisis",
+            "dificultad": "alta",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Resultante: $0.5x$; Dominio: Todos los reales ($\\mathbb{R}$)",
+                "es_correcta": true
+              },
+              {
+                "texto": "Resultante: $e^{0.5x}$; Dominio: $x > 0$",
+                "es_correcta": false
+              },
+              {
+                "texto": "Resultante: $0.5x$; Dominio: $x > 0$",
+                "es_correcta": false
+              },
+              {
+                "texto": "Resultante: $\\ln(0.5x)$; Dominio: $x \\neq 0$",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un colegio compara los resultados obtenidos por dos grupos (A y B) en una prueba de matemáticas de 0 a 100 puntos. Los resultados se resumen en el siguiente diagrama de caja.",
+        "archivo": "/media/imagenes/estadistica_boxplot_comparativo.png",
+        "preguntas": [
+          {
+            "enunciado": "Basándose en el diagrama, ¿cuál de las siguientes afirmaciones es matemáticamente correcta sobre la dispersión y tendencia central de los grupos?",
+            "tipo": "análisis",
+            "dificultad": "media-alta",
+            "competencia": "interpretación de datos",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "El 50% superior del Grupo B tiene puntajes más altos que el 50% superior del Grupo A.",
+                "es_correcta": true
+              },
+              {
+                "texto": "La mediana del Grupo A es mayor que la mediana del Grupo B.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El Grupo A tiene un rango intercuartílico menor que el Grupo B.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Ambos grupos tienen exactamente el mismo puntaje máximo.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En el círculo unitario, se representa un ángulo $\\theta$ en el segundo cuadrante. Se sabe que el valor de $\\sin(\\theta) = 0.8$.",
+        "archivo": "/media/imagenes/trigonometria_circulo_unitario.png",
+        "preguntas": [
+          {
+            "enunciado": "Utilizando la identidad pitagórica $\\sin^2(\\theta) + \\cos^2(\\theta) = 1$, ¿cuál es el valor exacto de $\\cos(\\theta)$ para este ángulo en el segundo cuadrante?",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "-0.6",
+                "es_correcta": true
+              },
+              {
+                "texto": "0.6",
+                "es_correcta": false
+              },
+              {
+                "texto": "-0.2",
+                "es_correcta": false
+              },
+              {
+                "texto": "-0.36",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se presenta la función cuadrática $f(x) = x^2$ en el intervalo $[0, 2]$. Se sombrea la región limitada por la curva, el eje $x$ y la recta vertical $x = 2$.",
+        "archivo": "/media/imagenes/calculo_integral_area1.png",
+        "preguntas": [
+          {
+            "enunciado": "Utilizando el Teorema Fundamental del Cálculo, ¿cuál es el valor exacto del área de la región sombreada bajo la curva de la función $f(x) = x^2$ desde $x = 0$ hasta $x = 2$?",
+            "tipo": "resolución",
+            "dificultad": "muy alta",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "8/3 unidades cuadradas",
+                "es_correcta": true
+              },
+              {
+                "texto": "4 unidades cuadradas",
+                "es_correcta": false
+              },
+              {
+                "texto": "2 unidades cuadradas",
+                "es_correcta": false
+              },
+              {
+                "texto": "7/3 unidades cuadradas",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se analizan dos ofertas de servicios de internet representadas en un plano cartesiano. La oferta A tiene un cargo fijo y un costo por GB, mientras que la oferta B es un plan de solo consumo con una tarifa distinta.",
+        "archivo": "/media/imagenes/sistemas_ecuaciones_lineales.png",
+        "preguntas": [
+          {
+            "enunciado": "En el gráfico se observa que las rectas se intersectan en el punto (10, 50). ¿Qué representa matemáticamente este punto de intersección en el contexto del problema?",
+            "tipo": "interpretación",
+            "dificultad": "media",
+            "competencia": "comunicación",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "El punto donde ambas ofertas tienen el mismo costo para la misma cantidad de datos.",
+                "es_correcta": true
+              },
+              {
+                "texto": "El momento en que la oferta A se vuelve más barata que la oferta B.",
+                "es_correcta": false
+              },
+              {
+                "texto": "La cantidad máxima de datos que un usuario puede consumir en el mes.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El costo inicial de contratar cualquiera de los dos servicios.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se analiza la trayectoria de un satélite que sigue una órbita elíptica alrededor de un cuerpo celeste. La ecuación que describe su trayectoria es $\\frac{x^2}{25} + \\frac{y^2}{9} = 1$.",
+        "archivo": "/media/imagenes/elipse_geometria_analitica1.png",
+        "preguntas": [
+          {
+            "enunciado": "A partir de la ecuación dada, ¿cuál es la distancia focal (distancia entre los dos focos) de la trayectoria del satélite?",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "8 unidades",
+                "es_correcta": true
+              },
+              {
+                "texto": "4 unidades",
+                "es_correcta": false
+              },
+              {
+                "texto": "16 unidades",
+                "es_correcta": false
+              },
+              {
+                "texto": "6 unidades",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se diseña un silo de almacenamiento de granos que consta de un cilindro recto con un cono en la parte superior. Ambos tienen un radio de 3 metros. La altura del cilindro es de 10 metros y la altura del cono es de 4 metros.",
+        "archivo": "/media/imagenes/geometria_solidos_compuestos.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es el volumen total de almacenamiento del silo en términos de $\\pi$?",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "$102\\pi$ $m^3$",
+                "es_correcta": true
+              },
+              {
+                "texto": "$126\\pi$ $m^3$",
+                "es_correcta": false
+              },
+              {
+                "texto": "$90\\pi$ $m^3$",
+                "es_correcta": false
+              },
+              {
+                "texto": "$114\\pi$ $m^3$",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un chef está creando un menú especial de degustación. Dispone de 6 ingredientes base únicos y desea presentar un plato compuesto por 3 de estos ingredientes, organizados en capas visuales. El orden en que se colocan las capas es fundamental para la experiencia del sabor y la presentación.",
+        "archivo": "/media/imagenes/probabilidad_conteo_permutaciones.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuántas combinaciones diferentes de platos (considerando el orden de las capas) puede crear el chef utilizando 3 ingredientes distintos de los 6 disponibles?",
+            "tipo": "resolución",
+            "dificultad": "media-alta",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "120",
+                "es_correcta": true
+              },
+              {
+                "texto": "20",
+                "es_correcta": false
+              },
+              {
+                "texto": "720",
+                "es_correcta": false
+              },
+              {
+                "texto": "18",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se desea fabricar una caja abierta a partir de una lámina cuadrada de cartón de 12 cm de lado, recortando cuadrados de lado $x$ en cada esquina y doblando hacia arriba. La función que describe el volumen de la caja es $V(x) = x(12 - 2x)^2$.",
+        "archivo": "/media/imagenes/calculo_diferencial_optimizacion.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Qué valor debe tener $x$ para que el volumen de la caja sea máximo?",
+            "tipo": "resolución",
+            "dificultad": "muy alta",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "2 cm",
+                "es_correcta": true
+              },
+              {
+                "texto": "3 cm",
+                "es_correcta": false
+              },
+              {
+                "texto": "6 cm",
+                "es_correcta": false
+              },
+              {
+                "texto": "4 cm",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Los resultados de una prueba de aptitud nacional siguen una distribución normal con una media ($\\mu$) de 70 puntos y una desviación estándar ($\\sigma$) de 10 puntos.",
+        "archivo": "/media/imagenes/estadistica_distribucion_normal.png",
+        "preguntas": [
+          {
+            "enunciado": "De acuerdo con la regla empírica de la distribución normal, ¿qué porcentaje aproximado de los estudiantes obtuvo una puntuación entre 50 y 90 puntos?",
+            "tipo": "interpretación",
+            "dificultad": "media",
+            "competencia": "comunicación",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "95%",
+                "es_correcta": true
+              },
+              {
+                "texto": "68%",
+                "es_correcta": false
+              },
+              {
+                "texto": "99.7%",
+                "es_correcta": false
+              },
+              {
+                "texto": "50%",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se registra el movimiento oscilatorio de una boya en el mar. La altura de la boya respecto al nivel medio del agua está modelada por la función $h(t) = 3\\sin(2t)$, donde $t$ es el tiempo en segundos.",
+        "archivo": "/media/imagenes/trigonometria_funciones_periodicas.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es el periodo de oscilación de la boya, es decir, cuánto tiempo tarda en completar un ciclo completo?",
+            "tipo": "resolución",
+            "dificultad": "media-alta",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "$\\pi$ segundos",
+                "es_correcta": true
+              },
+              {
+                "texto": "$2\\pi$ segundos",
+                "es_correcta": false
+              },
+              {
+                "texto": "2 segundos",
+                "es_correcta": false
+              },
+              {
+                "texto": "3 segundos",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se observa el crecimiento de una población de bacterias en un cultivo controlado. Inicialmente hay 5 bacterias, y cada hora la cantidad de bacterias se triplica respecto a la hora anterior.",
+        "archivo": "/media/imagenes/sucesiones_geometricas_bacterias.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es la expresión general que permite calcular la cantidad de bacterias ($a_n$) después de $n$ horas, y cuántas bacterias habrá exactamente al finalizar la cuarta hora?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "$a_n = 5 \\cdot 3^{(n)}$; 405 bacterias",
+                "es_correcta": true
+              },
+              {
+                "texto": "$a_n = 5 + 3n$; 17 bacterias",
+                "es_correcta": false
+              },
+              {
+                "texto": "$a_n = 5 \\cdot 3^{(n-1)}$; 135 bacterias",
+                "es_correcta": false
+              },
+              {
+                "texto": "$a_n = 3 \\cdot 5^n$; 1875 bacterias",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se analiza la estabilidad de un sistema estructural representado por la matriz de coeficientes $M = \\begin{pmatrix} 4 & 6 \\\\ 2 & 8 \\end{pmatrix}$. Para determinar si el sistema tiene una solución única, es necesario calcular su determinante.",
+        "archivo": "/media/imagenes/algebra_lineal_determinantes.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es el valor del determinante de la matriz $M$?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "20",
+                "es_correcta": true
+              },
+              {
+                "texto": "44",
+                "es_correcta": false
+              },
+              {
+                "texto": "32",
+                "es_correcta": false
+              },
+              {
+                "texto": "12",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Considera el conjunto de simetrías de un triángulo equilátero, conocido como el Grupo Diedral $D_3$. Este grupo contiene 6 elementos: 3 rotaciones ($R_0, R_{120}, R_{240}$) y 3 reflexiones ($S_1, S_2, S_3$) respecto a las mediatrices. La imagen muestra una 'Tabla de Cayley' parcial para la operación de composición de simetrías.",
+        "archivo": "/media/imagenes/algebra_abstracta_cayley.png",
+        "preguntas": [
+          {
+            "enunciado": "Utilizando la información de la tabla parcial y las propiedades de los grupos de simetría, ¿cuál es el resultado de la composición $S_2 \\circ S_1$ (aplicar $S_1$ y luego $S_2$)?",
+            "tipo": "interpretación",
+            "dificultad": "alta",
+            "competencia": "abstraer",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "$R_{240}$",
+                "es_correcta": true
+              },
+              {
+                "texto": "$R_{120}$",
+                "es_correcta": false
+              },
+              {
+                "texto": "$S_3$",
+                "es_correcta": false
+              },
+              {
+                "texto": "$R_0$",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se requiere calcular el área de una sección transversal de un nuevo diseño de ala para un prototipo de dron. La curva superior del ala está definida por la función $f(x) = -x^2 + 4$ en el intervalo $[0, 2]$.",
+        "archivo": "/media/imagenes/calculo_integral_area2.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es el valor exacto del área bajo la curva $f(x)$ en el intervalo indicado?",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "$16/3$ unidades cuadradas",
+                "es_correcta": true
+              },
+              {
+                "texto": "$8/3$ unidades cuadradas",
+                "es_correcta": false
+              },
+              {
+                "texto": "4 unidades cuadradas",
+                "es_correcta": false
+              },
+              {
+                "texto": "8 unidades cuadradas",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En una planta de procesamiento de agua, se mide el pH de las muestras tratadas. Se ha determinado que los valores de pH siguen una distribución normal con una media ($\\mu$) de 7.0 y una desviación estándar ($\\sigma$) de 0.5. Para garantizar la calidad, el pH debe mantenerse entre 6.5 y 7.5.",
+        "archivo": "/media/imagenes/estadistica_distribucion_normal1.png",
+        "preguntas": [
+          {
+            "enunciado": "De acuerdo con la regla empírica de la distribución normal (68-95-99.7), ¿qué porcentaje aproximado de las muestras de agua tendrá un pH que cumple con el estándar de calidad (entre 6.5 y 7.5)?",
+            "tipo": "interpretación",
+            "dificultad": "media",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "68%",
+                "es_correcta": true
+              },
+              {
+                "texto": "95%",
+                "es_correcta": false
+              },
+              {
+                "texto": "34%",
+                "es_correcta": false
+              },
+              {
+                "texto": "50%",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un camión de recolección de basura debe recorrer todas las calles de un pequeño barrio. Para minimizar el combustible, el conductor quiere encontrar una ruta que pase por cada calle exactamente una vez y termine en el mismo punto donde empezó.",
+        "archivo": "/media/imagenes/teoria_grafos_euleriano.png",
+        "preguntas": [
+          {
+            "enunciado": "Analizando el grafo que representa el mapa del barrio, ¿es posible realizar esta ruta euleriana completa? (Pista: Revisa el grado de los vértices).",
+            "tipo": "interpretación",
+            "dificultad": "media",
+            "competencia": "razonar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Sí, es posible, porque es un 'Grafo Euleriano'.",
+                "es_correcta": true
+              },
+              {
+                "texto": "No, es imposible, porque es un 'Grafo Semi-Euleriano'.",
+                "es_correcta": false
+              },
+              {
+                "texto": "No, no cumple con el teorema de los grados impares.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Sí, pero solo es posible realizar un camino euleriano.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un equipo de topografía necesita determinar la distancia entre dos puntos, $A$ y $B$, situados a orillas del río Magdalena. Desde un tercer punto $C$, se miden los ángulos $\\angle BCA = 45^\\circ$ y $\\angle CAB = 60^\\circ$. La distancia medida entre $A$ y $C$ es de $120$ metros.",
+        "archivo": "/media/imagenes/trigonometria_ley_seno.png",
+        "preguntas": [
+          {
+            "enunciado": "Utilizando la Ley del Seno, ¿cuál es la distancia aproximada entre los puntos $A$ y $B$?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "modelar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "$87.8$ metros",
+                "es_correcta": true
+              },
+              {
+                "texto": "$146.9$ metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "$103.9$ metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "$60.0$ metros",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un estudiante desea calcular la altura de un poste de luz utilizando su propia sombra. El estudiante mide 1.70 metros de altura y proyecta una sombra de 2 metros. En ese mismo instante, la sombra del poste mide 8 metros.",
+        "archivo": "/media/imagenes/matematicas_semejanza_triangulos.png",
+        "preguntas": [
+          {
+            "enunciado": "Aplicando el concepto de semejanza de triángulos, ¿cuál es la altura real del poste de luz?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "razonamiento cuantitativo",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "6.8 metros",
+                "es_correcta": true
+              },
+              {
+                "texto": "9.4 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "7.5 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "5.6 metros",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un ingeniero ambiental está analizando la trayectoria del agua expulsada por un aspersor para optimizar el riego en un cultivo. La altura ($h$, en metros) del agua respecto al suelo en función de la distancia horizontal ($x$, en metros) desde el aspersor sigue la función cuadrática: $h(x) = -0.25x^2 + 2x + 1$.",
+        "archivo": "/media/imagenes/matematicas_funciones_cuadraticas_riego.png",
+        "preguntas": [
+          {
+            "enunciado": "Utilizando la función cuadrática provista, ¿cuál es la **altura máxima** que alcanza el chorro de agua y a qué **distancia horizontal** desde el aspersor se logra?",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "modelar y optimizar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "$5$ metros de altura, a $4$ metros de distancia.",
+                "es_correcta": true
+              },
+              {
+                "texto": "$4$ metros de altura, a $5$ metros de distancia.",
+                "es_correcta": false
+              },
+              {
+                "texto": "$6$ metros de altura, a $3$ metros de distancia.",
+                "es_correcta": false
+              },
+              {
+                "texto": "$1$ metro de altura, a $0$ metros de distancia.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Una pizza circular se divide originalmente en 8 porciones iguales para ser repartida entre un grupo de personas.",
+        "archivo": "/media/imagenes/reparto_pizza.png",
+        "preguntas": [
+          {
+            "enunciado": "Si se retiran 3 de las 8 porciones originales, ¿qué porcentaje del total de la pizza queda disponible en el plato?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "37,5%",
+                "es_correcta": false
+              },
+              {
+                "texto": "62,5%",
+                "es_correcta": true
+              },
+              {
+                "texto": "75%",
+                "es_correcta": false
+              },
+              {
+                "texto": "30%",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En el plano cartesiano se representa una función lineal que pasa por los puntos (0, 2) y (4, 10), como se observa en la imagen.",
+        "archivo": "/media/imagenes/plano_cartesiano_recta.png",
+        "preguntas": [
+          {
+            "enunciado": "La pendiente (m) de una recta se define como la razón de cambio entre el eje y y el eje x ($m = \\frac{y_2 - y_1}{x_2 - x_1}$). ¿Cuál es el valor de la pendiente para la recta mostrada?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "argumentar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "m = 0,5",
+                "es_correcta": false
+              },
+              {
+                "texto": "m = 2",
+                "es_correcta": true
+              },
+              {
+                "texto": "m = 4",
+                "es_correcta": false
+              },
+              {
+                "texto": "m = 8",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se realizó una encuesta a 100 estudiantes sobre su deporte favorito. Los resultados se presentan en la siguiente gráfica de barras.",
+        "archivo": "/media/imagenes/grafica_deportes_estudiantes.png",
+        "preguntas": [
+          {
+            "enunciado": "Si se elige a un estudiante al azar de este grupo de 100, ¿cuál es la probabilidad de que su deporte favorito sea el Baloncesto (Basketball) o la Natación (Swimming)?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "25%",
+                "es_correcta": false
+              },
+              {
+                "texto": "15%",
+                "es_correcta": false
+              },
+              {
+                "texto": "40%",
+                "es_correcta": true
+              },
+              {
+                "texto": "60%",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un experimento aleatorio consiste en dos etapas: primero se lanza una moneda equilibrada (Cara/Sello) y luego se extrae una bola de una bolsa que contiene 3 bolas rojas y 2 bolas azules.",
+        "archivo": "/media/imagenes/image_generation_content.png",
+        "preguntas": [
+          {
+            "enunciado": "Utilizando el diagrama de árbol, ¿cuál es la probabilidad de que el resultado del experimento sea 'Sello' (Tails) y luego se extraiga una 'Bola Roja' (Red Ball)?",
+            "tipo": "razonamiento",
+            "dificultad": "alta",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "",
+                "es_correcta": false
+              },
+              {
+                "texto": "",
+                "es_correcta": false
+              },
+              {
+                "texto": "",
+                "es_correcta": false
+              },
+              {
+                "texto": "",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La figura mostrada representa el diseño de una ventana rectangular coronada por un semicírculo. Las medidas dadas están en metros.",
+        "archivo": "/media/imagenes/area_figura_compuesta_ventana.png",
+        "preguntas": [
+          {
+            "enunciado": "Si se desea instalar un vidrio especial en toda la ventana, ¿cuál es el área total, en metros cuadrados (m²), que debe cubrir el vidrio? (Utilice $\\pi \\approx 3,14$).",
+            "tipo": "resolucion",
+            "dificultad": "alta",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "21,57 m²",
+                "es_correcta": true
+              },
+              {
+                "texto": "18,28 m²",
+                "es_correcta": false
+              },
+              {
+                "texto": "15,14 m²",
+                "es_correcta": false
+              },
+              {
+                "texto": "24,71 m²",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se planea construir una rampa de carga para un almacén. Las especificaciones técnicas indican que la base de la rampa debe medir 12 metros de largo y alcanzar una altura vertical de 5 metros, como se muestra en la imagen.",
+        "archivo": "/media/imagenes/image_generation_content1.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es la longitud total de la superficie inclinada (hipotenusa) de la rampa que se debe construir?",
+            "tipo": "resolucion",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "17 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "13 metros",
+                "es_correcta": true
+              },
+              {
+                "texto": "10,5 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "7 metros",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se diseñó un tanque de almacenamiento de agua con forma cilíndrica. Las especificaciones técnicas indican que el radio de la base es de 2 metros y la altura del cilindro es de 7 metros, como se observa en la imagen.",
+        "archivo": "/media/imagenes/volumen_cilindro_tanque.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es la capacidad total de almacenamiento, en metros cúbicos ($m^3$), de este tanque cilíndrico? (Utilice $\\pi \\approx 3,14$).",
+            "tipo": "resolucion",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "87,92 $m^3$",
+                "es_correcta": true
+              },
+              {
+                "texto": "43,96 $m^3$",
+                "es_correcta": false
+              },
+              {
+                "texto": "28,26 $m^3$",
+                "es_correcta": false
+              },
+              {
+                "texto": "61,54 $m^3$",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Se presenta un círculo cuyo área total es de 120 cm². En él se ha resaltado un sector circular con un ángulo central de 90°, como se muestra en la figura.",
+        "archivo": "/media/imagenes/image_generation_content2.png",
+        "preguntas": [
+          {
+            "enunciado": "De acuerdo con la información de la imagen, ¿cuál es el área del sector circular resaltado en color rojo?",
+            "tipo": "razonamiento",
+            "dificultad": "media",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "30 cm²",
+                "es_correcta": true
+              },
+              {
+                "texto": "60 cm²",
+                "es_correcta": false
+              },
+              {
+                "texto": "45 cm²",
+                "es_correcta": false
+              },
+              {
+                "texto": "90 cm²",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La siguiente gráfica muestra la relación entre el tiempo transcurrido (en horas) y la distancia recorrida (en kilómetros) por un vehículo que mantiene una velocidad constante.",
+        "archivo": "/media/imagenes/grafica_funcion_lineal_distancia1.png",
+        "preguntas": [
+          {
+            "enunciado": "De acuerdo con la gráfica, ¿cuál es la velocidad del vehículo y qué distancia habrá recorrido al cabo de 6 horas?",
+            "tipo": "razonamiento",
+            "dificultad": "alta",
+            "competencia": "resolver",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Velocidad: 2 km/h; Distancia: 14 km",
+                "es_correcta": true
+              },
+              {
+                "texto": "Velocidad: 4 km/h; Distancia: 24 km",
+                "es_correcta": false
+              },
+              {
+                "texto": "Velocidad: 2 km/h; Distancia: 12 km",
+                "es_correcta": false
+              },
+              {
+                "texto": "Velocidad: 8 km/h; Distancia: 50 km",
+                "es_correcta": false
+              }
+            ]
+          },
+          {
+            "enunciado": "De acuerdo con la gráfica, ¿cuál es la velocidad del vehículo (la pendiente de la recta) y qué distancia habrá recorrido al cabo de 6 horas?",
+            "tipo": "razonamiento",
+            "dificultad": "alta",
+            "competencia": "argumentar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Velocidad: 2 km/h; Distancia: 14 km",
+                "es_correcta": true
+              },
+              {
+                "texto": "Velocidad: 4 km/h; Distancia: 24 km",
+                "es_correcta": false
+              },
+              {
+                "texto": "Velocidad: 2 km/h; Distancia: 12 km",
+                "es_correcta": false
+              },
+              {
+                "texto": "Velocidad: 1 km/h; Distancia: 10 km",
                 "es_correcta": false
               }
             ]
@@ -7846,351 +9823,6 @@ export const OFF_QUESTIONS_DATA = {
               },
               {
                 "texto": "25",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "Un agricultor necesita decidir cuál de los dos tanques representados en la imagen tiene mayor capacidad de almacenamiento para su sistema de riego.",
-        "archivo": "/media/imagenes/capacidad_tanques.png",
-        "preguntas": [
-          {
-            "enunciado": "Considerando que el volumen de un cilindro se calcula como V = π * r^2 * h y el de un prisma rectangular como V = largo * ancho * alto, ¿cuál de las siguientes afirmaciones es correcta? (Tome π ≈ 3,14).",
-            "tipo": "modelacion",
-            "dificultad": "media",
-            "competencia": "formular",
-            "imagen_url": null,
-            "opciones": [
-              {
-                "texto": "A. El tanque cilíndrico tiene una capacidad de 20π m³, lo cual es menor que los 24 m³ del tanque prismático.",
-                "es_correcta": false
-              },
-              {
-                "texto": "B. El tanque prismático tiene mayor capacidad porque sus dimensiones base (4m y 3m) son mayores al radio del cilindro.",
-                "es_correcta": false
-              },
-              {
-                "texto": "C. El tanque cilíndrico tiene una capacidad aproximada de 62,8 m³, superando la capacidad de 24 m³ del tanque prismático.",
-                "es_correcta": true
-              },
-              {
-                "texto": "D. Ambos tanques tienen la misma capacidad de almacenamiento ya que el promedio de sus dimensiones es similar.",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "Una pizza circular se divide originalmente en 8 porciones iguales para ser repartida entre un grupo de personas.",
-        "archivo": "/media/imagenes/reparto_pizza.png",
-        "preguntas": [
-          {
-            "enunciado": "Si se retiran 3 de las 8 porciones originales, ¿qué porcentaje del total de la pizza queda disponible en el plato?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "imagen_url": null,
-            "opciones": [
-              {
-                "texto": "37,5%",
-                "es_correcta": false
-              },
-              {
-                "texto": "62,5%",
-                "es_correcta": true
-              },
-              {
-                "texto": "75%",
-                "es_correcta": false
-              },
-              {
-                "texto": "30%",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "En el plano cartesiano se representa una función lineal que pasa por los puntos (0, 2) y (4, 10), como se observa en la imagen.",
-        "archivo": "/media/imagenes/plano_cartesiano_recta.png",
-        "preguntas": [
-          {
-            "enunciado": "La pendiente (m) de una recta se define como la razón de cambio entre el eje y y el eje x ($m = \\frac{y_2 - y_1}{x_2 - x_1}$). ¿Cuál es el valor de la pendiente para la recta mostrada?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "argumentar",
-            "imagen_url": null,
-            "opciones": [
-              {
-                "texto": "m = 0,5",
-                "es_correcta": false
-              },
-              {
-                "texto": "m = 2",
-                "es_correcta": true
-              },
-              {
-                "texto": "m = 4",
-                "es_correcta": false
-              },
-              {
-                "texto": "m = 8",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "Se realizó una encuesta a 100 estudiantes sobre su deporte favorito. Los resultados se presentan en la siguiente gráfica de barras.",
-        "archivo": "/media/imagenes/grafica_deportes_estudiantes.png",
-        "preguntas": [
-          {
-            "enunciado": "Si se elige a un estudiante al azar de este grupo de 100, ¿cuál es la probabilidad de que su deporte favorito sea el Baloncesto (Basketball) o la Natación (Swimming)?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "imagen_url": null,
-            "opciones": [
-              {
-                "texto": "25%",
-                "es_correcta": false
-              },
-              {
-                "texto": "15%",
-                "es_correcta": false
-              },
-              {
-                "texto": "40%",
-                "es_correcta": true
-              },
-              {
-                "texto": "60%",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "Un experimento aleatorio consiste en dos etapas: primero se lanza una moneda equilibrada (Cara/Sello) y luego se extrae una bola de una bolsa que contiene 3 bolas rojas y 2 bolas azules.",
-        "archivo": "/media/imagenes/image_generation_content.png",
-        "preguntas": [
-          {
-            "enunciado": "Utilizando el diagrama de árbol, ¿cuál es la probabilidad de que el resultado del experimento sea 'Sello' (Tails) y luego se extraiga una 'Bola Roja' (Red Ball)?",
-            "tipo": "razonamiento",
-            "dificultad": "alta",
-            "competencia": "resolver",
-            "imagen_url": null,
-            "opciones": [
-              {
-                "texto": "",
-                "es_correcta": false
-              },
-              {
-                "texto": "",
-                "es_correcta": false
-              },
-              {
-                "texto": "",
-                "es_correcta": false
-              },
-              {
-                "texto": "",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "La figura mostrada representa el diseño de una ventana rectangular coronada por un semicírculo. Las medidas dadas están en metros.",
-        "archivo": "/media/imagenes/area_figura_compuesta_ventana.png",
-        "preguntas": [
-          {
-            "enunciado": "Si se desea instalar un vidrio especial en toda la ventana, ¿cuál es el área total, en metros cuadrados (m²), que debe cubrir el vidrio? (Utilice $\\pi \\approx 3,14$).",
-            "tipo": "resolucion",
-            "dificultad": "alta",
-            "competencia": "resolver",
-            "imagen_url": null,
-            "opciones": [
-              {
-                "texto": "21,57 m²",
-                "es_correcta": true
-              },
-              {
-                "texto": "18,28 m²",
-                "es_correcta": false
-              },
-              {
-                "texto": "15,14 m²",
-                "es_correcta": false
-              },
-              {
-                "texto": "24,71 m²",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "Se planea construir una rampa de carga para un almacén. Las especificaciones técnicas indican que la base de la rampa debe medir 12 metros de largo y alcanzar una altura vertical de 5 metros, como se muestra en la imagen.",
-        "archivo": "/media/imagenes/image_generation_content1.png",
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la longitud total de la superficie inclinada (hipotenusa) de la rampa que se debe construir?",
-            "tipo": "resolucion",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "imagen_url": null,
-            "opciones": [
-              {
-                "texto": "17 metros",
-                "es_correcta": false
-              },
-              {
-                "texto": "13 metros",
-                "es_correcta": true
-              },
-              {
-                "texto": "10,5 metros",
-                "es_correcta": false
-              },
-              {
-                "texto": "7 metros",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "Se diseñó un tanque de almacenamiento de agua con forma cilíndrica. Las especificaciones técnicas indican que el radio de la base es de 2 metros y la altura del cilindro es de 7 metros, como se observa en la imagen.",
-        "archivo": "/media/imagenes/volumen_cilindro_tanque.png",
-        "preguntas": [
-          {
-            "enunciado": "¿Cuál es la capacidad total de almacenamiento, en metros cúbicos ($m^3$), de este tanque cilíndrico? (Utilice $\\pi \\approx 3,14$).",
-            "tipo": "resolucion",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "imagen_url": null,
-            "opciones": [
-              {
-                "texto": "87,92 $m^3$",
-                "es_correcta": true
-              },
-              {
-                "texto": "43,96 $m^3$",
-                "es_correcta": false
-              },
-              {
-                "texto": "28,26 $m^3$",
-                "es_correcta": false
-              },
-              {
-                "texto": "61,54 $m^3$",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "Se presenta un círculo cuyo área total es de 120 cm². En él se ha resaltado un sector circular con un ángulo central de 90°, como se muestra en la figura.",
-        "archivo": "/media/imagenes/image_generation_content2.png",
-        "preguntas": [
-          {
-            "enunciado": "De acuerdo con la información de la imagen, ¿cuál es el área del sector circular resaltado en color rojo?",
-            "tipo": "razonamiento",
-            "dificultad": "media",
-            "competencia": "resolver",
-            "imagen_url": null,
-            "opciones": [
-              {
-                "texto": "30 cm²",
-                "es_correcta": true
-              },
-              {
-                "texto": "60 cm²",
-                "es_correcta": false
-              },
-              {
-                "texto": "45 cm²",
-                "es_correcta": false
-              },
-              {
-                "texto": "90 cm²",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "La siguiente gráfica muestra la relación entre el tiempo transcurrido (en horas) y la distancia recorrida (en kilómetros) por un vehículo que mantiene una velocidad constante.",
-        "archivo": "/media/imagenes/grafica_funcion_lineal_distancia.png",
-        "preguntas": [
-          {
-            "enunciado": "De acuerdo con la gráfica, ¿cuál es la velocidad del vehículo y qué distancia habrá recorrido al cabo de 6 horas?",
-            "tipo": "razonamiento",
-            "dificultad": "alta",
-            "competencia": "resolver",
-            "imagen_url": null,
-            "opciones": [
-              {
-                "texto": "Velocidad: 2 km/h; Distancia: 14 km",
-                "es_correcta": true
-              },
-              {
-                "texto": "Velocidad: 4 km/h; Distancia: 24 km",
-                "es_correcta": false
-              },
-              {
-                "texto": "Velocidad: 2 km/h; Distancia: 12 km",
-                "es_correcta": false
-              },
-              {
-                "texto": "Velocidad: 8 km/h; Distancia: 50 km",
-                "es_correcta": false
-              }
-            ]
-          },
-          {
-            "enunciado": "De acuerdo con la gráfica, ¿cuál es la velocidad del vehículo (la pendiente de la recta) y qué distancia habrá recorrido al cabo de 6 horas?",
-            "tipo": "razonamiento",
-            "dificultad": "alta",
-            "competencia": "argumentar",
-            "imagen_url": null,
-            "opciones": [
-              {
-                "texto": "Velocidad: 2 km/h; Distancia: 14 km",
-                "es_correcta": true
-              },
-              {
-                "texto": "Velocidad: 4 km/h; Distancia: 24 km",
-                "es_correcta": false
-              },
-              {
-                "texto": "Velocidad: 2 km/h; Distancia: 12 km",
-                "es_correcta": false
-              },
-              {
-                "texto": "Velocidad: 1 km/h; Distancia: 10 km",
                 "es_correcta": false
               }
             ]
@@ -10471,12 +12103,588 @@ export const OFF_QUESTIONS_DATA = {
             ]
           }
         ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La alcaldía de Pinillos realizó una encuesta a 400 jóvenes sobre su área de interés para cursos técnicos. Los resultados se muestran en la siguiente gráfica de barras.",
+        "archivo": "/media/imagenes/estadistica_barras_intereses.png",
+        "preguntas": [
+          {
+            "enunciado": "Si el 25% de los jóvenes interesados en 'Programación' decide inscribirse en un taller avanzado, ¿cuántos jóvenes asistirán a dicho taller según los datos de la gráfica?",
+            "tipo": "interpretación",
+            "dificultad": "media",
+            "competencia": "interpretación y representación",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "40 jóvenes",
+                "es_correcta": true
+              },
+              {
+                "texto": "160 jóvenes",
+                "es_correcta": false
+              },
+              {
+                "texto": "100 jóvenes",
+                "es_correcta": false
+              },
+              {
+                "texto": "25 jóvenes",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un diseñador gráfico está creando un nuevo logo sobre una placa cuadrada metálica de 10 cm de lado. Para el diseño, inscribe un círculo que toca exactamente los cuatro lados del cuadrado y desea pintar de color gris las cuatro esquinas que quedan fuera del círculo.",
+        "archivo": "/media/imagenes/geometria_area_sombreada_circulo.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es el área total aproximada de las cuatro esquinas sombreadas? (Considere $\\pi \\approx 3.14$)",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "razonamiento cuantitativo",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "21.5 cm²",
+                "es_correcta": true
+              },
+              {
+                "texto": "78.5 cm²",
+                "es_correcta": false
+              },
+              {
+                "texto": "31.4 cm²",
+                "es_correcta": false
+              },
+              {
+                "texto": "5.37 cm²",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un técnico de telecomunicaciones en Pinillos necesita asegurar una antena de 12 metros de altura utilizando un cable de tensión. El cable debe anclarse a un punto en el suelo que está exactamente a 5 metros de la base de la antena.",
+        "archivo": "/media/imagenes/geometria_pitagoras_antena.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál debe ser la longitud total del cable de tensión para que quede perfectamente estirado desde la punta de la antena hasta el punto de anclaje?",
+            "tipo": "resolución",
+            "dificultad": "baja",
+            "competencia": "razonamiento cuantitativo",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "13 metros",
+                "es_correcta": true
+              },
+              {
+                "texto": "17 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "15 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "11.5 metros",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En una jornada de orientación vocacional en Pinillos, se utiliza una urna que contiene 20 tarjetas numeradas del 1 al 20. Cada número corresponde a una beca para diferentes áreas técnicas. Un estudiante extrae una tarjeta al azar.",
+        "archivo": "/media/imagenes/estadistica_probabilidad_becas.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es la probabilidad de que el estudiante extraiga una tarjeta que sea un **número primo**?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "razonamiento cuantitativo",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "2/5 (40%)",
+                "es_correcta": true
+              },
+              {
+                "texto": "1/2 (50%)",
+                "es_correcta": false
+              },
+              {
+                "texto": "9/20 (45%)",
+                "es_correcta": false
+              },
+              {
+                "texto": "7/20 (35%)",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un topógrafo en las llanuras de Pinillos observa la parte más alta de una torre de comunicaciones con un ángulo de elevación de 30°. Él se encuentra a una distancia horizontal de 60 metros de la base de la torre.",
+        "archivo": "/media/imagenes/matematicas_trigonometria_torre.png",
+        "preguntas": [
+          {
+            "enunciado": "Usando la razón trigonométrica de la Tangente ($\tan 30^\\circ \\approx 0.57$), ¿cuál es la altura aproximada de la torre?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "modelación",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "34.2 metros",
+                "es_correcta": true
+              },
+              {
+                "texto": "105.2 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "20.0 metros",
+                "es_correcta": false
+              },
+              {
+                "texto": "51.9 metros",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En una finca comunitaria, el tiempo que se tarda en llenar un tanque de reserva de agua para riego depende de la cantidad de motobombas (de la misma potencia y flujo) que se utilicen simultáneamente. Si se activa 1 sola motobomba, el tanque tarda exactamente 12 horas en llenarse por completo.",
+        "archivo": "/media/imagenes/algebra_proporcionalidad_inversa_llenado.png",
+        "preguntas": [
+          {
+            "enunciado": "Si para acelerar el proceso se decide poner a funcionar un total de 3 motobombas idénticas al mismo tiempo, ¿cuántas horas tardará en llenarse el tanque de reserva bajo estas condiciones?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "formulación y ejecución",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "4 horas",
+                "es_correcta": true
+              },
+              {
+                "texto": "36 horas",
+                "es_correcta": false
+              },
+              {
+                "texto": "6 horas",
+                "es_correcta": false
+              },
+              {
+                "texto": "3 horas",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un almacén agropecuario tiene un lote de 200 paquetes de semillas de alta calidad. De estos, 120 paquetes son de variedad 'Maíz Amarillo' y 80 paquetes son de variedad 'Maíz Blanco'. Se sabe que el 10% de los paquetes de 'Maíz Amarillo' tienen certificación orgánica y el 25% de los paquetes de 'Maíz Blanco' tienen certificación orgánica.",
+        "archivo": "/media/imagenes/Code_Generated_Image.png",
+        "preguntas": [
+          {
+            "enunciado": "Si se selecciona un paquete al azar del lote total y se observa que tiene certificación orgánica, ¿cuál es la probabilidad de que este paquete sea de la variedad 'Maíz Blanco'?",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "formulación y ejecución",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "20/32 o 62.5%",
+                "es_correcta": true
+              },
+              {
+                "texto": "12/32 o 37.5%",
+                "es_correcta": false
+              },
+              {
+                "texto": "25/100 o 25%",
+                "es_correcta": false
+              },
+              {
+                "texto": "80/200 o 40%",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un agricultor necesita almacenar bultos de abono en una bodega cuya área de base es de 12 metros cuadrados. La altura útil de la bodega para el apilamiento de los bultos es de 3 metros. Se planea llenar la bodega hasta un 80% de su capacidad total para permitir la ventilación adecuada de los productos.",
+        "archivo": "/media/imagenes/geometria_volumen_bodega.png",
+        "preguntas": [
+          {
+            "enunciado": "Considerando la capacidad total de la bodega, ¿cuál es el volumen máximo en metros cúbicos ($m^3$) que debe ocupar el abono para cumplir con la norma de ventilación (80% de la capacidad total)?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "formulación y ejecución",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "28.8 m³",
+                "es_correcta": true
+              },
+              {
+                "texto": "36.0 m³",
+                "es_correcta": false
+              },
+              {
+                "texto": "24.0 m³",
+                "es_correcta": false
+              },
+              {
+                "texto": "30.0 m³",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En una clase de dibujo técnico, se presenta el siguiente sólido isométrico compuesto por cubos idénticos. Se han identificado tres vistas principales: la vista frontal (mirando desde la dirección de la flecha 'F'), la vista lateral derecha (mirando desde 'L') y la vista superior (mirando desde 'S').",
+        "archivo": "/media/imagenes/geometria_vistas_ortogonales_solido.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál de las siguientes opciones representa correctamente la proyección de la **vista lateral derecha** (L) del sólido isométrico presentado?",
+            "tipo": "interpretación",
+            "dificultad": "alta",
+            "competencia": "interpretación y representación",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Una 'L' invertida compuesta por 3 cuadrados.",
+                "es_correcta": true
+              },
+              {
+                "texto": "Una 'U' compuesta por 3 cuadrados.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Un cuadrado simple de 1x1.",
+                "es_correcta": false
+              },
+              {
+                "texto": "Una 'T' compuesta por 3 cuadrados.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En una caja de herramientas de un trabajador rural, hay 12 herramientas en total: 5 machetes, 4 palas y 3 azadones. Todas las herramientas tienen el mismo peso y dimensiones, por lo que es imposible diferenciarlas al tacto sin verlas.",
+        "archivo": "/media/imagenes/probabilidad_herramientas_rural.png",
+        "preguntas": [
+          {
+            "enunciado": "Si el trabajador extrae una herramienta al azar de la caja, ¿cuál es la probabilidad de que esta sea una pala?",
+            "tipo": "interpretación",
+            "dificultad": "baja",
+            "competencia": "interpretación y representación",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "1/3 o 33.3%",
+                "es_correcta": true
+              },
+              {
+                "texto": "4/12 o 25%",
+                "es_correcta": false
+              },
+              {
+                "texto": "1/4 o 25%",
+                "es_correcta": false
+              },
+              {
+                "texto": "3/12 o 33.3%",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un tractor adquirido por una asociación agrícola tiene un valor comercial inicial de 120 millones de pesos. Se estima que, debido al uso, su valor disminuye linealmente a razón de 10 millones de pesos por cada año de servicio.",
+        "archivo": "/media/imagenes/algebra_funcion_lineal_depreciacion.png",
+        "preguntas": [
+          {
+            "enunciado": "Si $V$ representa el valor del tractor en millones de pesos y $t$ representa el tiempo en años, ¿cuál es la ecuación que modela correctamente el valor del tractor en función del tiempo?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "formulación y ejecución",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "V(t) = 120 - 10t",
+                "es_correcta": true
+              },
+              {
+                "texto": "V(t) = 120 + 10t",
+                "es_correcta": false
+              },
+              {
+                "texto": "V(t) = 10 - 120t",
+                "es_correcta": false
+              },
+              {
+                "texto": "V(t) = 120t - 10",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "En una finca, se realiza un censo de cultivos. Se tienen 100 plantas en total, clasificadas por tipo de cultivo (Maíz o Fríjol) y por sistema de riego (Goteo o Aspersión).",
+        "archivo": "/media/imagenes/probabilidad_contingencia_cultivos.png",
+        "preguntas": [
+          {
+            "enunciado": "De acuerdo con la siguiente tabla, si se elige una planta al azar, ¿cuál es la probabilidad de que la planta sea de Maíz y utilice sistema de riego por Goteo?",
+            "tipo": "interpretación",
+            "dificultad": "media",
+            "competencia": "interpretación y representación",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "30/100 o 30%",
+                "es_correcta": true
+              },
+              {
+                "texto": "40/100 o 40%",
+                "es_correcta": false
+              },
+              {
+                "texto": "30/60 o 50%",
+                "es_correcta": false
+              },
+              {
+                "texto": "50/100 o 50%",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Una asociación de pequeños agricultores dispone de un presupuesto fijo para el alquiler de maquinaria pesada. El número de horas de alquiler ($h$) depende directamente de la tarifa por hora ($t$) que cobre la empresa proveedora.",
+        "archivo": "/media/imagenes/proporcionalidad_inversa_maquinaria.png",
+        "preguntas": [
+          {
+            "enunciado": "Si el presupuesto total disponible es de $1,200,000 COP, ¿cuál es el modelo matemático que representa la cantidad de horas ($h$) que la asociación puede alquilar en función de la tarifa por hora ($t$)?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "formulación y ejecución",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "h(t) = 1,200,000 / t",
+                "es_correcta": true
+              },
+              {
+                "texto": "h(t) = 1,200,000 * t",
+                "es_correcta": false
+              },
+              {
+                "texto": "h(t) = 1,200,000 - t",
+                "es_correcta": false
+              },
+              {
+                "texto": "h(t) = t / 1,200,000",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un agricultor registra la producción semanal de café (en arrobas) durante 8 semanas de cosecha. Los datos son: 12, 15, 14, 18, 12, 16, 15, 14.",
+        "archivo": "/media/imagenes/estadistica_promedio_cafe.png",
+        "preguntas": [
+          {
+            "enunciado": "¿Cuál es el promedio de producción semanal de café en arrobas durante este periodo?",
+            "tipo": "resolución",
+            "dificultad": "baja",
+            "competencia": "interpretación y representación",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "14.5 arrobas",
+                "es_correcta": true
+              },
+              {
+                "texto": "15.0 arrobas",
+                "es_correcta": false
+              },
+              {
+                "texto": "14.0 arrobas",
+                "es_correcta": false
+              },
+              {
+                "texto": "16.0 arrobas",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "Un diseñador gráfico está creando un nuevo logo para una cooperativa agrícola. El logo se compone de tres figuras geométricas superpuestas y simétricas: un cuadrado, un círculo y un triángulo equilátero.",
+        "archivo": "/media/imagenes/geometria_composicion_figuras.png",
+        "preguntas": [
+          {
+            "enunciado": "Si el diseñador desea calcular el área total sombreada del logo, ¿cuál de las siguientes afirmaciones describe mejor el procedimiento correcto para determinar dicha área basándose en la composición geométrica?",
+            "tipo": "interpretación",
+            "dificultad": "media",
+            "competencia": "interpretación y representación",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "El área sombreada es la suma del área del cuadrado y del triángulo, menos el área del círculo.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El área sombreada es el resultado de restar el área del círculo a la suma de las áreas del cuadrado y del triángulo, teniendo en cuenta la superposición de las tres figuras.",
+                "es_correcta": true
+              },
+              {
+                "texto": "El área sombreada es simplemente la suma de las áreas de las tres figuras, sin importar dónde se superpongan.",
+                "es_correcta": false
+              },
+              {
+                "texto": "El área sombreada es el área del círculo menos el área del cuadrado, ignorando el triángulo.",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "La cooperativa cuenta con 200 caficultores. 120 cultivan café variedad Castillo y 80 variedad Colombia. De los de la variedad Castillo, 40 utilizan fertilizantes orgánicos, mientras que de la variedad Colombia, 30 los utilizan.",
+        "archivo": "/media/imagenes/probabilidad_condicional_fertilizantes.png",
+        "preguntas": [
+          {
+            "enunciado": "Si se selecciona al azar un caficultor que utiliza fertilizantes orgánicos, ¿cuál es la probabilidad de que pertenezca a la variedad Castillo?",
+            "tipo": "resolución",
+            "dificultad": "alta",
+            "competencia": "interpretación y representación",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "40/70",
+                "es_correcta": true
+              },
+              {
+                "texto": "40/120",
+                "es_correcta": false
+              },
+              {
+                "texto": "40/200",
+                "es_correcta": false
+              },
+              {
+                "texto": "70/200",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "texto",
+        "contexto": "El costo de mantenimiento de una despulpadora de café se modela mediante la función C(h) = 50.000 + 15.000h, donde 'C' es el costo total en pesos y 'h' son las horas de trabajo técnico.",
+        "archivo": "/media/imagenes/funcion_lineal_mantenimiento.png",
+        "preguntas": [
+          {
+            "enunciado": "Si el presupuesto máximo de mantenimiento es de 350.000 pesos, ¿cuántas horas de trabajo técnico puede contratar la cooperativa?",
+            "tipo": "resolución",
+            "dificultad": "media",
+            "competencia": "interpretación y representación",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "20 horas",
+                "es_correcta": true
+              },
+              {
+                "texto": "23.3 horas",
+                "es_correcta": false
+              },
+              {
+                "texto": "25 horas",
+                "es_correcta": false
+              },
+              {
+                "texto": "15 horas",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
       }
     ]
   },
   "ciencias_sociales_y_competencias_ciudadanas": {
     "nombre": "Ciencias_Sociales_y_Competencias_Ciudadanas",
     "contextos": [
+      {
+        "tipo": "texto",
+        "contexto": "Un gráfico muestra el porcentaje de población urbana y rural en Colombia entre 1990 y 2020.",
+        "archivo": "/media/imagenes/grafico_poblacion.png",
+        "preguntas": [
+          {
+            "enunciado": "Según el gráfico, ¿qué tendencia se observa en la población urbana?",
+            "tipo": "interpretacion_grafica",
+            "dificultad": "media",
+            "competencia": "interpretar",
+            "imagen_url": null,
+            "opciones": [
+              {
+                "texto": "Aumento progresivo con el paso del tiempo",
+                "es_correcta": true
+              },
+              {
+                "texto": "Disminución constante",
+                "es_correcta": false
+              },
+              {
+                "texto": "Se mantiene igual",
+                "es_correcta": false
+              },
+              {
+                "texto": "Fluctúa sin tendencia clara",
+                "es_correcta": false
+              }
+            ]
+          }
+        ]
+      },
       {
         "tipo": "texto",
         "contexto": "Durante el siglo XIX, varios países de América Latina lograron su independencia del dominio colonial europeo.",
@@ -10791,38 +12999,6 @@ export const OFF_QUESTIONS_DATA = {
               },
               {
                 "texto": "Mayor estabilidad económica",
-                "es_correcta": false
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tipo": "texto",
-        "contexto": "Un gráfico muestra el porcentaje de población urbana y rural en Colombia entre 1990 y 2020.",
-        "archivo": "/media/grafico_poblacion.png",
-        "preguntas": [
-          {
-            "enunciado": "Según el gráfico, ¿qué tendencia se observa en la población urbana?",
-            "tipo": "interpretacion_grafica",
-            "dificultad": "media",
-            "competencia": "interpretar",
-            "imagen_url": null,
-            "opciones": [
-              {
-                "texto": "Aumento progresivo con el paso del tiempo",
-                "es_correcta": true
-              },
-              {
-                "texto": "Disminución constante",
-                "es_correcta": false
-              },
-              {
-                "texto": "Se mantiene igual",
-                "es_correcta": false
-              },
-              {
-                "texto": "Fluctúa sin tendencia clara",
                 "es_correcta": false
               }
             ]

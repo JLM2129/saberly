@@ -1,4 +1,5 @@
 import random
+from django.db.models import Q
 from rest_framework import viewsets, views, status, permissions
 from rest_framework.response import Response
 from django.utils import timezone
@@ -66,18 +67,27 @@ class GenerarSimulacroView(views.APIView):
         preguntas_finales = []
         
         for i, area in enumerate(areas):
-            # Agregar el resto a la primera área para completar el total exacto
             cantidad_a_tomar = preguntas_por_area + (restante if i == 0 else 0)
             
-            preguntas_area_qs = Pregunta.objects.filter(area=area, active=True).order_by('?')[:cantidad_a_tomar]
-            preguntas_finales.extend(list(preguntas_area_qs))
+            qs_con_img = list(Pregunta.objects.filter(area=area, active=True).filter(
+                Q(contexto__archivo__isnull=False) & ~Q(contexto__archivo='') |
+                Q(imagen_url__isnull=False) & ~Q(imagen_url='')
+            ).order_by('?'))
+
+            ids_con_img = set(p.id for p in qs_con_img)
+            qs_sin_img = list(Pregunta.objects.filter(area=area, active=True).exclude(id__in=ids_con_img).order_by('?'))
+
+            cuota_img = min(len(qs_con_img), max(1, int(cantidad_a_tomar * 0.35)))
+            tomadas_img = qs_con_img[:cuota_img]
+            cuota_sin = cantidad_a_tomar - len(tomadas_img)
+            tomadas_sin = qs_sin_img[:cuota_sin]
+
+            seleccion_area = tomadas_img + tomadas_sin
+            random.shuffle(seleccion_area)
+            preguntas_finales.extend(seleccion_area)
 
         if not preguntas_finales:
             return Response({"error": "No hay preguntas disponibles para generar el simulacro."}, status=status.HTTP_400_BAD_REQUEST)
-
-        # Barajar las preguntas finales para que no estén estrictamente por área
-        # O mantenerlas por área si el usuario prefiere (él dijo "separadas las áreas")
-        # Si prefiere separadas, no las barajamos aquí, se presentarán en el orden de la lista.
         
         simulacro = Simulacro.objects.create(usuario=request.user)
         
