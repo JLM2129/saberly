@@ -66,10 +66,11 @@ export default function ContentAdmin() {
         
         if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
             const droppedFile = e.dataTransfer.files[0];
-            if (droppedFile.type === "application/json" || droppedFile.name.endsWith(".json")) {
+            const nameLower = droppedFile.name.toLowerCase();
+            if (nameLower.endsWith(".json") || nameLower.endsWith(".zip") || droppedFile.type === "application/json" || droppedFile.type.includes("zip")) {
                 handleFileSelect(droppedFile);
             } else {
-                alert("Por favor, sube solo archivos JSON.");
+                alert("Por favor, sube solo archivos JSON o ZIP.");
             }
         }
     };
@@ -159,7 +160,7 @@ export default function ContentAdmin() {
         <div className="content-admin-container">
             <div className="content-admin-header">
                 <h1>Importación Masiva</h1>
-                <p>Sube archivos JSON con preguntas para actualizar el banco de Saberly.</p>
+                <p>Sube archivos JSON o paquetes ZIP (con preguntas e imágenes) para actualizar el banco de Saberly.</p>
             </div>
             
             {dbStats && (
@@ -181,6 +182,9 @@ export default function ContentAdmin() {
                 <div className="success-message">
                     <h2>🎉 ¡Importación Exitosa!</h2>
                     <p>Se han importado <strong>{importSuccess.importadas}</strong> preguntas nuevas.</p>
+                    {importSuccess.imagenes_extraidas > 0 && (
+                        <p style={{ color: '#4ade80' }}>📷 Se extrajeron y desplegaron <strong>{importSuccess.imagenes_extraidas}</strong> imágenes del paquete ZIP.</p>
+                    )}
                     <p style={{ color: 'var(--text-muted)' }}>Preguntas ignoradas (errores o duplicadas): {importSuccess.ignoradas}</p>
                     <button className="btn-confirm" onClick={resetImport} style={{ marginTop: '1.5rem' }}>
                         Importar otro archivo
@@ -206,14 +210,14 @@ export default function ContentAdmin() {
                         
                         <div className="upload-icon">📂</div>
                         <div className="upload-text">
-                            Arrastra tu archivo JSON aquí
+                            Arrastra tu archivo JSON o paquete ZIP aquí
                         </div>
                         <div className="upload-subtext">
-                            o haz clic para seleccionar desde tu dispositivo
+                            o haz clic para seleccionar desde tu dispositivo (.json o .zip con carpeta imagenes/)
                         </div>
                         <input 
                             type="file" 
-                            accept=".json,application/json" 
+                            accept=".json,.zip,application/json,application/zip,application/x-zip-compressed" 
                             className="file-input"
                             ref={fileInputRef}
                             onChange={handleFileInput}

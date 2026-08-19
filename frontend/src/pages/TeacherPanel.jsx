@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { formatImageUrl } from '../utils/url';
 import './TeacherPanel.css';
 
 const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8001/api').replace(/\/$/, '');
@@ -19,7 +20,7 @@ const EMPTY_FORM = {
         { texto: '', es_correcta: false, orden: 2 },
         { texto: '', es_correcta: false, orden: 3 }
     ],
-    contexto_data: { tipo: 'texto', titulo: '', contenido: '' },
+    contexto_data: { tipo: 'texto', titulo: '', contenido: '', archivo: '', url_externa: '' },
     useContexto: false
 };
 
@@ -30,6 +31,8 @@ export default function TeacherPanel() {
     const [user, setUser]           = useState(null);
     const [areas, setAreas]         = useState([]);
     const [loading, setLoading]     = useState(false);
+    const [uploadingImage, setUploadingImage] = useState(false);
+    const [uploadingContextImage, setUploadingContextImage] = useState(false);
     const [message, setMessage]     = useState({ type: '', text: '' });
 
     // ── Modo de la pantalla: "list" | "form" ──────────────────────────────
@@ -56,6 +59,53 @@ export default function TeacherPanel() {
     useEffect(() => {
         if (mode === 'list') fetchPreguntas();
     }, [mode, currentPage, filterArea]);
+
+    // ── Subida de imágenes a la API ────────────────────────────────────────
+    const handleImageFileUpload = async (file, target = 'question') => {
+        if (!file) return;
+        const isContext = target === 'context';
+        if (isContext) setUploadingContextImage(true);
+        else setUploadingImage(true);
+        setMessage({ type: '', text: '' });
+
+        try {
+            const token = localStorage.getItem('access_token');
+            const bodyData = new FormData();
+            bodyData.append('image', file);
+
+            const res = await fetch(`${API_URL}/preguntas/upload-image/`, {
+                method: 'POST',
+                headers: { Authorization: `Bearer ${token}` },
+                body: bodyData
+            });
+
+            if (!res.ok) {
+                const errData = await res.json();
+                throw new Error(errData.error || 'Error al subir la imagen');
+            }
+
+            const resData = await res.json();
+            const imagePath = resData.relative_path || resData.url;
+
+            if (isContext) {
+                setFormData(prev => ({
+                    ...prev,
+                    contexto_data: { ...prev.contexto_data, archivo: imagePath }
+                }));
+            } else {
+                setFormData(prev => ({
+                    ...prev,
+                    imagen_url: imagePath
+                }));
+            }
+            setMessage({ type: 'success', text: '📷 ¡Imagen subida exitosamente!' });
+        } catch (e) {
+            setMessage({ type: 'error', text: e.message || 'Error al subir la imagen' });
+        } finally {
+            if (isContext) setUploadingContextImage(false);
+            else setUploadingImage(false);
+        }
+    };
 
     // ── Autenticación ─────────────────────────────────────────────────────
     const checkTeacherStatus = async () => {
@@ -97,7 +147,6 @@ export default function TeacherPanel() {
             const res = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });
             if (res.ok) {
                 const data = await res.json();
-                // Compatibilidad con respuesta paginada o lista plana
                 if (data.results !== undefined) {
                     setPreguntas(data.results);
                     setPagination({ count: data.count, next: data.next, previous: data.previous });
@@ -109,7 +158,6 @@ export default function TeacherPanel() {
         finally { setLoadingList(false); }
     }, [currentPage, filterArea]);
 
-    // Filtro local por búsqueda de texto
     const preguntasFiltradas = preguntas.filter(p =>
         search === '' ||
         p.enunciado?.toLowerCase().includes(search.toLowerCase())
@@ -120,7 +168,6 @@ export default function TeacherPanel() {
         setMessage({ type: '', text: '' });
         try {
             const token = localStorage.getItem('access_token');
-            // Obtener detalle completo de la pregunta
             const res = await fetch(`${API_URL}/preguntas/teacher/${pregunta.id}/`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
@@ -151,10 +198,12 @@ export default function TeacherPanel() {
                     ? {
                         tipo: data.contexto.tipo || 'texto',
                         titulo: data.contexto.titulo || '',
-                        contenido: data.contexto.contenido || ''
+                        contenido: data.contexto.contenido || '',
+                        archivo: data.contexto.archivo || '',
+                        url_externa: data.contexto.url_externa || ''
                     }
-                    : { tipo: 'texto', titulo: '', contenido: '' },
-                useContexto: !!data.contexto?.contenido
+                    : { tipo: 'texto', titulo: '', contenido: '', archivo: '', url_externa: '' },
+                useContexto: !!(data.contexto?.contenido || data.contexto?.archivo || data.contexto?.url_externa)
             });
             setEditingId(data.id);
             setMode('form');
@@ -262,8 +311,11 @@ export default function TeacherPanel() {
                 opciones: opcionesValidas,
             };
 
-            if (formData.useContexto && formData.contexto_data.contenido.trim()) {
-                dataToSend.contexto_data = formData.contexto_data;
+            if (formData.useContexto) {
+                const ctx = formData.contexto_data;
+                if (ctx.contenido?.trim() || ctx.archivo || ctx.url_externa) {
+                    dataToSend.contexto_data = ctx;
+                }
             }
 
             const token = localStorage.getItem('access_token');
@@ -290,10 +342,8 @@ export default function TeacherPanel() {
             });
 
             if (isEditing) {
-                // Volver al listado tras editar
                 setTimeout(() => goToList(), 1200);
             } else {
-                // Resetear para crear otra
                 setFormData(EMPTY_FORM);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
@@ -561,15 +611,52 @@ export default function TeacherPanel() {
                                             />
                                         </div>
                                     </div>
+
                                     <div className="form-group">
-                                        <label htmlFor="contexto-contenido">Contenido del Contexto *</label>
+                                        <label htmlFor="contexto-contenido">Contenido / Descripción del Contexto *</label>
                                         <textarea
                                             id="contexto-contenido"
                                             value={formData.contexto_data.contenido}
                                             onChange={e => handleContextoChange('contenido', e.target.value)}
                                             placeholder="Ingrese el texto, descripción o contenido del contexto..."
-                                            rows="6"
+                                            rows="4"
                                         />
+                                    </div>
+
+                                    {/* Cargar imagen de Contexto */}
+                                    <div className="form-group" style={{ marginTop: '1rem' }}>
+                                        <label>Imagen del Contexto (Opcional)</label>
+                                        <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                                            <input
+                                                type="file"
+                                                accept="image/*"
+                                                onChange={e => e.target.files?.[0] && handleImageFileUpload(e.target.files[0], 'context')}
+                                                disabled={uploadingContextImage}
+                                                style={{ flex: 1 }}
+                                            />
+                                            {uploadingContextImage && <span>Subiendo...</span>}
+                                        </div>
+                                        {formData.contexto_data.archivo && (
+                                            <div style={{ marginTop: '0.75rem' }}>
+                                                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
+                                                    Vista previa de imagen de contexto:
+                                                </p>
+                                                <img
+                                                    src={formatImageUrl(formData.contexto_data.archivo)}
+                                                    alt="Vista previa de contexto"
+                                                    style={{ maxHeight: '180px', borderRadius: '8px', border: '1px solid var(--glass-border)' }}
+                                                />
+                                                <div>
+                                                    <button
+                                                        type="button"
+                                                        style={{ background: 'transparent', color: '#f87171', border: 'none', cursor: 'pointer', fontSize: '0.85rem', marginTop: '0.25rem' }}
+                                                        onClick={() => handleContextoChange('archivo', '')}
+                                                    >
+                                                        🗑️ Eliminar imagen de contexto
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        )}
                                     </div>
                                 </>
                             )}
@@ -587,13 +674,52 @@ export default function TeacherPanel() {
                                     rows="4" required
                                 />
                             </div>
-                            <div className="form-group">
-                                <label htmlFor="imagen_url">URL de Imagen (Opcional)</label>
-                                <input
-                                    type="url" id="imagen_url" name="imagen_url"
-                                    value={formData.imagen_url} onChange={handleInputChange}
-                                    placeholder="https://ejemplo.com/imagen.png"
-                                />
+
+                            {/* Cargar imagen de la Pregunta */}
+                            <div className="form-group" style={{ marginTop: '1rem' }}>
+                                <label htmlFor="imagen_url">Imagen de la Pregunta (Opcional)</label>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                                    <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                                        <input
+                                            type="file"
+                                            accept="image/*"
+                                            onChange={e => e.target.files?.[0] && handleImageFileUpload(e.target.files[0], 'question')}
+                                            disabled={uploadingImage}
+                                            style={{ flex: 1 }}
+                                        />
+                                        {uploadingImage && <span>Subiendo...</span>}
+                                    </div>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                        <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>O pega una URL:</span>
+                                        <input
+                                            type="text" id="imagen_url" name="imagen_url"
+                                            value={formData.imagen_url} onChange={handleInputChange}
+                                            placeholder="https://ejemplo.com/imagen.png o imagenes/mi_foto.png"
+                                            style={{ flex: 1 }}
+                                        />
+                                    </div>
+                                </div>
+                                {formData.imagen_url && (
+                                    <div style={{ marginTop: '0.75rem' }}>
+                                        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
+                                            Vista previa de la imagen:
+                                        </p>
+                                        <img
+                                            src={formatImageUrl(formData.imagen_url)}
+                                            alt="Vista previa de pregunta"
+                                            style={{ maxHeight: '200px', borderRadius: '8px', border: '1px solid var(--glass-border)' }}
+                                        />
+                                        <div>
+                                            <button
+                                                type="button"
+                                                style={{ background: 'transparent', color: '#f87171', border: 'none', cursor: 'pointer', fontSize: '0.85rem', marginTop: '0.25rem' }}
+                                                onClick={() => setFormData(prev => ({ ...prev, imagen_url: '' }))}
+                                            >
+                                                🗑️ Eliminar imagen
+                                            </button>
+                                        </div>
+                                    </div>
+                                )}
                             </div>
                         </div>
 

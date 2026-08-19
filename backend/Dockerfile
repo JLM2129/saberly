@@ -27,4 +27,4 @@ COPY . .
 EXPOSE 8000
 
 # Comando por defecto (será sobreescrito por docker-compose normalmente)
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["sh", "-c", "python manage.py migrate --noinput && (python manage.py import_icfes_json --folder ./preguntas || true) && python manage.py runserver 0.0.0.0:8000"]

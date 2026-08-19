@@ -36,8 +36,8 @@ services:
     depends_on:
       db:
         condition: service_healthy
-    # Ejecutar migraciones antes de iniciar el servidor
-    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    # Ejecutar migraciones e importar preguntas antes de iniciar el servidor
+    command: sh -c "python manage.py migrate --noinput && (python manage.py import_icfes_json --folder ./preguntas || true) && python manage.py runserver 0.0.0.0:8000"
 
   # Frontend React/Vite
   frontend:

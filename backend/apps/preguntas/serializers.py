@@ -85,6 +85,8 @@ class OpcionRespuestaCreateSerializer(serializers.ModelSerializer):
 
 
 class ContextoCreateSerializer(serializers.ModelSerializer):
+    archivo = serializers.CharField(required=False, allow_blank=True, allow_null=True)
+
     class Meta:
         model = Contexto
         fields = ['tipo', 'titulo', 'contenido', 'archivo', 'url_externa']
@@ -93,6 +95,7 @@ class ContextoCreateSerializer(serializers.ModelSerializer):
 class PreguntaCreateSerializer(serializers.ModelSerializer):
     opciones = OpcionRespuestaCreateSerializer(many=True)
     contexto_data = ContextoCreateSerializer(required=False, allow_null=True)
+    imagen_url = serializers.CharField(required=False, allow_blank=True, allow_null=True)
     
     class Meta:
         model = Pregunta
@@ -143,6 +146,39 @@ class PreguntaCreateSerializer(serializers.ModelSerializer):
             OpcionRespuesta.objects.create(pregunta=pregunta, **opcion_data)
         
         return pregunta
+
+    def update(self, instance, validated_data):
+        opciones_data = validated_data.pop('opciones', None)
+        contexto_data = validated_data.pop('contexto_data', None)
+        
+        # Actualizar campos simples de la pregunta
+        for attr, value in validated_data.items():
+            setattr(instance, attr, value)
+            
+        # Manejar contexto
+        if contexto_data:
+            if instance.contexto:
+                for ctx_attr, ctx_val in contexto_data.items():
+                    setattr(instance.contexto, ctx_attr, ctx_val)
+                instance.contexto.area = instance.area
+                instance.contexto.save()
+            else:
+                contexto = Contexto.objects.create(
+                    area=instance.area,
+                    **contexto_data
+                )
+                instance.contexto = contexto
+        
+        instance.save()
+        
+        # Manejar opciones
+        if opciones_data is not None:
+            instance.opciones.all().delete()
+            for opcion_data in opciones_data:
+                OpcionRespuesta.objects.create(pregunta=instance, **opcion_data)
+                
+        return instance
+
 
 
 class OpcionRespuestaIASerializer(serializers.ModelSerializer):

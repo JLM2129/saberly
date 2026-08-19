@@ -1,9 +1,17 @@
+import os
+import json
+import zipfile
+import shutil
+import uuid
+from pathlib import Path
+from django.conf import settings
+
 from rest_framework import viewsets, permissions, status
 from rest_framework.decorators import api_view, permission_classes, action
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from rest_framework.response import Response
 
-from .models import Area, Pregunta
+from .models import Area, Pregunta, SubArea, Contexto, OpcionRespuesta
 from .serializers import AreaSerializer, PreguntaSerializer, PreguntaCreateSerializer
 
 from apps.preguntas.services.contexto_service import (
@@ -109,19 +117,99 @@ def assign_context_api(request):
         "preguntas_actualizadas": preguntas_actualizadas
     })
 
-import json
-from .models import SubArea, Contexto, OpcionRespuesta
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def upload_image_api(request):
+    """
+    Permite a docentes o admins subir una imagen al servidor (media/imagenes/).
+    """
+    if not (request.user.is_teacher or request.user.is_content_admin or request.user.is_staff):
+        return Response({"error": "No tienes permisos para subir imágenes."}, status=status.HTTP_403_FORBIDDEN)
+    
+    file_obj = request.FILES.get('image') or request.FILES.get('archivo') or request.FILES.get('file')
+    if not file_obj:
+        return Response({"error": "No se recibió ningún archivo de imagen."}, status=status.HTTP_400_BAD_REQUEST)
+    
+    ext = os.path.splitext(file_obj.name)[1].lower()
+    valid_extensions = ['.png', '.jpg', '.jpeg', '.webp', '.gif', '.svg']
+    if ext not in valid_extensions:
+        return Response({"error": f"Formato de archivo no permitido ({ext}). Formatos aceptados: {', '.join(valid_extensions)}"}, status=status.HTTP_400_BAD_REQUEST)
+    
+    safe_filename = f"{uuid.uuid4().hex[:12]}_{os.path.basename(file_obj.name)}"
+    media_img_dir = Path(settings.MEDIA_ROOT) / "imagenes"
+    media_img_dir.mkdir(parents=True, exist_ok=True)
+    dest_path = media_img_dir / safe_filename
+    
+    with open(dest_path, 'wb+') as destination:
+        for chunk in file_obj.chunks():
+            destination.write(chunk)
+            
+    relative_path = f"imagenes/{safe_filename}"
+    url = f"/media/{relative_path}"
+    
+    return Response({
+        "status": "success",
+        "url": url,
+        "relative_path": relative_path,
+        "filename": safe_filename
+    })
+
+
+def process_uploaded_file(uploaded_file, extract_images=False):
+    """
+    Soporta archivos .json y .zip. Si es .zip, extrae el JSON principal
+    y opcionalmente extrae imágenes a MEDIA_ROOT/imagenes.
+    """
+    filename = uploaded_file.name.lower()
+    imagenes_copiadas = 0
+
+    if filename.endswith('.zip'):
+        with zipfile.ZipFile(uploaded_file, 'r') as zip_ref:
+            file_list = zip_ref.namelist()
+            json_files = [f for f in file_list if f.endswith('.json') and not os.path.basename(f).startswith('.')]
+            if not json_files:
+                raise ValueError("El archivo ZIP no contiene ningún archivo .json válido.")
+            
+            main_json_name = json_files[0]
+            json_content = zip_ref.read(main_json_name)
+            data = json.loads(json_content.decode('utf-8'))
+
+            if extract_images:
+                media_img_dir = Path(settings.MEDIA_ROOT) / "imagenes"
+                media_img_dir.mkdir(parents=True, exist_ok=True)
+
+                for member in file_list:
+                    if os.path.basename(member).startswith('.') or member.endswith('/'):
+                        continue
+                    ext = os.path.splitext(member)[1].lower()
+                    if ext in ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp']:
+                        target_filename = os.path.basename(member)
+                        if target_filename:
+                            dest_path = media_img_dir / target_filename
+                            with zip_ref.open(member) as source_file, open(dest_path, 'wb') as target_file:
+                                shutil.copyfileobj(source_file, target_file)
+                            imagenes_copiadas += 1
+        return data, imagenes_copiadas
+    else:
+        content = uploaded_file.read().decode('utf-8')
+        data = json.loads(content)
+        return data, 0
+
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated, IsContentAdmin])
 def validate_import_api(request):
     """
-    Valida un archivo JSON con preguntas y retorna errores, duplicados y preview.
+    Valida un archivo JSON o ZIP con preguntas y retorna errores, duplicados y preview.
     """
+    if 'file' not in request.FILES:
+        return Response({"error": "No se envió ningún archivo."}, status=400)
+
     try:
-        data = json.loads(request.FILES['file'].read())
+        data, _ = process_uploaded_file(request.FILES['file'], extract_images=False)
     except Exception as e:
-        return Response({"error": "Formato de archivo inválido. Se espera JSON válido."}, status=400)
+        return Response({"error": f"Formato de archivo inválido: {str(e)}"}, status=400)
     
     area_nombre = data.get('nombre')
     if not area_nombre:
@@ -189,6 +277,7 @@ def validate_import_api(request):
         "area_id": area.id
     })
 
+
 def normalize_archivo_path(archivo_raw):
     if not archivo_raw or not isinstance(archivo_raw, str):
         return None
@@ -196,6 +285,9 @@ def normalize_archivo_path(archivo_raw):
     archivo = archivo_raw.strip()
     if not archivo:
         return None
+
+    if archivo.startswith('http://') or archivo.startswith('https://') or archivo.startswith('data:'):
+        return archivo
 
     if archivo.startswith('/'):
         archivo = archivo.lstrip('/')
@@ -211,13 +303,16 @@ def normalize_archivo_path(archivo_raw):
 @permission_classes([IsAuthenticated, IsContentAdmin])
 def confirm_import_api(request):
     """
-    Importa efectivamente las preguntas ignorando duplicadas o con error (opcional).
+    Importa efectivamente las preguntas e imágenes del archivo JSON o ZIP.
     """
+    if 'file' not in request.FILES:
+        return Response({"error": "No se envió ningún archivo."}, status=400)
+
     try:
-        data = json.loads(request.FILES['file'].read())
+        data, imagenes_copiadas = process_uploaded_file(request.FILES['file'], extract_images=True)
         ignorar_duplicadas = request.POST.get('ignorar_duplicadas', 'true') == 'true'
     except Exception as e:
-        return Response({"error": "Formato de archivo inválido."}, status=400)
+        return Response({"error": f"Formato de archivo inválido: {str(e)}"}, status=400)
     
     area = Area.objects.get(nombre__iexact=data.get('nombre'))
     preguntas_existentes = set(Pregunta.objects.filter(area=area).values_list('enunciado', flat=True))
@@ -246,24 +341,31 @@ def confirm_import_api(request):
             
         # Crear contexto
         contexto = None
-        if ctx_data.get('contexto') or ctx_data.get('archivo'):
-            archivo_normalizado = normalize_archivo_path(ctx_data.get('archivo'))
+        archivo_raw = ctx_data.get('archivo') or ctx_data.get('imagen')
+        url_ext = ctx_data.get('url_externa')
+        if ctx_data.get('contexto') or archivo_raw or url_ext:
+            archivo_normalizado = normalize_archivo_path(archivo_raw)
             contexto = Contexto.objects.create(
                 area=area,
                 tipo=ctx_data.get('tipo', 'texto'),
                 contenido=ctx_data.get('contexto', ''),
-                archivo=archivo_normalizado
+                archivo=archivo_normalizado,
+                url_externa=url_ext
             )
-            # Si el archivo no existe en el filesystem, Django mostrará 404 al intentar cargarlo
         
         for preg_data in preguntas_validas_en_ctx:
+            imagen_url_raw = preg_data.get('imagen_url') or preg_data.get('imagen')
+            imagen_url_norm = normalize_archivo_path(imagen_url_raw) if imagen_url_raw else None
+
             nueva_pregunta = Pregunta.objects.create(
                 area=area,
                 contexto=contexto,
                 enunciado=preg_data.get('enunciado'),
                 tipo=preg_data.get('tipo', 'seleccion_unica'),
                 dificultad=preg_data.get('dificultad', 'media'),
-                competencia=preg_data.get('competencia', 'interpretar')
+                competencia=preg_data.get('competencia', 'interpretar'),
+                explicacion=preg_data.get('explicacion', ''),
+                imagen_url=imagen_url_norm
             )
             
             for opc_idx, opc_data in enumerate(preg_data.get('opciones', [])):
@@ -279,8 +381,10 @@ def confirm_import_api(request):
     return Response({
         "status": "success",
         "importadas": importadas,
-        "ignoradas": ignoradas
+        "ignoradas": ignoradas,
+        "imagenes_extraidas": imagenes_copiadas
     })
+
 
 from django.db.models import Count
 @api_view(['GET'])
@@ -296,4 +400,5 @@ def db_stats_api(request):
         "total": total,
         "areas": list(areas)
     })
+
 

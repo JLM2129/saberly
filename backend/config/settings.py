@@ -75,11 +75,18 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
-# Database - supports DATABASE_URL (Railway) or individual env vars (local)
+# Database - supports USE_SQLITE, DATABASE_URL (Railway) or individual env vars (local)
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASE_URL = os.getenv('DATABASE_URL')
-if DATABASE_URL:
+if os.getenv('USE_SQLITE', '0') == '1':
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+elif os.getenv('DATABASE_URL'):
+    DATABASE_URL = os.getenv('DATABASE_URL')
     import urllib.parse
     parsed = urllib.parse.urlparse(DATABASE_URL)
     DATABASES = {
@@ -103,6 +110,7 @@ else:
             'PORT': os.getenv('DB_PORT', '5432'),
         }
     }
+
 
 
 # Password validation

@@ -8,26 +8,45 @@ from apps.preguntas.models import Area, SubArea, Contexto, Pregunta, OpcionRespu
 
 
 class Command(BaseCommand):
-    help = "Importa preguntas ICFES desde carpeta preguntas/"
+    help = "Importa preguntas ICFES desde una carpeta de JSON"
+
+    def add_arguments(self, parser):
+        parser.add_argument(
+            '--folder',
+            type=str,
+            default=None,
+            help='Carpeta que contiene los archivos JSON de preguntas (por defecto, la carpeta preguntas del proyecto)'
+        )
 
     def handle(self, *args, **options):
-        # Usar una ruta absoluta basada en la ubicación del proyecto
-        base_dir = Path(__file__).resolve().parent.parent.parent.parent.parent
-        folder_path = base_dir / "preguntas"
+        folder_arg = options.get('folder')
+        if folder_arg:
+            folder_path = Path(folder_arg).resolve()
+        else:
+            # Usar una ruta absoluta basada en la ubicación del proyecto
+            base_dir = Path(__file__).resolve().parent.parent.parent.parent.parent
+            folder_path = (base_dir / "preguntas").resolve()
 
-        self.stdout.write("Buscando nuevas preguntas en la carpeta preguntas/...")
+        if not folder_path.exists():
+            self.stdout.write(self.style.ERROR(f"No existe la carpeta: {folder_path}"))
+            return
+
+        self.stdout.write(f"Buscando nuevas preguntas en {folder_path}...")
 
         total_contextos = 0
         total_preguntas = 0
         total_opciones = 0
 
-        for archivo in os.listdir(folder_path):
-            if not archivo.endswith(".json"):
-                continue
+        json_files = sorted([p for p in folder_path.iterdir() if p.is_file() and p.suffix.lower() == '.json'])
+        if not json_files:
+            self.stdout.write(self.style.WARNING(f"No se encontraron archivos JSON en {folder_path}"))
+            return
 
+        for archivo_path in json_files:
+            archivo = archivo_path.name
             self.stdout.write(f"\nProcesando: {archivo}")
 
-            with open(os.path.join(folder_path, archivo), encoding="utf-8") as f:
+            with open(archivo_path, encoding="utf-8") as f:
                 data = json.load(f)
 
             area, _ = Area.objects.get_or_create(
