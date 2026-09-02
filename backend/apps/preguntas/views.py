@@ -13,6 +13,7 @@ from rest_framework.response import Response
 
 from .models import Area, Pregunta, SubArea, Contexto, OpcionRespuesta
 from .serializers import AreaSerializer, PreguntaSerializer, PreguntaCreateSerializer
+from .pagination import PreguntasPagination
 
 from apps.preguntas.services.contexto_service import (
     asegurar_contexto_por_area,
@@ -46,16 +47,21 @@ class PreguntaViewSet(viewsets.ModelViewSet):
     Admin can create/edit. Users usually just read via 'Simulacros' app, 
     but this endpoint is useful for listing questions or 'Practice Mode'.
     """
-    queryset = Pregunta.objects.filter(active=True).select_related('contexto', 'subarea__area')
+    queryset = Pregunta.objects.filter(active=True).select_related(
+        'contexto', 'area', 'subarea__area'
+    )
 
     serializer_class = PreguntaSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
-    
+
     def get_queryset(self):
         queryset = super().get_queryset()
         area_id = self.request.query_params.get('area_id')
         if area_id:
-            queryset = queryset.filter(subarea__area_id=area_id)
+            # Se filtra por el área propia de la pregunta, no por la de su
+            # subárea: subarea es opcional y queda en NULL en todo lo que crean
+            # el panel docente y el importador masivo.
+            queryset = queryset.filter(area_id=area_id)
         return queryset
 
 
@@ -65,6 +71,22 @@ class TeacherPreguntaViewSet(viewsets.ModelViewSet):
     """
     queryset = Pregunta.objects.all().select_related('contexto', 'area', 'subarea').prefetch_related('opciones')
     permission_classes = [IsAuthenticated, IsTeacher]
+    pagination_class = PreguntasPagination
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+
+        area_id = self.request.query_params.get('area_id')
+        if area_id:
+            queryset = queryset.filter(area_id=area_id)
+
+        # La búsqueda tiene que resolverse en el servidor: con la lista paginada,
+        # filtrar en el cliente solo alcanzaría a la página visible.
+        search = self.request.query_params.get('search')
+        if search:
+            queryset = queryset.filter(enunciado__icontains=search)
+
+        return queryset
     
     def get_serializer_class(self):
         if self.action in ['create', 'update', 'partial_update']:

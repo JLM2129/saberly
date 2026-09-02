@@ -145,12 +145,25 @@ class Command(BaseCommand):
         # Asegurar desplegar imágenes a media/
         img_src = folder_path / "imagenes"
         img_dest = Path(settings.MEDIA_ROOT) / "imagenes"
-        if img_src.exists():
+        if img_src.exists() and img_dest.exists() and os.path.samefile(img_src, img_dest):
+            # MEDIA_ROOT apunta a la misma carpeta de la que se importa, así que
+            # origen y destino coinciden y no hay nada que copiar. Sin esta guarda
+            # shutil.copy2 lanza SameFileError y aborta el comando.
+            self.stdout.write("Las imágenes ya están en MEDIA_ROOT; no hay nada que desplegar.")
+        elif img_src.exists():
             img_dest.mkdir(parents=True, exist_ok=True)
             self.stdout.write(f"Desplegando imágenes desde {img_src} a {img_dest}...")
+            copiadas = 0
             for img_file in os.listdir(img_src):
-                shutil.copy2(img_src / img_file, img_dest / img_file)
-            self.stdout.write(self.style.SUCCESS("Imágenes desplegadas correctamente."))
+                origen = img_src / img_file
+                destino = img_dest / img_file
+                if not origen.is_file():
+                    continue
+                if destino.exists() and os.path.samefile(origen, destino):
+                    continue
+                shutil.copy2(origen, destino)
+                copiadas += 1
+            self.stdout.write(self.style.SUCCESS(f"Imágenes desplegadas: {copiadas}."))
 
         self.stdout.write(self.style.SUCCESS(
             f"\nRESUMEN FINAL\n"

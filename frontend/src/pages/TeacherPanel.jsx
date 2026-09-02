@@ -46,6 +46,7 @@ export default function TeacherPanel() {
     const [filterArea, setFilterArea]   = useState('');
     const [pagination, setPagination]   = useState({ count: 0, next: null, previous: null });
     const [currentPage, setCurrentPage] = useState(1);
+    const [debouncedSearch, setDebouncedSearch] = useState('');
 
     // ── Estado del formulario ─────────────────────────────────────────────
     const [formData, setFormData] = useState(EMPTY_FORM);
@@ -57,8 +58,19 @@ export default function TeacherPanel() {
     }, []);
 
     useEffect(() => {
+        const t = setTimeout(() => setDebouncedSearch(search), 350);
+        return () => clearTimeout(t);
+    }, [search]);
+
+    // Cambiar de área o de búsqueda reinicia la paginación: si no, se puede
+    // quedar en una página que ya no existe dentro del nuevo filtro.
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [filterArea, debouncedSearch]);
+
+    useEffect(() => {
         if (mode === 'list') fetchPreguntas();
-    }, [mode, currentPage, filterArea]);
+    }, [mode, currentPage, filterArea, debouncedSearch]);
 
     // ── Subida de imágenes a la API ────────────────────────────────────────
     const handleImageFileUpload = async (file, target = 'question') => {
@@ -144,6 +156,7 @@ export default function TeacherPanel() {
             const token = localStorage.getItem('access_token');
             let url = `${API_URL}/preguntas/teacher/?page=${currentPage}`;
             if (filterArea) url += `&area_id=${filterArea}`;
+            if (debouncedSearch) url += `&search=${encodeURIComponent(debouncedSearch)}`;
             const res = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });
             if (res.ok) {
                 const data = await res.json();
@@ -156,12 +169,11 @@ export default function TeacherPanel() {
             }
         } catch (e) { console.error('Error cargando preguntas:', e); }
         finally { setLoadingList(false); }
-    }, [currentPage, filterArea]);
+    }, [currentPage, filterArea, debouncedSearch]);
 
-    const preguntasFiltradas = preguntas.filter(p =>
-        search === '' ||
-        p.enunciado?.toLowerCase().includes(search.toLowerCase())
-    );
+    // El filtrado ya lo hace el backend. Filtrar aquí además solo alcanzaría a la
+    // página cargada y escondería resultados de las demás.
+    const preguntasFiltradas = preguntas;
 
     // ── Editar: cargar datos en el formulario ─────────────────────────────
     const handleEdit = async (pregunta) => {
@@ -344,8 +356,18 @@ export default function TeacherPanel() {
             if (isEditing) {
                 setTimeout(() => goToList(), 1200);
             } else {
+                // Antes solo se limpiaba el formulario: el docente se quedaba sin
+                // ninguna señal de que la pregunta se hubiera guardado. Ahora se
+                // vuelve al listado, donde aparece primera por fecha de creación.
                 setFormData(EMPTY_FORM);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                setTimeout(() => {
+                    goToList();
+                    setCurrentPage(1);
+                    setMessage({
+                        type: 'success',
+                        text: '✅ ¡Pregunta creada! Aparece al inicio del listado.'
+                    });
+                }, 900);
             }
 
         } catch (error) {
