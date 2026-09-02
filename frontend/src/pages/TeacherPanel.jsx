@@ -359,10 +359,16 @@ export default function TeacherPanel() {
                 // Antes solo se limpiaba el formulario: el docente se quedaba sin
                 // ninguna señal de que la pregunta se hubiera guardado. Ahora se
                 // vuelve al listado, donde aparece primera por fecha de creación.
+                const areaCreada = formData.area;
                 setFormData(EMPTY_FORM);
                 setTimeout(() => {
                     goToList();
                     setCurrentPage(1);
+                    // Alinear los filtros con la pregunta recién creada. Si quedara
+                    // activo un filtro de otra área, el listado no la mostraría y el
+                    // mensaje de confirmación estaría mintiendo.
+                    setFilterArea(areaCreada ? String(areaCreada) : '');
+                    setSearch('');
                     setMessage({
                         type: 'success',
                         text: '✅ ¡Pregunta creada! Aparece al inicio del listado.'
@@ -468,7 +474,7 @@ export default function TeacherPanel() {
                                                 : pregunta.enunciado}
                                         </span>
                                         <span className="row-area">
-                                            {pregunta.subarea?.area?.nombre || pregunta.area?.nombre || '—'}
+                                            {pregunta.area_nombre || pregunta.subarea_nombre || '—'}
                                         </span>
                                         <span className={`badge-dificultad badge-${pregunta.dificultad}`}>
                                             {pregunta.dificultad}

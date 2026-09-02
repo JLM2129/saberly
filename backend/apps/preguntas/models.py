@@ -172,7 +172,10 @@ class Pregunta(models.Model):
     class Meta:
         verbose_name = 'Pregunta'
         verbose_name_plural = 'Preguntas'
-        ordering = ['-created_at']
+        # El id desempata: sin él, dos preguntas creadas en el mismo instante
+        # salen en orden arbitrario y la paginación puede repetir o saltarse
+        # filas entre páginas.
+        ordering = ['-created_at', '-id']
 
 
 class OpcionRespuesta(models.Model):
