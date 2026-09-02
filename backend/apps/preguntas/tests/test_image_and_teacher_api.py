@@ -1,7 +1,9 @@
 import json
+import shutil
+import tempfile
 import zipfile
 from io import BytesIO
-from django.test import TestCase
+from django.test import TestCase, override_settings
 from django.contrib.auth import get_user_model
 from django.core.files.uploadedfile import SimpleUploadedFile
 from rest_framework.test import APIClient
@@ -9,7 +11,18 @@ from apps.preguntas.models import Area, Pregunta, OpcionRespuesta, Contexto
 
 User = get_user_model()
 
+# MEDIA_ROOT apunta a backend/preguntas/, la misma carpeta versionada de la que
+# se importan las preguntas. Sin este override, cada corrida de la suite dejaba
+# imágenes sueltas ahí, y esos archivos son los que hacían reventar a
+# import_icfes_json con SameFileError.
+@override_settings(MEDIA_ROOT=tempfile.mkdtemp(prefix='saberly-test-media-'))
 class ImageAndTeacherApiTests(TestCase):
+    @classmethod
+    def tearDownClass(cls):
+        from django.conf import settings
+        shutil.rmtree(settings.MEDIA_ROOT, ignore_errors=True)
+        super().tearDownClass()
+
     def setUp(self):
         self.client = APIClient()
         self.area = Area.objects.create(nombre="Matemáticas", descripcion="Área de prueba")
