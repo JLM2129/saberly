@@ -1,8 +1,8 @@
 .refuerzo-ia-container {
     padding: 2rem;
     margin-bottom: 2rem;
-    border: 1px solid rgba(139, 92, 246, 0.3);
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(30, 41, 59, 0.4) 100%);
+    border: 1px solid rgba(37, 99, 235, 0.12);
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.06) 0%, rgba(30, 41, 59, 0.36) 100%);
     position: relative;
     overflow: hidden;
 }
@@ -17,7 +17,7 @@
 
 .refuerzo-info h3 {
     margin: 0 0 0.5rem 0;
-    color: #a78bfa;
+    color: var(--primary);
     font-size: 1.5rem;
 }
 
@@ -30,7 +30,7 @@
 .refuerzo-timestamp {
     margin-top: 0.5rem !important;
     font-size: 0.8rem !important;
-    color: rgba(167, 139, 250, 0.6) !important;
+    color: var(--primary-hover) !important;
     font-style: italic;
 }
 
@@ -50,26 +50,26 @@
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
-    min-width: 250px;
+    box-shadow: 0 0 15px var(--primary-glow);
+    min-width: 160px;
     font-size: 0.95rem;
 }
 
 .btn-generate-refuerzo:hover:not(:disabled) {
     transform: translateY(-2px);
-    box-shadow: 0 0 25px rgba(139, 92, 246, 0.6);
-    background: #7c3aed;
+    box-shadow: 0 0 25px var(--primary-glow);
+    background: var(--primary-hover);
 }
 
 .btn-generate-refuerzo:disabled {
     opacity: 0.7;
     cursor: not-allowed;
-    background: #6366f1;
+    background: var(--primary);
 }
 
 .btn-regenerate {
     background: transparent;
-    border: 1px solid rgba(139, 92, 246, 0.5);
+    border: 1px solid rgba(37, 99, 235, 0.14);
     box-shadow: none;
     font-size: 0.85rem;
     padding: 0.6rem 1.2rem;
@@ -77,8 +77,8 @@
 }
 
 .btn-regenerate:hover:not(:disabled) {
-    background: rgba(139, 92, 246, 0.15);
-    box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+    background: rgba(37, 99, 235, 0.06);
+    box-shadow: 0 0 15px var(--primary-glow);
     border-color: var(--primary);
 }
 
@@ -109,18 +109,25 @@
 }
 
 @keyframes pulse-ai {
-    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.7); }
-    70% { transform: scale(1); box-shadow: 0 0 0 20px rgba(139, 92, 246, 0); }
-    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(139, 92, 246, 0); }
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 var(--primary-glow); }
+    70% { transform: scale(1); box-shadow: 0 0 0 20px rgba(37, 99, 235, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
 }
 
 .refuerzo-error {
     margin-top: 1.5rem;
-    padding: 1rem;
-    background: rgba(239, 68, 68, 0.1);
-    border-radius: 8px;
-    color: #fca5a5;
-    text-align: center;
+    padding: 0;
+}
+
+.refuerzo-error .app-message, .refuerzo-error.app-message {
+    margin: 0;
+}
+.refuerzo-error.app-message, .refuerzo-error .app-message.error {
+    border-radius: 10px;
+    background: rgba(239,68,68,0.08);
+    border: 1px solid rgba(239,68,68,0.18);
+    color: #ef4444;
+}
 }
 
 .refuerzo-results {
@@ -141,7 +148,7 @@
 /* Overview toggle (details/summary) */
 .flashcards-overview {
     margin-top: 1.5rem;
-    border: 1px solid rgba(139, 92, 246, 0.15);
+    border: 1px solid rgba(37, 99, 235, 0.08);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -149,7 +156,7 @@
 .overview-toggle {
     cursor: pointer;
     padding: 0.8rem 1.2rem;
-    background: rgba(139, 92, 246, 0.08);
+    background: rgba(37, 99, 235, 0.06);
     color: var(--text-muted);
     font-size: 0.9rem;
     transition: all 0.3s ease;
@@ -174,7 +181,7 @@
 }
 
 .overview-toggle:hover {
-    background: rgba(139, 92, 246, 0.15);
+    background: rgba(37, 99, 235, 0.10);
     color: white;
 }
 
@@ -196,6 +203,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (max-width: 640px) {
+    .refuerzo-actions {
+        align-items: stretch;
+    }
+    .btn-generate-refuerzo {
+        width: 100%;
+        min-width: 0;
+    }
+    .btn-regenerate {
+        width: 100%;
+    }
 }
 
 .mini-card:hover {
@@ -225,7 +245,7 @@
 .mini-card-back {
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px dashed rgba(139, 92, 246, 0.3);
+    border-top: 1px dashed rgba(37, 99, 235, 0.08);
 }
 
 .concept-explanation {

@@ -1,13 +1,15 @@
 .perfil-container {
-    max-width: 1200px;
-    margin: 80px auto var(--spacing-xl);
-    padding: var(--spacing-md);
+    max-width: 1400px;
+    margin: 24px auto var(--spacing-xl);
+    padding: calc(var(--spacing-sm) + 4px);
+    /* Ensure content is not hidden behind the fixed navbar */
+    padding-top: calc(var(--spacing-lg) + 48px);
 }
 
 .perfil-hero {
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: calc(var(--spacing-md) + 6px);
     text-align: left;
-    max-width: 760px;
+    max-width: 900px;
 }
 
 .perfil-intro-card {
@@ -28,7 +30,7 @@
     display: flex;
     align-items: center;
     gap: 18px;
-    min-width: 280px;
+        min-width: 0;
     flex: 1 1 360px;
 }
 
@@ -69,8 +71,8 @@
 
 .intro-copy h2 {
     margin: 0;
-    font-size: 1.9rem;
-    line-height: 1.1;
+    font-size: 2.25rem;
+    line-height: 1.05;
     color: var(--text-main);
 }
 
@@ -100,9 +102,14 @@
 
 .perfil-grid {
     display: grid;
-    grid-template-columns: 1.3fr 0.95fr;
-    gap: var(--spacing-lg);
+    grid-template-columns: repeat(2, minmax(360px, 1fr));
+    grid-auto-flow: column;
+    gap: calc(var(--spacing-md));
     align-items: start;
+}
+
+@media (max-width: 1100px) {
+    .perfil-grid { grid-template-columns: 1fr; grid-auto-flow: row; }
 }
 
 .perfil-card {
@@ -135,9 +142,9 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: radial-gradient(circle at 10% 20%, rgba(99,102,241,0.12), transparent 20%),
-                      radial-gradient(circle at 80% 80%, rgba(236,72,153,0.08), transparent 18%),
-                      linear-gradient(135deg, rgba(16,185,129,0.03), rgba(79,70,229,0.03));
+    background-image: radial-gradient(circle at 10% 20%, var(--primary-glow), transparent 20%),
+                      radial-gradient(circle at 80% 80%, rgba(245,158,11,0.04), transparent 18%),
+                      linear-gradient(135deg, rgba(16,185,129,0.03), rgba(37,99,235,0.03));
     pointer-events: none;
     z-index: 0;
 }
@@ -148,9 +155,9 @@
 }
 
 .perfil-card h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: var(--spacing-md);
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: calc(var(--spacing-sm));
     color: var(--text-main);
     border-bottom: 2px solid var(--glass-border);
     padding-bottom: 8px;
@@ -180,7 +187,7 @@
     padding: 10px 14px;
     font-size: 0.95rem;
     border-radius: var(--radius-sm);
-    background: rgba(0, 0, 0, 0.2);
+        background: rgba(255,255,255,0.02);
     border: 1px solid var(--glass-border);
     color: var(--text-main);
     transition: all 0.2s ease;
@@ -189,8 +196,8 @@
 .form-control select {
     cursor: pointer;
     color: var(--text-main);
-    background-color: #1e293b !important;
-    background: #1e293b !important;
+        background-color: var(--bg-card) !important;
+        background: var(--bg-card) !important;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -204,16 +211,16 @@
 
 /* Estilos para las opciones del dropdown - aplica en navegadores que lo soportan */
 .form-control select option {
-    color: #f8fafc !important;
-    background-color: #1e293b !important;
-    background: #1e293b !important;
+    color: var(--text-main) !important;
+    background-color: var(--bg-card) !important;
+    background: var(--bg-card) !important;
     padding: 8px;
 }
 
 .form-control select option:checked {
-    background: linear-gradient(#6366f1, #6366f1) #1e293b !important;
-    background-color: #6366f1 !important;
-    color: #f8fafc !important;
+    background: linear-gradient(var(--primary), var(--primary)) var(--bg-card) !important;
+    background-color: var(--primary) !important;
+    color: var(--text-main) !important;
 }
 
 .form-control select option:hover {
@@ -290,7 +297,7 @@
 .avatar-option.selected {
     transform: translateY(-2px);
     border-color: var(--primary);
-    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.12);
+    box-shadow: 0 10px 25px var(--primary-glow);
 }
 
 .avatar-option img {
@@ -330,7 +337,7 @@
 
 .theme-option-btn.active {
     border-color: var(--primary);
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(37, 99, 235, 0.08);
     box-shadow: 0 0 10px var(--primary-glow);
 }
 
@@ -341,10 +348,10 @@
     border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.theme-dot.dark { background: linear-gradient(135deg, #6366f1, #0f172a); }
-.theme-dot.cyber { background: linear-gradient(135deg, #ec4899, #8b5cf6); }
-.theme-dot.forest { background: linear-gradient(135deg, #10b981, #064e3b); }
-.theme-dot.light { background: linear-gradient(135deg, #4f46e5, #ffffff); }
+.theme-dot.dark { background: linear-gradient(135deg, var(--primary), var(--bg-app)); }
+.theme-dot.cyber { background: linear-gradient(135deg, var(--primary), var(--accent)); }
+.theme-dot.forest { background: linear-gradient(135deg, var(--primary), #064e3b); }
+.theme-dot.light { background: linear-gradient(135deg, var(--primary), #ffffff); }
 
 .glass-preview-box {
     padding: var(--spacing-sm);
@@ -488,22 +495,32 @@
 }
 
 .status-alert {
-    padding: 10px 14px;
-    border-radius: var(--radius-sm);
+.status-alert {
+    /* reuse global message style */
+    padding: 0;
     margin-bottom: var(--spacing-md);
-    font-size: 0.9rem;
-    font-weight: 600;
-    animation: fadeIn 0.3s ease;
 }
-
+.status-alert > .app-message, .status-alert.app-message {
+    margin: 0;
+    box-shadow: none;
+}
+.status-alert.success .app-message, .status-alert.success {
+    display: block;
+}
 .status-alert.success {
-    background: rgba(34, 197, 94, 0.15);
-    border: 1px solid #22c55e;
-    color: #22c55e;
+    /* if used without inner structure */
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: rgba(22,163,74,0.12);
+    border: 1px solid rgba(22,163,74,0.22);
+    color: #16a34a;
+    font-weight: 700;
 }
-
 .status-alert.error {
-    background: rgba(239, 68, 68, 0.15);
-    border: 1px solid #ef4444;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: rgba(239,68,68,0.12);
+    border: 1px solid rgba(239,68,68,0.22);
     color: #ef4444;
+    font-weight: 700;
 }

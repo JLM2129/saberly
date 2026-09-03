@@ -122,15 +122,25 @@ const RefuerzoIA = () => {
             )}
 
             {error && (
-                <div className="refuerzo-error">
-                    <p>{error}</p>
+                <div className="refuerzo-error app-message error">
+                    <div className="msg-icon" aria-hidden>⚠️</div>
+                    <div className="msg-body">
+                        <span className="msg-title">No se pudo generar el refuerzo</span>
+                        <span className="msg-text">{error}</span>
+                    </div>
+                    <button className="msg-close" onClick={() => setError(null)} aria-label="Cerrar">✕</button>
                 </div>
             )}
 
             {success && flashcards.length > 0 && (
                 <div className="refuerzo-results">
-                    <div className="success-banner">
-                        <span role="img" aria-label="check">✅</span> ¡Mazo de estudio listo! — {flashcards.length} flashcards disponibles {!navigator.onLine && <span className="offline-badge">📴 Modo Offline</span>}
+                    <div className="success-banner app-message success">
+                        <div className="msg-icon" aria-hidden>✅</div>
+                        <div className="msg-body">
+                            <span className="msg-title">¡Mazo listo!</span>
+                            <span className="msg-text">{flashcards.length} flashcards disponibles {(!navigator.onLine) && <span className="offline-badge">📴 Modo Offline</span>}</span>
+                        </div>
+                        <button className="msg-close" aria-hidden onClick={() => {}}>✕</button>
                     </div>
 
                     {/* Interactive FlashcardDeck view */}

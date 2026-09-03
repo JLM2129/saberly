@@ -18,7 +18,7 @@ export default defineConfig({
         name: 'Saberly - Prep ICFES',
         short_name: 'Saberly',
         description: 'Plataforma de preparación para el examen ICFES Saber 11 con modo offline.',
-        theme_color: '#6366f1',
+        theme_color: '#2563eb',
         background_color: '#0f172a',
         display: 'standalone',
         scope: '/',

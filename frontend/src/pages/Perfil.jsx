@@ -71,64 +71,64 @@ const THEMES = {
         name: 'Oscuro Premium',
         variables: {
             '--bg-app': '#0f172a',
-            '--bg-card': '#1e293b',
-            '--bg-card-hover': '#334155',
+            '--bg-card': '#111827',
+            '--bg-card-hover': '#0f172a',
             '--text-main': '#f8fafc',
-            '--text-muted': '#94a3b8',
-            '--primary': '#6366f1',
-            '--primary-hover': '#818cf8',
-            '--primary-glow': 'rgba(99, 102, 241, 0.5)',
-            '--accent': '#ec4899',
-            '--border-subtle': '#334155',
-            '--glass-border': 'rgba(255, 255, 255, 0.1)'
+            '--text-muted': '#cbd5e1',
+            '--primary': '#2563eb',
+            '--primary-hover': '#3b82f6',
+            '--primary-glow': 'rgba(37, 99, 235, 0.35)',
+            '--accent': '#f59e0b',
+            '--border-subtle': '#1f2937',
+            '--glass-border': 'rgba(37, 99, 235, 0.12)'
         }
     },
     cyber: {
         name: 'Cyberpunk Neon',
         variables: {
-            '--bg-app': '#090514',
-            '--bg-card': '#120b24',
-            '--bg-card-hover': '#21143f',
+            '--bg-app': '#071428',
+            '--bg-card': '#0b1b2b',
+            '--bg-card-hover': '#0f2a44',
             '--text-main': '#f8fafc',
-            '--text-muted': '#a855f7',
-            '--primary': '#d946ef',
-            '--primary-hover': '#f472b6',
-            '--primary-glow': 'rgba(217, 70, 239, 0.5)',
-            '--accent': '#39ff14',
-            '--border-subtle': '#d946ef',
-            '--glass-border': 'rgba(217, 70, 239, 0.25)'
+            '--text-muted': '#9fbecd',
+            '--primary': '#06b6d4', /* Cyan - playful & clear */
+            '--primary-hover': '#0891b2',
+            '--primary-glow': 'rgba(6, 182, 212, 0.25)',
+            '--accent': '#fb7185', /* warm playful accent */
+            '--border-subtle': '#074958',
+            '--glass-border': 'rgba(6, 182, 212, 0.12)'
         }
     },
     forest: {
         name: 'Bosque Esmeralda',
         variables: {
-            '--bg-app': '#022c22',
-            '--bg-card': '#064e3b',
-            '--bg-card-hover': '#0f766e',
-            '--text-main': '#f0fdf4',
-            '--text-muted': '#a7f3d0',
-            '--primary': '#10b981',
+            '--bg-app': '#052016',
+            '--bg-card': '#073023',
+            '--bg-card-hover': '#0b452f',
+            '--text-main': '#ecfdf5',
+            '--text-muted': '#bcead0',
+            '--primary': '#16a34a', /* Green for calm and growth */
             '--primary-hover': '#34d399',
-            '--primary-glow': 'rgba(16, 185, 129, 0.5)',
+            '--primary-glow': 'rgba(22, 163, 74, 0.28)',
             '--accent': '#f59e0b',
-            '--border-subtle': '#065f46',
-            '--glass-border': 'rgba(16, 185, 129, 0.15)'
+            '--border-subtle': '#0b3b2b',
+            '--glass-border': 'rgba(22, 163, 74, 0.12)'
         }
     },
     light: {
         name: 'Claro Elegante',
         variables: {
-            '--bg-app': '#f1f5f9',
+            '--bg-app': '#f8fafc',
             '--bg-card': '#ffffff',
-            '--bg-card-hover': '#e2e8f0',
+            '--bg-card-hover': '#f1f5f9',
             '--text-main': '#0f172a',
             '--text-muted': '#475569',
-            '--primary': '#4f46e5',
-            '--primary-hover': '#6366f1',
-            '--primary-glow': 'rgba(79, 70, 229, 0.3)',
-            '--accent': '#db2777',
-            '--border-subtle': '#cbd5e1',
-            '--glass-border': 'rgba(0, 0, 0, 0.08)'
+            '--primary': '#2563eb',
+            '--primary-hover': '#3b82f6',
+            '--primary-glow': 'rgba(37, 99, 235, 0.18)',
+            '--accent': '#f59e0b',
+            '--border-subtle': '#e6edf5',
+            '--glass-border': 'rgba(0, 0, 0, 0.06)'
         }
     }
 };
@@ -392,7 +392,7 @@ const Perfil = () => {
         localStorage.setItem('app_theme', theme);
         localStorage.setItem('app_glass_glow', glassGlow.toString());
         localStorage.setItem('app_glass_opacity', glassOpacity.toString());
-        alert("¡Configuración de apariencia guardada con éxito!");
+        setProfileStatus({ type: 'success', text: '¡Configuración de apariencia guardada con éxito!' });
     };
 
     if (loadingProfile) {
@@ -437,7 +437,14 @@ const Perfil = () => {
                     <h3>👤 Datos Personales</h3>
                     {profileStatus && (
                         <div className={`status-alert ${profileStatus.type}`}>
-                            {profileStatus.text}
+                            <div className={`app-message ${profileStatus.type === 'success' ? 'success' : (profileStatus.type === 'error' ? 'error' : 'info')}`}>
+                                <div className="msg-icon" aria-hidden>{profileStatus.type === 'success' ? '✅' : '⚠️'}</div>
+                                <div className="msg-body">
+                                    <span className="msg-title">{profileStatus.type === 'success' ? 'Éxito' : 'Atención'}</span>
+                                    <span className="msg-text">{profileStatus.text}</span>
+                                </div>
+                                <button className="msg-close" onClick={() => setProfileStatus(null)} aria-label="Cerrar">✕</button>
+                            </div>
                         </div>
                     )}
                     <form onSubmit={handleProfileSubmit}>
@@ -469,11 +476,215 @@ const Perfil = () => {
                     </form>
                 </div>
 
+                {/* Apariencia justo debajo de Datos Personales */}
+                <div className="perfil-card">
+                    <h3>🎨 Apariencia Visual</h3>
+                    
+                    <div className="form-group">
+                        <label>Avatar Actual</label>
+                        <div className="avatar-current-row">
+                            {avatarUrl ? (
+                                <img src={avatarUrl} alt="Avatar actual" className="current-avatar" />
+                            ) : (
+                                <div className="current-avatar placeholder">{profile.full_name ? profile.full_name[0].toUpperCase() : 'U'}</div>
+                            )}
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                                <button type="button" className="btn-save-profile" style={{ width: 'auto', padding: '10px 14px' }} onClick={() => setAvatarModalOpen(true)}>
+                                    Escoger avatar
+                                </button>
+                                {avatarUrl && (
+                                    <button type="button" className="btn-save-profile" style={{ width: 'auto', padding: '10px 14px', background: 'rgba(255,255,255,0.08)', color: 'var(--text-main)', border: '1px solid var(--glass-border)' }} onClick={async () => {
+                                        await handleAvatarSave(null);
+                                    }}>
+                                        Quitar avatar
+                                    </button>
+                                )}
+                            </div>
+                        </div>
+                        <div style={{ marginTop: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                            Doble clic en el avatar seleccionado para guardarlo inmediatamente.
+                        </div>
+                    </div>
+
+                    <div className="form-group">
+                        <label>Tema de Color</label>
+                        <div className="theme-selector-grid">
+                            {Object.entries(THEMES).map(([key, value]) => (
+                                <button
+                                    key={key}
+                                    type="button"
+                                    className={`theme-option-btn ${theme === key ? 'active' : ''}`}
+                                    onClick={() => setTheme(key)}
+                                >
+                                    <div className={`theme-dot ${key}`}></div>
+                                    {value.name}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="range-slider-container">
+                        <label>
+                            <span>Efecto Glassmorphism (Resplandor)</span>
+                            <span>{glassGlow}px</span>
+                        </label>
+                        <input
+                            type="range"
+                            min="0"
+                            max="24"
+                            className="range-slider"
+                            value={glassGlow}
+                            onChange={(e) => setGlassGlow(parseInt(e.target.value))}
+                        />
+                    </div>
+
+                    <div className="range-slider-container">
+                        <label>
+                            <span>Opacidad del Fondo Glass</span>
+                            <span>{Math.round(glassOpacity * 100)}%</span>
+                        </label>
+                        <input
+                            type="range"
+                            min="0.1"
+                            max="0.95"
+                            step="0.05"
+                            className="range-slider"
+                            value={glassOpacity}
+                            onChange={(e) => setGlassOpacity(parseFloat(e.target.value))}
+                        />
+                    </div>
+
+                    <div 
+                        className="glass-preview-box" 
+                        role="button" 
+                        tabIndex={0}
+                        onClick={() => setModalOpen(true)}
+                        onKeyDown={(e) => { if (e.key === 'Enter') setModalOpen(true); }}
+                        title="Abrir vista previa ampliada"
+                    >
+                        <div style={{ fontWeight: 700 }}>Vista previa de Glassmorphism ✨</div>
+                        <div className="preview-tooltip">Resplandor: {glassGlow}px • Opacidad: {Math.round(glassOpacity * 100)}% — haz clic para ampliar</div>
+                    </div>
+
+                    {avatarModalOpen && (
+                        <div className="modal-overlay" onClick={() => setAvatarModalOpen(false)}>
+                            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                                <div className="modal-header">
+                                    <h3>Selecciona tu avatar</h3>
+                                    <button className="modal-close" onClick={() => setAvatarModalOpen(false)}>×</button>
+                                </div>
+                                <div className="modal-body">
+                                    <p style={{ color: 'var(--text-muted)', marginBottom: '16px' }}>Elige un personaje para tu perfil. Se guardará automáticamente cuando confirmes.</p>
+                                    <div className="avatar-picker-grid">
+                                        {AVATAR_OPTIONS.map(({ style, label }, index) => {
+                                            const seed = `${label}-${index}`;
+                                            const url = getAvatarUrl(style, seed);
+                                            return (
+                                                <button
+                                                    key={`${style}-${label}-${index}`}
+                                                    type="button"
+                                                    className={`avatar-option ${avatarUrl === url ? 'selected' : ''}`}
+                                                    onClick={() => setAvatarUrl(url)}
+                                                    onDoubleClick={async () => {
+                                                        await handleAvatarSave(url);
+                                                        setAvatarModalOpen(false);
+                                                    }}
+                                                >
+                                                    <img src={url} alt={label} />
+                                                    <span>{label}</span>
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
+                                    <div style={{ display: 'flex', gap: 10, marginTop: 18 }}>
+                                        <button className="btn-save-profile" onClick={async () => {
+                                            setAvatarModalOpen(false);
+                                            await handleAvatarSave();
+                                        }}>
+                                            Guardar avatar
+                                        </button>
+                                        <button className="btn-save-profile" style={{ background: 'var(--border-subtle)' }} onClick={() => setAvatarModalOpen(false)}>
+                                            Cerrar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
+                    {modalOpen && (
+                        <div className="modal-overlay" onClick={() => setModalOpen(false)}>
+                            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                                <div className="modal-header">
+                                    <h3>Vista previa ampliada</h3>
+                                    <button className="modal-close" onClick={() => setModalOpen(false)}>×</button>
+                                </div>
+                                <div className="modal-body">
+                                    <div className="glass-preview-box large">
+                                        <div className="example-cards">
+                                            <div className="example-card">Ejemplo 1</div>
+                                            <div className="example-card">Ejemplo 2</div>
+                                            <div className="example-card">Ejemplo 3</div>
+                                        </div>
+                                    </div>
+                                    <div style={{ marginTop: 12 }}>
+                                        <label style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--text-muted)', fontWeight: 700 }}>
+                                            <span>Resplandor: {glassGlow}px</span>
+                                            <span>Opacidad: {Math.round(glassOpacity * 100)}%</span>
+                                        </label>
+                                        <input
+                                            type="range"
+                                            min="0"
+                                            max="24"
+                                            className="range-slider"
+                                            value={glassGlow}
+                                            onChange={(e) => setGlassGlow(parseInt(e.target.value))}
+                                        />
+                                        <input
+                                            type="range"
+                                            min="0.1"
+                                            max="0.95"
+                                            step="0.05"
+                                            className="range-slider"
+                                            value={glassOpacity}
+                                            onChange={(e) => setGlassOpacity(parseFloat(e.target.value))}
+                                        />
+                                        <div style={{ display: 'flex', gap: 8, marginTop: 10 }}>
+                                            <button className="btn-save-profile" onClick={() => { saveThemeConfiguration(); setModalOpen(false); }}>
+                                                Guardar y Cerrar
+                                            </button>
+                                            <button className="btn-save-profile" style={{ background: 'var(--border-subtle)' }} onClick={() => setModalOpen(false)}>
+                                                Cerrar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
+                    <button 
+                        type="button" 
+                        className="btn-save-profile" 
+                        style={{ marginTop: '20px', background: 'var(--accent)', boxShadow: '0 4px 12px rgba(236, 72, 153, 0.4)' }}
+                        onClick={saveThemeConfiguration}
+                    >
+                        Guardar Apariencia
+                    </button>
+                </div>
+
                 <div className="perfil-card">
                     <h3>📘 Perfil Educativo</h3>
                     {profileStatus && (
                         <div className={`status-alert ${profileStatus.type}`}>
-                            {profileStatus.text}
+                            <div className={`app-message ${profileStatus.type === 'success' ? 'success' : (profileStatus.type === 'error' ? 'error' : 'info')}`}>
+                                <div className="msg-icon" aria-hidden>{profileStatus.type === 'success' ? '✅' : '⚠️'}</div>
+                                <div className="msg-body">
+                                    <span className="msg-title">{profileStatus.type === 'success' ? 'Éxito' : 'Atención'}</span>
+                                    <span className="msg-text">{profileStatus.text}</span>
+                                </div>
+                                <button className="msg-close" onClick={() => setProfileStatus(null)} aria-label="Cerrar">✕</button>
+                            </div>
                         </div>
                     )}
                     <form onSubmit={handleProfileSubmit}>
@@ -671,203 +882,7 @@ const Perfil = () => {
                         </button>
                     </form>
                 </div>
-
-                {/* 3. Personalización */}
-                <div className="perfil-card">
-                    <h3>🎨 Apariencia Visual</h3>
-                    
-                    <div className="form-group">
-                        <label>Avatar Actual</label>
-                        <div className="avatar-current-row">
-                            {avatarUrl ? (
-                                <img src={avatarUrl} alt="Avatar actual" className="current-avatar" />
-                            ) : (
-                                <div className="current-avatar placeholder">{profile.full_name ? profile.full_name[0].toUpperCase() : 'U'}</div>
-                            )}
-                            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                                <button type="button" className="btn-save-profile" style={{ width: 'auto', padding: '10px 14px' }} onClick={() => setAvatarModalOpen(true)}>
-                                    Escoger avatar
-                                </button>
-                                {avatarUrl && (
-                                    <button type="button" className="btn-save-profile" style={{ width: 'auto', padding: '10px 14px', background: 'rgba(255,255,255,0.08)', color: 'var(--text-main)', border: '1px solid var(--glass-border)' }} onClick={async () => {
-                                        await handleAvatarSave(null);
-                                    }}>
-                                        Quitar avatar
-                                    </button>
-                                )}
-                            </div>
-                        </div>
-                        <div style={{ marginTop: '8px', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                            Doble clic en el avatar seleccionado para guardarlo inmediatamente.
-                        </div>
-                    </div>
-
-                    <div className="form-group">
-                        <label>Tema de Color</label>
-                        <div className="theme-selector-grid">
-                            {Object.entries(THEMES).map(([key, value]) => (
-                                <button
-                                    key={key}
-                                    type="button"
-                                    className={`theme-option-btn ${theme === key ? 'active' : ''}`}
-                                    onClick={() => setTheme(key)}
-                                >
-                                    <div className={`theme-dot ${key}`}></div>
-                                    {value.name}
-                                </button>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className="range-slider-container">
-                        <label>
-                            <span>Efecto Glassmorphism (Resplandor)</span>
-                            <span>{glassGlow}px</span>
-                        </label>
-                        <input
-                            type="range"
-                            min="0"
-                            max="24"
-                            className="range-slider"
-                            value={glassGlow}
-                            onChange={(e) => setGlassGlow(parseInt(e.target.value))}
-                        />
-                    </div>
-
-                    <div className="range-slider-container">
-                        <label>
-                            <span>Opacidad del Fondo Glass</span>
-                            <span>{Math.round(glassOpacity * 100)}%</span>
-                        </label>
-                        <input
-                            type="range"
-                            min="0.1"
-                            max="0.95"
-                            step="0.05"
-                            className="range-slider"
-                            value={glassOpacity}
-                            onChange={(e) => setGlassOpacity(parseFloat(e.target.value))}
-                        />
-                    </div>
-
-                    <div 
-                        className="glass-preview-box" 
-                        role="button" 
-                        tabIndex={0}
-                        onClick={() => setModalOpen(true)}
-                        onKeyDown={(e) => { if (e.key === 'Enter') setModalOpen(true); }}
-                        title="Abrir vista previa ampliada"
-                    >
-                        <div style={{ fontWeight: 700 }}>Vista previa de Glassmorphism ✨</div>
-                        <div className="preview-tooltip">Resplandor: {glassGlow}px • Opacidad: {Math.round(glassOpacity * 100)}% — haz clic para ampliar</div>
-                    </div>
-
-                    {avatarModalOpen && (
-                        <div className="modal-overlay" onClick={() => setAvatarModalOpen(false)}>
-                            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                                <div className="modal-header">
-                                    <h3>Selecciona tu avatar</h3>
-                                    <button className="modal-close" onClick={() => setAvatarModalOpen(false)}>×</button>
-                                </div>
-                                <div className="modal-body">
-                                    <p style={{ color: 'var(--text-muted)', marginBottom: '16px' }}>Elige un personaje para tu perfil. Se guardará automáticamente cuando confirmes.</p>
-                                    <div className="avatar-picker-grid">
-                                        {AVATAR_OPTIONS.map(({ style, label }, index) => {
-                                            const seed = `${label}-${index}`;
-                                            const url = getAvatarUrl(style, seed);
-                                            return (
-                                                <button
-                                                    key={`${style}-${label}-${index}`}
-                                                    type="button"
-                                                    className={`avatar-option ${avatarUrl === url ? 'selected' : ''}`}
-                                                    onClick={() => setAvatarUrl(url)}
-                                                    onDoubleClick={async () => {
-                                                        await handleAvatarSave(url);
-                                                        setAvatarModalOpen(false);
-                                                    }}
-                                                >
-                                                    <img src={url} alt={label} />
-                                                    <span>{label}</span>
-                                                </button>
-                                            );
-                                        })}
-                                    </div>
-                                    <div style={{ display: 'flex', gap: 10, marginTop: 18 }}>
-                                        <button className="btn-save-profile" onClick={async () => {
-                                            setAvatarModalOpen(false);
-                                            await handleAvatarSave();
-                                        }}>
-                                            Guardar avatar
-                                        </button>
-                                        <button className="btn-save-profile" style={{ background: 'var(--border-subtle)' }} onClick={() => setAvatarModalOpen(false)}>
-                                            Cerrar
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    )}
-
-                    {modalOpen && (
-                        <div className="modal-overlay" onClick={() => setModalOpen(false)}>
-                            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                                <div className="modal-header">
-                                    <h3>Vista previa ampliada</h3>
-                                    <button className="modal-close" onClick={() => setModalOpen(false)}>×</button>
-                                </div>
-                                <div className="modal-body">
-                                    <div className="glass-preview-box large">
-                                        <div className="example-cards">
-                                            <div className="example-card">Ejemplo 1</div>
-                                            <div className="example-card">Ejemplo 2</div>
-                                            <div className="example-card">Ejemplo 3</div>
-                                        </div>
-                                    </div>
-                                    <div style={{ marginTop: 12 }}>
-                                        <label style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--text-muted)', fontWeight: 700 }}>
-                                            <span>Resplandor: {glassGlow}px</span>
-                                            <span>Opacidad: {Math.round(glassOpacity * 100)}%</span>
-                                        </label>
-                                        <input
-                                            type="range"
-                                            min="0"
-                                            max="24"
-                                            className="range-slider"
-                                            value={glassGlow}
-                                            onChange={(e) => setGlassGlow(parseInt(e.target.value))}
-                                        />
-                                        <input
-                                            type="range"
-                                            min="0.1"
-                                            max="0.95"
-                                            step="0.05"
-                                            className="range-slider"
-                                            value={glassOpacity}
-                                            onChange={(e) => setGlassOpacity(parseFloat(e.target.value))}
-                                        />
-                                        <div style={{ display: 'flex', gap: 8, marginTop: 10 }}>
-                                            <button className="btn-save-profile" onClick={() => { saveThemeConfiguration(); setModalOpen(false); }}>
-                                                Guardar y Cerrar
-                                            </button>
-                                            <button className="btn-save-profile" style={{ background: 'var(--border-subtle)' }} onClick={() => setModalOpen(false)}>
-                                                Cerrar
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    )}
-
-                    <button 
-                        type="button" 
-                        className="btn-save-profile" 
-                        style={{ marginTop: '20px', background: 'var(--accent)', boxShadow: '0 4px 12px rgba(236, 72, 153, 0.4)' }}
-                        onClick={saveThemeConfiguration}
-                    >
-                        Guardar Apariencia
-                    </button>
-                </div>
+                
             </div>
         </div>
     );

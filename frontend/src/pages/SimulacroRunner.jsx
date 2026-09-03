@@ -16,6 +16,10 @@ export default function SimulacroRunner() {
     const [respuestas, setRespuestas] = useState({});
     const [elapsedTime, setElapsedTime] = useState(0);
     const [focusedNavBtn, setFocusedNavBtn] = useState('siguiente');
+    const [confirmOpen, setConfirmOpen] = useState(false);
+    const [confirmMessage, setConfirmMessage] = useState('');
+    const [confirmAction, setConfirmAction] = useState(() => () => {});
+    const [pageMessage, setPageMessage] = useState(null); // {type:'info'|'success'|'error', text: ''}
 
     const safeParse = (key, fallback) => {
         try {
@@ -59,7 +63,7 @@ export default function SimulacroRunner() {
                     const data = await getSimulacroById(id);
                     if (isMounted) {
                         if (data.completado) {
-                            alert("Este simulacro ya fue completado.");
+                            setPageMessage({ type: 'info', text: 'Este simulacro ya fue completado.' });
                             navigate('/simulacros');
                             return;
                         }
@@ -69,7 +73,7 @@ export default function SimulacroRunner() {
             } catch (error) {
                 if (isMounted) {
                     console.error("Error cargando simulacro:", error);
-                    alert("Error cargando el simulacro.");
+                    setPageMessage({ type: 'error', text: 'Error cargando el simulacro.' });
                     navigate('/simulacros');
                 }
             } finally {
@@ -93,29 +97,33 @@ export default function SimulacroRunner() {
     };
 
     const handleSubmit = async () => {
-        if (!window.confirm("¿Estás seguro de finalizar el examen?")) return;
-        try {
-            if (isOffline || id.startsWith('local_')) {
-                const resultado = submitLocalSimulacro(simulacro, respuestas);
-                localStorage.setItem('last_offline_result', JSON.stringify(resultado));
-                navigate(`/simulacro/${id}/resultados`);
-            } else {
-                const payloadRespuestas = Object.entries(respuestas).map(([pId, opId]) => ({
-                    pregunta_id: parseInt(pId),
-                    opcion_id: opId
-                }));
-                await submitSimulacro(id, payloadRespuestas, elapsedTime);
-                navigate(`/simulacro/${id}/resultados`);
+        // open confirmation modal
+        setConfirmMessage('¿Estás seguro de finalizar el examen?');
+        setConfirmAction(() => async () => {
+            try {
+                if (isOffline || id.startsWith('local_')) {
+                    const resultado = submitLocalSimulacro(simulacro, respuestas);
+                    localStorage.setItem('last_offline_result', JSON.stringify(resultado));
+                    navigate(`/simulacro/${id}/resultados`);
+                } else {
+                    const payloadRespuestas = Object.entries(respuestas).map(([pId, opId]) => ({
+                        pregunta_id: parseInt(pId),
+                        opcion_id: opId
+                    }));
+                    await submitSimulacro(id, payloadRespuestas, elapsedTime);
+                    navigate(`/simulacro/${id}/resultados`);
+                }
+            } catch (error) {
+                setPageMessage({ type: 'error', text: 'Error enviando respuestas' });
             }
-        } catch (error) {
-            alert("Error enviando respuestas");
-        }
+        });
+        setConfirmOpen(true);
     };
 
     if (loading) {
         return (
             <div style={{ paddingTop: '120px', textAlign: 'center', color: 'white' }}>
-                <div className="glass-card" style={{ display: 'inline-block', padding: '2rem' }}>
+                <div className="glass-card" style={{ display: 'block', margin: '0 auto', padding: '2rem', maxWidth: '680px' }}>
                     <h2>Cargando Simulacro...</h2>
                     <p>Preparando tus preguntas</p>
                 </div>
@@ -173,9 +181,9 @@ export default function SimulacroRunner() {
                 <div style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'flex-start' }}>
                     <button 
                         onClick={() => {
-                            if(window.confirm('¿Seguro que quieres abandonar el simulacro? Tu progreso no se guardará.')) {
-                                navigate('/simulacros');
-                            }
+                            setConfirmMessage('¿Seguro que quieres abandonar el simulacro? Tu progreso no se guardará.');
+                            setConfirmAction(() => async () => { navigate('/simulacros'); });
+                            setConfirmOpen(true);
                         }}
                         style={{
                             background: 'rgba(255, 255, 255, 0.05)',
@@ -206,6 +214,18 @@ export default function SimulacroRunner() {
                 </div>
 
                 {/* Dashboard del Examen */}
+                {pageMessage && (
+                    <div style={{ marginBottom: '1rem' }}>
+                        <div className={`app-message ${pageMessage.type}`}>
+                            <div className="msg-icon" aria-hidden>ℹ️</div>
+                            <div className="msg-body">
+                                <span className="msg-title">Saberly</span>
+                                <span className="msg-text">{pageMessage.text}</span>
+                            </div>
+                            <button className="msg-close" onClick={() => setPageMessage(null)} aria-label="Cerrar">✕</button>
+                        </div>
+                    </div>
+                )}
                 <div className="glass-card" style={{ padding: '1.2rem', marginBottom: '1.5rem', borderLeft: '5px solid var(--primary)' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <div style={{ flex: '0 0 auto' }}>
@@ -217,8 +237,8 @@ export default function SimulacroRunner() {
                                 marginTop: '4px', 
                                 display: 'inline-block',
                                 padding: '2px 8px', 
-                                background: 'rgba(99, 102, 241, 0.1)', 
-                                border: '1px solid rgba(99, 102, 241, 0.2)',
+                                background: 'rgba(37, 99, 235, 0.12)', 
+                                border: '1px solid rgba(37, 99, 235, 0.18)',
                                 borderRadius: '4px',
                                 fontSize: '0.7rem',
                                 color: 'var(--primary)',
@@ -228,7 +248,7 @@ export default function SimulacroRunner() {
                                 📁 {pregunta?.area_nombre || 'General'}
                             </div>
                         </div>
-                        <div style={{ flex: 1, margin: '0 30px', maxWidth: '300px' }}>
+                        <div style={{ flex: 1, margin: '0 1rem', maxWidth: '300px' }}>
                             <div style={{ width: '100%', height: '8px', background: 'rgba(255,255,255,0.1)', borderRadius: '10px', overflow: 'hidden' }}>
                                 <div style={{
                                     width: `${((currentIndex + 1) / total) * 100}%`,
@@ -250,6 +270,24 @@ export default function SimulacroRunner() {
 
                 {/* Contenido de la Pregunta - KEY añade reactividad forzada */}
                 <div key={`question-${currentIndex}`} className="glass-card fade-in" style={{ padding: '2rem' }}>
+
+                    {confirmOpen && (
+                        <div className="modal-overlay" onClick={() => setConfirmOpen(false)}>
+                            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                                <div className="modal-header">
+                                    <h3 className="hero-text-gradient">Saberly</h3>
+                                    <button className="modal-close" onClick={() => setConfirmOpen(false)}>×</button>
+                                </div>
+                                <div style={{ padding: '8px 0 16px' }}>
+                                    <p style={{ margin: 0, color: 'var(--text-muted)' }}>{confirmMessage}</p>
+                                </div>
+                                <div style={{ display: 'flex', gap: 10, justifyContent: 'flex-end' }}>
+                                    <button className="btn-save-profile" style={{ background: 'var(--border-subtle)' }} onClick={() => setConfirmOpen(false)}>Cancelar</button>
+                                    <button className="btn-save-profile" onClick={async () => { setConfirmOpen(false); await confirmAction(); }}>Confirmar</button>
+                                </div>
+                            </div>
+                        </div>
+                    )}
 
                     {contexto && (
                         <div style={{
@@ -284,7 +322,7 @@ export default function SimulacroRunner() {
                                         padding: '1.1rem',
                                         borderRadius: 'var(--radius-md)',
                                         border: `1px solid ${isSelected ? 'var(--primary)' : 'rgba(255,255,255,0.1)'}`,
-                                        background: isSelected ? 'rgba(99, 102, 241, 0.15)' : 'rgba(255,255,255,0.03)',
+                                        background: isSelected ? 'rgba(37, 99, 235, 0.14)' : 'rgba(255,255,255,0.03)',
                                         cursor: 'pointer',
                                         transition: 'all 0.2s ease',
                                         display: 'flex',
