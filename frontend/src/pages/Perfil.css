@@ -495,7 +495,6 @@
 }
 
 .status-alert {
-.status-alert {
     /* reuse global message style */
     padding: 0;
     margin-bottom: var(--spacing-md);
