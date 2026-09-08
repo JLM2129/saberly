@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.utils import timezone
 import random
 
 class Area(models.Model):
@@ -219,6 +220,7 @@ class Flashcard(models.Model):
     )
     frente = models.TextField()
     dorso = models.TextField()
+    debilidad = models.CharField(max_length=150, blank=True, default='')
     fecha_creacion = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -228,6 +230,33 @@ class Flashcard(models.Model):
         verbose_name = 'Flashcard'
         verbose_name_plural = 'Flashcards'
         ordering = ['-fecha_creacion']
+
+
+class SesionEntrenamiento(models.Model):
+    ESTADO_CHOICES = [
+        ('activa', 'Activa'),
+        ('completada', 'Completada'),
+        ('cancelada', 'Cancelada'),
+    ]
+
+    usuario = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name='sesiones_entrenamiento'
+    )
+    debilidad = models.CharField(max_length=150)
+    area = models.ForeignKey(Area, on_delete=models.CASCADE, related_name='sesiones_entrenamiento')
+    nivel_inicial = models.CharField(max_length=20, choices=Pregunta.DIFICULTAD_CHOICES, default='facil')
+    nivel_actual = models.CharField(max_length=20, choices=Pregunta.DIFICULTAD_CHOICES, default='facil')
+    preguntas_generadas = models.IntegerField(default=0)
+    intentos_totales = models.IntegerField(default=0)
+    aciertos_totales = models.IntegerField(default=0)
+    estado = models.CharField(max_length=20, choices=ESTADO_CHOICES, default='activa')
+    creada_at = models.DateTimeField(auto_now_add=True)
+    finalizada_at = models.DateTimeField(null=True, blank=True)
+
+    class Meta:
+        ordering = ['-creada_at']
 
 
 class PreguntaIA(models.Model):
@@ -244,6 +273,13 @@ class PreguntaIA(models.Model):
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
         related_name='preguntas_ia'
+    )
+    sesion = models.ForeignKey(
+        SesionEntrenamiento,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='preguntas'
     )
     debilidad_objetivo = models.CharField(
         max_length=150,
@@ -306,6 +342,28 @@ class OpcionRespuestaIA(models.Model):
         verbose_name_plural = 'Opciones de respuesta IA'
 
 
+class IntentoEntrenamiento(models.Model):
+    sesion = models.ForeignKey(SesionEntrenamiento, on_delete=models.CASCADE, related_name='intentos')
+    pregunta_ia = models.ForeignKey(PreguntaIA, on_delete=models.CASCADE, related_name='intentos')
+    opcion_seleccionada = models.ForeignKey(OpcionRespuestaIA, on_delete=models.SET_NULL, null=True, blank=True)
+    numero_intento = models.PositiveSmallIntegerField()
+    es_correcta = models.BooleanField(default=False)
+    pista_utilizada = models.BooleanField(default=False)
+    ejemplo_utilizado = models.BooleanField(default=False)
+    explicacion_mostrada = models.BooleanField(default=False)
+    tiempo_respuesta_ms = models.PositiveIntegerField(null=True, blank=True)
+    creado_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['creado_at']
+        constraints = [
+            models.UniqueConstraint(
+                fields=['pregunta_ia', 'numero_intento'],
+                name='unique_pregunta_ia_intento'
+            )
+        ]
+
+
 class ProgresoDebilidad(models.Model):
     """
     Progreso detallado del estudiante para una debilidad específica.
@@ -333,6 +391,12 @@ class ProgresoDebilidad(models.Model):
         default=0.0,
         help_text="Mejora porcentual de precisión reciente vs histórica"
     )
+    precision_reciente = models.FloatField(
+        default=0.0,
+        help_text="Precisión de los últimos cinco intentos"
+    )
+    racha_actual = models.IntegerField(default=0)
+    microvictorias = models.IntegerField(default=0)
     nivel_actual = models.CharField(
         max_length=20,
         choices=NIVEL_CHOICES,
@@ -348,6 +412,44 @@ class ProgresoDebilidad(models.Model):
         if self.intentos_totales == 0:
             return 0.0
         return (self.aciertos_totales / self.intentos_totales) * 100.0
+
+    def registrar_intento(self, es_correcta, dificultad='media', tipo_error=None, origen='entrenamiento'):
+        historial_anterior = list(self.historial_recuperacion or [])
+        resultados_anteriores = [bool(item.get('es_correcta')) for item in historial_anterior[-5:]]
+        precision_anterior = self.calcular_precision()
+
+        self.intentos_totales += 1
+        if es_correcta:
+            self.aciertos_totales += 1
+            self.racha_actual += 1
+        else:
+            self.racha_actual = 0
+
+        self.historial_recuperacion = historial_anterior + [{
+            'fecha': timezone.now().isoformat(),
+            'es_correcta': bool(es_correcta),
+            'dificultad': dificultad,
+            'tipo_error': tipo_error,
+            'origen': origen,
+        }]
+        resultados_recientes = resultados_anteriores + [bool(es_correcta)]
+        self.precision_reciente = (
+            sum(resultados_recientes) / len(resultados_recientes) * 100.0
+            if resultados_recientes else 0.0
+        )
+        self.porcentaje_mejora = self.precision_reciente - precision_anterior
+        if es_correcta and (self.racha_actual == 1 or self.precision_reciente >= 75.0):
+            self.microvictorias += 1
+
+        precision_nueva = self.calcular_precision()
+        if precision_nueva >= 75.0 and self.intentos_totales >= 4:
+            self.nivel_actual = 'alto'
+        elif precision_nueva >= 45.0:
+            self.nivel_actual = 'medio'
+        else:
+            self.nivel_actual = 'bajo'
+
+        self.save()
 
     def __str__(self):
         return f"{self.usuario.username} - {self.debilidad} - Nivel {self.nivel_actual}"

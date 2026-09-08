@@ -6,6 +6,7 @@ export default function EntrenamientoAdaptativo() {
     const [debilidades, setDebilidades] = useState([]);
     const [loading, setLoading] = useState(true);
     const [selectedDebilidad, setSelectedDebilidad] = useState(null);
+    const [sessionId, setSessionId] = useState(null);
     const [trainingQuestion, setTrainingQuestion] = useState(null);
     const [selectedOption, setSelectedOption] = useState(null);
     const [submitting, setSubmitting] = useState(false);
@@ -33,7 +34,7 @@ export default function EntrenamientoAdaptativo() {
         }
     };
 
-    const handleStartTraining = async (debilidad) => {
+    const handleStartTraining = async (debilidad, existingSessionId = null) => {
         setSelectedDebilidad(debilidad);
         setTrainingQuestion(null);
         setSelectedOption(null);
@@ -44,11 +45,12 @@ export default function EntrenamientoAdaptativo() {
         setTrainingError(null);
         
         try {
-            const data = await iniciarEntrenamiento(debilidad.debilidad);
+            const data = await iniciarEntrenamiento(debilidad.debilidad, existingSessionId);
+            setSessionId(data.sesion_id);
             setTrainingQuestion(data);
         } catch (e) {
             console.error("Error iniciando entrenamiento:", e);
-            setTrainingError("No pudimos generar el entrenamiento con Gemma 4 en este momento. Inténtalo de nuevo.");
+            setTrainingError("No pudimos generar el entrenamiento con el tutor virtual en este momento. Inténtalo de nuevo.");
         }
     };
 
@@ -57,9 +59,17 @@ export default function EntrenamientoAdaptativo() {
         setSubmitting(true);
         setTrainingError(null);
         try {
-            const result = await responderEntrenamiento(trainingQuestion.id, selectedOption);
+            const result = await responderEntrenamiento(
+                trainingQuestion.id,
+                selectedOption,
+                sessionId,
+                {
+                    pista_utilizada: showPista,
+                    ejemplo_utilizado: showEjemplo,
+                }
+            );
             setFeedback(result);
-            setAttemptsCount(prev => prev + 1);
+            setAttemptsCount(result.intento_numero);
             
             if (result.es_correcta) {
                 // Refresh debilidades in background
@@ -82,7 +92,7 @@ export default function EntrenamientoAdaptativo() {
 
     const handleNextQuestion = () => {
         if (selectedDebilidad) {
-            handleStartTraining(selectedDebilidad);
+            handleStartTraining(selectedDebilidad, sessionId);
         }
     };
 
@@ -101,7 +111,7 @@ export default function EntrenamientoAdaptativo() {
                 <span role="img" aria-label="brain">🧠</span> Entrenamiento Adaptativo Inteligente (Modo Refuerzo IA)
             </h2>
             <p className="section-subtitle">
-                Gemma 4 detecta tus debilidades en los simulacros y genera preguntas personalizadas con andamiaje de aprendizaje interactivo.
+                El tutor virtual detecta tus debilidades en los simulacros y genera preguntas personalizadas con andamiaje de aprendizaje interactivo.
             </p>
 
             {loading ? (
@@ -128,8 +138,8 @@ export default function EntrenamientoAdaptativo() {
 
                     {!trainingQuestion && !trainingError ? (
                         <div className="generating-container">
-                            <div className="gemma-pulse"></div>
-                            <h4>Gemma 4 está formulando una pregunta adaptada a tu perfil...</h4>
+                            <div className="tutor-pulse"></div>
+                            <h4>El tutor virtual está formulando una pregunta adaptada a tu perfil...</h4>
                             <p className="pedagogical-hint">
                                 Analizando tus errores comunes de tipo <em>conceptual</em> y <em>procedimental</em> para crear distractores inteligentes.
                             </p>
@@ -147,7 +157,7 @@ export default function EntrenamientoAdaptativo() {
                                         
                                         // Show correct/incorrect styles after submission
                                         if (feedback) {
-                                            if (opt.es_correcta) {
+                                            if (opt.id === feedback.opcion_correcta_id) {
                                                 optionClass += " correct";
                                             } else if (selectedOption === opt.id && !feedback.es_correcta) {
                                                 optionClass += " incorrect";
@@ -159,7 +169,7 @@ export default function EntrenamientoAdaptativo() {
                                                 key={opt.id}
                                                 className={optionClass}
                                                 onClick={() => !feedback && setSelectedOption(opt.id)}
-                                                disabled={!!feedback && feedback.es_correcta}
+                                                disabled={!!feedback && (feedback.es_correcta || feedback.intentos_restantes === 0)}
                                             >
                                                 {opt.texto}
                                             </button>
@@ -182,7 +192,7 @@ export default function EntrenamientoAdaptativo() {
 
                             {/* --- SCAFFOLDING / ANDAMIAJE PEDAGÓGICO --- */}
                             <div className="scaffolding-area">
-                                <h4 className="scaffolding-title">📚 Ayudas del Tutor Socrático (Gemma 4)</h4>
+                                <h4 className="scaffolding-title">📚 Ayudas del Tutor Socrático</h4>
                                 
                                 <div className="scaffolding-buttons">
                                     <button 
@@ -244,15 +254,21 @@ export default function EntrenamientoAdaptativo() {
                                                 <p>
                                                     No te preocupes. Analiza la pista o el ejemplo similar arriba para corregir tu error conceptual y vuelve a intentarlo.
                                                 </p>
-                                                {attemptsCount >= 3 && (
+                                                {feedback.explicacion && (
                                                     <div className="explicacion-block">
                                                         <h5>Explicación Completa para aprender del error:</h5>
                                                         <p>{feedback.explicacion}</p>
                                                     </div>
                                                 )}
-                                                <button className="btn-retry" onClick={() => setFeedback(null)}>
-                                                    ✍️ Volver a intentar la pregunta
-                                                </button>
+                                                {feedback.intentos_restantes > 0 ? (
+                                                    <button className="btn-retry" onClick={() => setFeedback(null)}>
+                                                        ✍️ Volver a intentar la pregunta
+                                                    </button>
+                                                ) : (
+                                                    <button className="btn-next-question" onClick={handleNextQuestion}>
+                                                        🔄 Practicar otro ejercicio
+                                                    </button>
+                                                )}
                                             </div>
                                         )}
                                     </div>
@@ -292,10 +308,22 @@ export default function EntrenamientoAdaptativo() {
                                         <span>{deb.precision ? `${deb.precision.toFixed(0)}%` : '0%'}</span>
                                     </div>
                                     <div className="stat-row">
+                                        <span>Precisión reciente:</span>
+                                        <span>{deb.precision_reciente.toFixed(0)}%</span>
+                                    </div>
+                                    <div className="stat-row">
+                                        <span>Racha actual:</span>
+                                        <span>{deb.racha_actual}</span>
+                                    </div>
+                                    <div className="stat-row">
                                         <span>Mejora reciente:</span>
                                         <span className={deb.porcentaje_mejora >= 0 ? 'text-success' : 'text-danger'}>
                                             {deb.porcentaje_mejora >= 0 ? `+${deb.porcentaje_mejora.toFixed(0)}%` : `${deb.porcentaje_mejora.toFixed(0)}%`}
                                         </span>
+                                    </div>
+                                    <div className="stat-row">
+                                        <span>Microvictorias:</span>
+                                        <span>{deb.microvictorias}</span>
                                     </div>
                                 </div>
 

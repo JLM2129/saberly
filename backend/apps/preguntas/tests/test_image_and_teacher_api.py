@@ -100,7 +100,7 @@ class ImageAndTeacherApiTests(TestCase):
             "nombre": "Matemáticas",
             "contextos": [
                 {
-                    "tipo": "imagen",
+                    "tipo": "grafico",
                     "contexto": "Gráfica de prueba",
                     "archivo": "imagenes/grafica_zip.png",
                     "preguntas": [
@@ -141,3 +141,4 @@ class ImageAndTeacherApiTests(TestCase):
         self.assertEqual(pregunta.explicacion, "Explicación de la gráfica")
         self.assertEqual(pregunta.imagen_url, "imagenes/pregunta_img.png")
         self.assertEqual(pregunta.contexto.archivo, "imagenes/grafica_zip.png")
+        self.assertEqual(pregunta.contexto.tipo, "grafica")

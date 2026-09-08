@@ -1,0 +1,197 @@
+{
+  "nombre": "Ciencias_Naturales",
+  "descripcion": "Evalúa la comprensión de fenómenos biológicos, físicos y químicos mediante contextos científicos.",
+  "contextos": [
+    {
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema ilustra el comportamiento de un gas ideal dentro de un recipiente con un émbolo móvil, representando la Ley de Boyle al modificar la presión y el volumen a temperatura constante.",
+  "archivo": "esquema_ley_de_boyle.jpg",
+  "preguntas": [
+    {
+      "enunciado": "A partir del esquema y manteniendo la temperatura constante, si el volumen del gas en el cilindro se reduce a la mitad mediante el émbolo, ¿qué ocurre con la presión ejercida por el gas?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "La presión se reduce a la mitad.", "es_correcta": false },
+        { "texto": "La presión se duplica.", "es_correcta": true },
+        { "texto": "La presión se cuatriplica.", "es_correcta": false },
+        { "texto": "La presión permanece constante.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema ilustra el espectro electromagnético ordenado por longitud de onda y frecuencia, destacando la región de la luz visible.",
+  "archivo": "esquema_espectro_electromagnetico.jpg",
+  "preguntas": [
+    {
+      "enunciado": "A partir del esquema del espectro electromagnético, ¿qué relación existe entre la longitud de onda y la frecuencia de las ondas a medida que se pasa de las ondas de radio a los rayos gamma?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "La longitud de onda aumenta y la frecuencia también aumenta.", "es_correcta": false },
+        { "texto": "La longitud de onda disminuye y la frecuencia aumenta.", "es_correcta": true },
+        { "texto": "La longitud de onda aumenta y la frecuencia disminuye.", "es_correcta": false },
+        { "texto": "Ambas magnitudes permanecen constantes en todo el espectro.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema ilustra el proceso de síntesis de proteínas, mostrando las dos etapas principales: transcripción y traducción.",
+  "archivo": "esquema_sintesis_proteinas.jpg",
+  "preguntas": [
+    {
+      "enunciado": "Basándote en el esquema, ¿cuál es la función principal del ARN mensajero (ARNm) durante la síntesis de proteínas?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "Transportar los aminoácidos al ribosoma.", "es_correcta": false },
+        { "texto": "Transcribir la información genética desde el ADN en el núcleo.", "es_correcta": true },
+        { "texto": "Ser el componente principal del ribosoma.", "es_correcta": false },
+        { "texto": "Catalizar la unión de los aminoácidos.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema ilustra las etapas finales del ciclo de vida de las estrellas, dependiendo de su masa inicial, incluyendo la formación de supernovas, estrellas de neutrones y agujeros negros.",
+  "archivo": "esquema_ciclo_vida_estelar.jpg",
+  "preguntas": [
+    {
+      "enunciado": "Basándote en el esquema, ¿qué tipo de remanente estelar se forma tras el colapso gravitatorio del núcleo de una estrella con una masa inicial muy alta (más de 20-25 veces la masa del Sol) después de una explosión de supernova?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "Una enana blanca.", "es_correcta": false },
+        { "texto": "Una estrella de neutrones.", "es_correcta": false },
+        { "texto": "Un agujero negro.", "es_correcta": true },
+        { "texto": "Una nebulosa planetaria.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema ilustra el ciclo biogeoquímico del carbono, mostrando el flujo e intercambio de dióxido de carbono entre la atmósfera, la biosfera y los océanos.",
+  "archivo": "esquema_ciclo_carbono.jpg",
+  "preguntas": [
+    {
+      "enunciado": "A partir del esquema del ciclo del carbono, ¿cuál de los siguientes procesos cumple la función principal de retirar dióxido de carbono (CO2) de la atmósfera y transformarlo en compuestos orgánicos?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "La respiración celular de los organismos aeróbicos.", "es_correcta": false },
+        { "texto": "La fotosíntesis realizada por plantas, algas y fitoplancton.", "es_correcta": true },
+        { "texto": "La quema de combustibles fósiles en industrias.", "es_correcta": false },
+        { "texto": "La descomposición anaeróbica de la materia orgánica.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema ilustra un circuito eléctrico básico compuesto por una fuente de voltaje, un conductor con resistencia y los instrumentos de medición, representando la Ley de Ohm.",
+  "archivo": "esquema_ley_de_ohm.jpg",
+  "preguntas": [
+    {
+      "enunciado": "A partir del esquema del circuito, si se mantiene constante la resistencia eléctrica y se duplica el voltaje suministrado por la fuente, ¿qué ocurre con la intensidad de la corriente eléctrica que circula a través del conductor?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "La corriente eléctrica se reduce a la mitad.", "es_correcta": false },
+        { "texto": "La corriente eléctrica se duplica.", "es_correcta": true },
+        { "texto": "La corriente eléctrica se cuadriplica.", "es_correcta": false },
+        { "texto": "La corriente eléctrica permanece constante.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema ilustra los diferentes tipos de límites de placas tectónicas (divergentes, convergentes y transformantes) y los procesos geológicos que ocurren en ellos.",
+  "archivo": "esquema_limites_placas.jpg",
+  "preguntas": [
+    {
+      "enunciado": "A partir del esquema tectónico, ¿qué fenómeno geológico principal se asocia habitualmente con los límites convergentes donde una placa oceánica subduce bajo una placa continental?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "La formación exclusiva de dorsales oceánicas y expansión del suelo marino.", "es_correcta": false },
+        { "texto": "La creación de fosas oceánicas, actividad volcánica y sismicidad frecuente.", "es_correcta": true },
+        { "texto": "El desplazamiento lateral de placas sin destrucción ni formación de corteza.", "es_correcta": false },
+        { "texto": "La acumulación pasiva de sedimentos sin ningún tipo de actividad tectónica.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema ilustra la estructura de una galaxia espiral, identificando sus componentes clave como el bulbo central, el disco y los brazos espirales.",
+  "archivo": "esquema_via_lactea.jpg",
+  "preguntas": [
+    {
+      "enunciado": "Basándote en el esquema de la Vía Láctea, ¿dónde se concentra la mayor densidad de estrellas jóvenes, gas y polvo interestelar, indicando además las regiones de formación estelar activa?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "En el bulbo central.", "es_correcta": false },
+        { "texto": "En el halo galáctico.", "es_correcta": false },
+        { "texto": "En los brazos espirales del disco.", "es_correcta": true },
+        { "texto": "En el núcleo galáctico.", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema ilustra un cruce genético para determinar la probabilidad de descendencia con daltonismo, una condición ligada al cromosoma X.",
+  "archivo": "esquema_herencia_daltonismo.jpg",
+  "preguntas": [
+    {
+      "enunciado": "Basándote en el esquema del Cuadro de Punnett, si una madre portadora (XᴨX) y un padre con visión normal (XY) tienen descendencia, ¿cuál es la probabilidad de que su hijo varón sea daltónico?",
+      "tipo": "análisis",
+      "dificultad": "alta",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "0%", "es_correcta": false },
+        { "texto": "25%", "es_correcta": false },
+        { "texto": "50%", "es_correcta": true },
+        { "texto": "100%", "es_correcta": false }
+      ]
+    }
+  ]
+},
+{
+  "tipo": "grafico",
+  "contexto": "El siguiente esquema ilustra la relación física entre la fuerza neta aplicada a un objeto, su masa y la aceleración resultante según la Segunda Ley de Newton (F = m * a).",
+  "archivo": "esquema_segunda_ley_newton.jpg",
+  "preguntas": [
+    {
+      "enunciado": "A partir del esquema de la Segunda Ley de Newton, si se aplica una fuerza neta constante sobre un objeto y se reduce su masa a la mitad, ¿qué sucede con la aceleración resultante del objeto?",
+      "tipo": "análisis",
+      "dificultad": "media",
+      "competencia": "explicar",
+      "opciones": [
+        { "texto": "La aceleración se reduce a la mitad.", "es_correcta": false },
+        { "texto": "La aceleración se duplica.", "es_correcta": true },
+        { "texto": "La aceleración se cuadriplica.", "es_correcta": false },
+        { "texto": "La aceleración permanece constante.", "es_correcta": false }
+      ]
+    }
+  ]
+}
+
+  ]
+}

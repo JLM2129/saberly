@@ -59,7 +59,11 @@ class Command(BaseCommand):
                 nombre="General"
             )
 
-            valid_types = ['texto', 'imagen', 'tabla', 'grafica', 'audio']
+            valid_types = ['texto', 'imagen', 'tabla', 'grafica', 'grafico', 'lectura_graficos', 'audio']
+            tipo_aliases = {
+                'grafico': 'grafica',
+                'lectura_graficos': 'grafica',
+            }
 
             for bloque in data.get("contextos", []):
                 contenido = (
@@ -69,7 +73,7 @@ class Command(BaseCommand):
                 ).strip()
 
                 raw_tipo = bloque.get("tipo", "texto")
-                tipo_final = raw_tipo if raw_tipo in valid_types else "texto"
+                tipo_final = tipo_aliases.get(raw_tipo, raw_tipo) if raw_tipo in valid_types else "texto"
 
                 archivo_raw = bloque.get("archivo")
                 archivo_normalizado = None
@@ -148,9 +152,12 @@ class Command(BaseCommand):
         if img_src.exists():
             img_dest.mkdir(parents=True, exist_ok=True)
             self.stdout.write(f"Desplegando imágenes desde {img_src} a {img_dest}...")
-            for img_file in os.listdir(img_src):
-                shutil.copy2(img_src / img_file, img_dest / img_file)
-            self.stdout.write(self.style.SUCCESS("Imágenes desplegadas correctamente."))
+            if img_src.resolve() != img_dest.resolve():
+                for img_file in os.listdir(img_src):
+                    shutil.copy2(img_src / img_file, img_dest / img_file)
+                self.stdout.write(self.style.SUCCESS("Imágenes desplegadas correctamente."))
+            else:
+                self.stdout.write("Las imágenes ya están en MEDIA_ROOT; no es necesario copiarlas.")
 
         self.stdout.write(self.style.SUCCESS(
             f"\nRESUMEN FINAL\n"

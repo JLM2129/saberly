@@ -12,32 +12,53 @@ const RefuerzoIA = () => {
     const [success, setSuccess] = useState(false);
     const [lastGenerated, setLastGenerated] = useState(null);
 
-    // Load saved flashcards from localStorage on mount
-    useEffect(() => {
+    const loadLocalCards = () => {
         try {
             const saved = localStorage.getItem(STORAGE_KEY);
-            if (saved) {
-                const parsed = JSON.parse(saved);
-                if (parsed.cards && parsed.cards.length > 0) {
-                    setFlashcards(parsed.cards);
-                    setLastGenerated(parsed.generatedAt || null);
-                    setSuccess(true);
-                }
-            }
+            if (!saved) return false;
+            const parsed = JSON.parse(saved);
+            if (!parsed.cards || parsed.cards.length === 0) return false;
+            setFlashcards(parsed.cards);
+            setLastGenerated(parsed.generatedAt || null);
+            setSuccess(true);
+            return true;
         } catch (e) {
             console.warn('Error al cargar flashcards guardadas:', e);
+            return false;
         }
+    };
+
+    // Backend is authoritative; localStorage is a study cache for offline use.
+    useEffect(() => {
+        const loadCards = async () => {
+            if (navigator.onLine) {
+                try {
+                    const response = await api.get('/tutor/flashcards/');
+                    if (response.data.length > 0) {
+                        setFlashcards(response.data);
+                        setLastGenerated(response.data[0].fecha_creacion || null);
+                        setSuccess(true);
+                        saveToLocal(response.data, response.data[0].fecha_creacion);
+                        return;
+                    }
+                } catch (e) {
+                    console.warn('No se pudieron cargar flashcards del servidor:', e);
+                }
+            }
+
+            loadLocalCards();
+        };
+        loadCards();
     }, []);
 
     // Save flashcards to localStorage whenever they change
-    const saveToLocal = (cards) => {
+    const saveToLocal = (cards, generatedAt = new Date().toISOString()) => {
         try {
-            const now = new Date().toISOString();
             localStorage.setItem(STORAGE_KEY, JSON.stringify({
                 cards,
-                generatedAt: now
+                generatedAt
             }));
-            setLastGenerated(now);
+            setLastGenerated(generatedAt);
         } catch (e) {
             console.warn('Error al guardar flashcards:', e);
         }
@@ -61,8 +82,14 @@ const RefuerzoIA = () => {
             const response = await api.post('/tutor/flashcards/debilidades/');
             const newCards = response.data;
             setFlashcards(newCards);
-            setSuccess(true);
-            saveToLocal(newCards);
+            if (newCards.length > 0) {
+                setSuccess(true);
+                saveToLocal(newCards, newCards[0].fecha_creacion);
+            } else {
+                setSuccess(false);
+                setLastGenerated(null);
+                localStorage.removeItem(STORAGE_KEY);
+            }
         } catch (err) {
             console.error("Error al generar refuerzo:", err);
             // Restore previous flashcards if generation failed
@@ -94,7 +121,7 @@ const RefuerzoIA = () => {
                 <div className="refuerzo-info">
                     <h3>
                         <span role="img" aria-label="magic">✨</span> 
-                        Refuerzo Personalizado con Gemma
+                        Refuerzo Personalizado con IA
                     </h3>
                     <p>Analizamos tus últimas debilidades para crear un mazo de estudio enfocado en lo que más necesitas.</p>
                     {success && lastGenerated && (
@@ -117,7 +144,7 @@ const RefuerzoIA = () => {
             {loading && (
                 <div className="refuerzo-loading">
                     <div className="ai-pulse"></div>
-                    <p>Gemma está procesando tus resultados y extrayendo conceptos clave...</p>
+                    <p>La IA está procesando tus resultados y extrayendo conceptos clave...</p>
                 </div>
             )}
 

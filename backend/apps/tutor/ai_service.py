@@ -1,8 +1,6 @@
-import os
 import re
 import json
-from google import genai
-from django.conf import settings
+from .ai_provider import create_client, get_api_key, get_model_name
 
 class TutorAI:
     _instance = None
@@ -14,19 +12,19 @@ class TutorAI:
         return cls._instance
 
     def __init__(self):
-        self.api_key = os.getenv("GEMMA_API_KEY") or os.getenv("GEMINI_API_KEY")
+        self.api_key = get_api_key()
         self.client = None
         if self.api_key:
-            self.client = genai.Client(api_key=self.api_key)
+            self.client = create_client()
         
         # Powering the soul of Saberly with Gemma 4
-        self.model_name = os.getenv("GEMMA_MODEL_ID", "gemini-1.5-flash")
+        self.model_name = get_model_name()
 
     def _ensure_client(self):
         if not self.client:
-            self.api_key = os.getenv("GEMMA_API_KEY") or os.getenv("GEMINI_API_KEY")
+            self.api_key = get_api_key()
             if self.api_key:
-                self.client = genai.Client(api_key=self.api_key)
+                self.client = create_client()
             else:
                 raise ValueError("API KEY de GenAI no encontrada en el archivo .env")
 
@@ -299,4 +297,26 @@ Devuelve únicamente un objeto JSON con la siguiente estructura (no agregues tex
                 "ejemplo": f"### Problema Similar de {debilidad}\nSi 2 variables son proporcionales y una se duplica, ¿qué pasa con la otra?\n\n### Solución paso a paso\nMultiplica la segunda por 2. Por tanto, también se duplica.",
                 "explicacion": f"Explicación local: La definición formal del concepto {debilidad} requiere que se cumplan las propiedades mostradas en la opción correcta."
             }
+
+    @staticmethod
+    def validar_pregunta_entrenamiento(datos):
+        if not isinstance(datos, dict):
+            raise ValueError("La IA no devolvió un objeto JSON válido")
+
+        required_text = ['enunciado', 'pista', 'ejemplo', 'explicacion']
+        if any(not isinstance(datos.get(field), str) or not datos[field].strip() for field in required_text):
+            raise ValueError("La pregunta IA no contiene todos los textos requeridos")
+
+        opciones = datos.get('opciones')
+        if not isinstance(opciones, list) or len(opciones) != 4:
+            raise ValueError("La pregunta IA debe contener exactamente cuatro opciones")
+
+        correctas = [opcion for opcion in opciones if isinstance(opcion, dict) and opcion.get('es_correcta') is True]
+        if len(correctas) != 1 or any(
+            not isinstance(opcion, dict) or not isinstance(opcion.get('texto'), str) or not opcion['texto'].strip()
+            for opcion in opciones
+        ):
+            raise ValueError("La pregunta IA debe tener cuatro opciones válidas y una sola respuesta correcta")
+
+        return datos
 

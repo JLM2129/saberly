@@ -2,19 +2,39 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
-from apps.preguntas.models import Pregunta, Flashcard, PreguntaIA, OpcionRespuestaIA, ProgresoDebilidad, Area, SubArea
-from apps.preguntas.serializers import PreguntaIASerializer, PreguntaIABlindSerializer, ProgresoDebilidadSerializer
+from apps.preguntas.models import (
+    Pregunta,
+    OpcionRespuesta,
+    Flashcard,
+    PreguntaIA,
+    OpcionRespuestaIA,
+    ProgresoDebilidad,
+    SesionEntrenamiento,
+    IntentoEntrenamiento,
+    Area,
+    SubArea,
+)
+from apps.preguntas.serializers import (
+    PreguntaIASerializer,
+    PreguntaIABlindSerializer,
+    ProgresoDebilidadSerializer,
+    FlashcardSerializer,
+)
 from apps.simulacros.models import DetalleSimulacro
 from django.db.models import Count
+from django.db import transaction
 from django.utils import timezone
 from .ai_service import TutorAI
 from .flashcard_service import FlashcardService
+from .throttles import TutorAIThrottle
 import logging
 
 logger = logging.getLogger(__name__)
 
 class ExplicarPreguntaView(APIView):
     permission_classes = [IsAuthenticated]
+    throttle_classes = [TutorAIThrottle]
+    throttle_scope = 'ai'
 
     def post(self, request):
         question_id = request.data.get('question_id')
@@ -71,6 +91,8 @@ class ExplicarPreguntaView(APIView):
 
 class GenerateFlashcardsView(APIView):
     permission_classes = [IsAuthenticated]
+    throttle_classes = [TutorAIThrottle]
+    throttle_scope = 'ai'
 
     def post(self, request):
         question_id = request.data.get('question_id')
@@ -97,14 +119,11 @@ class GenerateFlashcardsView(APIView):
                 flashcard = Flashcard.objects.create(
                     user=request.user,
                     pregunta_relacionada=pregunta,
+                    debilidad=pregunta.subarea.nombre if pregunta.subarea else pregunta.area.nombre,
                     frente=item.get('frente', ''),
                     dorso=item.get('dorso', '')
                 )
-                created_flashcards.append({
-                    "id": flashcard.id,
-                    "frente": flashcard.frente,
-                    "dorso": flashcard.dorso
-                })
+                created_flashcards.append(FlashcardSerializer(flashcard).data)
                 
             return Response(created_flashcards, status=status.HTTP_201_CREATED)
             
@@ -113,6 +132,8 @@ class GenerateFlashcardsView(APIView):
             return Response({"error": "No se pudieron generar las flashcards"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 class GenerateWeaknessFlashcardsView(APIView):
     permission_classes = [IsAuthenticated]
+    throttle_classes = [TutorAIThrottle]
+    throttle_scope = 'ai'
 
     def post(self, request):
         # 1. Obtener debilidades del usuario
@@ -136,19 +157,18 @@ class GenerateWeaknessFlashcardsView(APIView):
         try:
             flashcards_json = FlashcardService.generate_from_topics(topics_data)
             
-            # 3. Guardar en Base de Datos
-            created_objects = []
-            for item in flashcards_json:
-                flashcard = Flashcard.objects.create(
-                    user=request.user,
-                    frente=item.get('frente', ''),
-                    dorso=item.get('dorso', '')
-                )
-                created_objects.append({
-                    "id": flashcard.id,
-                    "frente": flashcard.frente,
-                    "dorso": flashcard.dorso
-                })
+            # Reemplazar el mazo completo solo después de generar el nuevo.
+            with transaction.atomic():
+                Flashcard.objects.filter(user=request.user).delete()
+                created_objects = []
+                for index, item in enumerate(flashcards_json):
+                    flashcard = Flashcard.objects.create(
+                        user=request.user,
+                        debilidad=topics_data[index % len(topics_data)]['area'],
+                        frente=item.get('frente', ''),
+                        dorso=item.get('dorso', '')
+                    )
+                    created_objects.append(FlashcardSerializer(flashcard).data)
 
             return Response(created_objects, status=status.HTTP_201_CREATED)
 
@@ -156,8 +176,28 @@ class GenerateWeaknessFlashcardsView(APIView):
             logger.error(f"Error en GenerateWeaknessFlashcardsView: {str(e)}")
             return Response({"error": "No se pudieron generar las flashcards de debilidades"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
+
+class FlashcardListView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        flashcards = Flashcard.objects.filter(user=request.user).select_related('pregunta_relacionada')[:100]
+        return Response(FlashcardSerializer(flashcards, many=True).data)
+
+
+class FlashcardDetailView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def delete(self, request, pk):
+        deleted, _ = Flashcard.objects.filter(pk=pk, user=request.user).delete()
+        if not deleted:
+            return Response({"error": "Flashcard no encontrada"}, status=status.HTTP_404_NOT_FOUND)
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
 class InteraccionTutorView(APIView):
     permission_classes = [IsAuthenticated]
+    throttle_classes = [TutorAIThrottle]
+    throttle_scope = 'ai'
 
     def post(self, request):
         action = request.data.get('action') # diagnosticar, pista, ejemplo, explicacion, perfil, flashcard, personalizacion
@@ -270,28 +310,6 @@ class ObtenerDebilidadesView(APIView):
                     )
                     debilidades_detectadas.append(progreso)
 
-        # 3. FALLBACK FINAL: usuario sin historial, sugerimos todas las subáreas disponibles
-        if not debilidades_detectadas:
-            subareas_default = SubArea.objects.select_related('area').all()[:6]
-            for sa in subareas_default:
-                progreso, _ = ProgresoDebilidad.objects.get_or_create(
-                    usuario=usuario,
-                    debilidad=sa.nombre,
-                    defaults={'area': sa.area}
-                )
-                debilidades_detectadas.append(progreso)
-
-        # 4. FALLBACK ÚLTIMO RECURSO: si ni siquiera hay subáreas, usamos áreas generales
-        if not debilidades_detectadas:
-            areas = Area.objects.all()
-            for ar in areas:
-                progreso, _ = ProgresoDebilidad.objects.get_or_create(
-                    usuario=usuario,
-                    debilidad=ar.nombre,
-                    defaults={'area': ar}
-                )
-                debilidades_detectadas.append(progreso)
-
         # Devolver todos los progresos de debilidades registradas para este usuario
         progresos = ProgresoDebilidad.objects.filter(
             usuario=usuario
@@ -302,6 +320,8 @@ class ObtenerDebilidadesView(APIView):
 
 class IniciarEntrenamientoView(APIView):
     permission_classes = [IsAuthenticated]
+    throttle_classes = [TutorAIThrottle]
+    throttle_scope = 'ai'
 
     def post(self, request):
         debilidad_nombre = request.data.get('debilidad')
@@ -313,25 +333,34 @@ class IniciarEntrenamientoView(APIView):
         # Buscar el progreso de esta debilidad
         progreso = ProgresoDebilidad.objects.filter(usuario=usuario, debilidad=debilidad_nombre).first()
         if not progreso:
-            # Buscar área relacionada en la DB para crear el progreso
-            subarea = SubArea.objects.filter(nombre=debilidad_nombre).first()
-            area = subarea.area if subarea else Area.objects.first()
-            if not area:
-                return Response({"error": "No hay áreas registradas en el sistema para asociar la debilidad"}, status=status.HTTP_400_BAD_REQUEST)
-                
-            progreso = ProgresoDebilidad.objects.create(
+            return Response({"error": "La debilidad no está registrada en tu historial"}, status=status.HTTP_404_NOT_FOUND)
+
+        session_id = request.data.get('sesion_id')
+        if session_id:
+            sesion = SesionEntrenamiento.objects.filter(
+                id=session_id,
                 usuario=usuario,
                 debilidad=debilidad_nombre,
-                area=area
+                estado='activa',
+            ).first()
+            if not sesion:
+                return Response({"error": "La sesión de entrenamiento no existe o ya terminó"}, status=status.HTTP_404_NOT_FOUND)
+        else:
+            sesion = SesionEntrenamiento.objects.create(
+                usuario=usuario,
+                debilidad=debilidad_nombre,
+                area=progreso.area,
+                nivel_inicial='facil',
+                nivel_actual='facil',
             )
             
         # Determinar dificultad en base a su nivel de precisión
-        precision = progreso.calcular_precision()
+        precision = progreso.precision_reciente
         if progreso.intentos_totales < 3:
             dificultad = 'facil'
-        elif precision >= 70.0:
+        elif precision >= 80.0:
             dificultad = 'dificil'
-        elif precision >= 40.0:
+        elif precision >= 55.0:
             dificultad = 'media'
         else:
             dificultad = 'facil'
@@ -345,15 +374,18 @@ class IniciarEntrenamientoView(APIView):
         # Usar TutorAI con Gemma 4 para generar la pregunta interactiva adaptada
         try:
             tutor_ai = TutorAI.get_instance()
-            datos_pregunta = tutor_ai.generar_pregunta_entrenamiento(
-                debilidad=debilidad_nombre,
-                dificultad=dificultad,
-                tipo_error_frecuente=tipo_error_frecuente
+            datos_pregunta = tutor_ai.validar_pregunta_entrenamiento(
+                tutor_ai.generar_pregunta_entrenamiento(
+                    debilidad=debilidad_nombre,
+                    dificultad=dificultad,
+                    tipo_error_frecuente=tipo_error_frecuente
+                )
             )
             
             # Guardar PreguntaIA en la base de datos
             pregunta_ia = PreguntaIA.objects.create(
                 usuario=usuario,
+                sesion=sesion,
                 debilidad_objetivo=debilidad_nombre,
                 area=progreso.area,
                 enunciado=datos_pregunta.get('enunciado', 'Pregunta sin enunciado'),
@@ -371,10 +403,19 @@ class IniciarEntrenamientoView(APIView):
                     texto=opt.get('texto', ''),
                     es_correcta=opt.get('es_correcta', False)
                 )
+
+            sesion.preguntas_generadas += 1
+            sesion.nivel_actual = dificultad
+            sesion.save(update_fields=['preguntas_generadas', 'nivel_actual'])
                 
             # Serializar la pregunta de forma "ciega" (sin revelar cuál es la correcta ni la explicación completa)
             serializer = PreguntaIABlindSerializer(pregunta_ia)
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
+            response_data = dict(serializer.data)
+            response_data.update({
+                'sesion_id': sesion.id,
+                'intentos_maximos': 3,
+            })
+            return Response(response_data, status=status.HTTP_201_CREATED)
             
         except Exception as e:
             logger.error(f"Error iniciando entrenamiento: {str(e)}")
@@ -383,6 +424,8 @@ class IniciarEntrenamientoView(APIView):
 
 class ResponderEntrenamientoView(APIView):
     permission_classes = [IsAuthenticated]
+    throttle_classes = [TutorAIThrottle]
+    throttle_scope = 'ai'
 
     def post(self, request):
         pregunta_ia_id = request.data.get('pregunta_ia_id')
@@ -396,8 +439,38 @@ class ResponderEntrenamientoView(APIView):
             opcion = OpcionRespuestaIA.objects.get(id=opcion_id, pregunta_ia=pregunta_ia)
         except (PreguntaIA.DoesNotExist, OpcionRespuestaIA.DoesNotExist):
             return Response({"error": "Pregunta u opción no encontrada"}, status=status.HTTP_404_NOT_FOUND)
+
+        sesion = pregunta_ia.sesion
+        session_id = request.data.get('sesion_id')
+        if session_id and (not sesion or str(sesion.id) != str(session_id)):
+            return Response({"error": "La pregunta no pertenece a esta sesión"}, status=status.HTTP_400_BAD_REQUEST)
+        if not sesion:
+            return Response({"error": "La pregunta no está asociada a una sesión"}, status=status.HTTP_400_BAD_REQUEST)
+
+        intentos_previos = IntentoEntrenamiento.objects.filter(pregunta_ia=pregunta_ia).count()
+        if intentos_previos >= 3:
+            return Response({"error": "Se alcanzó el máximo de tres intentos para esta pregunta"}, status=status.HTTP_400_BAD_REQUEST)
+        numero_intento = intentos_previos + 1
             
         es_correcta = opcion.es_correcta
+        explicacion_mostrada = es_correcta or numero_intento >= 3
+
+        IntentoEntrenamiento.objects.create(
+            sesion=sesion,
+            pregunta_ia=pregunta_ia,
+            opcion_seleccionada=opcion,
+            numero_intento=numero_intento,
+            es_correcta=es_correcta,
+            pista_utilizada=bool(request.data.get('pista_utilizada', False)),
+            ejemplo_utilizado=bool(request.data.get('ejemplo_utilizado', False)),
+            explicacion_mostrada=explicacion_mostrada,
+            tiempo_respuesta_ms=request.data.get('tiempo_respuesta_ms'),
+        )
+
+        sesion.intentos_totales += 1
+        if es_correcta:
+            sesion.aciertos_totales += 1
+        sesion.save(update_fields=['intentos_totales', 'aciertos_totales'])
         
         # 1. Actualizar PreguntaIA stats
         pregunta_ia.veces_respondida += 1
@@ -409,12 +482,6 @@ class ResponderEntrenamientoView(APIView):
         # 2. Actualizar ProgresoDebilidad
         progreso = ProgresoDebilidad.objects.filter(usuario=request.user, debilidad=pregunta_ia.debilidad_objetivo).first()
         if progreso:
-            precision_anterior = progreso.calcular_precision()
-            
-            progreso.intentos_totales += 1
-            if es_correcta:
-                progreso.aciertos_totales += 1
-                
             # Determinar tipo de error usando Gemma si falló
             tipo_error = None
             if not es_correcta:
@@ -427,33 +494,16 @@ class ResponderEntrenamientoView(APIView):
                 except Exception:
                     tipo_error = 'conceptual'
             
-            # Guardar en historial de recuperación
-            nuevo_intento = {
-                "fecha": timezone.now().isoformat(),
-                "es_correcta": es_correcta,
-                "dificultad": pregunta_ia.dificultad,
-                "tipo_error": tipo_error
-            }
-            progreso.historial_recuperacion.append(nuevo_intento)
-            
-            # Calcular nueva precisión y mejora porcentual
-            precision_nueva = progreso.calcular_precision()
-            progreso.porcentaje_mejora = precision_nueva - precision_anterior
-            
-            # Ajustar nivel_actual
-            if precision_nueva >= 75.0 and progreso.intentos_totales >= 4:
-                progreso.nivel_actual = 'alto'
-            elif precision_nueva >= 45.0:
-                progreso.nivel_actual = 'medio'
-            else:
-                progreso.nivel_actual = 'bajo'
-                
-            progreso.save()
+            progreso.registrar_intento(
+                es_correcta=es_correcta,
+                dificultad=pregunta_ia.dificultad,
+                tipo_error=tipo_error,
+            )
             
         # Determinar microvictoria motivacional
         microvictoria = None
         if es_correcta:
-            if progreso and progreso.aciertos_totales == 1:
+            if progreso and progreso.microvictorias == 1:
                 microvictoria = "¡Primer paso hacia el dominio! Has superado tu primer ejercicio de esta debilidad. 🎉"
             elif progreso and progreso.nivel_actual == 'alto':
                 microvictoria = "¡Maestría Alcanzada! Has subido el nivel de esta debilidad a Alto. ¡Increíble! 🌟"
@@ -463,9 +513,15 @@ class ResponderEntrenamientoView(APIView):
         # Respuesta pedagógica progresiva (Scaffolding)
         response_data = {
             "es_correcta": es_correcta,
-            "explicacion": pregunta_ia.explicacion,
-            "microvictoria": microvictoria
+            "explicacion": pregunta_ia.explicacion if explicacion_mostrada else None,
+            "microvictoria": microvictoria,
+            "intento_numero": numero_intento,
+            "intentos_restantes": 3 - numero_intento,
+            "nivel_feedback": 3 if explicacion_mostrada else numero_intento,
         }
+
+        opcion_correcta = pregunta_ia.opciones.filter(es_correcta=True).first()
+        response_data["opcion_correcta_id"] = opcion_correcta.id if opcion_correcta else None
         
         if not es_correcta:
             response_data["pista"] = pregunta_ia.pista
@@ -485,31 +541,35 @@ class PromocionarPreguntaIAView(APIView):
             
         if pregunta_ia.promocionada:
             return Response({"error": "Esta pregunta ya ha sido promocionada"}, status=status.HTTP_400_BAD_REQUEST)
+
+        opciones_ia = list(pregunta_ia.opciones.all())
+        if len(opciones_ia) != 4 or sum(opcion.es_correcta for opcion in opciones_ia) != 1:
+            return Response({"error": "La pregunta debe tener cuatro opciones y una sola respuesta correcta"}, status=status.HTTP_400_BAD_REQUEST)
+
+        if Pregunta.objects.filter(area=pregunta_ia.area, enunciado=pregunta_ia.enunciado).exists():
+            return Response({"error": "Ya existe una pregunta oficial con el mismo enunciado"}, status=status.HTTP_409_CONFLICT)
             
-        # Crear Pregunta oficial
-        pregunta_oficial = Pregunta.objects.create(
-            area=pregunta_ia.area,
-            enunciado=pregunta_ia.enunciado,
-            tipo='seleccion_unica',
-            dificultad=pregunta_ia.dificultad,
-            explicacion=pregunta_ia.explicacion,
-            active=True
-        )
-        
-        # Copiar las opciones
-        opciones_ia = pregunta_ia.opciones.all()
-        for opt in opciones_ia:
-            OpcionRespuesta.objects.create(
-                pregunta=pregunta_oficial,
-                texto=opt.texto,
-                es_correcta=opt.es_correcta,
-                orden=0
+        with transaction.atomic():
+            pregunta_oficial = Pregunta.objects.create(
+                area=pregunta_ia.area,
+                enunciado=pregunta_ia.enunciado,
+                tipo='seleccion_unica',
+                dificultad=pregunta_ia.dificultad,
+                explicacion=pregunta_ia.explicacion,
+                active=True
             )
-            
-        # Marcar como promocionada y aprobada
-        pregunta_ia.promocionada = True
-        pregunta_ia.estado_validacion = 'aprobada'
-        pregunta_ia.save()
+
+            for orden, opt in enumerate(opciones_ia):
+                OpcionRespuesta.objects.create(
+                    pregunta=pregunta_oficial,
+                    texto=opt.texto,
+                    es_correcta=opt.es_correcta,
+                    orden=orden
+                )
+
+            pregunta_ia.promocionada = True
+            pregunta_ia.estado_validacion = 'aprobada'
+            pregunta_ia.save(update_fields=['promocionada', 'estado_validacion'])
         
         return Response({
             "message": "Pregunta IA promocionada con éxito al banco oficial",

@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Area, SubArea, Pregunta, OpcionRespuesta, Contexto, PreguntaIA, OpcionRespuestaIA, ProgresoDebilidad
+from .models import Area, SubArea, Pregunta, OpcionRespuesta, Contexto, Flashcard, PreguntaIA, OpcionRespuestaIA, ProgresoDebilidad
 
 
 class OpcionRespuestaSerializer(serializers.ModelSerializer):
@@ -249,6 +249,9 @@ class ProgresoDebilidadSerializer(serializers.ModelSerializer):
             'intentos_totales',
             'aciertos_totales',
             'porcentaje_mejora',
+            'precision_reciente',
+            'racha_actual',
+            'microvictorias',
             'nivel_actual',
             'historial_recuperacion',
             'ultimo_entrenamiento',
@@ -257,5 +260,20 @@ class ProgresoDebilidadSerializer(serializers.ModelSerializer):
 
     def get_precision(self, obj):
         return obj.calcular_precision()
+
+
+class FlashcardSerializer(serializers.ModelSerializer):
+    pregunta_relacionada_id = serializers.IntegerField(read_only=True)
+
+    class Meta:
+        model = Flashcard
+        fields = [
+            'id',
+            'frente',
+            'dorso',
+            'debilidad',
+            'pregunta_relacionada_id',
+            'fecha_creacion',
+        ]
 
 

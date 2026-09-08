@@ -1,17 +1,15 @@
-import os
 import json
-from google import genai
-from django.conf import settings
+from .ai_provider import create_client, get_api_key, get_model_name
 
 class FlashcardService:
     @classmethod
     def generate_flashcards(cls, pregunta_texto, error_usuario):
-        api_key = os.getenv("GEMMA_API_KEY")
+        api_key = get_api_key()
         if not api_key:
-            raise ValueError("GEMMA_API_KEY no encontrada en el archivo .env")
+            raise ValueError("No hay una API key de IA configurada")
 
-        client = genai.Client(api_key=api_key)
-        model_name = os.getenv("GEMMA_MODEL_ID", "gemma-4-31b-it")
+        client = create_client()
+        model_name = get_model_name()
 
         prompt = f"""Actúa como un pedagogo experto en el ICFES. 
         Basado en este error: '{error_usuario}' en la pregunta: '{pregunta_texto}', 
@@ -55,12 +53,12 @@ class FlashcardService:
         Genera flashcards basadas en una lista de temas (areas) donde el usuario falló.
         topics_data: [{'area': 'Matemáticas', 'errors': 5}, ...]
         """
-        api_key = os.getenv("GEMMA_API_KEY") or os.getenv("GEMINI_API_KEY")
+        api_key = get_api_key()
         if not api_key:
-            raise ValueError("GEMMA_API_KEY no encontrada")
+            raise ValueError("No hay una API key de IA configurada")
 
-        client = genai.Client(api_key=api_key)
-        model_name = os.getenv("GEMMA_MODEL_ID", "gemma-4-31b-it")
+        client = create_client()
+        model_name = get_model_name()
 
         temas_str = ", ".join([f"{t['area']} ({t['errors']} errores)" for t in topics_data])
         

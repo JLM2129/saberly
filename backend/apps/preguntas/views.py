@@ -12,7 +12,7 @@ from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from rest_framework.response import Response
 
 from .models import Area, Pregunta, SubArea, Contexto, OpcionRespuesta
-from .serializers import AreaSerializer, PreguntaSerializer, PreguntaCreateSerializer
+from .serializers import AreaSerializer, PreguntaSerializer, PreguntaBlindSerializer, PreguntaCreateSerializer
 
 from apps.preguntas.services.contexto_service import (
     asegurar_contexto_por_area,
@@ -40,7 +40,7 @@ class AreaViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = AreaSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
-class PreguntaViewSet(viewsets.ModelViewSet):
+class PreguntaViewSet(viewsets.ReadOnlyModelViewSet):
     """
     Standard CRUD for questions. 
     Admin can create/edit. Users usually just read via 'Simulacros' app, 
@@ -48,7 +48,7 @@ class PreguntaViewSet(viewsets.ModelViewSet):
     """
     queryset = Pregunta.objects.filter(active=True).select_related('contexto', 'subarea__area')
 
-    serializer_class = PreguntaSerializer
+    serializer_class = PreguntaBlindSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     
     def get_queryset(self):
@@ -299,6 +299,14 @@ def normalize_archivo_path(archivo_raw):
     return archivo
 
 
+def normalize_contexto_type(tipo_raw):
+    aliases = {
+        'grafico': 'grafica',
+        'lectura_graficos': 'grafica',
+    }
+    return aliases.get(tipo_raw, tipo_raw)
+
+
 @api_view(['POST'])
 @permission_classes([IsAuthenticated, IsContentAdmin])
 def confirm_import_api(request):
@@ -347,7 +355,7 @@ def confirm_import_api(request):
             archivo_normalizado = normalize_archivo_path(archivo_raw)
             contexto = Contexto.objects.create(
                 area=area,
-                tipo=ctx_data.get('tipo', 'texto'),
+                tipo=normalize_contexto_type(ctx_data.get('tipo', 'texto')),
                 contenido=ctx_data.get('contexto', ''),
                 archivo=archivo_normalizado,
                 url_externa=url_ext

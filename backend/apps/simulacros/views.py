@@ -4,7 +4,7 @@ from rest_framework import viewsets, views, status, permissions
 from rest_framework.response import Response
 from django.utils import timezone
 from .models import Simulacro, DetalleSimulacro
-from apps.preguntas.models import Pregunta, OpcionRespuesta
+from apps.preguntas.models import Pregunta, OpcionRespuesta, ProgresoDebilidad
 from .serializers import SimulacroSerializer
 
 class SimulacroViewSet(viewsets.ReadOnlyModelViewSet):
@@ -27,6 +27,32 @@ class SimulacroViewSet(viewsets.ReadOnlyModelViewSet):
             .order_by('-fecha_inicio')
         )
         return qs
+
+
+def registrar_progreso_simulacro(detalle, usuario):
+    if not detalle.opcion_seleccionada:
+        return
+
+    pregunta = detalle.pregunta
+    debilidad = pregunta.subarea.nombre if pregunta.subarea else pregunta.area.nombre
+    progreso = ProgresoDebilidad.objects.filter(
+        usuario=usuario,
+        debilidad=debilidad,
+    ).first()
+
+    if not progreso and not detalle.es_correcta:
+        progreso = ProgresoDebilidad.objects.create(
+            usuario=usuario,
+            debilidad=debilidad,
+            area=pregunta.area,
+        )
+
+    if progreso:
+        progreso.registrar_intento(
+            es_correcta=detalle.es_correcta,
+            dificultad=pregunta.dificultad,
+            origen='simulacro',
+        )
 
 class GenerarSimulacroView(views.APIView):
     permission_classes = [permissions.IsAuthenticated]
@@ -132,13 +158,16 @@ class FinalizarSimulacroView(views.APIView):
 
             try:
                 detalle = DetalleSimulacro.objects.get(simulacro=simulacro, pregunta_id=p_id)
-                opcion = OpcionRespuesta.objects.get(id=op_id)
+                opcion = OpcionRespuesta.objects.get(id=op_id, pregunta_id=detalle.pregunta_id)
 
                 detalle.opcion_seleccionada = opcion
                 detalle.es_correcta = opcion.es_correcta
                 detalle.save()
             except (DetalleSimulacro.DoesNotExist, OpcionRespuesta.DoesNotExist):
                 continue
+
+        for detalle in simulacro.detalles.select_related('pregunta__subarea', 'pregunta__area').all():
+            registrar_progreso_simulacro(detalle, request.user)
 
         simulacro.tiempo_usado_segundos = tiempo
         simulacro.puntaje_total = simulacro.calcular_puntaje()

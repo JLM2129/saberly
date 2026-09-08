@@ -98,7 +98,7 @@ const ExplicacionIA = ({ questionId, questionText, userAnswer, correctAnswer }) 
                     onClick={() => handleAction('diagnosticar')}
                 >
                     <span role="img" aria-label="sparkles">✨</span>
-                    Analizar mi error con IA
+                    Analizar mi respuesta con IA
                 </button>
             )}
 

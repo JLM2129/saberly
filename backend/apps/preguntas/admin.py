@@ -1,5 +1,16 @@
 from django.contrib import admin
-from .models import Area, SubArea, Contexto, Pregunta, OpcionRespuesta, PreguntaIA, OpcionRespuestaIA, ProgresoDebilidad
+from .models import (
+    Area,
+    SubArea,
+    Contexto,
+    Pregunta,
+    OpcionRespuesta,
+    PreguntaIA,
+    OpcionRespuestaIA,
+    ProgresoDebilidad,
+    SesionEntrenamiento,
+    IntentoEntrenamiento,
+)
 
 class OpcionRespuestaInline(admin.TabularInline):
     model = OpcionRespuesta
@@ -75,3 +86,16 @@ class ProgresoDebilidadAdmin(admin.ModelAdmin):
     list_display = ['usuario', 'debilidad', 'area', 'nivel_actual', 'intentos_totales', 'aciertos_totales', 'porcentaje_mejora', 'ultimo_entrenamiento']
     list_filter = ['nivel_actual', 'area']
     search_fields = ['debilidad', 'usuario__username']
+
+
+@admin.register(SesionEntrenamiento)
+class SesionEntrenamientoAdmin(admin.ModelAdmin):
+    list_display = ['id', 'usuario', 'debilidad', 'nivel_actual', 'estado', 'preguntas_generadas', 'intentos_totales', 'creada_at']
+    list_filter = ['estado', 'nivel_actual', 'area']
+    search_fields = ['debilidad', 'usuario__username']
+
+
+@admin.register(IntentoEntrenamiento)
+class IntentoEntrenamientoAdmin(admin.ModelAdmin):
+    list_display = ['id', 'sesion', 'pregunta_ia', 'numero_intento', 'es_correcta', 'pista_utilizada', 'ejemplo_utilizado', 'creado_at']
+    list_filter = ['es_correcta', 'pista_utilizada', 'ejemplo_utilizado']
