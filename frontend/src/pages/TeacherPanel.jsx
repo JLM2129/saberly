@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { formatImageUrl } from '../utils/url';
+import TeacherAnalytics from './TeacherAnalytics';
 import './TeacherPanel.css';
 
 const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8001/api').replace(/\/$/, '');
@@ -366,11 +367,17 @@ export default function TeacherPanel() {
             {/* ── Encabezado ── */}
             <div className="teacher-header">
                 <h1>Panel de Docente</h1>
-                <p>{mode === 'list' ? 'Banco de Preguntas' : editingId ? 'Editar Pregunta' : 'Nueva Pregunta'}</p>
+                <p>{mode === 'analytics' ? 'Analítica Educativa y Diagnóstico' : mode === 'list' ? 'Banco de Preguntas' : editingId ? 'Editar Pregunta' : 'Nueva Pregunta'}</p>
             </div>
 
             {/* ── Tabs de navegación ── */}
             <div className="mode-tabs">
+                <button
+                    className={`tab-btn ${mode === 'analytics' ? 'active' : ''}`}
+                    onClick={() => { setMode('analytics'); setEditingId(null); }}
+                >
+                    📊 Analítica de Datos
+                </button>
                 <button
                     className={`tab-btn ${mode === 'list' ? 'active' : ''}`}
                     onClick={goToList}
@@ -388,6 +395,13 @@ export default function TeacherPanel() {
             {/* ── Mensaje de estado ── */}
             {message.text && (
                 <div className={`message ${message.type}`}>{message.text}</div>
+            )}
+
+            {/* ════════════════════════════════════════════════════════════
+                MODO ANALÍTICA DE DATOS
+            ════════════════════════════════════════════════════════════ */}
+            {mode === 'analytics' && (
+                <TeacherAnalytics user={user} />
             )}
 
             {/* ════════════════════════════════════════════════════════════

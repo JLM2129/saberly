@@ -7,7 +7,9 @@ export default function Register() {
         email: '',
         password: '',
         first_name: '',
-        last_name: ''
+        last_name: '',
+        school: '',
+        grade: ''
     });
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
@@ -58,7 +60,7 @@ export default function Register() {
             justifyContent: 'center',
             background: 'radial-gradient(circle at 50% 10%, #1e293b 0%, #0f172a 100%)',
         }}>
-            <div className="glass-card fade-in" style={{ width: '100%', maxWidth: '500px', padding: 'var(--spacing-xl)' }}>
+            <div className="glass-card fade-in" style={{ width: '100%', maxWidth: '520px', padding: 'var(--spacing-xl)' }}>
                 <h2 style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)', fontSize: '2rem' }}>Crear Cuenta</h2>
 
                 {error && (
@@ -78,22 +80,40 @@ export default function Register() {
                 <form onSubmit={handleSubmit} style={{ display: 'grid', gap: '1rem' }}>
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                         <div>
-                            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>Nombre</label>
+                            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>Nombre *</label>
                             <input name="first_name" type="text" style={inputStyle} required onChange={handleChange} />
                         </div>
                         <div>
-                            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>Apellido</label>
+                            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>Apellido *</label>
                             <input name="last_name" type="text" style={inputStyle} required onChange={handleChange} />
                         </div>
                     </div>
 
                     <div>
-                        <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>Correo Electrónico</label>
-                        <input name="email" type="email" style={inputStyle} required onChange={handleChange} />
+                        <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>Institución Educativa *</label>
+                        <input
+                            name="school"
+                            type="text"
+                            placeholder="Ej. San Francisco, ICTCAP, etc."
+                            style={inputStyle}
+                            required
+                            onChange={handleChange}
+                        />
+                    </div>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                        <div>
+                            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>Grado / Curso (Opcional)</label>
+                            <input name="grade" type="text" placeholder="Ej. 11A" style={inputStyle} onChange={handleChange} />
+                        </div>
+                        <div>
+                            <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>Correo Electrónico *</label>
+                            <input name="email" type="email" style={inputStyle} required onChange={handleChange} />
+                        </div>
                     </div>
 
                     <div>
-                        <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>Contraseña</label>
+                        <label style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>Contraseña *</label>
                         <input name="password" type="password" style={inputStyle} required onChange={handleChange} />
                     </div>
 
